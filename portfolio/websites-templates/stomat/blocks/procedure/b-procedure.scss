@@ -1,0 +1,179 @@
+.b-procedure{
+    text-align: center;
+    padding-bottom: 95px;
+
+    @include breakpoint($first-breakpoint){
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    @include breakpoint($fourth-breakpoint){
+        padding-bottom: 40px;
+    }
+
+    // default : begin
+    &.default{
+        padding-top: 75px;
+
+        > div {
+            // icon
+            .b-icon {
+                margin-bottom: 12px;
+            }
+
+            // title
+            h2 {
+                color: #3b3d40;
+                font-family: $secondary-font;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 1.2;
+                margin-top: 0;
+                margin-bottom: 14px;
+                letter-spacing: -0.04em;
+
+                @include breakpoint($fourth-breakpoint){
+                    font-size: 32px;
+                }
+            }
+
+            // description
+            > p {
+                color: #656b6f;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 1.625;
+                margin-top: 0;
+                margin-bottom: 100px;
+
+                @include breakpoint($fourth-breakpoint){
+                    font-size: 14px;
+                    margin-bottom: 55px;
+                }
+            }
+
+            // options : begin
+            .b-options {
+                @include span(24 of 24 nest);
+
+                // one option
+                .one-option {
+                    @include span(6 of 24);
+
+                    @include breakpoint($third-breakpoint){
+                        @include span(12 of 24);
+                    }
+
+                    @include breakpoint($sixth-breakpoint){
+                        @include span(24 of 24);
+                    }
+
+                    h3 {
+                        color: #3b3d40;
+                        font-family: $secondary-font;
+                        font-size: 11px;
+                        font-weight: 700;
+                        line-height: 1.5em;
+                        text-transform: uppercase;
+                        letter-spacing: 0.2em;
+                        margin-bottom: 17px;
+                    }
+
+                    p {
+                        color: #656b6f;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 1.32em;
+                    }
+                }
+            }
+            // options : end
+        }
+    }
+    // default : end
+
+    // extended : begin
+    &.extended{
+        padding-top: 90px;
+
+        > div {
+            // icon
+            .b-icon {
+                margin-bottom: 12px;
+            }
+
+            // title
+            h2 {
+                color: #3b3d40;
+                font-family: $secondary-font;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 1.2;
+                margin-bottom: 14px;
+                letter-spacing: -0.04em;
+                margin-top: 0;
+
+                @include breakpoint($fourth-breakpoint){
+                    font-size: 32px;
+                }
+            }
+
+            // description
+            > p {
+                color: #656b6f;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 1.625;
+                margin-bottom: 100px;
+
+                @include breakpoint($fourth-breakpoint){
+                    font-size: 14px;
+                    margin-bottom: 55px;
+                }
+            }
+
+            // options : begin
+            .b-options {
+                @include justifyBlocks;
+                text-align: center;
+
+                // one option
+                .one-option {
+                    @include span(8 of 24);
+                    @include prefix(1 of 24);
+                    @include suffix(1 of 24);
+                    margin-bottom: 32px;
+
+                    @include breakpoint($fifth-breakpoint){
+                        @include span(12 of 24);
+                    }
+
+                    @include breakpoint($sixth-breakpoint){
+                        @include span(24 of 24);
+                    }
+
+                    h3 {
+                        color: #3b3d40;
+                        font-family: $secondary-font;
+                        font-size: 12px;
+                        font-weight: 700;
+                        line-height: 1.2em;
+                        text-transform: uppercase;
+                        letter-spacing: 0.2em;
+                        margin-bottom: 17px;
+                        margin-top: 0;
+                    }
+
+                    p {
+                        color: #656b6f;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 1.33em;
+                    }
+                }
+            }
+            // options : end
+        }
+    }
+    // default : end
+}

@@ -1,0 +1,36 @@
+// IMPORT SASS
+
+// HELPERS
+@import "helpers/_variables";           // Sass Variables
+@import "helpers/_functions";           // Sass Functions 
+@import "helpers/_mixins";              // Sass Mixins
+@import "helpers/_helpers";             // Class & placeholders helpers 
+
+// BASE
+@import "base/_normalize";              // Reset/normalize
+@import "base/_typography";             // Typography rules
+
+// COMPONENTS
+@import "components/_buttons";          // Buttons
+@import "components/_navigation";       // Navigation
+
+// LAYOUT
+@import "layout/_footer";               // Footer
+@import "layout/_forms";                // Forms
+@import "layout/_grid";                 // Grid system
+@import "layout/_header";               // Header
+@import "layout/_banner-page";          // Banner
+@import "layout/_test";                 // Test block
+@import "layout/_answers-the-question"; // Answer the question block
+@import "layout/_stages-and-signs";     // Stages and signs
+@import "layout/_doctor";               // Doctor
+@import "layout/_profit";               // Profit
+@import "layout/_questionnaire";        // Questionnaire
+@import "layout/_map";                  // Map
+@import "layout/_feedback-form";        // Feedback Form
+
+// PAGES
+@import "pages/_home";                  // Home page
+
+// VENDORS
+// @import ""; //

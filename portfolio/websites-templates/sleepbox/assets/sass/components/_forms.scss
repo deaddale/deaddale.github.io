@@ -1,0 +1,111 @@
+input[type="hidden"]{
+	width: 0 !important;
+	height: 0 !important;
+	border: none !important;
+	outline: none !important;
+}
+@mixin defaultInput ($placeholderColor: white){
+	width: 100%;
+	padding: 9px 17px 8px;
+	box-sizing: border-box;
+	outline: none;
+	line-height: normal;
+	display: block;
+	transition: all 0.24s ease-out;
+	background: transparent;
+	border-radius: 3px;
+	border: 1px #8f8c8a solid;
+	color: white;
+	font-family: $lightFont;
+	font-size: 17px;
+	font-weight: normal;
+	margin-bottom: 12px;
+
+	&:focus{
+		transition: all 0.24s ease;
+		border: 1px #fff solid;
+	}
+
+	&.error{
+		border-color: #f03e3e !important;
+		transition: all 0.24s ease;
+	}
+
+	&::-webkit-input-placeholder { color: $placeholderColor; }
+	&::-moz-placeholder{ color: $placeholderColor; } // Firefox 19+
+	&:-moz-placeholder{ color: $placeholderColor; } // Firefox 18-
+	&:-ms-input-placeholder{ color: $placeholderColor; }
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"] {
+	@include defaultInput;
+}
+
+textarea {
+	width: 100%;
+	box-sizing: border-box;
+	outline: none;
+	display: block;
+	line-height: 1;
+	resize: vertical;
+
+	// &::-webkit-input-placeholder {color: $placeholderColor;}
+	// &::-moz-placeholder          {color: $placeholderColor;} // Firefox 19+
+	// &:-moz-placeholder           {color: $placeholderColor;} // Firefox 18-
+	// &:-ms-input-placeholder      {color: $placeholderColor;}
+
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	    	appearance: none;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+	outline: 0;
+}
+
+input[type="email"].error,
+input[type="number"].error,
+input[type="search"].error,
+input[type="text"].error,
+input[type="tel"].error,
+input[type="url"].error,
+input[type="password"].error,
+textarea.error {
+	outline: 0;
+}
+
+input[type="submit"]{
+	@include default-btn;
+}
+
+label,
+legend {
+	display: block;
+}
+
+fieldset {
+	padding: 0;
+	border-width: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	display: inline;
+}
+
+
+
+

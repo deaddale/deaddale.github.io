@@ -1,0 +1,137 @@
+.b-nav {
+    // primary : begin
+    &.primary{
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 675px;
+            @include justifyBlocks;
+
+            li{
+                margin: 0;
+                padding: 0;
+                display: inline-block;
+                position: relative;
+
+                a{
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 1;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    letter-spacing: 0.05em;
+                    transition: all 0.2s linear;
+
+                    &:hover{
+                        color: #f7d180;
+                        transition: all 0.2s linear;
+                    }
+                }
+
+                &.active{
+                    &:after{
+                        content: '';
+                        display: block;
+                        width: 100%;
+                        height: 2px;
+                        background-color: #f7d180;
+                        position: absolute;
+                        left: 0;
+                        bottom: -7px;
+                    }
+
+                    a{
+                        color: #f7d180;
+                    }
+                }
+            }
+        }
+    }
+    // primary : end
+
+    // secondary : begin
+    &.secondary{
+        > ul{
+            position: absolute;
+            right: 100%;
+            top: 57px;
+            display: none;
+            background: rgba(#251210, 0.9);
+            margin: 0 -10px 0 0;
+            padding: 32px 40px 40px 30px;
+            list-style: none;
+
+            &:before{
+                content: '';
+                display: block;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 0 20px 20px;
+                border-color: transparent transparent rgba(#251210, 0.9) transparent;
+                position: absolute;
+                right: 0;
+                top: -20px;
+                transition: top 0.1s ease-out;
+            }
+
+            > li{
+                margin: 0 0 28px;
+                padding: 0;
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+
+                > div{
+                    color: #a89b97;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    display: inline-block;
+                    margin-bottom: 20px;
+                    white-space: nowrap;
+                    letter-spacing: 0.05em;
+                }
+
+                ul{
+                    margin: 0 0 0 23px;
+                    padding: 0;
+                    list-style: none;
+
+                    li{
+                        margin: 0 0 6px;
+                        padding: 0;
+                        list-style: none;
+
+                        a{
+                            color: white;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 1;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            white-space: nowrap;
+                            letter-spacing: 0.05em;
+
+                            &:hover{
+                                color: #f7d182;
+                            }
+                        }
+                    }
+
+                    &.active{
+                        a{
+                            color: #f7d182;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // secondary : end
+}

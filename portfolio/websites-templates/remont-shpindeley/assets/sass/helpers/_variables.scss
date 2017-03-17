@@ -1,0 +1,32 @@
+// SUSY
+$susy: (
+	flow: ltr,
+	math: fluid,
+	column-width: 68px,
+	output: float,
+	gutter-position: after,
+	container: 926px,
+	container-position: center,
+	columns: 12,
+	gutters: 0.1470588,
+	global-box-sizing: border-box,
+	last-flow: to,
+	debug: (
+		image: hide,
+		color: rgba(#66f, .25),
+		output: background,
+		toggle: top right,
+	),
+	use-custom: (
+		background-image: true,
+		background-options: false,
+		box-sizing: true,
+		clearfix: false,
+		rem: true,
+	)	
+);
+
+// FONTS
+$defaultFont : 'Exo 2', sans-serif;
+$specialFont : 'Open Sans', sans-serif;
+

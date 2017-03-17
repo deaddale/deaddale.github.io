@@ -1,0 +1,275 @@
+.b-header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1060;
+    background: -moz-linear-gradient(90deg, rgba(57,30,26,0.5) 0%, rgba(15,5,5,0.5) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(15,5,5,0.5)), color-stop(100%, rgba(57,30,26,0.5))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(90deg, rgba(57,30,26,0.5) 0%, rgba(15,5,5,0.5) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(90deg, rgba(57,30,26,0.5) 0%, rgba(15,5,5,0.5) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(90deg, rgba(57,30,26,0.5) 0%, rgba(15,5,5,0.5) 100%); /* ie10+ */
+    background: linear-gradient(0deg, rgba(57,30,26,0.5) 0%, rgba(15,5,5,0.5) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0505', endColorstr='#391e1a',GradientType=0 ); /* ie6-9 */
+
+    > div{
+        // one column : begin
+        .one-col{
+            @include clearfix;
+            height: 104px;
+            position: relative;
+            transition: height 0.1s linear;
+
+            &:first-child{
+                @include span(2 of 12);
+            }
+
+            &:last-child{
+                @include span(10 of 12);
+            }
+
+            // logotype
+            .logo{
+                display: block;
+                width: 141px;
+                height: 52px;
+                background: url("../images/sources/icons/icon-logo.svg") 0 0 no-repeat;
+                background-size: contain;
+                @include vertical-center;
+                transition: all 0.2s linear;
+            }
+
+            // primary navigation
+            .b-nav.primary{
+                float: left;
+                z-index: 1;
+                @include vertical-center;
+            }
+
+            // search block : begin
+            .search{
+                @include vertical-center;
+                position: absolute;
+                left: 0;
+                z-index: 0;
+                width: 779px;
+                margin-left: 34px;
+
+                // search form
+                .search-form{
+                    position: relative;
+                    display: block;
+                    margin: 0;
+                    padding: 0;
+                    height: 30px;
+
+                    // icon close
+                    .icon-close{
+                        @include sprite($icon-close-mini);
+                        position: absolute;
+                        left: -29px;
+                        top: 5px;
+                        cursor: pointer;
+                        display: none;
+                    }
+
+                    // input text
+                    input[type="text"]{
+                        width: 0;
+                        padding: 5px 0;
+                        line-height: normal;
+                        font-family: $secondary-font;
+                        color: #a0844a;
+                        font-size: 14px;
+                        display: block;
+                        float: right;
+                        border: 1px transparent solid;
+                        background-color: transparent;
+                        transition: width 0.8s ease, border 0.8s linear, background 1s linear;
+                    }
+
+                    // button/input submit : begin
+                    .button,
+                    input[type="submit"]{
+                        @include sprite($icon-search);
+                        border: none;
+                        outline: none;
+                        background-color: transparent;
+                        @include vertical-center;
+                        position: absolute;
+                        cursor: pointer;
+                        right: 9px;
+
+                        &:hover{
+                            @include sprite($icon-search-hover);
+                        }
+
+                        &:active{
+                            border: none;
+                            outline: none;
+                        }
+
+                        &.invisible{
+                            display: none;
+                        }
+                    }
+                    input[type="submit"]{
+                        display: none;
+
+                        &.active{
+                            display: block;
+                        }
+                    }
+                    // button/input submit : end
+
+                    &.active{
+                        display: block;
+                        z-index: 1;
+
+                        input[type="text"]{
+                            width: 100%;
+                            box-sizing: border-box;
+                            outline: none;
+                            display: block;
+                            border: 1px solid #a0844a;
+                            position: relative;
+                            right: 0;
+                            padding: 5px 11px;
+                            transition: width 1s ease;
+
+                            &:focus{
+                                outline: none;
+                                transition: all 0.24s ease;
+                            }
+
+                            &::-webkit-input-placeholder {color: #a0844a;}
+                            &::-moz-placeholder          {color: #a0844a;} // Firefox 19+
+                            &:-moz-placeholder           {color: #a0844a;} // Firefox 18-
+                            &:-ms-input-placeholder      {color: #a0844a;}
+                        }
+
+                        input[type="submit"]{
+                            @include sprite($icon-search-hover);
+                        }
+                    }
+                }
+            }
+            // search block : end
+
+            // button basket
+            .basket{
+                @include vertical-center;
+                float: right;
+                font-size: 0;
+                line-height: 0;
+                margin-right: 46px;
+
+                // btn basket
+                .btn-basket{
+                    @include sprite($icon-basket-empty);
+                    cursor: pointer;
+                    display: inline-block;
+                    vertical-align: middle;
+
+                    &:hover {
+                        @include sprite($icon-basket-empty-hover);
+                    }
+                }
+
+                // number
+                span{
+                    display: none;
+                    vertical-align: middle;
+                    border-radius: 50%;
+                    text-align: center;
+                    color: #140807;
+                    font-size: 14px;
+                    line-height: 24px;
+                    width: 24px;
+                    height: 24px;
+                    background-color: #f7d182;
+                    margin-left: 5px;
+                }
+
+                // full basket
+                &.full{
+                    margin-right: 31px;
+
+                    // btn basket
+                    .btn-basket{
+                        @include sprite($icon-basket-full);
+
+                        &:hover{
+                            @include sprite($icon-basket-full-hover);
+                        }
+                    }
+
+                    // number
+                    span{
+                        display: inline-block;
+                    }
+                }
+            }
+
+            // secondary navigation
+            .b-nav.secondary{
+                @include vertical-center;
+                float: right;
+
+                // button secondary nav
+                .btn-sec-nav{
+                    @include sprite($icon-nav);
+                    cursor: pointer;
+
+                    &:hover{
+                        @include sprite($icon-nav-hover);
+                    }
+                }
+
+                // list of links : begin
+                > ul{}
+                // list of links : end
+            }
+        }
+        // one column : end
+    }
+
+    // fixed status
+    &.fixed{
+        > div{
+            .one-col{
+                height: 53px;
+                transition: height 0.4s linear;
+
+                // logotype
+                .logo{
+                    transform: scale(0.68, 0.68) translateY(0);
+                    top: 0;
+                    left: -22px;
+                    transition: all 0.2s linear;
+                }
+
+                .b-nav{
+                    // primary navigation
+                    &.primary{
+                        ul{
+                            li{
+                                a{
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                    }
+
+                    // secondary navigation
+                    &.secondary{
+                        // list of links
+                        > ul{
+                            top: 41px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

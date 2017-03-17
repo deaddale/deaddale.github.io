@@ -1,0 +1,91 @@
+input[type="hidden"]{
+	width: 0 !important;
+	height: 0 !important;
+	border: none !important;
+	outline: none !important;
+}
+@mixin defaultInput ($placeholderColor: #9a9a9a){
+	width: 100%;
+	box-sizing: border-box;
+	outline: none;
+	display: block;
+	line-height: normal;
+	transition: all 0.24s ease-out;
+	padding: 0 11px;
+	height: 32px;
+	background-color: white;
+	border: 1px solid #e0e0e0;
+	color: #010101;
+	font-size: 13px;
+	font-weight: 400;
+	margin-bottom: 8px;
+
+	&:focus{
+		outline: none;
+		transition: all 0.24s ease;
+	}
+
+	&.error{ border-color: red; }
+
+	&::-webkit-input-placeholder {color: $placeholderColor;}
+	&::-moz-placeholder          {color: $placeholderColor;} // Firefox 19+
+	&:-moz-placeholder           {color: $placeholderColor;} // Firefox 18-
+	&:-ms-input-placeholder      {color: $placeholderColor;}
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"] {
+	@include defaultInput;
+}
+
+textarea {
+	width: 100%;
+	box-sizing: border-box;
+	outline: none;
+	display: block;
+	line-height: 1;
+	resize: vertical;
+	padding: 9px 11px 0;
+	height: 32px;
+	background-color: white;
+	border: 1px solid #e0e0e0;
+	color: #010101;
+	font-size: 13px;
+	font-weight: 400;
+	margin-bottom: 8px;
+
+	&.error{ border-color: red; }
+
+	&::-webkit-input-placeholder {color: #9a9a9a;}
+	&::-moz-placeholder          {color: #9a9a9a;} // Firefox 19+
+	&:-moz-placeholder           {color: #9a9a9a;} // Firefox 18-
+	&:-ms-input-placeholder      {color: #9a9a9a;}
+
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	    	appearance: none;
+}
+
+label,
+legend {
+	display: block;
+}
+
+fieldset {
+	padding: 0;
+	border-width: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	display: inline;
+}
+
+
+
+

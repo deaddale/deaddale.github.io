@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Контакты - Декорация</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<!-- Mobile Specific Metas -->
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+<!-- jQuery 1.7.2 -->
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+
+<!-- jQuery UI 1.8.21 -->
+<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- Meta tags -->
+<!-- Base CSS -->
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+
+<!-- Google Map -->
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+<!-- Инициализация карты и добавления параметров к блоку со скроллом -->
+<script type="text/javascript" src="js/contacts.js"></script>
+
+<!-- Модальное окно с контентом + внутренний скролл -->
+<link type="text/css" rel="stylesheet" href="css/jquery.jscrollpane.css"/>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/jquery.jscrollpane.js"></script>
+</head>
+
+
+<body onload="initialize()">
+<!-- WRAPPER:begin -->
+<div id="wrapper">
+
+    <!-- HEADER:begin -->
+    <div id="header">
+        <a href="index.html" id="logotype" title=""></a>
+        <ul id="nav">
+            <li class="first"><a href="about_us.html" title="">О студии</a></li>
+            <li><a href="portfolio.html" title="">Портфолио</a></li>
+            <li><a href="materials.html" title="">Материалы</a></li>
+            <li><a href="partners.html" title="">Партнеры</a></li>
+            <li class="active last"><a href="contacts.html" title="">Контакты</a></li>
+        </ul>
+    </div>
+    <!-- HEADER:end -->
+
+    <!-- CONTENT:begin -->
+    <div id="content_contacts_page">
+        <!-- information about managers:begin -->
+        <div id="info_contacts_wrapper">
+            <div id="info_contacts_inner">
+                <div id="info_contacts_content">
+                    <table>
+                        <tr>
+                            <th class="top_empty_cell"></th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th colspan="2">
+                                <div>Адрес: 170000, Тверь, ул. Симеоновская, 7<br/>Телефон: (4822) 33-95-02</div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images/content/persons/krilova_n_person.png" alt="">
+                            </td>
+                            <td>
+                                <div class="name">Крылова<br/>Надежда Николаевна</div>
+                                <div class="post">Генеральный директор</div>
+                            </td>
+                            <td>
+                                <div class="tel">+7-910-937-7887</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images/content/persons/assonov_person.png" alt="">
+                            </td>
+                            <td>
+                                <div class="name">Ассонов<br/>Геннадий Юрьевич</div>
+                                <div class="post">Заместитель генерального<br/>директора по развитию</div>
+                            </td>
+                            <td>
+                                <div class="tel">+7-961-017-28-28</div>
+                                <div><a href="mailto:gena-assonov@mail.ru" title="">gena-assonov@mail.ru</a></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images/content/persons/krilova_a_person.png" alt="">
+                            </td>
+                            <td>
+                                <div class="name">Крылова<br/>Анастасия Олеговна</div>
+                                <div class="post">Арт-директор</div>
+                            </td>
+                            <td>
+                                <div class="tel">+7-961-017-28-28</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- information about managers:end -->
+
+        <!-- Google map -->
+        <div id="map_canvas"></div>
+    </div>
+    <!-- CONTENT:end -->
+
+    <!-- BOTTOM BLOCK:begin -->
+    <div id="bottom_block">
+        <div id="content_bottom_typical_page">
+        </div>
+
+        <!-- footer:begin -->
+        <div id="footer">
+            <div id="copyright">2012 &copy; Студия дизайна «Декорация»<br>Все авторские права защищены.</div>
+            <div id="contact_number_and_email">
+                <div>(4822) 33-95-02</div>
+                <a href="mailto:info@decoracya.com" title="info@decoracya.com">info@decoracya.com</a>
+            </div>  
+            <div id="social_services">
+                <a href="#" title="" id="vk"></a>
+                <a href="#" title="" id="odnoklassniki"></a>
+                <a href="#" title="" id="facebook"></a>
+            </div>
+            <div id="development_and_design">
+                <a href="http://wbb-russia.com/" title="">Дизайн и создание сайта<br>WBB-Russia</a>
+            </div>
+        </div>
+        <!-- footer:end -->
+    </div>
+    <!-- BOTTOM BLOCK:end -->
+</div>
+<!-- WRAPPER:end -->
+</body>
+</html>

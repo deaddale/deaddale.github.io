@@ -1,0 +1,76 @@
+.b-sidebar {
+    padding-left: 61px;
+
+    // one preview : begin
+    .one-preview{
+        text-align: center;
+        position: relative;
+        margin-bottom: 57px;
+        min-height: 348px;
+        overflow: hidden;
+
+        // gradient
+        &:before{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 221px;
+            background-image: linear-gradient(to top, #371d1a 0%, transparent 100%);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        h3{
+            color: white;
+            font-size: 24px;
+            font-weight: 300;
+            text-transform: uppercase;
+            line-height: 1.2;
+            text-align: center;
+            position: absolute;
+            bottom: 96px;
+            width: 100%;
+            z-index: 2;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .b-button{
+            @include horizontal-center;
+            position: absolute;
+            bottom: 23px;
+            z-index: 2;
+        }
+
+        img{
+            // set rules to fill background
+            min-height: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            display: block;
+
+            // set up proportionate scaling
+            width: 100%;
+            height: auto;
+
+            // set up positioning
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+
+            // scale
+            transform: scale(1);
+            transition: transform 0.4s ease-in;
+        }
+
+        &:hover{
+            img {
+                transform: scale(1.02);
+                transition: transform 0.5s ease-out;
+            }
+        }
+    }
+    // one preview : end
+}

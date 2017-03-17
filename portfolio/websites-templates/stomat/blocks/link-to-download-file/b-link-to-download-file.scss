@@ -1,0 +1,48 @@
+.b-link-to-download-file{
+    margin-bottom: 35px;
+    margin-top: 35px;
+
+    @include breakpoint($first-breakpoint){
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    // one link : begin
+    .one-link{
+        margin-bottom: 28px;
+
+        // icon
+        .b-icon{
+            display: inline-block;
+            margin-right: 12px;
+            vertical-align: top;
+        }
+
+        // link
+        span{
+            font-weight: 400;
+            line-height: 1.44;
+            display: inline-block;
+            vertical-align: top;
+
+            a{
+                line-height: 1.625em;
+                color: #2e71f2;
+                font-size: 18px;
+                text-decoration: underline;
+
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+
+            i{
+                font-style: normal;
+                color: #3b3d40;
+                font-size: 16px;
+                display: block;
+            }
+        }
+    }
+    // one link : end
+}

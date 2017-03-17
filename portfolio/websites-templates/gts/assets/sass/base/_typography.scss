@@ -1,0 +1,227 @@
+// LatoRegular
+@font-face {
+    font-family: "LatoRegular";
+    src: url("../../fonts/LatoRegular/LatoRegular.eot");
+    src: url("../../fonts/LatoRegular/LatoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/LatoRegular/LatoRegular.woff") format("woff"),
+    url("../../fonts/LatoRegular/LatoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+// LatoBold
+@font-face {
+    font-family: "LatoBold";
+    src: url("../../fonts/LatoBold/LatoBold.eot");
+    src: url("../../fonts/LatoBold/LatoBold.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/LatoBold/LatoBold.woff") format("woff"),
+    url("../../fonts/LatoBold/LatoBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+// LatoItalic
+@font-face {
+    font-family: "LatoItalic";
+    src: url("../../fonts/LatoItalic/LatoItalic.eot");
+    src: url("../../fonts/LatoItalic/LatoItalic.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/LatoItalic/LatoItalic.woff") format("woff"),
+    url("../../fonts/LatoItalic/LatoItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+// LatoLight
+@font-face {
+    font-family: "LatoLight";
+    src: url("../../fonts/LatoLight/LatoLight.eot");
+    src: url("../../fonts/LatoLight/LatoLight.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/LatoLight/LatoLight.woff") format("woff"),
+    url("../../fonts/LatoLight/LatoLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+// LatoBoldItalic
+@font-face {
+    font-family: "LatoBoldItalic";
+    src: url("../../fonts/LatoBoldItalic/LatoBoldItalic.eot");
+    src: url("../../fonts/LatoBoldItalic/LatoBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/LatoBoldItalic/LatoBoldItalic.woff") format("woff"),
+    url("../../fonts/LatoBoldItalic/LatoBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+// LatoLightItalic
+@font-face {
+    font-family: "LatoLightItalic";
+    src: url("../../fonts/LatoLightItalic/LatoLightItalic.eot");
+    src: url("../../fonts/LatoLightItalic/LatoLightItalic.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/LatoLightItalic/LatoLightItalic.woff") format("woff"),
+    url("../../fonts/LatoLightItalic/LatoLightItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+body{
+    color: map-get(map-get($color-palettes, grey), base);
+	font-size: $base__font-size;
+	font-family: $font-regular;
+	line-height: ($base__line/$base__font-size);
+	text-rendering: optimizeLegibility;
+	-webkit-text-rendering: optimizeLegibility;
+}
+
+// h1-h6 titles : begin
+%hdln-prim {
+	color: map-get(map-get($color-palettes, grey), x-dark);
+	font-family: $font-regular;
+	font-size: 42px;
+	line-height: (46px/42px);
+	font-weight: normal;
+	margin: 0 0 $base__line;
+}
+
+%hdln-sec {
+	color: map-get(map-get($color-palettes, grey), light);
+	letter-spacing: $letter-space;
+	font-size: 24px;
+	font-family: $font-light;
+	font-weight: normal;
+	margin: 0 0 ($base__line);
+}
+
+h1{
+	@extend %hdln-prim;
+    
+    > a{
+        color: inherit;
+    }
+}
+
+h2, h3, h4, h5, h6{
+	@extend %hdln-sec;
+    
+    > a{
+        color: inherit;
+    }
+}
+
+// text (link, bold, italic)
+
+p{
+    margin: 0 0 24px;
+    color: map-get(map-get($color-palettes, grey), x-dark);
+
+	b{
+		font-weight: normal;
+		font-family: $font-bold;
+	}
+
+	i{
+		font-style: normal;
+		font-family: $font-italic;
+	}
+
+    b > i,
+    i > b{
+        font-family: $font-italic;
+    }
+}
+
+// links
+
+a{
+	color: map-get(map-get($color-palettes, grey), dark);
+
+	&:hover{
+	}
+
+	&:active{
+	}
+
+	&:visited{
+	}
+}
+
+// bulleted list
+
+ul{
+    color: map-get(map-get($color-palettes, grey), x-dark);
+    margin: 0 0 24px;
+
+	li{
+	}
+}
+
+// numbered list
+
+ol{
+    color: map-get(map-get($color-palettes, grey), x-dark);
+    margin: 0 0 24px;
+
+	li{
+	}
+}
+
+// table
+
+table{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 24px; padding: 0;
+
+    // header table
+    thead{
+
+        tr{
+
+            th{
+                background: map-get(map-get($color-palettes, grey), light);
+                padding: 12px 10px;
+                color: #fff;
+                font-size: 80%;
+                font-weight: normal;
+                line-height: 1.2;
+                white-space: nowrap;
+                text-align: left;
+                vertical-align: middle;
+
+                &:first-child{
+                    border-radius: $br--default 0 0 0;
+                }
+                &:last-child{
+                    border-radius: 0 $br--default 0 0;
+                }
+            }
+        }
+    }
+
+    // content table
+    tbody{
+
+        tr{
+
+            td{
+                border-bottom: 1px map-get(map-get($color-palettes, grey), xx-light) solid;
+                text-align: left;
+                font-size: 80%;
+                padding: 10px;
+                line-height: 1.2;
+                vertical-align: middle;
+                transition: all $trns-duration linear;
+            }
+
+            &:hover{
+                td{
+                    transition: all $trns-duration linear;
+                    color: map-get(map-get($color-palettes, grey), x-dark);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

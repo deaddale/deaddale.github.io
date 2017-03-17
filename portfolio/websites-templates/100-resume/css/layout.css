@@ -1,0 +1,737 @@
+/* Table of Content
+==================================================
+	#Site Styles
+	#Font-face */
+
+/* #Site Styles
+================================================== */
+/* HEADER:begin */
+header{
+	background: #fff;
+	width: 100%;
+	height: 114px;
+	box-shadow: 0 3px 11px rgba(208, 209, 213, 0.9);
+}
+	.fixed{
+		position: fixed;
+		top: 0;
+		z-index: 300;
+	}
+
+	/* logotype */
+	header .logotype{
+		display: block;
+		margin: 22px 0 0 0;
+		float: left;
+		width: 322px;
+		height: 70px;
+	}
+		header .logotype img{
+			display: block;
+			cursor: pointer;
+		}
+
+	/* navigation */
+	header nav{
+		float: right;
+		margin: 49px 0 0 0;
+	}
+		header nav span{
+			margin: 0 0 0 14px;
+			text-transform: uppercase;
+			color: #277cbd;
+			font: 18px/1.1875em 'PFDinTextCondPro-Medium', sans-serif;
+			border-bottom: 1px #277cbd solid;
+			cursor: pointer;
+		}
+		header nav span:hover{
+			border-bottom: 0;
+		}
+		header nav span.active{
+			border-bottom: none;
+		}
+		header nav span:first-child{
+			margin-left: 0;
+		}
+/* HEADER:end */
+
+/* CONTENT:begin */
+section{}
+	
+	/* top information:begin */
+	.top_info{
+		height: 384px;
+		background: url(../images/bgs/bg_top_content.png) repeat-x 0 0;
+	}
+		.top_info > div{
+			height: 384px;
+			background: url(../images/bgs/bg_woman.png) no-repeat 50px bottom;
+			position: relative;
+		}	
+
+			/* cloud text */
+			.top_info .cloud_text{
+				font: 22px/28px 'PFDinTextCondPro-Regular', sans-serif;
+				color: #454545;
+				position: absolute;
+				left: 253px;
+				top: 90px;
+				text-shadow: 1px 1px 1px rgba(55,55,55,0.1);
+			}
+
+			/* сlick_link */
+			.top_info .click_link{
+				font: 16px/1.1875em 'SegoeUI-Bold', sans-serif;
+				color: #3173ca;
+				border-bottom: 1px #3173ca dashed;
+				display: inline-block;
+				cursor: pointer;
+				position: absolute;
+				left: 254px;
+				top: 180px;
+				display: block;
+				text-decoration: none;
+			}
+			.top_info .click_link:hover{
+				border-bottom: 0;
+			}
+
+			/* block call expert */
+			.top_info .block_call_expert{
+				text-align: right;
+				display: inline-block;
+				position: absolute;
+				right: 0;
+				top: 72px;
+			}
+				.top_info .block_call_expert div:first-child{
+					font: 40px/48px 'PFDinTextCondPro-Regular', sans-serif;
+					color: #e57811;
+					text-shadow: 0 1px 1px rgba(255,255,255,0.6);
+				}
+					.top_info .block_call_expert div:first-child span{
+						font-size: 25px;
+						color: #7d7d7d;
+					}
+				.top_info .block_call_expert .button{}
+
+			/* buttons */
+			.top_info .buttons{
+				display: block;
+				position: absolute;
+				right: 70px;
+				top: 261px;
+				width: 505px;
+			}
+				.top_info .buttons .bg_blue{
+					display: block;
+					float: left;
+				}
+				.top_info .buttons span{
+					color: #919191;
+					display: block;
+					float: left;
+					font-size: 13px;
+					height: 50px;
+					line-height: 50px;
+					text-align: center;
+					text-shadow: 0 1px 1px rgba(255,255,255,0.6);
+					width: 75px;
+				}
+				.top_info .buttons .bg_orange{
+					display: block;
+					float: left;
+				}
+		.top_info > .bg_curved_white{
+			background: url(../images/bgs/bg_curved_white.png) no-repeat center bottom;
+			width: 100%; height: 19px;
+			margin: -19px 0 0 0;
+		}
+	/* top information:end */
+
+	/* why me:begin */
+	.why_me{
+		text-align: center;
+		margin: 0 0 27px;
+	}
+
+		/* text */
+		.why_me .title{
+			color: #e57811;
+			font: 24px/28px 'PFDinTextCondPro-Medium', sans-serif;
+			margin: 34px 0 8px 0;
+			text-transform: uppercase;
+		}
+		.why_me p{
+			color: #3e3e3e;
+			font: 16px/24px 'SegoeUI', sans-serif;
+			margin: 0 0 29px;
+		}
+
+		/* button */
+		.why_me .button{
+			margin: 0 0 12px;
+		}
+		.why_me div:nth-of-type(2){
+			font: 15px/30px 'PFDinTextCondPro-Regular', sans-serif;
+			color: #7d7d7d;
+		}
+		/*.why_me div:nth-of-type(3){
+			font: 15px/1.1875em 'PFDinTextCondPro-Regular', sans-serif;
+			color: #7d7d7d;
+		}*/
+		.why_me div:nth-of-type(3){
+			font: 40px/48px 'PFDinTextCondPro-Regular', sans-serif;
+			color: #e57811;
+			text-shadow: 0 1px 1px rgba(255,255,255,0.6);
+		}
+			.why_me div:nth-of-type(3) span{
+				font-size: 25px;
+				color: #7d7d7d;
+			}
+	/* why me:end */
+
+	/* guarantees and benefits:begin */
+	.guarantees_and_benefits{
+		padding: 0 0 13px;
+		background: url(../images/bgs/bg_wave_1.png) left bottom repeat-x;
+	}
+		.guarantees_and_benefits > div{
+			margin-bottom: 52px;
+			border: 1px #6fa8d3 dashed;
+			background: #ffffff; /* Old browsers */
+			background: -moz-linear-gradient(top,  #ffffff 0%, #ecf4f5 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ecf4f5)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #ffffff 0%,#ecf4f5 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #ffffff 0%,#ecf4f5 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #ffffff 0%,#ecf4f5 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #ffffff 0%,#ecf4f5 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ecf4f5',GradientType=0 ); /* IE6-9 */
+		}
+
+			/* text */
+			.guarantees_and_benefits .title{
+				color: #277cbd;
+				font: 24px/28px 'PFDinTextCondPro-Medium', sans-serif;
+				text-transform: uppercase;
+				text-align: center;
+				background: #fff;
+				margin: -15px auto 5px auto;
+				width: 242px;
+			}
+			.guarantees_and_benefits .descr{
+				font: 18px/28px 'SegoeUI-Italic', sans-serif;
+				color: #3c3c3c;
+				text-align: center;
+			}
+
+			/* blocks */
+			.guarantees_and_benefits .info_block{
+				padding: 165px 0 0 0;
+			}
+			.guarantees_and_benefits .info_block:nth-of-type(3){
+				background: url(../images/icons/icon_warranty.png) center 26px no-repeat;
+			}
+			.guarantees_and_benefits .info_block:nth-of-type(4){
+				background: url(../images/icons/icon_purse.png) center 26px no-repeat;
+			}
+			.guarantees_and_benefits .info_block:nth-of-type(5){
+				background: url(../images/icons/icon_watch.png) center 26px no-repeat;
+			}
+				.guarantees_and_benefits .info_block div{
+					width: 220px;
+					padding: 0 0 0 50px;
+					font: 13px/17px 'SegoeUI-Bold', sans-serif;
+					color: #277cbd;
+					text-transform: uppercase;
+				}
+				.guarantees_and_benefits .info_block:nth-of-type(4) div, .guarantees_and_benefits .info_block:nth-of-type(4) div{
+					padding-left: 65px;
+				}
+				.guarantees_and_benefits .info_block p{
+					width: 220px;
+					padding: 0 0 0 50px;
+					font: 14px/17px 'SegoeUI', sans-serif;
+				}
+				.guarantees_and_benefits .info_block:nth-of-type(4) p, .guarantees_and_benefits .info_block:nth-of-type(4) p{
+					padding-left: 65px;
+				}
+	/* guarantees and benefits:end */
+
+	/* how it work:begin */
+	.how_it_work{
+		background: url(../images/bgs/bg_how_it_work.png) repeat 0 0;
+		border-bottom: 1px #acb4b8 dotted;
+	}
+
+		/* title */
+		.how_it_work .title{
+			color: #e57811;
+			font: 24px/28px 'PFDinTextCondPro-Medium', sans-serif;
+			/*margin: 34px 0 8px 0;*/
+			text-transform: uppercase;
+			text-align: center;
+			margin: 15px 0 32px;
+		}
+
+		/* blocks */
+		.how_it_work .clearfix{
+			padding: 0 0 34px;
+			background: url(../images/bgs/bg_orange_line_how_it_work.png) center bottom no-repeat;
+		}
+			.how_it_work .clearfix div{}
+				.how_it_work .clearfix div p:nth-of-type(1){
+					font: 13px/17px 'SegoeUI-Bold', sans-serif;
+					color: #277cbd;
+					text-transform: uppercase;
+					text-align: left;
+					margin: 0;
+				}
+				.how_it_work .clearfix div p:nth-of-type(2){
+					font: 14px/17px 'SegoeUI', sans-serif;
+					color: #3e3e3e;
+					margin: 0;
+				}
+
+		/* subtitle */
+		.how_it_work .subtitle{
+			font: 23px/28px 'PFDinTextCondPro-Medium', sans-serif;
+			color: #277cbd;
+			text-align: center;
+			text-transform: uppercase;
+			margin: 22px 0 6px;
+		}
+
+		/* list */
+		.how_it_work ul{
+			list-style: none;
+			margin: 0 0 24px 52px;
+		}
+			.how_it_work ul li{
+				font: 16px/30px 'SegoeUI', sans-serif;
+				color: #414141;
+				background: url(../images/markers_list/marker_item_orange.png) no-repeat left center;
+				padding: 0 0 0 32px;
+				margin: 0;
+			}
+	/* how it work:end */
+
+	/* selected package summary:begin */
+	.selected_package_summary{
+		padding: 0 0 35px;
+		background:	#f9f9f9 url(../images/bgs/bg_wave_2.png) left bottom repeat-x;
+	}
+
+		/* discount */
+		.selected_package_summary .discount{
+			font: 14px/18px 'SegoeUI-Bold', sans-serif;
+			color: #ee3208;
+			text-transform: uppercase;
+			background: url(../images/icons/icon_discount.png) left center no-repeat;
+			padding: 0 0 0 83px;
+			min-height: 47px;
+			width: 428px;
+			margin: 36px auto 27px;
+		}
+			.selected_package_summary .discount span{
+				font-size: 24px;
+				font-family: 'SegoeUI-BoldItalic', sans-serif;
+			}
+
+		/* title */
+		.selected_package_summary .title{
+			color: #e57811;
+			font: 24px/28px 'PFDinTextCondPro-Medium', sans-serif;
+			text-transform: uppercase;
+			text-align: center;
+			margin: 15px 0 22px;
+		}
+
+		/* text */
+		.selected_package_summary .text{
+			font: 14px/18px 'SegoeUI', sans-serif;
+			color: #3e3e3e;
+			width: 780px;
+			margin: 0 auto 21px;
+		}
+
+		/* blocks */
+		.selected_package_summary .info_block{
+			background: url(../images/other/shadow_vertical.png) 18px 55px no-repeat;
+		}
+		.selected_package_summary .info_block:nth-of-type(3){
+			background: none;
+		}
+			.selected_package_summary .info_block div:nth-of-type(1){
+				font: 13px/17px 'SegoeUI-Bold', sans-serif;
+				color: #277cbd;
+				text-transform: uppercase;
+				text-align: left;
+				margin: 0 0 10px 18px;
+			}
+			.selected_package_summary .info_block ul{
+				list-style: none;
+				margin: 0; padding: 0;
+			}
+				.selected_package_summary .info_block ul li{
+					font: 12px/14px 'SegoeUI', sans-serif;
+					color: #888888;
+					background: url(../images/markers_list/marker_mini_item_orange.png) no-repeat left 2px;
+					padding: 0 0 12px 18px;
+					margin: 0;
+				}
+			.selected_package_summary .info_block p{
+				font: 12px/14px 'SegoeUI', sans-serif;
+				color: #474747;
+				margin: 0 0 12px 18px;
+			}
+			.selected_package_summary .info_block .price_old{
+				font: 20px/29px 'PFDinTextCondPro-Regular';
+				color: #888;
+				text-decoration: line-through;
+				margin: 0 0 0 18px;
+				text-transform: uppercase;
+			}
+			.selected_package_summary .info_block .price_new{
+				font: 24px/29px 'PFDinTextCondPro-Medium';
+				color: #ee3208;
+				margin: 0 0 17px 18px;
+				text-transform: uppercase;
+			}
+			.selected_package_summary .info_block .button{
+				margin: 0 0 0 18px;
+			}
+	/* selected package summary:end */
+
+	/* our good friends:begin */
+	.our_good_friends{
+		background: #f9f9f9 url(../images/bgs/bg_wave_3.png) left bottom repeat-x;
+	}
+		.our_good_friends .title{
+			color: #e57811;
+			font: 24px/28px 'PFDinTextCondPro-Medium', sans-serif;
+			text-transform: uppercase;
+			text-align: center;
+			margin: 25px 0 20px;
+		}
+		.our_good_friends .slider_logos{
+			width: 820px;
+		}
+			.our_good_friends .slider_logos .slide{
+				display: inline-block;
+				text-align: center;
+			}
+				.our_good_friends .slider_logos .slide img{
+					display: inline-block;
+				}
+	/* our good friends:end */
+
+	/* reviews about us:begin */
+	.reviews_about_us{
+		background: #fff url(../images/bgs/bg_wave_4.png) left bottom repeat-x;
+		padding: 0 0 34px;
+	}
+		.reviews_about_us .title{
+			color: #e57811;
+			font: 24px/28px 'PFDinTextCondPro-Medium', sans-serif;
+			text-transform: uppercase;
+			text-align: center;
+			margin: 25px 0 20px;
+		}
+		.reviews_about_us .grid_5{
+			margin-bottom: 25px;
+		}
+		.reviews_about_us .grid_5 .left{
+			width: 60px; min-height: 55px;
+			background: url(../images/icons/icon_human_profile.png) 0 0 no-repeat;
+			float: left;
+		}
+		.reviews_about_us .grid_5 .right{
+			background: #ebf2fb;
+			margin-left: 60px;
+			border-radius: 7px;
+			border: 1px #eef2f6 solid;
+			padding: 15px 20px;
+		}
+			.reviews_about_us .grid_5 .right p:first-child{
+				font: 12px/14px 'SegoeUI', sans-serif;
+				color: #3d4247;
+				margin: 0 0 14px; padding: 0;
+				text-align: left;
+			}
+			.reviews_about_us .grid_5 .right p:last-child{
+				font: 12px/14px 'SegoeUI-Bold', sans-serif;
+				color: #3d4247;
+				margin: 0; padding: 0;
+				text-align: right;
+			}
+
+		.reviews_about_us .button_wrapper{
+			text-align: center;
+		}
+	/* reviews about us:end */
+
+	/* buttons:begin */
+	.buttons_bottom{
+		background: transparent;
+		border-bottom: 1px #bcc3c5 dotted;
+		padding: 35px 0;
+	}
+		.buttons_bottom .buttons_inner_wrapper{
+			width: 460px;
+			margin: 0 auto;
+		}
+			.buttons_bottom .buttons_inner_wrapper a:first-child{
+				margin-right: 17px;
+			}
+	/* buttons:end */
+
+/* CONTENT:end */
+
+/* FOOTER:begin */
+footer{
+	padding: 16px 0;
+}
+	
+	/* copyright */
+	footer .grid_8:first-child{
+		font: 12px/20px 'SegoeUI', sans-serif;
+		color: #888888;
+		text-align: left;
+	}
+
+	/* icons and dev */
+	footer .grid_8:last-child{}
+
+		/* icons */
+		footer .grid_8:last-child > div{}		
+			footer .grid_8:last-child > div a{
+				display: block;
+				float: right;
+				width: 16px;
+				height: 16px;
+				margin: 0 0 6px 10px;
+			}		
+
+		/* dev */
+		footer .grid_8:last-child p{
+			font: 12px/18px 'SegoeUI', sans-serif;
+			color: #888888;
+			text-align: right;
+			margin: 0;
+		}
+		footer .grid_8:last-child p a{
+			color: #277cbd;
+		}
+/* FOOTER:end */
+
+/* FORMS:begin */
+/* overlay block */
+#lean_overlay {
+    position: fixed;
+    z-index: 400;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    display: none;
+}
+/* popup wrapper */
+.wrapper_popup{
+	width: 260px;
+	padding: 17px 40px 26px;
+	background: #e8e8e8;
+	display: none;
+}
+	/* title big */
+	.wrapper_popup .title_big{
+		font: 20px/1.1875em 'PFDinTextCondPro-Medium', sans-serif;
+		color: #000;
+		text-align: center;
+		margin: 0 0 12px;
+	}
+
+	/* title small */
+	.wrapper_popup .title_small{
+		font: 16px/1.1875em 'PFDinTextCondPro-Medium', sans-serif;
+		color: #000;
+		text-align: left;
+		margin: 0 0 12px;
+	}
+
+	.wrapper_popup p{
+		font: 13px/1.1875em 'PFDinTextCondPro-Regular', sans-serif;
+		color: #121212;
+		text-align: left;
+		margin: 0 0 15px;
+	}
+	
+	/* input type="text" */
+	.wrapper_popup form input[type="text"]{
+		width: 240px;
+		padding: 5px 10px;
+		border-radius: 5px;
+		background: #fff;
+		border: 1px #d5d5d5 solid;
+		font: 13px/1.28em 'PFDinTextCondPro-Regular', sans-serif;
+		color: #939393;
+		margin: 0 0 14px;
+	}
+	:root .wrapper_popup form input[type="text"] {
+		padding-top:5px\9;
+		padding-bottom:7px\9;
+	}
+	
+	/* textarea */
+	.wrapper_popup form textarea{
+		width: 240px; min-height: 35px;
+		padding: 5px 10px;
+		border-radius: 5px;
+		background: #fff;
+		border: 1px #d5d5d5 solid;
+		font: 13px/1.28em 'PFDinTextCondPro-Regular', sans-serif;
+		color: #939393;
+		margin: 0 0 14px;
+		resize: vertical;
+	}
+
+	/* input and textarea focus */
+	.wrapper_popup form input[type="text"]:focus, .wrapper_popup form textarea:focus{
+		outline: none;
+		box-shadow: 0 0 8px rgba(198,198,198,0.89);
+	}
+
+	.wrapper_popup form input[type="text"].red, .wrapper_popup form textarea.red{
+		outline: none;
+		box-shadow: 0 0 5px rgba(242,21,21,0.36);
+		border: 1px #d1bbbb solid;
+	}
+	.placeholder { color: #939393; }
+
+	/* input type="file" */
+	.wrapper_popup form .input_file_wrapper{
+		position: relative;
+		margin: 0 0 14px 0;
+		display: inline-block;
+		width: 100%
+	}
+		.wrapper_popup form .input_file_wrapper .mask{
+			margin: 0 auto;
+			position: relative;
+			width: 142px; height: 47px;
+			background: url(../images/bgs/bg_input_type_file.jpg) 0 0 no-repeat;
+			cursor: pointer;
+		}
+		.wrapper_popup form .input_file_wrapper .mask.selected{
+			background: url(../images/bgs/bg_input_type_file_selected.jpg) 0 0 no-repeat;
+		}
+		.wrapper_popup form .input_file_wrapper input[type="file"]{
+			position: absolute;
+			left: 59px; top: 0;
+			opacity: 0;
+			filter:alpha(opacity=0);
+			width: 142px; height: 47px;
+			border: 0;
+			outline: 0;
+			cursor: pointer;
+		}
+
+	/* buttons */
+	.wrapper_popup form .buttons_form{
+		margin: 9px 0 0 0;
+	}
+		.wrapper_popup form .buttons_form div{
+			float: left;
+		}
+		.wrapper_popup form .buttons_form button{
+			outline: none;
+			border: 0;
+			float: right;
+		}
+
+	/* thaks block */
+	.wrapper_popup article{
+		display: none;
+	}
+		.wrapper_popup article p{
+			font: 17px/1.1875em 'PFDinTextCondPro-Regular', sans-serif;
+			color: #3e3e3e;
+			text-align: center;
+			margin: 0 0 20px;
+		}
+		.wrapper_popup article div.button_small{
+			width: 67px;
+			margin: 0 auto;
+			display: block;
+		}
+
+
+/* FORMS:end */
+
+/* #Font-face
+================================================== */
+
+/* Segoe UI */
+@font-face {
+	font-family: 'SegoeUI';
+	src: url('../fonts/segoeui.eot');
+	src: url('../fonts/segoeui.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/segoeui.woff') format('woff'),
+			 url('../fonts/segoeui.ttf') format('truetype'),
+			 url('../fonts/segoeui.svg#segoeui') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SegoeUI-Bold';
+	src: url('../fonts/segoeuib.eot');
+	src: url('../fonts/segoeuib.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/segoeuib.woff') format('woff'),
+			 url('../fonts/segoeuib.ttf') format('truetype'),
+			 url('../fonts/segoeuib.svg#segoeuib') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SegoeUI-Italic';
+	src: url('../fonts/segoeuii.eot');
+	src: url('../fonts/segoeuii.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/segoeuii.woff') format('woff'),
+			 url('../fonts/segoeuii.ttf') format('truetype'),
+			 url('../fonts/segoeuii.svg#segoeuii') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SegoeUI-BoldItalic';
+	src: url('../fonts/segoeuiz.eot');
+	src: url('../fonts/segoeuiz.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/segoeuiz.woff') format('woff'),
+			 url('../fonts/segoeuiz.ttf') format('truetype'),
+			 url('../fonts/segoeuiz.svg#segoeuiz') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* PFDinTextCondPro */
+@font-face {
+	font-family: 'PFDinTextCondPro-Regular';
+	src: url('../fonts/pfdintextcondproregular.eot');
+	src: url('../fonts/pfdintextcondproregular.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/pfdintextcondproregular.woff') format('woff'),
+			 url('../fonts/pfdintextcondproregular.ttf') format('truetype'),
+			 url('../fonts/pfdintextcondproregular.svg#pfdintextcondproregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PFDinTextCondPro-Medium';
+	src: url('../fonts/pfdintextcondpromedium.eot');
+	src: url('../fonts/pfdintextcondpromedium.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/pfdintextcondpromedium.woff') format('woff'),
+			 url('../fonts/pfdintextcondpromedium.ttf') format('truetype'),
+			 url('../fonts/pfdintextcondpromedium.svg#pfdintextcondpromedium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

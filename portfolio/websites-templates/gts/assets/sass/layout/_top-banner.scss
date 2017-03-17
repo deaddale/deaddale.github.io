@@ -1,0 +1,15 @@
+#content-page{
+
+	// banner
+	.banner{
+		@include span(24 of 24);
+
+		img{
+			width: 100%;
+			height: auto;
+			display: block;
+			margin-bottom: $base__line;
+			border-radius: $br--default;
+		}
+	}
+}

@@ -1,0 +1,303 @@
+.b-footer {
+    // top block : begin
+    .top{
+        background-image: url(../images/footer/bg-footer.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: scroll;
+        padding-top: 59px;
+        padding-bottom: 61px;
+        position: relative;
+
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            background-color: rgba(#171413,0.8);
+        }
+
+        // one column : begin
+        .one-col{
+            @include span(4 of 12);
+            position: relative;
+            z-index: 1;
+
+            &:nth-child(2){
+                &:before{
+                    content: '';
+                    display: block;
+                    width: 1px;
+                    height: 255px;
+                    background-color: rgba(#f7d182,0.2);
+                    @include vertical-center;
+                    position: absolute;
+                    left: 0;
+                }
+                &:after{
+                    content: '';
+                    display: block;
+                    width: 1px;
+                    height: 255px;
+                    background-color: rgba(#f7d182,0.2);
+                    @include vertical-center;
+                    position: absolute;
+                    right: 0;
+                }
+            }
+
+            // title
+            .title{
+                color: #fefefe;
+                font-size: 20px;
+                font-weight: 300;
+                line-height: 1;
+                text-transform: uppercase;
+                letter-spacing: 0.025em;
+                text-align: center;
+                margin-bottom: 38px;
+            }
+
+            // feedback form : begin
+            form{
+                text-align: center;
+                max-width: 232px;
+                margin-left: auto;
+                margin-right: auto;
+                
+                input[type="text"],
+                input[type="email"]{
+                    margin-bottom: 15px;
+                    text-align: left;
+                }
+
+                textarea{
+                    margin-bottom: 15px;
+                    height: 103px;
+                    text-align: left;
+                }
+
+                input[type="submit"],
+                input[type="button"],
+                button{
+                    background-image: url("../images/sources/icons/icon-letter.png");
+                    background-position: 20px center;
+                    background-repeat: no-repeat;
+                    padding-left: 43px;
+
+                    &:hover{
+                        background-image: url("../images/sources/icons/icon-letter-hover.png");
+                    }
+                }
+            }
+            // feedback form : end
+
+            // text
+            p{
+                color: white;
+                font-size: 18px;
+                font-weight: 200;
+                line-height: 2;
+                text-align: center;
+
+                // yellow text
+                &.yellow{
+                    color: #f7d182;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 1.333;
+                    margin-bottom: 13px;
+                }
+            }
+        }
+        // one column : end
+    }
+    // top block : end
+
+    // bottom block : begin
+    .bottom{
+        padding-top: 56px;
+        padding-bottom: 47px;
+
+        background: -moz-linear-gradient(90deg, rgba(57,30,26,1) 0%, rgba(15,5,5,1) 100%); /* ff3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(15,5,5,1)), color-stop(100%, rgba(57,30,26,1))); /* safari4+,chrome */
+        background: -webkit-linear-gradient(90deg, rgba(57,30,26,1) 0%, rgba(15,5,5,1) 100%); /* safari5.1+,chrome10+ */
+        background: -o-linear-gradient(90deg, rgba(57,30,26,1) 0%, rgba(15,5,5,1) 100%); /* opera 11.10+ */
+        background: -ms-linear-gradient(90deg, rgba(57,30,26,1) 0%, rgba(15,5,5,1) 100%); /* ie10+ */
+        background: linear-gradient(0deg, rgba(57,30,26,1) 0%, rgba(15,5,5,1) 100%); /* w3c */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0505', endColorstr='#391e1a',GradientType=0 ); /* ie6-9 */
+
+        .container {
+            // top subblock : begin
+            &:first-child{
+                margin-bottom: 50px;
+
+                // one column : begin
+                .one-col {
+                    &:first-child {
+                        @include span(2 of 12);
+                    }
+                    &:last-child {
+                        @include span(10 of 12);
+                        @include justifyBlocks;
+                    }
+
+                    // logo
+                    .logo {
+                        display: block;
+                        background: url("../images/sources/icons/icon-logo.svg") 0 0 no-repeat;
+                        background-size: contain;
+                        width: 99px;
+                        height: 37px;
+                        margin: 0 0 14px 0;
+                    }
+
+                    // text
+                    p {
+                        color: #a89b97;
+                        font-size: 12px;
+                        font-weight: 300;
+                        line-height: 1.6em;
+                    }
+
+                    // list : begin
+                    > ul {
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                        display: inline-block;
+                        vertical-align: top;
+
+                        > li {
+                            margin: 0;
+                            padding: 0;
+
+                            div {
+                                color: #a89b97;
+                                font-size: 10px;
+                                font-weight: 400;
+                                line-height: 1;
+                                text-transform: uppercase;
+                                letter-spacing: 0.05em;
+                                margin-bottom: 26px;
+                            }
+
+                            ul {
+                                margin: 0;
+                                padding: 0;
+                                list-style: none;
+
+                                li {
+                                    margin: 0 0 10px;
+                                    padding: 0;
+
+                                    a {
+                                        color: white;
+                                        font-size: 10px;
+                                        font-weight: 400;
+                                        line-height: 1.5em;
+                                        text-transform: uppercase;
+                                        letter-spacing: 0.05em;
+                                        text-decoration: none;
+
+                                        &:hover{
+                                            color: #f7d182;
+                                        }
+                                    }
+
+                                    &.active{
+                                        a{
+                                            color: #f7d182;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    // list : end
+                }
+                // one column : end
+            }
+            // top subblock : end
+
+            // bottom subblock : begin
+            &:last-child{
+                @include container(1140px);
+                @include justifyBlocks;
+                padding-top: 15px;
+                border-top: 1px #4e3325 solid;
+
+                // one column : begin
+                .one-col {
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 33%;
+                    height: 34px;
+
+                    &:first-child{
+                        text-align: left;
+                    }
+                    &:nth-child(2),
+                    &:last-child{
+                        text-align: right;
+                    }
+
+                    p{
+                        color: white;
+                        font-weight: 300;
+                        line-height: 34px;
+                        font-size: 12px;
+                        letter-spacing: 0.05em;
+
+                        span{
+                            font-size: 18px;
+                            line-height: 34px;
+                        }
+
+                        i{
+                            font-style: normal;
+                            display: inline-block;
+                            vertical-align: top;
+                            padding-right: 12px;
+                        }
+                    }
+
+                    a{
+                        display: inline-block;
+                        margin: 0;
+                        padding: 0;
+                        vertical-align: top;
+                        margin-right: 9px;
+
+                        &:last-child{
+                            margin-right: 0;
+                        }
+
+                        &.twitter{
+                            @include sprite($icon-twitter);
+                        }
+
+                        &.facebook{
+                            @include sprite($icon-facebook);
+                        }
+
+                        &.youtube{
+                            @include sprite($icon-youtube);
+                        }
+
+                        &.instagram{
+                            @include sprite($icon-instagram);
+                        }
+                    }
+                }
+                // one column : end
+            }
+            // bottom subblock : end
+        }
+    }
+    // bottom block : end
+}

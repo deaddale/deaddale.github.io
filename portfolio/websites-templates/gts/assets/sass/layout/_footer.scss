@@ -1,0 +1,123 @@
+#footer-page{
+	padding: 25px 0;
+
+	// news block : begin
+	> div:first-child{
+		@include container($susy);
+		margin-bottom: 25px;
+		border-bottom: 1px map-get(map-get($color-palettes, grey), xx-light) solid;
+
+		// one block : begin
+		.one-block{
+			@include span(8 of 24);
+
+			// header
+			> div:first-child{
+				height: 35px;
+				line-height: 35px;
+				padding-bottom: 10px;
+				margin-bottom: 10px;
+				border-bottom-width: 1px;
+				border-bottom-style: solid;
+				opacity: 0.8;
+			}
+
+			&:first-child{
+
+				// header
+				> div:first-child{
+					color: $client-blue;
+					border-bottom-color: $client-blue;
+				}
+			}
+			&:nth-child(2){
+
+				// header
+				> div:first-child{
+					color: $client-orange;
+					border-bottom-color: $client-orange;
+				}
+			}
+			&:last-child{
+
+				// header
+				> div:first-child{
+					color: map-get(map-get($color-palettes, grey), x-dark);
+					border-bottom-color: $grey;
+				}
+			}
+
+			// content
+			> div:last-child{
+
+				// outer wrapper
+				div{
+					@extend %clearfix;
+
+					> a:first-child{
+						display: block;
+						width: 45px; height: 45px;
+						margin: 0 12px 5px 0;
+						float: left;
+
+						img{
+							display: block;
+							width: 45px; height: 45px;
+						}
+					}
+
+					// inner wrapper
+					div{
+
+						h3{
+							font-size: 90%;
+							line-height: 1.2;
+							margin: 0 0 2px;
+							font-family: $font-regular;
+							letter-spacing: normal;
+
+							a{
+								text-decoration: none;
+
+								&:hover{
+									color: map-get(map-get($color-palettes, black), light);
+								}
+							}
+						}
+
+						span{
+							font-family: $font-light;
+							display: block;
+							font-size: 65%;
+							color: map-get(map-get($color-palettes, grey), light);
+						}
+					}
+				}
+
+				p{
+					width: 95%;
+					font-family: $font-light;
+					font-size: 80%;
+				}
+			}
+		}
+		// one block : end
+	}
+	// news block : end
+
+	// copyright block : begin
+	> div:last-child{
+		@include container($susy);
+		text-align: center;
+		font-size: 70%;
+
+		// top
+		> div:first-child{}
+
+		// bottom
+		> div:last-child{
+		}
+	}
+	// copyright block : end
+
+}

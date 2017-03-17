@@ -1,0 +1,11 @@
+@mixin justify-blocks {
+    text-align: justify;
+    font-size: 0;
+    line-height: 0;
+
+    &:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
+}

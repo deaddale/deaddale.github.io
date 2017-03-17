@@ -1,0 +1,15 @@
+.typical-page{
+	@include container($susy);
+	padding: 45px 15px;
+}
+
+// MEDIA QUERIES : begin
+@media screen and (max-width: 956px) {
+}
+
+@media screen and (max-width: 480px) {
+	.typical-page{
+		padding: 20px 15px;
+	}
+}
+// MEDIA QUERIES : end

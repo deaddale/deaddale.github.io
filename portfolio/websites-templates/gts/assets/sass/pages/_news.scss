@@ -1,0 +1,30 @@
+.news{
+
+	// one news : begin
+	.one-news{
+		border-bottom: 1px map-get(map-get($color-palettes, grey), xx-light) solid;
+		margin: 0 0 24px;
+		padding-bottom: 17px;
+
+		h2{
+			margin-bottom: 15px;
+
+			a{}
+		}
+
+		span{
+			font-size: 70%;
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		img{
+			max-width: 600px;
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		p{}
+	}
+	// one news : end
+}

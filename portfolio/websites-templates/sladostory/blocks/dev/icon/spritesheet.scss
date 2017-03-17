@@ -1,0 +1,492 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$icon-arrow-circle-left-name: 'icon-arrow-circle-left';
+$icon-arrow-circle-left-x: 2965px;
+$icon-arrow-circle-left-y: 2930px;
+$icon-arrow-circle-left-offset-x: -2965px;
+$icon-arrow-circle-left-offset-y: -2930px;
+$icon-arrow-circle-left-width: 32px;
+$icon-arrow-circle-left-height: 32px;
+$icon-arrow-circle-left-total-width: 4535px;
+$icon-arrow-circle-left-total-height: 4564px;
+$icon-arrow-circle-left-image: '../images/spritesheet.png';
+$icon-arrow-circle-left: (2965px, 2930px, -2965px, -2930px, 32px, 32px, 4535px, 4564px, '../images/spritesheet.png', 'icon-arrow-circle-left', );
+$icon-arrow-circle-right-name: 'icon-arrow-circle-right';
+$icon-arrow-circle-right-x: 2833px;
+$icon-arrow-circle-right-y: 2798px;
+$icon-arrow-circle-right-offset-x: -2833px;
+$icon-arrow-circle-right-offset-y: -2798px;
+$icon-arrow-circle-right-width: 32px;
+$icon-arrow-circle-right-height: 32px;
+$icon-arrow-circle-right-total-width: 4535px;
+$icon-arrow-circle-right-total-height: 4564px;
+$icon-arrow-circle-right-image: '../images/spritesheet.png';
+$icon-arrow-circle-right: (2833px, 2798px, -2833px, -2798px, 32px, 32px, 4535px, 4564px, '../images/spritesheet.png', 'icon-arrow-circle-right', );
+$icon-arrow-left-name: 'icon-arrow-left';
+$icon-arrow-left-x: 4020px;
+$icon-arrow-left-y: 4026px;
+$icon-arrow-left-offset-x: -4020px;
+$icon-arrow-left-offset-y: -4026px;
+$icon-arrow-left-width: 23px;
+$icon-arrow-left-height: 63px;
+$icon-arrow-left-total-width: 4535px;
+$icon-arrow-left-total-height: 4564px;
+$icon-arrow-left-image: '../images/spritesheet.png';
+$icon-arrow-left: (4020px, 4026px, -4020px, -4026px, 23px, 63px, 4535px, 4564px, '../images/spritesheet.png', 'icon-arrow-left', );
+$icon-arrow-right-name: 'icon-arrow-right';
+$icon-arrow-right-x: 3897px;
+$icon-arrow-right-y: 3863px;
+$icon-arrow-right-offset-x: -3897px;
+$icon-arrow-right-offset-y: -3863px;
+$icon-arrow-right-width: 23px;
+$icon-arrow-right-height: 63px;
+$icon-arrow-right-total-width: 4535px;
+$icon-arrow-right-total-height: 4564px;
+$icon-arrow-right-image: '../images/spritesheet.png';
+$icon-arrow-right: (3897px, 3863px, -3897px, -3863px, 23px, 63px, 4535px, 4564px, '../images/spritesheet.png', 'icon-arrow-right', );
+$icon-arrow-top-name: 'icon-arrow-top';
+$icon-arrow-top-x: 1378px;
+$icon-arrow-top-y: 1341px;
+$icon-arrow-top-offset-x: -1378px;
+$icon-arrow-top-offset-y: -1341px;
+$icon-arrow-top-width: 16px;
+$icon-arrow-top-height: 16px;
+$icon-arrow-top-total-width: 4535px;
+$icon-arrow-top-total-height: 4564px;
+$icon-arrow-top-image: '../images/spritesheet.png';
+$icon-arrow-top: (1378px, 1341px, -1378px, -1341px, 16px, 16px, 4535px, 4564px, '../images/spritesheet.png', 'icon-arrow-top', );
+$icon-basket-empty-hover-name: 'icon-basket-empty-hover';
+$icon-basket-empty-hover-x: 1610px;
+$icon-basket-empty-hover-y: 1573px;
+$icon-basket-empty-hover-offset-x: -1610px;
+$icon-basket-empty-hover-offset-y: -1573px;
+$icon-basket-empty-hover-width: 16px;
+$icon-basket-empty-hover-height: 16px;
+$icon-basket-empty-hover-total-width: 4535px;
+$icon-basket-empty-hover-total-height: 4564px;
+$icon-basket-empty-hover-image: '../images/spritesheet.png';
+$icon-basket-empty-hover: (1610px, 1573px, -1610px, -1573px, 16px, 16px, 4535px, 4564px, '../images/spritesheet.png', 'icon-basket-empty-hover', );
+$icon-basket-empty-name: 'icon-basket-empty';
+$icon-basket-empty-x: 1494px;
+$icon-basket-empty-y: 1457px;
+$icon-basket-empty-offset-x: -1494px;
+$icon-basket-empty-offset-y: -1457px;
+$icon-basket-empty-width: 16px;
+$icon-basket-empty-height: 16px;
+$icon-basket-empty-total-width: 4535px;
+$icon-basket-empty-total-height: 4564px;
+$icon-basket-empty-image: '../images/spritesheet.png';
+$icon-basket-empty: (1494px, 1457px, -1494px, -1457px, 16px, 16px, 4535px, 4564px, '../images/spritesheet.png', 'icon-basket-empty', );
+$icon-basket-full-hover-name: 'icon-basket-full-hover';
+$icon-basket-full-hover-x: 1262px;
+$icon-basket-full-hover-y: 1225px;
+$icon-basket-full-hover-offset-x: -1262px;
+$icon-basket-full-hover-offset-y: -1225px;
+$icon-basket-full-hover-width: 16px;
+$icon-basket-full-hover-height: 16px;
+$icon-basket-full-hover-total-width: 4535px;
+$icon-basket-full-hover-total-height: 4564px;
+$icon-basket-full-hover-image: '../images/spritesheet.png';
+$icon-basket-full-hover: (1262px, 1225px, -1262px, -1225px, 16px, 16px, 4535px, 4564px, '../images/spritesheet.png', 'icon-basket-full-hover', );
+$icon-basket-full-name: 'icon-basket-full';
+$icon-basket-full-x: 1146px;
+$icon-basket-full-y: 1109px;
+$icon-basket-full-offset-x: -1146px;
+$icon-basket-full-offset-y: -1109px;
+$icon-basket-full-width: 16px;
+$icon-basket-full-height: 16px;
+$icon-basket-full-total-width: 4535px;
+$icon-basket-full-total-height: 4564px;
+$icon-basket-full-image: '../images/spritesheet.png';
+$icon-basket-full: (1146px, 1109px, -1146px, -1109px, 16px, 16px, 4535px, 4564px, '../images/spritesheet.png', 'icon-basket-full', );
+$icon-box-name: 'icon-box';
+$icon-box-x: 2701px;
+$icon-box-y: 2667px;
+$icon-box-offset-x: -2701px;
+$icon-box-offset-y: -2667px;
+$icon-box-width: 32px;
+$icon-box-height: 31px;
+$icon-box-total-width: 4535px;
+$icon-box-total-height: 4564px;
+$icon-box-image: '../images/spritesheet.png';
+$icon-box: (2701px, 2667px, -2701px, -2667px, 32px, 31px, 4535px, 4564px, '../images/spritesheet.png', 'icon-box', );
+$icon-cake-1-name: 'icon-cake-1';
+$icon-cake-1-x: 4143px;
+$icon-cake-1-y: 4189px;
+$icon-cake-1-offset-x: -4143px;
+$icon-cake-1-offset-y: -4189px;
+$icon-cake-1-width: 64px;
+$icon-cake-1-height: 50px;
+$icon-cake-1-total-width: 4535px;
+$icon-cake-1-total-height: 4564px;
+$icon-cake-1-image: '../images/spritesheet.png';
+$icon-cake-1: (4143px, 4189px, -4143px, -4189px, 64px, 50px, 4535px, 4564px, '../images/spritesheet.png', 'icon-cake-1', );
+$icon-cake-2-name: 'icon-cake-2';
+$icon-cake-2-x: 4307px;
+$icon-cake-2-y: 4339px;
+$icon-cake-2-offset-x: -4307px;
+$icon-cake-2-offset-y: -4339px;
+$icon-cake-2-width: 64px;
+$icon-cake-2-height: 62px;
+$icon-cake-2-total-width: 4535px;
+$icon-cake-2-total-height: 4564px;
+$icon-cake-2-image: '../images/spritesheet.png';
+$icon-cake-2: (4307px, 4339px, -4307px, -4339px, 64px, 62px, 4535px, 4564px, '../images/spritesheet.png', 'icon-cake-2', );
+$icon-cake-3-name: 'icon-cake-3';
+$icon-cake-3-x: 4471px;
+$icon-cake-3-y: 4501px;
+$icon-cake-3-offset-x: -4471px;
+$icon-cake-3-offset-y: -4501px;
+$icon-cake-3-width: 64px;
+$icon-cake-3-height: 63px;
+$icon-cake-3-total-width: 4535px;
+$icon-cake-3-total-height: 4564px;
+$icon-cake-3-image: '../images/spritesheet.png';
+$icon-cake-3: (4471px, 4501px, -4471px, -4501px, 64px, 63px, 4535px, 4564px, '../images/spritesheet.png', 'icon-cake-3', );
+$icon-checkbox-true-name: 'icon-checkbox-true';
+$icon-checkbox-true-x: 2325px;
+$icon-checkbox-true-y: 2286px;
+$icon-checkbox-true-offset-x: -2325px;
+$icon-checkbox-true-offset-y: -2286px;
+$icon-checkbox-true-width: 24px;
+$icon-checkbox-true-height: 19px;
+$icon-checkbox-true-total-width: 4535px;
+$icon-checkbox-true-total-height: 4564px;
+$icon-checkbox-true-image: '../images/spritesheet.png';
+$icon-checkbox-true: (2325px, 2286px, -2325px, -2286px, 24px, 19px, 4535px, 4564px, '../images/spritesheet.png', 'icon-checkbox-true', );
+$icon-close-mini-name: 'icon-close-mini';
+$icon-close-mini-x: 1845px;
+$icon-close-mini-y: 1808px;
+$icon-close-mini-offset-x: -1845px;
+$icon-close-mini-offset-y: -1808px;
+$icon-close-mini-width: 19px;
+$icon-close-mini-height: 19px;
+$icon-close-mini-total-width: 4535px;
+$icon-close-mini-total-height: 4564px;
+$icon-close-mini-image: '../images/spritesheet.png';
+$icon-close-mini: (1845px, 1808px, -1845px, -1808px, 19px, 19px, 4535px, 4564px, '../images/spritesheet.png', 'icon-close-mini', );
+$icon-close-name: 'icon-close';
+$icon-close-x: 3097px;
+$icon-close-y: 3062px;
+$icon-close-offset-x: -3097px;
+$icon-close-offset-y: -3062px;
+$icon-close-width: 32px;
+$icon-close-height: 32px;
+$icon-close-total-width: 4535px;
+$icon-close-total-height: 4564px;
+$icon-close-image: '../images/spritesheet.png';
+$icon-close: (3097px, 3062px, -3097px, -3062px, 32px, 32px, 4535px, 4564px, '../images/spritesheet.png', 'icon-close', );
+$icon-eye-name: 'icon-eye';
+$icon-eye-x: 688px;
+$icon-eye-y: 654px;
+$icon-eye-offset-x: -688px;
+$icon-eye-offset-y: -654px;
+$icon-eye-width: 15px;
+$icon-eye-height: 12px;
+$icon-eye-total-width: 4535px;
+$icon-eye-total-height: 4564px;
+$icon-eye-image: '../images/spritesheet.png';
+$icon-eye: (688px, 654px, -688px, -654px, 15px, 12px, 4535px, 4564px, '../images/spritesheet.png', 'icon-eye', );
+$icon-facebook-name: 'icon-facebook';
+$icon-facebook-x: 3629px;
+$icon-facebook-y: 3595px;
+$icon-facebook-offset-x: -3629px;
+$icon-facebook-offset-y: -3595px;
+$icon-facebook-width: 34px;
+$icon-facebook-height: 34px;
+$icon-facebook-total-width: 4535px;
+$icon-facebook-total-height: 4564px;
+$icon-facebook-image: '../images/spritesheet.png';
+$icon-facebook: (3629px, 3595px, -3629px, -3595px, 34px, 34px, 4535px, 4564px, '../images/spritesheet.png', 'icon-facebook', );
+$icon-filters-name: 'icon-filters';
+$icon-filters-x: 2204px;
+$icon-filters-y: 2165px;
+$icon-filters-offset-x: -2204px;
+$icon-filters-offset-y: -2165px;
+$icon-filters-width: 21px;
+$icon-filters-height: 21px;
+$icon-filters-total-width: 4535px;
+$icon-filters-total-height: 4564px;
+$icon-filters-image: '../images/spritesheet.png';
+$icon-filters: (2204px, 2165px, -2204px, -2165px, 21px, 21px, 4535px, 4564px, '../images/spritesheet.png', 'icon-filters', );
+$icon-info-name: 'icon-info';
+$icon-info-x: 1726px;
+$icon-info-y: 1689px;
+$icon-info-offset-x: -1726px;
+$icon-info-offset-y: -1689px;
+$icon-info-width: 19px;
+$icon-info-height: 19px;
+$icon-info-total-width: 4535px;
+$icon-info-total-height: 4564px;
+$icon-info-image: '../images/spritesheet.png';
+$icon-info: (1726px, 1689px, -1726px, -1689px, 19px, 19px, 4535px, 4564px, '../images/spritesheet.png', 'icon-info', );
+$icon-instagram-name: 'icon-instagram';
+$icon-instagram-x: 3495px;
+$icon-instagram-y: 3461px;
+$icon-instagram-offset-x: -3495px;
+$icon-instagram-offset-y: -3461px;
+$icon-instagram-width: 34px;
+$icon-instagram-height: 34px;
+$icon-instagram-total-width: 4535px;
+$icon-instagram-total-height: 4564px;
+$icon-instagram-image: '../images/spritesheet.png';
+$icon-instagram: (3495px, 3461px, -3495px, -3461px, 34px, 34px, 4535px, 4564px, '../images/spritesheet.png', 'icon-instagram', );
+$icon-letter-hover-name: 'icon-letter-hover';
+$icon-letter-hover-x: 341px;
+$icon-letter-hover-y: 324px;
+$icon-letter-hover-offset-x: -341px;
+$icon-letter-hover-offset-y: -324px;
+$icon-letter-hover-width: 15px;
+$icon-letter-hover-height: 10px;
+$icon-letter-hover-total-width: 4535px;
+$icon-letter-hover-total-height: 4564px;
+$icon-letter-hover-image: '../images/spritesheet.png';
+$icon-letter-hover: (341px, 324px, -341px, -324px, 15px, 10px, 4535px, 4564px, '../images/spritesheet.png', 'icon-letter-hover', );
+$icon-letter-name: 'icon-letter';
+$icon-letter-x: 226px;
+$icon-letter-y: 214px;
+$icon-letter-offset-x: -226px;
+$icon-letter-offset-y: -214px;
+$icon-letter-width: 15px;
+$icon-letter-height: 10px;
+$icon-letter-total-width: 4535px;
+$icon-letter-total-height: 4564px;
+$icon-letter-image: '../images/spritesheet.png';
+$icon-letter: (226px, 214px, -226px, -214px, 15px, 10px, 4535px, 4564px, '../images/spritesheet.png', 'icon-letter', );
+$icon-magic-name: 'icon-magic';
+$icon-magic-x: 3229px;
+$icon-magic-y: 3194px;
+$icon-magic-offset-x: -3229px;
+$icon-magic-offset-y: -3194px;
+$icon-magic-width: 33px;
+$icon-magic-height: 33px;
+$icon-magic-total-width: 4535px;
+$icon-magic-total-height: 4564px;
+$icon-magic-image: '../images/spritesheet.png';
+$icon-magic: (3229px, 3194px, -3229px, -3194px, 33px, 33px, 4535px, 4564px, '../images/spritesheet.png', 'icon-magic', );
+$icon-marker-name: 'icon-marker';
+$icon-marker-x: 2449px;
+$icon-marker-y: 2405px;
+$icon-marker-offset-x: -2449px;
+$icon-marker-offset-y: -2405px;
+$icon-marker-width: 20px;
+$icon-marker-height: 32px;
+$icon-marker-total-width: 4535px;
+$icon-marker-total-height: 4564px;
+$icon-marker-image: '../images/spritesheet.png';
+$icon-marker: (2449px, 2405px, -2449px, -2405px, 20px, 32px, 4535px, 4564px, '../images/spritesheet.png', 'icon-marker', );
+$icon-minus-name: 'icon-minus';
+$icon-minus-x: 2084px;
+$icon-minus-y: 2046px;
+$icon-minus-offset-x: -2084px;
+$icon-minus-offset-y: -2046px;
+$icon-minus-width: 20px;
+$icon-minus-height: 19px;
+$icon-minus-total-width: 4535px;
+$icon-minus-total-height: 4564px;
+$icon-minus-image: '../images/spritesheet.png';
+$icon-minus: (2084px, 2046px, -2084px, -2046px, 20px, 19px, 4535px, 4564px, '../images/spritesheet.png', 'icon-minus', );
+$icon-nav-hover-name: 'icon-nav-hover';
+$icon-nav-hover-x: 456px;
+$icon-nav-hover-y: 434px;
+$icon-nav-hover-offset-x: -456px;
+$icon-nav-hover-offset-y: -434px;
+$icon-nav-hover-width: 16px;
+$icon-nav-hover-height: 10px;
+$icon-nav-hover-total-width: 4535px;
+$icon-nav-hover-total-height: 4564px;
+$icon-nav-hover-image: '../images/spritesheet.png';
+$icon-nav-hover: (456px, 434px, -456px, -434px, 16px, 10px, 4535px, 4564px, '../images/spritesheet.png', 'icon-nav-hover', );
+$icon-nav-name: 'icon-nav';
+$icon-nav-x: 572px;
+$icon-nav-y: 544px;
+$icon-nav-offset-x: -572px;
+$icon-nav-offset-y: -544px;
+$icon-nav-width: 16px;
+$icon-nav-height: 10px;
+$icon-nav-total-width: 4535px;
+$icon-nav-total-height: 4564px;
+$icon-nav-image: '../images/spritesheet.png';
+$icon-nav: (572px, 544px, -572px, -544px, 16px, 10px, 4535px, 4564px, '../images/spritesheet.png', 'icon-nav', );
+$icon-payment-name: 'icon-payment';
+$icon-payment-x: 2569px;
+$icon-payment-y: 2537px;
+$icon-payment-offset-x: -2569px;
+$icon-payment-offset-y: -2537px;
+$icon-payment-width: 32px;
+$icon-payment-height: 30px;
+$icon-payment-total-width: 4535px;
+$icon-payment-total-height: 4564px;
+$icon-payment-image: '../images/spritesheet.png';
+$icon-payment: (2569px, 2537px, -2569px, -2537px, 32px, 30px, 4535px, 4564px, '../images/spritesheet.png', 'icon-payment', );
+$icon-plus-name: 'icon-plus';
+$icon-plus-x: 1964px;
+$icon-plus-y: 1927px;
+$icon-plus-offset-x: -1964px;
+$icon-plus-offset-y: -1927px;
+$icon-plus-width: 20px;
+$icon-plus-height: 19px;
+$icon-plus-total-width: 4535px;
+$icon-plus-total-height: 4564px;
+$icon-plus-image: '../images/spritesheet.png';
+$icon-plus: (1964px, 1927px, -1964px, -1927px, 20px, 19px, 4535px, 4564px, '../images/spritesheet.png', 'icon-plus', );
+$icon-search-hover-name: 'icon-search-hover';
+$icon-search-hover-x: 917px;
+$icon-search-hover-y: 880px;
+$icon-search-hover-offset-x: -917px;
+$icon-search-hover-offset-y: -880px;
+$icon-search-hover-width: 14px;
+$icon-search-hover-height: 14px;
+$icon-search-hover-total-width: 4535px;
+$icon-search-hover-total-height: 4564px;
+$icon-search-hover-image: '../images/spritesheet.png';
+$icon-search-hover: (917px, 880px, -917px, -880px, 14px, 14px, 4535px, 4564px, '../images/spritesheet.png', 'icon-search-hover', );
+$icon-search-name: 'icon-search';
+$icon-search-x: 803px;
+$icon-search-y: 766px;
+$icon-search-offset-x: -803px;
+$icon-search-offset-y: -766px;
+$icon-search-width: 14px;
+$icon-search-height: 14px;
+$icon-search-total-width: 4535px;
+$icon-search-total-height: 4564px;
+$icon-search-image: '../images/spritesheet.png';
+$icon-search: (803px, 766px, -803px, -766px, 14px, 14px, 4535px, 4564px, '../images/spritesheet.png', 'icon-search', );
+$icon-select-arrow-bottom-name: 'icon-select-arrow-bottom';
+$icon-select-arrow-bottom-x: 113px;
+$icon-select-arrow-bottom-y: 107px;
+$icon-select-arrow-bottom-offset-x: -113px;
+$icon-select-arrow-bottom-offset-y: -107px;
+$icon-select-arrow-bottom-width: 13px;
+$icon-select-arrow-bottom-height: 7px;
+$icon-select-arrow-bottom-total-width: 4535px;
+$icon-select-arrow-bottom-total-height: 4564px;
+$icon-select-arrow-bottom-image: '../images/spritesheet.png';
+$icon-select-arrow-bottom: (113px, 107px, -113px, -107px, 13px, 7px, 4535px, 4564px, '../images/spritesheet.png', 'icon-select-arrow-bottom', );
+$icon-select-arrow-top-name: 'icon-select-arrow-top';
+$icon-select-arrow-top-x: 0px;
+$icon-select-arrow-top-y: 0px;
+$icon-select-arrow-top-offset-x: 0px;
+$icon-select-arrow-top-offset-y: 0px;
+$icon-select-arrow-top-width: 13px;
+$icon-select-arrow-top-height: 7px;
+$icon-select-arrow-top-total-width: 4535px;
+$icon-select-arrow-top-total-height: 4564px;
+$icon-select-arrow-top-image: '../images/spritesheet.png';
+$icon-select-arrow-top: (0px, 0px, 0px, 0px, 13px, 7px, 4535px, 4564px, '../images/spritesheet.png', 'icon-select-arrow-top', );
+$icon-star-name: 'icon-star';
+$icon-star-x: 1031px;
+$icon-star-y: 994px;
+$icon-star-offset-x: -1031px;
+$icon-star-offset-y: -994px;
+$icon-star-width: 15px;
+$icon-star-height: 15px;
+$icon-star-total-width: 4535px;
+$icon-star-total-height: 4564px;
+$icon-star-image: '../images/spritesheet.png';
+$icon-star: (1031px, 994px, -1031px, -994px, 15px, 15px, 4535px, 4564px, '../images/spritesheet.png', 'icon-star', );
+$icon-twitter-name: 'icon-twitter';
+$icon-twitter-x: 3763px;
+$icon-twitter-y: 3729px;
+$icon-twitter-offset-x: -3763px;
+$icon-twitter-offset-y: -3729px;
+$icon-twitter-width: 34px;
+$icon-twitter-height: 34px;
+$icon-twitter-total-width: 4535px;
+$icon-twitter-total-height: 4564px;
+$icon-twitter-image: '../images/spritesheet.png';
+$icon-twitter: (3763px, 3729px, -3763px, -3729px, 34px, 34px, 4535px, 4564px, '../images/spritesheet.png', 'icon-twitter', );
+$icon-youtube-name: 'icon-youtube';
+$icon-youtube-x: 3362px;
+$icon-youtube-y: 3327px;
+$icon-youtube-offset-x: -3362px;
+$icon-youtube-offset-y: -3327px;
+$icon-youtube-width: 33px;
+$icon-youtube-height: 34px;
+$icon-youtube-total-width: 4535px;
+$icon-youtube-total-height: 4564px;
+$icon-youtube-image: '../images/spritesheet.png';
+$icon-youtube: (3362px, 3327px, -3362px, -3327px, 33px, 34px, 4535px, 4564px, '../images/spritesheet.png', 'icon-youtube', );
+$spritesheet-width: 4535px;
+$spritesheet-height: 4564px;
+$spritesheet-image: '../images/spritesheet.png';
+$spritesheet-sprites: ($icon-arrow-circle-left, $icon-arrow-circle-right, $icon-arrow-left, $icon-arrow-right, $icon-arrow-top, $icon-basket-empty-hover, $icon-basket-empty, $icon-basket-full-hover, $icon-basket-full, $icon-box, $icon-cake-1, $icon-cake-2, $icon-cake-3, $icon-checkbox-true, $icon-close-mini, $icon-close, $icon-eye, $icon-facebook, $icon-filters, $icon-info, $icon-instagram, $icon-letter-hover, $icon-letter, $icon-magic, $icon-marker, $icon-minus, $icon-nav-hover, $icon-nav, $icon-payment, $icon-plus, $icon-search-hover, $icon-search, $icon-select-arrow-bottom, $icon-select-arrow-top, $icon-star, $icon-twitter, $icon-youtube, );
+$spritesheet: (4535px, 4564px, '../images/spritesheet.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

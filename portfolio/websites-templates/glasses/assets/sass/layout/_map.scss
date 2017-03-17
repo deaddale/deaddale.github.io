@@ -1,0 +1,43 @@
+.map-wrapper{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	max-height: 515px;
+}
+.map-wrapper{
+
+	h2{
+		text-align: center;
+		background-color: rgba(4, 168, 218, 0.87);
+		padding: 10px 0;
+		color: #fff;
+		width: 380px;
+		font-family: $RopaSansSCProMedium;
+		font-size: 44px;
+		font-weight: 500;
+		line-height: 1;
+		z-index: 1;
+		position: absolute;
+		left: 50%; top: 0;
+		margin: 0 0 0 -190px;
+	}
+
+	#map{
+		z-index: 0;
+	}
+
+}
+
+@media screen and (max-width: 1149px) {
+
+	.map-wrapper{
+
+		h2{
+			width: 200px;
+			font-size: 20px;
+			margin-left: -100px;
+		}
+
+	}
+
+}

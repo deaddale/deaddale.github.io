@@ -1,0 +1,43 @@
+.feedback-form{
+
+	// one line : begin
+	.one-line{
+		margin-bottom: $base__line;
+
+		.label{
+			margin-bottom: 3px;
+			color: map-get(map-get($color-palettes, grey), base);
+		}
+
+		input[type="text"],
+		input[type="email"],
+		textarea{
+			width: 60%;
+		}
+
+		input[type="submit"]{
+			@include btn;
+			margin: 0 auto;
+		}
+
+		&.error{
+			text-align: left;
+			font-size: 80%;
+			font-family: $font-light;
+			margin-bottom: $base__line;
+			color: $sunglo;
+		}
+
+		&.message{
+			text-align: left;
+			font-size: 80%;
+			font-family: $font-light;
+			margin-bottom: $base__line;
+		}
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	// one line : end
+}

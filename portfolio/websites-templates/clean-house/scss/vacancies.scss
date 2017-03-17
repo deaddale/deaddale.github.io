@@ -1,0 +1,63 @@
+.vacancies{
+	margin-top: 37px;
+}
+.vacancies{
+
+	// left column : begin
+	h1{
+		line-height: 1em;
+		margin-bottom: 20px;
+	}
+	
+	h2{
+		margin-bottom: 21px;
+	}
+
+	.subtitle{
+		font-size: 12px;
+		line-height: 1.5px;
+		color: #000;
+		font-family: $fontMedium;
+		margin-bottom: 13px;
+		text-transform: uppercase;
+	}
+
+	p{}
+
+	ul{
+		margin: 0 0 19px 16px; padding: 0;
+	}
+
+		ul li{	
+			line-height: 1.31em;
+		}
+
+	hr{
+		display: block;
+		margin: 0 0 26px; padding: 0;
+		width: 100%; height: 1px;
+		outline: none;
+		border: none;
+		background: #c9c9c9;
+	}
+	// left column : end
+
+	// banners : begin
+	.banner{
+		margin-bottom: 20px;
+		display: block;
+	}
+
+	.banner:first-child{
+		margin-top:57px;
+	}
+
+		.banner img{
+			width: 100%; max-width: 220px; 
+			height: auto;
+			display: block;
+			margin: 0; padding: 0;
+		}
+	// banners : end
+
+}

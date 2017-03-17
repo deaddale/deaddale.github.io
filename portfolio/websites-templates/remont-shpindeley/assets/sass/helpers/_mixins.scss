@@ -1,0 +1,63 @@
+// Выравниваем по центру любой блок
+@mixin all-center {
+	position: absolute;
+	left: 50%; top: 50%;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+// Выравниваем по центру по вертикали любой блок
+@mixin center-h($height) { 
+	position: absolute;
+	top: 50%;
+	height: $height;
+	margin-top: -($height / 2);
+}
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+// Раскидываем два дочерних блока в разные стороны по горизотали
+@mixin db-tabs {
+	@include container;
+
+	> div {
+
+		&:first-child {
+			float: left;
+		}
+
+		&:last-child {
+			float: right;
+		}
+	}
+}
+
+// clearfix
+%clearfix { 
+    *zoom: 1;
+
+    &:before, &:after {
+        content: ' ';
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+ }
+
+
+
+
+
+
+
+

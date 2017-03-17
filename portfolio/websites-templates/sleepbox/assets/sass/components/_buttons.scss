@@ -1,0 +1,26 @@
+// default btn : begin
+@mixin default-btn{
+	display: inline-block;
+	cursor: pointer;	
+	border: none;
+	padding: 11px 26px 9px;
+	height: 38px;
+	border-radius: 20px;
+	color: white;
+	font-family: $mediumFont;
+	font-size: 17px;
+	font-weight: normal;
+	line-height: normal;
+	text-transform: uppercase;
+	margin-bottom: 27px;
+	background-color: #55bfae;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.2s ease;
+
+	&:hover{
+		transition: all 0.2s ease;
+		background-color: #59d7c3;
+	}
+}
+// default btn : end

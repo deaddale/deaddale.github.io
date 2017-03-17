@@ -1,0 +1,29 @@
+.b-text-and-sidebar{
+    background: #705850;
+    padding-top: 62px;
+    padding-bottom: 75px;
+
+    // title
+    h2{
+        color: white;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.3em;
+        text-transform: uppercase;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 60px;
+        letter-spacing: 0.025em;
+    }
+
+    // text
+    .b-text{
+        @include span(8 of 12);
+    }
+
+    // sidebar
+    .b-sidebar{
+        @include span(4 of 12);
+    }
+}

@@ -1,0 +1,134 @@
+.articles{
+	margin-top: 37px;
+	margin-bottom: 75px;
+}
+.articles{
+
+	// title
+	.title{
+		font-size: 26px;
+		line-height: 1.38em;
+		color: #000;
+		font-family: $fontMedium;
+		margin: 0 0 17px; padding: 0;
+		font-weight: normal;
+	}
+
+	// one article : begin
+	.one-article{
+		margin-bottom: 18px;
+	}
+	.one-article{
+
+		h2{
+			font-size: 18px;
+			line-height: 1.11em;
+			font-family: $fontRegular;
+			font-weight: normal;
+			margin: 0 0 6px; padding: 0;
+			width: 93%;
+		}
+
+			h2 a{
+				color: #008bbf;
+				text-decoration: underline;
+			}
+
+		p{
+			margin: 0; padding: 0;
+			font-size: 12px;
+			line-height: 1.5em;
+			color: #000;
+			width: 93%;
+		}
+
+	}
+	// one article : end
+
+	// banners : begin
+	.banner{
+		margin-bottom: 20px;
+		display: block;
+	}
+
+	.banner:first-child{
+		margin-top:57px;
+	}
+
+		.banner img{
+			width: 100%; max-width: 220px; 
+			height: auto;
+			display: block;
+			margin: 0; padding: 0;
+		}
+	// banners : end
+
+	// pagination : begin
+	.pagination{
+		margin: 30px 0 0 0; padding: 0;
+		list-style: none;
+	}
+	.pagination{
+
+		li{
+			display: block;
+			margin: 0; padding: 0;
+			float: left;
+			border: 1px #dddddd solid;
+			border-left: 0;
+		}
+		li:first-child{
+			border-left: 1px #dddddd solid;
+			border-radius: 5px 0 0 5px;
+		}
+		li.arrow{}
+		li.unavailable{}
+		li.current{}
+		li:last-child{
+			border-radius: 0 5px 5px 0;
+		}
+
+			li a{
+				color: #337ab7;
+				text-decoration: none;
+				text-align: center;
+				display: block;
+				padding: 11px 14px;
+				line-height: 1em;
+				font-size: 14px;
+			}
+			li a:hover{
+				background: #efefef;
+			}
+
+	}
+	// pagination : end
+
+	// additional features : begin
+	.additional-features{}
+	.additional-features{
+
+		// back
+		> a{
+			font-size: 14px;
+			font-family: $fontRegular;
+			line-height: 1.54em;
+			margin: 0; padding: 0;
+			float: left;
+			display: inline-block;
+		}
+
+		// soc share
+		> div{
+			color: #555;
+			font-size: 14px;
+			font-family: $fontRegular;
+			line-height: 1.54em;
+			margin: 0; padding: 0;
+			float: right;
+		}
+
+	}
+	// additional features : end
+
+}

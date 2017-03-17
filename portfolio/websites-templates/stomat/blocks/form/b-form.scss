@@ -1,0 +1,109 @@
+.b-form{
+	input[type="hidden"]{
+		width: 0 !important;
+		height: 0 !important;
+		border: none !important;
+		outline: none !important;
+	}
+
+    // default input
+	@mixin defaultInput ($placeholderColor: rgba(white, 0.7)){
+		width: 100%;
+		box-sizing: border-box;
+		outline: none;
+		display: block;
+		line-height: normal;
+		transition: all 0.24s ease-out;
+        border: none;
+		background-color: #588df5;
+		border-radius: 3px;
+        color: white;
+        font-family: $secondary-font;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 13px 16px 13px;
+
+		&:focus{
+			outline: none;
+			transition: all 0.24s ease;
+		}
+
+		&::-webkit-input-placeholder {color: $placeholderColor;}
+		&::-moz-placeholder          {color: $placeholderColor;} // Firefox 19+
+		&:-moz-placeholder           {color: $placeholderColor;} // Firefox 18-
+		&:-ms-input-placeholder      {color: $placeholderColor;}
+
+		&:focus::-webkit-input-placeholder {color: transparent}
+		&:focus::-moz-placeholder          {color: transparent}
+		&:focus:-moz-placeholder           {color: transparent}
+		&:focus:-ms-input-placeholder      {color: transparent}
+	}
+
+    // default textarea
+	@mixin defaultTextarea ($placeholderColor: rgba(white, 0.7)){
+        width: 100%;
+        box-sizing: border-box;
+        outline: none;
+        min-height: 144px;
+        display: block;
+        line-height: 1;
+        resize: vertical;
+        border: none;
+        background-color: #588df5;
+        border-radius: 3px;
+        color: white;
+        font-family: $secondary-font;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 13px 16px 13px;
+        transition: all 0.24s ease-out;
+
+		&:focus{
+			outline: none;
+			transition: all 0.24s ease;
+		}
+
+		&::-webkit-input-placeholder {color: $placeholderColor; padding: 1px 0 0 0;}
+		&::-moz-placeholder          {color: $placeholderColor; padding: 1px 0 0 0;} // Firefox 19+
+		&:-moz-placeholder           {color: $placeholderColor; padding: 1px 0 0 0;} // Firefox 18-
+		&:-ms-input-placeholder      {color: $placeholderColor; padding: 1px 0 0 0;}
+
+		&:focus::-webkit-input-placeholder {color: transparent}
+		&:focus::-moz-placeholder          {color: transparent}
+		&:focus:-moz-placeholder           {color: transparent}
+		&:focus:-ms-input-placeholder      {color: transparent}
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+	}
+
+	input[type="email"],
+	input[type="number"],
+	input[type="search"],
+	input[type="text"],
+	input[type="tel"],
+	input[type="url"],
+	input[type="password"] {
+		@include defaultInput;
+	}
+
+	textarea {
+        @include defaultTextarea;
+	}
+
+	label,
+	legend {
+		display: block;
+	}
+
+	fieldset {
+		padding: 0;
+		border-width: 0;
+	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		display: inline;
+	}
+}

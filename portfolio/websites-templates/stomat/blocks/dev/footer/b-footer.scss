@@ -1,0 +1,130 @@
+.b-footer {
+    background-color: #3b3d40;
+    padding-top: 42px;
+    padding-bottom: 57px;
+
+    @include breakpoint($first-breakpoint){
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    > div{
+        @include container(980px);
+
+        // one column : begin
+        .one-col{
+            &:first-child{
+                @include span(7 of 24);
+                padding-top: 9px;
+
+                @include breakpoint($second-breakpoint){
+                    @include span(24 of 24);
+                    text-align: center;
+                }
+
+                .title{
+                    color: white;
+                    font-family: $secondary-font;
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-bottom: 18px;
+                }
+
+                p{
+                    color: #9d9ea0;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.28em;
+                    margin-bottom: 19px;
+                }
+            }
+
+            &:nth-child(2){
+                @include span(11 of 24);
+                padding-top: 8px;
+
+                @include breakpoint($second-breakpoint){
+                    @include span(24 of 24);
+                    text-align: center;
+                }
+
+                nav{
+                    margin-bottom: 22px;
+
+                    ul{
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                        @include clearfix;
+
+                        li{
+                            margin: 0 23px 0 0;
+                            padding: 0;
+                            float: left;
+
+                            @include breakpoint($second-breakpoint){
+                                float: none;
+                                display: block;
+                                margin: 0;
+                                text-align: center;
+                            }
+
+                            &:before{ display: none; }
+
+                            &:last-child{
+                                margin-right: 0;
+                            }
+
+                            a{
+                                text-decoration: none;
+                                color: white;
+                                font-family: $secondary-font;
+                                font-size: 14px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+
+                p{
+                    letter-spacing: 0.1em;
+                    color: #9d9ea0;
+                    font-family: $secondary-font;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+
+            &:last-child{
+                @include span(6 of 24);
+                text-align: center;
+
+                @include breakpoint($second-breakpoint){
+                    @include span(24 of 24);
+                }
+
+                .b-button{
+                    display: block;
+                    margin-bottom: 50px;
+
+                    @include breakpoint($second-breakpoint){
+                        max-width: 220px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-top: 20px;
+                        margin-bottom: 30px;
+                    }
+                }
+
+                a{
+                    text-decoration: none;
+                    color: #afb0b1;
+                    font-family: $secondary-font;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+        // one column : end
+    }
+}

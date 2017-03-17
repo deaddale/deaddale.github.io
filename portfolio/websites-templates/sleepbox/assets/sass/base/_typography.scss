@@ -1,0 +1,146 @@
+// FONTS
+@font-face {
+	font-family:'PlumbMediumC-Regular';
+	src: url('../../fonts/PlumbMediumC_gdi.eot');
+	src: url('../../fonts/PlumbMediumC_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/PlumbMediumC_gdi.woff') format('woff'),
+		url('../../fonts/PlumbMediumC_gdi.ttf') format('truetype'),
+		url('../../fonts/PlumbMediumC_gdi.otf') format('opentype'),
+		url('../../fonts/PlumbMediumC_gdi.svg#PlumbMediumC-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-2265;
+}
+
+@font-face {
+	font-family:'PlumbLightC-Regular';
+	src: url('../../fonts/PlumbLightC_gdi.eot');
+	src: url('../../fonts/PlumbLightC_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/PlumbLightC_gdi.woff') format('woff'),
+		url('../../fonts/PlumbLightC_gdi.ttf') format('truetype'),
+		url('../../fonts/PlumbLightC_gdi.otf') format('opentype'),
+		url('../../fonts/PlumbLightC_gdi.svg#PlumbLightC-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-2265;
+}
+
+@font-face {
+	font-family:'PlumbC-Regular';
+	src: url('../../fonts/PlumbC_gdi.eot');
+	src: url('../../fonts/PlumbC_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/PlumbC_gdi.woff') format('woff'),
+		url('../../fonts/PlumbC_gdi.ttf') format('truetype'),
+		url('../../fonts/PlumbC_gdi.otf') format('opentype'),
+		url('../../fonts/PlumbC_gdi.svg#PlumbC-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-2265;
+}
+
+@font-face {
+	font-family:'PlumbC-Bold';
+	src: url('../../fonts/PlumbC-Bold_gdi.eot');
+	src: url('../../fonts/PlumbC-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/PlumbC-Bold_gdi.woff') format('woff'),
+		url('../../fonts/PlumbC-Bold_gdi.ttf') format('truetype'),
+		url('../../fonts/PlumbC-Bold_gdi.otf') format('opentype'),
+		url('../../fonts/PlumbC-Bold_gdi.svg#PlumbC-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-2265;
+}
+
+body{
+	font-family: $defaultFont;
+	font-size: 18px;
+	line-height: 1.2;
+	color: #737373;
+	text-rendering: optimizeLegibility;
+	-webkit-text-rendering: optimizeLegibility;
+}
+
+// h1-h6 titles : begin
+h1, h2, h3, h4, h5, h6{
+	margin: 0; padding: 0;
+	font-weight: normal;
+}
+h1{
+}
+
+h2{
+	color: #737373;
+	font-size: 38px;
+	font-family: $lightFont;
+	text-align: center;
+	font-weight: normal;
+	line-height: 1.37;
+
+	span{
+		color: #737373;
+		font-family: $defaultFont;
+		font-size: 20px;
+	}
+}
+
+h3{
+}
+
+h4, h5, h6{
+}
+// h1-h6 titles : end
+
+// text (link, bold, italic) : begin
+p{
+	margin: 0; padding: 0;
+
+	b{
+		font-weight: bold;
+	}
+
+	i{
+		font-style: italic;
+	}
+
+	a{
+
+		&:hover{
+		}
+
+		&:active{
+		}
+
+		&:visited{
+		}
+	}
+}
+// text (link, bold, italic) : end
+
+// bulleted list : begin
+ul{
+	margin: 0; padding: 0;
+
+	li{
+	}
+}
+// bulleted list : end
+
+// numbered list : begin
+ol{
+	margin: 0; padding: 0;
+
+	li{
+	}
+}
+// numbered list : end
+
+pre{}
+
+
+
+
+

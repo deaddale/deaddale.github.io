@@ -1,0 +1,54 @@
+.b-pagination{
+
+    @include breakpoint($first-breakpoint){
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        font-size: 0;
+        line-height: 0;
+
+        li{
+            display: inline-block;
+            margin: 0 3px 0 0;
+            padding: 0;
+            color: #838d8f;
+            font-family: $secondary-font;
+            font-size: 15px;
+            font-weight: 400;
+            text-transform: uppercase;
+            width: 34px;
+            height: 34px;
+            line-height: 34px;
+            text-align: center;
+
+            &:before{ display: none; }
+
+            &.current,
+            &:hover{
+                background-color: #f7f7f7;
+                border-radius: 50%;
+            }
+
+            &:last-child{
+                margin-right: 0;
+            }
+
+            a{
+                font-family: $secondary-font;
+                font-size: 15px;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: #3c3d41;
+                text-decoration: none;
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+}

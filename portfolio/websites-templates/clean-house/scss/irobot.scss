@@ -1,0 +1,73 @@
+.irobot{
+	margin-bottom: 48px;
+}
+.irobot{
+
+	.irobot-image{
+		display: block;
+		margin: 0 auto;
+		width: 220px;
+		height: 200px;
+		padding-bottom: 48px;
+		position: relative;
+	}
+
+	.roomba{
+		background: transparent url(../../images/irobot/1.png) 34px 30px no-repeat;
+		background-size: 70%;
+	}
+
+	.scooba{
+		background: transparent url(../../images/irobot/2.png) 34px 30px no-repeat;
+		background-size: 70%;
+	}
+
+	.braava{
+		background: transparent url(../../images/irobot/3.png) 34px 25px no-repeat;
+		background-size: 70%;
+	}
+
+	.mirra{
+		background: transparent url(../../images/irobot/4.png) 34px 21px no-repeat;
+		background-size: 70%;
+	}
+
+	.irobot-image{
+
+		span{
+			width: 220px; height: 41px;
+			padding: 7px 0 0;
+			display: block;
+			background: #4abf42;
+			position: absolute;
+			left: 0; bottom: 0;
+			font-size: 13px;
+			line-height: 1.38em;
+			color: #fff;
+			text-transform: uppercase;
+			font-family: $fontRegular;
+			text-align: center;
+		}
+
+			span b{
+				font-family: $fontBold;
+				line-height: normal;
+			}
+
+	}
+
+	.banner{
+		position: relative;
+	}
+	.banner h1{
+		font-size: 13px;
+		line-height: 1.53em;
+		font-family: $fontRegular;
+		color: #000;
+		position: absolute;
+		left:19px;
+		top: 420px;
+	}
+
+}
+

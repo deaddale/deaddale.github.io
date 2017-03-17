@@ -1,0 +1,137 @@
+#reg-login-form{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+#reg-login-form{
+
+	// overlay
+	.overlay{
+		position: fixed;
+		left: 0; top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.7);
+		z-index: 999;
+		display: block;
+	}
+
+	// forms
+	.forms{
+		z-index: 1000;
+		width: 380px;
+		background: #fff;
+		padding: 0 0 30px;
+		margin: 0 0 0 -190px;
+	}
+
+	.forms{
+
+		// title
+		.title{
+			margin: 25px 0 20px;
+			font-size: 28px;
+			color: #4d4d4d;
+			font-family: $fontMedium;
+			text-transform: uppercase;
+			line-height: 1em;
+		}
+
+		// close button
+		.close-btn{
+			margin: 0; padding: 0;
+			cursor: pointer;
+			width: 100%;
+			height: 50px;
+			background-color: #804d9f;
+			font-family: $fontHelvMedium;
+			font-size: 14px;
+			line-height: 50px;
+			color: #fff;
+			text-transform: uppercase;
+			text-align: right;
+			position: relative;
+		}
+
+			.close-btn i{
+				background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAE1JREFUeNqEUFsOACAIUu5/51ptZj4iNj9ggE4Mh5DZgDiG9Dj6MisJ3FytuQsEozULCQQdaa0yDnJj4fitzt94GUsApLEEQIxFnwIMAGlTM/KB2A/cAAAAAElFTkSuQmCC');
+				background-position: right top;
+				background-repeat: no-repeat;
+				display: inline-block;
+				width: 11px; height: 11px;
+				margin: 0 20px 0 10px;
+			}
+
+		form{
+			padding: 0 40px;
+		}
+
+		input[type="text"],
+	    input[type="email"],
+	    input[type="tel"],
+	    input[type="password"]{
+			padding: 10px 49px 10px 15px;
+			width: 157px;
+		}
+
+	}
+
+	// registration : begin
+	.reg{
+		position: relative;
+		top: -100%;
+		left: 50%;
+		display: none;
+	}
+	.reg{}
+	// registration : end
+
+	// login : begin
+	.login{
+		position: relative;
+		top: -100%;
+		left: 50%;
+		display: none;
+	}
+	.login{
+
+		// links
+		.links{
+			margin-bottom: 0;
+		}
+		.links{
+
+			a{
+				font-size: 14px;
+				font-family: $fontHelvMedium;
+				color: #804d9f;
+				line-height: 1em;
+				border-bottom: 1px #804d9f dashed;
+				text-decoration: none;
+				display: inline-block;
+			}
+
+			.forgot-pass-link{
+				margin: 0 30px 0 0;
+			}
+
+			.reg-link{}
+
+		}
+
+	}
+	// login : end
+
+	// recovery : begin
+	.recovery{
+		position: relative;
+		top: -100%;
+		left: 50%;
+		display: none;
+	}
+	// recovery : end
+
+}

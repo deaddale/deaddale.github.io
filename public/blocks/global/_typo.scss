@@ -1,0 +1,176 @@
+/*
+** TYPOGRAPHY
+** font-face
+** @import
+** basic styles
+*/
+// FuturaDemiC-Regular : begin
+@font-face {
+    font-family: 'FuturaDemiC-Regular';
+    src: url('../fonts/FuturaDemiC_gdi.eot');
+    src: url('../fonts/FuturaDemiC_gdi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FuturaDemiC_gdi.woff') format('woff'),
+    url('../fonts/FuturaDemiC_gdi.ttf') format('truetype'),
+    url('../fonts/FuturaDemiC_gdi.otf') format('opentype'),
+    url('../fonts/FuturaDemiC_gdi.svg#FuturaDemiC-Regular') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+000D-E000;
+}
+
+// FuturaBookC-Regular
+@font-face {
+    font-family: 'FuturaBookC-Regular';
+    src: url('../fonts/FuturaBookC_gdi.eot');
+    src: url('../fonts/FuturaBookC_gdi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FuturaBookC_gdi.woff') format('woff'),
+    url('../fonts/FuturaBookC_gdi.ttf') format('truetype'),
+    url('../fonts/FuturaBookC_gdi.otf') format('opentype'),
+    url('../fonts/FuturaBookC_gdi.svg#FuturaBookC-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+000D-E000;
+}
+
+// FONT FACE : end
+
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: $text-font;
+    font-size: 15px;
+    line-height: 1.473;
+    font-size: 19px;
+    color: #222222;
+    text-rendering: optimizeLegibility;
+    -webkit-text-rendering: optimizeLegibility;
+}
+
+// h1-h6 titles : begin
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    margin: 0; padding: 0;
+    font-weight: normal;
+    font-family: $title-font;
+}
+
+h1,
+.h1 {
+    font-size: 26px;
+    color: #EEEEEE;
+    letter-spacing: 2.25px;
+    line-height: 1.461;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2,
+.h2 {
+    font-size: 30px;
+    color: #080808;
+    line-height: 1.266;
+}
+
+h3,
+.h3 {
+    font-size: 26px;
+    color: #222222;
+    line-height: 1.192;
+}
+// h1-h6 titles : begin
+
+// text (link, bold, italic) : begin
+p {
+    margin: 0;
+    padding: 0;
+
+    b {
+        font-weight: bold;
+    }
+
+    i {
+        font-style: italic;
+    }
+
+    a {
+        // default styles for normal links
+        &[href]:not([class]) {
+        }
+
+        &:hover {
+        }
+
+        &:active {
+        }
+
+        &:visited {
+        }
+    }
+}
+
+// text (link, bold, italic) : end
+
+// bulleted list : begin
+ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+// bulleted list : end
+
+// numbered list : begin
+ol {
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+// numbered list : end
+
+// table : begin
+table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    &:hover {
+        transition: all 0.2s ease;
+    }
+
+    tr {
+        th,
+        td {
+            padding: 10px 13px;
+            text-align: left;
+            border: 1px solid #010101;
+        }
+
+        th {
+            font-weight: bold;
+            font-size: 120%;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// table : end
+
+// hor line
+hr {
+}

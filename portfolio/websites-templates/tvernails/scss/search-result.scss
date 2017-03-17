@@ -1,0 +1,46 @@
+.search-result{}
+.search-result{
+
+	input[type="text"]{
+		width: 300px;
+		margin: 0 auto;
+	}
+
+	input[type="submit"]{
+		margin: 0 auto 30px auto;
+		display: block;
+	}
+
+	hr + a{
+		font-size: 18px;
+	}
+
+	p{
+		margin: 10px 0;
+	}
+
+	small{
+		font-size:90%;
+		font-family: $fontRoman;
+		margin: 2px 0;
+		display: inline-block;
+		color: #717171;
+	}
+
+	.navigation{
+		text-align: center;
+	}
+	.navigation{
+
+		.navigation-arrows{
+			margin: 0 0 20px;
+		}
+
+	}
+
+	.sort-links{
+		text-align: center;
+		margin-top: 0;
+	}
+
+}

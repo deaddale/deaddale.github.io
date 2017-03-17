@@ -1,0 +1,295 @@
+input[type="hidden"]{
+	width: 0 !important;
+	height: 0 !important;
+	border: none !important;
+	outline: none !important;
+}
+
+// input default 
+
+@mixin defaultInput(
+	$paddingTop:9px,
+	$paddingRight:10px,
+	$paddingBottom:10px,
+	$paddingLeft:10px) {
+
+	width: 100%;
+	box-sizing: border-box;
+	outline: none;
+	display: block;
+	height: 40px;
+	line-height: normal;
+	color: map-get(map-get($color-palettes, grey), x-dark);
+	font-size: 14px;
+	font-weight: 400;
+	padding-top: $paddingTop;
+	padding-right: $paddingRight;
+	padding-bottom: $paddingBottom;
+	padding-left: $paddingLeft;
+	border: none;
+	background-color: #eee;
+	border-radius: 2px;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+	transition: border-color 0.24s ease-out;
+	transition: color 0.24s ease-out;
+
+	&:focus{
+		color: #000;
+		border: 2px map-get($ui-colors, default) solid;
+		padding-top: $paddingTop - 2;
+		padding-right: $paddingRight - 2;
+		padding-bottom: $paddingBottom - 2;
+		padding-left: $paddingLeft - 2;
+		transition: border-color 0.24s ease;
+		transition: color 0.24s ease;
+	}
+
+	&.error{
+		color: $sunglo;
+		border: 2px $sunglo solid;
+		padding-top: $paddingTop - 2;
+		padding-right: $paddingRight - 2;
+		padding-bottom: $paddingBottom - 2;
+		padding-left: $paddingLeft - 2;
+		transition: border-color 0.24s ease;
+		transition: color 0.24s ease;
+	}
+
+	&::-webkit-input-placeholder {color: map-get(map-get($color-palettes, grey), base);}
+	&::-moz-placeholder {color: map-get(map-get($color-palettes, grey), base);} // Firefox 19+
+	&:-moz-placeholder {color: map-get(map-get($color-palettes, grey), base);} // Firefox 18-
+	&:-ms-input-placeholder {color: map-get(map-get($color-palettes, grey), base);}
+}
+
+// textarea default
+
+@mixin defaultTextArea(
+	$paddingTop:9px,
+	$paddingRight:10px,
+	$paddingBottom:10px,
+	$paddingLeft:10px) {
+	width: 100%;
+	box-sizing: border-box;
+	outline: none;
+	display: block;
+	height: 200px;
+	line-height: normal;
+	border: 1px #ccc solid;
+	color: map-get(map-get($color-palettes, grey), x-dark);
+	font-size: 14px;
+	font-weight: 400;
+	padding-top: $paddingTop;
+	padding-right: $paddingRight;
+	padding-bottom: $paddingBottom;
+	padding-left: $paddingLeft;
+	border: none;
+	background-color: #eee;
+	resize: vertical;
+	border-radius: 2px;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+	transition: border-color 0.24s ease-out;
+	transition: color 0.24s ease-out;
+
+	&:focus{
+		color: #000;
+		border: 2px map-get($ui-colors, default) solid;
+		padding-top: $paddingTop - 2;
+		padding-right: $paddingRight - 2;
+		padding-bottom: $paddingBottom - 2;
+		padding-left: $paddingLeft - 2;
+		transition: border-color 0.24s ease;
+		transition: color 0.24s ease;
+	}
+
+	&.error{
+		color: $sunglo;
+		border: 2px $sunglo solid;
+		padding-top: $paddingTop - 2;
+		padding-right: $paddingRight - 2;
+		padding-bottom: $paddingBottom - 2;
+		padding-left: $paddingLeft - 2;
+		transition: border-color 0.24s ease;
+		transition: color 0.24s ease;
+	}
+
+	&::-webkit-input-placeholder {color: map-get(map-get($color-palettes, grey), base);}
+	&::-moz-placeholder {color: map-get(map-get($color-palettes, grey), base);} // Firefox 19+
+	&:-moz-placeholder {color: map-get(map-get($color-palettes, grey), base);} // Firefox 18-
+	&:-ms-input-placeholder {color: map-get(map-get($color-palettes, grey), base);}
+
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	    	appearance: none;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"] {
+	@include defaultInput;
+}
+
+textarea {
+	@include defaultTextArea;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+	outline: 0;
+}
+
+input[type="email"].error,
+input[type="number"].error,
+input[type="search"].error,
+input[type="text"].error,
+input[type="tel"].error,
+input[type="url"].error,
+input[type="password"].error,
+textarea.error {
+	outline: 0;
+}
+
+label,
+legend {
+	display: block;
+}
+
+fieldset {
+	padding: 0;
+	border-width: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	display: inline;
+}
+
+
+// select : begin
+.ik_select {
+	/*
+	Wraps all the plugin's HTML code.
+	Probably you should not add any styles here
+	*/
+}
+	.ik_select_link {
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+		outline: none;
+		display: block;
+		height: 40px;
+		line-height: 38px;
+		border: 1px #ccc solid;
+		color: map-get(map-get($color-palettes, grey), base);
+		font-size: 14px;
+		cursor: pointer;
+		font-weight: 400;
+		padding: 0 20px 0 10px;
+		background-color: #eee;
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAYAAADam2dgAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGRJREFUeNpiPHPmzBoGBoZgBtxgHROQyAXi9zgUfADJgxQ9B+IyHIpA4s+YoJy5QLwfTcEBIJ4DYsAU/QfiNCD+DuX/gPL/IysCgTtAXA9lNwLxbZgEC5oV/UCsAcQ9yIIAAQYAnMkU/ssLN6MAAAAASUVORK5CYII=');
+		background-position: right 10px top 17px;
+		background-repeat: no-repeat;
+		border-radius: 2px;
+		-webkit-transition: border-color 0.24s ease-out;
+		        transition: border-color 0.24s ease-out;
+		-webkit-transition: color 0.24s ease-out;
+		        transition: color 0.24s ease-out; 
+	}
+	.ik_select_link_focus {}
+	.ik_select_link_disabled {
+		/* Disabled state of the fake select */
+	}
+		.ik_select_link_text {
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			display: block;
+		}
+
+	.ik_select_dropdown {
+		/*
+		Dropdown wrapper. Needed for script calculations.
+		You should not add any visual styles here.
+		You can shift the position of the dropdown
+		by changing top and left values like
+		top: -2px;
+		left: -5px;
+		*/
+	}
+		.ik_select_list {
+			background: #f8f8f8;
+			border: 1px #ccc solid;
+			border-top: none;
+			color: map-get(map-get($color-palettes, grey), x-dark);
+			font-size: 14px;
+			font-weight: 400;
+			padding: 0;
+			box-shadow: rgba(0, 0, 0, 0.0980392) 0px 6px 9px 0px;
+			border-radius: 0 0 2px 2px;
+			
+			ul{
+				margin: 0; padding: 0;
+				list-style: none;
+
+				li{
+					margin: 0; padding: 12px 10px 12px;
+					display: block;
+					line-height: 1;
+					cursor: pointer;
+
+					// &:first-child{
+					// 	padding-top: 12px;
+					// }
+
+					// &:last-child{
+					// 	padding-bottom: 12px;
+					// }
+
+					&:hover{
+						background: #ebebeb;
+					}
+				}
+			}
+		}
+			.ik_select_optgroup {
+				/* Optgroup */
+			}
+				.ik_select_optgroup_label {
+					/* Optgroup label */
+				}
+				.ik_select_option {
+					/* Option */
+				}
+					.ik_select_option_label {
+						/* Option label */
+					}
+				.ik_select_hover {
+					/* The hovered state of an option */
+				}
+				.ik_select_active {
+					/* The active state of an option */
+				}
+
+		.ik_select_filter_wrap {
+			/* Wrapper for the filter input */
+		}
+		.ik_select_filter {
+			/* Filter input */
+		}
+		.ik_nothing_found {
+			/* Block that's shown when there's nothing found. */
+		}
+// select : end
+
+
+

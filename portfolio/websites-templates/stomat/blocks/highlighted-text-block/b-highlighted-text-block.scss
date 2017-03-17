@@ -1,0 +1,18 @@
+.b-highlighted-text-block{
+    background: #2e71f2;
+    padding: 47px 55px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+
+    p{
+        color: white;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.25;
+        margin-bottom: 25px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

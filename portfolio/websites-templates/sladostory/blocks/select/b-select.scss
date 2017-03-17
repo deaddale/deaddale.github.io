@@ -1,0 +1,36 @@
+// select
+.b-select{
+    color: #ffffff;
+    font-family: $secondary-font;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 0;
+    float: left;
+    overflow: hidden;
+    height: 30px;
+    cursor: pointer;
+
+    &.open{
+        overflow: auto;
+        height: auto;
+    }
+
+    > span{
+        display: block;
+        padding: 0 24px 0 11px;
+        height: 30px;
+
+        &:first-child{
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAHCAYAAADTcMcaAAAA1UlEQVQYV2NkYGBgiPUwqPzL/Hflsq2X74H42ECsm54iAxNTxOIdF9oZYzwNohn/MyxhYGB48///v6AlOy8dRtcU465ny8jItI6BgUHkPyNDDGOSnzrv71+cKxgYGLwYGBh+MTAwZi3ecX4uTGOsh2EyA8P/aQwMDGwMDAzb/jGyRzKCJENDQ5k5vtzqZPjPWAzi/2dg7PvJ+6uS4wtLG0yMgfF/7w8etfLVq1f/BWvCbur/FwwMjBLYbEfRBNKM7H5c/sTQBA5NUEgxMjX8ZfnbiC1EAdueUCED//wwAAAAAElFTkSuQmCC');
+            background-repeat: no-repeat;
+            background-position: right 11px;
+        }
+
+        &.current{
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAJCAYAAADkZNYtAAAAiklEQVQYlY3PMQ5BARCE4XmRKEioVOICOp1Oq3YASonaFSRO4QDeFSgdQKNQCQf5NF4iL4RJNtns/juTDfJHDVH+A3ZwwewXWKDEFgmmaHyB1zhW+2CPzQdwght61Szo4vpKqMA+7hi/G1TNCA8M0MQJq3pagby0TDJPck7STrJIXbXrHQ5ofXr4CZKLGVdn+JlCAAAAAElFTkSuQmCC');
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+    }
+}

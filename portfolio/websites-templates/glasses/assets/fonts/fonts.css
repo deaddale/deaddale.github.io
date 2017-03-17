@@ -1,0 +1,27 @@
+/* Open Sans */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext);
+
+/* RopaSansSCPro */
+@font-face {
+	font-family: 'RopaSansSCPro-Regular';
+	src: url('ropasansscpro-regular_gdi-webfont.eot');
+	src: local('RopaSansSCPro-Regular'), local('RopaSansSCPro-Regular'), 
+		url('ropasansscpro-regular_gdi-webfont.eot?#iefix') format('embedded-opentype'),
+		url('ropasansscpro-regular_gdi-webfont.woff2') format('woff2'),
+		url('ropasansscpro-regular_gdi-webfont.woff') format('woff'),
+		url('ropasansscpro-regular_gdi-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'RopaSansSCPro-Medium';
+	src: url('ropasansscpro-medium_gdi-webfont.eot');
+	src: local('RopaSansSCPro-Medium'), local('RopaSansSCPro-Medium'), 
+		url('ropasansscpro-medium_gdi-webfont.eot?#iefix') format('embedded-opentype'),
+		url('ropasansscpro-medium_gdi-webfont.woff2') format('woff2'),
+		url('ropasansscpro-medium_gdi-webfont.woff') format('woff'),
+		url('ropasansscpro-medium_gdi-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,60 @@
+.select2-selection--single {
+    box-sizing: border-box;
+    position: relative;
+    padding-right: 10px;
+
+    cursor: pointer;
+    display: block;
+
+    height: 28px;
+
+    user-select: none;
+    -webkit-user-select: none;
+
+    .select2-selection__rendered {
+        display: block;
+        padding: 0 18px;
+        border: none;
+        outline: none;
+        line-height: 28px;
+        color: #a0844a;
+        font-family: $secondary-font;
+        font-size: 15px;
+        font-weight: 400;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .select2-selection__arrow {
+        background-color: transparent;
+        border: none;
+        width: 13px;
+        height: 7px;
+        position: absolute;
+        top: 11px;
+        right: 5px;
+        display: block;
+
+        b {
+            display: block;
+            width: 13px;
+            height: 7px;
+            background: url("../images/sources/icons/icon-select-arrow-bottom.png") 0 0 no-repeat;
+        }
+    }
+
+    .select2-selection__clear {
+        position: relative;
+    }
+}
+
+&[dir="rtl"] {
+    .select2-selection--single {
+        .select2-selection__rendered {
+            padding-right: 8px;
+            padding-left: 20px;
+        }
+    }
+}

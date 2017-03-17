@@ -1,0 +1,149 @@
+.b-preview-section-of-site{
+
+    @include breakpoint($first-breakpoint){
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    > div{
+        @include container(980px);
+
+        // one section : begin
+        .one-section{
+            @include justifyBlocks;
+
+            @include breakpoint($second-breakpoint){
+                text-align: left;
+                margin-bottom: 40px;
+            }
+
+            // image
+            .img{
+                display: inline-block;
+                width: 50%;
+                vertical-align: top;
+
+                @include breakpoint($second-breakpoint){
+                    width: 40%;
+                }
+
+                @include breakpoint($sixth-breakpoint){
+                    display: block;
+                    width: 100%;
+                }
+
+                img{
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            // text
+            .text{
+                display: inline-block;
+                width: 50%;
+                vertical-align: top;
+                padding-top: 20px;
+
+                @include breakpoint($second-breakpoint){
+                    width: 60%;
+                    padding-top: 10px;
+                }
+
+                @include breakpoint($sixth-breakpoint){
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 35px;
+
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+
+                h2{
+                    color: #3c3d41;
+                    font-family: $secondary-font;
+                    font-size: 11px;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    text-transform: uppercase;
+                    letter-spacing: 0.2em;
+                    margin-bottom: 20px;
+                    margin-top: 0;
+                }
+
+                h3{
+                    color: #3c3d41;
+                    font-family: $secondary-font;
+                    font-size: 32px;
+                    font-weight: 700;
+                    letter-spacing: -0.031em;
+                    line-height: 1.2;
+                    margin-bottom: 29px;
+                    max-width: 400px;
+                    margin-top: 0;
+
+                    @include breakpoint($second-breakpoint){
+                        font-size: 20px;
+                        margin-bottom: 15px;
+                    }
+
+                }
+
+                p{
+                    color: #656b6f;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 1.5em;
+                    max-width: 400px;
+                    margin-bottom: 35px;
+
+                    @include breakpoint($second-breakpoint){
+                        max-width: 100%;
+                        margin-bottom: 20px;
+                        font-size: 16px;
+                    }
+
+                    @include breakpoint($third-breakpoint){
+
+                    }
+                }
+
+                .b-button{
+                }
+            }
+
+            // text left
+            &.text-left{
+                .text{
+                    padding-left: 0;
+
+                    @include breakpoint($second-breakpoint){
+                        padding-left: 0;
+
+                        h2, h3, p, .b-button{
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+
+            // text right
+            &.text-right{
+                .text{
+                    padding-left: 72px;
+
+                    @include breakpoint($second-breakpoint){
+                        padding-left: 25px;
+                    }
+
+                    @include breakpoint($sixth-breakpoint){
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+        // one section : end
+    }
+}

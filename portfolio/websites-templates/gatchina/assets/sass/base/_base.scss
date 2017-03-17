@@ -1,0 +1,25 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+body{
+    background: #e0e0e0 url(../../images/bgs/bg-page-img-1.png) right 32px top no-repeat, 
+                #e0e0e0 url(../../images/bgs/bg-page-img-2.png) 76px 527px no-repeat;
+}
+
+.wrapper-page{
+    width: 1072px;
+    position: relative;
+    margin: 0 auto 15px auto;
+    @extend %clearfix;
+    margin-top: 23px;
+    background-color: #f6f6f6;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.22);
+}
+
+
+
+

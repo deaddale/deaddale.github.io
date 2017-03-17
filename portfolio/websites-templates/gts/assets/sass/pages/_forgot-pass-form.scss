@@ -1,0 +1,57 @@
+.forgot-pass-form{
+
+	// one line : begin
+	.one-line{
+		margin-bottom: $base__line;
+
+		.label{
+			margin-bottom: 3px;
+			color: map-get(map-get($color-palettes, grey), base);
+		}
+
+		input[type="text"],
+		input[type="email"],
+		textarea{
+			width: 80%;
+		}
+
+		input[type="text"] + input[type="text"],
+		input[type="text"] + input[type="email"],
+		input[type="text"] + textarea,
+		input[type="email"] + input[type="text"],
+		input[type="email"] + input[type="email"],
+		input[type="email"] + textarea,
+		textarea + input[type="text"],
+		textarea + input[type="email"],
+		textarea + textarea{
+			margin-top: $base__line/2;
+		}
+
+		input[type="submit"]{
+			@include btn;
+			margin: 0 auto;
+		}
+
+		&.error{
+			text-align: left;
+			font-size: 80%;
+			font-family: $font-light;
+			margin-bottom: $base__line;
+			color: $sunglo;
+			display: none;
+		}
+
+		&.message{
+			text-align: left;
+			font-size: 80%;
+			font-family: $font-light;
+			margin-bottom: $base__line;
+			display: none;
+		}
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	// one line : end
+}

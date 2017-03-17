@@ -1,0 +1,91 @@
+.b-why-we{
+    padding-top: 62px;
+    padding-bottom: 80px;
+    background: #f9f9f9;
+
+    @include breakpoint($first-breakpoint){
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 60px;
+    }
+
+    // title
+    h2{
+        color: #3b3d40;
+        font-family: $secondary-font;
+        font-size: 48px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 20px;
+        line-height: 1.145;
+        text-align: center;
+
+        @include breakpoint($fourth-breakpoint){
+            font-size: 32px;
+        }
+    }
+
+    // description
+    p.descr{
+        color: #656b6f;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.25;
+        text-align: center;
+        margin-bottom: 44px;
+
+        @include breakpoint($fourth-breakpoint){
+            font-size: 14px;
+        }
+
+    }
+
+    // advantages : begin
+    .advantages{
+        @include container($susy);
+
+        // one advantage : begin
+        .one-advantage{
+            @include span(12 of 24);
+            @include prefix(1 of 24);
+            @include suffix(1 of 24);
+            @include clearfix;
+
+            @include breakpoint($fifth-breakpoint){
+                @include span(24 of 24);
+                margin-bottom: 10px;
+            }
+
+            // icon
+            i{
+                width: 32px;
+                height: 32px;
+                float: left;
+            }
+
+            // text
+            > div{
+                padding-left: 53px;
+
+                h3{
+                    color: #3c3d41;
+                    font-size: 12px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 0.2em;
+                    margin-top: 0;
+                    margin-bottom: 12px;
+                }
+
+                p{
+                    color: #656b6f;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.28;
+                }
+            }
+        }
+        // one advantage : end
+    }
+    // advantages : end
+}

@@ -1,0 +1,431 @@
+// fonts : begin
+$fontMedium          : 'pf_din_text_comp_promedium', sans-serif;
+$fontRegular         : 'pf_din_text_comp_proregular', sans-serif;
+$fontBold            : 'pf_din_text_comp_probold', sans-serif;
+$fontRoman           : 'helveticaneuecyrroman', sans-serif;
+$fontHelvMedium      : 'helveticaneuecyrmedium', sans-serif;
+$fontHelvBold        : 'helveticaneuecyrbold', sans-serif;
+$fontHelvItalic      : 'helveticaneuecyritalic', sans-serif;
+$fontArial           : Arial, Helvetica, sans-serif;
+// fonts : end
+
+// colors : begin
+$baseTextColor       : #4d4d4d;
+// colors : end
+
+// html, body
+html{
+    overflow-x: hidden;
+}
+body{
+    font-size: 13px;
+    line-height: 1.384em;
+    font-family: $fontRoman;
+    color: $baseTextColor;
+    background-color: #fff;
+}
+
+// titles
+h1{
+    color: #4D4D4D;
+    font-family: $fontMedium;
+    font-size: 64px;
+    line-height: 1.2em;
+    margin: 0 0 20px; padding: 0;
+    font-weight: normal;
+}
+h2, h3, h4, h5, h6{
+    color: #000;
+    font-family: $fontMedium;
+    font-size: 30px;
+    line-height: 1.1em;
+    margin: 9px 0 10px;
+    padding: 0;
+    font-weight: 400;
+}
+
+// h2, h3, h4, h5, h6{
+// 	font-family: $fontBBook;
+// 	font-size: 23px;
+// 	line-height: 1.2em;
+//     letter-spacing: 0.01em;
+// 	color: #090909;
+// 	margin: 35px 0 13px;
+// 	padding: 0;
+// 	font-weight: normal; 
+// }
+
+// text
+p{
+	font-size: 13px;
+    line-height: 1.538em;
+    color: #000;
+    margin: 0 0 10px;
+}
+
+// lists
+ul, ol{
+	color: #000;
+}
+
+// links
+a{
+	color: #804d9f;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+// bold
+b,strong{
+	font-family: $fontHelvMedium;
+	font-weight: normal;
+}
+
+// italic
+i{
+	font-family: $fontHelvItalic;
+	font-style: normal;
+}
+
+// hr (horisontal line)
+hr{
+    height: 1px;
+    border: none;
+    background: #ccc;
+    outline: none;
+    display: block;
+    margin: 20px 0;
+}
+
+// table
+table{
+    margin: 10px 0;
+}
+table{
+
+    tbody{}
+
+    tr{}
+
+        tr td{
+            padding: 7px 11px;
+            border: 1px #ccc solid;
+        }
+
+}
+
+// FORMS : begin
+form{
+
+    > div{
+        margin: 0 0 19px;
+    }
+    > div:last-child{
+        margin-bottom: 0;
+    }
+
+    label{
+        font-family: $fontHelvMedium;
+        font-size: 14px;
+        color: #4d4d4d;
+        line-height: 1em;
+        display: block;
+        margin: 0 0 9px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"]{
+        outline: none;
+        padding: 10px 15px;
+        color: #999;
+        font-family: $fontArial;
+        font-size: 13px;
+        font-weight: 400;
+        background-color: #FFF;
+        border: 1px solid #EDEDED;
+        border-radius: 3px;
+        display: block;
+        width: 300px;
+    }
+
+    input[type="submit"],
+    button,
+    .button,
+    input[type="button"]{
+        border: none;
+        outline: none;
+        font-size: 22px;
+        color: #fff;
+        line-height: 1em;
+        text-transform: uppercase;
+        padding: 11px 20px 8px;
+        margin: 0;
+        background: #804d9f;
+        font-weight: normal;
+        font-family: $fontRegular;
+        box-sizing: border-box;
+    }
+
+    textarea{
+        outline: none;
+        padding: 10px 15px;
+        color: #999;
+        font-family: $fontArial;
+        font-size: 13px;
+        font-weight: 400;
+        width: 157px;
+        background-color: #FFF;
+        border: 1px solid #EDEDED;
+        border-radius: 3px;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    p{
+        font-size: 12px;
+        line-height: 1.5em;
+        color: #8f8f8f;
+        font-family: $fontRoman;
+        margin: 0 0 18px;
+    }
+
+      p a{}
+
+}
+// FORMS : end
+
+// label{
+//     font-family: $fontThin;
+// }
+
+// input[type="text"]{
+//     width: 100%;
+//     line-height: 1em;
+//     font-size: 14px;
+//     color: #c6ccd2;
+//     font-family: $fontRegular;
+//     padding: 10px 17px;
+//     border-radius: 6px;
+//     background-color: #fff;
+//     outline: none;
+//     border: 1px #999999 solid;
+//     transition: background 0.2s ease;
+//     transition: color 0.2s ease;
+// }
+
+// textarea{
+//     width: 100%;
+//     line-height: 1em;
+//     font-size: 14px;
+//     color: #c6ccd2;
+//     font-family: $fontRegular;
+//     padding: 15px 17px;
+//     border-radius: 6px;
+//     background-color: #fff;
+//     outline: none;
+//     border: 1px #999999 solid;
+//     min-height: 100px;
+//     transition: background 0.2s ease;
+//     transition: color 0.2s ease;
+// }
+// textarea::-webkit-input-placeholder {
+//    padding: 2px 0 0;
+// }
+
+// textarea:-moz-placeholder { /* Firefox 18- */
+//    padding: 2px 0 0;  
+// }
+
+// textarea::-moz-placeholder {  /* Firefox 19+ */
+//    padding: 2px 0 0; 
+// }
+
+// textarea:-ms-input-placeholder {  
+//    padding: 2px 0 0;  
+// }
+
+// input[type="text"]:hover,
+// textarea:hover{
+//     color: #8a8e92;
+//     transition: background 0.4s ease;
+//     transition: color 0.4s ease;
+// }
+// input[type="text"]:focus,
+// textarea:focus{
+//     color: #606265;
+//     transition: background 0.4s ease;
+//     transition: color 0.4s ease;
+// }
+
+// // placeholder : begin
+// input[type="text"]::-webkit-input-placeholder {
+//    padding: 2px 0 0;
+// }
+
+// input[type="text"]:-moz-placeholder { /* Firefox 18- */
+//    padding: 2px 0 0;  
+// }
+
+// input[type="text"]::-moz-placeholder {  /* Firefox 19+ */
+//    padding: 2px 0 0; 
+// }
+
+// input[type="text"]:-ms-input-placeholder {  
+//    padding: 2px 0 0;  
+// }
+// // placeholder : end
+
+// input[type="submit"],
+// button,
+// .button{
+//     background: #e1af6c;
+//     color: #fff;
+//     font-family: $fontRegular;
+//     line-height: 1em;
+//     padding: 17px 17px 16px;
+//     font-size: 14px;
+//     outline: 0;
+//     border: none;
+//     outline: none;
+//     cursor: pointer;
+//     transition: background .2s ease-in-out;
+//     transition: color .2s ease-in-out;
+// }
+
+// input[type="submit"]:hover,
+// button:hover,
+// .button:hover{
+//     font-family: $fontRegular;
+//     transition: background .2s ease-in-out;
+//     transition: color .2s ease-in-out;
+//     background: #d0b289;
+// }
+
+// input[type="submit"].active,
+// button:active,
+// .button{}
+// FORMS : end
+
+// FONT-FACE : begin
+// PF DIN TEXT COMP PRO REGULAR
+@font-face {
+    font-family: 'pf_din_text_comp_proregular';
+    src: url('../../fonts/pfdin/PFDinTextCompPro-Regular-webfont.eot');
+    src: url('../../fonts/pfdin/PFDinTextCompPro-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/pfdin/PFDinTextCompPro-Regular-webfont.woff2') format('woff2'),
+         url('../../fonts/pfdin/PFDinTextCompPro-Regular-webfont.woff') format('woff'),
+         url('../../fonts/pfdin/PFDinTextCompPro-Regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// PF DIN TEXT COMP PRO MEDIUM
+@font-face {
+    font-family: 'pf_din_text_comp_promedium';
+    src: url('../../fonts/pfdin/PFDinTextCompPro-Medium-webfont.eot');
+    src: url('../../fonts/pfdin/PFDinTextCompPro-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/pfdin/PFDinTextCompPro-Medium-webfont.woff2') format('woff2'),
+         url('../../fonts/pfdin/PFDinTextCompPro-Medium-webfont.woff') format('woff'),
+         url('../../fonts/pfdin/PFDinTextCompPro-Medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// PF DIN TEXT COMP PRO BOLD
+@font-face {
+    font-family: 'pf_din_text_comp_probold';
+    src: url('../../fonts/pfdin/PFDinTextCompPro-Bold-webfont.eot');
+    src: url('../../fonts/pfdin/PFDinTextCompPro-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/pfdin/PFDinTextCompPro-Bold-webfont.woff2') format('woff2'),
+         url('../../fonts/pfdin/PFDinTextCompPro-Bold-webfont.woff') format('woff'),
+         url('../../fonts/pfdin/PFDinTextCompPro-Bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// HELVETICA NEUE CYR ROMAN
+@font-face {
+    font-family: 'helveticaneuecyrroman';
+    src: url('../../fonts/helveticanue/HelveticaNeueCyr-Roman-webfont.eot');
+    src: url('../../fonts/helveticanue/HelveticaNeueCyr-Roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/helveticanue/HelveticaNeueCyr-Roman-webfont.woff2') format('woff2'),
+         url('../../fonts/helveticanue/HelveticaNeueCyr-Roman-webfont.woff') format('woff'),
+         url('../../fonts/helveticanue/HelveticaNeueCyr-Roman-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// HELVETICA NEUE CYR MEDIUM
+@font-face {
+    font-family: 'helveticaneuecyrmedium';
+    src: url('../../fonts/helveticanue/HelveticaNeueCyr-Medium-webfont.eot');
+    src: url('../../fonts/helveticanue/HelveticaNeueCyr-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/helveticanue/HelveticaNeueCyr-Medium-webfont.woff2') format('woff2'),
+         url('../../fonts/helveticanue/HelveticaNeueCyr-Medium-webfont.woff') format('woff'),
+         url('../../fonts/helveticanue/HelveticaNeueCyr-Medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// HELVETICA NEUE CYR BOLD
+@font-face {
+    font-family: 'helveticaneuecyrbold';
+    src: url('../../fonts/helveticanue/HelveticaNeueCyr-Bold-webfont.eot');
+    src: url('../../fonts/helveticanue/HelveticaNeueCyr-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/helveticanue/HelveticaNeueCyr-Bold-webfont.woff2') format('woff2'),
+         url('../../fonts/helveticanue/HelveticaNeueCyr-Bold-webfont.woff') format('woff'),
+         url('../../fonts/helveticanue/HelveticaNeueCyr-Bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// HELVETICA NEUE CYR ITALIC
+@font-face {
+    font-family: 'helveticaneuecyritalic';
+    src: url('../../fonts/helveticanue/HelveticaNeueCyr-Italic-webfont.eot');
+    src: url('../../fonts/helveticanue/HelveticaNeueCyr-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/helveticanue/HelveticaNeueCyr-Italic-webfont.woff2') format('woff2'),
+         url('../../fonts/helveticanue/HelveticaNeueCyr-Italic-webfont.woff') format('woff'),
+         url('../../fonts/helveticanue/HelveticaNeueCyr-Italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+// FONT-FACE : end
+
+// CLEAR FLOATING ELEMENTS : begin
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+  content: '.';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after{
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+// CLEAR FLOATING ELEMENTS : end

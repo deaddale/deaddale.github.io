@@ -1,0 +1,141 @@
+#header-page{
+	position: relative;
+	padding-top: 23px;
+	height: 650px;
+	background: url(../../images/bgs/header-bg.png) no-repeat center top fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	// arrow
+	&:after{
+		content: '';
+		display: block;
+		width: 24px;
+		height: 9px;
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAJCAQAAACC9CRNAAAAoklEQVR4AYXNpUGFAQCF0YtWGu6ZCbAFYAGkIQ2XBBPgCVuCiHtiAzLu8gz/sPe7nQWOaOeOJ0YVgRGeuKVVPPBvgWwFIIs5/j2KSwyHVMkHhaxhuBRNJDHEGSFXNmTSyR2GF5olUcclljPGqCFTooo+jrHc0ah/lLKD0zsvOB1R7ax7eSJIinFy5EYBk8Rwe2OZKgUhj25WOAXghg0GKZLDNylG7s63T/oBAAAAAElFTkSuQmCC');
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		@include horizontal-center;
+		position: absolute;
+		bottom: 24px;
+	}
+
+	// top block : begin
+	> div:first-child{
+		@include container($susy);
+		height: 32px;
+		margin-bottom: 210px;
+
+		// logo
+		> div:first-child{
+			display: block;
+			margin-right: 32px;
+			float: left;
+			width: 96px;
+			height: 32px;
+			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAgCAMAAADaHo1mAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAMK/v/0Bgv39Q3yAQn89wj7ZC9UAAAAISSURBVHgB7ZTVAuQgDEXxpFj7/1+7CbewndXRt7kPSISDG5V1PngXtZmIyNwriU33xKUAaTBLfTdAYvmOMBumts8AnMQRk5T5AwCEOamUUD4BiNgbs0kdPwWIqD8LqDHGugC15RDchhDuIfRdW5aILPuQtwnYcvCHWSkkjipBGr1LXY0p13lMgPVhSFNrR7ufsyHcOAA6wi4pbRxnFotO0aD2e70FIA9rO2abAYAcAKcqUoAeUckkpGNMWWZZAIyTuWGc4T28lCfgaGo6AU09IV5SaCyBUAwRyFQWYJdSek3HsXjjSSo7hmFkAODgiTcpCBtmiLF9vgAwS1QRgahQTj9osF1T5pzJLKWO83kXIJ0HeFHUVVwBzEwT0JjbQwCT5wKmsO92ASAAoMcACTf5IsS9DdCw46oSY/wTIELDvqNd7waUoLrc/D8AblcG3Q1oeNQLUM9dK7eAyMxzzCLtch8AC6C5hA2oKgaPgIK3g09k/lUNDw0fT1+AXA3uF1LwDeG5ec2bNyqTBydpJ9kgogyTenpX+/lVdHUAIMaO3f6Z4kwdc2Kh1LmE9ZILXqCbNjvuL7T/+bMD+pqCXQdGlTzGt6MzAJVgSmo65tcNQFvB2hm5EnZJqR7n27AE9e1Ebv7YkelQUCNapoPoKOsWRUfNao+ZY2nkonaQwhJmx33AvbDmMeHGvKIv4AvAj/SIfgB3kx0BP+PyOwAAAABJRU5ErkJggg==');
+			background-position: left center;
+			background-repeat: no-repeat;
+		}
+
+		// main navigation : begin
+		nav{
+			margin-top: 7px;
+			float: left;
+
+			ul{
+				list-style: none;
+				padding: 0; margin: 0;
+
+				li{
+					margin: 0 15px 0 0; padding: 0;
+					font-size: 0;
+					display: inline-block;
+
+					a{
+						color: white;
+						font-family: $lightFont;
+						font-size: 17px;
+						line-height: 1;
+						text-decoration: none;
+						transition: color 0.3s ease;
+
+						&:hover{
+							color: #5fdfcb;
+							transition: color 0.3s ease;
+						}
+					}
+
+					&:last-child{
+						margin-right: 0;
+					}
+
+					&.active{
+
+						a{
+							color: #5fdfcb;
+							transition: color 0.3s ease;
+						}
+					}
+				}
+			}
+		}
+		// main navigation : end
+
+		// telephone number
+		> div:last-child{
+			float: right;
+			padding-right: 46px;
+			padding-top: 7px;
+			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACZ0lEQVR4Ac1XA9KcQRD9bhDrNuEVYusCSTkqxLbxx7ZtG8vf9trozEvVVHZWM/v1Bl3Vi0G/1xhZpjLp/Z0Rkz7c2zL584Mfk789Ck358SQzxfGUoPiNNvRhDMZaVRIAjxOGXb+AnM+MFGMxB3PtA7+7M3Dyp/uvpjhg1J5irrDxGrYq9XrM5G+Po9IQV2EL0TAEvzsVOeUDqwqbsK3NNxtcQwIYpXI+mB92o3TEgFVAAMVSbuIM13M63lVP3yM+muN+ySIBrIKiKzdhqlBHxE9Srva2sCOhpAJrttzgDS0OypV0NkuL6t6zCAhMt/R+lG6TudXfRvmCVHAIABPYFrZO3eCXgW4qJquav7FIABvhd+oGPvJ1KsBZoS8EqYWe19w0OC0cIrqBJ7sbFAKHOmvRzlZgW1N+PNVuPEsbPysE9rR7qkIA2JbJYYNl2J2MkRR3NIA2NgFgGxGAnu5upFzZ0eaqEgGDFEDnul9SKJ0iKb5UAm38FMgiNNETXWox3uhr5RehXIYmOtP1gtoSUZKSoSytztkL5nle0Tz3q8qWodyITHVF4xcB+1simRStb/lBh8XSRIq80aBxgQJb3YoN9UJPE7ALzgcp+zq85lsxBAdDJQSmOZ/T+1BfAQlJAZFY4HlldhjJm5AhuHI/+BTqB55SE5LEfV+H7jieoL+QGETicm+LEn75G8Va5kLyptSVLGZnOS2u/0D3fO3UGo9Ql9gxL/Y249ZU7ko29N9fSv/Da7kaCTUd/JswbNp5mr1mg8unmV3BcrH5OHWrS40n8nm+TRh2iEMkrNSJ+I029GFMJc/zn+ijDXtw8vbbAAAAAElFTkSuQmCC');
+			background-position: right center;
+			background-repeat: no-repeat;
+			height: 32px;
+			line-height: 1;
+			color: white;
+			font-family: $boldFont;
+			font-size: 23px;
+			text-align: right;
+		}
+	}
+	// top block : end
+
+	// bottom block : begin
+	> div:last-child{
+		@include container($susy);
+
+		// title
+		h1{
+			color: white;
+			font-family: $defaultFont;
+			font-size: 42px;
+			text-align: center;
+			font-weight: normal;
+			line-height: 0.9;
+			margin-bottom: 39px;
+
+			span{
+				font-family: $lightFont;
+				font-size: 18px;
+			}
+		}
+
+		// order form
+		form{
+			width: 221px;
+			margin: 0 auto;
+
+			input[type="text"]{
+
+				&:nth-child(3){
+					margin-bottom: 20px;
+				}
+			}
+
+			input[type="submit"]{}
+		}
+	}
+	// bottom block : end
+}

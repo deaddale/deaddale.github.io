@@ -1,0 +1,78 @@
+// font
+$fontRegular : 'helveticaneuecyrroman', sans-serif;
+$fontMedium : 'helveticaneuecyrmedium', sans-serif;
+$fontBold : 'helveticaneuecyrbold', sans-serif;
+$fontItalic : 'helveticaneuecyritalic', sans-serif;
+$fontRuble   : 'als_rublregular';
+$fontArial   : Arial, Helvetica, sans-serif;
+
+h1{
+	font-size: 26px;
+	line-height: 1.33em;
+	color: #000;
+	font-family: $fontMedium;
+	margin: 0 0 16px; padding: 0;
+	font-weight: normal;
+}
+
+h2, h3, h4, h5, h6{
+	font-family: $fontMedium;
+	font-size: 18px;
+	line-height: 1.3em;
+	color: #000;
+	margin: 0 0 10px;
+	padding: 0;
+	font-weight: normal; 
+}
+
+p{
+	font-size: 13px;
+	font-family: $fontRegular;
+	line-height: 1.54em;
+	color: #000;
+	margin: 0 0 16px; padding: 0;
+}
+
+ul{
+	padding: 0;
+	margin: 0 0 15px 35px;
+}
+
+	ul li{
+		font-size: 13px;
+		font-family: $fontRegular;
+		line-height: 1.52em;
+		color: #000;
+		margin: 0 0 4px; padding: 0;
+	}
+
+ol{
+	padding: 0;
+	margin: 0 0 15px 35px;
+}
+
+	ol li{
+		font-size: 13px;
+		font-family: $fontRegular;
+		line-height: 1.52em;
+		color: #000;
+		margin: 0 0 4px; padding: 0;
+	}
+
+a{
+	color: #008bbf;
+}
+
+h1 > a{
+	color: #000;
+}
+
+b{
+	font-family: $fontMedium;
+	font-weight: normal;
+}
+
+i{
+	font-family: $fontItalic;
+	font-style: normal;
+}

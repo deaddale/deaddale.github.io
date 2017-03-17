@@ -1,0 +1,210 @@
+.about-us{
+	margin: 34px 0 70px;
+}
+.about-us{
+
+	// banner : begin
+	.banner{
+		height: 690px;
+		margin: 0 0 70px;
+		position: relative;
+		background: url(../../images/about/banner.png) center top no-repeat;
+	}
+	.banner{
+
+		h1{
+			font-size: 46px;
+			font-family: $fontBold;
+			color: #000;
+			line-height: 1.3em;
+			margin: 0; padding: 0;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		h1{
+			b{
+				font-weight: normal;
+				color: #046cb5;
+			}
+			span{
+				display: block;
+				line-height: 1.2em;
+				font-size: 14px;
+				font-family: $fontMedium;
+			}
+		}
+
+		h2{
+			font-family: $fontRegular;
+			line-height: 1.31em;
+			font-size: 14px;
+			color: #000;
+			text-align: center;
+			font-weight: normal;
+			position: absolute;
+			width: 100%;
+			left: 0; bottom: 0;
+		}
+
+	}
+	// banner : end
+
+	// clients : begin
+	.clients{
+		height: 485px;
+		position: relative;
+		background: url(../../images/about/clients.png) center 85px no-repeat;
+	}
+	.clients{
+
+		h2{
+			font-size: 35px;
+			font-family: $fontMedium;
+			line-height: 1.71em;
+			color: #000;
+			text-align: center;
+		}
+
+		.text{
+			width: 940px;
+			margin: 392px 0 0 0; 
+		}
+
+			.text span{
+				font-size: 12px;
+				line-height: 1.5em;
+				text-transform: uppercase;
+				text-align: center;
+				display: block;
+				float: left;
+				width: 20%;
+				color: #000;
+			}
+
+		.bg-image{
+			background: url(../../images/about/clients.png) center 85px no-repeat;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 540px;
+			width: 100%;
+			z-index: 1;
+		}
+
+		.bg-black{
+			background: #181818;
+			position: absolute;
+			left: 0;
+			top: 109px;
+			height: 300px;
+			width: 100%;
+			z-index: 0;
+		}
+
+	}
+	// clients : end
+
+	// services : begin
+	.services{
+		height: 540px;
+		// margin: 0 0 70px;
+		// padding: 100px 0 0 0;
+		position: relative;
+	}
+
+	.services{
+
+		.container_12{
+			background: url(../../images/about/services.png) left top no-repeat;
+		}
+
+			h2{
+				margin: 125px 0 20px 0;
+				font-size: 20px;
+				font-family: $fontMedium;
+				color: #fff;
+				text-align: center;
+				text-transform: uppercase;
+				width: 313px;
+				height: 43px;
+				background: #046cb5;
+				line-height: 43px;
+			}
+
+			ul{
+				list-style: none;
+				margin: 0 0 60px;
+				padding: 0; 
+			}
+
+				ul li{
+					background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAFCAYAAABmWJ3mAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEJJREFUeNpi/P//P4PRkvPGDAwMHUDsAsSd52ONKhihEruhgjBQwQRlIAuC+TCJWWgSq1lgWoH4HlTnaqAdswACDABASRQuoPAwbAAAAABJRU5ErkJggg==");
+					background-position: left 8px;
+					background-repeat: no-repeat;
+					display: block;
+					padding: 0 0 0 10px;
+					margin: 0 0 5px;
+				}
+
+	}
+	// services : end
+
+	// advantages : begin
+	.advantages{
+		background: #181818;
+		height: 451px;
+		margin-bottom: 72px;
+	}
+	.advantages{
+
+		h2{
+			font-size: 36px;
+			color: #fff;
+			line-height: 1em;
+			text-align: center;
+			margin: 40px 0 55px;
+		}
+
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0; 
+		}
+
+			ul li{
+				width: 364px;
+				font-size: 12px;
+				line-height: 1.6em;
+				color: #fff;
+				font-family: $fontRegular;
+				margin: 0 0 16px 50px;
+				background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAUCAYAAAB8gkaAAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARNJREFUeNq81TsLQWEcx3EOFrdJTAaxMBrdikUWo3LehMX78B4os8UlJaPVoiiDQS6jFKvfv/6nnvRwOJ7Hv77hXPp0Dp7j9g19Lk3TQC3URgvaYGiCmqiPcmjCr1owgnrIw5/DaIyyhmbIJYA14w8QzQx1jD9BdXQTsQCK6ILEH0gcLdEOlXRAFkbQHKX46kaoqBqysClKPt1OAgsqIQu7S04IMphXBVlYFa0k+0IM5oRtplOIxs1rY5S/t4zkmAv9IVECdZ1CIkYTYzAtOe6K/L9Az2vjGVXQ+sUt/QmSLcQnBjcfnPsV9GrVP6KyDfg19O4Rc+Qr3KqC7J5nB77CrQqIxmuzf8/ggN+bTiGahwADAIqsTGRlgBkPAAAAAElFTkSuQmCC');
+				background-position: left 2px;
+				background-repeat: no-repeat;
+				padding: 0 0 0 46px;
+			}
+
+	}
+	// advantages : end
+	
+	// text : begin
+	.text{}
+	.text{
+
+		h3{
+			font-size: 18px;
+			margin-bottom: 12px;
+		}
+
+		p{
+			font-size: 13px;
+			line-height: 1.38em;
+			font-family: $fontRegular;
+			margin: 0 0 35px;
+		}
+
+	}
+	// text : end
+
+}

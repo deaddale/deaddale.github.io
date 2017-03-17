@@ -1,0 +1,119 @@
+#footer-page{
+	width: 100%;
+	border-top: 3px #00b8f1 solid;
+}
+#footer-page{
+
+	// logotype
+	img{}
+
+	// description
+	.descr{
+		font-family: $OpenSans; 
+		color: #3e3e3e;
+		line-height: 1.33;
+		font-size: 13px;
+		margin-top: 26px;
+	}
+	.descr{
+
+		span{
+			font-weight: bold; 
+			text-transform: uppercase;
+			font-size: 21px;
+			letter-spacing: 0.15px;
+		}
+
+		span i{
+			font-style: normal;
+			color: #00b8f1;
+		}
+
+	}
+
+	// telephone number
+	.tel-number{
+		font-family: $OpenSans; 
+		color: #3e3e3e;
+		line-height: 1.33;
+		margin-top: 37px;
+		font-weight: bold; 
+		text-transform: uppercase;
+		font-size: 21px;
+	}
+
+	// button
+	.button-wrapper{
+		text-align: right;
+	}
+	.button-wrapper{
+
+		.btn-first-var{
+			margin-top: 19px;
+			padding-left: 0;
+			padding-right: 0;
+			width: 100%;
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		a{
+			display: block;
+			text-align: center;
+			color: #3E3E3E;
+			font-family: $OpenSans;
+			font-size: 13px;
+			font-weight: 400;
+			line-height: 1;
+			text-decoration: none;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+
+	}
+
+}
+
+@media screen and (max-width: 1149px) {
+
+	#footer-page{
+
+		// logotype
+		img{
+			margin: 0 auto;
+			display: block;
+		}
+
+		// description
+		.descr{
+			text-align: center;
+			margin-top: 10px;
+		}
+
+		// telephone number
+		.tel-number{
+			text-align: center;
+			margin-top: 35px;
+		}
+
+		// button
+		.button-wrapper{
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		.button-wrapper{
+
+			.btn-first-var{
+				display: inline-block;
+				margin-top: 31px;
+				width: auto;
+				padding-left: 44px;
+				padding-right: 44px;
+			}
+
+		}
+
+	}
+
+}

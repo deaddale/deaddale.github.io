@@ -1,0 +1,264 @@
+// BANNER
+#banner-page.irobot{
+	margin-bottom: 43px;
+}
+
+#banner-page.irobot{
+
+	/** RESET AND LAYOUT
+	===================================*/
+
+	.bx-wrapper {
+		position: relative;
+		margin: 0 auto;
+		padding: 0;
+		*zoom: 1;
+	}
+
+	.bx-wrapper img{
+		display: block;
+	}
+
+	.bx-wrapper{
+
+			.grid_12{
+				position: relative;
+			}
+
+			.slide-text{
+				position: absolute;
+				z-index: 1;
+				left: 435px;
+			}
+
+			.slide-text.first{
+				top: 116px;
+				left: 0;
+			}
+			.slide-text.second{
+				top: 156px;
+				left: 411px;
+			}
+			.slide-text.third{
+				top: 135px;
+				left: 432px;
+			}
+			.slide-text.fourth{
+				top: 87px;
+				left: 433px;
+			}
+			.slide-text.fifth{
+				top: 114px;
+				left: 433px;
+			}
+
+			// .slide_bg{
+			// 	position: absolute;
+			// 	// width: 100%;
+			// 	// height: auto;
+			// 	width: auto;
+			// 	height: 526px;
+			// 	left: 0; top: 0;
+			// 	z-index: 0;
+			// }
+
+	}
+
+	// @media only screen and (min-width: 1501px) and (max-width: 1650px) {
+
+	// 	.bx-wrapper {
+	// 		.slide-text.first{
+	// 			left: 0;
+	// 		}
+	// 		.slide-text.second{
+	// 			left: 0;
+	// 		}
+	// 		.slide-text.third{
+	// 			left: 0;
+	// 		}
+	// 		.slide-text.fourth{
+	// 			left: 0;
+	// 		}
+	// 		.slide-text.fifth{
+	// 			left: 0;
+	// 		}
+	// 	}
+		
+	// }
+
+	// @media only screen and (min-width: 1281px) and (max-width: 1500px) {
+
+	// 	.bx-wrapper {
+	// 		.slide-text.first{
+	// 			left: 0;
+	// 		}
+	// 		.slide-text.second{
+	// 			left: 0;
+	// 		}
+	// 		.slide-text.third{
+	// 			left: 0;
+	// 		}
+	// 		.slide-text.fourth{
+	// 			left: 0;
+	// 		}
+	// 		.slide-text.fifth{
+	// 			left: 0;
+	// 		}
+	// 	}
+		
+	// }
+
+	// @media only screen and (max-width: 1280px) {
+
+	// 	.bx-wrapper {
+	// 		.slide-text.first{
+	// 			left: 0;
+	// 		}
+	// 		.slide-text.second{
+	// 			left: 0;
+	// 		}
+	// 		.slide-text.third{
+	// 			left: 0;
+	// 		}
+	// 		.slide-text.fourth{
+	// 			left: 0;
+	// 		}
+	// 		.slide-text.fifth{
+	// 			left: 0;
+	// 		}
+	// 	}
+
+	// }
+
+	/** THEME
+	===================================*/
+
+	.bx-wrapper .bx-viewport {
+		background: #fff;
+		
+		/*fix other elements on the page moving (on Chrome)*/
+		-webkit-transform: translatez(0);
+		-moz-transform: translatez(0);
+	    	-ms-transform: translatez(0);
+	    	-o-transform: translatez(0);
+	    	transform: translatez(0);
+	}
+
+	.bx-wrapper .bx-viewport ul{
+		margin: 0;
+	}
+
+	.bx-wrapper .bx-pager,
+	.bx-wrapper .bx-controls-auto {
+		position: absolute;
+		bottom: -175px;
+		width: 100%;
+		z-index: 100;
+	}
+
+	li{
+		width: 100% auto;
+		height: 526px;
+	}
+
+	li.first{
+		background: transparent url(../../images/irobot/slide_bg_1.jpg) center top no-repeat;
+		background-size: cover;
+	}
+	li.second{
+		background: transparent url(../../images/irobot/slide_bg_2.jpg) center top no-repeat;
+		background-size: cover;
+	}
+	li.third{
+		background: transparent url(../../images/irobot/slide_bg_3.jpg) center top no-repeat;
+		background-size: cover;
+	}
+	li.fourth{
+		background: transparent url(../../images/irobot/slide_bg_4.jpg) center top no-repeat;
+		background-size: cover;
+	}
+	li.fifth{
+		background: transparent url(../../images/irobot/slide_bg_5.jpg) center top no-repeat;
+		background-size: cover;
+	}
+
+	/* LOADER */
+
+	// .bx-wrapper .bx-loading {
+	// 	min-height: 50px;
+	// 	background: url(images/mainpage_slider/bx_loader.gif) center center no-repeat #fff;
+	// 	height: 100%;
+	// 	width: 100%;
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	z-index: 2000;
+	// }
+
+	/* DIRECTION CONTROLS (NEXT / PREV) */
+
+	.bx-wrapper .bx-prev {
+		left: 5%;
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAxCAQAAAAyojKUAAACIElEQVR4AbTUsUp7dxTA8RM1NnRxaaAVS0VcROviUHHRMXRzc2qhQqc8gbgIruIjuGXTJ7ApSJB0E6tBJBkEjdgO2kEdvPr5L4FA2yT3pvR8p8sZPtzhd2LwyFlQdqDmwTN49qDmQNmCnBhU6N+SfW39pm3f0vBIyQkASLTUHTtW15IAgBOl7Mi8KoBXR8oWjYtuxi0qO/IKoGo+PTJqWwJo2DQh+jRhUwOQ2DaaBimqAlrW5USKcta1AL8oDkJmXIN3uwoiQwW73sG1mX7IrDtwb1Vkz6p7cGe2FzKpCa5MiyGbdgWaJv8NyTvtEEUxfIod5lT+n8geaJsS/7EpbbD3d2TZB96siJTlfW+yx27FGz4s6yLGnIOt1MTnqrg10mO/Bc6NdZEfwaV8SmLCr+APoz3/8xL80EGMaIBSauI38Jfv+l4+aBgR3c96RuKpQ/SuDkoihArYSEV80SH+9K0Y0AaoiFDwgqdUR6To99REKHjCi8/CGqhkJ1JUAWthB/wkBvRVh7g1K1K2CXbCIZgb+IqbmYkwBw7DBRL5/4EIeQkuwiNuRJ++0QRNX4uM3eAxJDgTPfvSLWgOdTrPkASoiZ79DFgWsleDT73Y0Q0AIAgD0Slc0EFdTT75JiUvTmAUeld0E/Am6HeROSETT3YX2MIgT0gykowHtEK4CxAkYGFC9cBPtGl5Z9yw3/fP3ONv7vG+kdDdimmJ+uR9VwGW9HEuCfNzywAAAABJRU5ErkJggg==');
+		background-repeat: no-repeat;
+		background-position: 0 0;
+	}
+
+	.bx-wrapper .bx-next {
+		right: 5%;
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAxCAQAAAAyojKUAAACJUlEQVR4AbTUMUubaxjH4TtqPOEsLg20YqmIi+hxcVBcdAzd3JxasGs+gbgIruJHcHPTTyApiEi6iUeDSDIIGrEdtIM6+OrVJVBpNXmj7f2bnul6pn+0PhkjilZtO3cFrpzbtqpoREa0KjRvzIq6Zle3Yuz5SMEWAEjUlG3aVFaTAIAthfaRYSUANzYUjeoWD+o2qmjDDYCS4fRIpwUJoGJOj2hSjzkVQGJBZxokrwSomZERKcqYUQOU5FshA47AnSU5kT45S+7AkYFmyKBTcGZKtJ8pZ+DU4FNIryo41C+eWb9DUNX7GJK10yDy4gXlG8yO7O/IMqjrEy+sTx0s/4pMuMetSfFovd7LpmYm3eLexEOkyx6YF4/W4QQl/6Zm5sGerp/IB3Dw5F87fQWf9aREsg7ARw2kQwWarY9x38GX1EwBVHSIxhNl0bRxl20yZVAQIayBWdGi/3xrMK9SIbNgTYR/XONSTqRm/pdPNTSXuJYL0xqe+OPMGpgOi+CTSNmgkwbzRrRoDiyGdTAk2maqLddhCKyHfSSy4i8wWQn2wwWORZu9VQVV70STjnEREuw+awar4MRr8WS7SAJsC+038aMXuzcBAISBKDxswC3t3EuRlAEtxE/bNP4kd+9mrnaoGbsAnYS8CfhdqE9Ix5PZRaYw0ROijEDjgVsBvgs4SOCFiasHfKJJyzNj3mn/Tb+V4+PK8VE53icSPluBKVHdz3nXAklicS3WWTBYAAAAAElFTkSuQmCC');
+		background-repeat: no-repeat;
+		background-position: 0 0;
+	}
+
+	.bx-wrapper .bx-prev:hover {}
+
+	.bx-wrapper .bx-next:hover {}
+
+	.bx-wrapper .bx-controls-direction a {
+		position: absolute;
+		top: 50%;
+		margin-top: -24px;
+		outline: 0;
+		width: 50px;
+		height: 49px;
+		text-indent: -9999px;
+		z-index: 999;
+	}
+
+	.bx-wrapper .bx-controls-direction a.disabled {
+		display: none;
+	}
+
+	/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+	.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+		text-align: left;
+		width: 80%;
+	}
+
+	.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+		right: 0;
+		width: 35px;
+	}
+
+	/* IMAGE CAPTIONS */
+
+	.bx-wrapper .bx-caption {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: #666\9;
+		background: rgba(80, 80, 80, 0.75);
+		width: 100%;
+	}
+
+	.bx-wrapper .bx-caption span {
+		color: #fff;
+		font-family: Arial;
+		display: block;
+		font-size: .85em;
+		padding: 10px;
+	}
+
+}

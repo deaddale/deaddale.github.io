@@ -1,0 +1,62 @@
+.form-container{
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.09);
+	background: #fff;
+	width: 100%;
+	max-width: 624px;
+	padding: 28px 41px 35px;
+	position: relative;
+
+	// subtitle
+	.subtitle{
+		color: black;
+		font-size: 14px;
+		font-weight: 400;
+		text-align: center;
+		line-height: 1;
+		margin-bottom: 37px;
+	}
+
+	// form : begin
+	form{
+		font-size: 0;
+
+        input[type="text"],
+        input[type="email"]{
+        	color: #646464;
+			font-family: $secFont;
+			font-size: 15px;
+			font-weight: 400;
+			width: 262px;
+			margin: 0 16px 19px 0;
+			display: inline-block;
+
+			&:nth-child(2n+2){
+				margin-right: 0;
+			}
+
+			&.full-width{
+				width: 100%;
+			}
+        }
+
+        input[type="submit"]{
+        	@include sec-btn;
+			width: 237px;
+			height: 35px;
+			margin: 0 auto;
+			display: block;
+        }
+    }
+	// form : end 
+
+	// close-icon
+	.close-icon{
+		display: block;
+		width: 12px;
+		height: 12px;
+		cursor: pointer;
+		background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAA7UlEQVQoU32SPU7DQBSEZ4Tc+3EEuANpLdmWEb2bgEiBxLEIkB8KnwBREyV1co+9gK2HnrVrra0Ed6s33+y8WbOqquuu635IHtM0fWmapkP01XV95ZxbAbhp2/aeRVHsAcy8ZiMiiwB58ReA2uYkd8zzfEXyKTLdisiznZ1zg9jP3+hdPgHMYwhAEpy9+4dFph0uQANPshdb1B74D4rF/U0TYJrZxv1OoYg40jlx8BugsPRIbDFU1ZYeFWE32TusATwGq5DZ1zpqT1XfWZblQVXv4uomDxdDv8yyLE2S5FtVTyLyeuHXWJK8VdWHPwP1grEhfXbCAAAAAElFTkSuQmCC') 0 0 no-repeat;
+		position: absolute;
+		right: 21px; top: 20px;
+	}
+}

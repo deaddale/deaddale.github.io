@@ -1,0 +1,185 @@
+// Import Open Sans and PT Serif from Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic|PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext);
+
+body{
+	font-family: $primary-font;
+	color: #3b3d40;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.625;
+	text-rendering: optimizeLegibility;
+	-webkit-text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+// h1-h6 titles : begin
+h1, h2, h3, h4, h5, h6{
+	margin: 0; padding: 0;
+    font-family: $secondary-font;
+    letter-spacing: -0.04em;
+    font-weight: 700;
+    color: #3b3d40;
+}
+
+h1{
+    font-size: 48px;
+    line-height: 1.09;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h2{
+    font-size: 36px;
+    line-height: 1.12;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3, h4, h5, h6{
+    line-height: 1.25;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 17px;
+}
+// h1-h6 titles : end
+
+// text (normal, bold, italic, link) : begin
+p{
+	margin: 0 0 16px; padding: 0;
+
+	b{
+		font-weight: bold;
+	}
+
+	i{
+		font-style: italic;
+	}
+
+    // link : begin
+    a{
+        // default styles for normal links
+        &[href]:not([class]) {
+            color: #2e71f2;
+            text-decoration: underline;
+
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+    // link : end
+}
+// text (normal, bold, itali, link) : end
+
+// bulleted list : begin
+ul, ol{
+    margin: 0 0 16px 34px;
+    padding: 0;
+    list-style: none;
+
+	li{
+        margin: 0 0 14px;
+        padding: 0 0 0 20px;
+        position: relative;
+
+        &:before {
+            content:"\2014";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #2e71f2;
+        }
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+	}
+}
+// bulleted list : end
+
+// table : begin
+table{
+	width: 100%;
+	margin-bottom: 14px;
+
+	&:hover{
+		transition: all 0.2s ease;
+	}
+
+	tr{
+
+		th,
+		td{
+			padding: 10px 13px;
+			text-align: left;
+			border: 1px solid #e4e4e4;
+		}
+
+		th{
+			font-weight: bold;
+			font-size: 120%;
+		}
+	}
+
+	&:last-child{ margin-bottom: 0; }
+}
+// table : end
+
+// img full screen
+img.full-screen{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+// adaptive layout : begin
+.container{
+    @include breakpoint($first-breakpoint){
+        & > h1,
+        & > h2,
+        & > h3,
+        & > h4,
+        & > h5,
+        & > h6,
+        & > p,
+        & > ul,
+        & > ol,
+        & > p,
+        & > hr{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    @include breakpoint($fourth-breakpoint){
+        & > h1{
+            font-size: 32px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        & > h2{
+            font-size: 24px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        & > h3,
+        & > h4,
+        & > h5,
+        & > h6{
+            font-size: 20px;
+            margin-top: 15px;
+            margin-bottom: 11px;
+        }
+
+        & > p,
+        & > ul,
+        & > ol{
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+    }
+}
+// adaptive layout : end

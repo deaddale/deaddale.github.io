@@ -1,0 +1,21 @@
+.contacts{
+
+	// one point of sale : begin
+	.one-point-of-sale{
+		@include container(745px);
+		border-bottom: 1px map-get(map-get($color-palettes, grey), xx-light) solid;
+		margin: 0 0 24px;
+		padding-bottom: 17px;
+
+		> div{
+			@include span(8 of 24);
+
+			ul{
+				list-style: none;
+				margin-left: 0;
+				padding-left: 0;
+			}
+		}
+	}
+	// one point of sale : end
+}

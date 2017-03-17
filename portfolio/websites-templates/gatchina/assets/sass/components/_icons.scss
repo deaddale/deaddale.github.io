@@ -1,0 +1,30 @@
+// На всякий случай оставлю
+// Сделано с помощью http://instantsprite.com
+.icons-sprite {
+	background: url('../../images/icons/sprite.png') no-repeat top left;
+	width: 52px;
+	height: 12px;
+	
+	&.arrow-bottom { background-position: -2231px 0; width: 9px; height: 5px; } 
+	&.arrow-right-black { background-position: -2125px -105px; width: 6px; } 
+	&.arrow-right-gray { background-position: -2019px -217px; width: 6px; } 
+	&.arrow-right-white-mini { background-position: -1916px -329px; width: 3px; height: 5px; } 
+	&.arrow-right-white { background-position: -1810px -434px; width: 6px; } 
+	&.error { background-position: -1698px -546px; width: 12px; } 
+	&.pointer { background-position: -1593px -658px; width: 5px; height: 5px; } 
+	&.icon-car-1 { background-position: -1426px -763px; width: 67px; height: 29px; } 
+	&.icon-car-2 { background-position: -1258px -892px; width: 68px; height: 31px; } 
+	&.icon-car-3 { background-position: -1080px -1023px; width: 78px; height: 42px; } 
+	&.icon-car-4 { background-position: -885px -1165px; width: 95px; height: 63px; } 
+	&.icon-iphone { background-position: -772px -1328px; width: 13px; height: 19px; } 
+	&.icon-logo-footer { background-position: -608px -1447px; width: 64px; height: 42px; } 
+	&.icon-contacts-1 { background-position: -456px -1589px; height: 52px; } 
+	&.icon-contacts-2 { background-position: -304px -1741px; height: 52px; } 
+	&.icon-contacts-3 { background-position: -152px -1893px; height: 52px; } 
+	&.icon-contacts-4 { background-position: 0 -2045px; height: 52px; } 
+}
+
+
+
+
+

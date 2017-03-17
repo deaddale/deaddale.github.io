@@ -1,0 +1,76 @@
+.b-banner{
+    padding-top: 90px;
+    padding-bottom: 53px;
+    min-height: 374px;
+    position: relative;
+    overflow: hidden;
+
+    // text and button
+    .container{
+        text-align: center;
+
+        h1{
+            color: white;
+            font-size: 36px;
+            font-weight: 300;
+            line-height: 1.111;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            letter-spacing: 0.025em;
+        }
+
+        p{
+            color: white;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.285;
+            letter-spacing: 0.025em;
+            margin-bottom: 69px;
+        }
+
+        .b-button{}
+    }
+
+    // background
+    img{
+        // set rules to fill background
+        min-height: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        display: block;
+
+        // set up proportionate scaling
+        width: 100%;
+        height: auto;
+
+        // set up positioning
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        // scale
+        transform: scale(1);
+
+        // opacity
+        opacity: 0;
+
+        &.fadeIn{
+            opacity: 1;
+            transition: opacity 1s ease, transform 0.3s ease-in;
+        }
+    }
+
+    &:hover{
+        img {
+            transform: scale(1.03);
+            transition: transform 0.5s ease-out;
+        }
+    }
+
+    // with breadcrumbs : begin
+    &.with-breadcrumbs{
+        padding-top: 33px;
+    }
+    // with breadcrumbs : end
+}

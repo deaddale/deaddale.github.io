@@ -1,0 +1,277 @@
+/* Table of Content
+==================================================
+	#Reset & Basics
+	#Basic Styles
+	#Site Styles
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Buttons
+	#Forms
+	#Misc */
+
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block; }
+body {
+	line-height: 1; }
+ol, ul {
+	list-style: none; }
+blockquote, q {
+	quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none; }
+table {
+	border-collapse: collapse;
+	border-spacing: 0; }
+
+
+/* #Basic Styles
+================================================== */
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #fff;
+	font: 14px/1.1875em 'SegoeUI', "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+	color: #3e3e3e;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+}
+
+
+/* #Typography
+================================================== */
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+h4 {
+  font-size: 19px;
+}
+
+h5 {
+  font-size: 17px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+figure {
+  margin-bottom: 20px;
+}
+
+hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+
+
+/* #Links
+================================================== */
+a, a:visited { text-decoration: underline; outline: 0; }
+a:hover, a:focus { text-decoration: none; }
+p a, p a:visited { line-height: inherit; }
+
+
+/* #Lists
+================================================== */
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  margin-left: 30px;
+}
+
+/* #Images
+================================================== */
+img.scale-with-grid {
+	max-width: 100%;
+	height: auto; }
+
+
+/* #Buttons
+================================================== */
+.button_small{
+	height: 30px;
+	padding: 0 20px;
+	text-align: center;
+	font: 18px/30px 'PFDinTextCondPro-Regular', sans-serif;
+	color: #fff;
+	text-shadow: 0 0 5px rgba(0,0,0,0.31);
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 13px;
+	text-decoration: none;
+}
+.button_big{
+	height: 43px;
+	padding: 7px 38px 0;
+	text-align: center;
+	font: 18px/18px 'PFDinTextCondPro-Regular', sans-serif;
+	color: #fff;
+	text-shadow: 0 0 5px rgba(0,0,0,0.31);
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 9px;
+	text-decoration: none;
+}
+.button_big.bg_blue{
+	box-shadow: 0 3px 6px rgba(93,109,137,0.35);
+}
+.button_big.bg_orange{
+	box-shadow: 0 3px 6px rgba(169,142,121,0.35);
+}
+.bg_blue{
+	background: #339dd7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #339dd7 0%, #2880cf 53%, #2474c6 76%, #1d5cc2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#339dd7), color-stop(53%,#2880cf), color-stop(76%,#2474c6), color-stop(100%,#1d5cc2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #339dd7 0%,#2880cf 53%,#2474c6 76%,#1d5cc2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #339dd7 0%,#2880cf 53%,#2474c6 76%,#1d5cc2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #339dd7 0%,#2880cf 53%,#2474c6 76%,#1d5cc2 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #339dd7 0%,#2880cf 53%,#2474c6 76%,#1d5cc2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#339dd7', endColorstr='#1d5cc2',GradientType=0 ); /* IE6-9 */
+}
+.bg_blue:hover{
+	background: #1d5cc2; /* Old browsers */
+	background: -moz-linear-gradient(top,  #1d5cc2 0%, #2474c6 24%, #2880cf 47%, #339dd7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1d5cc2), color-stop(24%,#2474c6), color-stop(47%,#2880cf), color-stop(100%,#339dd7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #1d5cc2 0%,#2474c6 24%,#2880cf 47%,#339dd7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #1d5cc2 0%,#2474c6 24%,#2880cf 47%,#339dd7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #1d5cc2 0%,#2474c6 24%,#2880cf 47%,#339dd7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #1d5cc2 0%,#2474c6 24%,#2880cf 47%,#339dd7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d5cc2', endColorstr='#339dd7',GradientType=0 ); /* IE6-9 */
+}
+.bg_orange{
+	background: #eb9e1a; /* Old browsers */
+	background: -moz-linear-gradient(top,  #eb9e1a 0%, #ea9819 22%, #e77b13 59%, #e0650e 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eb9e1a), color-stop(22%,#ea9819), color-stop(59%,#e77b13), color-stop(100%,#e0650e)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #eb9e1a 0%,#ea9819 22%,#e77b13 59%,#e0650e 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #eb9e1a 0%,#ea9819 22%,#e77b13 59%,#e0650e 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #eb9e1a 0%,#ea9819 22%,#e77b13 59%,#e0650e 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #eb9e1a 0%,#ea9819 22%,#e77b13 59%,#e0650e 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb9e1a', endColorstr='#e0650e',GradientType=0 ); /* IE6-9 */
+}
+.bg_orange:hover{
+	background: #e0650e; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e0650e 0%, #e77b13 41%, #ea9819 78%, #eb9e1a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0650e), color-stop(41%,#e77b13), color-stop(78%,#ea9819), color-stop(100%,#eb9e1a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e0650e 0%,#e77b13 41%,#ea9819 78%,#eb9e1a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e0650e 0%,#e77b13 41%,#ea9819 78%,#eb9e1a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e0650e 0%,#e77b13 41%,#ea9819 78%,#eb9e1a 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e0650e 0%,#e77b13 41%,#ea9819 78%,#eb9e1a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0650e', endColorstr='#eb9e1a',GradientType=0 ); /* IE6-9 */
+}
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {}
+
+.button:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {}
+
+/* Fix for odd Mozilla border & padding issues */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+
+/* #Forms
+================================================== */
+form { margin: 0; }
+form input[type="hidden"]{
+	margin: 0 !important; padding: 0 !important;
+	height: 0 !important; width: 0 !important;
+	border: 0 !important; outline: 0 !important;
+	opacity: 0 !important;
+}
+fieldset {
+	margin-bottom: 20px; }
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {}
+select {
+	padding: 0; }
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {}
+textarea {
+	min-height: 60px; }
+label,
+legend {
+	display: block;
+	font-weight: bold;
+	font-size: 13px;  }
+select {
+	width: 220px; }
+input[type="checkbox"] {
+	display: inline; }
+label span,
+legend span {
+	font-weight: normal;
+	font-size: 13px;
+	color: #444; }
+
+/* #Misc
+================================================== */
+.remove-bottom { margin-bottom: 0 !important; }
+.half-bottom { margin-bottom: 10px !important; }
+.add-bottom { margin-bottom: 20px !important; }

@@ -1,0 +1,163 @@
+// buttons : begin
+// first variant
+.btn-first-var{
+	background-color: #0099C8;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	padding: 11.5px 22px;
+	display: inline-block;
+	font-family: $OpenSans;
+	font-weight: 600;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	line-height: 1;
+	cursor: pointer;
+	transition: all 0.1s ease-in;
+}
+.btn-first-var:hover{
+	background-color: rgba(0, 153, 200, 0.8);
+	transition: all 0.1s ease-in;
+}
+
+// second variant
+.btn-second-var{
+	background-color: #00B8F1;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14);
+	padding: 18px 25px;
+	display: inline-block;
+	font-family: $RopaSansSCProRegular;
+	font-weight: 600;
+	color: #fff;
+	text-align: center;
+	font-size: 15px;
+	text-transform: uppercase;
+	line-height: 1;
+	cursor: pointer;
+	transition: all 0.1s ease-in;
+}
+.btn-second-var:hover{
+	background-color: rgba(0, 184, 241, 0.8);
+	transition: all 0.1s ease-in;
+}
+
+// third variant
+.btn-third-var{
+	background-color: #0099C8;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.44);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.44);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.44);
+	padding: 16px 78px;
+	display: inline-block;
+	font-family: $RopaSansSCProMedium;
+	color: #fff;
+	text-align: center;
+	font-size: 15px;
+	text-transform: uppercase;
+	line-height: 1;
+	cursor: pointer;
+	transition: all 0.1s ease-in;
+	font-size: 19px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+}
+.btn-third-var:hover{
+	background-color: rgba(0, 153, 200, 0.8);
+	transition: all 0.1s ease-in;
+}
+
+// fourth variant
+.btn-fourth-var{
+	background-color: #00B8F1;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+	padding: 15px 38px;
+	display: inline-block;
+	font-family: $RopaSansSCProMedium;
+	color: #fff;
+	text-align: center;
+	font-size: 19px;
+	line-height: 1;
+	cursor: pointer;
+	transition: all 0.1s ease-in;
+}
+.btn-fourth-var:hover{
+	background-color: rgba(0, 184, 241, 0.8);
+	transition: all 0.1s ease-in;
+}
+
+// fifth variant
+.btn-fifth-var{
+	background-color: #0099C8;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	padding: 18px 19px;
+	display: inline-block;
+	font-family: $RopaSansSCProMedium;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 13px;
+	line-height: 1;
+	cursor: pointer;
+	transition: all 0.1s ease-in;
+}
+.btn-fifth-var:hover{
+	background-color: rgba(0, 153, 200, 0.8);
+	transition: all 0.1s ease-in;
+}
+
+// input button
+input[type="submit"],
+button{
+	background-color: #00B8F1;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	padding: 20px 0;
+	margin: 0;
+	display: block;
+	width: 369px;
+	font-family: $RopaSansSCProMedium;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 17px;
+	line-height: 1;
+	cursor: pointer;
+	transition: all 0.1s ease-in;
+	border: none;
+	outline: none;
+}
+input[type="submit"]:hover,
+button:hover{
+	background-color: rgba(3, 160, 211, 0.8);
+	transition: all 0.1s ease-in;
+}
+// buttons : end
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,331 @@
+/*
+** CONTENT PAGE
+*/
+.b-content {
+    // section : begin
+    .section {
+        padding-left: 12px;
+        padding-right: 12px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+        // first
+        &.first {
+            background: #131313 url('../img/bgs/bg_black.jpg') no-repeat center center;
+
+            p {
+                color: #eee;
+            }
+
+            a {
+                color: #eeeeee;
+
+                &:before {
+                    background: #eeeeee;
+                }
+
+                &:after {
+                    background: #eeeeee;
+                }
+            }
+        }
+
+        // second
+        &.second {
+            background: url('../img/bgs/bg_white.jpg') no-repeat center center;
+
+            // advantages
+            .b-advantages {
+                > div {
+                    // first
+                    &:first-child {
+                        left: 5%;
+                        bottom: 5%;
+                        position: absolute;
+
+                        &:before {
+                            content: '';
+                            width: 171px;
+                            height: 106px;
+                            display: block;
+                            position: absolute;
+                            right: -155px;
+                            top: -89px;
+                            background: transparent url('../img/other/path/path-1-1.svg') left top no-repeat;
+                        }
+
+                        &:after {
+                            content: '';
+                            display: block;
+                            width: 5px;
+                            height: 5px;
+                            background: #7F7F7F;
+                            border-radius: 50%;
+                            position: absolute;
+                            right: 16px;
+                            top: 14px;
+                        }
+                    }
+
+                    // last
+                    &:last-child {
+                        right: 5%;
+                        top: 5%;
+                        position: absolute;
+
+                        &:before {
+                            content: '';
+                            width: 115px;
+                            height: 119px;
+                            display: block;
+                            position: absolute;
+                            left: -115px;
+                            top: 5px;
+                            background: transparent url('../img/other/path/path-1-2.svg') left top no-repeat;
+                        }
+
+                        &:after {
+                            content: '';
+                            display: block;
+                            width: 5px;
+                            height: 5px;
+                            background: #7F7F7F;
+                            border-radius: 50%;
+                            position: absolute;
+                            left: 0;
+                            top: 11px;
+                        }
+                    }
+                }
+            }
+            // advantages : end
+        }
+
+        // third
+        &.third {
+            background: url('../img/bgs/bg_white_2.jpg') no-repeat center center;
+
+            // advantages
+            .b-advantages {
+                > div {
+
+                    // first
+                    &:first-child {
+                        left: 10%;
+                        bottom: -13%;
+                        position: absolute;
+
+                        &:before {
+                            content: '';
+                            width: 55px;
+                            height: 110px;
+                            display: block;
+                            position: absolute;
+                            right: 18px;
+                            top: -115px;
+                            background: transparent url('../img/other/path/path-2-1.svg') left top no-repeat;
+                        }
+
+                        &:after {
+                            content: '';
+                            display: block;
+                            width: 5px;
+                            height: 5px;
+                            background: #7F7F7F;
+                            border-radius: 50%;
+                            position: absolute;
+                            right: 70px;
+                            top: -7px;
+                        }
+                    }
+
+                    // last
+                    &:last-child {
+                        right: 5%;
+                        top: 5%;
+                        position: absolute;
+
+                        &:before {
+                            content: '';
+                            width: 163px;
+                            height: 43px;
+                            display: block;
+                            transform: scale(1.1);
+                            position: absolute;
+                            left: -137px;
+                            top: 13px;
+                            background: transparent url('../img/other/path/path-2-2.svg') left top no-repeat;
+                        }
+
+                        &:after {
+                            content: '';
+                            display: block;
+                            width: 5px;
+                            height: 5px;
+                            background: #7F7F7F;
+                            border-radius: 50%;
+                            position: absolute;
+                            left: -5px;
+                            top: 11px;
+                        }
+                    }
+                }
+            }
+            // advantages : end
+        }
+
+        // fourth
+        &.fourth {
+            background: url('../img/bgs/bg_white_3.jpg') no-repeat center center;
+
+            // advantages
+            .b-advantages {
+                > div {
+
+                    // first
+                    &:first-child {
+                        left: 10%;
+                        bottom: 9%;
+                        position: absolute;
+
+                        &:before {
+                            content: '';
+                            width: 115px;
+                            height: 158px;
+                            display: block;
+                            position: absolute;
+                            right: -60px;
+                            top: -159px;
+                            background: transparent url('../img/other/path/path-3-1.svg') left top no-repeat;
+                        }
+
+                        &:after {
+                            content: '';
+                            display: block;
+                            width: 5px;
+                            height: 5px;
+                            background: #7F7F7F;
+                            border-radius: 50%;
+                            position: absolute;
+                            right: 51px;
+                            top: -2px;
+                        }
+                    }
+
+                    // last
+                    &:last-child {
+                        right: 1%;
+                        top: 40%;
+                        position: absolute;
+
+                        &:before {
+                            content: '';
+                            width: 240px;
+                            height: 111px;
+                            display: block;
+                            transform: scale(1.1);
+                            position: absolute;
+                            left: -260px;
+                            top: -102px;
+                            background: transparent url('../img/other/path/path-3-2.svg') left top no-repeat;
+                        }
+
+                        &:after {
+                            content: '';
+                            display: block;
+                            width: 5px;
+                            height: 5px;
+                            background: #7F7F7F;
+                            border-radius: 50%;
+                            position: absolute;
+                            left: -10px;
+                            top: 14px;
+                        }
+                    }
+                }
+            }
+            // advantages : end
+        }
+
+        // fifth
+        &.fifth {
+            background: url('../img/bgs/bg_white_3.jpg') no-repeat center center;
+
+            // advantages
+            .b-advantages {
+                > div {
+
+                    // first
+                    &:first-child {
+                        left: 10%;
+                        bottom: 9%;
+                        position: absolute;
+
+                        &:before {
+                            content: '';
+                            width: 115px;
+                            height: 158px;
+                            display: block;
+                            position: absolute;
+                            right: -60px;
+                            top: -159px;
+                            background: url(../img/other/path/path-3-1.svg) left top no-repeat
+                        }
+
+                        &:after {
+                            content: '';
+                            display: block;
+                            width: 5px;
+                            height: 5px;
+                            background: #7F7F7F;
+                            border-radius: 50%;
+                            position: absolute;
+                            right: 51px;
+                            top: -2px;
+                        }
+                    }
+                }
+            }
+            // advantages : end
+        }
+
+        // sixth
+        &.sixth {
+            background: url('../img/bgs/bg_white_4.jpg') no-repeat center center;
+        }
+
+        // seventh
+        &.seventh {
+            text-align: center;
+            background: #131313 url('../img/bgs/bg_black.jpg') no-repeat center center;
+
+            h2 {
+                color: #eee;
+            }
+
+            p {
+                color: #eee;
+
+                @include breakpoint($first-breakpoint) {
+                    max-width: 600px;
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    text-align: left;
+                }
+
+                a {
+                    color: #eeeeee;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    // section : end
+}

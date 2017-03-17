@@ -1,0 +1,7 @@
+@mixin transition($target, $period, $method) {
+    -webkit-transition: $target $period $method;
+    -moz-transition: $target $period $method;
+    -ms-transition: $target $period $method;
+    -o-transition: $target $period $method;
+    transition: $target $period $method;
+}

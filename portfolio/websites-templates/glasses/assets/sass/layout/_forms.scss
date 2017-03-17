@@ -1,0 +1,23 @@
+::-webkit-input-placeholder {
+   color: rgba(43, 43, 43, 0.45);
+   vertical-align: middle;
+   padding-top: 2px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: rgba(43, 43, 43, 0.45); 
+   vertical-align: middle;
+   padding-top: 2px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(43, 43, 43, 0.45);
+   vertical-align: middle;
+   padding-top: 2px;
+}
+
+:-ms-input-placeholder {  
+   color: rgba(43, 43, 43, 0.45);
+   vertical-align: middle;
+   padding-top: 2px;
+}

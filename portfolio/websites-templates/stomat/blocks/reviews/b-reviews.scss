@@ -1,0 +1,217 @@
+.b-reviews{
+    @include breakpoint($first-breakpoint){
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    // columns : begin
+    &.columns{
+        padding-top: 65px;
+        padding-bottom: 92px;
+        position: relative;
+
+        @include breakpoint($fourth-breakpoint){
+            padding-top: 33px;
+            padding-bottom: 46px;
+        }
+
+        > div{
+            text-align: center;
+
+            // title
+            h2{
+                color: #3c3d41;
+                font-family: $secondary-font;
+                font-size: 48px;
+                font-weight: 700;
+                text-align: center;
+                margin-bottom: 38px;
+                letter-spacing: -0.04em;
+                margin-top: 0;
+
+                @include breakpoint($fourth-breakpoint){
+                    font-size: 32px;
+                }
+            }
+
+            // reviews : begin
+            .reviews{
+                margin-bottom: 73px;
+                text-align: left;
+
+                // one review : begin
+                .one-review{
+                    position: relative;
+
+                    p{
+                        color: #656b6f;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 1.3em;
+                        margin-bottom: 25px;
+                    }
+
+                    div {
+                        height: 51px;
+                        position: relative;
+                        @include clearfix;
+
+                        img {
+                            display: block;
+                            border-radius: 50%;
+                            width: 51px;
+                            height: 51px;
+                            margin-right: 13px;
+                            float: left;
+                        }
+
+                        span {
+                            @include vertical-center;
+                            display: block;
+                            letter-spacing: 0.2em;
+                            text-transform: uppercase;
+                            color: #3c3d41;
+                            font-family: $secondary-font;
+                            font-size: 11px;
+                            font-weight: 700;
+                            line-height: 1.2em;
+                        }
+                    }
+                }
+                // one review : end
+
+                // navigation custom : begin
+                .owl-nav{
+                    width: 100%;
+                    max-width: 1118px;
+                    @include all-center;
+
+                    @include breakpoint($first-breakpoint){
+                        display: none;
+                    }
+
+                    .owl-prev,
+                    .owl-next{
+                        cursor: pointer;
+                        cursor: hand;
+                        -webkit-user-select: none;
+                        -khtml-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        width: 13px;
+                        height: 24px;
+                        border: none;
+                        text-indent: -9999px;
+                        @include vertical-center;
+                        position: absolute;
+                        border-radius: 65px;
+                    }
+
+                    // prev/next arrows
+                    .owl-prev{
+                        background: url("../images/icons/icon-arrow-mini-left.svg") 0 0 no-repeat;
+                        left: -50px;
+                    }
+
+                    .owl-next{
+                        background: url("../images/icons/icon-arrow-mini-right.svg") 0 0 no-repeat;
+                        right: -50px;
+                    }
+                }
+                // navigation custom : end
+            }
+            // reviews : end
+
+            // buttons
+            .b-button{
+                margin-left: 13px;
+                margin-right: 13px;
+
+                @include breakpoint($fourth-breakpoint){
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    // columns : end
+
+    // text : begin
+    &.text{
+        padding-top: 90px;
+        padding-bottom: 105px;
+
+        @include breakpoint($fourth-breakpoint){
+            padding-top: 45px;
+            padding-bottom: 57px;
+        }
+
+        > div{
+            // title
+            h2{
+                color: #3b3d40;
+                font-family: $secondary-font;
+                font-size: 48px;
+                font-weight: 700;
+                letter-spacing: -0.04em;
+                line-height: 1.145;
+                text-align: center;
+                margin-bottom: 17px;
+                margin-top: 0;
+
+                @include breakpoint($fourth-breakpoint){
+                    font-size: 32px;
+                }
+            }
+
+            // description
+            > p{
+                color: #656b6f;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 1.25;
+                text-align: center;
+                margin-bottom: 60px;
+
+                @include breakpoint($fourth-breakpoint){
+                    font-size: 14px;
+                }
+            }
+
+            // one review : begin
+            .one-review{
+                margin-bottom: 40px;
+
+                @include breakpoint($fourth-breakpoint){
+                    margin-bottom: 30px;
+                }
+
+                // text
+                p{
+                    line-height: 1.625;
+                    color: #3b3d40;
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin-bottom: 7px;
+
+                    @include breakpoint($fourth-breakpoint){
+                        font-size: 15px;
+                    }
+                }
+
+                // author
+                span{
+                    display: block;
+                    color: #b9bbbd;
+                    font-family: $secondary-font;
+                    font-size: 11px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 0.2em;
+                }
+            }
+            // one review : end
+        }
+    }
+    // text : end
+}

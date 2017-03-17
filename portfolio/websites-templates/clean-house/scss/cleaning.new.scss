@@ -1,0 +1,72 @@
+.cleaning-new{
+	margin-top: 33px;
+}
+.cleaning-new{
+
+	// title
+	h1{
+		text-align: center;
+		font-size: 58px;
+		line-height: 1em;
+		color: #000;
+		margin: 0 0 46px;
+		font-family: $fontBold;
+	}
+
+	// about services : begin
+	.about-services{}
+	.about-services{
+
+		// one service : begin
+		.one-service{
+			width: 300px;
+			margin: 0 15px 40px 0;
+			z-index: 0;
+			display: inline-block; 
+			vertical-align: top;
+		}
+		.one-service:nth-child(3n+3){
+			margin-right: 0;
+		}
+		.one-service{
+
+			// image/link
+			> a:first-child{}
+
+				> a img{
+					display: block;
+					width: 100%;
+					max-width: 300px;
+					height: auto;
+					margin: 0 0 6px; padding: 0;
+				}
+
+			// title second lvl
+			> h2{
+				font-size: 18px;
+				font-family: $fontMedium;
+				line-height: 1.22em;
+				margin: 0 0 14px;
+				text-align: center;
+			}
+
+				> h2 a{
+					color: #237ebe;
+					text-decoration: underline;
+				}
+
+			// description
+			> p{
+				font-size: 13px;
+				color: #555555;
+				line-height: 1.53em;
+				text-align: center;
+			}
+
+		}
+		// one service : end
+
+	}
+	// about services : end
+
+}

@@ -1,0 +1,361 @@
+// MAP : begin
+#contacts-map{
+	margin-bottom: 28px;
+}
+#contacts-map{
+
+	// map : begin
+	.map{
+		width: 100%;
+		height: 422px;
+
+		// delete this style
+		background: #ccc;
+	}
+	.map{
+
+		.marker{
+			background: transparent url(../../images/marker.png) 0 0 no-repeat;
+			width: 211px; height: 120px;
+			display: block;
+		}
+
+	}
+	// map : end
+
+	// form : begin
+	form{
+		background: #f9f9f9;
+		height: 56px;
+		padding-top: 17px;
+		width: 100%;
+		display: block;
+	}
+	form{
+
+		.wrapper{
+			width: 672px;
+			margin: 0 auto;
+		}
+
+			input[type="text"]{
+				border: 1px solid #e5e5e5;
+				border-right: none;
+				font-family: Arial;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 1em;
+				padding: 11px 14px;
+				background: #fff;
+				color: #c0c0c0;
+				outline: none;
+				width: 550px;
+				float: left;
+			}
+			@-moz-document url-prefix() { 
+			  input[type="text"] {
+			     padding: 12px 14px;
+			  }
+			}
+			input[type="text"]:focus{
+				color: #464646;
+			}
+
+			input[type="submit"]{
+				float: left;
+				font-family: $fontBold;
+				font-size: 13px;
+				padding: 13px 10px 12px;
+				line-height: 1em;
+				color: #fff;
+				text-transform: uppercase;
+				border: 1px solid #64a239;
+				-moz-border-radius: 0 4px 4px 0;
+				-webkit-border-radius: 0 4px 4px 0;
+				border-radius: 0 4px 4px 0;
+				-moz-background-clip: padding;
+				-webkit-background-clip: padding-box;
+				background-clip: padding-box;
+				background-color: #49bf41;
+			}
+
+			input[type="submit"]:hover{
+				background-color: #61d959;
+			}
+
+			input[type="submit"]:active {
+				box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.37);
+			}
+
+	}
+	// form : end
+
+}
+// MAP : end
+
+// CONTENT : begin
+.contacts{}
+.contacts{
+
+	// left column (address) : begin
+	address{
+		font-style: normal;
+	}
+	address{
+
+		// title
+		h1{
+			font-weight: normal;
+			font-family: $fontRegular;
+			font-size: 28px;
+			color: #000;
+			margin: 0 0 18px;
+		}
+
+		// address
+		> p{
+			color: #565656;
+			font-family: $fontMedium;
+			font-size: 13px;
+			line-height: 1.38em;
+			margin: 0 0 18px;
+		}
+
+		// tel/email : begin
+		> div:nth-child(3){
+			margin-bottom: 55px;
+		}
+		> div:nth-child(3){
+
+			p{
+				font-size: 13px;
+				margin: 0 0 8px;
+				line-height: 1.38em;
+				border-bottom: 1px dotted #000000;
+			}
+			p{
+				> span:first-child{
+					color: #565656;
+					display: block;
+					float: left;
+					background: #fff;
+					position: relative;
+					top: 5px;
+					padding-right: 3px;
+				}
+
+				> span:last-child{
+					font-family: $fontMedium;
+					color: #000;
+					display: block;
+					float: right;
+					background: #fff;
+					padding-left: 5px;
+					position: relative;
+					top: 5px;
+					width: 300px;
+				}
+					
+					> span:last-child a{
+						color: #008bbf;
+					}
+			}
+
+		}
+		// tel/email : end
+
+		// subtitle
+		h2{
+			font-weight: normal;
+			font-family: $fontRegular;
+			font-size: 24px;
+			color: #000;
+			margin: 0 0 12px;
+		}
+
+		// visiting hours : begin
+		> div:nth-child(5){
+			margin-bottom: 55px;
+		}
+		> div:nth-child(5){
+
+			p{
+				font-size: 13px;
+				margin: 0 0 8px;
+				line-height: 1.38em;
+				border-bottom: 1px dotted #000000;
+			}
+			p{
+				> span:first-child{
+					color: #565656;
+					display: block;
+					float: left;
+					background: #fff;
+					position: relative;
+					top: 5px;
+					padding-right: 3px;
+				}
+
+					> span:first-child b{
+						font-weight: normal;
+						font-family: $fontRegular;
+						color: #f00;
+					}
+
+				> span:last-child{
+					font-family: $fontMedium;
+					color: #000;
+					display: block;
+					float: right;
+					background: #fff;
+					padding-left: 5px;
+					position: relative;
+					top: 5px;
+					width: 300px;
+				}
+					
+			}
+
+		}
+		// visiting hours : end
+	}
+	// left column (address) : end
+
+	// right column (feedback form) : begin
+	.form{}
+	.form{
+
+		// title
+		.title{
+			font-weight: normal;
+			font-family: $fontRegular;
+			font-size: 28px;
+			color: #000;
+			margin: 0 0 18px;
+		}
+
+		// form : begin
+		form{}
+		form{
+
+			// inputs
+			> div:first-child{
+				margin-bottom: 18px;
+			}
+			> div:first-child{
+
+				div{
+					float: left;
+					width: 220px;
+					margin-right: 20px;
+				}
+				div:last-child{
+					margin-right: 0;
+				}
+				div{
+
+					label{
+						display: block;
+						color: #565656;
+						font-size: 13px;
+						font-family: $fontMedium;
+						line-height: 1.38em;
+						margin-bottom: 7px;
+					}
+					input{
+						border: 1px #e5e5e5 solid;
+						font-family: Arial;
+						font-weight: normal;
+						font-size: 14px;
+						line-height: 1em;
+						padding: 11px 13px;
+						background: #fff;
+						color: #464646;
+						outline: none;
+						width: 190px;
+					}
+					input[type="text"]:focus{
+						color: #464646;
+					}
+
+				}
+
+			}
+
+			// textarea
+			> div:nth-child(2){
+				margin-bottom: 14px;
+			}
+			> div:nth-child(2){
+
+				label{
+					display: block;
+					color: #565656;
+					font-size: 13px;
+					font-family: $fontMedium;
+					line-height: 1.38em;
+					margin-bottom: 7px;
+				}
+				textarea{
+					border: 1px #e5e5e5 solid;
+					font-family: Arial;
+					font-weight: normal;
+					font-size: 14px;
+					line-height: 1.3em;
+					padding: 11px 13px;
+					background: #fff;
+					color: #464646;
+					outline: none;
+					width: 430px;
+					min-height: 125px;
+					resize: vertical;
+				}
+				textarea:focus{
+					color: #464646;
+				}
+
+			}
+
+			// button
+			input[type="submit"]{
+				font-family: $fontMedium;
+				font-size: 13px;
+				line-height: 1em;
+				color: #fff;
+				padding: 15px;
+				margin-bottom: 10px;
+				text-transform: uppercase;
+				border: 1px solid #3899dd;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				border-radius: 3px;
+				-moz-background-clip: padding;
+				-webkit-background-clip: padding-box;
+				background-clip: padding-box;
+				background-color: #036bb5;
+			}
+			input[type="submit"]:hover{
+				background-color: #0d7fcf;
+			}
+			input[type="submit"]:active{
+				box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.37); 
+			}
+
+			// status text
+			p{
+				color: #565656;
+				font-family: $fontMedium;
+				font-size: 13px;
+				line-height: 1.38em;
+				margin: 0 0 18px; 
+			}
+
+		}
+		// form : end
+
+	}
+	// right column (feedback form) : end
+
+}
+
+// CONTENT : end

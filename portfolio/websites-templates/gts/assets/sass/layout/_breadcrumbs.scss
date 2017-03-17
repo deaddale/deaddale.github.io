@@ -1,0 +1,30 @@
+// breadcrumbs : begin
+.breadcrumbs{
+	padding: 0; margin: 0 0 20px;
+	list-style: none;
+
+	li{
+		display: inline-block;
+		position: relative;
+		padding-right: 13px;
+
+		&:after{
+			content:'>';
+			display: block;
+			position: absolute;
+			right: 0; top: 0;
+		}
+
+		&:last-child{
+
+			&:after{
+				display: none;
+			}
+		}
+
+		a{}
+
+		span{}
+	}
+}
+// breadcrumbs : end

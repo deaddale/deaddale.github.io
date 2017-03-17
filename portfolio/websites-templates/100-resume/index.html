@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<title>Поиск персонала в Санкт-Петербурге - 100resume.ru</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<!--
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	-->
+
+	<!-- CSS
+	================================================== -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/960_16_col.css">
+	<!-- bxSlider CSS file -->
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicons/favicon.ico">
+	<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+
+
+	<!-- JS
+	================================================== -->
+	<!-- jQuery -->
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	
+	<!-- Fixed Floating Elements -->
+	<script type="text/javascript" src="js/jquery.ddTools-1.7.9.min.js"></script>
+
+	<!-- bxSlider Javascript file -->
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+
+	<!-- jQuery Form Plugin (POST and validate form without reload page) -->
+	<script type="text/javascript" src="js/jquery.form.js"></script>
+
+	<!-- Bare bones modal dialog windows -->
+	<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+
+	<!-- jQuery Autosize (A plugin to enable automatic height for textarea elements.) -->
+	<script type="text/javascript" src="js/jquery.autosize-min.js"></script>
+
+	<!-- jQuery Placeholder -->
+	<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+
+	<!-- Custom script -->
+	<script type="text/javascript" src="js/custom_script.js"></script>
+	<script type="text/javascript" src="js/forms.js"></script>
+	
+	<!-- Calls -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+		
+		// content slider
+		$('.slider_logos').bxSlider({
+			pager: false,
+			slideWidth: 168,
+			minSlides: 3,
+			maxSlides: 5,
+			moveSlides: 1,
+			slideMargin: 0
+		});
+
+		// прилипание меню
+		$('header').ddFixed();
+		
+		// popups
+		$('a[rel*=leanModalSmallIndent]')
+		.leanModal({ top : 150, overlay : 0.7, closeButton: ".wrapper_popup .buttons_form div, .wrapper_popup article div.button_small" });
+
+		$('a[rel*=leanModalBigIndent]')
+		.leanModal({ top : 50, overlay : 0.7, closeButton: ".wrapper_popup .buttons_form div, .wrapper_popup article div.button_small" });
+		
+		// input type="file" - if selected file
+		$("input:file").change(function (){
+			$(this).prev().addClass('selected');
+		});
+		
+		// textarea autoresize
+		$('textarea').autosize();
+		
+		// поведение меню и плавная прокрутка к блокам
+		$('header span').navigation();
+		
+		// jQuery Placeholder
+		$('input, textarea').placeholder();
+
+	});
+	</script>
+
+</head>
+<body>
+
+<!-- HEADER:begin -->
+<header>
+	<div class="container_16">
+
+		<!-- logotype -->
+		<h1 class="logotype">
+			<img src="images/other/logotype_site.png" alt="Поиск персонала в Санкт-Петербурге - 100resume.ru" data-scroll="top_info">
+		</h1>
+		
+		<!-- navigation -->
+		<nav>
+			<span data-scroll="why_we">Почему мы?</span>
+			<span data-scroll="how_it_work">Как это работает?</span>
+			<span data-scroll="selected_package_summary">Выбрать пакет резюме</span>
+			<span data-scroll="reviews_about_us">Отзывы</span>
+		</nav>	
+
+	</div>
+</header>
+<!-- HEADER:end -->
+
+<!-- CONTENT:begin -->
+<section>
+
+	<!-- top:begin -->
+	<div class="top_info" id="top_info">
+		<div class="container_16">
+			
+			<!-- cloud text -->
+			<div class="cloud_text">Как быстро найти сотрудников в<br>Санкт-Петербурге?</div>
+
+			<!-- сlick link -->
+			<a class="click_link" href="#how_quickly_find_staff" rel="leanModalSmallIndent" name="how_quickly_find_staff" title="Жмите">Жмите</a>
+
+			<!-- block call expert -->
+			<div class="block_call_expert">
+				<div ><span>+7 812</span>&nbsp;458 04 17</div>
+				<a href="#request_call_expert_first" class="bg_blue button_small button" rel="leanModalSmallIndent" name="request_call_expert_first" title="Заказать звонок">Заказать звонок эксперта</a>
+			</div>
+
+			<!-- buttons -->
+			<div class="buttons clearfix">
+				<a href="#get_a_free_consultation_first" rel="leanModalSmallIndent" name="get_a_free_consultation_first" title="Получить бесплатную консультацию" class="bg_blue button_big button">Получить бесплатную<br>консультацию</a>
+				<span>или</span>
+				<a href="#get_consultation_first" rel="leanModalBigIndent" name="get_consultation_first" title="Оставить заявку на резюме" class="bg_orange button_big button">Оставить заявку на<br>резюме</a>
+			</div>
+
+		</div>
+
+		<div class="bg_curved_white"></div>
+	</div>
+	<!-- top:end -->
+
+	<!-- why me:begin -->
+	<div class="why_me" id="why_we">
+		<div class="container_16">
+			
+			<!-- text -->
+			<div class="title">Почему мы?</div>
+			<p>Мы сотрудничаем с 10-ти платными ресурсами (84% рынка труда)<br>Резюме подбираются исключительно экспертами по подбору персонала<br>Мы работаем очень оперативно<br>Резюме подбираются строго по Вашей заявке<br>Мы имеем собственную базу актуальных резюме</p>
+			<!-- button -->
+			<a href="#request_call_expert_second" class="bg_blue button_small button" rel="leanModalSmallIndent" name="request_call_expert_second" title="Заказать звонок">Заказать звонок эксперта</a>
+			<!-- telephone -->
+			<div>Или позвонить по телефону</div>
+			<div><span>+7 812</span>&nbsp;458 04 17</div>
+		</div>
+	</div>
+	<!-- why me:end -->
+
+	<!-- guarantees and benefits:begin -->
+	<div class="guarantees_and_benefits">
+		<div class="container_16">
+			
+			<!-- text -->
+			<div class="title">Гарантии и выгоды</div>
+			<div class="descr">Особенности нашего сервиса и Ваши выгоды</div>
+			
+			<!-- blocks -->
+			<div class="grid_5 info_block">
+				<div>Гарантия качественной услуги</div>
+				<p>Мы вернём деньги, если не предоставим резюме.</p>
+			</div>
+			<div class="grid_6 info_block">
+				<div>Значительная экономия<br>ваших денег</div>
+				<p>Работая с нами, Вы не платите 10-ти платным ресурсам, с которых мы берем резюме.</p>
+			</div>
+			<div class="grid_5 info_block">
+				<div>Вы экономите время.<br>за вас работают эксперты.</div>
+				<p>Мы перебираем сотни резюме, чтобы представить Вам лучших кандидатов.</p>
+			</div>
+
+		</div>
+	</div>
+	<!-- guarantees and benefits:end -->
+
+	<!-- how it work:begin -->
+	<div class="how_it_work" id="how_it_work">
+		<div class="container_16">
+
+			<!-- title -->
+			<div class="title">Как это работает?</div>
+
+			<!-- blocks -->
+			<div class="clearfix">
+				<div class="grid_4">
+					<p>1. Сначала:</p>
+					<p>Вы заказывайте бесплатный<br>звонок эксперта или звоните нам</p>
+				</div>
+				<div class="grid_4">
+					<p>2. Затем:</p>
+					<p>Эксперт отвечает на Ваши<br>вопросы и Вы сообщаете ему<br>требования к кандидатам</p>
+				</div>
+				<div class="grid_4">
+					<p>3. Далее:</p>
+					<p>Вы произодите оплату услуги<br>(полностью или частично)</p>
+				</div>
+				<div class="grid_4">
+					<p>4. И мы направляем<br>резюме на ваш<br>электронный адрес</p>
+				</div>
+			</div>
+
+			<!-- subtitle -->
+			<div class="subtitle">В результате вы получаете</div>
+
+			<!-- list -->
+			<ul>
+				<li>Лучшие и самые актуальные резюме кандидатов, которые сейчас есть на рынке труда Санкт-Петербурга</li>
+				<li>Вы получаете возможность выбирать из большого чиста специалистов</li>
+				<li>Сэкономленные средства &mdash; Вы не платили 10 платным ресурсам</li>
+				<li>Вы получили резюме очень быстро - от 3-х до 24 часов с момента заказа</li>
+				<li>Вы получаете уже отобранные резюме по Вашим критериям, а не просматриваете сотни резюме впустую.</li>
+			</ul>
+
+			<!-- price -->
+
+		</div>
+	</div>
+	<!-- how it work:end -->
+
+	<!-- selected package summary:begin -->
+	<div class="selected_package_summary" id="selected_package_summary">
+		<div class="container_16">
+			
+			<!-- discount -->
+			<div class="discount">До конца недели скидка на пакет резюме <span>&mdash; 50%</span><br>успейте заказать с 50% скидкой</div>
+
+			<!-- title -->
+			<div class="title">Выбирайте оптимальный для Вас<br> пакет резюме 20, 40 или 100 резюме:</div>
+			
+			<!-- text -->
+			<!-- <p class="text"></p> -->
+
+			<!-- blocks -->
+			<div class="grid_4 prefix_1 info_block">
+				<!-- title -->
+				<div>20 резюме по вашей<br>вакансии</div>
+				<!-- list -->
+				<ul>
+					<li>Пакет из 20 резюме позволит Вам быстро пригласить кандидатов на работу.</li>
+					<li>20 резюме предоставляются с платных сайтов.</li>
+					<li>Все резюме со "свежей" датой, а значит, кандидаты ищут работу.</li>
+					<li>Резюме предоставляются в течение 24 часов с момента заказа.</li>
+				</ul>
+				<!-- text -->
+				<p>Заполните, пожалуйста, данную форму и наш эксперт свяжется с Вами.</p>
+				<!-- price -->
+				<div class="price_old">3975 РУБ.</div>
+				<div class="price_new">2650 РУБ.</div>
+				<!-- button -->		
+				<a href="#application_for_20_summary" class="bg_blue button_small button" rel="leanModalBigIndent" name="application_for_20_summary" title="Заполнить заявку">Заполнить заявку</a>
+			</div>
+			<div class="grid_4 prefix_1 info_block">
+				<!-- title -->
+				<div>40 резюме по вашей<br>вакансии</div>
+				<!-- list -->
+				<ul>
+					<li>40 резюме предоставляются с платных сайтов двумя частями.</li>
+					<li>Все резюме со "свежей" датой, а значит, эти кандидаты ищут работу.</li>
+					<li>Первая часть резюме предоставляются в день обращения работодателя.</li>
+					<li>Пакет из 40 резюме позволит Вам пригласить лучших кандидатов на работу.</li>
+				</ul>
+				<!-- text -->
+				<p>Заполните, пожалуйста, данную форму и наш эксперт свяжется с Вами.</p>
+				<!-- price -->
+				<div class="price_old">6750 Руб.</div>
+				<div class="price_new">4500 Руб.</div>
+				<!-- button -->
+				<a href="#application_for_40_summary" class="bg_blue button_small button" rel="leanModalBigIndent" name="application_for_40_summary" title="Заполнить заявку">Заполнить заявку</a>
+			</div>
+			<div class="grid_4 prefix_1 info_block">
+				<!-- title -->
+				<div>100 резюме по вашей<br>вакансии</div>
+				<!-- list -->
+				<ul>
+					<li>100 резюме предоставляются с платных сайтов и нашей базы.</li>
+					<li>Резюме предоставляются до выхода кандидата на работу (но не более 100 резюме).</li>
+					<li>100 резюме предоставляются частями по 25 или 50 резюме.</li>
+					<li>Пакет из 100 резюме позволит Вам точно решить проблему с персоналом.</li>
+				</ul>
+				<!-- text -->
+				<p>Заполните, пожалуйста, данную форму и наш эксперт свяжется с Вами.</p>
+				<!-- price -->
+				<div class="price_old">15000 Руб.</div>
+				<div class="price_new">10000 Руб.</div>
+				<!-- button -->
+				<a href="#application_for_100_summary" class="bg_blue button_small button" rel="leanModalBigIndent" name="application_for_100_summary" title="Заполнить заявку">Заполнить заявку</a>
+			</div>
+
+		</div>
+	</div>
+	<!-- selected package summary:end -->
+
+	<!-- our good friends:begin -->
+	<div class="our_good_friends">
+		<div class="container_16">
+
+			<!-- title -->
+			<div class="title">Наши добрые друзья</div>
+			
+			<!-- slider -->
+			<div class="slider_logos">
+				<div class="slide"><img src="images/friends_logo/friend_logo_1.png" alt=""></div>
+				<div class="slide"><img src="images/friends_logo/friend_logo_2.png" alt=""></div>
+				<div class="slide"><img src="images/friends_logo/friend_logo_3.png" alt=""></div>
+				<div class="slide"><img src="images/friends_logo/friend_logo_4.png" alt=""></div>
+				<div class="slide"><img src="images/friends_logo/friend_logo_5.png" alt=""></div>
+			</div>
+
+		</div>
+	</div>
+	<!-- our good friends:end -->
+
+	<!-- reviews about us:begin -->
+	<div class="reviews_about_us" id="reviews_about_us">
+		<div class="container_16">
+				
+			<!-- title -->
+			<div class="title">Отзывы о нас</div>
+			
+			<div class="clearfix">
+
+				<!-- one review:begin -->
+				<div class="grid_5">
+					
+					<!-- left -->
+					<div class="left"></div>
+					
+					<!-- right -->
+					<div class="right">
+						<p>Хотелось бы выразить благодарность за оперативную подборку резюме сотрудников для нашей компании. Всего за 2 дня мы взяли в штат сразу 3х сотрудников. Очень удобно! Рекомендую! Будем обращаться еще.</p>
+						<p>Алексей Владимирович директор компании Лига Мастеров Петербурга,<br>тел.: +7 (962) 684-11-36 E-mail: masteravspb@gmail.com</p>
+					</div>
+				
+				</div>
+				<!-- one review:end -->
+
+				<!-- one review:begin -->
+				<div class="grid_5">
+					
+					<!-- left -->
+					<div class="left"></div>
+					
+					<!-- right -->
+					<div class="right">
+						<p>Сотрудников отличает высокий профессионализм в вопросе подбора персонала. Скорость реакции на наши заявки радует. Самое главное, что вакансии закрываются очень быстро!</p>
+						<p>Сергей Витальевич,<br>ген. директор рекламно-производственной компании ООО "Профи ПРО"<br>812 6400330</p>
+					</div>
+				
+				</div>
+				<!-- one review:end -->
+
+				<!-- one review:begin -->
+				<div class="grid_5">
+					
+					<!-- left -->
+					<div class="left"></div>
+					
+					<!-- right -->
+					<div class="right">
+						<p>Благодарю за помощь. Отдельное спасибо Максиму!<br>Стояла задача срочно найти сотрудника с узкой специализацией. Разместили объявления на всех ресурсах еще в понедельник, результат плачевный. К Максиму обратился в середине дня, результат более чем превзошел ожидание. Всего за несколько часов представлены резюме с отвечающими параметрами в более чем достаточном количестве. Оперативность реакции и качество исполнения вызывают уважение. Еще раз спасибо!!</p>
+						<p>Денис Баландин,<br>директор ООО "Консультант"</p>
+					</div>
+				
+				</div>
+				<!-- one review:end -->
+
+				<!-- one review:begin -->
+				<div class="grid_5">
+					
+					<!-- left -->
+					<div class="left"></div>
+					
+					<!-- right -->
+					<div class="right">
+						<p>Помогли нанять персонал без лишних вложений времени для меня. Эффективно и быстро.</p>
+						<p>Олег Лотешко<br>ЮЦ ООО “ОТКРЫТИЕ”</p>
+					</div>
+				
+				</div>
+				<!-- one review:end -->
+
+				<!-- one review:begin -->
+				<div class="grid_5">
+					
+					<!-- left -->
+					<div class="left"></div>
+					
+					<!-- right -->
+					<div class="right">
+						<p>Очень оперативный и эффективный способ подбора персонала. Остаётся только обзвонить кандидатов.</p>
+						<p>Черный Максим,<br>генеральный директор дизайн студии "Артум"<br>8 (800) 333-99-02</p>
+					</div>
+				
+				</div>
+				<!-- one review:end -->
+
+				<!-- one review:begin -->
+				<div class="grid_5">
+					
+					<!-- left -->
+					<div class="left"></div>
+					
+					<!-- right -->
+					<div class="right">
+						<p>Достаточно быстро и без лишней траты времени.<br>Для тех, кто действительно хочет оперативно закрыть вопрос по найму сотрудников!</p>
+						<p>Дмитрий, руководитель "Служба Ремонта"</p>
+					</div>
+				
+				</div>
+				<!-- one review:end -->
+
+			</div>
+
+			<!-- button -->
+			<div class="button_wrapper">
+				<a href="#write_a_review" class="bg_blue button_small button" rel="leanModalSmallIndent" name="write_a_review" title="Оставить отзыв">Оставить отзыв</a>
+			</div>
+
+		</div>
+	</div>
+	<!-- reviews about us:end -->
+
+	<!-- buttons:begin -->
+	<div class="buttons_bottom">
+		<div class="buttons_inner_wrapper">
+
+			<a href="#get_consultation_second" rel="leanModalBigIndent" name="get_consultation_second" title="Заполнить заявку на резюме" class="bg_orange button_big button">Заполнить заявку на<br>резюме</a>
+			<a href="#get_a_free_consultation_second" rel="leanModalSmallIndent" name="get_a_free_consultation_third" title="Получить бесплатную консультацию" class="bg_blue button_big button">Получить бесплатную<br>консультацию</a>
+
+		</div>
+	</div>
+	<!-- buttons:end -->
+
+</section>
+<!-- CONTENT:end -->
+
+<!-- FOOTER:begin -->
+<footer>
+	<div class="container_16">
+		
+		<!-- copyright -->
+		<div class="grid_8">
+			&copy; 100resume.ru, 2013<br>Подбор персонала в Санкт-Петербурге
+		</div>
+
+		<!-- icons and dev -->
+		<div class="grid_8">
+			
+			<!-- icons -->
+			<div class="clearfix">
+				<a href="#" title="Вконтакте"><img src="images/icons/icon_vk.png" alt=""></a>
+				<a href="#" title="Твиттер"><img src="images/icons/icon_twitter.png" alt=""></a>
+				<a href="#" title="Facebook"><img src="images/icons/icon_fb.png" alt=""></a>
+				<a href="#" title="Мой мир"><img src="images/icons/icon_mailru.png" alt=""></a>
+				<a href="#" title="Одноклассники"><img src="images/icons/icon_odnoklassniki.png" alt=""></a>
+				<a href="#" title="Google+"><img src="images/icons/icon_google_plus.png" alt=""></a>
+			</div>
+			
+			<!-- dev -->
+			<p>Разработка сайта &mdash; <a href="http://welovecode.org" title="welovecode.org">welovecode.org</a></p>
+
+		</div>
+
+	</div>
+</footer>
+<!-- FOOTER:end -->
+
+<!-- FORMS:begin -->
+
+<!-- request a call expert (1):begin -->
+<div class="wrapper_popup" id="request_call_expert_first">
+	<div class="title_big">Заказать звонок эксперта</div>
+	<form action="php/request_call_expert_first.php" method="post">
+		<input type="text" value="" name="name" placeholder="Ваше имя*">
+		<input type="text" value="" name="company" placeholder="Ваша компания">
+		<input type="text" value="" name="telephone" placeholder="Ваш телефон*">
+		<textarea name="messageorquestion" placeholder="Вопрос или сообщение"></textarea>
+		<div class="buttons_form clearfix">
+			<div class="button_small bg_blue">Вернуться</div>
+			<button type="submit" class="button_small bg_orange">Отправить</button>
+		</div>
+	</form>
+
+	<article>
+		<div class="title_big">Спасибо за вашу заявку!</div>
+		<p>Заявка поступила<br>специалистам нашей компании.<br>Мы перезвоним вам в <br>ближайшее время!</p>
+		<div class="button_small bg_blue">Вернуться</div>
+	</article>
+</div>
+<!-- request a call expert (1):end -->
+
+<!-- how quickly find staff:begin -->
+<div class="wrapper_popup" id="how_quickly_find_staff">
+	<div class="title_small">Заполните данную форму и получите описание самых эффективных источников поиска и методов подбора квалифицированного персонала, а также, описание наших услуг и цены</div>
+	<form action="php/how_quickly_find_staff.php" method="post">
+		<input type="text" value="" name="name" placeholder="Ваше имя*">
+		<input type="text" value="" name="telephone" placeholder="Ваш телефон*">
+		<input type="text" value="" name="email" placeholder="Ваша email*">
+		<textarea name="messageorquestion" placeholder="Вопрос или сообщение"></textarea>
+		<div class="buttons_form clearfix">
+			<div class="button_small bg_blue">Вернуться</div>
+			<button type="submit" class="button_small bg_orange">Отправить</button>
+		</div>
+	</form>
+
+	<article>
+		<div class="title_big">Спасибо за вашу заявку!</div>
+		<p>Заявка поступила<br>специалистам нашей компании.<br>Мы перезвоним вам в <br>ближайшее время!</p>
+		<div class="button_small bg_blue">Вернуться</div>
+	</article>
+</div>
+<!-- how quickly find staff:end -->
+
+<!-- get a free consultation (1):begin -->
+<div class="wrapper_popup" id="get_a_free_consultation_first">
+	<div class="title_big">Получение бесплатной консультации</div>
+	<p>Заполните данную форму, и наш эксперт проконсультирует Вас по интересующим вопросам.</p>
+	<form action="php/get_a_free_consultation_first.php" method="post">
+		<input type="text" value="" name="name" placeholder="Ваше имя*">
+		<input type="text" value="" name="company" placeholder="Ваша компания">
+		<input type="text" value="" name="telephone" placeholder="Ваш телефон*">
+		<textarea name="messageorquestion" placeholder="Ваш вопрос"></textarea>
+		<div class="buttons_form clearfix">
+			<div class="button_small bg_blue">Вернуться</div>
+			<button type="submit" class="button_small bg_orange">Отправить</button>
+		</div>
+	</form>
+
+	<article>
+		<div class="title_big">Спасибо за вашу заявку!</div>
+		<p>Заявка поступила<br>специалистам нашей компании.<br>Мы перезвоним вам в <br>ближайшее время!</p>
+		<div class="button_small bg_blue">Вернуться</div>
+	</article>
+</div>
+<!-- get a free consultation (1):end -->
+
+<!-- get consultation (1):begin -->
+<div class="wrapper_popup" id="get_consultation_first">
+	<div class="title_small">Заполните данную форму и наш эксперт свяжется с Вами и подробно расскажет о наших услугах</div>
+	<form enctype="multipart/form-data" action="php/get_consultation_first.php" method="post">
+		<input type="text" value="" name="name" placeholder="Ваше имя*">
+		<input type="text" value="" name="company" placeholder="Ваша компания">
+		<input type="text" value="" name="post" placeholder="Кого вы ищете? Укажите должность*">
+		<textarea name="messageorquestion" value="" placeholder="Ключевые навыки этой должности: "></textarea>
+		<input type="text" value="" name="telephone" placeholder="Ваш телефон*">
+		<input type="text" value="" name="age_and_sex" placeholder="Пожелания по возрасту и полу">
+		<div class="input_file_wrapper">
+			<div class="mask"></div>
+			<input type="file" name="file" value="Прикрепить файл (заявку в вашем виде)">
+		</div>
+		<div class="buttons_form clearfix">
+			<div class="button_small bg_blue">Вернуться</div>
+			<button type="submit" class="button_small bg_orange">Отправить</button>
+		</div>
+	</form>
+
+	<article>
+		<div class="title_big">Спасибо за вашу заявку!</div>
+		<p>Заявка поступила<br>специалистам нашей компании.<br>Мы перезвоним вам в <br>ближайшее время!</p>
+		<div class="button_small bg_blue">Вернуться</div>
+	</article>
+</div>
+<!-- get consultation (1):end -->
+
+<!-- request a call expert (2):begin -->
+<div class="wrapper_popup" id="request_call_expert_second">
+	<div class="title_big">Заказать звонок эксперта</div>
+	<form action="php/request_call_expert_second.php" method="post">
+		<input type="text" value="" name="name" placeholder="Ваше имя*">
+		<input type="text" value="" name="company" placeholder="Ваша компания">
+		<input type="text" value="" name="telephone" placeholder="Ваш телефон*">
+		<textarea name="messageorquestion" placeholder="Вопрос или сообщение"></textarea>
+		<div class="buttons_form clearfix">
+			<div class="button_small bg_blue">Вернуться</div>
+			<button type="submit" class="button_small bg_orange">Отправить</button>
+		</div>
+	</form>
+
+	<article>
+		<div class="title_big">Спасибо за вашу заявку!</div>
+		<p>Заявка поступила<br>специалистам нашей компании.<br>Мы перезвоним вам в <br>ближайшее время!</p>
+		<div class="button_small bg_blue">Вернуться</div>
+	</article>
+</div>
+<!-- request a call expert (2):end -->
+
+<!-- get consultation (20 resume):begin -->
+<div class="wrapper_popup" id="application_for_20_summary">
+	<div class="title_big">Заявка на 20 резюме по вакансии</div>
+	<form enctype="multipart/form-data" action="php/application_for_20_summary.php" method="post">
+		<input type="text" value="" name="name" placeholder="Ваше имя*">
+		<input type="text" value="" name="company" placeholder="Ваша компания">
+		<input type="text" value="" name="post" placeholder="Кого вы ищете? Укажите должность*">
+		<textarea name="messageorquestion" value="" placeholder="Ключевые навыки этой должности: "></textarea>
+		<input type="text" value="" name="telephone" placeholder="Ваш телефон*">
+		<input type="text" value="" name="age_and_sex" placeholder="Пожелания по возрасту и полу">
+		<div class="input_file_wrapper">
+			<div class="mask"></div>
+			<input type="file" name="file" value="Прикрепить файл (заявку в вашем виде)">
+		</div>
+		<div class="buttons_form clearfix">
+			<div class="button_small bg_blue">Вернуться</div>
+			<button type="submit" class="button_small bg_orange">Отправить</button>
+		</div>
+	</form>
+
+	<article>
+		<div class="title_big">Спасибо за вашу заявку!</div>
+		<p>Заявка поступила<br>специалистам нашей компании.<br>Мы перезвоним вам в <br>ближайшее время!</p>
+		<div class="button_small bg_blue">Вернуться</div>
+	</article>
+</div>
+<!-- get consultation (20 resume):end -->
+
+<!-- get consultation (40 resume):begin -->
+<div class="wrapper_popup" id="application_for_40_summary">
+	<div enctype="multipart/form-data" class="title_big">Заявка на 40 резюме по вакансии</div>
+	<form action="php/application_for_40_summary.php" method="post">
+		<input type="text" value="" name="name" placeholder="Ваше имя*">
+		<input type="text" value="" name="company" placeholder="Ваша компания">
+		<input type="text" value="" name="post" placeholder="Кого вы ищете? Укажите должность*">
+		<textarea name="messageorquestion" value="" placeholder="Ключевые навыки этой должности: "></textarea>
+		<input type="text" value="" name="telephone" placeholder="Ваш телефон*">
+		<input type="text" value="" name="age_and_sex" placeholder="Пожелания по возрасту и полу">
+		<div class="input_file_wrapper">
+			<div class="mask"></div>
+			<input type="file" name="file" value="Прикрепить файл (заявку в вашем виде)">
+		</div>
+		<div class="buttons_form clearfix">
+			<div class="button_small bg_blue">Вернуться</div>
+			<button type="submit" class="button_small bg_orange">Отправить</button>
+		</div>
+	</form>
+
+	<article>
+		<div class="title_big">Спасибо за вашу заявку!</div>
+		<p>Заявка поступила<br>специалистам нашей компании.<br>Мы перезвоним вам в <br>ближайшее время!</p>
+		<div class="button_small bg_blue">Вернуться</div>
+	</article>
+</div>
+<!-- get consultation (40 resume):end -->
+
+<!-- get consultation (100 resume):begin -->
+<div class="wrapper_popup" id="application_for_100_summary">
+	<div class="title_big">Заявка на 100 резюме по вакансии</div>
+	<form enctype="multipart/form-data" action="php/application_for_100_summary.php" method="post">
+		<input type="text" value="" name="name" placeholder="Ваше имя*">
+		<input type="text" value="" name="company" placeholder="Ваша компания">
+		<input type="text" value="" name="post" placeholder="Кого вы ищете? Укажите должность*">
+		<textarea name="messageorquestion" value="" placeholder="Ключевые навыки этой должности: "></textarea>
+		<input type="text" value="" name="telephone" placeholder="Ваш телефон*">
+		<input type="text" value="" name="age_and_sex" placeholder="Пожелания по возрасту и полу">
+		<div class="input_file_wrapper">
+			<div class="mask"></div>
+			<input type="file" name="file" value="Прикрепить файл (заявку в вашем виде)">
+		</div>
+		<div class="buttons_form clearfix">
+			<div class="button_small bg_blue">Вернуться</div>
+			<button type="submit" class="button_small bg_orange">Отправить</button>
+		</div>
+	</form>
+
+	<article>
+		<div class="title_big">Спасибо за вашу заявку!</div>
+		<p>Заявка поступила<br>специалистам нашей компании.<br>Мы перезвоним вам в <br>ближайшее время!</p>
+		<div class="button_small bg_blue">Вернуться</div>
+	</article>
+</div>
+<!-- get consultation (100 resume):end -->
+
+<!-- write a review:begin -->
+<div class="wrapper_popup" id="write_a_review">
+	<div class="title_big">Написать отзыв</div>
+	<form action="php/write_a_review.php" method="post">
+		<input type="text" value="" name="name" placeholder="Ваше имя*">
+		<input type="text" value="" name="company" placeholder="Ваша компания*">
+		<input type="text" value="" name="telephone" placeholder="Ваш телефон">
+		<textarea name="messageorquestion" placeholder="Текст отзыва*"></textarea>
+		<div class="buttons_form clearfix">
+			<div class="button_small bg_blue">Вернуться</div>
+			<button type="submit" class="button_small bg_orange">Отправить</button>
+		</div>
+	</form>
+
+	<article>
+		<div class="title_big">Спасибо за вашу заявку!</div>
+		<p>Заявка поступила<br>специалистам нашей компании.<br>Мы перезвоним вам в <br>ближайшее время!</p>
+		<div class="button_small bg_blue">Вернуться</div>
+	</article>
+</div>
+<!-- write a review:end -->
+
+<!-- get a free consultation (2):begin -->
+<div class="wrapper_popup" id="get_a_free_consultation_second">
+	<div class="title_big">Получение бесплатной консультации</div>
+	<p>Заполните данную форму, и наш эксперт проконсультирует Вас по интересующим вопросам.</p>
+	<form action="php/get_a_free_consultation_second.php" method="post">
+		<input type="text" value="" name="name" placeholder="Ваше имя*">
+		<input type="text" value="" name="company" placeholder="Ваша компания">
+		<input type="text" value="" name="telephone" placeholder="Ваш телефон*">
+		<textarea name="messageorquestion" placeholder="Ваш вопрос"></textarea>
+		<div class="buttons_form clearfix">
+			<div class="button_small bg_blue">Вернуться</div>
+			<button type="submit" class="button_small bg_orange">Отправить</button>
+		</div>
+	</form>
+
+	<article>
+		<div class="title_big">Спасибо за вашу заявку!</div>
+		<p>Заявка поступила<br>специалистам нашей компании.<br>Мы перезвоним вам в <br>ближайшее время!</p>
+		<div class="button_small bg_blue">Вернуться</div>
+	</article>
+</div>
+<!-- get a free consultation (1):end -->
+
+<!-- get consultation (2):begin -->
+<div enctype="multipart/form-data" class="wrapper_popup" id="get_consultation_second">
+	<div class="title_small">Заполните данную форму и наш эксперт свяжется с Вами и подробно расскажет о наших услугах</div>
+	<form action="php/get_consultation_second.php" method="post">
+		<input type="text" value="" name="name" placeholder="Ваше имя*">
+		<input type="text" value="" name="company" placeholder="Ваша компания">
+		<input type="text" value="" name="post" placeholder="Кого вы ищете? Укажите должность*">
+		<textarea name="messageorquestion" value="" placeholder="Ключевые навыки этой должности: "></textarea>
+		<input type="text" value="" name="telephone" placeholder="Ваш телефон*">
+		<input type="text" value="" name="age_and_sex" placeholder="Пожелания по возрасту и полу">
+		<div class="input_file_wrapper">
+			<div class="mask"></div>
+			<input type="file" name="file" value="Прикрепить файл (заявку в вашем виде)">
+		</div>
+		<div class="buttons_form clearfix">
+			<div class="button_small bg_blue">Вернуться</div>
+			<button type="submit" class="button_small bg_orange">Отправить</button>
+		</div>
+	</form>
+
+	<article>
+		<div class="title_big">Спасибо за вашу заявку!</div>
+		<p>Заявка поступила<br>специалистам нашей компании.<br>Мы перезвоним вам в <br>ближайшее время!</p>
+		<div class="button_small bg_blue">Вернуться</div>
+	</article>
+</div>
+<!-- get consultation (2):end -->
+
+<!-- FORMS:end -->
+
+</body>
+</html>

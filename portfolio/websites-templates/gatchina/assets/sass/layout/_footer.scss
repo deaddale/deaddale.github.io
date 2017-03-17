@@ -1,0 +1,81 @@
+.footer-page{
+	width: 1072px;
+    position: relative;
+    margin: 0 auto 27px auto;
+    @extend %clearfix;
+
+	> div{
+		// logotype and title
+		&:first-child{
+			float: left;
+			padding: 5px 0 0 83px;
+			margin: 13px 102px 0 0;
+			height: 42px;
+			color: black;
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 1.23;
+			background: url('../../images/icons/sprite.png') -608px -1447px no-repeat;
+		}
+
+		// logotype and title
+		&:last-child{
+			float: right;
+
+			div{
+				&:first-child{
+					color: black;
+					font-size: 18px;
+					font-weight: 400;
+					line-height: 2.27;
+					text-transform: uppercase;
+				}
+
+				&:last-child{
+					@extend %clearfix;
+					div{
+						&:first-child{
+							float: left;
+							padding-left: 23px;
+		                    color: black;
+		                    font-size: 15px;
+		                    font-weight: 400;
+		                    line-height: 38px;
+		                    margin: 0;
+		                    background: url('../../images/icons/sprite.png') -772px -1319px no-repeat;
+						}
+
+						&:last-child{
+							@include default-btn(white, #f6f6f6, linear-gradient(to top, #008ebc 0%, #0096c7 100%));
+							width: 154px;
+							height: 38px;
+							line-height: 38px;
+							font-size: 17px;
+							float: right;
+							border-radius: 4px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// links
+	ul{
+		list-style: none;
+		margin: 0; padding: 0;
+		float: left;
+
+		li{
+			margin: 0; padding: 0;
+
+			a{
+				color: black;
+				font-size: 12px;
+				font-weight: 400;
+				line-height: 1.9;
+				text-decoration: underline;
+			}
+		}
+	}
+}

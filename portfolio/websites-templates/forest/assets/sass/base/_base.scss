@@ -1,0 +1,50 @@
+@font-face {
+	font-family: 'Vollkorn-Medium';
+	src: url('../../fonts/vollkorn/medium/Vollkorn-Medium_gdi.eot');
+	src: url('../../fonts/vollkorn/medium/Vollkorn-Medium_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/vollkorn/medium/Vollkorn-Medium_gdi.woff') format('woff'),
+		url('../../fonts/vollkorn/medium/Vollkorn-Medium_gdi.ttf') format('truetype'),
+		url('../../fonts/vollkorn/medium/Vollkorn-Medium_gdi.otf') format('opentype'),
+		url('../../fonts/vollkorn/medium/Vollkorn-Medium_gdi.svg#Vollkorn-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-FB02;
+}
+
+@font-face {
+	font-family: 'Vollkorn-Semibold';
+	src: url('../../fonts/vollkorn/semibold/Vollkorn-Semibold_gdi.eot');
+	src: url('../../fonts/vollkorn/semibold/Vollkorn-Semibold_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/vollkorn/semibold/Vollkorn-Semibold_gdi.woff') format('woff'),
+		url('../../fonts/vollkorn/semibold/Vollkorn-Semibold_gdi.ttf') format('truetype'),
+		url('../../fonts/vollkorn/semibold/Vollkorn-Semibold_gdi.otf') format('opentype'),
+		url('../../fonts/vollkorn/semibold/Vollkorn-Semibold_gdi.svg#Vollkorn-Semibold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-FB02;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #24232B;
+    padding: 0;
+    margin: 0;
+    font-family: Georgia;
+	font-size: 15px;
+	line-height: 1.6;
+	color: black;
+	overflow: hidden;
+	text-rendering: optimizeLegibility;
+	-webkit-text-rendering: optimizeLegibility;
+}
+
+
+
+

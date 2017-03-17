@@ -1,0 +1,48 @@
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    max-width: 21cm;
+    font-family: Arial, Helvetica, sans-serif;
+    background: none;
+    color: black;
+    font-size: 6pt;
+    line-height: 1.2;
+    text-rendering: optimizeLegibility;
+    -webkit-text-rendering: optimizeLegibility;
+}
+
+// table : begin
+table {
+    width: 100%;
+
+    &:hover {
+        transition: all 0.2s ease;
+    }
+
+    tr {
+        th,
+        td {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 6pt;
+            padding: 0;
+            margin: 0;
+            vertical-align: middle;
+            color: black;
+            line-height: 1.2;
+            border: none;
+
+            .nbsp{
+                font-size: 0;
+                line-height: 0;
+                display: block;
+                width: 1px;
+                height: 18px;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+// table : end

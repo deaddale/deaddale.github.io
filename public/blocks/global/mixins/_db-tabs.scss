@@ -1,0 +1,12 @@
+@mixin db-tabs {
+    @include clearfix;
+
+    > div {
+        &:first-child {
+            float: left;
+        }
+        &:last-child {
+            float: right;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+// Susy Layout
+
+$susy: (
+	flow: ltr,
+	math: static,
+	column-width: 35px,
+	output: float,
+	gutter-position: split,
+	container: 1080px,
+	container-position: center,
+	columns: 24,
+	gutters: 1/3.5,
+	global-box-sizing: border-box,
+	last-flow: to,
+	debug: (
+		image: hide,
+		color: rgba(#66f, .25),
+		output: background,
+		toggle: top right,
+	),
+	use-custom: (
+		background-image: true,
+		background-options: false,
+		box-sizing: true,
+		clearfix: false,
+		rem: true,
+	)	
+);
+
+// Fonts
+
+$font-regular     : "LatoRegular", sans-serif;
+$font-bold        : "LatoBold", sans-serif;
+$font-italic      : "LatoItalic", sans-serif;
+$font-light       : "LatoLight", sans-serif;
+$font-boldItalic  : "LatoBoldItalic", sans-serif;
+$font-lightItalic : "LatoLightItalic", sans-serif;
+
+// Descriptive Base Colors
+
+$white : #fff;
+$black : #0b0b0b;
+$grey  : #797e83;
+
+$client-blue    : #00327d;
+$emerald        : #5ece7f;
+$sunglo         : #e67478;
+$coral          : #ff784f;
+$client-orange  : #ff8201;
+$scooter        : #39add1;
+
+// Color Usage
+
+$color-primary   : $client-blue;
+$color-secondary : $scooter;
+$color-accent    : $emerald;
+$color-shadow    : rgba($black, .2);
+
+// Color Palette Modifiers
+
+$color-palettes: (
+  grey: (
+    xx-light : lighten($grey, 43%),
+    x-light  : lighten($grey, 35%),
+    light    : lighten($grey, 12%),
+    base     : $grey,
+    dark     : darken($grey, 8%),
+    x-dark   : darken($grey, 16%)
+  ),
+  black: (
+    light    : lighten($black, 10%),
+    base     : $black,
+    dark     : darken($black, 10%)
+  )
+);
+
+// UI Colors
+
+$ui-colors: (
+  default : $client-blue,
+  success : $emerald,
+  error   : $sunglo,
+  warning : $coral,
+  info    : $client-orange
+);
+
+// Text
+
+$base__font-size : 16px;
+$base__line      : 24px;
+$letter-space    : 1px;
+$line-height     : 1.2;
+
+// Border radius
+
+$br--default    : .4em;
+$br--round      : 50%;
+
+// Transitions
+
+$trns-duration  : .3s;
+
+// Path to Assets
+
+$path--rel      : "../../images/";

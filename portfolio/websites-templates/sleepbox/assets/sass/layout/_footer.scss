@@ -1,0 +1,12 @@
+#footer-page{
+	height: 72px;
+	background: #fafafa;
+
+	div{
+		@include container($susy);
+		font-size: 18px;
+		color: #4d4d4d;
+		height: 72px;
+		line-height: 72px;
+	}
+}

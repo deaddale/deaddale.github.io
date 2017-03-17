@@ -1,0 +1,31 @@
+// fonts
+$primary-font   : 'Roboto', sans-serif;
+$secondary-font : 'Roboto Condensed', sans-serif;
+
+// SUSY
+$susy: (
+	flow: ltr,
+	math: static,
+	column-width: 66px,
+	output: float,
+	gutter-position: split,
+	container: 1170px,
+	container-position: center,
+	columns: 12,
+	gutters: 1/2.2,
+	global-box-sizing: border-box,
+	last-flow: to,
+	debug: (
+		image: hide,
+		color: rgba(#66f, .25),
+		output: background,
+		toggle: top right,
+	),
+	use-custom: (
+		background-image: true,
+		background-options: false,
+		box-sizing: true,
+		clearfix: false,
+		rem: true,
+	)	
+);

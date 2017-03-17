@@ -1,0 +1,19 @@
+.b-preloader{
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #140807;
+    z-index: 999999;
+    transition: opacity 0.3s ease;
+
+    img{
+        @include all-center;
+        width: 141px;
+        height: 52px;
+        display: block;
+        transition: opacity 0.3s ease;
+    }
+}

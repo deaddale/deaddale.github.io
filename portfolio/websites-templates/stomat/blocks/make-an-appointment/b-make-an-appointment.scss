@@ -1,0 +1,121 @@
+.b-make-an-appointment{
+
+    @include breakpoint($first-breakpoint){
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    // small : begin
+    &.small{
+        padding-top: 47px;
+        padding-bottom: 47px;
+        background-color: #2e71f2;
+
+        form{
+            text-align: center;
+            @include container(770px);
+            @include justifyBlocks;
+
+            @include breakpoint($third-breakpoint){
+                text-align: center;
+                @include container(585px);
+            }
+
+            // text inputs
+            input[type="text"],
+            input[type="tel"]{
+                display: inline-block;
+                max-width: 274px;
+
+                @include breakpoint($third-breakpoint){
+                    display: block;
+                    margin-bottom: 15px;
+                    max-width: 100%;
+                }
+            }
+
+            // button
+            input[type="submit"],
+            input[type="button"],
+            button{}
+        }
+    }
+    // small : end
+
+    // big : begin
+    &.big{
+        padding-top: 120px;
+        padding-bottom: 160px;
+        background: url("../images/bg/bg-example-2.png") center top no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+
+        @include breakpoint($fourth-breakpoint){
+            padding-top: 60px;
+            padding-bottom: 80px;
+        }
+
+        // title
+        h2{
+            color: white;
+            font-family: $secondary-font;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2em;
+            text-align: center;
+            letter-spacing: -0.04em;
+            margin-bottom: 63px;
+            margin-top: 0;
+
+            @include breakpoint($fourth-breakpoint){
+                font-size: 32px;
+                margin-bottom: 30px;
+            }
+        }
+
+        form{
+            text-align: center;
+            @include container(585px);
+
+            > div{
+                @include justifyBlocks;
+
+                @include breakpoint($third-breakpoint){
+                    text-align: center;
+                }
+
+                &:first-child{
+                    margin-bottom: 40px;
+
+                    @include breakpoint($third-breakpoint){
+                        margin-bottom: 15px;
+                    }
+                }
+
+                &:last-child{
+                    text-align: center;
+                }
+
+                // text inputs
+                input[type="text"],
+                input[type="tel"]{
+                    display: inline-block;
+                    max-width: 285px;
+                    background: rgba(#fff,0.2);
+
+                    @include breakpoint($third-breakpoint){
+                        display: block;
+                        margin-bottom: 15px;
+                        max-width: 100%;
+                    }
+
+                    // button
+                    input[type="submit"],
+                    input[type="button"],
+                    button{}
+                }
+            }
+        }
+    }
+    // big : end
+}

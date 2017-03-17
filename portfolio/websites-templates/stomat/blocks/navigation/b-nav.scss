@@ -1,0 +1,207 @@
+.b-nav {
+    // primary : begin
+    &.primary{
+        position: fixed;
+        z-index: 9999;
+        left: -100%;
+        top: 0;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        padding-left: 112px;
+        padding-right: 130px;
+        width: 100%;
+        max-width: 472px;
+        transition: all 0.8s ease;
+        height: 100%;
+
+        @include breakpoint($third-breakpoint){
+            padding-left: 75px;
+            padding-right: 87px;
+        }
+
+        @include breakpoint($fourth-breakpoint){
+            padding-left: 50px;
+            padding-right: 58px;
+        }
+
+        &.active{
+            left: 0;
+            transition: all 0.75s ease;
+        }
+
+        // close
+        .b-icon.icon-close{
+            cursor: pointer;
+            margin: 32px 0 0 0;
+        }
+
+        > div{
+            margin-top: 100px;
+
+            @include breakpoint($third-breakpoint){
+                margin-top: 70px;
+            }
+
+            @include breakpoint($third-breakpoint){
+                margin-top: 47px;
+            }
+
+            nav{
+                // list of links : begin
+                ul:first-child{
+                    margin: 0 0 40px;
+                    padding: 0;
+                    list-style: none;
+
+                    @include breakpoint($third-breakpoint){
+                        margin-bottom: 27px;
+                    }
+
+                    @include breakpoint($third-breakpoint){
+                        margin-bottom: 18px;
+                    }
+
+                    li{
+                        margin: 0;
+                        padding: 0;
+
+                        &:before{ display: none; }
+
+                        a{
+                            color: #3c3d41;
+                            font-family: $secondary-font;
+                            font-size: 36px;
+                            font-weight: 700;
+                            text-decoration: none;
+
+                            @include breakpoint($third-breakpoint){
+                                font-size: 24px;
+                            }
+                            @include breakpoint($third-breakpoint){
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+                // list of links : end
+
+                // add links : begin
+                ul:last-child{
+                    margin: 0 0 50px;
+                    padding: 0;
+                    list-style: none;
+
+                    @include breakpoint($third-breakpoint){
+                        margin-bottom: 34px;
+                    }
+
+                    li{
+                        margin: 0 0 5px;
+                        padding: 0;
+
+                        &:before{ display: none; }
+
+                        a{
+                            color: #838d8f;
+                            font-family: $secondary-font;
+                            font-size: 14px;
+                            font-weight: 700;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                // add links : end
+            }
+
+            // search form : begin
+            form{
+                position: relative;
+                
+                // input text
+                input[type="text"]{
+                    background-color: #eee;
+                    border-radius: 4px;
+                    box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.07);
+                    color: #888;
+
+                    &::-webkit-input-placeholder {color: #888;}
+                    &::-moz-placeholder          {color: #888;} // Firefox 19+
+                    &:-moz-placeholder           {color: #888;} // Firefox 18-
+                    &:-ms-input-placeholder      {color: #888;}
+                }
+
+                // submit btn
+                input[type="submit"],
+                input[type="button"],
+                button{
+                    /* Style for "Button" */
+                    width: 45px;
+                    height: 45px;
+                    background-color: #78a2f3;
+                    background-image: url(../images/icons/icon-arrow-bold-right.svg);
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: 7px 11px;
+                    border: none;
+                    outline: none;
+                    border-radius: 0 3px 3px 0;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
+            // search form : end
+        }
+    }
+    // primary : end
+
+    // overlay
+    &.overlay{
+        background: rgba(#3b3d40,0.7);
+        width: 100%;
+        z-index: 9998;
+        @include absolute-full-size;
+        left: -100%;
+        top: 0;
+        position: absolute;
+        transition: all 0.3s ease;
+
+        &.active{
+            left: 0;
+            transition: all 0.45s ease;
+        }
+    }
+
+    // secondary : begin
+    &.secondary{
+        @include container(770px);
+
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            @include justifyBlocks;
+
+            li{
+                display: inline-block;
+                width: 182px;
+                margin-bottom: 13px;
+                padding: 0;
+
+                @include breakpoint($sixth-breakpoint){
+                    width: 100%;
+                }
+
+                &:before{ display: none; }
+
+                a{
+                    display: block;
+                    text-align: center;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    // secondary : end
+}

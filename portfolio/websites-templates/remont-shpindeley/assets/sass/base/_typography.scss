@@ -1,0 +1,248 @@
+body{
+	font-family: $defaultFont;
+	font-size: 15px;
+	line-height: 1.6;
+	color: #485061;
+	text-rendering: optimizeLegibility;
+	-webkit-text-rendering: optimizeLegibility;
+}
+
+// h1-h6 titles : begin
+h1{
+	color: #55cfc0;
+	font-size: 30px;
+	font-weight: 900;
+	line-height: 1.35;
+	margin: 0 0 26px; padding: 0;
+}
+
+h2{
+	color: #485061;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1.3;
+	margin: 0 0 26px; padding: 0;
+}
+
+h3{
+	color: #485061;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.25;
+	margin: 0 0 26px; padding: 0;
+}
+
+h4, h5, h6{
+	color: #485061;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.25;
+	margin: 0 0 26px; padding: 0;
+}
+// h1-h6 titles : end
+
+// text (link, bold, italic) : begin
+p{
+	color: #485061;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.6;
+	margin: 0 0 25px;
+
+	b{
+		font-weight: bold;
+	}
+
+	i{
+		font-style: italic;
+	}
+
+	a{
+		color: #55cfc0;
+		text-decoration: none;
+
+		&:hover{
+			border-bottom: 2px #55cfc0 solid;
+		}
+
+		&:active{
+			color: #485061;
+			border-bottom: 2px #485061 solid;
+		}
+
+		&:visited{
+			color: #8c43ba;
+			border-bottom: 2px #8c43ba solid;
+		}
+	}
+}
+// text (link, bold, italic) : end
+
+// bulleted list : begin
+ul{
+	margin: 0 0 25px;
+
+	li{
+		color: #485061;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+}
+// bulleted list : end
+
+// numbered list : begin
+ol{
+	margin: 0 0 25px;
+
+	li{
+		color: #485061;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+}
+// numbered list : end
+
+// three text columns : begin
+.three-text-col{
+	@include container($susy);
+
+	p{
+		@include span(4 of 12);
+
+		&:last-child{
+			@include omega;
+		}
+	}
+}
+// three text columns : end
+
+// two text columns : begin
+.two-text-col{
+	@include container($susy);
+
+	p{
+		@include span(6 of 12);
+
+		&:last-child{
+			@include omega;
+		}
+	}
+}
+// two text columns : end
+
+// MEDIA QUERIES : begin
+@media screen and (max-width: 956px) {
+
+	// three text columns : begin
+	.three-text-col{
+
+		p{
+			@include span(12 of 12);
+		}
+	}
+	// three text columns : end
+
+	// two text columns : begin
+	.two-text-col{
+
+		p{
+			@include span(12 of 12);
+		}
+	}
+	// two text columns : end
+}
+
+@media screen and (max-width: 480px) {
+
+	// h1-h6 titles : begin
+	h1{
+		font-weight: 700;
+		font-size: 20px;
+		margin: 0 0 22px; padding: 0;
+	}
+
+	h2{
+		color: #485061;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 1.3;
+		margin: 0 0 22px; padding: 0;
+	}
+
+	h3{
+		font-size: 16px;
+		margin: 0 0 22px; padding: 0;
+	}
+
+	h4, h5, h6{
+		font-size: 16px;
+		margin: 0 0 22px; padding: 0;
+	}
+	// h1-h6 titles : end
+
+	// text (link, bold, italic) : begin
+	p{
+		color: #485061;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 1.6;
+		margin: 0 0 25px;
+
+		b{
+			font-weight: bold;
+		}
+
+		i{
+			font-style: italic;
+		}
+
+		a{
+			color: #55cfc0;
+			text-decoration: none;
+
+			&:hover{
+				border-bottom: 2px #55cfc0 solid;
+			}
+
+			&:active{
+				color: #485061;
+				border-bottom: 2px #485061 solid;
+			}
+
+			&:visited{
+				color: #8c43ba;
+				border-bottom: 2px #8c43ba solid;
+			}
+		}
+	}
+	// text (link, bold, italic) : end
+
+	// bulleted list : begin
+	ul{
+		margin: 0 0 25px;
+
+		li{
+			color: #485061;
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 24px;
+		}
+	}
+	// bulleted list : end
+
+	// numbered list : begin
+	ol{
+		margin: 0 0 25px;
+
+		li{
+			color: #485061;
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 24px;
+		}
+	}
+	// numbered list : end
+}
+// MEDIA QUERIES : end

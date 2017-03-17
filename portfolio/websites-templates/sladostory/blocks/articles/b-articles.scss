@@ -1,0 +1,167 @@
+.b-articles{
+    width: 100%;
+    max-width: 1440px;
+    min-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+
+    // one article : begin
+    .one-article{
+        padding-top: 106px;
+        padding-bottom: 75px;
+        position: relative;
+        overflow: hidden;
+
+        .container{
+            position: relative;
+            z-index: 2;
+            
+            > div{
+                @include span(12 of 12);
+
+                h2{
+                    color: white;
+                    font-size: 36px;
+                    font-weight: 300;
+                    line-height: 1.111;
+                    text-transform: uppercase;
+                    margin-bottom: 40px;
+                    letter-spacing: 0.025em;
+                }
+
+                p{
+                    color: white;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.32;
+                    margin-bottom: 30px;
+                    letter-spacing: 0.025em;
+                    max-width: 445px;
+                }
+
+                .b-button{}
+            }
+        }
+
+        // text left article : begin
+        &.text-left{
+            // overlay
+            &:before{
+                content: '';
+                display: block;
+                position: absolute;
+                left: -50%;
+                top: 0;
+                z-index: 1;
+                height: 100%;
+                width: 50%;
+                background: rgba(#261c1b,0.6);
+            }
+
+            // text
+            .container{
+                left: -100%;
+
+                > div{
+                    @include suffix(6 of 12);
+                }
+            }
+
+            // if block visible
+            &.visible{
+                // overlay
+                &:before{
+                    left: 0;
+                    transition: left 0.75s ease;
+                }
+
+                // text
+                .container{
+                    left: 0;
+                    transition: left 0.7s ease-out;
+                }
+            }
+        }
+        // text left article : end
+
+        // text right article : begin
+        &.text-right{
+            // overlay
+            &:before{
+                content: '';
+                display: block;
+                position: absolute;
+                right: -50%;
+                top: 0;
+                z-index: 1;
+                height: 100%;
+                width: 50%;
+                background: rgba(#261c1b,0.6);
+            }
+
+            // text
+            .container{
+                right: -100%;
+
+                > div{
+                    @include prefix(6 of 12);
+
+                    h2,
+                    p,
+                    .b-button{
+                        margin-left: 75px;
+                    }
+                }
+            }
+
+            // if block visible
+            &.visible{
+                // overlay
+                &:before {
+                    right: 0;
+                    transition: right 0.75s ease;
+                }
+
+                // text
+                .container{
+                    right: 0;
+                    transition: right 0.7s ease-out;
+                }
+            }
+        }
+        // text right article : end
+
+        // background
+        img{
+            // set rules to fill background
+            min-height: 100%;
+            min-width: 1170px;
+            max-width: 1440px;
+            display: block;
+
+            // set up proportionate scaling
+            width: 100%;
+            height: auto;
+
+            // set up positioning
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            // visibility
+            opacity: 0;
+        }
+
+        // if block visible
+        &.visible{
+            // background
+            img{
+                opacity: 1;
+                transition: opacity 1.5s ease;
+            }
+        }
+    }
+    // one article : end
+}

@@ -1,0 +1,17 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+body{
+	background-color: #fcfcfc;
+	padding: 10px 15px;
+}
+
+img{
+	display: block;
+	margin: 15px 0 16px;
+	box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.4);
+	border-radius: 3px;
+}

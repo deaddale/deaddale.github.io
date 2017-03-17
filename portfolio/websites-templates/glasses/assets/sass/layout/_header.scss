@@ -1,0 +1,88 @@
+#header-page{
+	width: 100%;
+	border-top: 3px #00b8f1 solid;
+}
+#header-page{
+
+	// logotype
+	img{}
+
+	// description
+	.descr{
+		font-family: $OpenSans; 
+		color: #3e3e3e;
+		line-height: 1.33;
+		font-size: 13px;
+		margin-top: 26px;
+	}
+	.descr{
+
+		span{
+			font-weight: bold; 
+			text-transform: uppercase;
+			font-size: 21px;
+			letter-spacing: 0.15px;
+		}
+
+		span i{
+			font-style: normal;
+			color: #00b8f1;
+		}
+
+	}
+
+	// telephone number
+	.tel-number{
+		font-family: $OpenSans; 
+		color: #3e3e3e;
+		line-height: 1.33;
+		margin-top: 37px;
+		font-weight: bold; 
+		text-transform: uppercase;
+		font-size: 21px;
+	}
+
+	// button
+	.button-wrapper{
+		text-align: right;
+	}
+	.button-wrapper{
+
+		.btn-first-var{
+			margin-top: 31px;
+		}
+
+	}
+
+}
+@media screen and (max-width: 1149px) {
+
+	#header-page{
+
+		// logotype
+		img{
+			margin: 0 auto;
+			display: block;
+		}
+
+		// description
+		.descr{
+			text-align: center;
+			margin-top: 10px;
+		}
+
+		// telephone number
+		.tel-number{
+			text-align: center;
+			margin-top: 35px;
+		}
+
+		// button
+		.button-wrapper{
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+	}
+
+}

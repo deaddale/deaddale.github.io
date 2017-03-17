@@ -1,0 +1,103 @@
+// advantages : begin
+.b-advantages {
+    @include container($susy);
+    position: relative;
+
+    > div {
+        text-align: center;
+        max-width: 330px;
+        margin: 0 auto;
+        position: relative;
+
+        h3 {
+            margin: 0 auto 13px auto;
+        }
+
+        p {
+            max-width: 260px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 17px;
+            color: #222222;
+            line-height: 1.058;
+        }
+
+        ul {
+            max-width: 260px;
+            margin: 0 auto 0 auto;
+            padding: 0;
+            font-size: 17px;
+            color: #222222;
+            line-height: 1.058;
+
+            li {
+                margin: 0 0 8px;
+                padding: 0;
+                text-align: left;
+            }
+        }
+
+        // first
+        &:first-child {
+            @include breakpoint($first-breakpoint) {
+                display: none;
+            }
+
+            h3 {
+            }
+
+            p {
+            }
+        }
+
+        // middle
+        &:nth-child(2) {
+            text-align: center;
+            z-index: 1;
+
+            img {
+                max-width: 336px;
+                height: auto;
+                display: block;
+                margin: 0 auto 13px auto;
+                border: 3px #fcfcfc solid;
+                border-radius: 50%;
+                box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.10);
+            }
+
+            @media screen and (max-width: 1200px) {
+                img {
+                    max-width: 200px;
+                }
+            }
+
+            a {
+                font-size: 15px;
+                color: #4D8BB1;
+                line-height: 1.285;
+                display: block;
+            }
+        }
+
+        // last
+        &:last-child {
+            @include breakpoint($first-breakpoint) {
+                display: none;
+            }
+            h3 {
+            }
+            p {
+
+                &:nth-child(2) {
+                    font-size: 13px;
+                    color: #222222;
+                    line-height: 1.23;
+                    margin-bottom: 8px;
+                }
+                &:nth-child(3) {
+                }
+            }
+        }
+    }
+}
+// advantages : end

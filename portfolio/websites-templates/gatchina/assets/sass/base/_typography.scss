@@ -1,0 +1,106 @@
+// Cuprum from Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=latin,cyrillic);
+
+body{
+    font-family: $defaultFont;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.666;
+    text-rendering: optimizeLegibility;
+    -webkit-text-rendering: optimizeLegibility;
+}
+
+// h1-h6 titles : begin
+h1, h2, h3, h4, h5, h6{
+    margin: 0; padding: 0;
+}
+h1{
+}
+
+h2{
+}
+
+h3{
+}
+
+h4, h5, h6{
+}
+// h1-h6 titles : end
+
+// text (link, bold, italic) : begin
+p{
+    margin: 0; padding: 0;
+
+    b{
+        font-weight: bold;
+    }
+
+    i{
+        font-style: italic;
+    }
+
+    a{
+
+        &:hover{
+        }
+
+        &:active{
+        }
+
+        &:visited{
+        }
+    }
+}
+// text (link, bold, italic) : end
+
+// bulleted list : begin
+ul{
+    margin: 0; padding: 0;
+
+    li{
+    }
+}
+// bulleted list : end
+
+// numbered list : begin
+ol{
+    margin: 0; padding: 0;
+
+    li{
+    }
+}
+// numbered list : end
+
+// table : begin
+table{
+    width: 100%;
+    margin-bottom: 21px;
+    background-color: white;
+
+    tr{
+
+        th,
+        td{
+            padding: 5px 19px;
+            text-align: left;
+            border: 1px solid #e8e6e6;
+            color: black;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+
+        th{
+            font-weight: bold;
+        }
+    }
+
+    &:last-child{ margin-bottom: 0; }
+}
+// table : end
+
+
+
+
+

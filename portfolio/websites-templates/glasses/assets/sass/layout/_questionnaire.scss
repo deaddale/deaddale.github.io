@@ -1,0 +1,387 @@
+.questionnaire{
+	background-image: url('../../../assets/images/questionnaire.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	padding: 40px 0 21px 0;
+}
+.questionnaire{
+
+	// full width
+	.full-width{
+		text-align: center;
+		margin-bottom: 42px;
+	}
+	.full-width{
+
+		h2{
+			font-family: $RopaSansSCProMedium;
+			line-height: 1.25;
+			font-size: 31px;
+			padding: 0;
+			margin: 0 0 17px;
+		}
+
+		p{
+			font-family: $OpenSans;
+			font-size: 17px;
+			line-height: 1;
+			position: relative;
+			display: inline-block;
+			margin: 0;
+			z-index: 1;
+		}
+		p:before{
+			width: 31px;
+			content: '';
+			height: 1px;
+			background: #04a8da;
+			position: absolute;
+			left: -36px;
+			top: 50%;
+			margin: -1px 0 0;
+			z-index: 0;
+		}
+		p:after{
+			width: 31px;
+			content: '';
+			height: 1px;
+			background: #04a8da;
+			position: absolute;
+			right: -36px;
+			top: 50%;
+			margin: -1px 0 0;
+			z-index: 0;
+		}
+
+	}
+
+
+	// two columns (form) : begin
+	form{
+		font-family: $OpenSans;
+	}
+	form{
+
+		// left column : begin
+		// question
+		.question-with-line{
+			max-width: 419px;
+			font-weight: 600;
+			font-family: $OpenSans;
+			line-height: 1.294;
+			font-size: 17px;
+			border-bottom: 2px #04a8da solid;
+			padding: 0 0 12px 4px;
+			margin: 0 0 23px;
+		}
+
+		// checkbox wrapper : begin
+		.checkbox-wrapper{
+			margin: 0 0 40px 13px;
+		}
+		.checkbox-wrapper{
+
+			// Cначала обозначаем стили для IE8 и более старых версий
+			// т.е. здесь мы немного облагораживаем стандартный чекбокс. 
+			.checkbox {
+				vertical-align: top;
+				margin: 0 3px 0 0;
+				width: 17px;
+				height: 17px;
+			}
+			// Это для всех браузеров, кроме совсем старых, которые не поддерживают
+			// селекторы с плюсом. Показываем, что label кликабелен. 
+			.checkbox + label {
+				cursor: pointer;
+			}
+
+			// Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+			// Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+			// в них все нижеследующие стили не сработают. 
+
+			// Прячем оригинальный чекбокс. 
+			.checkbox:not(checked) {
+				position: absolute;
+				opacity: 0;
+			}
+
+			.checkbox:not(checked) + label {
+				font-size: 14px;
+				line-height: 1.571;
+				position: relative;
+				padding: 0;
+				display: block;
+				max-width: 350px;
+				padding-right: 60px;
+			}
+
+			// Оформление первой части чекбокса в выключенном состоянии (фон).
+			.checkbox:not(checked) + label:before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				right: 0;
+				margin: -11px 0 0 0;
+				width: 22px;
+				height: 22px;
+				background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAH1JREFUeNrs1bENgDAMBMCHARBLIBgB1mDPMACih3FIlN68pQyAIO780keursxDRMAObGCjfE8shlpo+IwALrZHndzsrHDgsaJuNoUjj64ynBUWGKSFURx22GGH38LJwM0KHwbwrv/xxOOsPE0LypiOZQjTjzFNxVALjwADAEzqwdHQdlnWAAAAAElFTkSuQmCC');
+				background-position: 0 0;
+				background-repeat: no-repeat;
+			}
+
+			// Меняем фон чекбокса, когда он включен.
+			.checkbox:checked + label:before {
+				background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAXRJREFUeNpi+P//PwMQqwLxWiD++J988BFqBsgsBkYgoc7AwHACiAUYqAM+ALEFyOC1QEYQA3XBOpDBH4EMPiob/AVk8H8GGgAmSg2Yf+8TQ+DhZxjiFLl41aPPDNHHX4DZ2vxsDBc85Cl38eanX+GGggAHMxPlQbHuyReGoCMI7wfJ8DCccJXFb/DbX38ZTHY+Yog78QKroRuffmEIP/oczveQ5GZYaS2JoY4FXUB/+0OGlz/+Mlz88JNBnIOFodtABC639OFnhgQkC6PkeRkWWkgQlypyVBEZcMLN9wz1l9+C2Tuef0Ux1BPoUlyG4kwVoCSUdvolnO8uycWw8/k3OD9UlodhmZUk3njAmdy6rr9nqL70BkPcW4qbYYOtFPkZpExTkKFdXwRFDBSmxBgKBoTKwtpLb/4LrrnzP/DwU5LK0MFbVuAz+BMNzP0CMngPDQzeBQpjDSDjOJWrJksGaGWqDq0IP1FQmX6CmgEyiwEgwACvj3PGq4jYCwAAAABJRU5ErkJggg==');
+			}
+		}
+		// checkbox wrapper : end
+		// left column : end
+
+		// right column : begin
+		.question{
+			font-weight: 600;
+			font-family: $OpenSans;
+			line-height: 1.294;
+			font-size: 17px;
+			margin: 0 0 21px;
+		}
+
+		// one line : begin
+		.one-line{
+			margin: 0 0 16px;
+		}
+		.one-line:last-child{
+			margin-bottom: 48px;
+		}
+		.one-line{
+
+			// label
+			label{
+				font-family: $OpenSans;
+				color: #fff;
+				line-height: 1;
+				display: block;
+				margin: 0 0 6px;
+			}
+			label{
+
+				sup{
+					color: #04a8da;
+				}
+
+			}
+
+			// input text
+			input[type="text"],
+			input[type="tel"]{
+				color: rgba(63, 63, 63, 0.8);
+				font-family: $OpenSans;
+				font-size: 13px;
+				font-weight: 400;
+				width: 335px;
+				display:block;
+				outline: none;
+				border: none;
+				padding: 10px 16px;
+				background-color: #fff;
+				-moz-border-radius: 4px;
+				-webkit-border-radius: 4px;
+				border-radius: 4px;
+				-webkit-appearance: none;
+				line-height: 1;
+				border: 1px transparent solid;
+				transition: all 0.1s ease-in;
+			}
+			input[type="text"]:focus,
+			input[type="tel"]:focus{
+				border: 1px solid #04A8DA;
+				-moz-box-shadow: 0 0 7px rgba(4, 168, 218, 0.3);
+				-webkit-box-shadow: 0 0 7px rgba(4, 168, 218, 0.3);
+				box-shadow: 0 0 7px rgba(4, 168, 218, 0.3);
+				transition: all 0.1s ease-in;
+			}
+
+			// select
+			select {
+				color: rgba(63, 63, 63, 0.8);
+				font-family: $OpenSans;
+				font-size: 13px;
+				font-weight: 400;
+				display: block;
+				width: 367px;
+				outline: none;
+				border: none;
+				padding: 13px 16px;
+				margin: 0 0 25px;
+				background-color: #fff;
+				background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAGCAYAAAAVMmT4AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAE5JREFUeNpiYGBgWALE/4FYgwE3KISqAYMFUI40FoXhULkwZMEVUEEJJLEAqFgSNut2IlmnA2UX4XEew0EgfgZV2MBABHgOxMvQBQECDAAxcBIag2PHWAAAAABJRU5ErkJggg==');
+				background-position: right 17px center;
+				background-repeat: no-repeat;
+				-moz-border-radius: 4px;
+				-webkit-border-radius: 4px;
+				border-radius: 4px;
+				-webkit-appearance: none;
+				line-height: 1;
+				// for FF
+				-moz-appearance: none;
+				text-indent: 0.01px;
+				text-overflow: '';
+				// for IE
+				-ms-appearance: none;
+				appearance: none!important;
+			}
+			select::-ms-expand {
+				display: none;
+			}
+			select{
+
+				option{}
+
+			}
+
+			// button
+			input[type="submit"]{
+			}
+
+		}
+		// one line : end
+		// right column : end
+
+	}
+	// two columns (form) : end
+
+	// description : begin
+	.descr{
+		color: #fff;
+		font-family: $OpenSans;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 2.428;
+		text-align: center;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 620px;
+		padding: 0 7px;
+		background-color: rgba(255, 255, 255, 0.2);
+	}	
+	// description : end
+}
+
+@media (max-width: 1149px) {
+
+	.questionnaire{
+
+		// two columns (form) : begin}
+		form{
+
+			.question-with-line{
+				width: 424px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.checkbox-wrapper{
+				margin-left: auto;
+				margin-right: auto;
+				width: 424px;
+			}
+
+			.question{
+				width: 424px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.one-line{
+				margin-left: auto;
+				margin-right: auto;
+				width: 424px;
+			}
+		}
+		// two columns (form) : end
+
+		// description : begin
+		.descr{
+			line-height: 1.5;
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}	
+		// description : end
+
+	}
+}
+
+@media (max-width: 479px) {
+
+	.questionnaire{
+
+		// full width
+		.full-width p{
+			width: 90%;
+		}
+
+		// two columns (form) : begin}
+		form{
+
+			.question-with-line{
+				width: 250px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.checkbox-wrapper{
+				margin-left: auto;
+				margin-right: auto;
+				width: 250px;
+			}
+
+			.question{
+				width: 250px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.one-line{
+				margin-left: auto;
+				margin-right: auto;
+				width: 250px;
+			}
+
+			.one-line{
+				input[type="text"],
+				input[type="tel"]{
+					width: 216px;
+				}
+
+				select{
+					width: 250px;
+				}
+
+				// button
+				input[type="submit"]{
+					width: 250px;
+				}
+
+			}
+
+		}
+		// two columns (form) : end
+
+		// description : begin
+		.descr{
+			line-height: 1.5;
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}	
+		// description : end
+
+	}
+
+}
+
+
+
+
+

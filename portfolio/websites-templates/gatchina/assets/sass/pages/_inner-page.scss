@@ -1,0 +1,93 @@
+// CONTENT PAGE : begin
+.content-page{
+	// right column (main content) : begin
+	> article{
+		// image and text : begin
+		.image-and-text{
+			@extend %clearfix;
+			margin-bottom: 35px;
+
+			img{
+				display: block;
+				width: 100%;
+				max-width: 203px;
+				float: left;
+				margin: 0; padding: 0;
+			}
+
+			p{
+				display: block;
+				margin: 0; padding: 0;
+				max-width: 493px;
+				float: right;
+				color: black;
+				font-size: 13px;
+				font-weight: 400;
+				line-height: 1.92;
+			}
+		}
+		// image and text : end
+
+		// price : begin
+		.price{
+			margin-bottom: 38px;
+
+			> div{
+				&:last-child{
+					@extend %clearfix;
+
+					> div{
+						&:first-child{
+							float: left;
+							width: 237px;
+							height: 35px;
+							background-color: #f6f6f6;
+							background-image: linear-gradient(to top, #f6c500 0%, #f8d727 100%);
+							color: black;
+							font-size: 14px;
+							font-weight: 400;
+							line-height: 35px;
+							text-align: center;
+							cursor: pointer;
+						}
+
+						&:last-child{
+							float: right;
+							padding-left: 23px;
+		                    color: black;
+		                    font-size: 15px;
+		                    font-weight: 400;
+		                    line-height: 35px;
+		                    margin: 0;
+		                    background: url('../../images/icons/sprite.png') -772px -1319px no-repeat;
+						}
+					}
+				}
+			}
+		}
+		// price : end
+
+		// text block
+		.text-block{
+			margin-bottom: 45px;
+
+			p{
+				color: black;
+				font-size: 13px;
+				font-weight: 400;
+				line-height: 25px;
+				margin-bottom: 26px;
+
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	// right column (main content) : end
+}
+// CONTENT PAGE : end
+
+
+
+

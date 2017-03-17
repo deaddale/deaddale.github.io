@@ -1,0 +1,67 @@
+.minimize #content-page .first-slide .first {
+  width: 466px;
+  height: 429px;
+  left: 440px;
+  top: 170px;
+  background-size: 400px 429px; }
+.minimize #content-page .first-slide .glow {
+  width: 238px;
+  height: 363px;
+  left: 535px;
+  top: 170px; }
+.minimize #content-page .first-slide .second {
+  top: -60px; }
+.minimize #content-page .second-slide .first {
+  width: 653px;
+  height: 554px;
+  background-size: 653px 554px;
+  left: -170px;
+  top: 160px; }
+.minimize #content-page .second-slide .second {
+  width: 750px;
+  height: 465px;
+  background-size: 959px 465px;
+  left: -42px;
+  top: 100px; }
+.minimize #content-page .third-slide .first {
+  width: 1052px;
+  height: 584px;
+  background-size: 959px 582px;
+  left: 120px;
+  top: 80px; }
+.minimize #content-page .third-slide .second {
+  left: 300px;
+  top: 180px; }
+.minimize #content-page .fourth-slide .text-wrapper article:nth-child(4) {
+  display: none; }
+.minimize #content-page .fourth-slide article {
+  margin-bottom: 10px; }
+.minimize #content-page .fourth-slide article a {
+  font-size: 15px; }
+.minimize #content-page .fourth-slide article span {
+  font-size: 12px; }
+.minimize #content-page .fourth-slide .first {
+  width: 681px;
+  height: 429px;
+  background-size: 681px 429px;
+  left: -240px;
+  top: 199px; }
+.minimize #content-page .fourth-slide .glow {
+  width: 405px;
+  height: 277px;
+  left: -125px;
+  top: 215px; }
+.minimize #content-page .fourth-slide .second {
+  width: 816px;
+  height: 520px;
+  background-size: 816px 520px;
+  left: -130px;
+  top: 92px; }
+.minimize #content-page .fifth-slide .first {
+  width: 553px;
+  height: 413px;
+  background-size: 553px 413px;
+  left: 380px;
+  top: 169px; }
+
+/*# sourceMappingURL=minimize.css.map */

@@ -1,0 +1,46 @@
+// default btn : begin
+@mixin default-btn ($colorFont,$bgColor, $bgImage){
+	display: block;
+	cursor: pointer;	
+	border: none;
+	outline: none;
+	padding: 0;
+	margin-bottom: 0;
+	height: 33px;
+    line-height: 33px;
+    text-align: center;
+    background-color: $bgColor;
+    background-image: $bgImage;
+    border-radius: 4px 3px 3px 4px;
+    color: $colorFont;
+    font-family: $secFont;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+	transition: all 0.2s ease;
+
+	&:hover{
+		transition: all 0.2s ease;
+	}
+}
+
+@mixin sec-btn {
+	border: none;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	color: black;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 35px;
+	text-align: center;
+	cursor: pointer;
+	background-color: #f6f6f6;
+	background-image: linear-gradient(to top, #f6c500 0%, #f8d727 100%);
+	transition: all 0.2s ease;
+
+	&:hover{
+		transition: all 0.2s ease;
+	}
+}
+// default btn : end

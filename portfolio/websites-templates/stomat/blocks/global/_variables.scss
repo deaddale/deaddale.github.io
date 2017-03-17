@@ -1,0 +1,39 @@
+// fonts
+$primary-font   : 'PT Serif', serif;
+$secondary-font : 'Open Sans', sans-serif;
+
+// SUSY
+$susy: (
+	flow: ltr,
+	math: fluid,
+	column-width: 35px,
+	output: float,
+	gutter-position: split,
+	container: 960px,
+	container-position: center,
+	columns: 24,
+	gutters: 1/7,
+	global-box-sizing: border-box,
+	last-flow: to,
+	debug: (
+		image: hide,
+		color: rgba(#66f, .25),
+		output: background,
+		toggle: top right,
+	),
+	use-custom: (
+		background-image: true,
+		background-options: false,
+		box-sizing: true,
+		clearfix: false,
+		rem: true,
+	)	
+);
+
+// Breakpoints
+$first-breakpoint  : max-width 1060px;
+$second-breakpoint : max-width 985px;
+$third-breakpoint  : max-width 770px;
+$fourth-breakpoint : max-width 660px;
+$fifth-breakpoint  : max-width 550px;
+$sixth-breakpoint  : max-width 480px;

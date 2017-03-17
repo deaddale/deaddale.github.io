@@ -1,0 +1,50 @@
+#content-page{
+
+	// right column : begin
+	article{
+
+		table{
+
+			tr{
+
+				th{
+					&:nth-child(6){
+						white-space: nowrap;
+					}
+				}
+
+				td{
+
+					&:nth-child(5){
+						white-space: nowrap;
+					}
+					&:nth-child(6){
+						white-space: nowrap;
+					}
+					&:last-child{
+					}
+
+					div{
+						width: 170px;
+						display: inline-block;
+					}
+
+					img{
+	                    width: 100px;
+	                    height: auto;
+	                    display: block;
+	                }
+
+					a{
+						@include btn;
+						white-space: nowrap;
+						padding: 8px 10px;
+						font-size: 11px;
+						height: auto;
+					}
+				}
+			}
+		}
+	}
+	// right column : end
+}	

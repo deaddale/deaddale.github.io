@@ -1,0 +1,266 @@
+.content-page{
+    width: 1035px;
+    margin: 0 auto 12px auto;
+    @extend %clearfix;
+
+    // left column (sidebar) : begin
+    > aside{
+        width: 274px;
+        float: left;
+
+        > div{
+            margin-bottom: 15px;
+            background-color: white;
+            border: 1px solid #ebebeb;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+            padding: 32px 18px 0 19px;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+
+            // services : begin
+            &:first-child{
+                // subtitle
+                div{
+                    color: black;
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    line-height: 1;
+                    padding-bottom: 3px;
+                    border-bottom: 1px #000 solid;
+                    margin-bottom: 13px;
+                }
+
+                // list
+                ul{
+                    list-style: none;
+                    margin: 0 0 35px; padding: 0;
+
+                    li{
+                        margin: 0; padding: 0;
+
+                        a{
+                            color: black;
+                            font-size: 13px;
+                            font-weight: 400;
+                            line-height: 33px;
+                            text-decoration: none;
+                            display: block;
+                            height: 33px;
+                            padding: 0 17px;
+                            background: white url('../../images/icons/sprite.png') -1803px -207px no-repeat;
+
+                            &:hover{
+                                background: url('../../images/icons/sprite.png') -1594px -424px no-repeat,
+                                            linear-gradient(to top, #d1d1d1 0%, #ddd 100%) 0 0 repeat;
+                            }
+                        }
+
+                        &.active{
+                            a{
+                                background: url('../../images/icons/sprite.png') -1594px -424px no-repeat,
+                                            linear-gradient(to top, #d1d1d1 0%, #ddd 100%) 0 0 repeat;
+                            }
+                        }
+                    }
+                }
+            }
+            // services : end
+
+            // feedback form : begin
+            &:last-child{
+                // subtitle
+                > div{
+                    color: black;
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    line-height: 1;
+                    padding-bottom: 3px;
+                    border-bottom: 1px #000 solid;
+                    margin-bottom: 13px;
+                }
+
+                // form
+                form{
+                    input[type="text"],
+                    input[type="email"]{}
+
+                    textarea{
+                        height: 172px;
+                    }
+
+                    input[type="submit"]{
+                        @include default-btn(white,#f6f6f6,linear-gradient(to top, #008ebc 0%, #0096c7 100%));
+                        width: 236px;
+                        margin: 0 auto 39px auto;
+                    }
+                }
+
+                p{
+                    color: black;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.92;
+                    margin: 0 0 28.5px;
+                }
+            }
+            // feedback form : end
+        }
+    }
+    // left column (sidebar) : end
+
+    // right column (main content) : begin
+    > article{
+        float: right;
+        width: 732px;
+        padding-top: 27px;
+
+        // title
+        .title{
+            margin: 0 0 14px 0; padding: 0 0 2px 0;
+            color: black;
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: uppercase;
+            line-height: 1;
+            text-align: center;
+            border-bottom: 1px #000 solid;
+        }
+
+        // title mini
+        .title-mini{
+            color: black;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            border-bottom: 1px #000 solid;
+            padding: 0 0 2px 0;
+            margin: 0 0 30px 0;
+            text-align: left;
+            line-height: 1;
+        }
+
+        // one mechanisms section : begin
+        .one-mechanisms-section{
+            text-align: justify;
+            font-size: 0;
+            line-height: 0;
+            vertical-align: top;
+            margin-bottom: 13px;
+
+            // title mini
+            .title-mini{
+                margin-bottom: 14px;
+            }
+
+            &:after{
+                content: '';
+                display: inline-block;
+                width: 100%;
+            }
+
+            // one block : begin
+            .one-block{
+                display: inline-block;
+                width: 226px;
+                background-color: white;
+                padding-bottom: 23px;
+                margin-bottom: 24px;
+                vertical-align: top;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+
+                &:hover,
+                &.active{
+                    box-shadow: 0 0 0 1px #a7a7a7,0 0 5px rgba(0,0,0,.35);
+                }
+
+                > a{
+                    &:first-child{
+                        display: block;
+                        margin-bottom: 19px;
+
+                        img{
+                            width: 100%;
+                            height: auto;
+                            display: block;
+                            margin: 0; padding: 0;
+                        }
+                    }
+
+                    &:last-child{
+                        display: inline-block;
+                        color: #007be4;
+                        line-height: 1;
+                        font-size: 11px;
+                        font-weight: 400;
+                        text-decoration: none;
+                        padding: 0 14px 0 0;
+                        margin: 0 23px 0 23px;
+                        position: relative;
+
+                        &:after{
+                            content: '';
+                            display: block;
+                            @include vertical-center;
+                            position: absolute;
+                            right: 0;
+                            width: 9px;
+                            height: 9px;
+                            background: #007be4 url('../../images/icons/sprite.png') -1913px -327px no-repeat;
+                        }
+                    }
+                }
+
+                .subtitle{
+                    color: black;
+                    font-size: 13px;
+                    line-height: 1;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    margin: 0 23px 10px 23px;
+                    padding: 0;
+                    display: inline-block;
+                }
+
+                ul{
+                    margin: 0 23px 20px 23px;
+                    padding: 0;
+                    list-style: none;
+
+                    li{
+                        color: black;
+                        font-size: 13px;
+                        font-weight: 400;
+                        line-height: 1.538;
+                        padding: 0 0 0 13px;
+                        margin: 0;
+                        background: url('../../images/icons/sprite.png') -1593px -651px no-repeat;
+                    }
+                }
+            }
+            // one block : end
+        }
+        // one mechanisms section : end
+
+        // text content : begin
+        .text-content{
+            // text block
+            p{
+                color: black;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 25px;
+                margin-bottom: 23px;
+            }
+        }
+        // text content : end
+    }
+    // right column (main content) : end
+}
+
+
+
+

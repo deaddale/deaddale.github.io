@@ -1,0 +1,358 @@
+.b-products {
+    padding-top: 77px;
+
+    // one product : begin
+    .one-product {
+        padding-top: 40px;
+        padding-bottom: 17px;
+        position: relative;
+        overflow: hidden;
+
+        > div {
+            // slider : begin
+            .slider {
+                @include span(7 of 12);
+                padding-top: 70px;
+
+                .owl-carousel {
+                    opacity: 0;
+
+                    .owl-nav .owl-prev,
+                    .owl-nav .owl-next,
+                    .owl-dots .owl-dot {
+                        opacity: 0;
+                    }
+
+                    &.visible {
+                        opacity: 1;
+                        transition: opacity 1s ease;
+
+                        .owl-nav .owl-prev,
+                        .owl-nav .owl-next,
+                        .owl-dots .owl-dot {
+                            animation: both opacity 1s 3s;
+                        }
+
+                        @keyframes opacity {
+                            1% {
+                                opacity: 0;
+                            }
+                            2% {
+                                opacity: 0;
+                            }
+                            100% {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+
+                // one image
+                img.one-image {
+                    width: 469px;
+                    height: 323px;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            // slider : end
+
+            // information : begin
+            > .info {
+                @include span(5 of 12);
+                letter-spacing: 0.025em;
+                background: rgba(#23110f,0.7);
+                padding: 32px 36px;
+                border: 1px #f7d182 solid;
+                z-index: 1;
+
+                // title
+                h1 {
+                    color: #fefefe;
+                    font-size: 24px;
+                    font-weight: 300;
+                    line-height: 1.3;
+                    font-family: $secondary-font;
+                    text-transform: uppercase;
+                    margin-bottom: 38px;
+                }
+
+                // description
+                .descr {
+                    color: white;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.285;
+                    margin-bottom: 45px;
+                }
+
+                // ingredients : begin
+                .ingredients {
+                    font-size: 14px;
+                    line-height: 1.125em;
+                    margin-bottom: 38px;
+
+                    // subtitle
+                    .subtitle {
+                        color: #998987;
+                        font-weight: 500;
+                        line-height: 1;
+                        text-transform: uppercase;
+                        display: block;
+                        margin-bottom: 21px;
+                    }
+
+                    // info
+                    span {
+                        line-height: 1.125em;
+                        color: #ffffff;
+                        display: block;
+
+                        &:nth-child(2) {
+                            font-weight: 400;
+                            margin-bottom: 20px;
+                        }
+
+                        &:last-child {
+                            font-weight: 500;
+                        }
+                    }
+                }
+                // ingredients : begin
+
+                // quantity and packing : begin
+                .quantity-and-packing {
+                    margin-bottom: 46px;
+
+                    // quantity : begin
+                    .quantity {
+                        @include justifyBlocks;
+                        margin-bottom: 12px;
+
+                        // left column
+                        .left-col {
+                            display: inline-block;
+                            vertical-align: middle;
+
+                            span {
+                                color: #998986;
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 35px;
+                                text-transform: uppercase;
+                                text-align: left;
+                            }
+                        }
+
+                        // right column : begin
+                        .right-col {
+                            display: inline-block;
+                            vertical-align: middle;
+
+                            // number input
+                            .number-input {
+                                font-size: 0;
+                                line-height: 0;
+
+                                // minus
+                                .minus {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    @include sprite($icon-minus);
+                                    cursor: pointer;
+                                }
+
+                                // plus
+                                .plus {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    @include sprite($icon-plus);
+                                    cursor: pointer;
+                                }
+
+                                // input
+                                input[type="text"] {
+                                    margin-left: 9px;
+                                    margin-right: 9px;
+                                    padding: 0;
+                                    vertical-align: middle;
+                                    color: white;
+                                    font-size: 24px;
+                                    font-weight: 400;
+                                    text-align: center;
+                                    line-height: 33px;
+                                    background-color: transparent;
+                                    outline: none;
+                                    width: 40px;
+                                    height: 35px;
+                                    border: 1px solid #97827e;
+                                }
+                            }
+                        }
+                        // right column : end
+                    }
+                    // quantity : end
+
+                    // packing : begin
+                    .packing {
+                        @include justifyBlocks;
+
+                        // left column
+                        .left-col {
+                            display: inline-block;
+                            vertical-align: middle;
+
+                            span {
+                                color: #998986;
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 35px;
+                                text-transform: uppercase;
+                                text-align: left;
+                                display: inline-block;
+
+                                i {
+                                    font-style: normal;
+                                    text-transform: none;
+                                }
+                            }
+                        }
+
+                        // right column : begin
+                        .right-col {
+                            display: inline-block;
+                            vertical-align: middle;
+
+                            label {
+                                width: 40px;
+                                height: 35px;
+                                border: 1px solid #97827e;
+                                outline: none;
+                                background-color: transparent;
+                                display: block;
+                                margin-right: 29px;
+                                text-align: center;
+                                cursor: pointer;
+
+                                i {
+                                    display: block;
+                                    border: none;
+                                    outline: none;
+                                    margin: 7px auto 0 auto;
+                                    @include sprite($icon-checkbox-true);
+                                    background: none;
+                                }
+
+                                input[type="checkbox"] {
+                                    opacity: 0;
+                                    display: none;
+
+                                    &:checked {
+                                        & + i {
+                                            @include sprite($icon-checkbox-true);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        // right column : end
+                    }
+                    // packing : end
+                }
+                // quantity and packing : end
+
+                // price : begin
+                .price {
+                    font-size: 0;
+                    line-height: 0;
+
+                    // text
+                    p {
+                        color: white;
+                        font-size: 24px;
+                        font-weight: 500;
+                        line-height: 33px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 26px;
+                    }
+
+                    // buttons : begin
+                    .btns-order-and-info {
+                        display: inline-block;
+                        vertical-align: middle;
+                        @include clearfix;
+
+                        .order {
+                            @include default-btn;
+                            text-decoration: none;
+                            outline: none;
+                            height: 34px;
+                            border: 1px #f7d182 solid;
+                            display: block;
+                            float: left;
+                            color: #140807;
+                            font-family: $secondary-font;
+                            text-transform: uppercase;
+                            text-align: center;
+                            font-size: 14px;
+                            line-height: 32px;
+                            padding: 0 24px;
+                            position: relative;
+                            background: #f7d182;
+                            transition: all 0.2s ease-in;
+
+                            &:hover {
+                                background: #140807;
+                                color: #f7d182;
+                                border-color: #f7d182;
+                                transition: all 0.15s linear;
+                            }
+                        }
+
+                        .info {
+                            display: block;
+                            text-decoration: none;
+                            float: left;
+                            width: 35px;
+                            height: 34px;
+                            margin: 0;
+                            padding: 7.5px 0 0 8px;
+                            cursor: pointer;
+                            background-color: #4b3c3a;
+                            transition: all 0.2s ease-in;
+
+                            i {
+                                display: block;
+                                margin: 0;
+                                @include sprite($icon-info);
+                            }
+
+                            &:hover {
+                                background-color: rgba(#4b3c3a, 0.85);
+                                transition: all 0.15s linear;
+                            }
+                        }
+                    }
+                    // buttons : end
+                }
+                // price : end
+            }
+            // information : end
+        }
+
+        // background
+        .one-product-bg {
+            width: 100%;
+            height: auto;
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            z-index: -1;
+        }
+    }
+    // one product : end
+}

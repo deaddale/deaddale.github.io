@@ -1,0 +1,97 @@
+.b-filters {
+    background: rgba(#1a0d0c, 0.9);
+    position: fixed;
+    left: 0;
+    bottom: -45px;
+    width: 100%;
+    z-index: 1059;
+    transition: bottom 0.4s linear;
+
+    &.active{
+        bottom: 45px;
+        transition: bottom 0.4s ease-in;
+    }
+
+    > div {
+        //height: 46px;
+        position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
+        //
+        //// icon filter
+        //.icon {
+        //    @include sprite($icon-filters);
+        //    position: absolute;
+        //    left: 15px;
+        //    top: 13px;
+        //}
+
+        // filters form : begin
+        form {
+            width: 100%;
+            position: relative;
+            margin: 0;
+            padding-left: 13px;
+            font-size: 0;
+            line-height: 0;
+            //height: 46px;
+            text-align: left;
+
+            // one filter : begin
+            .one-filter {
+                display: inline-block;
+                vertical-align: top;
+                margin: 9px 40px 0 0;
+                @include clearfix;
+
+                // text
+                .text {
+                    color: #ffffff;
+                    font-family: $secondary-font;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    padding: 0 6px;
+                    float: left;
+                }
+
+                // input type text
+                input[type="text"] {
+                    float: left;
+                    width: 60px;
+                    text-align: center;
+                    box-sizing: border-box;
+                    outline: none;
+                    line-height: normal;
+                    font-family: $secondary-font;
+                    color: #a0844a;
+                    font-size: 14px;
+                    background: transparent;
+                    border: 1px solid #a0844a;
+                    position: relative;
+                    right: 0;
+                    padding: 5px 11px;
+                    transition: width 1s ease;
+
+                    &:focus {
+                        outline: none;
+                        transition: all 0.24s ease;
+                    }
+                }
+            }
+            // one filter : end
+
+            // button submit
+            input[type="submit"],
+            input[type="button"],
+            button {
+                float: right;
+                display: inline-block;
+                padding: 0 18px;
+                line-height: 32px;
+                margin: 9px 0 0 0;
+            }
+        }
+        // filters form : end
+    }
+}

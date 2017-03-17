@@ -1,0 +1,176 @@
+.b-result-info{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    background: #190c0b;
+    z-index: 1060;
+
+    > div{
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 45px;
+        @include clearfix;
+        //@include justifyBlocks;
+
+        // one column : begin
+        .one-col{
+            font-family: $secondary-font;
+            height: 45px;
+            float: left;
+            //display: inline-block;
+            //vertical-align: top;
+
+            // contacts : begin
+            &.contacts{
+                p{
+                    height: 45px;
+
+                    span{
+                        display: inline-block;
+                        vertical-align: middle;
+                        line-height: 45px;
+
+                        &:first-child{
+                            color: #f7d182;
+                            font-size: 14px;
+                            margin-right: 13px;
+                        }
+
+                        &:last-child{
+                            color: white;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            // contacts : end
+
+            // filter : begin
+            &.filter{
+                margin-left: 75px;
+
+                p{
+                    height: 45px;
+
+                    a{
+                        text-decoration: none;
+                        display: inline-block;
+                        vertical-align: middle;
+
+                        span{
+                            color: #f7d182;
+                            font-size: 14px;
+                            line-height: 45px;
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+
+                        i{
+                            @include sprite($icon-filters);
+                            vertical-align: middle;
+                            display: inline-block;
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+            // filter : end
+
+            // basket sum : begin
+            &.basket-sum{
+                margin-left: 250px;
+
+                // sum products : begin
+                .sum-products{
+                    display: inline-block;
+                    margin-right: 14px;
+                    height: 45px;
+
+                    i{
+                        display: inline-block;
+                        @include sprite($icon-basket-full);
+                        margin-right: 15px;
+                        vertical-align: middle;
+                    }
+
+                    span{
+                        line-height: 45px;
+                        display: inline-block;
+                        vertical-align: middle;
+
+                        &:nth-child(2){
+                            color: #f7d182;
+                            font-size: 14px;
+                            margin-right: 9px;
+                        }
+
+                        &.result{
+                            color: white;
+                            font-size: 18px;
+                        }
+                    }
+                }
+                // sum products : end
+
+                // sum money : begin
+                .sum-money{
+                    display: inline-block;
+                    height: 45px;
+
+                    span{
+                        line-height: 45px;
+                        display: inline-block;
+                        vertical-align: middle;
+
+                        &:first-child{
+                            color: #f7d182;
+                            font-size: 14px;
+                            margin-right: 9px;
+                        }
+
+                        &.result{
+                            color: white;
+                            font-size: 18px;
+
+                            i{
+                                font-style: normal;
+                            }
+                        }
+                    }
+                }
+                // sum money : end
+            }
+            // basket sum : end
+
+            // to top link : begin
+            &.to-top{
+                cursor: pointer;
+                float: right;
+
+                p{
+                    height: 45px;
+
+                    span{
+                        color: white;
+                        font-size: 14px;
+                        line-height: 45px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        text-transform: uppercase;
+                    }
+
+                    i{
+                        display: inline-block;
+                        margin-left: 8px;
+                        @include sprite($icon-arrow-top);
+                        vertical-align: middle;
+                    }
+                }
+            }
+            // to top link : end
+        }
+        // one column : end
+    }
+}

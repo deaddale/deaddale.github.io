@@ -1,0 +1,67 @@
+.popup{
+	display: none;
+
+	// subtitle
+	.subtitle{
+		@extend %hdln-prim;
+		text-align: center;
+	}
+
+	// hint
+	.hint{
+		font-size: 80%;
+		font-family: $font-light;
+		text-align: center;
+		margin-bottom: $base__line;
+	}
+
+	// form : begin
+	form{
+
+		// one line : begin
+		.one-line{
+			margin-bottom: $base__line;
+
+			.label{
+				margin-bottom: 3px;
+				color: map-get(map-get($color-palettes, grey), base);
+			}
+
+			input[type="submit"],
+			.reg-btn{
+				@include btn;
+			}
+
+			&.error{
+				text-align: center;
+				font-size: 80%;
+				font-family: $font-light;
+				margin-bottom: $base__line;
+				color: $sunglo;
+				display: none;
+			}
+
+			&.message{
+				text-align: center;
+				font-size: 80%;
+				font-family: $font-light;
+				margin-bottom: $base__line;
+				display: none;
+
+				&.forgot-password{
+					display: block;
+				}
+			}
+
+			&.btn{
+				text-align: center;
+			}
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+		// one line : end
+	}
+	// form : end
+}

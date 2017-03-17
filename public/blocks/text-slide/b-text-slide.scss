@@ -1,0 +1,95 @@
+.b-text-slide {
+    h1 {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        padding-bottom: 56px;
+        margin-bottom: 47px;
+        text-align: center;
+        animation-duration: 0.7s;
+        animation-delay: 0s;
+
+        @include breakpoint($first-breakpoint) {
+            max-width: 600px;
+            font-size: 14px;
+            padding-bottom: 25px;
+            margin-bottom: 19px;
+            line-height: 1.9;
+        }
+
+        &:before {
+            content: '';
+            display: block;
+            width: 167px;
+            height: 7px;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            background: transparent url('../img/other/separator.svg') left top no-repeat;
+        }
+    }
+
+    h2 {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        font-family: $title-font;
+        font-size: 26px;
+        letter-spacing: 2.25px;
+        line-height: 1.461;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 56px;
+        margin-bottom: 47px;
+
+        @include breakpoint($first-breakpoint) {
+            max-width: 600px;
+            font-size: 14px;
+            padding-bottom: 25px;
+            margin-bottom: 19px;
+            line-height: 1.9;
+        }
+
+        &:before {
+            content: '';
+            display: block;
+            width: 167px;
+            height: 7px;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            background: transparent url('../img/other/separator.svg') left top no-repeat;
+        }
+    }
+
+    p {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        line-height: 1.473;
+        text-align: center;
+        margin-bottom: 20px;
+
+        @include breakpoint($first-breakpoint) {
+            max-width: 600px;
+            font-size: 14px;
+            margin-bottom: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            text-align: left;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

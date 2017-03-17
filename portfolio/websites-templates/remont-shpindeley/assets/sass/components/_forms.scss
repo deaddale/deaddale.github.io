@@ -1,0 +1,109 @@
+input[type="hidden"]{
+	width: 0 !important;
+	height: 0 !important;
+	border: none !important;
+	outline: none !important;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"] {
+	width: 100%;
+	border: 1px #cfcfcf solid;
+	padding: 15px 18px;
+	background-color: white;
+	box-shadow: none;
+	box-sizing: border-box;
+	outline: none;
+	display: block;
+	color: #485061;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1;
+
+	&::-webkit-input-placeholder {color: #485061;}
+	&::-moz-placeholder          {color: #485061;} // Firefox 19+
+	&:-moz-placeholder           {color: #485061;} // Firefox 18-
+	&:-ms-input-placeholder      {color: #485061;}
+}
+
+textarea {
+	width: 100%;
+	border: 1px #cfcfcf solid;
+	padding: 13px 18px;
+	background-color: white;
+	box-shadow: none;
+	box-sizing: border-box;
+	outline: none;
+	display: block;
+	color: #485061;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	height: 122px;
+	resize: none;
+
+	&::-webkit-input-placeholder {color: #485061;}
+	&::-moz-placeholder          {color: #485061;} // Firefox 19+
+	&:-moz-placeholder           {color: #485061;} // Firefox 18-
+	&:-ms-input-placeholder      {color: #485061;}
+
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	    	appearance: none;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+	outline: 0;
+	border: 1px solid #55cfc0;
+}
+
+input[type="email"].error,
+input[type="number"].error,
+input[type="search"].error,
+input[type="text"].error,
+input[type="tel"].error,
+input[type="url"].error,
+input[type="password"].error,
+textarea.error {
+	outline: 0;
+	border: 1px solid #ef4d4d;
+}
+
+label,
+legend {
+	display: block;
+	margin-bottom: .5rem;
+	font-weight: 600;
+}
+
+fieldset {
+	padding: 0;
+	border-width: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	display: inline;
+}
+
+label > .label-body {
+	display: inline-block;
+	margin-left: .5rem;
+	font-weight: normal;
+}
+
+
+
+
