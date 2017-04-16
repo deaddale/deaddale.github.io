@@ -1,0 +1,13 @@
+default:
+  description: 'Default (production) build'
+  tasks:
+  - htmlrender
+  - copy
+  - sass
+  - autoprefixer
+  - cssmin
+  - browserify
+  - concat
+  - uglify
+  - connect
+  - watch

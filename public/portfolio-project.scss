@@ -1,43 +1,28 @@
 // IMPORT SASS
 
 /*
-** SUSY FRAMEWORK (http://susydocs.oddbird.net/en/latest/)
 ** BREAKPOINT (http://breakpoint-sass.com)
 */
-
-@import "../node_modules/susy/sass/susy";
 @import "../node_modules/breakpoint-sass/stylesheets/breakpoint";
 
 /*
 ** GLOBAL
 */
-
 @import "blocks/global/normalize";
 @import "blocks/global/variables";
 @import "blocks/global/global";
-@import "blocks/global/mixins";
 @import "blocks/global/typo";
 @import "blocks/global/helpers";
 
 /*
 ** BLOCKS
 */
-
-@import "blocks/aside/b-aside";
-@import "blocks/advantages/b-advantages";
 @import "blocks/dev/content/b-content";
-@import "blocks/preloader/b-preloader";
-@import "blocks/soc-networks/b-soc-networks";
-@import "blocks/scroll-to/b-scroll-to";
-@import "blocks/text-slide/b-text-slide";
 
 /*
 ** LIBS
 ** daneden-animate (https://daneden.github.io/animate.css)
 ** justinaguilar-animations (http://www.justinaguilar.com/animations/)
-** fullPage (https://github.com/alvarotrigo/fullPage.js)
 */
-
 @import "libs/sass/animate/daneden-animate";
 //@import "libs/sass/animate/justinaguilar-animations";
-@import "libs/sass/jquery.fullpage";
