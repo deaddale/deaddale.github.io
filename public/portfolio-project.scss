@@ -17,12 +17,4 @@
 /*
 ** BLOCKS
 */
-@import "blocks/dev/content/b-content";
-
-/*
-** LIBS
-** daneden-animate (https://daneden.github.io/animate.css)
-** justinaguilar-animations (http://www.justinaguilar.com/animations/)
-*/
-@import "libs/sass/animate/daneden-animate";
-//@import "libs/sass/animate/justinaguilar-animations";
+@import "blocks/content/b-content";

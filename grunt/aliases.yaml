@@ -6,7 +6,6 @@ default:
   - sass
   - autoprefixer
   - cssmin
-  - browserify
   - concat
   - uglify
   - connect

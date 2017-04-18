@@ -39,12 +39,14 @@ html {
 
 body {
     font-family: $primary-font;
-    font-size: 15px;
-    line-height: 1.473;
+    line-height: 1.58;
     font-size: 19px;
     color: $color-primary;
     text-rendering: optimizeLegibility;
     -webkit-text-rendering: optimizeLegibility;
+	@include breakpoint($mobile-breakpoint) {
+		font-size: 15px;
+	}
 }
 
 h1, h2, h3, h4, h5, h5, p, ul, ol, li {

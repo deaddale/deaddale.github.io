@@ -3,4 +3,6 @@
 ** Docs. http://breakpoint-sass.com
 ** Classic Media Queries. https://goo.gl/uUTZRd
 */
-$first-breakpoint: max-width 1200px;
+$desktop-breakpoint: min-width 1200px;
+$tablet-breakpoint: max-width 760px;
+$mobile-breakpoint: max-width 320px;
