@@ -4,7 +4,6 @@
     "devDependencies": {
         "grunt": "latest",
         "grunt-autoprefixer": "latest",
-        "grunt-browserify": "latest",
         "grunt-contrib-concat": "latest",
         "grunt-contrib-connect": "latest",
         "grunt-contrib-copy": "latest",
