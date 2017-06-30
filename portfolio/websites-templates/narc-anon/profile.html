@@ -10,7 +10,7 @@
     <meta name="description" content="">
 
     <!-- MOBILE SPECIFIC -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 
     <!-- disable select tel. and skype numbers -->
     <meta name="format-detection" content="telephone=no">
@@ -25,10 +25,11 @@
 
 <body>
 
-<div class="b-content" id="app">
+<div class="b-content" id="app" v-bind:class="{ 'b-content_active': isActive }">
     <!-- NAVIGATION : begin -->
     <nav class="b-nav">
     <a href="#" class="b-nav__logo"></a>
+    <div class="b-nav__icon" v-on:click="isActive = !isActive"></div>
     <div class="b-nav__list" id="nav-list">
         <div class="b-nav__title">Sections</div>
         <ul class="b-nav__links">

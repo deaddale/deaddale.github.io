@@ -3,7 +3,7 @@
 <head>
     <!-- BASE -->
     <meta charset="utf-8">
-    <title>Resentments - Narcotics Anonymous</title>
+    <title>My school - Narcotics Anonymous</title>
 
     <!-- SEO -->
     <meta name="keywords" content="">
@@ -24,10 +24,11 @@
 </head>
 
 <body>
-<div class="b-content" id="app">
+<div class="b-content" id="app" v-bind:class="{ 'b-content_active': isActive }">
     <!-- NAVIGATION : begin -->
     <nav class="b-nav">
     <a href="#" class="b-nav__logo"></a>
+    <div class="b-nav__icon" v-on:click="isActive = !isActive"></div>
     <div class="b-nav__list" id="nav-list">
         <div class="b-nav__title">Sections</div>
         <ul class="b-nav__links">
@@ -56,29 +57,38 @@
     <!-- NAVIGATION : end -->
 
     <!-- RESENTMENTS : begin -->
-    <section class="b-resentments">
-    <div class="b-resentments__title">I. Resentments</div>
-    <div class="b-resentments__text">
-        <p><i>List the people, organizations, and concepts you resent.</i></p>
-        <p>Most of us start with our childhood, but any order will work as long as it is complete. Include
-            all the people (parents, mates, friends, enemies, ourselves, etc.); the organizations and
-            institutions (jails, police, hospitals, schools, etc.); and the concepts (religions, politics,
-            prejudice, social customs, God, etc.) at whom you are angry.</p>
+    <div class="b-my-school">
+    <div class="b-my-school__title-and-btn">
+        <a href="#" class="b-my-school__btn">Back</a>
+        <div class="b-my-school__title">My school</div>
     </div>
-    <div class="b-resentments__form">
-        <div class="b-resentments__row b-resentments__row_two-col">
-            <input type="text" placeholder="My dad" class="b-resentments__input">
-            <a href="#" class="b-resentments__link">Details</a>
+    <div class="b-my-school__form">
+        <div class="b-my-school__row">
+            <input type="checkbox" class="b-my-school__input-checkbox" id="b-me-school__checkbox_1">
+            <label for="b-me-school__checkbox_1" class="b-my-school__label-checkbox">Were my feelings hurt because of pride?</label>
         </div>
-        <div class="b-resentments__row b-resentments__row_two-col">
-            <input type="text" placeholder="My school" class="b-resentments__input">
-            <a href="#" class="b-resentments__link">Details</a>
+        <div class="b-my-school__row">
+            <input type="checkbox" class="b-my-school__input-checkbox" id="b-me-school__checkbox_2">
+            <label for="b-me-school__checkbox_2" class="b-my-school__label-checkbox">Was my safety or security threatened in any way?</label>
         </div>
-        <div class="b-resentments__row">
-            <a href="#" class="b-resentments__link">Add</a>
+        <div class="b-my-school__row">
+            <input type="checkbox" class="b-my-school__input-checkbox" id="b-me-school__checkbox_3">
+            <label for="b-me-school__checkbox_3" class="b-my-school__label-checkbox">Was a personal or sexual relationship hurt or threatened?</label>
+        </div>
+        <div class="b-my-school__row b-my-school__row_spec-bottom-indent">
+            <input type="checkbox" class="b-my-school__input-checkbox" id="b-me-school__checkbox_4">
+            <label for="b-me-school__checkbox_4" class="b-my-school__label-checkbox">Did my ambition put me in con ict with others?</label>
+        </div>
+        <div class="b-my-school__row b-my-school__row_textarea">
+            <label for="b-me-school__checkbox_1" class="b-my-school__label">Where did greed or a need for power underlie my actions?</label>
+            <textarea name="" id="" class="b-my-school__textarea" placeholder="sample input...."></textarea>
+        </div>
+        <div class="b-my-school__row b-my-school__row_textarea">
+            <label for="b-me-school__checkbox_1" class="b-my-school__label">How did I behave selfishly?</label>
+            <textarea name="" id="" class="b-my-school__textarea" placeholder="sample input...."></textarea>
         </div>
     </div>
-</section>
+</div>
     <!-- RESENTMENTS : end -->
 </div>
 
