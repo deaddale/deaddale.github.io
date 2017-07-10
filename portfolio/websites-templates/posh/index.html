@@ -3,7 +3,7 @@
 <head>
     <!-- BASE -->
     <meta charset="utf-8">
-    <title>Index - Cottage commune project</title>
+    <title>Index - Posh</title>
 
     <!-- SEO -->
     <meta name="keywords" content="">
@@ -19,193 +19,79 @@
     <!-- FAVICONS (http://favicon-generator.org) -->
 
     <!-- CSS -->
-    <link rel="stylesheet" href="dist/css/cottage-commune-project.css">
+    <link rel="stylesheet" href="dist/css/posh-project.css">
 
 </head>
 
 <body>
 <div id="app">
-    <div class="b-header" v-bind:class="{ 'b-header_active': scrolled }">
-    <div class="b-header__container">
-        <a href="#" class="b-header__social">Facebook</a>
-        <div class="b-header__title">ПОШ</div>
-        <div class="b-header__icon" v-on:click="isActiveNav = !isActiveNav"></div>
+    <div class="b-header-index" v-bind:class="{ 'b-header-index_active': scrolled }">
+    <div class="b-header-index__container">
+        <div class="b-header-index__title">ПОШ</div>
+        <div class="b-header-index__icon" v-on:click="isActiveNav = !isActiveNav"></div>
     </div>
 </div>
-    <div class="b-commune">
-    <div class="b-commune__container">
-        <h1 class="b-commune__title">Дачная коммуна</h1>
-        <div class="b-commune__text">Рядом курорт &laquo;Золотое кольцо&raquo;, Переславль-Залесский,<br>озеро Плещеево, национальный парк, жд-вокзал.</div>
-        <img src="dist/img/example/commune.png" alt="" class="b-commune__img">
+    <div class="b-descr-page">
+    <div class="b-descr-page__container">
+        <h1 class="b-descr-page__title">Инвестируем в проекты, соединяющие<br>недвижимость с новыми технологиями</h1>
+        <div class="b-descr-page__descr">Сейчас работаем над девелоперскими проекта с технологиями<br>sharing, IoT и prefab в Нью Йорке, Лиссабоне, Берлине, Тоскане,<br>Переславле-Залесском и Москве.</div>
     </div>
 </div>
-    <div class="b-walk-to-resort">
-    <div class="b-slider">
-        <div class="b-slider__container">
-            <h2 class="b-slider__title">Пешком до курорта</h2>
-            <div class="b-slider__text">Курорт &laquo;Золотое Кольцо&raquo; &mdash; это отели 3 и 4 звезды, рестораны, бар, мероприятия, спорт, спа, баня и многое другое. Открытие в декабре 2017 года</div>
-            <div class="b-slider__slick">
+    <div class="b-commune-full">
+    <div class="b-commune-full__container">
+        <h1 class="b-commune-full__title">Дачная коммуна</h1>
+        <div class="b-commune-full__descr">Наша роль &mdash; инвестор и девелопер.<br>Переславль-Залесский. Жилье, фермы, рекреация. 420 га.</div>
+        <div class="b-commune-full__text-selected">Стадия &mdash; девелопмент.</div>
+        <a href="#" class="b-commune-full__btn">Подробнее</a>
+        <img src="dist/imgexample/commune.png" alt="" class="b-commune-full__img">
+    </div>
+</div>
+    <div class="b-department-store-color">
+    <div class="b-slider-project">
+        <div class="b-slider-project__container">
+            <h2 class="b-slider-project__title">Универмаг &laquo;Цветной&raquo;</h2>
+            <div class="b-slider-project__text">Наша роль &mdash; инвестор. Девелопер &mdash; <a href="#" class="b-slider-project__link">RGI</a>.<br>Москва. Ритэйл. 36,522 м<sup>2</sup>.</div>
+            <div class="b-slider-project__text-selected">Открыт с 2012 года.</div>
+            <a href="#" class="b-slider-project__btn">На сайт</a>
+            <div class="b-slider-project__slick">
                 <div>
-                    <img src="dist/img/example/walk-to-resort.png" alt="" class="b-slider__img">
-                    <div class="b-slider__descr">Описание описание описание</div>
+                    <img src="dist/imgexample/department-store-color.png" alt="" class="b-slider-project__img">
+                    <div class="b-slider-project__descr">Описание описание описание</div>
                 </div>
                 <div>
-                    <img src="dist/img/example/walk-to-resort.png" alt="" class="b-slider__img">
-                    <div class="b-slider__descr">Описание описание описание</div>
+                    <img src="dist/imgexample/department-store-color.png" alt="" class="b-slider-project__img">
+                    <div class="b-slider-project__descr">Описание описание описание</div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-    <div class="b-interesting-and-profitable">
-    <div class="b-slider b-slider_bg-white">
-        <div class="b-slider__container">
-            <h2 class="b-slider__title">Интересно и выгодно</h2>
-            <div class="b-slider__text">Шерим всё, что дорого содержать одному и не нарушает жизненное пространство. Так дешевле и интереснее.</div>
-            <div class="b-slider__slick">
+    <div class="b-town-in-forest">
+    <div class="b-slider-project">
+        <div class="b-slider-project__container">
+            <h2 class="b-slider-project__title">Микрогород &laquo;В лесу&raquo;</h2>
+            <div class="b-slider-project__text">Наша роль &mdash; инвестор. Девелопер &mdash; <a href="#" class="b-slider-project__link">RGI</a><br>.Москва. Жилье. Более 10 000 квартир.</div>
+            <div class="b-slider-project__text-selected">Стадия &mdash; строительство 2 очереди.</div>
+            <a href="#" class="b-slider-project__btn">На сайт</a>
+            <div class="b-slider-project__slick">
                 <div>
-                    <img src="dist/img/example/interesting-and-profitable.png" alt="" class="b-slider__img">
-                    <div class="b-slider__descr">Общая библиотека на 15 000 книг.</div>
+                    <img src="dist/imgexample/town-in-forest.png" alt="" class="b-slider-project__img">
+                    <div class="b-slider-project__descr">Описание описание описание</div>
                 </div>
                 <div>
-                    <img src="dist/img/example/interesting-and-profitable.png" alt="" class="b-slider__img">
-                    <div class="b-slider__descr">Общая библиотека на 15 000 книг.</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    <div class="b-community-of-enthusiasts">
-    <div class="b-slider">
-        <div class="b-slider__container">
-            <h2 class="b-slider__title">Сообщество энтузиастов</h2>
-            <div class="b-slider__text">Правила и программа для комфортной жизни, которые определяют<br>жители коммуны. Онлайн собрания.</div>
-            <div class="b-slider__slick">
-                <div>
-                    <img src="dist/img/example/community-of-enthusiasts.png" alt="" class="b-slider__img b-community-of-enthusiasts__img">
-                    <div class="b-slider__descr">Группы по комитетам.</div>
-                </div>
-                <div>
-                    <img src="dist/img/example/community-of-enthusiasts.png" alt="" class="b-slider__img b-community-of-enthusiasts__img">
-                    <div class="b-slider__descr">Группы по комитетам.</div>
+                    <img src="dist/imgexample/town-in-forest.png" alt="" class="b-slider-project__img">
+                    <div class="b-slider-project__descr">Описание описание описание</div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-    <div class="b-healthy-lifestyle">
-    <div class="b-slider b-slider_bg-white">
-        <div class="b-slider__container">
-            <h2 class="b-slider__title">Здоровый образ жизни</h2>
-            <div class="b-slider__text">Ходьба, бег, трейл, лыжи, велосипед. Более 70 км маршрутов.</div>
-            <div class="b-slider__slick">
-                <div>
-                    <img src="dist/img/example/healthy-lifestyle.png" alt="" class="b-slider__img">
-                </div>
-                <div>
-                    <img src="dist/img/example/healthy-lifestyle.png" alt="" class="b-slider__img">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    <div class="b-my-work">
-    <div class="b-slider">
-        <div class="b-slider__container">
-            <h2 class="b-slider__title">Своё дело</h2>
-            <div class="b-slider__slick">
-                <div>
-                    <img src="dist/img/example/my-work.png" alt="" class="b-slider__img b-my-work__img">
-                    <div class="b-slider__descr">Фермерский кооператив под управлением<br>энергичного Бориса Акимова.</div>
-                </div>
-                <div>
-                    <img src="dist/img/example/my-work.png" alt="" class="b-slider__img b-my-work__img">
-                    <div class="b-slider__descr">Фермерский кооператив под управлением<br>энергичного Бориса Акимова.</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    <div class="b-childrens-program">
-    <div class="b-slider b-slider_bg-white">
-        <div class="b-slider__container">
-            <h2 class="b-slider__title">Детская программа</h2>
-            <div class="b-slider__text">Творчество, наука, спорт. Детские смены на выходные и каникулы.<br>Возможно, получится создать школу.</div>
-            <div class="b-slider__slick">
-                <div>
-                    <img src="dist/img/example/childrens-program.png" alt="" class="b-slider__img">
-                </div>
-                <div>
-                    <img src="dist/img/example/childrens-program.png" alt="" class="b-slider__img">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    <div class="b-teleworking">
-    <div class="b-slider">
-        <div class="b-slider__container">
-            <h2 class="b-slider__title">Дистанционная работа</h2>
-            <div class="b-slider__text">Скоростной интернет и коворкинг с полноценной инфраструктурой.</div>
-            <div class="b-slider__slick">
-                <div>
-                    <img src="dist/img/example/teleworking.png" alt="" class="b-slider__img">
-                </div>
-                <div>
-                    <img src="dist/img/example/teleworking.png" alt="" class="b-slider__img">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    <div class="b-history">
-    <div class="b-slider b-slider_bg-white">
-        <div class="b-slider__container">
-            <h2 class="b-slider__title">История</h2>
-            <div class="b-slider__text">Одна из главных доминант &mdash; Храм Богородицы.<br>Планируется восстановление храма к 200-летию к 2020 году.</div>
-            <div class="b-slider__slick">
-                <div>
-                    <img src="dist/img/example/history.png" alt="" class="b-slider__img">
-                </div>
-                <div>
-                    <img src="dist/img/example/history.png" alt="" class="b-slider__img">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    <div class="b-ready-villa">
-    <div class="b-slider">
-        <div class="b-slider__container">
-            <h2 class="b-slider__title">Готовая дача от 4 млн руб.</h2>
-            <div class="b-slider__text">Современная архитектура. Большая веранда.<br>Продажа с отделкой. Свой участок.</div>
-            <div class="b-slider__slick">
-                <div>
-                    <img src="dist/img/example/ready-villa.png" alt="" class="b-slider__img">
-                </div>
-                <div>
-                    <img src="dist/img/example/ready-villa.png" alt="" class="b-slider__img">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    <div class="b-how-to-get">
-    <div class="b-how-to-get__container">
-        <h2 class="b-how-to-get__title">Как добраться</h2>
-        <div class="b-how-to-get__text">Скоро &mdash; открытие скоростного поезда Москва-Ярославль.<br>2 часа от вокзала в Москве до станции Берендеево.</div>
-        <div class="b-how-to-get__items">
-            <div class="b-how-to-get__item">
-                <img src="dist/img/example/how-to-get-1.png" alt="" class="b-how-to-get__img">
-                <div class="b-how-to-get__descr">На автомобиле</div>
-                <div class="b-how-to-get__time">1 ч 45 мин</div>
-            </div>
-            <div class="b-how-to-get__item">
-                <img src="dist/img/example/how-to-get-2.png" alt="" class="b-how-to-get__img">
-                <div class="b-how-to-get__descr">На поезде</div>
-                <div class="b-how-to-get__time">2 ч 30 мин</div>
-            </div>
-        </div>
+    <div class="b-developer">
+    <div class="b-developer__container">
+        <div class="b-developer__title">Девелопер</div>
+        <img src="dist/imgexample/developer.png" alt="" class="b-developer__img">
+        <div class="b-developer__name">Петр Шура</div>
+        <div class="b-developer__descr">В разное время владел компаниями RGI, Rusresorts, Building.<br>Сейчас возглавляет POSH.</div>
     </div>
 </div>
     <div class="b-footer">
@@ -234,7 +120,7 @@
 </nav>
 </div>
 
-<script src="dist/js/cottage-commune-project-base.js"></script>
-<script src="dist/js/cottage-commune-project-run.js"></script>
+<script src="dist/js/posh-project-base.js"></script>
+<script src="dist/js/posh-project-run.js"></script>
 </body>
 </html>
