@@ -331,7 +331,7 @@ html {
 
 body {
   margin: 0;
-  padding: 75px 0 0 0;
+  padding: 115px 0 0 0;
   position: relative;
   width: 100%;
   background-color: #ffffff; }
@@ -439,7 +439,7 @@ ol {
     padding: 0; }
 
 .b-header {
-  padding: 22px 0;
+  padding: 47px 0;
   background: #ffffff;
   position: fixed;
   left: 0;
@@ -533,7 +533,7 @@ ol {
       opacity: 0.7; }
 
 .b-header-index {
-  padding: 22px 0;
+  padding: 47px 0;
   background: #ffffff;
   position: fixed;
   left: 0;
@@ -591,7 +591,7 @@ ol {
     @media (max-width: 759px) {
       .b-header-index__title {
         font-size: 30px;
-        top: -4px; } }
+        top: -5px; } }
   .b-header-index__icon {
     display: flex;
     width: 34px;
@@ -600,11 +600,6 @@ ol {
     cursor: pointer;
     opacity: 1;
     transition: all 0.3s ease; }
-    @media (max-width: 759px) {
-      .b-header-index__icon {
-        width: 34px;
-        height: 18px;
-        background-image: url("../img/icons/icon-burger-mobile.svg"); } }
     .b-header-index__icon:hover {
       opacity: 0.7; }
 
@@ -656,7 +651,7 @@ ol {
     background: url(../img/icons/icon-close.svg) 0 0 no-repeat;
     position: absolute;
     right: 6px;
-    top: 22px;
+    top: 46px;
     cursor: pointer;
     opacity: 1;
     transition: all 0.3s ease; }
@@ -766,6 +761,14 @@ ol {
     font-weight: 400;
     font-style: normal;
     color: rgba(0, 0, 0, 0.3); }
+  .b-footer__link {
+    font-family: "Gotham Pro";
+    font-size: 16px;
+    line-height: 1.875;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.3);
+    text-decoration: none; }
 
 .b-commune {
   padding: 71px 0 102px 0; }
