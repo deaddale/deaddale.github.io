@@ -1364,10 +1364,6 @@ ol {
     font-style: normal;
     color: #000000;
     margin: 0 0 17px; }
-    @media (max-width: 759px) {
-      .b-commune-full__title {
-        font-size: 34px;
-        line-height: 1.24; } }
   .b-commune-full__descr {
     font-family: "Gotham Pro";
     font-size: 20px;
@@ -1465,6 +1461,13 @@ ol {
   line-height: 1.233;
   font-weight: 400;
   font-style: normal; }
+  @media (max-width: 759px) {
+    .b-department-store-color .b-slider-project__title {
+      font-family: "Merriweather";
+      font-size: 30px;
+      line-height: 1.233;
+      font-weight: 400;
+      font-style: normal; } }
 
 .b-town-in-forest .b-slider-project__title {
   font-family: "Merriweather";
@@ -1472,6 +1475,13 @@ ol {
   line-height: 1.233;
   font-weight: 400;
   font-style: normal; }
+  @media (max-width: 759px) {
+    .b-town-in-forest .b-slider-project__title {
+      font-family: "Merriweather";
+      font-size: 30px;
+      line-height: 1.233;
+      font-weight: 400;
+      font-style: normal; } }
 
 .b-developer {
   text-align: center; }
@@ -1530,8 +1540,11 @@ ol {
     margin: 0 0 35px; }
     @media (max-width: 759px) {
       .b-developer__title {
-        font-size: 35px;
-        margin: 0 0 28px; } }
+        font-family: "Merriweather";
+        font-size: 30px;
+        line-height: 1.233;
+        font-weight: 400;
+        font-style: normal; } }
   .b-developer__img {
     display: block;
     width: 136px;
@@ -1560,6 +1573,9 @@ ol {
       .b-developer__descr {
         font-size: 16px;
         line-height: 1.45; } }
+    @media (max-width: 1020px) {
+      .b-developer__descr br {
+        display: none; } }
 
 .slick-slider {
   position: relative;
