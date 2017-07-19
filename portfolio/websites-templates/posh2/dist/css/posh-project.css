@@ -863,7 +863,7 @@ ol {
     margin: 0 0 13px; }
     @media (max-width: 759px) {
       .b-slider__title {
-        font-size: 35px;
+        font-size: 28px;
         line-height: 1.142;
         margin: 0 0 15px; } }
   .b-slider__text {
@@ -882,7 +882,9 @@ ol {
     @media (max-width: 759px) {
       .b-slider__text {
         font-size: 16px;
-        margin: 0 0 31px; } }
+        margin: 0 0 31px;
+        padding-left: 0;
+        padding-right: 0; } }
     @media (max-width: 1020px) {
       .b-slider__text br {
         display: none; } }
@@ -913,7 +915,7 @@ ol {
     @media (max-width: 759px) {
       .b-slider__descr {
         font-size: 16px;
-        line-height: 1.875; } }
+        line-height: 1.3; } }
     @media (max-width: 1020px) {
       .b-slider__descr br {
         display: none; } }
@@ -1007,7 +1009,7 @@ ol {
     margin: 0 0 17px; }
     @media (max-width: 759px) {
       .b-slider-project__title {
-        font-size: 35px;
+        font-size: 28px;
         line-height: 1.142;
         margin: 0 0 15px; } }
   .b-slider-project__text {
@@ -1097,7 +1099,7 @@ ol {
     @media (max-width: 759px) {
       .b-slider-project__descr {
         font-size: 16px;
-        line-height: 1.875; } }
+        line-height: 1.3; } }
     @media (max-width: 1020px) {
       .b-slider-project__descr br {
         display: none; } }
@@ -1107,6 +1109,11 @@ ol {
   .b-walk-to-resort .b-slider__title {
     font-size: 41px;
     margin: 0 0 19px; }
+    @media (max-width: 759px) {
+      .b-walk-to-resort .b-slider__title {
+        font-size: 28px;
+        line-height: 1.142;
+        margin: 0 0 15px; } }
   .b-walk-to-resort .b-slider__text {
     line-height: 1.39;
     margin: 0 0 32px; }
@@ -1116,6 +1123,11 @@ ol {
   .b-interesting-and-profitable .b-slider__title {
     font-size: 43px;
     margin: 0 0 19px; }
+    @media (max-width: 759px) {
+      .b-interesting-and-profitable .b-slider__title {
+        font-size: 28px;
+        line-height: 1.142;
+        margin: 0 0 15px; } }
   .b-interesting-and-profitable .b-slider__text {
     font-size: 19px;
     line-height: 1.39;
@@ -1126,6 +1138,11 @@ ol {
   .b-community-of-enthusiasts .b-slider__title {
     font-size: 43px;
     margin: 0 0 19px; }
+    @media (max-width: 759px) {
+      .b-community-of-enthusiasts .b-slider__title {
+        font-size: 28px;
+        line-height: 1.142;
+        margin: 0 0 15px; } }
   .b-community-of-enthusiasts .b-slider__text {
     font-size: 19px;
     line-height: 1.39;
@@ -1150,6 +1167,11 @@ ol {
   .b-healthy-lifestyle .b-slider__title {
     font-size: 43px;
     margin: 0 0 19px; }
+    @media (max-width: 759px) {
+      .b-healthy-lifestyle .b-slider__title {
+        font-size: 28px;
+        line-height: 1.142;
+        margin: 0 0 15px; } }
   .b-healthy-lifestyle .b-slider__text {
     font-size: 19px;
     line-height: 1.39;
@@ -1197,6 +1219,11 @@ ol {
   .b-childrens-program .b-slider__title {
     font-size: 43px;
     margin: 0 0 19px; }
+    @media (max-width: 759px) {
+      .b-childrens-program .b-slider__title {
+        font-size: 28px;
+        line-height: 1.142;
+        margin: 0 0 15px; } }
   .b-childrens-program .b-slider__text {
     font-size: 19px;
     line-height: 1.39;
@@ -1207,6 +1234,11 @@ ol {
   .b-history .b-slider__title {
     font-size: 43px;
     margin: 0 0 19px; }
+    @media (max-width: 759px) {
+      .b-history .b-slider__title {
+        font-size: 28px;
+        line-height: 1.142;
+        margin: 0 0 15px; } }
   .b-history .b-slider__text {
     font-size: 19px;
     line-height: 1.39;
@@ -1217,6 +1249,11 @@ ol {
   .b-ready-villa .b-slider__title {
     font-size: 43px;
     margin: 0 0 19px; }
+    @media (max-width: 759px) {
+      .b-ready-villa .b-slider__title {
+        font-size: 28px;
+        line-height: 1.142;
+        margin: 0 0 15px; } }
   .b-ready-villa .b-slider__text {
     font-size: 19px;
     line-height: 1.39;
@@ -1252,8 +1289,8 @@ ol {
     padding: 0 0 13px; }
     @media (max-width: 759px) {
       .b-how-to-get__title {
-        font-size: 35px;
-        line-height: 1.14285714;
+        font-size: 28px;
+        line-height: 1.142;
         margin: 0 0 6px; } }
   .b-how-to-get__text {
     font-family: "Gotham Pro";
@@ -1266,8 +1303,6 @@ ol {
     @media (max-width: 759px) {
       .b-how-to-get__text {
         font-size: 16px;
-        padding-left: 16vw;
-        padding-right: 16vw;
         margin: 0 0 37px; } }
     @media (max-width: 759px) {
       .b-how-to-get__text br {
@@ -1364,6 +1399,11 @@ ol {
     font-style: normal;
     color: #000000;
     margin: 0 0 17px; }
+    @media (max-width: 759px) {
+      .b-commune-full__title {
+        font-size: 28px;
+        line-height: 1.142;
+        margin: 0 0 15px; } }
   .b-commune-full__descr {
     font-family: "Gotham Pro";
     font-size: 20px;
@@ -1434,7 +1474,7 @@ ol {
     margin: 0 0 21px; }
     @media (max-width: 759px) {
       .b-descr-page__title {
-        font-size: 25px; } }
+        font-size: 22px; } }
     @media (max-width: 1020px) {
       .b-descr-page__title br {
         display: none; } }
@@ -1461,13 +1501,12 @@ ol {
   line-height: 1.233;
   font-weight: 400;
   font-style: normal; }
-  @media (max-width: 759px) {
-    .b-department-store-color .b-slider-project__title {
-      font-family: "Merriweather";
-      font-size: 30px;
-      line-height: 1.233;
-      font-weight: 400;
-      font-style: normal; } }
+
+@media (max-width: 759px) and (max-width: 759px) {
+  .b-department-store-color .b-slider-project__title {
+    font-size: 28px;
+    line-height: 1.142;
+    margin: 0 0 15px; } }
 
 .b-town-in-forest .b-slider-project__title {
   font-family: "Merriweather";
@@ -1475,13 +1514,12 @@ ol {
   line-height: 1.233;
   font-weight: 400;
   font-style: normal; }
-  @media (max-width: 759px) {
-    .b-town-in-forest .b-slider-project__title {
-      font-family: "Merriweather";
-      font-size: 30px;
-      line-height: 1.233;
-      font-weight: 400;
-      font-style: normal; } }
+
+@media (max-width: 759px) and (max-width: 759px) {
+  .b-town-in-forest .b-slider-project__title {
+    font-size: 28px;
+    line-height: 1.142;
+    margin: 0 0 15px; } }
 
 .b-developer {
   text-align: center; }
@@ -1538,13 +1576,11 @@ ol {
     font-style: normal;
     color: #000000;
     margin: 0 0 35px; }
-    @media (max-width: 759px) {
-      .b-developer__title {
-        font-family: "Merriweather";
-        font-size: 30px;
-        line-height: 1.233;
-        font-weight: 400;
-        font-style: normal; } }
+
+@media (max-width: 759px) and (max-width: 759px) {
+  .b-developer__title {
+    font-size: 28px;
+    line-height: 1.142; } }
   .b-developer__img {
     display: block;
     width: 136px;
