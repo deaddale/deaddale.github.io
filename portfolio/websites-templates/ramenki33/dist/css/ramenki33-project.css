@@ -423,7 +423,7 @@ ol {
     font-weight: 400;
     font-style: normal;
     color: #000000;
-    margin: 0 0 5px; }
+    margin: 0 0 3px; }
   .b-header__tel {
     font-family: "PT Sans";
     font-size: 14px;
@@ -489,12 +489,9 @@ ol {
   margin: 0 0 0 -10px;
   width: calc(990px + 10px); }
 
-.b-tabs__nav-link-wrapper {
-  width: 220px;
-  margin: 0 10px; }
-
 .b-tabs__nav-link {
-  width: 100%;
+  width: 220px;
+  margin: 0 10px;
   cursor: pointer;
   padding: 12px 10px 16px 10px;
   transition: background 0.15s ease-in-out;
@@ -537,19 +534,17 @@ ol {
 
 .b-tabs__content-item {
   padding: 0 0 60px;
-  position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  display: flex;
+  display: none;
   justify-content: flex-start;
   align-items: flex-start;
   transition: all 0.5s ease; }
   .b-tabs__content-item_active {
     opacity: 1;
-    visibility: visible; }
+    visibility: visible;
+    display: flex; }
 
 .b-tabs__content-todo {
   margin: 3px 10px 0 0;
@@ -581,6 +576,24 @@ ol {
     width: 430px;
     margin: 0 50px 0 0; }
 
+.b-tabs__content-video-wrapper {
+  position: relative;
+  left: -48px; }
+
+.b-tabs__content-video {
+  left: 0;
+  top: 0;
+  width: 309px;
+  height: 375.78px;
+  z-index: 101;
+  position: absolute; }
+  .b-tabs__content-video iframe {
+    width: 100% !important;
+    height: 100% !important; }
+  .b-tabs__content-video .b-tabs__content-special-img-title {
+    position: relative;
+    left: 48px; }
+
 .b-tabs__content-title {
   font-family: "PT Sans";
   font-size: 18px;
@@ -604,6 +617,9 @@ ol {
 
 .b-tabs__selection {
   color: #346499; }
+
+.b-tabs__nowrap {
+  white-space: nowrap; }
 
 .b-tabs__content-link {
   font-family: "PT Sans";
