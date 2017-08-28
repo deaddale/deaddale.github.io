@@ -1372,18 +1372,20 @@ ol {
   width: 600px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 19px;
-  padding-bottom: 29px;
   background: #f9f9f9; }
 
 .b-comments-full__header {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 25px;
-  margin: 0 0 17px; }
+  margin-bottom: 17px; }
 
 .b-comments-full__title {
   font-family: "PT Sans";
@@ -1411,6 +1413,15 @@ ol {
 .b-comments-full__header-number {
   color: #666666;
   font-weight: 400; }
+
+.b-comments-full__content {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  height: 285px; }
 
 .b-comments-full__item {
   padding: 0 0 0 32px;
@@ -1656,75 +1667,75 @@ ol {
     .b-back-to-present:hover .b-back-to-comments__link:before {
       opacity: 0.75; }
 
-.b-comments-list__container {
+.b-comments-list {
+  position: relative;
+  height: 570px;
   width: 600px;
   margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 19px;
-  padding-bottom: 29px;
-  background: #f9f9f9; }
-
-.b-comments-list__item {
-  padding: 0 0 0 32px;
-  position: relative;
-  margin: 0 0 19px; }
-  .b-comments-list__item:last-child {
-    margin-bottom: 0; }
-  .b-comments-list__item:before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 3px; }
-  .b-comments-list__item_second-lvl {
-    padding: 0 0 0 52px;
-    margin: 0 0 15px; }
-    .b-comments-list__item_second-lvl:before {
-      display: none; }
-
-.b-comments-list__item-header {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center; }
-
-.b-comments-list__name {
-  font-family: "PT Sans";
-  font-size: 14px;
-  line-height: 1.428;
-  font-weight: 700;
-  font-style: normal;
-  color: #333333;
-  margin: 0 5px 0 0; }
-
-.b-comments-list__date {
-  font-family: "PT Sans";
-  font-size: 14px;
-  line-height: 1.428;
-  font-weight: 400;
-  font-style: normal;
-  color: #999999; }
-
-.b-comments-list__text {
-  font-family: "PT Sans";
-  font-size: 14px;
-  line-height: 1.714;
-  font-weight: 400;
-  font-style: normal;
-  color: #333333; }
-
-.b-comments-list__link {
-  font-family: "PT Sans";
-  font-size: 14px;
-  line-height: 1.714;
-  font-weight: 400;
-  font-style: normal;
-  color: #275788;
-  text-decoration: underline;
-  transition: color 0.3s ease; }
-  .b-comments-list__link:hover {
-    color: #275788; }
+  margin-right: auto; }
+  .b-comments-list__container {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 19px;
+    padding-bottom: 29px;
+    background: #f9f9f9; }
+  .b-comments-list__item {
+    padding: 0 0 0 32px;
+    position: relative;
+    margin: 0 0 19px; }
+    .b-comments-list__item:last-child {
+      margin-bottom: 0; }
+    .b-comments-list__item:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 3px; }
+    .b-comments-list__item_second-lvl {
+      padding: 0 0 0 52px;
+      margin: 0 0 15px; }
+      .b-comments-list__item_second-lvl:before {
+        display: none; }
+  .b-comments-list__item-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+  .b-comments-list__name {
+    font-family: "PT Sans";
+    font-size: 14px;
+    line-height: 1.428;
+    font-weight: 700;
+    font-style: normal;
+    color: #333333;
+    margin: 0 5px 0 0; }
+  .b-comments-list__date {
+    font-family: "PT Sans";
+    font-size: 14px;
+    line-height: 1.428;
+    font-weight: 400;
+    font-style: normal;
+    color: #999999; }
+  .b-comments-list__text {
+    font-family: "PT Sans";
+    font-size: 14px;
+    line-height: 1.714;
+    font-weight: 400;
+    font-style: normal;
+    color: #333333; }
+  .b-comments-list__link {
+    font-family: "PT Sans";
+    font-size: 14px;
+    line-height: 1.714;
+    font-weight: 400;
+    font-style: normal;
+    color: #275788;
+    text-decoration: underline;
+    transition: color 0.3s ease; }
+    .b-comments-list__link:hover {
+      color: #275788; }
 
 .b-quality-slider__container {
   width: 600px;
@@ -1886,8 +1897,8 @@ ol {
   .b-comment-write__container_reply {
     background-color: transparent;
     padding: 0 0 0 0;
-    width: 100%;
-    margin: -9px 0 20px 0; }
+    width: calc(100% + 31px);
+    margin: 10px 0 25px -31px; }
 
 .b-comment-write__new-comment {
   display: flex;
@@ -1968,105 +1979,6 @@ ol {
       top: 50%;
       transform: translateX(-50%) translateY(-50%); }
 
-.b-comments-full__container {
-  width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 19px;
-  padding-bottom: 29px;
-  background: #f9f9f9; }
-
-.b-comments-full__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 25px;
-  margin: 0 0 17px; }
-
-.b-comments-full__title {
-  font-family: "PT Sans";
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 700;
-  font-style: normal;
-  color: #333333; }
-
-.b-comments-full__header-link {
-  font-family: "PT Sans";
-  font-size: 14px;
-  line-height: 1.428;
-  font-weight: 700;
-  font-style: normal;
-  color: #376ca3;
-  text-decoration: none;
-  transition: color 0.3s ease; }
-  .b-comments-full__header-link:hover {
-    color: #275788; }
-
-.b-comments-full__header-text {
-  text-decoration: underline; }
-
-.b-comments-full__header-number {
-  color: #666666;
-  font-weight: 400; }
-
-.b-comments-full__item {
-  padding: 0 0 0 32px;
-  position: relative;
-  margin: 0 0 19px; }
-  .b-comments-full__item:last-child {
-    margin-bottom: 0; }
-  .b-comments-full__item:before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 3px; }
-
-.b-comments-full__item-header {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center; }
-
-.b-comments-full__name {
-  font-family: "PT Sans";
-  font-size: 14px;
-  line-height: 1.428;
-  font-weight: 700;
-  font-style: normal;
-  color: #333333;
-  margin: 0 5px 0 0; }
-
-.b-comments-full__date {
-  font-family: "PT Sans";
-  font-size: 14px;
-  line-height: 1.428;
-  font-weight: 400;
-  font-style: normal;
-  color: #999999; }
-
-.b-comments-full__text {
-  font-family: "PT Sans";
-  font-size: 14px;
-  line-height: 1.714;
-  font-weight: 400;
-  font-style: normal;
-  color: #333333; }
-
-.b-comments-full__link {
-  font-family: "PT Sans";
-  font-size: 14px;
-  line-height: 1.714;
-  font-weight: 400;
-  font-style: normal;
-  color: #275788;
-  text-decoration: underline;
-  transition: color 0.3s ease; }
-  .b-comments-full__link:hover {
-    color: #275788; }
-
 .b-back-to-gift-selection__container {
   width: 600px;
   margin-left: auto;
@@ -2112,7 +2024,9 @@ ol {
   padding-right: 20px;
   background: #f9d942;
   padding-top: 30px;
-  padding-bottom: 6px; }
+  padding-bottom: 6px;
+  position: relative;
+  height: 570px; }
 
 .b-gift-list__list {
   display: flex;
@@ -2197,7 +2111,9 @@ ol {
   padding-right: 20px;
   background: #f8f8f8;
   padding-top: 30px;
-  padding-bottom: 6px; }
+  padding-bottom: 6px;
+  position: relative;
+  height: 570px; }
 
 .b-emotions-list__list {
   display: flex;
@@ -2236,5 +2152,140 @@ ol {
   color: #333333;
   text-align: center;
   width: 164px; }
+
+.b-ui-and-typo__container {
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: #f1f1f1; }
+
+.b-ui-and-typo__title {
+  font-family: "PT Sans";
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0 0 15px; }
+
+.b-ui-and-typo__content {
+  margin: 0 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  .b-ui-and-typo__content > * {
+    margin: 0 0 15px; }
+    .b-ui-and-typo__content > *:last-child {
+      margin-bottom: 0; }
+
+.ps {
+  -ms-touch-action: auto;
+  touch-action: auto;
+  overflow: hidden !important;
+  -ms-overflow-style: none; }
+
+@supports (-ms-overflow-style: none) {
+  .ps {
+    overflow: auto !important; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .ps {
+    overflow: auto !important; } }
+
+.ps.ps--active-x > .ps__scrollbar-x-rail,
+.ps.ps--active-y > .ps__scrollbar-y-rail {
+  display: block;
+  background-color: transparent; }
+
+.ps.ps--in-scrolling.ps--x > .ps__scrollbar-x-rail {
+  background-color: transparent;
+  opacity: 0.9; }
+  .ps.ps--in-scrolling.ps--x > .ps__scrollbar-x-rail > .ps__scrollbar-x {
+    background-color: #376ca3;
+    height: 11px; }
+
+.ps.ps--in-scrolling.ps--y > .ps__scrollbar-y-rail {
+  background-color: transparent;
+  opacity: 0.9; }
+  .ps.ps--in-scrolling.ps--y > .ps__scrollbar-y-rail > .ps__scrollbar-y {
+    background-color: #376ca3;
+    width: 5px; }
+
+.ps > .ps__scrollbar-x-rail {
+  display: none;
+  position: absolute;
+  /* please don't change 'position' */
+  opacity: 0;
+  transition: background-color .2s linear, opacity .2s linear;
+  bottom: 0px;
+  /* there must be 'bottom' for ps__scrollbar-x-rail */
+  height: 15px; }
+  .ps > .ps__scrollbar-x-rail > .ps__scrollbar-x {
+    position: absolute;
+    /* please don't change 'position' */
+    background-color: #376ca3;
+    transition: background-color .2s linear, height .2s linear, width .2s ease-in-out;
+    bottom: 2px;
+    /* there must be 'bottom' for ps__scrollbar-x */
+    height: 6px; }
+
+.ps > .ps__scrollbar-x-rail:hover > .ps__scrollbar-x, .ps > .ps__scrollbar-x-rail:active > .ps__scrollbar-x {
+  height: 11px; }
+
+.ps > .ps__scrollbar-y-rail {
+  display: none;
+  position: absolute;
+  /* please don't change 'position' */
+  opacity: 1;
+  transition: background-color .2s linear, opacity .2s linear;
+  right: 0;
+  /* there must be 'right' for ps__scrollbar-y-rail */
+  width: 5px; }
+  .ps > .ps__scrollbar-y-rail > .ps__scrollbar-y {
+    position: absolute;
+    /* please don't change 'position' */
+    background-color: #376ca3;
+    transition: background-color .2s linear, height .2s linear, width .2s ease-in-out;
+    right: 2px;
+    /* there must be 'right' for ps__scrollbar-y */
+    width: 5px; }
+
+.ps > .ps__scrollbar-y-rail:hover > .ps__scrollbar-y, .ps > .ps__scrollbar-y-rail:active > .ps__scrollbar-y {
+  width: 5px; }
+
+.ps:hover.ps--in-scrolling.ps--x > .ps__scrollbar-x-rail {
+  background-color: transparent;
+  opacity: 0.9; }
+  .ps:hover.ps--in-scrolling.ps--x > .ps__scrollbar-x-rail > .ps__scrollbar-x {
+    background-color: #376ca3;
+    height: 11px; }
+
+.ps:hover.ps--in-scrolling.ps--y > .ps__scrollbar-y-rail {
+  background-color: transparent;
+  opacity: 0.9; }
+  .ps:hover.ps--in-scrolling.ps--y > .ps__scrollbar-y-rail > .ps__scrollbar-y {
+    background-color: #376ca3;
+    width: 5px; }
+
+.ps:hover > .ps__scrollbar-x-rail,
+.ps:hover > .ps__scrollbar-y-rail {
+  opacity: 0.6; }
+
+.ps:hover > .ps__scrollbar-x-rail:hover {
+  background-color: transparent;
+  opacity: 0.9; }
+
+.ps:hover > .ps__scrollbar-x-rail:hover > .ps__scrollbar-x {
+  background-color: #376ca3; }
+
+.ps:hover > .ps__scrollbar-y-rail:hover {
+  background-color: transparent;
+  opacity: 0.9; }
+  .ps:hover > .ps__scrollbar-y-rail:hover > .ps__scrollbar-y {
+    background-color: #376ca3; }
 
 /*# sourceMappingURL=chrome-extension-project.css.map */
