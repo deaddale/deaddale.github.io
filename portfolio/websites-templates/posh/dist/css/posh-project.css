@@ -494,7 +494,8 @@ ol {
     padding: 5px 7px 6px;
     text-decoration: none;
     margin: 0 0 0 86px;
-    transition: all 0.3s ease; }
+    transition: all 0.3s ease;
+    animation: fadeIn 1s; }
     @media (max-width: 1020px) {
       .b-header__social {
         margin-left: 0; } }
@@ -531,6 +532,12 @@ ol {
     transition: all 0.3s ease; }
     .b-header__icon:hover {
       opacity: 0.7; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .b-header-index {
   padding: 22px 0;
@@ -1376,21 +1383,51 @@ ol {
     .b-commune-full {
       padding: 0 0 40px; } }
   .b-commune-full__container {
-    width: 100%;
-    max-width: 844px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center; }
+    align-items: center;
+    border-top: 1px #d4d4d4 solid;
+    padding-top: 63px;
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 88px;
+    padding-right: 88px; }
     @media (max-width: 759px) {
       .b-commune-full__container {
         padding-left: 15px;
         padding-right: 15px; } }
+    @media (max-width: 1020px) {
+      .b-commune-full__container {
+        width: 100%;
+        max-width: 735px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 32.5px;
+        padding-right: 32.5px;
+        padding-top: 46px;
+        padding-bottom: 57px; } }
+  @media (max-width: 1020px) and (max-width: 759px) {
+    .b-commune-full__container {
+      padding-left: 15px;
+      padding-right: 15px; } }
+    @media (max-width: 759px) {
+      .b-commune-full__container {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 30px;
+        padding-bottom: 32px; } }
+  @media (max-width: 759px) and (max-width: 759px) {
+    .b-commune-full__container {
+      padding-left: 35px;
+      padding-right: 35px; } }
   .b-commune-full__title {
     font-family: "Merriweather";
     font-size: 30px;

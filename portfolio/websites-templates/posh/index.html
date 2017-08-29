@@ -16,10 +16,11 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="skype-toolbar" content="skype-toolbar-parser-compatible">
 
-    <!-- FAVICONS (http://favicon-generator.org) -->
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" href="dist/img/icons/favicon.ico" type="image/x-icon">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="dist/css/posh-project.min.css">
+    <link rel="stylesheet" href="dist/css/posh-project.css">
 
 </head>
 
@@ -42,8 +43,8 @@
         <div class="b-commune-full__descr">Наша роль&nbsp;&mdash; инвестор и&nbsp;девелопер.<br>Переславль-Залесский. Жилье, фермы, рекреация.&nbsp;420&nbsp;га.</div>
         <div class="b-commune-full__text-selected">Стадия &mdash; девелопмент.</div>
         <a href="inner.html" class="b-commune-full__btn">Подробнее</a>
-        <a href="inner.html" class="b-commune-full__link" title="Дачная коммуна">
-            <img src="dist/img/example/commune.jpg" alt="Дачная коммуна" class="b-commune-full__img">
+        <a href="inner.html" class="b-commune-full__link">
+            <img src="dist/img/example/commune.jpg" alt="" class="b-commune-full__img">
         </a>
     </div>
 </div>
@@ -100,6 +101,22 @@
         <a href="https://www.facebook.com/poshvc/" target="_blank" class="b-footer__link">НОВОСТИ</a>
     </div>
 </div>
+    <nav class="b-nav" v-bind:class="{ 'b-nav_active': isActiveNav }">
+    <div class="b-nav__container">
+        <div class="b-nav__close" v-on:click="isActiveNav = !isActiveNav"></div>
+        <ul class="b-nav__list">
+            <li class="b-nav__item"><a href="#" class="b-nav__link" v-on:click="isActiveNav = !isActiveNav" v-scroll-to="{el: '.b-walk-to-resort', duration: 500, offset: -75}">Курорт</a></li>
+            <li class="b-nav__item"><a href="#" class="b-nav__link" v-on:click="isActiveNav = !isActiveNav" v-scroll-to="{el: '.b-childrens-program', duration: 500, offset: -75}">Дети</a></li>
+            <li class="b-nav__item"><a href="#" class="b-nav__link" v-on:click="isActiveNav = !isActiveNav" v-scroll-to="{el: '.b-healthy-lifestyle', duration: 500, offset: -75}">Здоровье</a></li>
+            <li class="b-nav__item"><a href="#" class="b-nav__link" v-on:click="isActiveNav = !isActiveNav" v-scroll-to="{el: '.b-ready-villa', duration: 500, offset: -75}">Дачи</a></li>
+        </ul>
+        <ul class="b-nav__list">
+            <li class="b-nav__item"><a href="#" class="b-nav__link" v-on:click="isActiveNav = !isActiveNav" v-scroll-to="{el: '.b-commune', duration: 500, offset: -75}">Где?</a></li>
+            <li class="b-nav__item"><a href="#" class="b-nav__link" v-on:click="isActiveNav = !isActiveNav" v-scroll-to="{el: '.b-my-work', duration: 500, offset: -75}">Участники</a></li>
+            <li class="b-nav__item"><a href="https://www.facebook.com/poshvc/" target="_blank" class="b-nav__link">Facebook</a></li>
+        </ul>
+    </div>
+</nav>
 </div>
 
 <script src="dist/js/posh-project-base.js"></script>
