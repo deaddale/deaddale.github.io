@@ -1,0 +1,6265 @@
+@charset "UTF-8";
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+ * ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *        IE on Windows Phone and in iOS. */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:600&subset=cyrillic,cyrillic-ext,latin-ext");
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+ * ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated). */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-. */
+article, aside, footer, header, nav, section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari. */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+ * ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE. */
+figcaption, figure, main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8. */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE. */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers. */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+ * ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+. */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6. */
+b, strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari. */
+b, strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers. */
+code, kbd, samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-. */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-. */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers. */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers. */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+ * ========================================================================== */
+/**
+ * Add the correct display in IE 9-. */
+audio, video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7. */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-. */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE. */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+ * ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari. */
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge. */
+button, input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox. */
+button, select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *        controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari. */
+button, html [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox. */
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule. */
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox. */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *        `fieldset` elements in all browsers. */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE. */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-. */
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome. */
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari. */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+  [type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS. */
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari. */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+ * ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox. */
+details, menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers. */
+summary {
+  display: list-item; }
+
+/* Scripting
+ * ========================================================================== */
+/**
+ * Add the correct display in IE 9-. */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE. */
+template, [hidden] {
+  display: none; }
+
+/* Hidden
+ * ========================================================================== */
+/**
+ * Add the correct display in IE 10-. */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  background-color: #ffffff; }
+  body *::selection {
+    background-color: #1d8f7f;
+    color: #ffffff; }
+  body *::-moz-selection {
+    background-color: #1d8f7f;
+    color: #ffffff; }
+
+@font-face {
+  font-family: 'Elektra-Light-Pro';
+  src: url("../fonts/Elektra-Light-Pro-Bold-Italic.eot");
+  src: url("../fonts/Elektra-Light-Pro-Bold-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Elektra-Light-Pro-Bold-Italic.woff2") format("woff2"), url("../fonts/Elektra-Light-Pro-Bold-Italic.woff") format("woff"), url("../fonts/Elektra-Light-Pro-Bold-Italic.ttf") format("truetype"), url("../fonts/Elektra-Light-Pro-Bold-Italic.otf") format("opentype"), url("../fonts/Elektra-Light-Pro-Bold-Italic.svg#Elektra-Light-Pro-Bold-Italic") format("svg");
+    src-font-weight: 100;
+    src-font-style: italic;
+    src-font-stretch: normal;
+    src-unicode-range: U+0020-FB04; }
+
+@font-face {
+  font-family: 'Elektra-Light-Pro';
+  src: url("../fonts/Elektra-Light-Pro-Bold.eot");
+  src: url("../fonts/Elektra-Light-Pro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Elektra-Light-Pro-Bold.woff2") format("woff2"), url("../fonts/Elektra-Light-Pro-Bold.woff") format("woff"), url("../fonts/Elektra-Light-Pro-Bold.ttf") format("truetype"), url("../fonts/Elektra-Light-Pro-Bold.otf") format("opentype"), url("../fonts/Elektra-Light-Pro-Bold.svg#Elektra-Light-Pro-Bold") format("svg");
+    src-font-weight: 700;
+    src-font-style: normal;
+    src-font-stretch: normal;
+    src-unicode-range: U+0020-FB04; }
+
+@font-face {
+  font-family: 'Elektra-Light-Pro';
+  src: url("../fonts/Elektra-Light-Pro-Italic.eot");
+  src: url("../fonts/Elektra-Light-Pro-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Elektra-Light-Pro-Italic.woff2") format("woff2"), url("../fonts/Elektra-Light-Pro-Italic.woff") format("woff"), url("../fonts/Elektra-Light-Pro-Italic.ttf") format("truetype"), url("../fonts/Elektra-Light-Pro-Italic.otf") format("opentype"), url("../fonts/Elektra-Light-Pro-Italic.svg#Elektra-Light-Pro-Italic") format("svg");
+    src-font-weight: 400;
+    src-font-style: italic;
+    src-font-stretch: normal;
+    src-unicode-range: U+0020-FB04; }
+
+@font-face {
+  font-family: 'Elektra-Light-Pro';
+  src: url("../fonts/Elektra-Light-Pro.eot");
+  src: url("../fonts/Elektra-Light-Pro.eot?#iefix") format("embedded-opentype"), url("../fonts/Elektra-Light-Pro.woff2") format("woff2"), url("../fonts/Elektra-Light-Pro.woff") format("woff"), url("../fonts/Elektra-Light-Pro.ttf") format("truetype"), url("../fonts/Elektra-Light-Pro.otf") format("opentype"), url("../fonts/Elektra-Light-Pro.svg#Elektra-Light-Pro") format("svg");
+    src-font-weight: 400;
+    src-font-style: normal;
+    src-font-stretch: normal;
+    src-unicode-range: U+0020-FB04; }
+
+html {
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: "Elektra-Light-Pro";
+  font-size: 18px;
+  line-height: 1.444;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+  text-rendering: optimizeLegibility;
+  -webkit-text-rendering: optimizeLegibility; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin: 0;
+  padding: 0; }
+  p b {
+    font-weight: bold; }
+  p i {
+    font-style: italic; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    margin: 0;
+    padding: 0; }
+
+ol {
+  margin: 0;
+  padding: 0; }
+  ol li {
+    margin: 0;
+    padding: 0; }
+
+.b-nav {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 35px 0;
+  z-index: 7;
+  transition: box-shadow 0.3s ease, background 0.2s ease, padding 0.2s ease; }
+  .b-nav_active {
+    padding: 24.5px 0; }
+  .b-nav_bg-color {
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(223, 223, 223, 0.57); }
+  .b-nav__container {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media (max-width: 1085px) {
+      .b-nav__container {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-nav__container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .b-nav__logo {
+    width: 127px;
+    height: 51px;
+    background: url(../img/icons/icon-logo.svg) 0 0 no-repeat;
+    background-size: cover;
+    margin: 0 0 0 -21px;
+    position: relative;
+    opacity: 1;
+    transition: all 0.3s ease; }
+    @media (max-width: 1085px) {
+      .b-nav__logo {
+        margin: 0 0 0 0; } }
+    .b-nav__logo:hover {
+      opacity: 0.7; }
+  .b-nav__phone {
+    font-family: "Open Sans";
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 600;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 0 auto; }
+    @media (max-width: 760px) {
+      .b-nav__phone {
+        display: none; } }
+    .b-nav_active .b-nav__phone {
+      display: none; }
+  .b-nav__burger {
+    width: 28px;
+    height: 17px;
+    position: relative;
+    cursor: pointer;
+    margin: 0 0 0 30px;
+    display: block;
+    z-index: 7; }
+    .b-nav__burger_active {
+      position: absolute;
+      right: 60px;
+      top: 52px; }
+      @media (max-width: 760px) {
+        .b-nav__burger_active {
+          right: 20px;
+          top: 49px; } }
+  .b-nav__burger-line {
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000000;
+    transition: background-color 0.35s, transform 0.175s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.175s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateY(0) translateZ(0); }
+    .b-nav__burger:hover .b-nav__burger-line {
+      background: #ff1a30; }
+    .b-nav__burger-line_1 {
+      top: 0; }
+      .b-nav__burger_active .b-nav__burger-line_1 {
+        transform: translateY(7px) rotate(45deg); }
+    .b-nav__burger-line_2 {
+      top: 7px; }
+      .b-nav__burger_active .b-nav__burger-line_2 {
+        opacity: 0; }
+    .b-nav__burger-line_3 {
+      top: 14px; }
+      .b-nav__burger_active .b-nav__burger-line_3 {
+        transform: translateY(-7px) rotate(-45deg); }
+  .b-nav__list-scrolled {
+    display: none;
+    z-index: 6;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 0;
+    border-bottom: 0;
+    position: fixed;
+    top: 0;
+    background: none;
+    width: 765px; }
+    .b-nav__list-scrolled_active {
+      display: block; }
+    @media (max-width: 1085px) {
+      .b-nav__list-scrolled {
+        max-width: 480px; } }
+    @media (max-width: 760px) {
+      .b-nav__list-scrolled {
+        display: none !important; } }
+  .b-nav__list-scrolled-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto; }
+  .b-nav__list-scrolled-item {
+    width: 25%;
+    font-family: "Elektra Light Pro";
+    font-size: 16px;
+    line-height: 1.125;
+    font-weight: 400;
+    font-style: normal;
+    height: 100px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease; }
+    @media (max-width: 1085px) {
+      .b-nav__list-scrolled-item {
+        font-family: "Elektra Light Pro";
+        font-size: 0;
+        line-height: 1;
+        font-weight: 400;
+        font-style: normal;
+        text-indent: -9999px; } }
+    .b-nav__list-scrolled-item:before {
+      content: '';
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0 0 15px;
+      display: none;
+      transition: all 0.3s ease; }
+      @media (max-width: 1085px) {
+        .b-nav__list-scrolled-item:before {
+          display: block;
+          margin-bottom: 0; } }
+      .b-nav__list-scrolled_active .b-nav__list-scrolled-item:before {
+        visibility: hidden;
+        opacity: 0;
+        margin: 0 0 0 0; }
+        @media (max-width: 1085px) {
+          .b-nav__list-scrolled_active .b-nav__list-scrolled-item:before {
+            visibility: visible;
+            opacity: 1; } }
+    .b-nav__list-scrolled-item_active {
+      color: #01a68f; }
+      .b-nav__list-scrolled_active .b-nav__list-scrolled-item_active {
+        color: #000000; }
+      .b-nav__list-scrolled_active .b-nav__list-scrolled-item_active {
+        color: #158e7d; }
+      .b-nav__list-scrolled-item_active.b-nav__list-scrolled-item_1:before {
+        background-image: url(../img/icons/icon-country-houses-green.svg); }
+      .b-nav__list-scrolled-item_active.b-nav__list-scrolled-item_2:before {
+        background-image: url(../img/icons/icon-public-buildings-green.svg); }
+      .b-nav__list-scrolled-item_active.b-nav__list-scrolled-item_3:before {
+        background-image: url(../img/icons/icon-modular-structures-green.svg); }
+      .b-nav__list-scrolled-item_active.b-nav__list-scrolled-item_4:before {
+        background-image: url(../img/icons/icon-large-span-constructions-green.svg); }
+    .b-nav__list-scrolled-item:hover {
+      color: #01a68f; }
+      .b-nav__list-scrolled-item:hover.b-nav__list-scrolled-item_1:before {
+        background-image: url(../img/icons/icon-country-houses-green.svg); }
+      .b-nav__list-scrolled-item:hover.b-nav__list-scrolled-item_2:before {
+        background-image: url(../img/icons/icon-public-buildings-green.svg); }
+      .b-nav__list-scrolled-item:hover.b-nav__list-scrolled-item_3:before {
+        background-image: url(../img/icons/icon-modular-structures-green.svg); }
+      .b-nav__list-scrolled-item:hover.b-nav__list-scrolled-item_4:before {
+        background-image: url(../img/icons/icon-large-span-constructions-green.svg); }
+    .b-nav__list-scrolled-item_1:before {
+      background-image: url(../img/icons/icon-country-houses-black.svg);
+      width: 34px;
+      height: 28px; }
+    .b-nav__list-scrolled-item_2:before {
+      background-image: url(../img/icons/icon-public-buildings-black.svg);
+      width: 34px;
+      height: 32px; }
+    .b-nav__list-scrolled-item_3:before {
+      background-image: url(../img/icons/icon-modular-structures-black.svg);
+      width: 44px;
+      height: 27px; }
+    .b-nav__list-scrolled-item_4:before {
+      background-image: url(../img/icons/icon-large-span-constructions-black.svg);
+      width: 38px;
+      height: 29px; }
+  .b-nav__list {
+    border-top: 1px #dcdcdc solid;
+    border-bottom: 1px #dcdcdc solid;
+    position: absolute;
+    z-index: 6;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(100% - 142px);
+    width: 100%;
+    background: #ffffff; }
+    @media (max-width: 760px) {
+      .b-nav__list {
+        display: none !important; } }
+    .b-nav__list_active {
+      display: noneq; }
+  .b-nav__list-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto; }
+  .b-nav__progress-bar {
+    margin: 0;
+    padding: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #1d8f7f;
+    position: absolute;
+    left: 0;
+    top: -4px;
+    animation-name: animateProgressBar1;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; }
+    .b-nav__progress-bar_first {
+      animation-name: animateProgressBar1;
+      animation-duration: 20s;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
+    .b-nav__progress-bar_second {
+      animation-name: animateProgressBar2;
+      animation-duration: 15s;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
+    .b-nav__progress-bar_third {
+      animation-name: animateProgressBar3;
+      animation-duration: 10s;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
+    .b-nav__progress-bar_fourth {
+      animation-name: animateProgressBar4;
+      animation-duration: 5s;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
+    .b-nav_active .b-nav__progress-bar {
+      display: none; }
+
+@keyframes animateProgressBar1 {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+
+@keyframes animateProgressBar2 {
+  0% {
+    width: 25%; }
+  100% {
+    width: 100%; } }
+
+@keyframes animateProgressBar3 {
+  0% {
+    width: 50%; }
+  100% {
+    width: 100%; } }
+
+@keyframes animateProgressBar4 {
+  0% {
+    width: 75%; }
+  100% {
+    width: 100%; } }
+  .b-nav__item {
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1.1666;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    width: 25%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease; }
+    .b-nav__list_active .b-nav__item {
+      font-family: "Elektra Light Pro";
+      font-size: 16px;
+      line-height: 1.125;
+      font-weight: 400;
+      font-style: normal;
+      height: 100px; }
+      @media (max-width: 1085px) {
+        .b-nav__list_active .b-nav__item {
+          font-size: 14px;
+          line-height: 1.2; } }
+    .b-nav__item:before {
+      content: '';
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      display: block;
+      background-size: cover;
+      margin: 0 0 15px;
+      visibility: visible;
+      opacity: 1;
+      transition: all 0.3s ease; }
+      .b-nav__list_active .b-nav__item:before {
+        visibility: hidden;
+        opacity: 0;
+        margin: 0 0 0 0;
+        width: 0px;
+        height: 0px; }
+    .b-nav__item_active {
+      color: #01a68f; }
+      .b-nav__list_active .b-nav__item_active {
+        color: #000000; }
+      .b-nav__list_active .b-nav__item_active {
+        color: #158e7d; }
+      .b-nav__item_active.b-nav__item_1:before {
+        background-image: url(../img/icons/icon-country-houses-green.svg); }
+      .b-nav__item_active.b-nav__item_2:before {
+        background-image: url(../img/icons/icon-public-buildings-green.svg); }
+      .b-nav__item_active.b-nav__item_3:before {
+        background-image: url(../img/icons/icon-modular-structures-green.svg); }
+      .b-nav__item_active.b-nav__item_4:before {
+        background-image: url(../img/icons/icon-large-span-constructions-green.svg); }
+    .b-nav__item:hover {
+      color: #01a68f; }
+      .b-nav__item:hover.b-nav__item_1:before {
+        background-image: url(../img/icons/icon-country-houses-green.svg); }
+      .b-nav__item:hover.b-nav__item_2:before {
+        background-image: url(../img/icons/icon-public-buildings-green.svg); }
+      .b-nav__item:hover.b-nav__item_3:before {
+        background-image: url(../img/icons/icon-modular-structures-green.svg); }
+      .b-nav__item:hover.b-nav__item_4:before {
+        background-image: url(../img/icons/icon-large-span-constructions-green.svg); }
+    .b-nav__item_1 {
+      border-right: 1px #dcdcdc solid; }
+      .b-nav__list_active .b-nav__item_1 {
+        border-right: none; }
+      .b-nav__item_1:before {
+        background-image: url(../img/icons/icon-country-houses-black.svg);
+        width: 34px;
+        height: 28px; }
+    .b-nav__item_2 {
+      border-right: 1px #dcdcdc solid; }
+      .b-nav__list_active .b-nav__item_2 {
+        border-right: none; }
+      .b-nav__item_2:before {
+        background-image: url(../img/icons/icon-public-buildings-black.svg);
+        width: 34px;
+        height: 32px; }
+    .b-nav__item_3 {
+      border-right: 1px #dcdcdc solid; }
+      .b-nav__list_active .b-nav__item_3 {
+        border-right: none; }
+      .b-nav__item_3:before {
+        background-image: url(../img/icons/icon-modular-structures-black.svg);
+        width: 44px;
+        height: 27px; }
+    .b-nav__item_4:before {
+      background-image: url(../img/icons/icon-large-span-constructions-black.svg);
+      width: 38px;
+      height: 29px; }
+  .b-nav__add-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.2s ease-in; }
+    .b-nav__add-menu_active {
+      display: block;
+      visibility: visible;
+      opacity: 1;
+      z-index: 9; }
+    .b-nav__add-menu-wrapper {
+      background: #ffffff;
+      height: 100vh;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 9;
+      transform: translateX(100%);
+      transition: all 0.5s ease; }
+      .b-nav__add-menu_active .b-nav__add-menu-wrapper {
+        transform: translateX(0%);
+        transition: all 0.3s ease; }
+      @media (max-width: 760px) {
+        .b-nav__add-menu-wrapper {
+          width: 100%;
+          padding: 28px; } }
+    .b-nav__add-menu .b-nav__burger {
+      opacity: 0;
+      transition: all 0.8s ease-in-out; }
+      .b-nav__add-menu .b-nav__burger.b-nav__burger_active {
+        opacity: 1; }
+    .b-nav__add-menu-list {
+      display: block;
+      padding: 0 0 54px;
+      margin: 0 0 50px 0;
+      list-style: none;
+      position: relative; }
+      @media (max-width: 1085px) {
+        .b-nav__add-menu-list {
+          padding: 0 0 33px;
+          margin: 0 0 26px 0; } }
+      @media (max-width: 760px) {
+        .b-nav__add-menu-list {
+          width: 100%; } }
+      .b-nav__add-menu-list_mobile {
+        display: none;
+        padding: 0 0 0 0;
+        margin: 0 0 15px 0; }
+        @media (max-width: 1085px) {
+          .b-nav__add-menu-list_mobile {
+            display: block; } }
+        .b-nav__add-menu-list_mobile:after {
+          display: none !important; }
+      .b-nav__add-menu-list:after {
+        content: '';
+        display: block;
+        background: #ed4f4b;
+        width: 197px;
+        height: 2px;
+        position: absolute;
+        top: auto;
+        left: 0;
+        bottom: 0; }
+        @media (max-width: 760px) {
+          .b-nav__add-menu-list:after {
+            width: 100%; } }
+    .b-nav__add-menu-item {
+      margin: 0 0 15px;
+      padding: 0; }
+      .b-nav__add-menu-item:last-child {
+        margin-bottom: 0; }
+      .b-nav__add-menu-item-text {
+        font-family: "Elektra Light Pro";
+        font-size: 25px;
+        line-height: 1;
+        font-weight: bold;
+        font-style: normal;
+        color: #000000;
+        display: inline-block;
+        cursor: pointer;
+        border-bottom: 1px transparent solid;
+        transition: color 0.3s ease; }
+        @media (max-width: 1085px) {
+          .b-nav__add-menu-item-text {
+            font-family: "Elektra Light Pro";
+            font-size: 18px;
+            line-height: 1;
+            font-weight: 700;
+            font-style: normal;
+            border-bottom: none; } }
+        .b-nav__add-menu-item-text:hover {
+          color: #ed4f4b;
+          border-bottom: 1px #ed4f4b solid; }
+          @media (max-width: 1085px) {
+            .b-nav__add-menu-item-text:hover {
+              border-bottom: none;
+              text-decoration: underline; } }
+        .b-nav__add-menu-item-text_decoration-none {
+          text-decoration: none; }
+          .b-nav__add-menu-item-text_decoration-none:hover {
+            border-bottom: none; }
+      .b-nav__add-menu-item-text-underline {
+        font-style: normal; }
+        .b-nav__add-menu-item-text:hover .b-nav__add-menu-item-text-underline {
+          text-decoration: underline; }
+    .b-nav__add-menu-contacts-item {
+      margin: 0 0 30px; }
+    .b-nav__add-menu-title {
+      font-family: "Elektra Light Pro";
+      font-size: 25px;
+      line-height: 1.4;
+      font-weight: bold;
+      font-style: normal;
+      color: #000000;
+      margin: 0 0 2px; }
+      @media (max-width: 1085px) {
+        .b-nav__add-menu-title {
+          font-family: "Elektra Light Pro";
+          font-size: 18px;
+          line-height: 1.94;
+          font-weight: bold;
+          font-style: normal; } }
+    .b-nav__add-menu-address {
+      font-family: "Elektra Light Pro";
+      font-size: 16px;
+      line-height: 1.5;
+      font-weight: 400;
+      font-style: normal;
+      color: #000000; }
+      @media (max-width: 1085px) {
+        .b-nav__add-menu-address {
+          font-family: "Elektra Light Pro";
+          font-size: 16px;
+          line-height: 1.5;
+          font-weight: 400;
+          font-style: normal; } }
+    .b-nav__add-menu-overlay {
+      background: rgba(0, 0, 0, 0.65);
+      width: 100%;
+      height: 100vh;
+      opacity: 0;
+      visibility: hidden;
+      cursor: pointer;
+      transition: all 0.1s ease; }
+      .b-nav__add-menu_active .b-nav__add-menu-overlay {
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.35s ease; }
+
+.b-cover {
+  position: relative;
+  height: 100vh;
+  overflow: hidden; }
+  .b-cover__container {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px; }
+    @media (max-width: 1085px) {
+      .b-cover__container {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-cover__container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .b-cover__slider .slick-dots {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; }
+    @media (max-width: 1085px) {
+      .b-cover__slider .slick-dots {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-cover__slider .slick-dots {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media (max-width: 1085px) {
+      .b-cover__slider .slick-dots {
+        top: auto;
+        bottom: 190px;
+        transform: translateX(-50%) translateY(0);
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; } }
+    @media (max-width: 760px) {
+      .b-cover__slider .slick-dots {
+        top: auto;
+        bottom: 10%; } }
+    .b-cover__slider .slick-dots li {
+      cursor: pointer;
+      margin: 0 0 5px;
+      padding: 0;
+      text-indent: -9999px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #ffffff;
+      transition: background 0.2s ease; }
+      @media (max-width: 1085px) {
+        .b-cover__slider .slick-dots li {
+          margin: 0 5px 0 0; } }
+      .b-cover__slider .slick-dots li:last-child {
+        margin-bottom: 0; }
+        @media (max-width: 1085px) {
+          .b-cover__slider .slick-dots li:last-child {
+            margin: 0 0 0 0; } }
+      .b-cover__slider .slick-dots li.slick-active {
+        background: #009780;
+        cursor: default; }
+  .b-cover__slide {
+    padding: 37vh 0 31vh;
+    position: relative; }
+    @media (max-width: 1085px) {
+      .b-cover__slide {
+        padding: 39vh 0 31vh; } }
+  .b-cover__title {
+    position: relative;
+    z-index: 2;
+    font-family: "Elektra Light Pro";
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 7px; }
+    @media (max-width: 760px) {
+      .b-cover__title {
+        font-size: 45px; } }
+  .b-cover__descr {
+    position: relative;
+    z-index: 2;
+    font-family: "Elektra Light Pro";
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 19px; }
+    @media (max-width: 1085px) {
+      .b-cover__descr {
+        line-height: 1.2; } }
+    @media (max-width: 760px) {
+      .b-cover__descr {
+        font-size: 35px;
+        line-height: 1.02857143; } }
+  .b-cover__btn {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    transition: all 0.2s ease;
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1;
+    font-weight: bold;
+    font-style: normal;
+    position: relative;
+    z-index: 2;
+    background: #ed4f4b;
+    color: #ffffff;
+    padding: 17px 50px;
+    transition: all 0.15s ease-in; }
+    .b-cover__btn:hover {
+      background: #ff6f6b;
+      color: #ffffff; }
+    .b-cover__btn:active {
+      background: #e83f3a;
+      box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.31); }
+  .b-cover__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0; }
+
+.b-house-projects {
+  padding: 55px 0 0;
+  overflow: hidden; }
+  @media (max-width: 1085px) {
+    .b-house-projects {
+      padding: 40px 0 0; } }
+  @media (max-width: 760px) {
+    .b-house-projects {
+      padding: 23px 0 0; } }
+  .b-house-projects__container {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 43px; }
+    @media (max-width: 1085px) {
+      .b-house-projects__container {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-house-projects__container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media (max-width: 1085px) {
+      .b-house-projects__container {
+        margin-bottom: 26px; } }
+  .b-house-projects__title {
+    font-family: "Elektra Light Pro";
+    font-size: 60px;
+    line-height: 1;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 22px; }
+    @media (max-width: 1085px) {
+      .b-house-projects__title {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 0 19px; } }
+    @media (max-width: 760px) {
+      .b-house-projects__title {
+        font-size: 45px;
+        line-height: 1.022;
+        margin: 0 0 2px; } }
+  .b-house-projects__descr {
+    font-family: "Elektra Light Pro";
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    width: 100%; }
+    @media (max-width: 760px) {
+      .b-house-projects__descr {
+        font-size: 20px;
+        line-height: 1.25; } }
+  .b-house-projects__btn {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    transition: all 0.2s ease;
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    color: #ed4f4b;
+    border-radius: 2px;
+    border: 1px solid #ed4f4b;
+    padding: 7px 10px 6px;
+    background-color: transparent;
+    transition: all 0.15s ease-in;
+    margin: 16px 0 0 0; }
+    @media (max-width: 1085px) {
+      .b-house-projects__btn {
+        margin: 13px 0 26px 0; } }
+    @media (max-width: 760px) {
+      .b-house-projects__btn {
+        margin: 13px 0 19px 0; } }
+    .b-house-projects__btn:hover {
+      background: #ff6f6b;
+      color: #ffffff;
+      border: 1px solid #ff6f6b; }
+    .b-house-projects__btn:active {
+      background: #e83f3a;
+      box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.31); }
+  .b-house-projects__selected {
+    font-family: "Elektra Light Pro";
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: italic;
+    color: #168e7d; }
+    @media (max-width: 760px) {
+      .b-house-projects__selected {
+        font-size: 20px; } }
+  .b-house-projects__sliders-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    height: 500px; }
+    @media (max-width: 760px) {
+      .b-house-projects__sliders-wrapper {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 615px;
+        overflow: hidden; } }
+    .b-house-projects__sliders-wrapper:after {
+      content: '';
+      width: 100%;
+      height: 63.5814889%;
+      background-color: #000000;
+      opacity: 0.2;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1; }
+      @media (max-width: 760px) {
+        .b-house-projects__sliders-wrapper:after {
+          display: none; } }
+  .b-house-projects__left-col {
+    width: 100%;
+    height: 500px;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0; }
+    @media (max-width: 760px) {
+      .b-house-projects__left-col {
+        height: 570px;
+        position: relative; } }
+    .b-house-projects__left-col:before {
+      content: '';
+      display: block;
+      width: 61.75vw;
+      height: 500px;
+      background: #009882;
+      background: linear-gradient(to bottom, #007968 0%, #00806e 18%, #00927c 39%, #009680 50%, #009882 100%);
+      -webkit-clip-path: polygon(0 0, 100% 0%, 84% 100%, 0% 100%);
+      -moz-clip-path: polygon(0 0, 100% 0%, 84% 100%, 0% 100%);
+      -ms-clip-path: polygon(0 0, 100% 0%, 84% 100%, 0% 100%);
+      -o-clip-path: polygon(0 0, 100% 0%, 84% 100%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0%, 84% 100%, 0% 100%); }
+      @media (max-width: 1085px) {
+        .b-house-projects__left-col:before {
+          width: 51vw; } }
+      @media (max-width: 760px) {
+        .b-house-projects__left-col:before {
+          display: none; } }
+  .b-house-projects__left-col-inner-wrapper {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    padding-top: 43px; }
+    @media (max-width: 1085px) {
+      .b-house-projects__left-col-inner-wrapper {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-house-projects__left-col-inner-wrapper {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media (max-width: 760px) {
+      .b-house-projects__left-col-inner-wrapper {
+        position: relative;
+        left: 0;
+        transform: translateX(0%);
+        padding-top: 0; } }
+  .b-house-projects__right-col {
+    width: 50vw;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    @media (max-width: 1085px) {
+      .b-house-projects__right-col {
+        width: 56vw; } }
+    @media (max-width: 760px) {
+      .b-house-projects__right-col {
+        width: 100%;
+        position: absolute;
+        height: 340px;
+        top: 52px;
+        left: 0;
+        overflow: hidden; } }
+  .b-house-projects__category {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease; }
+    .b-house-projects__category_active {
+      opacity: 1;
+      visibility: visible; }
+  .b-house-projects__area {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 117px; }
+    @media (max-width: 1085px) {
+      .b-house-projects__area {
+        flex-wrap: wrap;
+        width: 50%;
+        margin-bottom: 40px; } }
+    @media (max-width: 760px) {
+      .b-house-projects__area {
+        padding: 11px 20px 2px;
+        margin-bottom: 0;
+        position: absolute;
+        width: 100vw;
+        left: 0;
+        right: 0;
+        top: 0;
+        background: #009882;
+        background: linear-gradient(to bottom, #007968 0%, #00806e 18%, #00927c 39%, #009680 50%, #009882 100%); } }
+  .b-house-projects__area-item {
+    text-align: center;
+    padding: 9px 10px 4px;
+    margin: 0 22px 0 0;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease; }
+    @media (max-width: 1085px) {
+      .b-house-projects__area-item {
+        margin-bottom: 10px; } }
+    @media (max-width: 760px) {
+      .b-house-projects__area-item {
+        margin-bottom: 8px; } }
+    .b-house-projects__area-item:last-child {
+      margin-right: 0; }
+    .b-house-projects__area-item_active {
+      background-color: rgba(255, 255, 255, 0.6);
+      box-shadow: inset 0 1px 4px rgba(63, 63, 63, 0.65);
+      border-radius: 2px;
+      cursor: default; }
+  @media (max-width: 760px) {
+    .b-house-projects__area-info {
+      position: absolute;
+      top: 380px;
+      width: 100%;
+      background: #11907f;
+      left: 0;
+      right: 0;
+      padding: 25px 20px 50px 20px; } }
+  .b-house-projects__area-item-text {
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    position: relative;
+    transition: all 0.2s ease; }
+    .b-house-projects__area-item:hover .b-house-projects__area-item-text {
+      opacity: 0.9; }
+    .b-house-projects__area-item-text:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      border-bottom: 2px rgba(255, 255, 255, 0.5) dashed;
+      position: absolute;
+      left: 0;
+      bottom: -1px; }
+    .b-house-projects__area-item_active .b-house-projects__area-item-text {
+      font-weight: 400;
+      color: #000000;
+      border-bottom: none; }
+      .b-house-projects__area-item_active .b-house-projects__area-item-text:after {
+        display: none; }
+  .b-house-projects__area-current {
+    font-family: "Elektra Light Pro";
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    margin: 0 0 10px; }
+    @media (max-width: 760px) {
+      .b-house-projects__area-current {
+        font-size: 20px; } }
+  .b-house-projects__area-title {
+    font-family: "Elektra Light Pro";
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    margin: 0 0 15px;
+    display: none; }
+    @media (max-width: 1085px) {
+      .b-house-projects__area-title {
+        padding-right: 50%;
+        font-size: 39px; } }
+    @media (max-width: 760px) {
+      .b-house-projects__area-title {
+        font-size: 35px;
+        line-height: 1.02;
+        padding-right: 0; } }
+    @media (max-width: 480px) {
+      .b-house-projects__area-title {
+        font-size: 20px; } }
+    .b-house-projects__area-title_active {
+      display: block; }
+  .b-house-projects__area-btn {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    transition: all 0.2s ease;
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    background-color: #ed4f4b;
+    padding: 17px 36px 16px;
+    margin: 0 0 95px;
+    transition: all 0.15s ease-in;
+    display: none; }
+    @media (max-width: 1085px) {
+      .b-house-projects__area-btn {
+        margin-bottom: 65px; } }
+    @media (max-width: 760px) {
+      .b-house-projects__area-btn {
+        margin-bottom: 28px; } }
+    .b-house-projects__area-btn:hover {
+      background: #ff6f6b;
+      color: #ffffff; }
+    .b-house-projects__area-btn:active {
+      background: #e83f3a;
+      box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.31); }
+    .b-house-projects__area-btn_active {
+      display: inline-block; }
+  .b-house-projects__controls {
+    position: relative;
+    width: 100%;
+    max-width: 505px;
+    margin: 0 0 0 -20px; }
+    @media (max-width: 1085px) {
+      .b-house-projects__controls {
+        max-width: 240px;
+        margin-left: 0; } }
+    @media (max-width: 760px) {
+      .b-house-projects__controls {
+        max-width: 100%; } }
+  .b-house-projects__control-item {
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    transition: all 0.2s ease; }
+    @media (max-width: 1085px) {
+      .b-house-projects__control-item {
+        font-size: 0; } }
+    .b-house-projects__control-item:active {
+      outline: none;
+      background-color: transparent;
+      border: none; }
+    .b-house-projects__control-item_invisible {
+      display: none; }
+    .b-house-projects__control-item:hover {
+      color: rgba(255, 255, 255, 0.8); }
+    .b-house-projects__control-item-icon {
+      display: block;
+      width: 51px;
+      height: 10px;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 4px;
+      transition: all 0.2s ease; }
+    .b-house-projects__control-item_prev {
+      padding-left: 62px;
+      left: 0; }
+      @media (max-width: 1085px) {
+        .b-house-projects__control-item_prev {
+          padding-left: 0; } }
+      .b-house-projects__control-item_prev .b-house-projects__control-item-icon {
+        left: 0;
+        background-image: url(../img/icons/icon-left-arrow.svg); }
+      .b-house-projects__control-item_prev:hover .b-house-projects__control-item-icon {
+        left: -4px; }
+        @media (max-width: 1085px) {
+          .b-house-projects__control-item_prev:hover .b-house-projects__control-item-icon {
+            left: 0; } }
+    .b-house-projects__control-item_next {
+      padding-right: 62px;
+      right: 0; }
+      @media (max-width: 1085px) {
+        .b-house-projects__control-item_next {
+          padding-right: 0; } }
+      .b-house-projects__control-item_next .b-house-projects__control-item-icon {
+        right: 0;
+        background-image: url(../img/icons/icon-right-arrow.svg); }
+      .b-house-projects__control-item_next:hover .b-house-projects__control-item-icon {
+        right: -4px; }
+        @media (max-width: 1085px) {
+          .b-house-projects__control-item_next:hover .b-house-projects__control-item-icon {
+            right: 0; } }
+  .b-house-projects__slider {
+    position: absolute !important;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 500px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease; }
+    @media (max-width: 760px) {
+      .b-house-projects__slider {
+        height: 218px; } }
+    .b-house-projects__slider_active {
+      opacity: 1;
+      visibility: visible; }
+  .b-house-projects__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: -10% 0 0 0; }
+    @media (max-width: 1085px) {
+      .b-house-projects__img {
+        margin: -12% 0 0 0;
+        height: 100%;
+        width: auto; } }
+    @media (max-width: 760px) {
+      .b-house-projects__img {
+        width: 100%;
+        height: auto; } }
+    @media (max-width: 480px) {
+      .b-house-projects__img {
+        margin: 6% 0 0 0; } }
+
+.b-realized-projects {
+  padding: 0 0 76px; }
+  @media (max-width: 760px) {
+    .b-realized-projects {
+      padding: 0 0 40px; } }
+  .b-realized-projects__container {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px; }
+    @media (max-width: 1085px) {
+      .b-realized-projects__container {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-realized-projects__container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .b-realized-projects__title {
+    font-family: "Elektra Light Pro";
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 24px; }
+    @media (max-width: 760px) {
+      .b-realized-projects__title {
+        font-size: 35px;
+        line-height: 1.02;
+        margin: 0 0 10px; } }
+  .b-realized-projects__descr {
+    font-family: "Elektra Light Pro";
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 50px; }
+    @media (max-width: 760px) {
+      .b-realized-projects__descr {
+        font-size: 20px;
+        line-height: 1.15;
+        margin-bottom: 20px; } }
+  .b-realized-projects__selected {
+    font-family: "Elektra Light Pro";
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: italic;
+    color: #1d8f7f; }
+    @media (max-width: 760px) {
+      .b-realized-projects__selected {
+        font-size: 20px;
+        line-height: 1.15; } }
+  .b-realized-projects__slider {
+    position: relative;
+    width: 100%; }
+    @media (max-width: 1085px) {
+      .b-realized-projects__slider {
+        height: 420px; } }
+    @media (max-width: 760px) {
+      .b-realized-projects__slider {
+        height: auto; } }
+    .b-realized-projects__slider:before {
+      content: '';
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 50%, transparent 100%);
+      width: 28vw;
+      height: calc(100% - 50px);
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1; }
+      @media (max-width: 1085px) {
+        .b-realized-projects__slider:before {
+          height: 100%; } }
+      @media (max-width: 760px) {
+        .b-realized-projects__slider:before {
+          display: none; } }
+    .b-realized-projects__slider:after {
+      content: '';
+      background: linear-gradient(to left, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 50%, transparent 100%);
+      width: 28vw;
+      height: calc(100% - 50px);
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1; }
+      @media (max-width: 1085px) {
+        .b-realized-projects__slider:after {
+          height: 100%; } }
+      @media (max-width: 760px) {
+        .b-realized-projects__slider:after {
+          display: none; } }
+  .b-realized-projects__slide {
+    -webkit-clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+    -moz-clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+    -ms-clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+    -o-clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+    clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+    margin-left: -107px;
+    margin-right: -107px; }
+    @media (max-width: 760px) {
+      .b-realized-projects__slide {
+        margin-left: 0;
+        margin-right: 0;
+        clip-path: none; } }
+    .b-realized-projects__slide:active {
+      border: none;
+      outline: none; }
+  .b-realized-projects__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 0 25px;
+    padding: 0; }
+    @media (max-width: 1085px) {
+      .b-realized-projects__img {
+        height: 420px;
+        width: auto; } }
+    @media (max-width: 760px) {
+      .b-realized-projects__img {
+        height: 100%;
+        width: 100%; } }
+    .b-realized-projects__img:active {
+      border: none;
+      outline: none; }
+  .b-realized-projects__slide-caption {
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1.444;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease; }
+    @media (max-width: 480px) {
+      .b-realized-projects__slide-caption {
+        font-family: "Elektra Light Pro";
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 400;
+        font-style: normal; } }
+    .slick-active .b-realized-projects__slide-caption {
+      opacity: 1; }
+  .b-realized-projects .slick-arrow {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 51px;
+    height: 10px;
+    text-indent: -9999px;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.2s ease; }
+    @media (max-width: 760px) {
+      .b-realized-projects .slick-arrow {
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        width: 37px;
+        height: 10px;
+        text-indent: -9999px;
+        transform: translateY(0%);
+        top: auto;
+        border: none;
+        outline: none;
+        position: absolute;
+        bottom: 8px;
+        z-index: 2;
+        cursor: pointer;
+        transition: all 0.2s ease; } }
+    @media (max-width: 480px) {
+      .b-realized-projects .slick-arrow {
+        visibility: hidden;
+        opacity: 0; } }
+    .b-realized-projects .slick-arrow.slick-prev {
+      left: 6.5vw;
+      background-image: url(../img/icons/icon-left-arrow.svg); }
+      @media (max-width: 760px) {
+        .b-realized-projects .slick-arrow.slick-prev {
+          left: 10px;
+          background-image: url(../img/icons/icon-arrow-small-prev.png); } }
+      .b-realized-projects .slick-arrow.slick-prev:hover {
+        left: calc(6.5vw - 4px); }
+        @media (max-width: 760px) {
+          .b-realized-projects .slick-arrow.slick-prev:hover {
+            left: calc(10px - 4px); } }
+    .b-realized-projects .slick-arrow.slick-next {
+      right: 6.5vw;
+      background-image: url(../img/icons/icon-right-arrow.svg); }
+      @media (max-width: 760px) {
+        .b-realized-projects .slick-arrow.slick-next {
+          right: 10px;
+          background-image: url(../img/icons/icon-arrow-small-next.png); } }
+      .b-realized-projects .slick-arrow.slick-next:hover {
+        right: calc(6.5vw - 4px); }
+        @media (max-width: 760px) {
+          .b-realized-projects .slick-arrow.slick-next:hover {
+            right: calc(10px - 4px); } }
+
+.b-technologies {
+  padding: 73px 0 83px; }
+  @media (max-width: 1085px) {
+    .b-technologies {
+      padding: 50px 0 25px; } }
+  @media (max-width: 760px) {
+    .b-technologies {
+      padding: 35px 0 7px; } }
+  .b-technologies__container {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px; }
+    @media (max-width: 1085px) {
+      .b-technologies__container {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-technologies__container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .b-technologies__title {
+    font-family: "Elektra Light Pro";
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 35px; }
+    @media (max-width: 1085px) {
+      .b-technologies__title {
+        margin-bottom: 25px; } }
+    @media (max-width: 760px) {
+      .b-technologies__title {
+        font-size: 35px; } }
+  .b-technologies__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+    @media (max-width: 1085px) {
+      .b-technologies__items {
+        flex-wrap: wrap;
+        justify-content: flex-start; } }
+    @media (max-width: 760px) {
+      .b-technologies__items {
+        flex-direction: column; } }
+  .b-technologies__item {
+    width: 100%;
+    max-width: 252px;
+    margin: 0 12px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    @media (max-width: 1085px) {
+      .b-technologies__item {
+        max-width: 50%;
+        margin: 0 0 25px 0; } }
+    @media (max-width: 760px) {
+      .b-technologies__item {
+        max-width: 100%; } }
+    .b-technologies__item:last-child {
+      margin-right: 0; }
+  .b-technologies__img {
+    display: flex;
+    width: auto;
+    height: 97px;
+    margin: 0 20px 0 0; }
+  .b-technologies__subtitle {
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1.222;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000; }
+
+.b-energy-efficiency {
+  background: url(../img/bgs/bg-energy-efficiency.png) center center no-repeat;
+  background-size: cover;
+  position: relative; }
+  .b-energy-efficiency__container {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    padding-top: 103px;
+    padding-bottom: 100px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative; }
+    @media (max-width: 1085px) {
+      .b-energy-efficiency__container {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-energy-efficiency__container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media (max-width: 1085px) {
+      .b-energy-efficiency__container {
+        padding-top: 100px;
+        padding-bottom: 20px; } }
+    @media (max-width: 760px) {
+      .b-energy-efficiency__container {
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 0; } }
+  .b-energy-efficiency__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 0 0 352px; }
+    @media (max-width: 1085px) {
+      .b-energy-efficiency__text {
+        margin-left: 39vw; } }
+    @media (max-width: 760px) {
+      .b-energy-efficiency__text {
+        margin-left: 0;
+        margin-bottom: 25px; } }
+  .b-energy-efficiency__title {
+    font-family: "Elektra Light Pro";
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 24px; }
+    @media (max-width: 1085px) {
+      .b-energy-efficiency__title {
+        display: none; } }
+    .b-energy-efficiency__title_mobile {
+      display: none; }
+      @media (max-width: 1085px) {
+        .b-energy-efficiency__title_mobile {
+          display: block;
+          margin-bottom: 15px; } }
+      @media (max-width: 760px) {
+        .b-energy-efficiency__title_mobile {
+          font-size: 35px;
+          line-height: 1.01;
+          margin-bottom: 10px; } }
+  .b-energy-efficiency__descr {
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1.444;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000; }
+    @media (max-width: 1085px) {
+      .b-energy-efficiency__descr br {
+        display: none; } }
+  .b-energy-efficiency__img {
+    position: absolute;
+    left: 125px;
+    bottom: 0;
+    width: 189.5px;
+    height: auto; }
+    @media (max-width: 760px) {
+      .b-energy-efficiency__img {
+        position: relative;
+        left: 0;
+        top: 0;
+        bottom: auto;
+        width: 140px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto; } }
+
+.b-milestones {
+  padding: 63px 0 14px 0;
+  margin: 0 0 95px; }
+  @media (max-width: 1085px) {
+    .b-milestones {
+      padding: 50px 0 14px 0;
+      margin: 0 0 50px; } }
+  @media (max-width: 1085px) {
+    .b-milestones {
+      padding: 30px 0 10px 0;
+      margin: 0 0 45px; } }
+  .b-milestones__container {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px; }
+    @media (max-width: 1085px) {
+      .b-milestones__container {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-milestones__container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    .b-milestones__container:first-child {
+      margin-bottom: 44px; }
+  .b-milestones__title {
+    font-family: "Elektra Light Pro";
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 48px; }
+    @media (max-width: 760px) {
+      .b-milestones__title {
+        font-size: 35px;
+        margin: 0 0 18px; } }
+  .b-milestones__line {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 0 38px 0; }
+    @media (max-width: 760px) {
+      .b-milestones__line {
+        flex-direction: column;
+        margin: 0 0 22px; } }
+    .b-milestones__steps .b-milestones__line:first-child .b-milestones__left-col {
+      padding: 45px 0 0 0; }
+      @media (max-width: 760px) {
+        .b-milestones__steps .b-milestones__line:first-child .b-milestones__left-col {
+          padding-top: 0; } }
+    .b-milestones__line:last-child {
+      margin-bottom: 0; }
+  .b-milestones__left-col {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 12px 0 0;
+    padding: 0; }
+    @media (max-width: 760px) {
+      .b-milestones__left-col {
+        margin: 0 0 0 55px;
+        max-width: 100%;
+        width: auto;
+        padding: 0 20px 0 0; } }
+    @media (max-width: 480px) {
+      .b-milestones__left-col {
+        margin-left: 0; } }
+  .b-milestones__right-col {
+    width: 100%; }
+    @media (max-width: 760px) {
+      .b-milestones__right-col {
+        width: auto;
+        margin: 0 0 0 55px; } }
+    @media (max-width: 480px) {
+      .b-milestones__right-col {
+        margin-left: 0; } }
+  .b-milestones__stage-name-item {
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1.444;
+    font-weight: 700;
+    font-style: normal;
+    color: #1d8f7f;
+    padding: 0 0 0 53px;
+    position: relative;
+    margin: 0 0 60px; }
+    @media (max-width: 760px) {
+      .b-milestones__stage-name-item {
+        padding-left: 0; } }
+    .b-milestones__left-col .b-milestones__stage-name-item {
+      margin: 0 0 10px; }
+    .b-milestones__stage-name-item:before {
+      content: '';
+      display: block;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      top: 4px; }
+      @media (max-width: 760px) {
+        .b-milestones__stage-name-item:before {
+          display: none; } }
+    .b-milestones__stage-name-item_1:before {
+      background-image: url(../img/icons/icon-project-works.svg);
+      width: 31px;
+      height: 41px; }
+    .b-milestones__stage-name-item_2:before {
+      background-image: url(../img/icons/icon-preparatory-work.svg);
+      width: 40px;
+      height: 40px; }
+    .b-milestones__stage-name-item_3:before {
+      background-image: url(../img/icons/icon-completion-of-materials.svg);
+      width: 36px;
+      height: 29px; }
+    .b-milestones__stage-name-item_4:before {
+      background-image: url(../img/icons/icon-assembly-and-installation.svg);
+      width: 36px;
+      height: 36px; }
+    .b-milestones__stage-name-item_5:before {
+      background-image: url(../img/icons/icon-decoration.svg);
+      width: 36px;
+      height: 38px; }
+    .b-milestones__stage-name-item_6:before {
+      background-image: url(../img/icons/icon-landscape.svg);
+      width: 36px;
+      height: 36px; }
+    .b-milestones__stage-name-item_7:before {
+      background-image: url(../img/icons/icon-guarantee.svg);
+      width: 36px;
+      height: 36px; }
+  .b-milestones__stage-final-title {
+    font-family: "Elektra Light Pro";
+    font-size: 15px;
+    line-height: 1.733;
+    font-weight: 700;
+    font-style: normal;
+    color: #8f8f8f;
+    text-transform: uppercase;
+    margin: 0 0 21px 90px; }
+    @media (max-width: 760px) {
+      .b-milestones__stage-final-title {
+        margin: 0 0 6px 0; } }
+  .b-milestones__stage-final-item {
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1.444;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    position: relative;
+    margin: 0 0 19px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    @media (max-width: 1085px) {
+      .b-milestones__stage-final-item {
+        align-items: flex-start; } }
+    @media (max-width: 760px) {
+      .b-milestones__stage-final-item {
+        font-size: 16px; } }
+    .b-milestones__right-col .b-milestones__stage-final-item {
+      margin: 0 0 10px; }
+      @media (max-width: 760px) {
+        .b-milestones__right-col .b-milestones__stage-final-item {
+          margin: 0 0 0; } }
+    .b-milestones__stage-final-item:before {
+      font-family: "Elektra Light Pro";
+      font-size: 24px;
+      line-height: 1;
+      font-weight: 400;
+      font-style: normal;
+      color: #1d8f7f;
+      content: '';
+      display: block;
+      min-width: 44px;
+      width: 44px;
+      height: 44px;
+      min-height: 44px;
+      padding: 11px 0 0;
+      border-radius: 22px;
+      border: 1px solid #1d8f7f;
+      margin: 0 46px 0 0;
+      text-align: center;
+      z-index: 1;
+      background: #ffffff;
+      position: relative; }
+      @media (max-width: 760px) {
+        .b-milestones__stage-final-item:before {
+          margin: 0 0 0 0;
+          position: absolute;
+          left: -55px;
+          top: -59px; } }
+      @media (max-width: 480px) {
+        .b-milestones__stage-final-item:before {
+          top: -82px; } }
+    .b-milestones__stage-final-item:after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 100%;
+      background: #1d8f7f;
+      background: linear-gradient(to bottom, rgba(29, 143, 127, 0) 0%, #bdefe8 4%, #1d8f7f 96%, rgba(29, 143, 127, 0) 100%);
+      opacity: 0.7;
+      position: absolute;
+      left: 21.5px;
+      top: calc(-100% - -1px); }
+      @media (max-width: 1085px) {
+        .b-milestones__stage-final-item:after {
+          top: calc(-100% - 8px);
+          height: 118%; } }
+      @media (max-width: 760px) {
+        .b-milestones__stage-final-item:after {
+          left: -34px;
+          top: calc(-100% - 123px);
+          height: calc(100% + 20px);
+          display: none; } }
+      .b-milestones__line:first-child .b-milestones__stage-final-item:after {
+        display: none; }
+    .b-milestones__line_long-line .b-milestones__stage-final-item:after {
+      height: calc(100% + 13px);
+      top: calc(-100% - -1px); }
+      @media (max-width: 1085px) {
+        .b-milestones__line_long-line .b-milestones__stage-final-item:after {
+          top: calc(-100% - -1px);
+          height: calc(100% + 13px); } }
+    .b-milestones__stage-final-item_1:before {
+      content: '1'; }
+      @media (max-width: 760px) {
+        .b-milestones__stage-final-item_1:before {
+          top: -89px; } }
+      @media (max-width: 480px) {
+        .b-milestones__stage-final-item_1:before {
+          display: none; } }
+    .b-milestones__stage-final-item_2:before {
+      content: '2'; }
+      @media (max-width: 480px) {
+        .b-milestones__stage-final-item_2:before {
+          display: none; } }
+    @media (max-width: 760px) {
+      .b-milestones__stage-final-item_2:after {
+        top: calc(-100% - 124px);
+        height: calc(100% + 63px); } }
+    @media (max-width: 480px) {
+      .b-milestones__stage-final-item_2:after {
+        display: none; } }
+    @media (max-width: 1085px) {
+      .b-milestones__stage-final-item_3 br {
+        display: none; } }
+    .b-milestones__stage-final-item_3:before {
+      content: '3'; }
+      @media (max-width: 760px) {
+        .b-milestones__stage-final-item_3:before {
+          top: -83px; } }
+      @media (max-width: 480px) {
+        .b-milestones__stage-final-item_3:before {
+          display: none; } }
+    @media (max-width: 760px) {
+      .b-milestones__stage-final-item_3:after {
+        top: calc(-100% - 119px);
+        height: calc(100% + 34px); } }
+    @media (max-width: 1085px) {
+      .b-milestones__stage-final-item_4 br {
+        display: none; } }
+    .b-milestones__stage-final-item_4:before {
+      content: '4'; }
+      @media (max-width: 480px) {
+        .b-milestones__stage-final-item_4:before {
+          display: none; } }
+    @media (max-width: 760px) {
+      .b-milestones__stage-final-item_4:after {
+        top: calc(-100% - 94px);
+        height: calc(100% + 33px); } }
+    .b-milestones__stage-final-item_5:before {
+      content: '5'; }
+      @media (max-width: 480px) {
+        .b-milestones__stage-final-item_5:before {
+          display: none; } }
+    .b-milestones__stage-final-item_5:after {
+      top: calc(-100% - -14px); }
+      @media (max-width: 1085px) {
+        .b-milestones__stage-final-item_5:after {
+          top: calc(-100% - 28px);
+          height: 144%; } }
+      @media (max-width: 760px) {
+        .b-milestones__stage-final-item_5:after {
+          top: calc(-100% - 94px);
+          height: calc(100% + 33px); } }
+    .b-milestones__stage-final-item_6:before {
+      content: '6'; }
+      @media (max-width: 480px) {
+        .b-milestones__stage-final-item_6:before {
+          display: none; } }
+    .b-milestones__stage-final-item_6:after {
+      top: calc(-100% - 11px);
+      height: calc(100% + 12px); }
+      @media (max-width: 1085px) {
+        .b-milestones__stage-final-item_6:after {
+          top: calc(-100% - 31px);
+          height: calc(100% + 34px); } }
+      @media (max-width: 760px) {
+        .b-milestones__stage-final-item_6:after {
+          top: calc(-100% - 145px);
+          height: calc(100% + 84px); } }
+    .b-milestones__stage-final-item_7:before {
+      content: '';
+      background: url(../img/icons/icon-ok.svg) center center no-repeat;
+      background-size: 21px 17px;
+      background-color: #1d8f7f; }
+      @media (max-width: 480px) {
+        .b-milestones__stage-final-item_7:before {
+          display: none; } }
+    .b-milestones__stage-final-item_7:after {
+      top: calc(-100% - 5px);
+      height: calc(100% + 3px); }
+      @media (max-width: 1085px) {
+        .b-milestones__stage-final-item_7:after {
+          top: calc(-100% - 10px);
+          height: calc(100% + 11px); } }
+      @media (max-width: 760px) {
+        .b-milestones__stage-final-item_7:after {
+          top: calc(-100% - 96px);
+          height: calc(100% + 35px); } }
+  .b-milestones__text-indent {
+    margin: 0 0 0 -10px; }
+  .b-milestones__btn {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    transition: all 0.2s ease;
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    background-color: #ed4f4b;
+    padding: 17px 25px 16px;
+    transition: all 0.15s ease-in; }
+    @media (max-width: 760px) {
+      .b-milestones__btn {
+        white-space: nowrap;
+        font-size: 17px; } }
+    @media (max-width: 480px) {
+      .b-milestones__btn {
+        padding-left: 14px;
+        padding-right: 14px;
+        width: 100%; } }
+    .b-milestones__btn:hover {
+      background: #ff6f6b;
+      color: #ffffff; }
+    .b-milestones__btn:active {
+      background: #e83f3a;
+      box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.31); }
+
+.b-realized-projects {
+  padding: 0 0 76px; }
+  @media (max-width: 760px) {
+    .b-realized-projects {
+      padding: 0 0 40px; } }
+  .b-realized-projects__container {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px; }
+    @media (max-width: 1085px) {
+      .b-realized-projects__container {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-realized-projects__container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .b-realized-projects__title {
+    font-family: "Elektra Light Pro";
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 24px; }
+    @media (max-width: 760px) {
+      .b-realized-projects__title {
+        font-size: 35px;
+        line-height: 1.02;
+        margin: 0 0 10px; } }
+  .b-realized-projects__descr {
+    font-family: "Elektra Light Pro";
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 50px; }
+    @media (max-width: 760px) {
+      .b-realized-projects__descr {
+        font-size: 20px;
+        line-height: 1.15;
+        margin-bottom: 20px; } }
+  .b-realized-projects__selected {
+    font-family: "Elektra Light Pro";
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: italic;
+    color: #1d8f7f; }
+    @media (max-width: 760px) {
+      .b-realized-projects__selected {
+        font-size: 20px;
+        line-height: 1.15; } }
+  .b-realized-projects__slider {
+    position: relative;
+    width: 100%; }
+    @media (max-width: 1085px) {
+      .b-realized-projects__slider {
+        height: 420px; } }
+    @media (max-width: 760px) {
+      .b-realized-projects__slider {
+        height: auto; } }
+    .b-realized-projects__slider:before {
+      content: '';
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 50%, transparent 100%);
+      width: 28vw;
+      height: calc(100% - 50px);
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1; }
+      @media (max-width: 1085px) {
+        .b-realized-projects__slider:before {
+          height: 100%; } }
+      @media (max-width: 760px) {
+        .b-realized-projects__slider:before {
+          display: none; } }
+    .b-realized-projects__slider:after {
+      content: '';
+      background: linear-gradient(to left, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 50%, transparent 100%);
+      width: 28vw;
+      height: calc(100% - 50px);
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1; }
+      @media (max-width: 1085px) {
+        .b-realized-projects__slider:after {
+          height: 100%; } }
+      @media (max-width: 760px) {
+        .b-realized-projects__slider:after {
+          display: none; } }
+  .b-realized-projects__slide {
+    -webkit-clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+    -moz-clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+    -ms-clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+    -o-clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+    clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+    margin-left: -107px;
+    margin-right: -107px; }
+    @media (max-width: 760px) {
+      .b-realized-projects__slide {
+        margin-left: 0;
+        margin-right: 0;
+        clip-path: none; } }
+    .b-realized-projects__slide:active {
+      border: none;
+      outline: none; }
+  .b-realized-projects__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 0 25px;
+    padding: 0; }
+    @media (max-width: 1085px) {
+      .b-realized-projects__img {
+        height: 420px;
+        width: auto; } }
+    @media (max-width: 760px) {
+      .b-realized-projects__img {
+        height: 100%;
+        width: 100%; } }
+    .b-realized-projects__img:active {
+      border: none;
+      outline: none; }
+  .b-realized-projects__slide-caption {
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1.444;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease; }
+    @media (max-width: 480px) {
+      .b-realized-projects__slide-caption {
+        font-family: "Elektra Light Pro";
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 400;
+        font-style: normal; } }
+    .slick-active .b-realized-projects__slide-caption {
+      opacity: 1; }
+  .b-realized-projects .slick-arrow {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 51px;
+    height: 10px;
+    text-indent: -9999px;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.2s ease; }
+    @media (max-width: 760px) {
+      .b-realized-projects .slick-arrow {
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        width: 37px;
+        height: 10px;
+        text-indent: -9999px;
+        transform: translateY(0%);
+        top: auto;
+        border: none;
+        outline: none;
+        position: absolute;
+        bottom: 8px;
+        z-index: 2;
+        cursor: pointer;
+        transition: all 0.2s ease; } }
+    @media (max-width: 480px) {
+      .b-realized-projects .slick-arrow {
+        visibility: hidden;
+        opacity: 0; } }
+    .b-realized-projects .slick-arrow.slick-prev {
+      left: 6.5vw;
+      background-image: url(../img/icons/icon-left-arrow.svg); }
+      @media (max-width: 760px) {
+        .b-realized-projects .slick-arrow.slick-prev {
+          left: 10px;
+          background-image: url(../img/icons/icon-arrow-small-prev.png); } }
+      .b-realized-projects .slick-arrow.slick-prev:hover {
+        left: calc(6.5vw - 4px); }
+        @media (max-width: 760px) {
+          .b-realized-projects .slick-arrow.slick-prev:hover {
+            left: calc(10px - 4px); } }
+    .b-realized-projects .slick-arrow.slick-next {
+      right: 6.5vw;
+      background-image: url(../img/icons/icon-right-arrow.svg); }
+      @media (max-width: 760px) {
+        .b-realized-projects .slick-arrow.slick-next {
+          right: 10px;
+          background-image: url(../img/icons/icon-arrow-small-next.png); } }
+      .b-realized-projects .slick-arrow.slick-next:hover {
+        right: calc(6.5vw - 4px); }
+        @media (max-width: 760px) {
+          .b-realized-projects .slick-arrow.slick-next:hover {
+            right: calc(10px - 4px); } }
+
+.b-advantages-of-working {
+  padding: 0 0 43px; }
+  @media (max-width: 1085px) {
+    .b-advantages-of-working {
+      padding: 0 0 23px; } }
+  @media (max-width: 760px) {
+    .b-advantages-of-working {
+      padding: 0 0 15px; } }
+  .b-advantages-of-working__container {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px; }
+    @media (max-width: 1085px) {
+      .b-advantages-of-working__container {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-advantages-of-working__container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .b-advantages-of-working__title {
+    font-family: "Elektra Light Pro";
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 50px; }
+    @media (max-width: 760px) {
+      .b-advantages-of-working__title {
+        font-size: 35px;
+        line-height: 1.02;
+        margin: 0 0 25px; } }
+  .b-advantages-of-working__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap; }
+  .b-advantages-of-working__item {
+    width: 33.333%;
+    padding: 62px 12px 0 0;
+    position: relative;
+    margin: 0 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    @media (max-width: 1085px) {
+      .b-advantages-of-working__item {
+        width: 50%;
+        margin: 0 0 35px; } }
+    @media (max-width: 760px) {
+      .b-advantages-of-working__item {
+        width: 100%;
+        margin: 0px 0 22px; } }
+    .b-advantages-of-working__item:before {
+      content: '';
+      display: block;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .b-advantages-of-working__item_1:before {
+      background: url(../img/icons/icon-online-access.svg);
+      width: 38px;
+      height: 46px; }
+    .b-advantages-of-working__item_2:before {
+      background: url(../img/icons/icon-energy-efficiency.svg);
+      width: 56px;
+      height: 46px; }
+    .b-advantages-of-working__item_3 {
+      padding-right: 0; }
+      .b-advantages-of-working__item_3:before {
+        background: url(../img/icons/icon-price.svg);
+        width: 36px;
+        height: 45px; }
+    .b-advantages-of-working__item_4:before {
+      background: url(../img/icons/icon-automation-of-construction.svg);
+      width: 50px;
+      height: 48px; }
+    .b-advantages-of-working__item_5:before {
+      background: url(../img/icons/icon-winter-summer.svg);
+      width: 40px;
+      height: 45px; }
+    .b-advantages-of-working__item_6 {
+      padding-right: 0; }
+      .b-advantages-of-working__item_6:before {
+        background: url(../img/icons/icon-guarantee-2.svg);
+        width: 39px;
+        height: 46px; }
+  .b-advantages-of-working__subtitle {
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1.444;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 7px; }
+  .b-advantages-of-working__descr {
+    font-family: "Elektra Light Pro";
+    font-size: 16px;
+    line-height: 1.375;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    width: 90%; }
+
+.b-three-steps {
+  background: #eef7f6;
+  padding: 70px 0 83px; }
+  @media (max-width: 1085px) {
+    .b-three-steps {
+      padding: 40px 0 5px; } }
+  @media (max-width: 760px) {
+    .b-three-steps {
+      padding: 30px 0 40px; } }
+  .b-three-steps__container {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px; }
+    @media (max-width: 1085px) {
+      .b-three-steps__container {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-three-steps__container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .b-three-steps__title {
+    font-family: "Elektra Light Pro";
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 43px; }
+    @media (max-width: 1085px) {
+      .b-three-steps__title {
+        margin: 0 0 30px; } }
+    @media (max-width: 760px) {
+      .b-three-steps__title {
+        margin: 0 0 22px;
+        font-size: 35px;
+        line-height: 1.02; } }
+  .b-three-steps__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    @media (max-width: 1085px) {
+      .b-three-steps__list {
+        flex-direction: column; } }
+  .b-three-steps__item {
+    width: 33.333%;
+    padding-right: 12px; }
+    @media (max-width: 1085px) {
+      .b-three-steps__item {
+        width: 100%;
+        margin: 0 0 45px;
+        padding-right: 0; } }
+    @media (max-width: 760px) {
+      .b-three-steps__item {
+        margin-bottom: 30px; } }
+    .b-three-steps__item:last-child {
+      padding-right: 0; }
+      @media (max-width: 760px) {
+        .b-three-steps__item:last-child {
+          margin-bottom: 0; } }
+  .b-three-steps__number {
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    border: 1px solid #1d8f7f;
+    font-family: "Elektra Light Pro";
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #1d8f7f;
+    padding: 11px 0 0;
+    margin: 0 0 23px; }
+  .b-three-steps__subtitle {
+    font-family: "Elektra Light Pro";
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: normal;
+    color: #1d8f7f;
+    margin: 0 0 14px; }
+    @media (max-width: 760px) {
+      .b-three-steps__subtitle {
+        line-height: 1.15;
+        font-size: 20px;
+        margin: 0 0 10px; } }
+  .b-three-steps__descr {
+    font-family: "Elektra Light Pro";
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 100;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 21px; }
+    .b-three-steps__descr_small-indent {
+      margin-bottom: 5px; }
+  .b-three-steps__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
+  .b-three-steps__input-text {
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px #e4e4e4 solid;
+    padding: 17px 14px 15px;
+    border-radius: 0;
+    display: block;
+    font-family: Elektra Light Pro;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    transition: all 0.3s ease-out;
+    max-width: 282px;
+    margin: 0 0 15px; }
+    .b-three-steps__input-text::-webkit-input-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-three-steps__input-text::-moz-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-three-steps__input-text:-moz-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-three-steps__input-text:-ms-input-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-three-steps__input-text:focus::-webkit-input-placeholder {
+      color: transparent; }
+    .b-three-steps__input-text:focus::-moz-placeholder {
+      color: transparent; }
+    .b-three-steps__input-text:focus:-moz-placeholder {
+      color: transparent; }
+    .b-three-steps__input-text:focus:-ms-input-placeholder {
+      color: transparent; }
+    .b-three-steps__input-text:focus, .b-three-steps__input-text:active {
+      outline: none;
+      box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.18);
+      border-color: rgba(0, 0, 0, 0.4); }
+  .b-three-steps__btn {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    transition: all 0.2s ease;
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    background-color: #ed4f4b;
+    padding: 17px 27px 16px;
+    margin: 0;
+    transition: all 0.15s ease-in; }
+    @media (max-width: 1085px) {
+      .b-three-steps__btn {
+        width: 200px;
+        display: block;
+        white-space: nowrap; } }
+    .b-three-steps__btn:hover {
+      background: #ff6f6b;
+      color: #ffffff; }
+    .b-three-steps__btn:active {
+      background: #e83f3a;
+      box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.31); }
+  .b-three-steps__list-text {
+    list-style: none;
+    margin: 0 0 13px 23px;
+    padding: 0; }
+  .b-three-steps__list-text-item {
+    margin: 0 0 4px 0;
+    padding: 0 0 0 14px;
+    position: relative;
+    font-family: "Elektra Light Pro";
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 100;
+    font-style: normal;
+    color: #000000; }
+    .b-three-steps__list-text-item:before {
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      background: #00a08b;
+      border-radius: 4px;
+      position: absolute;
+      left: 0;
+      top: 8px; }
+  .b-three-steps__phone {
+    font-family: "Elektra Light Pro";
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+    position: relative;
+    padding: 0 0 0 24px;
+    margin: 0 0 3px; }
+    @media (max-width: 1085px) {
+      .b-three-steps__phone {
+        margin-bottom: 0; } }
+    .b-three-steps__phone:before {
+      content: '';
+      display: block;
+      width: 13px;
+      height: 14px;
+      background: url(../img/icons/icon-phone.svg) 0 0 no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      top: 3px; }
+  .b-three-steps__email {
+    font-family: "Elektra Light Pro";
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
+    font-style: normal;
+    color: #1d8f7f;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0 0 0 24px;
+    margin: 0 0 9px;
+    display: inline-block; }
+    @media (max-width: 1085px) {
+      .b-three-steps__email {
+        margin: 0 0 13px; } }
+    .b-three-steps__email:before {
+      content: '';
+      display: block;
+      width: 15px;
+      height: 11px;
+      background: url(../img/icons/icon-mail.svg) 0 0 no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      top: 5px; }
+    .b-three-steps__email:hover {
+      opacity: 0.8; }
+  .b-three-steps__link-img {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    max-width: 253px;
+    margin: 0 0 25px; }
+  .b-three-steps__link-img-subtitle {
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1.11;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    text-decoration: underline;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+    text-align: center;
+    white-space: nowrap;
+    transition: all 0.4s ease; }
+    .b-three-steps__link-img:hover .b-three-steps__link-img-subtitle {
+      opacity: 0.9; }
+    .b-three-steps__link-img-subtitle:before {
+      content: '';
+      display: block;
+      width: 35px;
+      height: 30px;
+      margin: 0 0 7px;
+      background: url(../img/icons/icon-virtual.svg) 0 0 no-repeat;
+      background-size: cover; }
+  .b-three-steps__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease-in-out; }
+    .b-three-steps__link-img:hover .b-three-steps__img {
+      transform: scale(1.03); }
+  .b-three-steps__address {
+    font-family: "Elektra Light Pro";
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 100;
+    font-style: normal;
+    color: #000000; }
+    @media (max-width: 1085px) {
+      .b-three-steps__address br {
+        display: none; } }
+  @media (max-width: 1085px) {
+    .b-three-steps__br-visible {
+      display: block !important; } }
+  .b-three-steps__selected {
+    font-weight: 700; }
+  .b-three-steps__indent {
+    margin: 0 0 0 -10px; }
+    @media (max-width: 1085px) {
+      .b-three-steps__indent {
+        margin-left: 0; } }
+  .b-three-steps__text-link {
+    font-family: "Elektra Light Pro";
+    font-size: 16px;
+    line-height: 1.625;
+    font-weight: 700;
+    font-style: normal;
+    color: #1d8f7f;
+    text-decoration: none;
+    transition: all 0.3s ease; }
+    .b-three-steps__text-link:hover {
+      opacity: 0.8; }
+  .b-three-steps__underline {
+    text-decoration: underline; }
+  .b-three-steps__arrow {
+    font-family: "Arial";
+    font-size: 16px;
+    line-height: 1.625;
+    font-weight: 400;
+    font-style: normal;
+    color: #1d8f7f;
+    text-decoration: none; }
+
+.b-public-buildings {
+  padding: 111px 0 110px; }
+  @media (max-width: 1085px) {
+    .b-public-buildings {
+      padding: 50px 0 60px; } }
+  @media (max-width: 760px) {
+    .b-public-buildings {
+      padding: 40px 0 45px; } }
+  .b-public-buildings__container {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px; }
+    @media (max-width: 1085px) {
+      .b-public-buildings__container {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-public-buildings__container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .b-public-buildings__title {
+    font-family: "Elektra Light Pro";
+    font-size: 60px;
+    line-height: 1;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 33px; }
+    @media (max-width: 1085px) {
+      .b-public-buildings__title {
+        margin: 0 0 30px; } }
+    @media (max-width: 760px) {
+      .b-public-buildings__title {
+        display: none;
+        font-size: 45px;
+        line-height: 1.02;
+        margin: 0 0 23px; } }
+    .b-public-buildings__title_mobile {
+      display: none; }
+      @media (max-width: 760px) {
+        .b-public-buildings__title_mobile {
+          display: block; } }
+  .b-public-buildings__text {
+    font-family: "Elektra Light Pro";
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 43px; }
+    @media (max-width: 1085px) {
+      .b-public-buildings__text {
+        margin: 0 0 32px; } }
+  .b-public-buildings__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 0 28px; }
+    @media (max-width: 1085px) {
+      .b-public-buildings__list {
+        margin: 0 0 5px; } }
+    @media (max-width: 760px) {
+      .b-public-buildings__list {
+        flex-direction: column;
+        margin: 0 0 5px; } }
+  .b-public-buildings__list-item {
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1.444;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+    padding: 0 12px 0 29px;
+    position: relative;
+    width: 33.333%;
+    margin: 0 0 38px; }
+    @media (max-width: 1085px) {
+      .b-public-buildings__list-item {
+        width: 50%; } }
+    @media (max-width: 760px) {
+      .b-public-buildings__list-item {
+        margin-bottom: 20px;
+        width: 100%; } }
+    .b-public-buildings__list-item:nth-child(3n+3) {
+      padding-right: 0; }
+      @media (max-width: 1085px) {
+        .b-public-buildings__list-item:nth-child(3n+3) {
+          padding-right: 12px; } }
+    .b-public-buildings__list-item:before {
+      content: '';
+      display: block;
+      width: 22px;
+      height: 22px;
+      border-radius: 11px;
+      background: #009882;
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .b-public-buildings__list-item:after {
+      content: '';
+      display: block;
+      width: 11px;
+      height: 9px;
+      background: url(../img/icons/icon-ok.svg) 0 0 no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 6px;
+      top: 6.5px;
+      z-index: 1; }
+  .b-public-buildings__gallery {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 0 63px; }
+    @media (max-width: 1085px) {
+      .b-public-buildings__gallery {
+        margin: 0 0 45px; } }
+    @media (max-width: 760px) {
+      .b-public-buildings__gallery {
+        display: none; } }
+  .b-public-buildings__gallery-item {
+    position: relative;
+    width: 33.333%;
+    overflow: hidden;
+    cursor: pointer; }
+    .b-public-buildings__gallery-item:nth-child(2n+2) {
+      width: 33.334%; }
+    .b-public-buildings__gallery-item:after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      left: -100%;
+      top: 0;
+      z-index: 1;
+      -webkit-clip-path: polygon(0 0, 100% 0%, 78% 100%, 0 100%);
+      -moz-clip-path: polygon(0 0, 100% 0%, 78% 100%, 0 100%);
+      -o-clip-path: polygon(0 0, 100% 0%, 78% 100%, 0 100%);
+      -ms-clip-path: polygon(0 0, 100% 0%, 78% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0%, 78% 100%, 0 100%);
+      transition: all 0.3s ease; }
+    .b-public-buildings__gallery-item:hover:after {
+      left: 0; }
+  .b-public-buildings__subtitle {
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1.444;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    position: absolute;
+    left: -100%;
+    bottom: 26px;
+    z-index: 2;
+    transition: all 0.2s ease; }
+    @media (max-width: 1085px) {
+      .b-public-buildings__subtitle {
+        font-size: 16px;
+        line-height: 1.3;
+        bottom: 21px; } }
+    .b-public-buildings__gallery-item:hover .b-public-buildings__subtitle {
+      left: 26px; }
+  .b-public-buildings__img {
+    width: 100%;
+    height: auto;
+    display: block; }
+  .b-public-buildings__form-top-line {
+    font-family: "Elektra Light Pro";
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: normal;
+    color: #1d8f7f;
+    margin: 0 0 18px; }
+    @media (max-width: 760px) {
+      .b-public-buildings__form-top-line {
+        font-size: 20px;
+        line-height: 1.5;
+        margin: 0 0 15px; } }
+  .b-public-buildings__form-inner-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    @media (max-width: 760px) {
+      .b-public-buildings__form-inner-wrapper {
+        flex-direction: column; } }
+  .b-public-buildings__form-left-col {
+    width: 100%;
+    max-width: 352px;
+    padding: 0 12px 0 0; }
+    @media (max-width: 760px) {
+      .b-public-buildings__form-left-col {
+        max-width: 100%;
+        padding-right: 0; } }
+  .b-public-buildings__input-text {
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px #e4e4e4 solid;
+    padding: 17px 14px 15px;
+    border-radius: 0;
+    display: block;
+    font-family: Elektra Light Pro;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    transition: all 0.3s ease-out;
+    margin: 0 0 13px; }
+    .b-public-buildings__input-text::-webkit-input-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-public-buildings__input-text::-moz-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-public-buildings__input-text:-moz-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-public-buildings__input-text:-ms-input-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-public-buildings__input-text:focus::-webkit-input-placeholder {
+      color: transparent; }
+    .b-public-buildings__input-text:focus::-moz-placeholder {
+      color: transparent; }
+    .b-public-buildings__input-text:focus:-moz-placeholder {
+      color: transparent; }
+    .b-public-buildings__input-text:focus:-ms-input-placeholder {
+      color: transparent; }
+    .b-public-buildings__input-text:focus, .b-public-buildings__input-text:active {
+      outline: none;
+      box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.18);
+      border-color: rgba(0, 0, 0, 0.4); }
+    @media (max-width: 760px) {
+      .b-public-buildings__input-text {
+        margin-bottom: 10px; } }
+  .b-public-buildings__form-right-col {
+    width: 100%;
+    max-width: 693px; }
+    @media (max-width: 760px) {
+      .b-public-buildings__form-right-col {
+        max-width: 100%; } }
+  .b-public-buildings__textarea {
+    resize: vertical;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px #e4e4e4 solid;
+    padding: 17px 14px 15px;
+    border-radius: 0;
+    display: block;
+    font-family: Elektra Light Pro;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    transition: all 0.3s ease-out;
+    height: 113px; }
+    .b-public-buildings__textarea::-webkit-input-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-public-buildings__textarea::-moz-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-public-buildings__textarea:-moz-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-public-buildings__textarea:-ms-input-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-public-buildings__textarea:focus::-webkit-input-placeholder {
+      color: transparent; }
+    .b-public-buildings__textarea:focus::-moz-placeholder {
+      color: transparent; }
+    .b-public-buildings__textarea:focus:-moz-placeholder {
+      color: transparent; }
+    .b-public-buildings__textarea:focus:-ms-input-placeholder {
+      color: transparent; }
+    .b-public-buildings__textarea:focus, .b-public-buildings__textarea:active {
+      outline: none;
+      box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.18);
+      border-color: rgba(0, 0, 0, 0.4); }
+    @media (max-width: 760px) {
+      .b-public-buildings__textarea {
+        margin-bottom: 10px; } }
+  .b-public-buildings__form-bottom-line {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative; }
+    @media (max-width: 760px) {
+      .b-public-buildings__form-bottom-line {
+        flex-direction: column;
+        align-items: flex-start; } }
+  .b-public-buildings__btn {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    transition: all 0.2s ease;
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    background-color: #ed4f4b;
+    padding: 17px 27px 16px;
+    margin: 0;
+    transition: all 0.15s ease-in; }
+    @media (max-width: 760px) {
+      .b-public-buildings__btn {
+        margin-bottom: 15px; } }
+    .b-public-buildings__btn:hover {
+      background: #ff6f6b;
+      color: #ffffff; }
+    .b-public-buildings__btn:active {
+      background: #e83f3a;
+      box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.31); }
+  .b-public-buildings__label {
+    width: 18px;
+    height: 18px;
+    margin: 0 0 0 24px;
+    position: relative;
+    cursor: pointer; }
+    @media (max-width: 760px) {
+      .b-public-buildings__label {
+        margin-left: 0; } }
+    @media (max-width: 480px) {
+      .b-public-buildings__label {
+        margin-bottom: 10px; } }
+    .b-public-buildings__label:before {
+      content: '';
+      width: 18px;
+      height: 18px;
+      background-color: #f9feff;
+      border: 1px solid #e4e4e4;
+      border-radius: 1px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0; }
+      @media (max-width: 760px) {
+        .b-public-buildings__label:before {
+          top: 0; } }
+      @media (max-width: 480px) {
+        .b-public-buildings__label:before {
+          position: relative; } }
+  .b-public-buildings__checkbox-icon {
+    width: 11px;
+    height: 10px;
+    background: url(../img/icons/icon-ok-green.svg) 0 0 no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    z-index: 1;
+    display: none; }
+    @media (max-width: 760px) {
+      .b-public-buildings__checkbox-icon {
+        top: 4px; } }
+    .b-public-buildings__checkbox:checked .b-public-buildings__checkbox-icon {
+      display: block; }
+  .b-public-buildings__checkbox {
+    display: none; }
+    .b-public-buildings__checkbox:checked + .b-public-buildings__checkbox-icon {
+      display: block; }
+  .b-public-buildings__link {
+    display: inline-block;
+    margin: 0 0 0 7px;
+    font-family: "Elektra Light Pro";
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 300;
+    font-style: normal;
+    color: #1d8f7f;
+    text-decoration: underline;
+    opacity: 1;
+    transition: opacity 0.28s ease; }
+    @media (max-width: 760px) {
+      .b-public-buildings__link {
+        font-size: 14px;
+        line-height: 1.285;
+        position: absolute;
+        bottom: 0;
+        left: 18px; } }
+    @media (max-width: 760px) {
+      .b-public-buildings__link {
+        font-family: "Elektra Light Pro";
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 300;
+        font-style: normal; } }
+    @media (max-width: 480px) {
+      .b-public-buildings__link {
+        position: relative;
+        margin: 0 0 0 0;
+        left: 0; } }
+    .b-public-buildings__link:hover {
+      opacity: 0.8; }
+  .b-public-buildings__slider-wrapper {
+    width: 100%;
+    margin: 0 0 63px;
+    display: none; }
+    @media (max-width: 760px) {
+      .b-public-buildings__slider-wrapper {
+        display: block;
+        margin: 0 0 40px; } }
+  .b-public-buildings__slider {
+    width: 100%; }
+  .b-public-buildings__slider-img {
+    width: 100%;
+    height: auto; }
+  .b-public-buildings__slider-subtitle {
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1.222;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+    text-align: center;
+    margin: 22px 0 0 0;
+    min-height: 65px; }
+  .b-public-buildings .slick-arrow {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 37px;
+    height: 10px;
+    text-indent: -9999px;
+    border: none;
+    outline: none;
+    position: absolute;
+    bottom: 50px;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.2s ease; }
+    .b-public-buildings .slick-arrow.slick-prev {
+      left: 10px;
+      background-image: url(../img/icons/icon-arrow-small-prev.png); }
+      .b-public-buildings .slick-arrow.slick-prev:hover {
+        left: calc(10px - 4px); }
+    .b-public-buildings .slick-arrow.slick-next {
+      right: 10px;
+      background-image: url(../img/icons/icon-arrow-small-next.png); }
+      .b-public-buildings .slick-arrow.slick-next:hover {
+        right: calc(10px - 4px); }
+
+.b-modular-constructions {
+  border-top: 1px #d6d6d6 solid;
+  padding: 87px 0 61px 0;
+  overflow: hidden; }
+  @media (max-width: 1085px) {
+    .b-modular-constructions {
+      padding: 40px 0 50px; } }
+  @media (max-width: 760px) {
+    .b-modular-constructions {
+      padding: 33px 0 40px; } }
+  .b-modular-constructions__container {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+    @media (max-width: 1085px) {
+      .b-modular-constructions__container {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-modular-constructions__container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media (max-width: 1085px) {
+      .b-modular-constructions__container {
+        margin-bottom: 15px; } }
+    @media (max-width: 760px) {
+      .b-modular-constructions__container {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 10px; } }
+  .b-modular-constructions__title {
+    font-family: "Elektra Light Pro";
+    font-size: 60px;
+    line-height: 1.16666667;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 30px; }
+    @media (max-width: 1085px) {
+      .b-modular-constructions__title {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 0 19px; } }
+    @media (max-width: 760px) {
+      .b-modular-constructions__title {
+        font-size: 45px;
+        line-height: 1.022;
+        margin: 0 0 2px; } }
+  .b-modular-constructions__btn {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    transition: all 0.2s ease;
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    color: #ed4f4b;
+    border-radius: 2px;
+    border: 1px solid #ed4f4b;
+    padding: 7px 10px 6px;
+    background-color: transparent;
+    transition: all 0.15s ease-in;
+    margin: 19px 0 0 0; }
+    @media (max-width: 1085px) {
+      .b-modular-constructions__btn {
+        margin: 13px 0 0 0; } }
+    @media (max-width: 760px) {
+      .b-modular-constructions__btn {
+        margin: 13px 0 19px 0; } }
+    .b-modular-constructions__btn:hover {
+      background: #ff6f6b;
+      color: #ffffff;
+      border: 1px solid #ff6f6b; }
+    .b-modular-constructions__btn:active {
+      background: #e83f3a;
+      box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.31); }
+  .b-modular-constructions__slider-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    height: 500px;
+    margin: 0 0 50px; }
+    @media (max-width: 760px) {
+      .b-modular-constructions__slider-wrapper {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: auto;
+        margin: 0 0 30px; } }
+    .b-modular-constructions__slider-wrapper:after {
+      content: '';
+      width: 100%;
+      height: 63.5814889%;
+      background-color: #000000;
+      opacity: 0.2;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      display: none; }
+      @media (max-width: 760px) {
+        .b-modular-constructions__slider-wrapper:after {
+          display: none; } }
+  .b-modular-constructions__left-col {
+    width: 50vw;
+    height: 500px;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0; }
+    @media (max-width: 760px) {
+      .b-modular-constructions__left-col {
+        width: 100%;
+        position: relative;
+        height: 151px; } }
+    .b-modular-constructions__left-col:before {
+      content: '';
+      display: block;
+      width: 50vw;
+      height: 500px;
+      background: #009882;
+      background: linear-gradient(to bottom, #007968 0%, #00806e 18%, #00927c 39%, #009680 50%, #009882 100%);
+      -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+      -moz-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+      -ms-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+      -o-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%); }
+      @media (max-width: 760px) {
+        .b-modular-constructions__left-col:before {
+          display: none; } }
+  .b-modular-constructions__left-col-inner-wrapper {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    left: calc((100vw - 1085px)/2);
+    top: 0;
+    width: calc(50vw - ((100vw - 1085px)/2));
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    @media (max-width: 1085px) {
+      .b-modular-constructions__left-col-inner-wrapper {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-modular-constructions__left-col-inner-wrapper {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media (max-width: 1085px) {
+      .b-modular-constructions__left-col-inner-wrapper {
+        width: 50vw;
+        left: 0; } }
+    @media (max-width: 760px) {
+      .b-modular-constructions__left-col-inner-wrapper {
+        position: relative;
+        left: 0;
+        width: 100%;
+        padding-top: 0; } }
+  .b-modular-constructions__right-col {
+    width: 60vw;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    @media (max-width: 760px) {
+      .b-modular-constructions__right-col {
+        width: 100%;
+        position: relative;
+        top: auto;
+        right: auto; } }
+  .b-modular-constructions__subtitle {
+    font-family: "Elektra Light Pro";
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff; }
+    @media (max-width: 760px) {
+      .b-modular-constructions__subtitle {
+        font-size: 20px;
+        line-height: 1.15;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: linear-gradient(to bottom, #007968 0%, #00806e 18%, #00927c 39%, #009680 50%, #009882 100%);
+        padding: 20px 20px 16px 20px; } }
+  .b-modular-constructions__selected {
+    font-weight: 700; }
+  .b-modular-constructions__controls {
+    position: absolute;
+    left: 0;
+    bottom: 45px;
+    width: 100%;
+    max-width: 25vw;
+    margin: 0; }
+    @media (max-width: 1085px) {
+      .b-modular-constructions__controls {
+        position: absolute;
+        bottom: 45px;
+        left: 40px;
+        width: 100%;
+        max-width: 237px;
+        margin: 0; } }
+    @media (max-width: 760px) {
+      .b-modular-constructions__controls {
+        position: absolute;
+        bottom: 81px;
+        left: 20px;
+        width: calc(100% - 40px);
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        z-index: 3;
+        display: none; } }
+    .b-modular-constructions__controls_mobile {
+      display: none; }
+      @media (max-width: 760px) {
+        .b-modular-constructions__controls_mobile {
+          display: block; } }
+      @media (max-width: 480px) {
+        .b-modular-constructions__controls_mobile {
+          display: none; } }
+  .b-modular-constructions__control-item {
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 51px;
+    height: 10px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    top: 4px;
+    transition: all 0.2s ease;
+    display: block; }
+    @media (max-width: 760px) {
+      .b-modular-constructions__control-item {
+        top: 15px; } }
+    .b-modular-constructions__control-item_prev {
+      left: 0;
+      background-image: url(../img/icons/icon-left-arrow.svg); }
+      .b-modular-constructions__control-item_prev:hover {
+        left: -4px; }
+    .b-modular-constructions__control-item_next {
+      right: 0;
+      background-image: url(../img/icons/icon-right-arrow.svg); }
+      .b-modular-constructions__control-item_next:hover {
+        right: -4px; }
+  .b-modular-constructions__slider {
+    position: absolute !important;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 500px;
+    transition: all 0.3s ease; }
+    @media (max-width: 760px) {
+      .b-modular-constructions__slider {
+        position: relative !important;
+        height: auto; } }
+    .b-modular-constructions__slider_active {
+      opacity: 1;
+      visibility: visible; }
+    .b-modular-constructions__slider .slick-track {
+      height: 500px; }
+      @media (max-width: 760px) {
+        .b-modular-constructions__slider .slick-track {
+          height: auto; } }
+  .b-modular-constructions__slider-item {
+    cursor: pointer;
+    position: relative; }
+  .b-modular-constructions__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    position: relative;
+    left: 0;
+    top: 0; }
+    @media (max-width: 760px) {
+      .b-modular-constructions__img {
+        object-fit: none;
+        width: 100%;
+        height: auto;
+        display: block; } }
+  .b-modular-constructions__text {
+    font-family: "Elektra Light Pro";
+    font-size: 20px;
+    line-height: 1.45;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    text-decoration: underline;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+    padding: 21px 72px;
+    width: 100%; }
+    @media (max-width: 760px) {
+      .b-modular-constructions__text {
+        width: 100%;
+        background: #11907f;
+        padding: 40px 20px 20px 20px;
+        bottom: 0;
+        left: 0; } }
+    @media (max-width: 480px) {
+      .b-modular-constructions__text {
+        font-size: 16px;
+        padding: 10px 20px 10px 20px; } }
+  .b-modular-constructions__basic-equipment {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 80px; }
+    @media (max-width: 1085px) {
+      .b-modular-constructions__basic-equipment {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-modular-constructions__basic-equipment {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media (max-width: 1085px) {
+      .b-modular-constructions__basic-equipment {
+        margin-bottom: 50px; } }
+    @media (max-width: 1085px) {
+      .b-modular-constructions__basic-equipment {
+        margin-bottom: 30px; } }
+    .b-modular-constructions__basic-equipment-title {
+      font-family: "Elektra Light Pro";
+      font-size: 25px;
+      line-height: 1.2;
+      font-weight: 700;
+      font-style: normal;
+      color: #000000;
+      margin: 0 0 28px; }
+      @media (max-width: 760px) {
+        .b-modular-constructions__basic-equipment-title {
+          font-size: 20px;
+          line-height: 1.5; } }
+    .b-modular-constructions__basic-equipment-inner-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; }
+      @media (max-width: 1085px) {
+        .b-modular-constructions__basic-equipment-inner-wrapper {
+          justify-content: flex-start;
+          flex-wrap: wrap; } }
+    .b-modular-constructions__basic-equipment-item {
+      width: 25%;
+      padding: 0 12px 0 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start; }
+      @media (max-width: 1085px) {
+        .b-modular-constructions__basic-equipment-item {
+          width: 50%;
+          margin: 0 0 20px; } }
+      @media (max-width: 760px) {
+        .b-modular-constructions__basic-equipment-item {
+          width: 100%;
+          flex-direction: row;
+          align-items: center; } }
+      .b-modular-constructions__basic-equipment-item:last-child {
+        padding-right: 0; }
+    .b-modular-constructions__basic-equipment-img {
+      width: 78px;
+      height: 78px;
+      display: block;
+      margin: 0 0 23px; }
+      @media (max-width: 760px) {
+        .b-modular-constructions__basic-equipment-img {
+          margin: 0 17px 0 0; } }
+    .b-modular-constructions__basic-equipment-subtitle {
+      font-family: "Elektra Light Pro";
+      font-size: 18px;
+      line-height: 1.444;
+      font-weight: 700;
+      font-style: normal;
+      color: #000000; }
+    .b-modular-constructions__basic-equipment-selected {
+      font-weight: 300;
+      font-style: italic; }
+  .b-modular-constructions__add-options {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 70px; }
+    @media (max-width: 1085px) {
+      .b-modular-constructions__add-options {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-modular-constructions__add-options {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media (max-width: 1085px) {
+      .b-modular-constructions__add-options {
+        margin-bottom: 50px; } }
+    @media (max-width: 760px) {
+      .b-modular-constructions__add-options {
+        margin-bottom: 40px; } }
+    .b-modular-constructions__add-options-title {
+      font-family: "Elektra Light Pro";
+      font-size: 25px;
+      line-height: 1.2;
+      font-weight: 700;
+      font-style: normal;
+      color: #000000;
+      margin: 0 0 26px; }
+      @media (max-width: 760px) {
+        .b-modular-constructions__add-options-title {
+          font-size: 20px;
+          line-height: 1.5; } }
+    .b-modular-constructions__add-options-inner-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start; }
+      @media (max-width: 1085px) {
+        .b-modular-constructions__add-options-inner-wrapper {
+          flex-wrap: wrap; } }
+    .b-modular-constructions__add-options-item {
+      font-family: "Elektra Light Pro";
+      font-size: 18px;
+      line-height: 1.444;
+      font-weight: 700;
+      font-style: normal;
+      color: #000000;
+      padding: 0 20px 0 29px;
+      position: relative;
+      margin: 0 0 0 8px;
+      width: 20%; }
+      @media (max-width: 1085px) {
+        .b-modular-constructions__add-options-item {
+          width: 33%;
+          margin-left: 0;
+          margin-bottom: 20px; } }
+      @media (max-width: 760px) {
+        .b-modular-constructions__add-options-item {
+          width: 100%;
+          margin: 0 0 10px 0; } }
+      .b-modular-constructions__add-options-item:last-child {
+        padding-right: 0; }
+      .b-modular-constructions__add-options-item:first-child {
+        margin-left: 0; }
+      .b-modular-constructions__add-options-item:before {
+        content: '';
+        display: block;
+        width: 22px;
+        height: 22px;
+        border-radius: 11px;
+        background: #009882;
+        position: absolute;
+        left: 0;
+        top: 0; }
+      .b-modular-constructions__add-options-item:after {
+        content: '';
+        display: block;
+        width: 11px;
+        height: 9px;
+        border-radius: 11px;
+        background: url(../img/icons/icon-ok.svg) 0 0 no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 6px;
+        top: 6px;
+        z-index: 1; }
+      @media (max-width: 760px) {
+        .b-modular-constructions__add-options-item br {
+          display: none; } }
+  .b-modular-constructions__why-module {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 17px; }
+    @media (max-width: 1085px) {
+      .b-modular-constructions__why-module {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-modular-constructions__why-module {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media (max-width: 1085px) {
+      .b-modular-constructions__why-module {
+        margin-bottom: 30px; } }
+    @media (max-width: 1085px) {
+      .b-modular-constructions__why-module {
+        margin-bottom: 15px; } }
+    .b-modular-constructions__why-module-title {
+      font-family: "Elektra Light Pro";
+      font-size: 50px;
+      line-height: 1.2;
+      font-weight: 400;
+      font-style: normal;
+      color: #000000;
+      margin: 0 0 50px; }
+      @media (max-width: 1085px) {
+        .b-modular-constructions__why-module-title {
+          margin-bottom: 30px; } }
+      @media (max-width: 760px) {
+        .b-modular-constructions__why-module-title {
+          font-size: 35px;
+          line-height: 1.02;
+          margin-bottom: 20px; } }
+    .b-modular-constructions__why-module-inner-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap; }
+    .b-modular-constructions__why-module-item {
+      width: 33.333%;
+      padding: 65px 24px 0 0;
+      position: relative;
+      margin: 0 0 48px; }
+      @media (max-width: 1085px) {
+        .b-modular-constructions__why-module-item {
+          width: 50%;
+          margin: 0 0 20px; } }
+      @media (max-width: 760px) {
+        .b-modular-constructions__why-module-item {
+          width: 100%;
+          margin: 0 0 20px;
+          padding: 60px 0 0 0; } }
+      .b-modular-constructions__why-module-item:last-child {
+        padding-right: 0; }
+      .b-modular-constructions__why-module-item:before {
+        content: '';
+        display: block;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 0;
+        top: 0; }
+      .b-modular-constructions__why-module-item_1:before {
+        width: 33px;
+        height: 43px;
+        background-image: url(../img/icons/icon-alignment.svg); }
+      .b-modular-constructions__why-module-item_2:before {
+        width: 40px;
+        height: 34px;
+        background-image: url(../img/icons/icon-wood.svg);
+        top: 9px; }
+      .b-modular-constructions__why-module-item_3:before {
+        width: 40px;
+        height: 40px;
+        background-image: url(../img/icons/icon-light.svg); }
+      .b-modular-constructions__why-module-item_4:before {
+        width: 38px;
+        height: 38px;
+        background-image: url(../img/icons/icon-size-ruler.svg);
+        top: 11px; }
+      .b-modular-constructions__why-module-item_5:before {
+        width: 38px;
+        height: 41px;
+        background-image: url(../img/icons/icon-strength.svg);
+        top: 10px; }
+      .b-modular-constructions__why-module-item_6:before {
+        width: 46px;
+        height: 36px;
+        background-image: url(../img/icons/icon-flexibility.svg);
+        top: 14px; }
+    .b-modular-constructions__why-module-subtitle {
+      font-family: "Elektra Light Pro";
+      font-size: 18px;
+      line-height: 1.5;
+      font-weight: 700;
+      font-style: normal;
+      color: #000000;
+      margin: 0 0 7px; }
+    .b-modular-constructions__why-module-text {
+      font-family: "Elektra Light Pro";
+      font-size: 16px;
+      line-height: 1.375;
+      font-weight: 400;
+      font-style: normal;
+      color: #000000; }
+  .b-modular-constructions__form {
+    background: #eef7f6;
+    padding: 50px 0 44px; }
+    @media (max-width: 1085px) {
+      .b-modular-constructions__form {
+        padding: 35px 0 35px; } }
+    @media (max-width: 760px) {
+      .b-modular-constructions__form {
+        padding: 18px 0 30px; } }
+    .b-modular-constructions__form-container {
+      width: 100%;
+      max-width: 1085px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px; }
+      @media (max-width: 1085px) {
+        .b-modular-constructions__form-container {
+          padding-left: 44px;
+          padding-right: 44px; } }
+      @media (max-width: 760px) {
+        .b-modular-constructions__form-container {
+          padding-left: 20px;
+          padding-right: 20px; } }
+    .b-modular-constructions__form-top-line {
+      font-family: "Elektra Light Pro";
+      font-size: 25px;
+      line-height: 1.2;
+      font-weight: 700;
+      font-style: normal;
+      color: #1d8f7f;
+      margin: 0 0 23px; }
+      @media (max-width: 760px) {
+        .b-modular-constructions__form-top-line {
+          font-size: 20px;
+          line-height: 1.15;
+          margin-bottom: 13px; } }
+    .b-modular-constructions__form-middle-line {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin: 0 0 7px; }
+      @media (max-width: 1085px) {
+        .b-modular-constructions__form-middle-line {
+          flex-direction: column;
+          margin-bottom: 0; } }
+    .b-modular-constructions__form-input-text {
+      width: 100%;
+      box-sizing: border-box;
+      outline: none;
+      border: 1px #e4e4e4 solid;
+      padding: 17px 14px 15px;
+      border-radius: 0;
+      display: block;
+      font-family: Elektra Light Pro;
+      font-size: 16px;
+      line-height: normal;
+      font-weight: 400;
+      font-style: normal;
+      color: #000000;
+      transition: all 0.3s ease-out;
+      margin: 0 8px 13px 0; }
+      .b-modular-constructions__form-input-text::-webkit-input-placeholder {
+        color: rgba(0, 0, 0, 0.4); }
+      .b-modular-constructions__form-input-text::-moz-placeholder {
+        color: rgba(0, 0, 0, 0.4); }
+      .b-modular-constructions__form-input-text:-moz-placeholder {
+        color: rgba(0, 0, 0, 0.4); }
+      .b-modular-constructions__form-input-text:-ms-input-placeholder {
+        color: rgba(0, 0, 0, 0.4); }
+      .b-modular-constructions__form-input-text:focus::-webkit-input-placeholder {
+        color: transparent; }
+      .b-modular-constructions__form-input-text:focus::-moz-placeholder {
+        color: transparent; }
+      .b-modular-constructions__form-input-text:focus:-moz-placeholder {
+        color: transparent; }
+      .b-modular-constructions__form-input-text:focus:-ms-input-placeholder {
+        color: transparent; }
+      .b-modular-constructions__form-input-text:focus, .b-modular-constructions__form-input-text:active {
+        outline: none;
+        box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.18);
+        border-color: rgba(0, 0, 0, 0.4); }
+      @media (max-width: 1085px) {
+        .b-modular-constructions__form-input-text {
+          width: 100%;
+          max-width: 450px;
+          margin: 0 0 5px; } }
+      @media (max-width: 760px) {
+        .b-modular-constructions__form-input-text {
+          max-width: 100%; } }
+    .b-modular-constructions__form-bottom-line {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      @media (max-width: 480px) {
+        .b-modular-constructions__form-bottom-line {
+          align-items: flex-start;
+          flex-direction: column; } }
+    .b-modular-constructions__form-btn {
+      display: inline-block;
+      text-align: center;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      text-decoration: none;
+      padding: 0;
+      border-radius: 0;
+      margin: 0;
+      transition: all 0.2s ease;
+      font-family: "Elektra Light Pro";
+      font-size: 18px;
+      line-height: 1;
+      font-weight: 700;
+      font-style: normal;
+      color: #ffffff;
+      background-color: #ed4f4b;
+      margin: 0;
+      padding: 16px 27px 15.5px;
+      transition: all 0.15s ease-in; }
+      @media (max-width: 1085px) {
+        .b-modular-constructions__form-btn {
+          margin-top: 5px;
+          margin-bottom: 15px; } }
+      @media (max-width: 760px) {
+        .b-modular-constructions__form-btn {
+          margin-bottom: 15px; } }
+      .b-modular-constructions__form-btn:hover {
+        background: #ff6f6b;
+        color: #ffffff; }
+      .b-modular-constructions__form-btn:active {
+        background: #e83f3a;
+        box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.31); }
+    .b-modular-constructions__form-label {
+      width: 18px;
+      height: 18px;
+      padding: 0;
+      margin: -2px 0 0 0;
+      position: relative;
+      cursor: pointer; }
+      @media (max-width: 480px) {
+        .b-modular-constructions__form-label {
+          margin: 0 0 10px; } }
+      .b-modular-constructions__form-label:before {
+        content: '';
+        width: 18px;
+        height: 18px;
+        background-color: #f9feff;
+        border: 1px solid #e4e4e4;
+        border-radius: 1px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0; }
+    .b-modular-constructions__form-checkbox-icon {
+      width: 11px;
+      height: 10px;
+      background: url(../img/icons/icon-ok-green.svg) 0 0 no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 4px;
+      top: 4px;
+      z-index: 1;
+      display: none; }
+      .b-modular-constructions__form-checkbox:checked .b-modular-constructions__form-checkbox-icon {
+        display: block; }
+    .b-modular-constructions__form-checkbox {
+      display: none; }
+      .b-modular-constructions__form-checkbox:checked + .b-modular-constructions__form-checkbox-icon {
+        display: block; }
+    .b-modular-constructions__form-link {
+      display: inline-block;
+      margin: 0 0 0 7px;
+      font-family: "Elektra Light Pro";
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 300;
+      font-style: italic;
+      color: #1d8f7f;
+      text-decoration: underline;
+      opacity: 1;
+      transition: opacity 0.28s ease; }
+      @media (max-width: 760px) {
+        .b-modular-constructions__form-link {
+          font-family: "Elektra Light Pro";
+          font-size: 14px;
+          line-height: 1.2;
+          font-weight: 300;
+          font-style: italic; } }
+      @media (max-width: 480px) {
+        .b-modular-constructions__form-link {
+          margin-left: 0; } }
+      .b-modular-constructions__form-link:hover {
+        opacity: 0.8; }
+
+.b-earn-with-us {
+  padding: 0 0 89px; }
+  @media (max-width: 1085px) {
+    .b-earn-with-us {
+      padding: 0 0 50px; } }
+  .b-earn-with-us__container {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px; }
+    @media (max-width: 1085px) {
+      .b-earn-with-us__container {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-earn-with-us__container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .b-earn-with-us__title {
+    font-family: "Elektra Light Pro";
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 29px; }
+    @media (max-width: 760px) {
+      .b-earn-with-us__title {
+        font-size: 35px;
+        line-height: 1.02;
+        margin-bottom: 15px; } }
+  .b-earn-with-us__text {
+    font-family: "Elektra Light Pro";
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 32px; }
+    @media (max-width: 760px) {
+      .b-earn-with-us__text {
+        font-size: 20px;
+        line-height: 1.5;
+        margin: 0 0 20px; } }
+  .b-earn-with-us__items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 0 40px; }
+    @media (max-width: 1085px) {
+      .b-earn-with-us__items {
+        flex-wrap: wrap;
+        margin-bottom: 27px; } }
+    @media (max-width: 760px) {
+      .b-earn-with-us__items {
+        flex-direction: column;
+        margin-bottom: 20px; } }
+  .b-earn-with-us__item {
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1.444;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    width: 25%;
+    padding: 0 12px 0 0;
+    position: relative; }
+    @media (max-width: 1085px) {
+      .b-earn-with-us__item {
+        width: 50%;
+        margin: 0 0 25px; } }
+    @media (max-width: 760px) {
+      .b-earn-with-us__item {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 15px; } }
+    .b-milestones__right-col .b-earn-with-us__item {
+      margin: 0 0 10px; }
+    .b-earn-with-us__item:before {
+      font-family: "Elektra Light Pro";
+      font-size: 24px;
+      line-height: 1;
+      font-weight: 400;
+      font-style: normal;
+      color: #1d8f7f;
+      content: '';
+      display: block;
+      width: 44px;
+      height: 44px;
+      padding: 11px 0 0;
+      border-radius: 22px;
+      border: 1px solid #1d8f7f;
+      margin: 0 0 14px;
+      text-align: center; }
+    .b-earn-with-us__item:after {
+      content: '';
+      display: block;
+      width: calc(100% - 60px);
+      height: 1px;
+      background-color: #1d8f7f;
+      background-image: linear-gradient(0deg, #1d8f7f 0%, #bdefe8 100%);
+      opacity: 0.7;
+      position: absolute;
+      top: 21px;
+      left: 51px; }
+      @media (max-width: 1085px) {
+        .b-earn-with-us__item:after {
+          display: none; } }
+    .b-earn-with-us__item:last-child:after {
+      display: none; }
+    .b-earn-with-us__item_1:before {
+      content: '1'; }
+    .b-earn-with-us__item_2:before {
+      content: '2'; }
+    .b-earn-with-us__item_3:before {
+      content: '3'; }
+    .b-earn-with-us__item_4:before {
+      content: '4'; }
+  .b-earn-with-us__btn {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    transition: all 0.2s ease;
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    background-color: #ed4f4b;
+    margin: 0;
+    padding: 16px 27px 15.5px;
+    transition: all 0.15s ease-in; }
+    .b-earn-with-us__btn:hover {
+      background: #ff6f6b;
+      color: #ffffff; }
+    .b-earn-with-us__btn:active {
+      background: #e83f3a;
+      box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.31); }
+
+.b-span-structures {
+  padding: 87px 0 80px 0;
+  overflow: hidden;
+  border-top: 1px #d6d6d6 solid; }
+  @media (max-width: 1085px) {
+    .b-span-structures {
+      padding: 40px 0 50px; } }
+  @media (max-width: 760px) {
+    .b-span-structures {
+      padding: 33px 0 40px; } }
+  .b-span-structures__container {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+    @media (max-width: 1085px) {
+      .b-span-structures__container {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-span-structures__container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media (max-width: 1085px) {
+      .b-span-structures__container {
+        margin-bottom: 15px; } }
+    @media (max-width: 760px) {
+      .b-span-structures__container {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 10px; } }
+  .b-span-structures__title {
+    font-family: "Elektra Light Pro";
+    font-size: 60px;
+    line-height: 1.16666667;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 30px; }
+    @media (max-width: 1085px) {
+      .b-span-structures__title {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 0 19px;
+        display: none; } }
+    @media (max-width: 760px) {
+      .b-span-structures__title {
+        font-size: 45px;
+        line-height: 1.022;
+        margin: 0 0 2px; } }
+    .b-span-structures__title_mobile {
+      display: none; }
+      @media (max-width: 1085px) {
+        .b-span-structures__title_mobile {
+          display: block; } }
+  .b-span-structures__btn {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    transition: all 0.2s ease;
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    color: #ed4f4b;
+    border-radius: 2px;
+    border: 1px solid #ed4f4b;
+    padding: 7px 10px 6px;
+    background-color: transparent;
+    transition: all 0.15s ease-in;
+    margin: 19px 0 0 0; }
+    @media (max-width: 1085px) {
+      .b-span-structures__btn {
+        margin: 13px 0 0 0; } }
+    @media (max-width: 760px) {
+      .b-span-structures__btn {
+        margin: 13px 0 19px 0; } }
+    .b-span-structures__btn:hover {
+      background: #ff6f6b;
+      color: #ffffff;
+      border: 1px solid #ff6f6b; }
+    .b-span-structures__btn:active {
+      background: #e83f3a;
+      box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.31); }
+  .b-span-structures__controls {
+    position: absolute;
+    left: 0;
+    bottom: 45px;
+    width: 100%;
+    max-width: 25vw;
+    margin: 0; }
+    @media (max-width: 1085px) {
+      .b-span-structures__controls {
+        position: absolute;
+        bottom: 45px;
+        left: 40px;
+        width: 100%;
+        max-width: 237px;
+        margin: 0; } }
+    @media (max-width: 760px) {
+      .b-span-structures__controls {
+        position: absolute;
+        bottom: 81px;
+        left: 20px;
+        width: calc(100% - 40px);
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        z-index: 3;
+        display: none; } }
+    .b-span-structures__controls_mobile {
+      display: none; }
+      @media (max-width: 760px) {
+        .b-span-structures__controls_mobile {
+          display: block; } }
+  .b-span-structures__control-item {
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 51px;
+    height: 10px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    top: 4px;
+    transition: all 0.2s ease;
+    display: block; }
+    @media (max-width: 760px) {
+      .b-span-structures__control-item {
+        top: -1px; } }
+    .b-span-structures__control-item_prev {
+      left: 0;
+      background-image: url(../img/icons/icon-left-arrow.svg); }
+      .b-span-structures__control-item_prev:hover {
+        left: -4px; }
+    .b-span-structures__control-item_next {
+      right: 0;
+      background-image: url(../img/icons/icon-right-arrow.svg); }
+      .b-span-structures__control-item_next:hover {
+        right: -4px; }
+  .b-span-structures__slider-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    height: 500px;
+    margin: 0 0 50px; }
+    @media (max-width: 760px) {
+      .b-span-structures__slider-wrapper {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: auto;
+        margin: 0 0 30px; } }
+    .b-span-structures__slider-wrapper:after {
+      content: '';
+      width: 100%;
+      height: 63.5814889%;
+      background-color: #000000;
+      opacity: 0.2;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      display: none; }
+      @media (max-width: 760px) {
+        .b-span-structures__slider-wrapper:after {
+          display: none; } }
+  .b-span-structures__left-col {
+    width: 50vw;
+    height: 500px;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0; }
+    @media (max-width: 760px) {
+      .b-span-structures__left-col {
+        width: 100%;
+        position: relative;
+        height: 100px; } }
+    .b-span-structures__left-col:before {
+      content: '';
+      display: block;
+      width: 50vw;
+      height: 500px;
+      background: #009882;
+      background: linear-gradient(to bottom, #007968 0%, #00806e 18%, #00927c 39%, #009680 50%, #009882 100%);
+      -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+      -moz-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+      -ms-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+      -o-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%); }
+      @media (max-width: 760px) {
+        .b-span-structures__left-col:before {
+          display: none; } }
+  .b-span-structures__left-col-inner-wrapper {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    left: calc((100vw - 1085px)/2);
+    top: 0;
+    width: calc(50vw - ((100vw - 1085px)/2));
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    @media (max-width: 1085px) {
+      .b-span-structures__left-col-inner-wrapper {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-span-structures__left-col-inner-wrapper {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media (max-width: 1085px) {
+      .b-span-structures__left-col-inner-wrapper {
+        width: 50vw;
+        left: 0; } }
+    @media (max-width: 760px) {
+      .b-span-structures__left-col-inner-wrapper {
+        position: relative;
+        left: 0;
+        width: 100%;
+        padding-top: 0; } }
+  .b-span-structures__right-col {
+    width: 60vw;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    @media (max-width: 760px) {
+      .b-span-structures__right-col {
+        width: 100%;
+        position: relative;
+        top: auto;
+        right: auto; } }
+  .b-span-structures__subtitle {
+    font-family: "Elektra Light Pro";
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff; }
+    @media (max-width: 760px) {
+      .b-span-structures__subtitle {
+        font-size: 20px;
+        line-height: 1.15;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: linear-gradient(to bottom, #007968 0%, #00806e 18%, #00927c 39%, #009680 50%, #009882 100%);
+        padding: 20px 20px 16px 20px; } }
+  .b-span-structures__slider {
+    position: absolute !important;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 500px;
+    transition: all 0.3s ease; }
+    @media (max-width: 760px) {
+      .b-span-structures__slider {
+        position: relative !important;
+        height: auto; } }
+    .b-span-structures__slider_active {
+      opacity: 1;
+      visibility: visible; }
+    .b-span-structures__slider .slick-track {
+      height: 500px; }
+      @media (max-width: 760px) {
+        .b-span-structures__slider .slick-track {
+          height: auto; } }
+  .b-span-structures__slider-item {
+    cursor: pointer;
+    position: relative; }
+  .b-span-structures__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    position: relative;
+    left: 0;
+    top: 0; }
+    @media (max-width: 760px) {
+      .b-span-structures__img {
+        object-fit: none;
+        width: 100%;
+        height: auto;
+        display: block; } }
+  .b-span-structures__text {
+    font-family: "Elektra Light Pro";
+    font-size: 20px;
+    line-height: 1.45;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    text-decoration: underline;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+    padding: 21px 72px;
+    width: 100%; }
+    @media (max-width: 760px) {
+      .b-span-structures__text {
+        width: 100%;
+        background: #11907f;
+        padding: 40px 20px 20px 20px;
+        bottom: 0;
+        left: 0; } }
+    @media (max-width: 480px) {
+      .b-span-structures__text {
+        font-size: 16px;
+        padding: 10px 20px 10px 20px; } }
+  .b-span-structures__lists-container {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    @media (max-width: 1085px) {
+      .b-span-structures__lists-container {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-span-structures__lists-container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media (max-width: 760px) {
+      .b-span-structures__lists-container {
+        flex-direction: column; } }
+  .b-span-structures__list-inner-wrapper {
+    width: 50%;
+    padding: 0 12px 0 0; }
+    .b-span-structures__list-inner-wrapper:last-child {
+      padding-right: 0; }
+      @media (max-width: 760px) {
+        .b-span-structures__list-inner-wrapper:last-child {
+          margin-bottom: 0; } }
+    @media (max-width: 760px) {
+      .b-span-structures__list-inner-wrapper {
+        margin-bottom: 20px;
+        width: 100%; } }
+  .b-span-structures__list-title {
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1.444;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+    position: relative;
+    padding: 0 0 0 29px;
+    margin: 0 0 8px; }
+    .b-span-structures__list-title:before {
+      content: '';
+      display: block;
+      width: 22px;
+      height: 22px;
+      border-radius: 11px;
+      background: #009882;
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .b-span-structures__list-title:after {
+      content: '';
+      display: block;
+      width: 11px;
+      height: 9px;
+      border-radius: 11px;
+      background: url(../img/icons/icon-ok.svg) 0 0 no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 6px;
+      top: 6px;
+      z-index: 1; }
+  .b-span-structures__list {
+    list-style: none;
+    margin: 0 0 0 30px;
+    padding: 0; }
+  .b-span-structures__list-item {
+    font-family: "Elektra Light Pro";
+    font-size: 16px;
+    line-height: 1.51;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 2px;
+    padding: 0 0 0 17px;
+    position: relative; }
+    @media (max-width: 760px) {
+      .b-span-structures__list-item br {
+        display: none; } }
+    .b-span-structures__list-item:before {
+      content: '—';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 1px; }
+
+.b-advantages-of-struktura {
+  margin: 0; }
+  .b-advantages-of-struktura__container {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 17px; }
+    @media (max-width: 1085px) {
+      .b-advantages-of-struktura__container {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-advantages-of-struktura__container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .b-advantages-of-struktura__title {
+    font-family: "Elektra Light Pro";
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 50px; }
+    @media (max-width: 1085px) {
+      .b-advantages-of-struktura__title {
+        margin-bottom: 35px; } }
+    @media (max-width: 760px) {
+      .b-advantages-of-struktura__title {
+        font-size: 35px;
+        line-height: 1.2; } }
+  .b-advantages-of-struktura__inner-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 0 63px; }
+    @media (max-width: 1085px) {
+      .b-advantages-of-struktura__inner-wrapper {
+        margin-bottom: 20px; } }
+  .b-advantages-of-struktura__item {
+    width: 33.333%;
+    padding: 65px 24px 0 0;
+    position: relative;
+    margin: 0 0 48px; }
+    @media (max-width: 1085px) {
+      .b-advantages-of-struktura__item {
+        width: 50%;
+        margin-bottom: 32px; } }
+    @media (max-width: 760px) {
+      .b-advantages-of-struktura__item {
+        width: 100%;
+        margin-bottom: 12px;
+        padding: 57px 24px 0 0; } }
+    .b-advantages-of-struktura__item:last-child {
+      padding-right: 0; }
+    .b-advantages-of-struktura__item:before {
+      content: '';
+      display: block;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .b-advantages-of-struktura__item_1:before {
+      width: 38px;
+      height: 38px;
+      background-image: url(../img/icons/icon-architecture.svg); }
+    .b-advantages-of-struktura__item_2:before {
+      width: 38px;
+      height: 41px;
+      background-image: url(../img/icons/icon-strength.svg); }
+    .b-advantages-of-struktura__item_3:before {
+      width: 39px;
+      height: 44px;
+      background-image: url(../img/icons/icon-weight.svg); }
+    .b-advantages-of-struktura__item_4:before {
+      width: 25px;
+      height: 36px;
+      background-image: url(../img/icons/icon-sustainability.svg);
+      top: 8px; }
+    .b-advantages-of-struktura__item_5:before {
+      width: 40px;
+      height: 34px;
+      background-image: url(../img/icons/icon-wood.svg);
+      top: 10px; }
+    .b-advantages-of-struktura__item_6:before {
+      width: 38px;
+      height: 38px;
+      background-image: url(../img/icons/icon-stop-fire.svg);
+      top: 10px; }
+  .b-advantages-of-struktura__subtitle {
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 7px; }
+  .b-advantages-of-struktura__text {
+    font-family: "Elektra Light Pro";
+    font-size: 16px;
+    line-height: 1.375;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000; }
+  .b-advantages-of-struktura__form {
+    background-color: #eef7f6;
+    padding: 52px 0 55px; }
+    @media (max-width: 1085px) {
+      .b-advantages-of-struktura__form {
+        padding: 34px 0 34px; } }
+  .b-advantages-of-struktura__form-container {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px; }
+    @media (max-width: 1085px) {
+      .b-advantages-of-struktura__form-container {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-advantages-of-struktura__form-container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .b-advantages-of-struktura__form-top-line {
+    font-family: "Elektra Light Pro";
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: normal;
+    color: #1d8f7f;
+    margin: 0 0 18px; }
+    @media (max-width: 760px) {
+      .b-advantages-of-struktura__form-top-line {
+        font-size: 20px;
+        line-height: 1.15; } }
+  .b-advantages-of-struktura__form-inner-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    @media (max-width: 1085px) {
+      .b-advantages-of-struktura__form-inner-wrapper {
+        position: relative;
+        padding: 0 0 31px; } }
+    @media (max-width: 760px) {
+      .b-advantages-of-struktura__form-inner-wrapper {
+        flex-direction: column; } }
+  .b-advantages-of-struktura__form-left-col {
+    width: 100%;
+    max-width: 352px;
+    padding: 0 12px 0 0; }
+    @media (max-width: 760px) {
+      .b-advantages-of-struktura__form-left-col {
+        max-width: 100%;
+        padding-right: 0; } }
+  .b-advantages-of-struktura__input-text {
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px #e4e4e4 solid;
+    padding: 17px 14px 15px;
+    border-radius: 0;
+    display: block;
+    font-family: Elektra Light Pro;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    transition: all 0.3s ease-out;
+    margin: 0 0 13px; }
+    .b-advantages-of-struktura__input-text::-webkit-input-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-advantages-of-struktura__input-text::-moz-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-advantages-of-struktura__input-text:-moz-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-advantages-of-struktura__input-text:-ms-input-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-advantages-of-struktura__input-text:focus::-webkit-input-placeholder {
+      color: transparent; }
+    .b-advantages-of-struktura__input-text:focus::-moz-placeholder {
+      color: transparent; }
+    .b-advantages-of-struktura__input-text:focus:-moz-placeholder {
+      color: transparent; }
+    .b-advantages-of-struktura__input-text:focus:-ms-input-placeholder {
+      color: transparent; }
+    .b-advantages-of-struktura__input-text:focus, .b-advantages-of-struktura__input-text:active {
+      outline: none;
+      box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.18);
+      border-color: rgba(0, 0, 0, 0.4); }
+    @media (max-width: 760px) {
+      .b-advantages-of-struktura__input-text {
+        margin-bottom: 10px; } }
+  .b-advantages-of-struktura__form-right-col {
+    width: 100%;
+    max-width: 693px; }
+    @media (max-width: 760px) {
+      .b-advantages-of-struktura__form-right-col {
+        max-width: 100%; } }
+  .b-advantages-of-struktura__textarea {
+    resize: vertical;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px #e4e4e4 solid;
+    padding: 17px 14px 15px;
+    border-radius: 0;
+    display: block;
+    font-family: Elektra Light Pro;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    transition: all 0.3s ease-out;
+    height: 113px;
+    margin: 0 0 13px; }
+    .b-advantages-of-struktura__textarea::-webkit-input-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-advantages-of-struktura__textarea::-moz-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-advantages-of-struktura__textarea:-moz-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-advantages-of-struktura__textarea:-ms-input-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-advantages-of-struktura__textarea:focus::-webkit-input-placeholder {
+      color: transparent; }
+    .b-advantages-of-struktura__textarea:focus::-moz-placeholder {
+      color: transparent; }
+    .b-advantages-of-struktura__textarea:focus:-moz-placeholder {
+      color: transparent; }
+    .b-advantages-of-struktura__textarea:focus:-ms-input-placeholder {
+      color: transparent; }
+    .b-advantages-of-struktura__textarea:focus, .b-advantages-of-struktura__textarea:active {
+      outline: none;
+      box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.18);
+      border-color: rgba(0, 0, 0, 0.4); }
+    @media (max-width: 760px) {
+      .b-advantages-of-struktura__textarea {
+        margin-bottom: 10px; } }
+  .b-advantages-of-struktura__form-submit-inner-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative; }
+    @media (max-width: 1085px) {
+      .b-advantages-of-struktura__form-submit-inner-wrapper {
+        flex-direction: column;
+        align-items: flex-start; } }
+  .b-advantages-of-struktura__form-bottom-line {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+  .b-advantages-of-struktura__btn {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    transition: all 0.2s ease;
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    background-color: #ed4f4b;
+    padding: 16px 27px 15.5px;
+    margin: 0;
+    transition: all 0.15s ease-in; }
+    @media (max-width: 1085px) {
+      .b-advantages-of-struktura__btn {
+        margin-bottom: 15px; } }
+    .b-advantages-of-struktura__btn:hover {
+      background: #ff6f6b;
+      color: #ffffff; }
+    .b-advantages-of-struktura__btn:active {
+      background: #e83f3a;
+      box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.31); }
+  .b-advantages-of-struktura__label {
+    width: 18px;
+    height: 18px;
+    margin: 0 0 0 25px;
+    position: relative;
+    cursor: pointer; }
+    @media (max-width: 1085px) {
+      .b-advantages-of-struktura__label {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin: 0 0 0 0; } }
+    @media (max-width: 480px) {
+      .b-advantages-of-struktura__label {
+        position: relative;
+        margin: 0 0 12px 0; } }
+    .b-advantages-of-struktura__label:before {
+      content: '';
+      width: 18px;
+      height: 18px;
+      background-color: #f9feff;
+      border: 1px solid #e4e4e4;
+      border-radius: 1px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: -1px; }
+      @media (max-width: 1085px) {
+        .b-advantages-of-struktura__label:before {
+          top: -1px; } }
+      @media (max-width: 760px) {
+        .b-advantages-of-struktura__label:before {
+          top: 0; } }
+  .b-advantages-of-struktura__checkbox-icon {
+    width: 11px;
+    height: 10px;
+    background: url(../img/icons/icon-ok-green.svg) 0 0 no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 4px;
+    top: 3px;
+    z-index: 1;
+    display: none; }
+    @media (max-width: 760px) {
+      .b-advantages-of-struktura__checkbox-icon {
+        top: 4px; } }
+    @media (max-width: 480px) {
+      .b-advantages-of-struktura__checkbox-icon {
+        top: 4px; } }
+    .b-advantages-of-struktura__checkbox:checked .b-advantages-of-struktura__checkbox-icon {
+      display: block; }
+  .b-advantages-of-struktura__checkbox {
+    display: none; }
+    .b-advantages-of-struktura__checkbox:checked + .b-advantages-of-struktura__checkbox-icon {
+      display: block; }
+  .b-advantages-of-struktura__link {
+    display: inline-block;
+    margin: 0 0 0 7px;
+    font-family: "Elektra Light Pro";
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 300;
+    font-style: normal;
+    color: #1d8f7f;
+    text-decoration: underline;
+    opacity: 1;
+    transition: opacity 0.28s ease; }
+    @media (max-width: 1085px) {
+      .b-advantages-of-struktura__link {
+        margin: 0 0 0 24px; } }
+    @media (max-width: 760px) {
+      .b-advantages-of-struktura__link {
+        font-family: "Elektra Light Pro";
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 300;
+        font-style: normal; } }
+    @media (max-width: 480px) {
+      .b-advantages-of-struktura__link {
+        margin: 0 0 0 0; } }
+    .b-advantages-of-struktura__link:hover {
+      opacity: 0.8; }
+
+.b-about-us {
+  background: url(../img/bgs/bg-about-us.png) center center no-repeat;
+  background-size: cover;
+  padding: 80px 0 160px; }
+  @media (max-width: 1085px) {
+    .b-about-us {
+      padding: 80px 0 80px; } }
+  @media (max-width: 760px) {
+    .b-about-us {
+      padding: 20px 0 23px; } }
+  .b-about-us__container {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 17px; }
+    @media (max-width: 1085px) {
+      .b-about-us__container {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-about-us__container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media (max-width: 760px) {
+      .b-about-us__container {
+        margin-bottom: 2px; } }
+  .b-about-us__title {
+    font-family: "Elektra Light Pro";
+    font-size: 60px;
+    line-height: 1.08333333;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff; }
+    @media (max-width: 760px) {
+      .b-about-us__title {
+        font-size: 45px;
+        line-height: 1.444; } }
+  .b-about-us__text-container {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    @media (max-width: 1085px) {
+      .b-about-us__text-container {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-about-us__text-container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media (max-width: 760px) {
+      .b-about-us__text-container {
+        flex-direction: column; } }
+  .b-about-us__left-col {
+    width: 50%;
+    padding: 0 50px 0 0; }
+    @media (max-width: 760px) {
+      .b-about-us__left-col {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 0; } }
+  .b-about-us__right-col {
+    width: 50%;
+    padding: 0 50px 0 0; }
+    @media (max-width: 760px) {
+      .b-about-us__right-col {
+        width: 100%;
+        padding-right: 0; } }
+  .b-about-us__text {
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1.444;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    margin: 0 0 27px; }
+    @media (max-width: 760px) {
+      .b-about-us__text {
+        font-size: 16px;
+        line-height: 1.25;
+        margin-bottom: 18px; } }
+    .b-about-us__text:last-child {
+      margin-bottom: 0; }
+  .b-about-us__subtitle {
+    font-family: "Elektra Light Pro";
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    margin: 0 0 25px; }
+    @media (max-width: 760px) {
+      .b-about-us__subtitle {
+        font-size: 20px;
+        line-height: 1.3;
+        margin-bottom: 10px;
+        display: none; } }
+    .b-about-us__subtitle:last-child {
+      margin-bottom: 0; }
+    .b-about-us__subtitle_mobile {
+      display: none; }
+      @media (max-width: 760px) {
+        .b-about-us__subtitle_mobile {
+          display: block; } }
+  .b-about-us__selected {
+    color: #25aa98;
+    font-weight: 700;
+    font-style: italic; }
+
+.b-contacts {
+  padding: 88px 0 0;
+  margin: 0 0 65px; }
+  @media (max-width: 1085px) {
+    .b-contacts {
+      padding-top: 52px; } }
+  @media (max-width: 760px) {
+    .b-contacts {
+      padding-top: 35px;
+      margin-bottom: 50px; } }
+  .b-contacts__container {
+    width: 100%;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    @media (max-width: 1085px) {
+      .b-contacts__container {
+        padding-left: 44px;
+        padding-right: 44px; } }
+    @media (max-width: 760px) {
+      .b-contacts__container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media (max-width: 1085px) {
+      .b-contacts__container {
+        flex-direction: column; } }
+  .b-contacts__col {
+    width: calc(50% + 12px);
+    padding-right: 12px; }
+    @media (max-width: 1085px) {
+      .b-contacts__col {
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 50px; } }
+    @media (max-width: 760px) {
+      .b-contacts__col {
+        margin-bottom: 40px;
+        max-width: 100%; } }
+    .b-contacts__col:last-child {
+      width: 50%;
+      padding-right: 0; }
+      @media (max-width: 1085px) {
+        .b-contacts__col:last-child {
+          width: 100%;
+          margin-bottom: 0; } }
+      @media (max-width: 760px) {
+        .b-contacts__col:last-child {
+          margin-bottom: 0;
+          max-width: 100%; } }
+  .b-contacts__title {
+    font-family: "Elektra Light Pro";
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 14px; }
+    @media (max-width: 760px) {
+      .b-contacts__title {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 10px; } }
+  .b-contacts__text {
+    font-family: "Elektra Light Pro";
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 7px; }
+    @media (max-width: 760px) {
+      .b-contacts__text {
+        margin: 0 0 4px; } }
+  .b-contacts__link {
+    font-family: "Elektra Light Pro";
+    font-size: 16px;
+    line-height: 1.625;
+    font-weight: 700;
+    font-style: normal;
+    color: #1d8f7f;
+    text-decoration: none;
+    transition: all 0.3s ease; }
+    .b-contacts__link:hover {
+      opacity: 0.8; }
+  .b-contacts__arrow {
+    font-family: "Arial";
+    font-size: 16px;
+    line-height: 1.625;
+    font-weight: 400;
+    font-style: normal;
+    color: #1d8f7f;
+    text-decoration: none; }
+  .b-contacts__underline {
+    text-decoration: underline; }
+  .b-contacts__map {
+    margin: 20px 0 0 0; }
+    .b-contacts__map .vue-map {
+      width: 100%;
+      display: block;
+      pointer-events: none;
+      position: relative; }
+      .b-contacts__map .vue-map.clicked {
+        pointer-events: auto; }
+    .b-contacts__map_big-indent {
+      margin-top: 54px; }
+      @media (max-width: 1085px) {
+        .b-contacts__map_big-indent {
+          margin-top: 20px; } }
+
+.b-footer__container {
+  padding: 55px 0 100px;
+  border-top: 1px #d6d6d6 solid;
+  width: 100%;
+  max-width: 1085px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  @media (max-width: 1085px) {
+    .b-footer__container {
+      padding-left: 44px;
+      padding-right: 44px; } }
+  @media (max-width: 760px) {
+    .b-footer__container {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  @media (max-width: 1085px) {
+    .b-footer__container {
+      flex-wrap: wrap;
+      padding-top: 50px;
+      padding-bottom: 85px; } }
+  @media (max-width: 760px) {
+    .b-footer__container {
+      flex-direction: column;
+      padding-top: 30px;
+      padding-bottom: 30px; } }
+
+.b-footer__item:first-child {
+  width: 100%;
+  max-width: 264px;
+  padding: 0 12px 0 0; }
+  @media (max-width: 1085px) {
+    .b-footer__item:first-child {
+      -webkit-order: 1;
+      order: 1;
+      max-width: 50%; } }
+  @media (max-width: 760px) {
+    .b-footer__item:first-child {
+      max-width: 100%;
+      -webkit-order: 1;
+      order: 1;
+      margin: 0 0 15px; } }
+
+.b-footer__item:nth-child(2) {
+  width: 100%;
+  max-width: 264px;
+  padding: 0 12px 0 0; }
+  @media (max-width: 1085px) {
+    .b-footer__item:nth-child(2) {
+      -webkit-order: 3;
+      order: 3;
+      max-width: 50%; } }
+  @media (max-width: 760px) {
+    .b-footer__item:nth-child(2) {
+      max-width: 100%;
+      -webkit-order: 2;
+      order: 2;
+      margin: 0 0 17px; } }
+
+.b-footer__item:nth-child(3) {
+  width: 100%;
+  max-width: 176px;
+  padding: 0 12px 0 0; }
+  @media (max-width: 1085px) {
+    .b-footer__item:nth-child(3) {
+      -webkit-order: 2;
+      order: 2;
+      max-width: 50%; } }
+  @media (max-width: 760px) {
+    .b-footer__item:nth-child(3) {
+      max-width: 100%;
+      -webkit-order: 3;
+      order: 3;
+      margin: 0 0 17px; } }
+
+@media (max-width: 1085px) {
+  .b-footer__item:last-child {
+    -webkit-order: 4;
+    order: 4;
+    max-width: 50%; } }
+
+@media (max-width: 760px) {
+  .b-footer__item:last-child {
+    max-width: 100%;
+    -webkit-order: 4;
+    order: 4; } }
+
+.b-footer__address {
+  font-family: "Elektra Light Pro";
+  font-size: 16px;
+  line-height: 1.55555556;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000; }
+
+.b-footer__address-selected {
+  font-size: 18px;
+  font-weight: 700; }
+
+.b-footer__link {
+  font-family: "Elektra Light Pro";
+  font-size: 18px;
+  line-height: 1.222;
+  font-weight: 400;
+  font-style: normal;
+  color: #1d8f7f;
+  text-decoration: none;
+  transition: all 0.3s ease; }
+  .b-footer__link:hover {
+    opacity: 0.8; }
+
+.b-footer__social {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.b-footer__icon {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  margin: 0 27px 0 0;
+  transition: all 0.3s ease; }
+  .b-footer__icon:hover {
+    opacity: 0.8; }
+  .b-footer__icon:last-child {
+    margin-right: 0; }
+  .b-footer__icon_vk {
+    width: 29px;
+    height: 17px;
+    background-image: url(../img/icons/icon-vk.svg); }
+  .b-footer__icon_facebook {
+    width: 12px;
+    height: 26px;
+    background-image: url(../img/icons/icon-facebook.svg); }
+  .b-footer__icon_insta {
+    width: 26px;
+    height: 26px;
+    background-image: url(../img/icons/icon-insta.svg); }
+
+.b-footer__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; }
+
+.b-footer__form-inner-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  @media (max-width: 760px) {
+    .b-footer__form-inner-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column; } }
+
+.b-footer__subtitle {
+  font-family: "Elektra Light Pro";
+  font-size: 16px;
+  line-height: 1.666;
+  font-weight: 700;
+  font-style: normal;
+  color: #000000;
+  margin: 0 0 10px; }
+
+.b-footer__input-text {
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px #e4e4e4 solid;
+  padding: 17px 14px 15px;
+  border-radius: 0;
+  display: block;
+  font-family: Elektra Light Pro;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+  transition: all 0.3s ease-out;
+  width: 100%;
+  max-width: 244px;
+  margin: 0 7px 0 0;
+  font-size: 16px;
+  padding: 11px 13px 9px; }
+  .b-footer__input-text::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.4); }
+  .b-footer__input-text::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.4); }
+  .b-footer__input-text:-moz-placeholder {
+    color: rgba(0, 0, 0, 0.4); }
+  .b-footer__input-text:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.4); }
+  .b-footer__input-text:focus::-webkit-input-placeholder {
+    color: transparent; }
+  .b-footer__input-text:focus::-moz-placeholder {
+    color: transparent; }
+  .b-footer__input-text:focus:-moz-placeholder {
+    color: transparent; }
+  .b-footer__input-text:focus:-ms-input-placeholder {
+    color: transparent; }
+  .b-footer__input-text:focus, .b-footer__input-text:active {
+    outline: none;
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.18);
+    border-color: rgba(0, 0, 0, 0.4); }
+  @media (max-width: 760px) {
+    .b-footer__input-text {
+      margin: 0 0 12px; } }
+
+.b-footer__btn {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  padding: 0;
+  border-radius: 0;
+  margin: 0;
+  transition: all 0.2s ease;
+  font-family: "Elektra Light Pro";
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  background-color: #ed4f4b;
+  padding: 11px 10px 10.5px;
+  margin: 0;
+  transition: all 0.15s ease-in; }
+  .b-footer__btn:hover {
+    background: #ff6f6b;
+    color: #ffffff; }
+  .b-footer__btn:active {
+    background: #e83f3a;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.31); }
+
+.b-popup-form {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden; }
+  .b-popup-form_active {
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.45s ease; }
+  .b-popup-form__content {
+    position: relative;
+    z-index: 9999;
+    padding: 32px 40px 36px;
+    box-shadow: 0 10px 57px rgba(0, 0, 0, 0.49);
+    background-color: #ffffff; }
+    @media (max-width: 760px) {
+      .b-popup-form__content {
+        max-width: 300px;
+        padding: 16px 20px 18px; } }
+  .b-popup-form__close {
+    content: '';
+    width: 27px;
+    height: 27px;
+    background: url(../img/icons/icon-close.svg) 0 0 no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    right: -37px;
+    top: 0; }
+    @media (max-width: 760px) {
+      .b-popup-form__close {
+        top: -35px;
+        right: 0; } }
+  .b-popup-form__title {
+    font-family: "Elektra Light Pro";
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 15px; }
+  .b-popup-form__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
+  .b-popup-form__input-text {
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px #e4e4e4 solid;
+    padding: 17px 14px 15px;
+    border-radius: 0;
+    display: block;
+    font-family: Elektra Light Pro;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    transition: all 0.3s ease-out;
+    margin: 0 0 5px; }
+    .b-popup-form__input-text::-webkit-input-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-popup-form__input-text::-moz-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-popup-form__input-text:-moz-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-popup-form__input-text:-ms-input-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-popup-form__input-text:focus::-webkit-input-placeholder {
+      color: transparent; }
+    .b-popup-form__input-text:focus::-moz-placeholder {
+      color: transparent; }
+    .b-popup-form__input-text:focus:-moz-placeholder {
+      color: transparent; }
+    .b-popup-form__input-text:focus:-ms-input-placeholder {
+      color: transparent; }
+    .b-popup-form__input-text:focus, .b-popup-form__input-text:active {
+      outline: none;
+      box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.18);
+      border-color: rgba(0, 0, 0, 0.4); }
+  .b-popup-form__textarea {
+    resize: vertical;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px #e4e4e4 solid;
+    padding: 17px 14px 15px;
+    border-radius: 0;
+    display: block;
+    font-family: Elektra Light Pro;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    transition: all 0.3s ease-out;
+    height: 84px; }
+    .b-popup-form__textarea::-webkit-input-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-popup-form__textarea::-moz-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-popup-form__textarea:-moz-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-popup-form__textarea:-ms-input-placeholder {
+      color: rgba(0, 0, 0, 0.4); }
+    .b-popup-form__textarea:focus::-webkit-input-placeholder {
+      color: transparent; }
+    .b-popup-form__textarea:focus::-moz-placeholder {
+      color: transparent; }
+    .b-popup-form__textarea:focus:-moz-placeholder {
+      color: transparent; }
+    .b-popup-form__textarea:focus:-ms-input-placeholder {
+      color: transparent; }
+    .b-popup-form__textarea:focus, .b-popup-form__textarea:active {
+      outline: none;
+      box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.18);
+      border-color: rgba(0, 0, 0, 0.4); }
+  .b-popup-form__checkbox-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px 0 21px; }
+  .b-popup-form__label {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    cursor: pointer; }
+    .b-popup-form__label:before {
+      content: '';
+      width: 18px;
+      height: 18px;
+      background-color: #f9feff;
+      border: 1px solid #e4e4e4;
+      border-radius: 1px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0; }
+  .b-popup-form__checkbox-icon {
+    width: 11px;
+    height: 10px;
+    background: url(../img/icons/icon-ok-green.svg) 0 0 no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    z-index: 1;
+    display: none; }
+  .b-popup-form__checkbox:checked .b-popup-form {
+    display: block; }
+  .b-popup-form__checkbox {
+    display: none; }
+    .b-popup-form__checkbox:checked + .b-popup-form__checkbox-icon {
+      display: block; }
+  .b-popup-form__link {
+    display: inline-block;
+    margin: 0 0 0 7px;
+    font-family: "Elektra Light Pro";
+    font-size: 14px;
+    line-height: 1.1;
+    font-weight: 300;
+    font-style: italic;
+    color: #1d8f7f;
+    text-decoration: underline;
+    opacity: 1;
+    transition: opacity 0.28s ease; }
+    @media (max-width: 760px) {
+      .b-popup-form__link {
+        margin: 0 0 0 13px; } }
+    .b-popup-form__link:hover {
+      opacity: 0.8; }
+  .b-popup-form__btn {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    transition: all 0.2s ease;
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    background-color: #ed4f4b;
+    margin: 0;
+    padding: 16px 36px 15.5px;
+    transition: all 0.15s ease-in; }
+    .b-popup-form__btn:hover {
+      background: #ff6f6b;
+      color: #ffffff; }
+    .b-popup-form__btn:active {
+      background: #e83f3a;
+      box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.31); }
+  .b-popup-form__overlay {
+    cursor: pointer;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9998;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.65);
+    opacity: 0;
+    visibility: hidden; }
+    .b-popup-form_active .b-popup-form__overlay {
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.3s ease; }
+
+.b-message {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.45s ease; }
+  .b-message_active {
+    opacity: 1;
+    visibility: visible; }
+  .b-message__content {
+    width: 100%;
+    max-width: 420px;
+    position: relative;
+    z-index: 9999;
+    padding: 135px 40px 140px;
+    box-shadow: 0 10px 57px rgba(0, 0, 0, 0.49);
+    background-color: #ffffff; }
+  .b-message__close {
+    content: '';
+    width: 27px;
+    height: 27px;
+    background: url(../img/icons/icon-close.svg) 0 0 no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    right: -37px;
+    top: 0; }
+  .b-message__title {
+    font-family: "Elektra Light Pro";
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: normal;
+    color: #168e7d;
+    margin: 0 0 15px; }
+  .b-message__text {
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1.444;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000; }
+  .b-message__overlay {
+    cursor: pointer;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9998;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.65);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease; }
+    .b-popup-form_active .b-message__overlay {
+      opacity: 1;
+      visibility: visible; }
+
+.b-popup-slider {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden; }
+  .b-popup-slider_active {
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.45s ease; }
+  .b-popup-slider__content {
+    width: 50vw;
+    position: relative;
+    z-index: 9999;
+    box-shadow: 0 10px 57px rgba(0, 0, 0, 0.49);
+    background-color: #ffffff; }
+    @media (max-width: 1085px) {
+      .b-popup-slider__content {
+        width: 90vw; } }
+    @media (max-width: 760px) {
+      .b-popup-slider__content {
+        width: 90vw; } }
+    .b-popup-slider__content_text {
+      max-width: 720px; }
+  .b-popup-slider__close {
+    content: '';
+    width: 27px;
+    height: 27px;
+    background: url(../img/icons/icon-close.svg) 0 0 no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    right: -37px;
+    top: 0; }
+    @media (max-width: 760px) {
+      .b-popup-slider__close {
+        top: -35px;
+        right: 0; } }
+  .b-popup-slider__overlay {
+    cursor: pointer;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9998;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.65);
+    opacity: 0;
+    visibility: hidden; }
+    .b-popup-slider_active .b-popup-slider__overlay {
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.3s ease; }
+  .b-popup-slider .slick-slider {
+    width: 100%; }
+  .b-popup-slider__slide {
+    border: none;
+    outline: none;
+    position: relative; }
+    .b-popup-slider__slide_text {
+      width: 100%; }
+      .b-popup-slider__slide_text .b-popup-slider__img {
+        margin: 0 35px 0 35px; }
+        @media (max-width: 1085px) {
+          .b-popup-slider__slide_text .b-popup-slider__img {
+            margin: 0 35px 0 35px; } }
+        @media (max-width: 760px) {
+          .b-popup-slider__slide_text .b-popup-slider__img {
+            display: none; } }
+  .b-popup-slider__slider-inner-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+  .b-popup-slider__slide-caption {
+    font-family: "Elektra Light Pro";
+    font-size: 20px;
+    line-height: 1.45;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 100%;
+    padding: 60px 20px 60px;
+    height: 14vh;
+    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media (max-width: 760px) {
+      .b-popup-slider__slide-caption {
+        font-size: 16px;
+        line-height: 1.3; } }
+    .b-popup-slider__slide-caption br {
+      display: none; }
+  .b-popup-slider__text {
+    width: 100%;
+    max-width: 300px;
+    padding: 0 0 0 15px; }
+    @media (max-width: 760px) {
+      .b-popup-slider__text {
+        max-width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: 100%; } }
+  .b-popup-slider__title {
+    font-family: "Elektra Light Pro";
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: normal;
+    color: #1d8f7f;
+    margin: 0 0 20px; }
+    @media (max-width: 760px) {
+      .b-popup-slider__title {
+        font-family: "Elektra Light Pro";
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 700;
+        font-style: normal; } }
+  .b-popup-slider__list {
+    list-style: none;
+    margin: 0 0 30px;
+    padding: 0; }
+    @media (max-width: 760px) {
+      .b-popup-slider__list {
+        margin-bottom: 20px; } }
+  .b-popup-slider__list-item {
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1.444;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000; }
+    @media (max-width: 760px) {
+      .b-popup-slider__list-item {
+        font-family: "Elektra Light Pro";
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 400;
+        font-style: normal; } }
+  .b-popup-slider__area {
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1.444;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+    margin: 0 0 90px; }
+    @media (max-width: 760px) {
+      .b-popup-slider__area {
+        font-family: "Elektra Light Pro";
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 700;
+        font-style: normal;
+        margin-bottom: 20px; } }
+  .b-popup-slider__area-full {
+    font-family: "Elektra Light Pro";
+    font-size: 18px;
+    line-height: 1.444;
+    font-weight: 700;
+    font-style: normal;
+    color: #1d8f7f; }
+    @media (max-width: 760px) {
+      .b-popup-slider__area-full {
+        font-family: "Elektra Light Pro";
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 700;
+        font-style: normal; } }
+  .b-popup-slider__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+    outline: none; }
+    @media (max-width: 760px) {
+      .b-popup-slider__img_scheme {
+        display: none !important; } }
+    .b-popup-slider__slider-inner-wrapper .b-popup-slider__img {
+      width: auto; }
+  .b-popup-slider .slick-arrow {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 51px;
+    height: 10px;
+    text-indent: -9999px;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.2s ease; }
+    @media (max-width: 1085px) {
+      .b-popup-slider .slick-arrow {
+        bottom: -30px;
+        top: auto;
+        transform: translateY(0%); } }
+    .b-popup-slider .slick-arrow.slick-prev {
+      left: -65px;
+      background-image: url(../img/icons/icon-left-arrow.svg); }
+      @media (max-width: 1085px) {
+        .b-popup-slider .slick-arrow.slick-prev {
+          left: 20px; } }
+      @media (max-width: 1085px) {
+        .b-popup-slider .slick-arrow.slick-prev {
+          left: 0; } }
+      .b-popup-slider .slick-arrow.slick-prev:hover {
+        left: -69px; }
+        @media (max-width: 1085px) {
+          .b-popup-slider .slick-arrow.slick-prev:hover {
+            left: 0; } }
+    .b-popup-slider .slick-arrow.slick-next {
+      right: -65px;
+      background-image: url(../img/icons/icon-right-arrow.svg); }
+      @media (max-width: 1085px) {
+        .b-popup-slider .slick-arrow.slick-next {
+          right: 20px; } }
+      @media (max-width: 1085px) {
+        .b-popup-slider .slick-arrow.slick-next {
+          right: 0; } }
+      .b-popup-slider .slick-arrow.slick-next:hover {
+        right: -69px; }
+        @media (max-width: 1085px) {
+          .b-popup-slider .slick-arrow.slick-next:hover {
+            right: 0; } }
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
+/*# sourceMappingURL=alpbau-project.css.map */

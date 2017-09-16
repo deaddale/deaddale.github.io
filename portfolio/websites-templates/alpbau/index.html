@@ -1,0 +1,2144 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- BASE -->
+    <meta charset="utf-8">
+    <title>Главная - Alpbau</title>
+
+    <!-- SEO -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- disable select tel. and skype numbers -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="skype-toolbar" content="skype-toolbar-parser-compatible">
+
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="57x57" href="dist/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="dist/img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="dist/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="dist/img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="dist/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="dist/img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="dist/img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="dist/img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="dist/img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="dist/img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="dist/img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="dist/img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/css/alpbau-project.css">
+
+</head>
+
+<body>
+<div id="app">
+    <nav class="b-nav" v-bind:class="{ 'b-nav_active': scrolled }">
+    <div class="b-nav__container">
+        <a href="/" class="b-nav__logo" v-scroll-to="{el: '.b-cover', duration: 500, offset: -100}"></a>
+        <div class="b-nav__list-scrolled">
+            <div class="b-nav__list-scrolled-wrapper">
+                <div class="b-nav__list-scrolled-item b-nav__list-scrolled-item_1" v-scroll-to="{el: '.b-house-projects', duration: 500, offset: -100}">Загородные<br>дома</div>
+                <div class="b-nav__list-scrolled-item b-nav__list-scrolled-item_2" v-scroll-to="{el: '.b-public-buildings', duration: 500, offset: -100}">Общественные<br>здания</div>
+                <div class="b-nav__list-scrolled-item b-nav__list-scrolled-item_3" v-scroll-to="{el: '.b-modular-constructions', duration: 500, offset: -100}">Модульные<br>конструкции</div>
+                <div class="b-nav__list-scrolled-item b-nav__list-scrolled-item_4" v-scroll-to="{el: '.b-span-structures', duration: 500, offset: -100}">Большепролётные<br>конструкции</div>
+            </div>
+        </div>
+        <div class="b-nav__phone">+7 495 646-02-01</div>
+        <div class="b-nav__burger" v-bind:class="{ 'b-nav__burger_active': isActiveNav }" v-on:click="isActiveNav = !isActiveNav">
+            <i class="b-nav__burger-line b-nav__burger-line_1"></i>
+            <i class="b-nav__burger-line b-nav__burger-line_2"></i>
+            <i class="b-nav__burger-line b-nav__burger-line_3"></i>
+        </div>
+    </div>
+    <div class="b-nav__add-menu" v-bind:class="{ 'b-nav__add-menu_active': isActiveNav }">
+        <div class="b-nav__add-menu-wrapper">
+            <div class="b-nav__burger" v-bind:class="{ 'b-nav__burger_active': isActiveNav }" v-on:click="isActiveNav = !isActiveNav">
+                <i class="b-nav__burger-line b-nav__burger-line_1"></i>
+                <i class="b-nav__burger-line b-nav__burger-line_2"></i>
+                <i class="b-nav__burger-line b-nav__burger-line_3"></i>
+            </div>
+            <ul class="b-nav__add-menu-list b-nav__add-menu-list_mobile">
+                <li class="b-nav__add-menu-item"><span class="b-nav__add-menu-item-text" v-on:click="isActiveNav = !isActiveNav" v-scroll-to="{el: '.b-house-projects', duration: 50, offset: -100}">Комфортные дома</span></li>
+                <li class="b-nav__add-menu-item"><span class="b-nav__add-menu-item-text" v-on:click="isActiveNav = !isActiveNav" v-scroll-to="{el: '.b-public-buildings', duration: 50, offset: -100}">Общественные здания</span></li>
+                <li class="b-nav__add-menu-item"><span class="b-nav__add-menu-item-text" v-on:click="isActiveNav = !isActiveNav" v-scroll-to="{el: '.b-modular-constructions', duration: 50, offset: -100}">Модульные конструкции</span></li>
+                <li class="b-nav__add-menu-item"><span class="b-nav__add-menu-item-text b-nav__add-menu-item-text_decoration-none" v-on:click="isActiveNav = !isActiveNav" v-scroll-to="{el: '.b-span-structures', duration: 50, offset: -100}"><i class="b-nav__add-menu-item-text-underline">Большепролетные</i><br><i class="b-nav__add-menu-item-text-underline">конструкции</i></span></li>
+            </ul>
+            <ul class="b-nav__add-menu-list">
+                <li class="b-nav__add-menu-item"><span class="b-nav__add-menu-item-text" v-on:click="isActiveNav = !isActiveNav" v-scroll-to="{el: '.b-about-us', duration: 50, offset: -100}">О компании</span></li>
+                <li class="b-nav__add-menu-item"><span class="b-nav__add-menu-item-text" v-on:click="isActiveNav = !isActiveNav" v-scroll-to="{el: '.b-contacts', duration: 50, offset: -100}">Контакты</span></li>
+            </ul>
+            <div class="b-nav__add-menu-contacts">
+                <div class="b-nav__add-menu-contacts-item">
+                    <div class="b-nav__add-menu-title">Демо-дом</div>
+                    <div class="b-nav__add-menu-address">МО, г. Котельники,<br> Дзержинское шоссе, вл. 7/7,<br> дом &#8470;&nbsp;7</div>
+                </div>
+                <div class="b-nav__add-menu-contacts-item">
+                    <div class="b-nav__add-menu-title">Офис</div>
+                    <div class="b-nav__add-menu-address">Москва, Наставнический<br> переулок, д.13-15 стр.1</div>
+                </div>
+            </div>
+        </div>
+        <div class="b-nav__add-menu-overlay" v-on:click="isActiveNav = !isActiveNav"></div>
+    </div>
+</nav>
+    <div class="b-cover">
+    <div class="b-cover__slider">
+        <div class="b-cover__slide">
+            <div class="b-cover__container">
+                <h1 class="b-cover__title">Строим</h1>
+                <div class="b-cover__descr">Комфортные дома</div>
+                <a href="#" class="b-cover__btn" v-scroll-to="{el: '.b-house-projects', duration: 500, offset: -100}">Подробнее</a>
+            </div>
+            <img src="dist/img/photo-for-sliders/cover/1.jpg" alt="" class="b-cover__img">
+        </div>
+        <div class="b-cover__slide">
+            <div class="b-cover__container">
+                <h1 class="b-cover__title">Строим</h1>
+                <div class="b-cover__descr">Общественные здания</div>
+                <a href="#" class="b-cover__btn" v-scroll-to="{el: '.b-public-buildings', duration: 500, offset: -100}">Подробнее</a>
+            </div>
+            <img src="dist/img/photo-for-sliders/cover/2.jpg" alt="" class="b-cover__img">
+        </div>
+        <div class="b-cover__slide">
+            <div class="b-cover__container">
+                <h1 class="b-cover__title">Строим</h1>
+                <div class="b-cover__descr">Модульные конструкции</div>
+                <a href="#" class="b-cover__btn" v-scroll-to="{el: '.b-modular-constructions', duration: 500, offset: -100}">Подробнее</a>
+            </div>
+            <img src="dist/img/photo-for-sliders/cover/3.jpg" alt="" class="b-cover__img">
+        </div>
+        <div class="b-cover__slide">
+            <div class="b-cover__container">
+                <h1 class="b-cover__title">Строим</h1>
+                <div class="b-cover__descr">Большепролётные конструкции</div>
+                <a href="#" class="b-cover__btn" v-scroll-to="{el: '.b-span-structures', duration: 500, offset: -100}">Подробнее</a>
+            </div>
+            <img src="dist/img/photo-for-sliders/cover/4.jpg" alt="" class="b-cover__img">
+        </div>
+    </div>
+    <div class="b-nav__list">
+        <div class="b-nav__list-wrapper">
+            <div class="b-nav__progress-bar"></div>
+            <div class="b-nav__item b-nav__item_1" v-scroll-to="{el: '.b-house-projects', duration: 500, offset: -100}">Загородные<br>дома</div>
+            <div class="b-nav__item b-nav__item_2" v-scroll-to="{el: '.b-public-buildings', duration: 500, offset: -100}">Общественные<br>здания</div>
+            <div class="b-nav__item b-nav__item_3" v-scroll-to="{el: '.b-modular-constructions', duration: 500, offset: -100}">Модульные<br>конструкции</div>
+            <div class="b-nav__item b-nav__item_4" v-scroll-to="{el: '.b-span-structures', duration: 500, offset: -100}">Большепролётные<br>конструкции</div>
+        </div>
+    </div>
+</div>
+    <div class="b-house-projects">
+    <div class="b-house-projects__container">
+        <div class="b-house-projects__title">Комфортные жилые дома</div>
+        <div class="b-house-projects__btn" v-on:click="isActiveCatalogOrder = !isActiveCatalogOrder">Заказать каталог</div>
+        <div class="b-house-projects__descr">Превращаем любой типовой проект в&nbsp;индивидуальный.<br> <span class="b-house-projects__selected">Более 40&nbsp;вариантов модификаций.</span></div>
+    </div>
+    <div class="b-house-projects__sliders-wrapper">
+        <div class="b-house-projects__left-col">
+            <div class="b-house-projects__left-col-inner-wrapper">
+                <div class="b-house-projects__area">
+                    <div class="b-house-projects__area-item b-house-projects__area-item_active" v-on:click="changeCategory" data-slider="0">
+                        <div class="b-house-projects__area-item-text"><span class="b-house-projects__area-item-number">100</span> м<sup>2</sup></div>
+                    </div>
+                    <div class="b-house-projects__area-item" v-on:click="changeCategory" data-slider="1">
+                        <div class="b-house-projects__area-item-text"><span class="b-house-projects__area-item-number">120</span> м<sup>2</sup></div>
+                    </div>
+                    <div class="b-house-projects__area-item" v-on:click="changeCategory" data-slider="2">
+                        <div class="b-house-projects__area-item-text"><span class="b-house-projects__area-item-number">140</span> м<sup>2</sup></div>
+                    </div>
+                    <div class="b-house-projects__area-item" v-on:click="changeCategory" data-slider="3">
+                        <div class="b-house-projects__area-item-text"><span class="b-house-projects__area-item-number">160</span> м<sup>2</sup></div>
+                    </div>
+                    <div class="b-house-projects__area-item" v-on:click="changeCategory" data-slider="4">
+                        <div class="b-house-projects__area-item-text"><span class="b-house-projects__area-item-number">180</span> м<sup>2</sup></div>
+                    </div>
+                </div>
+                <div class="b-house-projects__area-info">
+                    <div class="b-house-projects__area-current"><span class="b-house-projects__area-current-number">100</span> м<sup>2</sup></div>
+                    <div class="b-house-projects__area-title b-house-projects__area-title_active" data-category="0">Из клееного бруса</div>
+                    <div class="b-house-projects__area-title" data-category="1">Каркасный</div>
+                    <div class="b-house-projects__area-title" data-category="2">Комбинированный</div>
+
+                    <div class="b-house-projects__area-btn b-house-projects__area-btn_active" v-on:click="isActivePopupSliderHouseProjects00 = !isActivePopupSliderHouseProjects00" data-slider="0" data-category="0">Подробнее</div>
+                    <div class="b-house-projects__area-btn" v-on:click="isActivePopupSliderHouseProjects01 = !isActivePopupSliderHouseProjects01" data-slider="0" data-category="1">Подробнее</div>
+                    <div class="b-house-projects__area-btn" v-on:click="isActivePopupSliderHouseProjects02 = !isActivePopupSliderHouseProjects02" data-slider="0" data-category="2">Подробнее</div>
+
+                    <div class="b-house-projects__area-btn" v-on:click="isActivePopupSliderHouseProjects10 = !isActivePopupSliderHouseProjects10" data-slider="1" data-category="0">Подробнее</div>
+                    <div class="b-house-projects__area-btn" v-on:click="isActivePopupSliderHouseProjects11 = !isActivePopupSliderHouseProjects11" data-slider="1" data-category="1">Подробнее</div>
+                    <div class="b-house-projects__area-btn" v-on:click="isActivePopupSliderHouseProjects12 = !isActivePopupSliderHouseProjects12" data-slider="1" data-category="2">Подробнее</div>
+
+                    <div class="b-house-projects__area-btn" v-on:click="isActivePopupSliderHouseProjects20 = !isActivePopupSliderHouseProjects20" data-slider="2" data-category="0">Подробнее</div>
+                    <div class="b-house-projects__area-btn" v-on:click="isActivePopupSliderHouseProjects21 = !isActivePopupSliderHouseProjects21" data-slider="2" data-category="1">Подробнее</div>
+                    <div class="b-house-projects__area-btn" v-on:click="isActivePopupSliderHouseProjects22 = !isActivePopupSliderHouseProjects22" data-slider="2" data-category="2">Подробнее</div>
+
+                    <div class="b-house-projects__area-btn" v-on:click="isActivePopupSliderHouseProjects30 = !isActivePopupSliderHouseProjects30" data-slider="3" data-category="0">Подробнее</div>
+                    <div class="b-house-projects__area-btn" v-on:click="isActivePopupSliderHouseProjects31 = !isActivePopupSliderHouseProjects31" data-slider="3" data-category="1">Подробнее</div>
+                    <div class="b-house-projects__area-btn" v-on:click="isActivePopupSliderHouseProjects32 = !isActivePopupSliderHouseProjects32" data-slider="3" data-category="2">Подробнее</div>
+
+                    <div class="b-house-projects__area-btn" v-on:click="isActivePopupSliderHouseProjects40 = !isActivePopupSliderHouseProjects40" data-slider="4" data-category="0">Подробнее</div>
+                    <div class="b-house-projects__area-btn" v-on:click="isActivePopupSliderHouseProjects41 = !isActivePopupSliderHouseProjects41" data-slider="4" data-category="1">Подробнее</div>
+                    <div class="b-house-projects__area-btn" v-on:click="isActivePopupSliderHouseProjects42 = !isActivePopupSliderHouseProjects42" data-slider="4" data-category="2">Подробнее</div>
+
+                    <div class="b-house-projects__controls">
+                        <div class="b-house-projects__control-item b-house-projects__control-item_invisible" v-on:click="changeSlide" data-category="0" data-slide="0"><i class="b-house-projects__control-item-icon"></i>Из клееного бруса</div>
+                        <div class="b-house-projects__control-item b-house-projects__control-item_prev" v-on:click="changeSlide" data-category="1" data-slide="1"><i class="b-house-projects__control-item-icon"></i>Каркасный</div>
+                        <div class="b-house-projects__control-item b-house-projects__control-item_next" v-on:click="changeSlide" data-category="2" data-slide="2"><i class="b-house-projects__control-item-icon"></i>Комбинированный</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-house-projects__right-col">
+            <div class="b-house-projects__slider b-house-projects__slider_active" data-slider="0">
+                <div class="b-house-projects__slider-item">
+                    <img src="dist/img/photo-for-sliders/house-projects-covers/100/100_Kleen_brus.jpg" alt="" class="b-house-projects__img">
+                </div>
+                <div class="b-house-projects__slider-item">
+                    <img src="dist/img/photo-for-sliders/house-projects-covers/100/100_Karkas.jpg" alt="" class="b-house-projects__img">
+                </div>
+                <div class="b-house-projects__slider-item">
+                    <img src="dist/img/photo-for-sliders/house-projects-covers/100/100_Kombinir.jpg" alt="" class="b-house-projects__img">
+                </div>
+            </div>
+            <div class="b-house-projects__slider" data-slider="1">
+                <div class="b-house-projects__slider-item">
+                    <img src="dist/img/photo-for-sliders/house-projects-covers/120/120_Kleen_brus.jpg" alt="" class="b-house-projects__img">
+                </div>
+                <div class="b-house-projects__slider-item">
+                    <img src="dist/img/photo-for-sliders/house-projects-covers/120/120_Karkas.jpg" alt="" class="b-house-projects__img">
+                </div>
+                <div class="b-house-projects__slider-item">
+                    <img src="dist/img/photo-for-sliders/house-projects-covers/120/120_Kombinir.jpg" alt="" class="b-house-projects__img">
+                </div>
+            </div>
+            <div class="b-house-projects__slider" data-slider="2">
+                <div class="b-house-projects__slider-item">
+                    <img src="dist/img/photo-for-sliders/house-projects-covers/140/140_Kleen_brus.jpg" alt="" class="b-house-projects__img">
+                </div>
+                <div class="b-house-projects__slider-item">
+                    <img src="dist/img/photo-for-sliders/house-projects-covers/140/140_Karkas.jpg" alt="" class="b-house-projects__img">
+                </div>
+                <div class="b-house-projects__slider-item">
+                    <img src="dist/img/photo-for-sliders/house-projects-covers/140/140_Kombinir.jpg" alt="" class="b-house-projects__img">
+                </div>
+            </div>
+            <div class="b-house-projects__slider" data-slider="3">
+                <div class="b-house-projects__slider-item">
+                    <img src="dist/img/photo-for-sliders/house-projects-covers/160/160_Kleen_brus.jpg" alt="" class="b-house-projects__img">
+                </div>
+                <div class="b-house-projects__slider-item">
+                    <img src="dist/img/photo-for-sliders/house-projects-covers/160/160_Karkas.jpg" alt="" class="b-house-projects__img">
+                </div>
+                <div class="b-house-projects__slider-item">
+                    <img src="dist/img/photo-for-sliders/house-projects-covers/160/160_Kombinir.jpg" alt="" class="b-house-projects__img">
+                </div>
+            </div>
+            <div class="b-house-projects__slider" data-slider="4">
+                <div class="b-house-projects__slider-item">
+                    <img src="dist/img/photo-for-sliders/house-projects-covers/180/180_Kleen_brus.jpg" alt="" class="b-house-projects__img">
+                </div>
+                <div class="b-house-projects__slider-item">
+                    <img src="dist/img/photo-for-sliders/house-projects-covers/180/180_Karkas.jpg" alt="" class="b-house-projects__img">
+                </div>
+                <div class="b-house-projects__slider-item">
+                    <img src="dist/img/photo-for-sliders/house-projects-covers/180/180_Kombinir.jpg" alt="" class="b-house-projects__img">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="b-technologies">
+    <div class="b-technologies__container">
+        <div class="b-technologies__title">Технологии</div>
+        <div class="b-technologies__items">
+            <div class="b-technologies__item">
+                <img src="dist/img/examples/technology-1.png" alt="" class="b-technologies__img">
+                <div class="b-technologies__subtitle">Клееный брус</div>
+            </div>
+            <div class="b-technologies__item">
+                <img src="dist/img/examples/technology-2.png" alt="" class="b-technologies__img">
+                <div class="b-technologies__subtitle">Каркасно-<br>панельная<br> технология</div>
+            </div>
+            <div class="b-technologies__item">
+                <img src="dist/img/examples/technology-3.png" alt="" class="b-technologies__img">
+                <div class="b-technologies__subtitle">Клееный брус +<br> каркас</div>
+            </div>
+            <div class="b-technologies__item">
+                <img src="dist/img/examples/technology-4.png" alt="" class="b-technologies__img">
+                <div class="b-technologies__subtitle">Клееный брус<br> с утеплителем</div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="b-energy-efficiency">
+    <div class="b-energy-efficiency__container">
+        <div class="b-energy-efficiency__text">
+            <div class="b-energy-efficiency__title">Энергоэффективность</div>
+            <div class="b-energy-efficiency__title b-energy-efficiency__title_mobile">Энерго-<br>эффективность</div>
+            <div class="b-energy-efficiency__descr">Мы&nbsp;используем энергосберегающие технологии, а&nbsp;каждый построенный<br> дом проверяем тепловизором и&nbsp;тестируем на&nbsp;воздушную герметичность<br> по&nbsp;технологии Blower Door.</div>
+        </div>
+        <img src="dist/img/examples/energy-efficiency.png" alt="" class="b-energy-efficiency__img">
+    </div>
+</div>
+    <div class="b-milestones">
+    <div class="b-milestones__container">
+        <div class="b-milestones__title">Этапы работы</div>
+        <div class="b-milestones__steps">
+            <div class="b-milestones__line">
+                <div class="b-milestones__left-col">
+                    <div class="b-milestones__stage-name-item b-milestones__stage-name-item_1">Проектно-изыскательские<br> работы</div>
+                </div>
+                <div class="b-milestones__right-col">
+                    <div class="b-milestones__stage-final-title">В&nbsp;конце этапа:</div>
+                    <div class="b-milestones__stage-final-item b-milestones__stage-final-item_1">Проект дома и<br> финальная стоимость.</div>
+                </div>
+            </div>
+            <div class="b-milestones__line">
+                <div class="b-milestones__left-col">
+                    <div class="b-milestones__stage-name-item b-milestones__stage-name-item_2">Подготовительные<br> и&nbsp;фундаментные работы</div>
+                </div>
+                <div class="b-milestones__right-col">
+                    <div class="b-milestones__stage-final-item b-milestones__stage-final-item_2">Подготовленная территория<br> для постройки дома.</div>
+                </div>
+            </div>
+            <div class="b-milestones__line">
+                <div class="b-milestones__left-col">
+                    <div class="b-milestones__stage-name-item b-milestones__stage-name-item_3">Комплектация<br> материалов и&nbsp;сборка<br> <span class="b-milestones__text-indent">&laquo;теплового контура&raquo;</span></div>
+                </div>
+                <div class="b-milestones__right-col">
+                    <div class="b-milestones__stage-final-item b-milestones__stage-final-item_3">Дом на&nbsp;фундаменте с&nbsp;кровлей,<br> окнами и&nbsp;дверьми.</div>
+                </div>
+            </div>
+            <div class="b-milestones__line b-milestones__line_long-line">
+                <div class="b-milestones__left-col">
+                    <div class="b-milestones__stage-name-item b-milestones__stage-name-item_4">Комплектация и&nbsp;монтаж<br> инженерных систем</div>
+                </div>
+                <div class="b-milestones__right-col">
+                    <div class="b-milestones__stage-final-item b-milestones__stage-final-item_4">Готовые инженерные системы:<br> отопление, водоснабжение,<br> канализация и&nbsp;вентиляция.</div>
+                </div>
+            </div>
+            <div class="b-milestones__line">
+                <div class="b-milestones__left-col">
+                    <div class="b-milestones__stage-name-item b-milestones__stage-name-item_5">Внешняя и&nbsp;внутренняя<br> отделка</div>
+                </div>
+                <div class="b-milestones__right-col">
+                    <div class="b-milestones__stage-final-item b-milestones__stage-final-item_5">Отделка в&nbsp;соответствии<br> с&nbsp;архитектурным<br> и&nbsp;дизайн-проектом.</div>
+                </div>
+            </div>
+            <div class="b-milestones__line">
+                <div class="b-milestones__left-col">
+                    <div class="b-milestones__stage-name-item b-milestones__stage-name-item_6">Устройство<br> ландшафта</div>
+                </div>
+                <div class="b-milestones__right-col">
+                    <div class="b-milestones__stage-final-item b-milestones__stage-final-item_6">Благоустроенный и&nbsp;готовый<br> к&nbsp;проживанию участок.</div>
+                </div>
+            </div>
+            <div class="b-milestones__line">
+                <div class="b-milestones__left-col">
+                    <div class="b-milestones__stage-name-item b-milestones__stage-name-item_7">Гарантийное<br> обслуживание</div>
+                </div>
+                <div class="b-milestones__right-col">
+                    <div class="b-milestones__stage-final-item b-milestones__stage-final-item_7">Комфорт. Всегда.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b-milestones__container">
+        <div class="b-milestones__btn" v-on:click="isActiveOrderHouse = !isActiveOrderHouse">Заказать КП для вашего дома</div>
+    </div>
+</div>
+    <div class="b-realized-projects">
+    <div class="b-realized-projects__container">
+        <div class="b-realized-projects__title">Реализованные проекты</div>
+        <div class="b-realized-projects__descr">По австрийской <span class="b-realized-projects__selected">технологии Alpbau.</span></div>
+    </div>
+    <div class="b-realized-projects__slider">
+        <div class="b-realized-projects__slide" v-on:click="sliderRealizedProjectRightSlide">
+            <div class="b-realized-project__slide-child-element">
+                <img src="dist/img/photo-for-sliders/realized-projects/1.jpg" alt="" class="b-realized-projects__img">
+                <div class="b-realized-projects__slide-caption">Большое пространство гостиной</div>
+            </div>
+        </div>
+        <div class="b-realized-projects__slide" v-on:click="sliderRealizedProjectRightSlide">
+            <div class="b-realized-project__slide-child-element">
+                <img src="dist/img/photo-for-sliders/realized-projects/2.jpg" alt="" class="b-realized-projects__img">
+                <div class="b-realized-projects__slide-caption">Большое пространство гостиной</div>
+            </div>
+        </div>
+        <div class="b-realized-projects__slide" v-on:click="sliderRealizedProjectRightSlide">
+            <div class="b-realized-project__slide-child-element">
+                <img src="dist/img/photo-for-sliders/realized-projects/3.jpg" alt="" class="b-realized-projects__img">
+                <div class="b-realized-projects__slide-caption">Веранда под навесом</div>
+            </div>
+        </div>
+        <div class="b-realized-projects__slide" v-on:click="sliderRealizedProjectRightSlide">
+            <div class="b-realized-project__slide-child-element">
+                <img src="dist/img/photo-for-sliders/realized-projects/4.jpg" alt="" class="b-realized-projects__img">
+                <div class="b-realized-projects__slide-caption">Видовые балки</div>
+            </div>
+        </div>
+        <div class="b-realized-projects__slide" v-on:click="sliderRealizedProjectRightSlide">
+            <div class="b-realized-project__slide-child-element">
+                <img src="dist/img/photo-for-sliders/realized-projects/5.jpg" alt="" class="b-realized-projects__img">
+                <div class="b-realized-projects__slide-caption">Встроенная сауна</div>
+            </div>
+        </div>
+        <div class="b-realized-projects__slide" v-on:click="sliderRealizedProjectRightSlide">
+            <div class="b-realized-project__slide-child-element">
+                <img src="dist/img/photo-for-sliders/realized-projects/6.jpg" alt="" class="b-realized-projects__img">
+                <div class="b-realized-projects__slide-caption">Второй свет</div>
+            </div>
+        </div>
+        <div class="b-realized-projects__slide" v-on:click="sliderRealizedProjectRightSlide">
+            <div class="b-realized-project__slide-child-element">
+                <img src="dist/img/photo-for-sliders/realized-projects/7.jpg" alt="" class="b-realized-projects__img">
+                <div class="b-realized-projects__slide-caption">Второй свет</div>
+            </div>
+        </div>
+        <div class="b-realized-projects__slide" v-on:click="sliderRealizedProjectRightSlide">
+            <div class="b-realized-project__slide-child-element">
+                <img src="dist/img/photo-for-sliders/realized-projects/8.jpg" alt="" class="b-realized-projects__img">
+                <div class="b-realized-projects__slide-caption">Длинный выступ навеса крыши</div>
+            </div>
+        </div>
+        <div class="b-realized-projects__slide" v-on:click="sliderRealizedProjectRightSlide">
+            <div class="b-realized-project__slide-child-element">
+                <img src="dist/img/photo-for-sliders/realized-projects/9.jpg" alt="" class="b-realized-projects__img">
+                <div class="b-realized-projects__slide-caption">Летняя кухня под навесом</div>
+            </div>
+        </div>
+        <div class="b-realized-projects__slide" v-on:click="sliderRealizedProjectRightSlide">
+            <div class="b-realized-project__slide-child-element">
+                <img src="dist/img/photo-for-sliders/realized-projects/10.jpg" alt="" class="b-realized-projects__img">
+                <div class="b-realized-projects__slide-caption">Множество вариантов планировки</div>
+            </div>
+        </div>
+        <div class="b-realized-projects__slide" v-on:click="sliderRealizedProjectRightSlide">
+            <div class="b-realized-project__slide-child-element">
+                <img src="dist/img/photo-for-sliders/realized-projects/11.jpg" alt="" class="b-realized-projects__img">
+                <div class="b-realized-projects__slide-caption">Различные варианты ската крыш</div>
+            </div>
+        </div>
+        <div class="b-realized-projects__slide" v-on:click="sliderRealizedProjectRightSlide">
+            <div class="b-realized-project__slide-child-element">
+                <img src="dist/img/photo-for-sliders/realized-projects/12.jpg" alt="" class="b-realized-projects__img">
+                <div class="b-realized-projects__slide-caption">Черепичная крыша</div>
+            </div>
+        </div>
+        <div class="b-realized-projects__slide" v-on:click="sliderRealizedProjectRightSlide">
+            <div class="b-realized-project__slide-child-element">
+                <img src="dist/img/photo-for-sliders/realized-projects/13.jpg" alt="" class="b-realized-projects__img">
+                <div class="b-realized-projects__slide-caption">Эффективное использование натурального освещения</div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="b-advantages-of-working">
+    <div class="b-advantages-of-working__container">
+        <div class="b-advantages-of-working__title">Преимущества работы с Alpbau</div>
+        <div class="b-advantages-of-working__list">
+            <div class="b-advantages-of-working__item b-advantages-of-working__item_1">
+                <div class="b-advantages-of-working__subtitle">Онлайн-доступ к&nbsp;ходу проекта</div>
+                <div class="b-advantages-of-working__descr">Вы&nbsp;можете следить за&nbsp;строительством через онлайн-камеру в&nbsp;личном кабинете, получать доступ к&nbsp;документации объекта и&nbsp;просматривать фотоотчеты.</div>
+            </div>
+            <div class="b-advantages-of-working__item b-advantages-of-working__item_2">
+                <div class="b-advantages-of-working__subtitle">Энергоэффективность</div>
+                <div class="b-advantages-of-working__descr">Проверяем дома тепловизором и&nbsp;тестируем на&nbsp;воздушную герметичность по&nbsp;технологии Blower Door&nbsp;&mdash; дом эффективнее сохраняет тепло и&nbsp;вы&nbsp;экономите на&nbsp;энергоресурсах.</div>
+            </div>
+            <div class="b-advantages-of-working__item b-advantages-of-working__item_3">
+                <div class="b-advantages-of-working__subtitle">Фиксированная цена</div>
+                <div class="b-advantages-of-working__descr">Перед началом строительства мы&nbsp;устанавливаем цену и&nbsp;она не&nbsp;меняется до&nbsp;завершения проекта. Это помогает эффективно планировать бюджет.</div>
+            </div>
+            <div class="b-advantages-of-working__item b-advantages-of-working__item_4">
+                <div class="b-advantages-of-working__subtitle">Автоматизация строительства</div>
+                <div class="b-advantages-of-working__descr">Изготавливаем строительные материалы на&nbsp;трех заводах с&nbsp;автоматической конвейерной линией.</div>
+            </div>
+            <div class="b-advantages-of-working__item b-advantages-of-working__item_5">
+                <div class="b-advantages-of-working__subtitle">Строим летом и&nbsp;зимой</div>
+                <div class="b-advantages-of-working__descr">Сухие методы строительства помогают не&nbsp;прекращать работы в&nbsp;сырую или холодную погоду.</div>
+            </div>
+            <div class="b-advantages-of-working__item b-advantages-of-working__item_6">
+                <div class="b-advantages-of-working__subtitle">Гарантия</div>
+                <div class="b-advantages-of-working__descr">Пять лет на&nbsp;готовые дома и&nbsp;их&nbsp;системы.</div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="b-three-steps">
+    <div class="b-three-steps__container">
+        <div class="b-three-steps__title">Три шага к&nbsp;идеальному дому</div>
+        <div class="b-three-steps__list">
+            <div class="b-three-steps__item">
+                <div class="b-three-steps__number">1</div>
+                <div class="b-three-steps__subtitle">Узнайте больше о&nbsp;технологичном строительстве</div>
+                <div class="b-three-steps__descr">В&nbsp;нескольких письмах расскажем о&nbsp;технологиях.</div>
+                <div class="b-three-steps__form">
+                    <input type="email" placeholder="Ваш email" class="b-three-steps__input-text">
+                    <div class="b-three-steps__btn">Подписаться</div>
+                </div>
+            </div>
+            <div class="b-three-steps__item">
+                <div class="b-three-steps__number">2</div>
+                <div class="b-three-steps__subtitle">Задайте вопросы специалисту</div>
+                <div class="b-three-steps__descr b-three-steps__descr_small-indent">Расскажите, что хотите видеть<br> в&nbsp;будущем проекте:</div>
+                <ul class="b-three-steps__list-text">
+                    <li class="b-three-steps__list-text-item">желаемая площадь;</li>
+                    <li class="b-three-steps__list-text-item">местоположение участка;</li>
+                    <li class="b-three-steps__list-text-item">количество проживающих; </li>
+                    <li class="b-three-steps__list-text-item">любые данные,<br>которые важны для вас.</li>
+                </ul>
+                <div class="b-three-steps__phone">+7 (495) 646-02-01</div>
+                <a href="mailto:hello@alpbau.com" class="b-three-steps__email">hello@alpbau.com</a>
+                <div class="b-three-steps__btn" v-on:click="isActiveOrderHouse = !isActiveOrderHouse">Заказать звонок</div>
+            </div>
+            <div class="b-three-steps__item">
+                <div class="b-three-steps__number">3</div>
+                <div class="b-three-steps__subtitle">Посетите демо-дом</div>
+                <div class="b-three-steps__descr">Приезжайте на&nbsp;объект и&nbsp;посмотрите дом вживую: походите по&nbsp;комнатам, потрогайте стены и&nbsp;ощутите комфорт.</div>
+                <a href="https://goo.gl/maps/Wq3bW2EhsjC2" target="_blank" class="b-three-steps__link-img">
+                    <div class="b-three-steps__link-img-subtitle">Виртуальная прогулка</div>
+                    <img src="dist/img/examples/virtual-tour.png" alt="" class="b-three-steps__img">
+                </a>
+                <div class="b-three-steps__address"><span class="b-three-steps__selected">Адрес:</span> Выставочный поселок<br> <span class="b-three-steps__indent">&laquo;Малоэтажная страна&raquo;.</span><br class="b-three-steps__br-visible"> МО, г. Котельники, Дзержинское шоссе,<br> вл. 7/7, дом &#8470;&nbsp;7</div>
+                <a href="https://yandex.ru/maps/21651/kotelniki/?mode=routes&ll=37.850189%2C55.653436&z=15&rtext=~55.653314%2C37.849984&rtt=auto" target="_blank" class="b-three-steps__text-link"><span class="b-three-steps__underline">Построить маршрут</span> <span class="b-three-steps__arrow">&rarr;</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="b-public-buildings">
+    <div class="b-public-buildings__container">
+        <div class="b-public-buildings__title">Общественные здания</div>
+        <div class="b-public-buildings__title b-public-buildings__title_mobile">Обществен-<br>ные здания</div>
+        <div class="b-public-buildings__text">Проектируем и&nbsp;строим:</div>
+        <div class="b-public-buildings__list">
+            <div class="b-public-buildings__list-item">Выставочные павильоны</div>
+            <div class="b-public-buildings__list-item">Рестораны и&nbsp;гостиницы</div>
+            <div class="b-public-buildings__list-item">Кинотеатры и&nbsp;концертные залы</div>
+            <div class="b-public-buildings__list-item">Крытые рынки и&nbsp;отдельно<br> стоящие магазины</div>
+            <div class="b-public-buildings__list-item">Ангары для авиатехники<br> и&nbsp;катеров</div>
+            <div class="b-public-buildings__list-item">Решения для эксплуатируемых<br> кровель</div>
+        </div>
+        <div class="b-public-buildings__gallery">
+            <div class="b-public-buildings__gallery-item" v-on:click="isActivePopupSliderSecond = !isActivePopupSliderSecond" data-slide="1">
+                <img src="dist/img/photo-for-sliders/public-buildings/1.jpg" alt="" class="b-public-buildings__img">
+                <div class="b-public-buildings__subtitle">Концепция<br> выставочного<br> павильона</div>
+            </div>
+            <div class="b-public-buildings__gallery-item" v-on:click="isActivePopupSliderSecond = !isActivePopupSliderSecond" data-slide="2">
+                <img src="dist/img/photo-for-sliders/public-buildings/2.jpg" alt="" class="b-public-buildings__img">
+                <div class="b-public-buildings__subtitle">Концепция<br> многофункционального<br> павильона</div>
+            </div>
+            <div class="b-public-buildings__gallery-item" v-on:click="isActivePopupSliderSecond = !isActivePopupSliderSecond" data-slide="3">
+                <img src="dist/img/photo-for-sliders/public-buildings/3.jpg" alt="" class="b-public-buildings__img">
+                <div class="b-public-buildings__subtitle">Концепция<br> фермерского<br> рынка</div>
+            </div>
+            <div class="b-public-buildings__gallery-item" v-on:click="isActivePopupSliderSecond = !isActivePopupSliderSecond" data-slide="4">
+                <img src="dist/img/photo-for-sliders/public-buildings/4.jpg" alt="" class="b-public-buildings__img">
+                <div class="b-public-buildings__subtitle">Оранжерея</div>
+            </div>
+            <div class="b-public-buildings__gallery-item" v-on:click="isActivePopupSliderSecond = !isActivePopupSliderSecond" data-slide="5">
+                <img src="dist/img/photo-for-sliders/public-buildings/5.jpg" alt="" class="b-public-buildings__img">
+                <div class="b-public-buildings__subtitle">Пункт проката<br>в парке Мещерский</div>
+            </div>
+            <div class="b-public-buildings__gallery-item" v-on:click="isActivePopupSliderSecond = !isActivePopupSliderSecond" data-slide="6">
+                <img src="dist/img/photo-for-sliders/public-buildings/6.jpg" alt="" class="b-public-buildings__img">
+                <div class="b-public-buildings__subtitle">Торговый центр</div>
+            </div>
+        </div>
+        <div class="b-public-buildings__slider-wrapper">
+            <div class="b-public-buildings__slider">
+                <div class="b-public-buildings__slider-item" v-on:click="sliderRealizedProjectRightSlide">
+                    <img src="dist/img/photo-for-sliders/public-buildings/1.jpg" alt="" class="b-public-buildings__slider-img">
+                    <div class="b-public-buildings__slider-subtitle">Концепция<br> выставочного<br> павильона</div>
+                </div>
+                <div class="b-public-buildings__slider-item" v-on:click="sliderRealizedProjectRightSlide">
+                    <img src="dist/img/photo-for-sliders/public-buildings/2.jpg" alt="" class="b-public-buildings__slider-img">
+                    <div class="b-public-buildings__slider-subtitle">Концепция<br> многофункционального<br> павильона</div>
+                </div>
+                <div class="b-public-buildings__slider-item" v-on:click="sliderRealizedProjectRightSlide">
+                    <img src="dist/img/photo-for-sliders/public-buildings/3.jpg" alt="" class="b-public-buildings__slider-img">
+                    <div class="b-public-buildings__slider-subtitle">Концепция<br> фермерского<br> рынка</div>
+                </div>
+                <div class="b-public-buildings__slider-item" v-on:click="sliderRealizedProjectRightSlide">
+                    <img src="dist/img/photo-for-sliders/public-buildings/4.jpg" alt="" class="b-public-buildings__slider-img">
+                    <div class="b-public-buildings__slider-subtitle">Оранжерея</div>
+                </div>
+                <div class="b-public-buildings__slider-item" v-on:click="sliderRealizedProjectRightSlide">
+                    <img src="dist/img/photo-for-sliders/public-buildings/5.jpg" alt="" class="b-public-buildings__slider-img">
+                    <div class="b-public-buildings__slider-subtitle">Пункт проката<br>в парке Мещерский</div>
+                </div>
+                <div class="b-public-buildings__slider-item" v-on:click="sliderRealizedProjectRightSlide">
+                    <img src="dist/img/photo-for-sliders/public-buildings/6.jpg" alt="" class="b-public-buildings__slider-img">
+                    <div class="b-public-buildings__slider-subtitle">Торговый центр</div>
+                </div>
+            </div>
+        </div>
+        <div class="b-public-buildings__form">
+            <div class="b-public-buildings__form-top-line">Расскажите нам о задаче</div>
+            <div class="b-public-buildings__form-inner-wrapper">
+                <div class="b-public-buildings__form-left-col">
+                    <input type="text" placeholder="Имя*" class="b-public-buildings__input-text">
+                    <input type="text" placeholder="Телефон*" class="b-public-buildings__input-text">
+                </div>
+                <div class="b-public-buildings__form-right-col">
+                    <textarea name="" class="b-public-buildings__textarea" placeholder="Описание задачи"></textarea>
+                </div>
+            </div>
+            <div class="b-public-buildings__form-bottom-line">
+                <input type="button" value="Отправить" class="b-public-buildings__btn">
+                <label for="processing-of-personal-data" class="b-public-buildings__label">
+                    <input type="checkbox" id="processing-of-personal-data" class="b-public-buildings__checkbox" checked>
+                    <i class="b-public-buildings__checkbox-icon"></i>
+                </label>
+                <a href="#" class="b-public-buildings__link" target="_blank">Согласен на обработку персональных данных.</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="b-modular-constructions">
+    <div class="b-modular-constructions__container">
+        <div class="b-modular-constructions__title">Модульные конструкции<br>STRUKTURA</div>
+        <div class="b-modular-constructions__btn" v-on:click="isActiveCatalogOrder = !isActiveCatalogOrder">Заказать каталог</div>
+    </div>
+    <div class="b-modular-constructions__slider-wrapper">
+        <div class="b-modular-constructions__left-col">
+            <div class="b-modular-constructions__left-col-inner-wrapper">
+                <div class="b-modular-constructions__subtitle"><span class="b-modular-constructions__selected">Основа решения &mdash;</span><br> запатентованный узел<br> соединения клееного<br> бруса высокоточными<br> коннекторами.</div>
+                <div class="b-modular-constructions__controls">
+                    <div class="b-modular-constructions__control-item b-modular-constructions__control-item_prev" v-on:click="sliderModularConstractionsPrev"></div>
+                    <div class="b-modular-constructions__control-item b-modular-constructions__control-item_next" v-on:click="sliderModularConstractionsNext"></div>
+                </div>
+            </div>
+        </div>
+        <div class="b-modular-constructions__right-col">
+            <div class="b-modular-constructions__slider">
+                <div class="b-modular-constructions__slider-item" v-on:click="isActivePopupSliderFourth = !isActivePopupSliderFourth">
+                    <img src="dist/img/photo-for-sliders/modular-constructions/1.jpg" alt="" class="b-modular-constructions__img">
+                    <div class="b-modular-constructions__controls b-modular-constructions__controls_mobile">
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_prev" v-on:click="sliderModularConstractionsPrev"></div>
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_next" v-on:click="sliderModularConstractionsNext"></div>
+                    </div>
+                    <div class="b-modular-constructions__text">Struktura Modul 8. Болотная площадь</div>
+                </div>
+                <div class="b-modular-constructions__slider-item" v-on:click="isActivePopupSliderFourth = !isActivePopupSliderFourth">
+                    <img src="dist/img/photo-for-sliders/modular-constructions/2.jpg" alt="" class="b-modular-constructions__img">
+                    <div class="b-modular-constructions__controls b-modular-constructions__controls_mobile">
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_prev" v-on:click="sliderModularConstractionsPrev"></div>
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_next" v-on:click="sliderModularConstractionsNext"></div>
+                    </div>
+                    <div class="b-modular-constructions__text">Struktura Modul 8. Усадьба &laquo;Остафьево&raquo;</div>
+                </div>
+                <div class="b-modular-constructions__slider-item" v-on:click="isActivePopupSliderFourth = !isActivePopupSliderFourth">
+                    <img src="dist/img/photo-for-sliders/modular-constructions/3.jpg" alt="" class="b-modular-constructions__img">
+                    <div class="b-modular-constructions__controls b-modular-constructions__controls_mobile">
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_prev" v-on:click="sliderModularConstractionsPrev"></div>
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_next" v-on:click="sliderModularConstractionsNext"></div>
+                    </div>
+                    <div class="b-modular-constructions__text">Struktura Modul 8x14. Детский мир</div>
+                </div>
+                <div class="b-modular-constructions__slider-item" v-on:click="isActivePopupSliderFourth = !isActivePopupSliderFourth">
+                    <img src="dist/img/photo-for-sliders/modular-constructions/4.jpg" alt="" class="b-modular-constructions__img">
+                    <div class="b-modular-constructions__controls b-modular-constructions__controls_mobile">
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_prev" v-on:click="sliderModularConstractionsPrev"></div>
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_next" v-on:click="sliderModularConstractionsNext"></div>
+                    </div>
+                    <div class="b-modular-constructions__text">Struktura Modul 9х13. Клуб-отель &laquo;ArtiLand&raquo;</div>
+                </div>
+                <div class="b-modular-constructions__slider-item" v-on:click="isActivePopupSliderFourth = !isActivePopupSliderFourth">
+                    <img src="dist/img/photo-for-sliders/modular-constructions/5.jpg" alt="" class="b-modular-constructions__img">
+                    <div class="b-modular-constructions__controls b-modular-constructions__controls_mobile">
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_prev" v-on:click="sliderModularConstractionsPrev"></div>
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_next" v-on:click="sliderModularConstractionsNext"></div>
+                    </div>
+                    <div class="b-modular-constructions__text">Struktura Modul 10. ВДНХ</div>
+                </div>
+                <div class="b-modular-constructions__slider-item" v-on:click="isActivePopupSliderFourth = !isActivePopupSliderFourth">
+                    <img src="dist/img/photo-for-sliders/modular-constructions/6.jpg" alt="" class="b-modular-constructions__img">
+                    <div class="b-modular-constructions__controls b-modular-constructions__controls_mobile">
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_prev" v-on:click="sliderModularConstractionsPrev"></div>
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_next" v-on:click="sliderModularConstractionsNext"></div>
+                    </div>
+                    <div class="b-modular-constructions__text">Struktura Modul 10. Красная площадь</div>
+                </div>
+                <div class="b-modular-constructions__slider-item" v-on:click="isActivePopupSliderFourth = !isActivePopupSliderFourth">
+                    <img src="dist/img/photo-for-sliders/modular-constructions/7.jpg" alt="" class="b-modular-constructions__img">
+                    <div class="b-modular-constructions__controls b-modular-constructions__controls_mobile">
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_prev" v-on:click="sliderModularConstractionsPrev"></div>
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_next" v-on:click="sliderModularConstractionsNext"></div>
+                    </div>
+                    <div class="b-modular-constructions__text">Struktura Modul 10. Парк &laquo;Музеон&raquo;</div>
+                </div>
+                <div class="b-modular-constructions__slider-item" v-on:click="isActivePopupSliderFourth = !isActivePopupSliderFourth">
+                    <img src="dist/img/photo-for-sliders/modular-constructions/8.jpg" alt="" class="b-modular-constructions__img">
+                    <div class="b-modular-constructions__controls b-modular-constructions__controls_mobile">
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_prev" v-on:click="sliderModularConstractionsPrev"></div>
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_next" v-on:click="sliderModularConstractionsNext"></div>
+                    </div>
+                    <div class="b-modular-constructions__text">Struktura Modul 10. Парк-отел &laquo;Солнечный&raquo;</div>
+                </div>
+                <div class="b-modular-constructions__slider-item" v-on:click="isActivePopupSliderFourth = !isActivePopupSliderFourth">
+                    <img src="dist/img/photo-for-sliders/modular-constructions/9.jpg" alt="" class="b-modular-constructions__img">
+                    <div class="b-modular-constructions__controls b-modular-constructions__controls_mobile">
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_prev" v-on:click="sliderModularConstractionsPrev"></div>
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_next" v-on:click="sliderModularConstractionsNext"></div>
+                    </div>
+                    <div class="b-modular-constructions__text">Struktura Modul 10. Ресторан &laquo;Тритон&raquo;</div>
+                </div>
+                <div class="b-modular-constructions__slider-item" v-on:click="isActivePopupSliderFourth = !isActivePopupSliderFourth">
+                    <img src="dist/img/photo-for-sliders/modular-constructions/10.jpg" alt="" class="b-modular-constructions__img">
+                    <div class="b-modular-constructions__controls b-modular-constructions__controls_mobile">
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_prev" v-on:click="sliderModularConstractionsPrev"></div>
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_next" v-on:click="sliderModularConstractionsNext"></div>
+                    </div>
+                    <div class="b-modular-constructions__text">Struktura Modul 10. ЦУМ</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b-modular-constructions__basic-equipment">
+        <div class="b-modular-constructions__basic-equipment-title">Базовая комплектация</div>
+        <div class="b-modular-constructions__basic-equipment-inner-wrapper">
+            <div class="b-modular-constructions__basic-equipment-item">
+                <img src="dist/img/examples/basic-equipment-1.png" alt="" class="b-modular-constructions__basic-equipment-img">
+                <div class="b-modular-constructions__basic-equipment-subtitle">Клееный<br> конструкционный<br> брус 80&times;240</div>
+            </div>
+            <div class="b-modular-constructions__basic-equipment-item">
+                <img src="dist/img/examples/basic-equipment-2.png" alt="" class="b-modular-constructions__basic-equipment-img">
+                <div class="b-modular-constructions__basic-equipment-subtitle">Стальные коннекторы<br> <span class="b-modular-constructions__basic-equipment-selected">Порошковая окраска&nbsp;/<br>горячий цинк</span></div>
+            </div>
+            <div class="b-modular-constructions__basic-equipment-item">
+                <img src="dist/img/examples/basic-equipment-3.png" alt="" class="b-modular-constructions__basic-equipment-img">
+                <div class="b-modular-constructions__basic-equipment-subtitle">Цвет на&nbsp;выбор</div>
+            </div>
+            <div class="b-modular-constructions__basic-equipment-item">
+                <img src="dist/img/examples/basic-equipment-4.png" alt="" class="b-modular-constructions__basic-equipment-img">
+                <div class="b-modular-constructions__basic-equipment-subtitle">Комплект креплений</div>
+            </div>
+        </div>
+    </div>
+    <div class="b-modular-constructions__add-options">
+        <div class="b-modular-constructions__add-options-title">Дополнительные опции</div>
+        <div class="b-modular-constructions__add-options-inner-wrapper">
+            <div class="b-modular-constructions__add-options-item">Монтаж<br> конструкции</div>
+            <div class="b-modular-constructions__add-options-item">Варианты<br> покрытия
+            </div>
+            <div class="b-modular-constructions__add-options-item">Система<br> основания</div>
+            <div class="b-modular-constructions__add-options-item">Варианты<br> освещения
+            </div>
+            <div class="b-modular-constructions__add-options-item">Варианты<br> напольных<br> покрытий
+            </div>
+        </div>
+    </div>
+    <div class="b-modular-constructions__why-module">
+        <div class="b-modular-constructions__why-module-title">Почему модульные конструкции?</div>
+        <div class="b-modular-constructions__why-module-inner-wrapper">
+            <div class="b-modular-constructions__why-module-item b-modular-constructions__why-module-item_1">
+                <div class="b-modular-constructions__why-module-subtitle">Не&nbsp;нужно согласовывать</div>
+                <div class="b-modular-constructions__why-module-text">Конструкции относятся к&nbsp;категории &laquo;временные здания и&nbsp;сооружения&raquo;, поэтому не&nbsp;требуют согласования.</div>
+            </div>
+            <div class="b-modular-constructions__why-module-item b-modular-constructions__why-module-item_2">
+                <div class="b-modular-constructions__why-module-subtitle">Дерево</div>
+                <div class="b-modular-constructions__why-module-text">Эстетические характеристики<br> деревянных конструкций и&nbsp;их<br> экологичность привлекают внимание<br> посетителей.</div>
+            </div>
+            <div class="b-modular-constructions__why-module-item b-modular-constructions__why-module-item_3">
+                <div class="b-modular-constructions__why-module-subtitle">Освещение</div>
+                <div class="b-modular-constructions__why-module-text">Днем не&nbsp;требуется дополнительного освещения внутреннего пространства.</div>
+            </div>
+            <div class="b-modular-constructions__why-module-item b-modular-constructions__why-module-item_4">
+                <div class="b-modular-constructions__why-module-subtitle">Линейка размеров</div>
+                <div class="b-modular-constructions__why-module-text">От&nbsp;5&times;5 до&nbsp;13&times;13&nbsp;м&nbsp;&mdash; максимальное использование полезной площади в&nbsp;небольшом пространстве.</div>
+            </div>
+            <div class="b-modular-constructions__why-module-item b-modular-constructions__why-module-item_5">
+                <div class="b-modular-constructions__why-module-subtitle">Прочность</div>
+                <div class="b-modular-constructions__why-module-text">Выдерживают большую нагрузку благодаря сферической форме.</div>
+            </div>
+            <div class="b-modular-constructions__why-module-item b-modular-constructions__why-module-item_6">
+                <div class="b-modular-constructions__why-module-subtitle">Гибкость</div>
+                <div class="b-modular-constructions__why-module-text">Модули стыкуются между собой.<br>Вы&nbsp;можете создать единый комплекс любой площади.</div>
+            </div>
+        </div>
+    </div>
+    <div class="b-modular-constructions__form">
+        <div class="b-modular-constructions__form-container">
+            <div class="b-modular-constructions__form-top-line">Хотите узнать больше?<br> Закажите бесплатную консультацию</div>
+            <div class="b-modular-constructions__form-middle-line">
+                <input type="text" placeholder="Имя*" class="b-modular-constructions__form-input-text">
+                <input type="text" placeholder="Телефон*" class="b-modular-constructions__form-input-text">
+                <input type="email" placeholder="Email" class="b-modular-constructions__form-input-text">
+                <input type="button" value="Отправить" class="b-modular-constructions__form-btn">
+            </div>
+            <div class="b-modular-constructions__form-bottom-line">
+                <label for="modular-constructions" class="b-modular-constructions__form-label">
+                    <input type="checkbox" id="modular-constructions" checked="checked" class="b-modular-constructions__form-checkbox">
+                    <i class="b-modular-constructions__form-checkbox-icon"></i>
+                </label>
+                <a href="#" class="b-modular-constructions__form-link" target="_blank">Согласен на обработку персональных данных.</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="b-earn-with-us">
+    <div class="b-earn-with-us__container">
+        <div class="b-earn-with-us__title">Зарабатывайте вместе с нами</div>
+        <div class="b-earn-with-us__text">Как стать дилером</div>
+        <div class="b-earn-with-us__items">
+            <div class="b-earn-with-us__item b-earn-with-us__item_1">Вы&nbsp;приобретаете<br> и&nbsp;устанавливаете<br> демо-конструкцию.</div>
+            <div class="b-earn-with-us__item b-earn-with-us__item_2">Мы&nbsp;предоставляем маркетинговые материалы для рекламы продукта.</div>
+            <div class="b-earn-with-us__item b-earn-with-us__item_3">Получаете статус дилера:<br> мы&nbsp;добавляем ваши контакты на&nbsp;наш сайт.</div>
+            <div class="b-earn-with-us__item b-earn-with-us__item_4">Предлагаете продукт<br> клиентам и&nbsp;зарабатываете.</div>
+        </div>
+        <div class="b-earn-with-us__btn" v-on:click="isActiveBecomeDealer = !isActiveBecomeDealer">Хочу стать дилером</div>
+    </div>
+</div>
+    <div class="b-span-structures">
+    <div class="b-span-structures__container">
+        <div class="b-span-structures__title">Большепролётные<br> конструкции</div>
+        <div class="b-span-structures__title b-span-structures__title_mobile">Больше-<br>пролётные конструкции</div>
+        <div class="b-span-structures__btn" v-on:click="isActiveCatalogOrder = !isActiveCatalogOrder">Заказать каталог</div>
+    </div>
+    <div class="b-span-structures__slider-wrapper">
+        <div class="b-span-structures__left-col">
+            <div class="b-span-structures__left-col-inner-wrapper">
+                <div class="b-span-structures__subtitle">Проектируем<br> и&nbsp;возводим сооружения<br> с&nbsp;большими пролетами</div>
+                <div class="b-span-structures__controls">
+                    <div class="b-span-structures__control-item b-span-structures__control-item_prev" v-on:click="sliderSpanStructuresPrev"></div>
+                    <div class="b-span-structures__control-item b-span-structures__control-item_next" v-on:click="sliderSpanStructuresNext"></div>
+                </div>
+            </div>
+        </div>
+        <div class="b-span-structures__right-col">
+            <div class="b-span-structures__slider">
+                <div class="b-span-structures__slider-item" v-on:click="isActivePopupSliderThird = !isActivePopupSliderThird">
+                    <img src="dist/img/photo-for-sliders/span-structures/1.jpg" alt="" class="b-span-structures__img">
+                    <div class="b-modular-constructions__controls b-modular-constructions__controls_mobile">
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_prev" v-on:click="sliderModularConstractionsPrev"></div>
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_next" v-on:click="sliderModularConstractionsNext"></div>
+                    </div>
+                    <div class="b-span-structures__text">Крытый теннисный корт. 1444 м<sup>2</sup></div>
+                </div>
+                <div class="b-span-structures__slider-item" v-on:click="isActivePopupSliderThird = !isActivePopupSliderThird">
+                    <img src="dist/img/photo-for-sliders/span-structures/2.jpg" alt="" class="b-span-structures__img">
+                    <div class="b-modular-constructions__controls b-modular-constructions__controls_mobile">
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_prev" v-on:click="sliderModularConstractionsPrev"></div>
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_next" v-on:click="sliderModularConstractionsNext"></div>
+                    </div>
+                    <div class="b-span-structures__text">Навес для спортивной площадки</div>
+                </div>
+                <div class="b-span-structures__slider-item" v-on:click="isActivePopupSliderThird = !isActivePopupSliderThird">
+                    <img src="dist/img/photo-for-sliders/span-structures/3.jpg" alt="" class="b-span-structures__img">
+                    <div class="b-modular-constructions__controls b-modular-constructions__controls_mobile">
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_prev" v-on:click="sliderModularConstractionsPrev"></div>
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_next" v-on:click="sliderModularConstractionsNext"></div>
+                    </div>
+                    <div class="b-span-structures__text">Навес для спортивной площадки</div>
+                </div>
+                <div class="b-span-structures__slider-item" v-on:click="isActivePopupSliderThird = !isActivePopupSliderThird">
+                    <img src="dist/img/photo-for-sliders/span-structures/4.jpg" alt="" class="b-span-structures__img">
+                    <div class="b-modular-constructions__controls b-modular-constructions__controls_mobile">
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_prev" v-on:click="sliderModularConstractionsPrev"></div>
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_next" v-on:click="sliderModularConstractionsNext"></div>
+                    </div>
+                    <div class="b-span-structures__text">Навес для спортивной площадки</div>
+                </div>
+                <div class="b-span-structures__slider-item" v-on:click="isActivePopupSliderThird = !isActivePopupSliderThird">
+                    <img src="dist/img/photo-for-sliders/span-structures/5.jpg" alt="" class="b-span-structures__img">
+                    <div class="b-modular-constructions__controls b-modular-constructions__controls_mobile">
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_prev" v-on:click="sliderModularConstractionsPrev"></div>
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_next" v-on:click="sliderModularConstractionsNext"></div>
+                    </div>
+                    <div class="b-span-structures__text">Навес для трибуны</div>
+                </div>
+                <div class="b-span-structures__slider-item" v-on:click="isActivePopupSliderThird = !isActivePopupSliderThird">
+                    <img src="dist/img/photo-for-sliders/span-structures/6.jpg" alt="" class="b-span-structures__img">
+                    <div class="b-modular-constructions__controls b-modular-constructions__controls_mobile">
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_prev" v-on:click="sliderModularConstractionsPrev"></div>
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_next" v-on:click="sliderModularConstractionsNext"></div>
+                    </div>
+                    <div class="b-span-structures__text">Оранжерея. 3000 м<sup>2</sup></div>
+                </div>
+                <div class="b-span-structures__slider-item" v-on:click="isActivePopupSliderThird = !isActivePopupSliderThird">
+                    <img src="dist/img/photo-for-sliders/span-structures/7.jpg" alt="" class="b-span-structures__img">
+                    <div class="b-modular-constructions__controls b-modular-constructions__controls_mobile">
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_prev" v-on:click="sliderModularConstractionsPrev"></div>
+                        <div class="b-modular-constructions__control-item b-modular-constructions__control-item_next" v-on:click="sliderModularConstractionsNext"></div>
+                    </div>
+                    <div class="b-span-structures__text">Торговый центр</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b-span-structures__lists-container">
+        <div class="b-span-structures__list-inner-wrapper">
+            <div class="b-span-structures__list-title">Спортивные сооружения</div>
+            <ul class="b-span-structures__list">
+                <li class="b-span-structures__list-item">многофункциональные спортивные<br> залы и&nbsp;арены</li>
+                <li class="b-span-structures__list-item">теннисные корты</li>
+                <li class="b-span-structures__list-item">крытые трибуны для плоскостных стадионов</li>
+                <li class="b-span-structures__list-item">ледовые арены и&nbsp;катки</li>
+                <li class="b-span-structures__list-item">бассейны</li>
+                <li class="b-span-structures__list-item">велотреки</li>
+                <li class="b-span-structures__list-item">конные манежи</li>
+            </ul>
+        </div>
+        <div class="b-span-structures__list-inner-wrapper">
+            <div class="b-span-structures__list-title">Общественные здания</div>
+            <ul class="b-span-structures__list">
+                <li class="b-span-structures__list-item">выставочные павильоны</li>
+                <li class="b-span-structures__list-item">рестораны</li>
+                <li class="b-span-structures__list-item">кинотеатры и&nbsp;концертные залы</li>
+                <li class="b-span-structures__list-item">кровельные и&nbsp;фасадные решения<br> для торгово-развлекательных и&nbsp;бизнес-центров</li>
+                <li class="b-span-structures__list-item">крытые рынки и&nbsp;отдельно-стоящие магазины</li>
+                <li class="b-span-structures__list-item">ангары для авиатехники и&nbsp;катеров</li>
+                <li class="b-span-structures__list-item">решения для эксплуатируемых кровель</li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="b-advantages-of-struktura">
+    <div class="b-advantages-of-struktura__container">
+        <div class="b-advantages-of-struktura__title">Преимущества Alpbau Struktura</div>
+        <div class="b-advantages-of-struktura__inner-wrapper">
+            <div class="b-advantages-of-struktura__item b-advantages-of-struktura__item_1">
+                <div class="b-advantages-of-struktura__subtitle">Архитектурная эластичность</div>
+                <div class="b-advantages-of-struktura__text">Большой диапазон применения:<br> от&nbsp;небольшого навеса до&nbsp;крытого<br> стадионов со&nbsp;свободным пролетом<br> 250 метров без использования опор.</div>
+            </div>
+            <div class="b-advantages-of-struktura__item b-advantages-of-struktura__item_2">
+                <div class="b-advantages-of-struktura__subtitle">Прочность</div>
+                <div class="b-advantages-of-struktura__text">Пространственно-сетчатая структура<br> равномерно распределяет нагрузку<br> и&nbsp;повышает эксплуатационную<br> надежность.</div>
+            </div>
+            <div class="b-advantages-of-struktura__item b-advantages-of-struktura__item_3">
+                <div class="b-advantages-of-struktura__subtitle">Легкий вес</div>
+                <div class="b-advantages-of-struktura__text">Struktura в&nbsp;5&nbsp;раз легче аналогичных<br> металлических и&nbsp;железобетонных<br> конструкций. За&nbsp;счет этого тратится<br> меньше материала на&nbsp;фундамент<br> и&nbsp;увеличивается скорость<br> строительства.</div>
+            </div>
+            <div class="b-advantages-of-struktura__item b-advantages-of-struktura__item_4">
+                <div class="b-advantages-of-struktura__subtitle">Устойчивость<br> к&nbsp;агрессивным средам</div>
+                <div class="b-advantages-of-struktura__text">Химическая инертность клееных<br> деревянных конструкций<br> и&nbsp;коннекторов из&nbsp;нержавеющей стали<br> повышает срок службы зданий.</div>
+            </div>
+            <div class="b-advantages-of-struktura__item b-advantages-of-struktura__item_5">
+                <div class="b-advantages-of-struktura__subtitle">Дерево</div>
+                <div class="b-advantages-of-struktura__text">Долговечный, прочный и&nbsp;экологически<br> чистый материал. Экстерьерная<br> и&nbsp;интерьерная привлекательность<br> в&nbsp;архитектуре зданий притягивает<br> внимание посетителей.</div>
+            </div>
+            <div class="b-advantages-of-struktura__item b-advantages-of-struktura__item_6">
+                <div class="b-advantages-of-struktura__subtitle">Стоп огонь</div>
+                <div class="b-advantages-of-struktura__text">В&nbsp;случае пожара, клееные<br> деревянные конструкции не&nbsp;горят,<br> а&nbsp;тлеют. При температуре до&nbsp;900<br> градусов сохраняют свои несущие<br> свойства не&nbsp;менее 45&nbsp;минут&nbsp;&mdash; этого<br> может хвататить для спасения людей.</div>
+            </div>
+        </div>
+    </div>
+    <div class="b-advantages-of-struktura__form">
+        <div class="b-advantages-of-struktura__form-container">
+            <div class="b-advantages-of-struktura__form-top-line">Ищете подрядчика для масштабного объекта? Напишите нам.</div>
+            <div class="b-advantages-of-struktura__form-inner-wrapper">
+                <div class="b-advantages-of-struktura__form-left-col">
+                    <input type="text" placeholder="Имя*" class="b-advantages-of-struktura__input-text">
+                    <input type="text" placeholder="Телефон*" class="b-advantages-of-struktura__input-text">
+                    <input type="text" placeholder="Email*" class="b-advantages-of-struktura__input-text">
+                </div>
+                <div class="b-advantages-of-struktura__form-right-col">
+                    <textarea name="" class="b-advantages-of-struktura__textarea" placeholder="Описание задачи"></textarea>
+                    <div class="b-advantages-of-struktura__form-submit-inner-wrapper">
+                        <input type="button" value="Отправить" class="b-advantages-of-struktura__btn">
+                        <label for="advantages-of-struktura" class="b-advantages-of-struktura__label">
+                            <input type="checkbox" id="advantages-of-struktura" class="b-advantages-of-struktura__checkbox" checked>
+                            <i class="b-advantages-of-struktura__checkbox-icon"></i>
+                        </label>
+                        <a href="#" class="b-advantages-of-struktura__link" target="_blank">Согласен на обработку персональных данных.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="b-about-us">
+    <div class="b-about-us__container">
+        <div class="b-about-us__title">О&nbsp;нас</div>
+    </div>
+    <div class="b-about-us__text-container">
+        <div class="b-about-us__left-col">
+            <div class="b-about-us__text">Компания Alpbau с&nbsp;2012 года проектирует и&nbsp;строит дома по&nbsp;австрийской технологии. Наши клиенты покупают не&nbsp;пустую коробку, а&nbsp;выгодно инвестируют в&nbsp;будущее жилье и&nbsp;бизнес.</div>
+            <div class="b-about-us__text">Работаем для частных лиц и&nbsp;предпринимателей. Первым помогаем перенести идеальный образ дома на&nbsp;участок, а&nbsp;вторым&nbsp;&mdash; привлечь клиентов и&nbsp;обеспечить им&nbsp;достаточный уровень комфорта.</div>
+            <div class="b-about-us__subtitle">С&nbsp;нами комфортно. <span class="b-about-us__selected">Всегда.</span></div>
+        </div>
+        <div class="b-about-us__right-col">
+            <div class="b-about-us__subtitle">Технологии и&nbsp;производство</div>
+            <div class="b-about-us__text">Alpbau несет идею инновационного строительства.<br>Для этого компания запатентовала технологию соединения клееного бруса при помощи металлических коннекторов.</div>
+            <div class="b-about-us__text">Изготавливаем строительные материалы на&nbsp;трех заводах с&nbsp;автоматической конвейерной линией. Прежде чем внедрить в&nbsp;работу, тестируем новые технологии в&nbsp;лаборатории.</div>
+            <div class="b-about-us__subtitle b-about-us__subtitle_mobile">С&nbsp;нами комфортно. <span class="b-about-us__selected">Всегда.</span></div>
+        </div>
+    </div>
+</div>
+    <div class="b-contacts">
+    <div class="b-contacts__container">
+        <div class="b-contacts__col">
+            <div class="b-contacts__title">Посетите наш демо-дом</div>
+            <div class="b-contacts__text">МО, г. Котельники, Дзержинское шоссе, вл. 7/7, дом &#8470;&nbsp;7</div>
+            <a href="https://goo.gl/maps/Wq3bW2EhsjC2" target="_blank" class="b-contacts__link"><span class="b-contacts__underline">Виртуальная прогулка</span> <span class="b-contacts__arrow">&rarr;</span></a>
+            <div class="b-contacts__map">
+                <gmap-map style="width: 100%; height: 289px;"
+                      :center="{lat: 55.655732, lng: 37.854649}"
+                      :zoom="16"
+                >
+                    <gmap-marker
+                        :position="{lat:55.655732, lng:37.854649}"
+                        :icon="{url:'dist/img/icons/icon-marker-map.png'}"
+                    >
+                    </gmap-marker>
+                </gmap-map>
+            </div>
+        </div>
+        <div class="b-contacts__col">
+            <div class="b-contacts__title">Заходите к&nbsp;нам в&nbsp;офис</div>
+            <div class="b-contacts__text">Москва, Наставнический переулок, д.13-15 стр.1 </div>
+            <div class="b-contacts__map b-contacts__map_big-indent">
+                <gmap-map style="width: 100%; height: 289px;"
+                      :center="{lat: 55.750055, lng: 37.665277}"
+                      :zoom="16"
+                >
+                    <gmap-marker
+                        :position="{lat: 55.750055, lng: 37.665277}"
+                        :icon="{url:'dist/img/icons/icon-marker-map.png'}"
+                    >
+                    </gmap-marker>
+                </gmap-map>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="b-footer">
+    <div class="b-footer__container">
+        <div class="b-footer__item">
+            <div class="b-footer__address">
+                <span class="b-footer__address-selected">+7 (495) 646-02-01</span><br>Ежедневно с 10.00 до 19.00
+            </div>
+        </div>
+        <div class="b-footer__item">
+            <a href="mailto:hello@alpbau.com" class="b-footer__link">hello@alpbau.com</a>
+        </div>
+        <div class="b-footer__item">
+            <div class="b-footer__social">
+                <a href="https://vk.com/alpbau" target="_blank" class="b-footer__icon b-footer__icon_vk"></a>
+                <a href="https://www.facebook.com/Alpbau" target="_blank" class="b-footer__icon b-footer__icon_facebook"></a>
+                <a href="https://www.instagram.com/_alpbau_/" target="_blank" class="b-footer__icon b-footer__icon_insta"></a>
+            </div>
+        </div>
+        <div class="b-footer__item">
+            <div class="b-footer__form">
+                <div class="b-footer__subtitle">Следите за новостями:</div>
+                <div class="b-footer__form-inner-wrapper">
+                    <input type="text" class="b-footer__input-text" placeholder="Email*">
+                    <button type="submit" class="b-footer__btn">Подписаться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="b-popup-form">
+    <div class="b-popup-form__content">
+        <div class="b-popup-form__title">Заказ звонка</div>
+        <form class="b-popup-form__form">
+            <input type="text" class="b-popup-form__input-text" placeholder="Имя*">
+            <input type="email" class="b-popup-form__input-text" placeholder="Email*">
+            <textarea class="b-popup-form__textarea" placeholder="Комментарии"></textarea>
+            <div class="b-popup-form__checkbox-wrapper">
+                <label for="b-popup-form" class="b-popup-form__label">
+                    <input type="checkbox" id="b-popup-form" checked="checked" class="b-popup-form__checkbox">
+                    <i class="b-popup-form__checkbox-icon"></i>
+                </label>
+                <a href="#" class="b-popup-form__link" target="_blank">Согласен на обработку персональных данных.</a>
+            </div>
+            <input type="button" value="Отправить" class="b-popup-form__btn">
+        </form>
+        <div class="b-popup-form__close"></div>
+    </div>
+    <div class="b-popup-form__overlay"></div>
+</div>
+    <div class="b-popup-form b-order-call" v-bind:class="{ 'b-popup-form_active': isActiveOrderCall }" v-on:click="isActiveOrderCall = !isActiveOrderCall">
+    <div class="b-popup-form__content">
+        <div class="b-popup-form__title">Заказ звонка</div>
+        <form class="b-popup-form__form">
+            <input type="text" class="b-popup-form__input-text" placeholder="Имя*">
+            <input type="email" class="b-popup-form__input-text" placeholder="Email*">
+            <textarea class="b-popup-form__textarea" placeholder="Комментарии"></textarea>
+            <div class="b-popup-form__checkbox-wrapper">
+                <label for="b-popup-form-1" class="b-popup-form__label">
+                    <input type="checkbox" id="b-popup-form-1" checked="checked" class="b-popup-form__checkbox">
+                    <i class="b-popup-form__checkbox-icon"></i>
+                </label>
+                <a href="#" class="b-popup-form__link" target="_blank">Согласен на обработку персональных данных.</a>
+            </div>
+            <input type="button" value="Отправить" class="b-popup-form__btn">
+        </form>
+        <div class="b-popup-form__close" v-on:click="isActiveOrderCall = !isActiveOrderCall"></div>
+    </div>
+    <div class="b-popup-form__overlay" v-on:click="isActiveOrderCall = !isActiveOrderCall"></div>
+</div>
+    <div class="b-popup-form b-catalog-order" v-bind:class="{ 'b-popup-form_active': isActiveCatalogOrder }">
+    <div class="b-popup-form__content">
+        <div class="b-popup-form__title">Заказ каталога</div>
+        <form class="b-popup-form__form">
+            <input type="text" class="b-popup-form__input-text" placeholder="Имя*">
+            <input type="email" class="b-popup-form__input-text" placeholder="Email*">
+            <div class="b-popup-form__checkbox-wrapper">
+                <label for="b-popup-form-3" class="b-popup-form__label">
+                    <input type="checkbox" id="b-popup-form-3" checked="checked" class="b-popup-form__checkbox">
+                    <i class="b-popup-form__checkbox-icon"></i>
+                </label>
+                <a href="#" class="b-popup-form__link" target="_blank">Согласен на обработку персональных данных.</a>
+            </div>
+            <input type="button" value="Отправить" class="b-popup-form__btn">
+        </form>
+        <div class="b-popup-form__close" v-on:click="isActiveCatalogOrder = !isActiveCatalogOrder"></div>
+    </div>
+    <div class="b-popup-form__overlay" v-on:click="isActiveCatalogOrder = !isActiveCatalogOrder"></div>
+</div>
+    <div class="b-popup-form b-become-dealer" v-bind:class="{ 'b-popup-form_active': isActiveBecomeDealer }">
+    <div class="b-popup-form__content">
+        <div class="b-popup-form__title">Стать дилером легко</div>
+        <form class="b-popup-form__form">
+            <input type="text" class="b-popup-form__input-text" placeholder="Имя*">
+            <input type="email" class="b-popup-form__input-text" placeholder="Email*">
+            <textarea class="b-popup-form__textarea" placeholder="Комментарий: укажите ваш город"></textarea>
+            <div class="b-popup-form__checkbox-wrapper">
+                <label for="b-popup-form-4" class="b-popup-form__label">
+                    <input type="checkbox" id="b-popup-form-4" checked="checked" class="b-popup-form__checkbox">
+                    <i class="b-popup-form__checkbox-icon"></i>
+                </label>
+                <a href="#" class="b-popup-form__link" target="_blank">Согласен на обработку персональных данных.</a>
+            </div>
+            <input type="button" value="Отправить" class="b-popup-form__btn">
+        </form>
+        <div class="b-popup-form__close" v-on:click="isActiveBecomeDealer = !isActiveBecomeDealer"></div>
+    </div>
+    <div class="b-popup-form__overlay" v-on:click="isActiveBecomeDealer = !isActiveBecomeDealer"></div>
+</div>
+    <div class="b-popup-form b-order-house" v-bind:class="{ 'b-popup-form_active': isActiveOrderHouse }">
+    <div class="b-popup-form__content">
+        <div class="b-popup-form__title">Заказ КП дома</div>
+        <form class="b-popup-form__form">
+            <input type="text" class="b-popup-form__input-text" placeholder="Имя*">
+            <input type="email" class="b-popup-form__input-text" placeholder="Email*">
+            <textarea class="b-popup-form__textarea" placeholder="Ваши пожелания"></textarea>
+            <div class="b-popup-form__checkbox-wrapper">
+                <label for="b-popup-form-2" class="b-popup-form__label">
+                    <input type="checkbox" id="b-popup-form-2" checked="checked" class="b-popup-form__checkbox">
+                    <i class="b-popup-form__checkbox-icon"></i>
+                </label>
+                <a href="#" class="b-popup-form__link" target="_blank">Согласен на обработку персональных данных.</a>
+            </div>
+            <input type="button" value="Отправить" class="b-popup-form__btn">
+        </form>
+        <div class="b-popup-form__close" v-on:click="isActiveOrderHouse = !isActiveOrderHouse"></div>
+    </div>
+    <div class="b-popup-form__overlay" v-on:click="isActiveOrderHouse = !isActiveOrderHouse"></div>
+</div>
+    <div class="b-message">
+    <div class="b-message__content">
+        <div class="b-message__title">Принято!</div>
+        <div class="b-message__text">Изучим ваши комментарии<br> и&nbsp;свяжемся в&nbsp;ближайшее время.</div>
+        <div class="b-message__close"></div>
+    </div>
+    <div class="b-message__overlay"></div>
+</div>
+
+<div class="b-message">
+    <div class="b-message__content">
+        <div class="b-message__title">Отлично!</div>
+        <div class="b-message__text">Мы&nbsp;свяжемся с&nbsp;вами<br>в&nbsp;ближайшее время.</div>
+        <div class="b-message__close"></div>
+    </div>
+    <div class="b-message__overlay"></div>
+</div>
+
+<div class="b-message">
+    <div class="b-message__content">
+        <div class="b-message__title">Принято!</div>
+        <div class="b-message__text">Изучим вводные вашей задачи<br> и&nbsp;свяжемся в&nbsp;ближайшее время.</div>
+        <div class="b-message__close"></div>
+    </div>
+    <div class="b-message__overlay"></div>
+</div>
+
+<div class="b-message">
+    <div class="b-message__content">
+        <div class="b-message__title">Принято!</div>
+        <div class="b-message__text">Изучим ваши пожелания<br> и&nbsp;свяжемся в&nbsp;ближайшее время.</div>
+        <div class="b-message__close"></div>
+    </div>
+    <div class="b-message__overlay"></div>
+</div>
+
+<div class="b-message">
+    <div class="b-message__content">
+        <div class="b-message__title">Принято!</div>
+        <div class="b-message__text">Каталог придет вам на&nbsp;почту<br> в&nbsp;ближайшее время.</div>
+        <div class="b-message__close"></div>
+    </div>
+    <div class="b-message__overlay"></div>
+</div>
+    <div class="b-popup-slider b-popup-slider_second" v-bind:class="{ 'b-popup-slider_active': isActivePopupSliderSecond }">
+    <div class="b-popup-slider__content">
+        <div class="b-popup-slider__slider">
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slide-caption">Концепция<br> выставочного<br> павильона</div>
+                <img src="dist/img/photo-for-sliders/public-buildings/1.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slide-caption">Концепция<br> многофункционального<br> павильона</div>
+                <img src="dist/img/photo-for-sliders/public-buildings/2.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slide-caption">Концепция<br> фермерского<br> рынка</div>
+                <img src="dist/img/photo-for-sliders/public-buildings/3.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slide-caption">Оранжерея</div>
+                <img src="dist/img/photo-for-sliders/public-buildings/4.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slide-caption">Пункт проката<br>в парке Мещерский</div>
+                <img src="dist/img/photo-for-sliders/public-buildings/5.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slide-caption">Торговый центр</div>
+                <img src="dist/img/photo-for-sliders/public-buildings/6.jpg" alt="" class="b-popup-slider__img">
+            </div>
+        </div>
+        <div class="b-popup-slider__close" v-on:click="isActivePopupSliderSecond = !isActivePopupSliderSecond"></div>
+    </div>
+    <div class="b-popup-slider__overlay" v-on:click="isActivePopupSliderSecond = !isActivePopupSliderSecond"></div>
+</div>
+
+<div class="b-popup-slider b-popup-slider_third" v-bind:class="{ 'b-popup-slider_active': isActivePopupSliderThird }">
+    <div class="b-popup-slider__content">
+        <div class="b-popup-slider__slider">
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/span-structures/1.jpg" alt="" class="b-popup-slider__img">
+                <div class="b-popup-slider__slide-caption">Крытый теннисный корт. 1444 м<sup>2</sup></div>
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/span-structures/2.jpg" alt="" class="b-popup-slider__img">
+                <div class="b-popup-slider__slide-caption">Навес для спортивной площадки</div>
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/span-structures/3.jpg" alt="" class="b-popup-slider__img">
+                <div class="b-popup-slider__slide-caption">Навес для спортивной площадки</div>
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/span-structures/4.jpg" alt="" class="b-popup-slider__img">
+                <div class="b-popup-slider__slide-caption">Навес для спортивной площадки</div>
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/span-structures/5.jpg" alt="" class="b-popup-slider__img">
+                <div class="b-popup-slider__slide-caption">Навес для трибуны</div>
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/span-structures/6.jpg" alt="" class="b-popup-slider__img">
+                <div class="b-popup-slider__slide-caption">Оранжерея. 3000 м<sup>2</sup></div>
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/span-structures/7.jpg" alt="" class="b-popup-slider__img">
+                <div class="b-popup-slider__slide-caption">Торговый центр</div>
+            </div>
+        </div>
+        <div class="b-popup-slider__close" v-on:click="isActivePopupSliderThird = !isActivePopupSliderThird"></div>
+    </div>
+    <div class="b-popup-slider__overlay" v-on:click="isActivePopupSliderThird = !isActivePopupSliderThird"></div>
+</div>
+
+<div class="b-popup-slider b-popup-slider_fourth" v-bind:class="{ 'b-popup-slider_active': isActivePopupSliderFourth }">
+    <div class="b-popup-slider__content">
+        <div class="b-popup-slider__slider">
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slide-caption">Struktura Modul 8. Болотная площадь</div>
+                <img src="dist/img/photo-for-sliders/modular-constructions/1.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slide-caption">Struktura Modul 8. Усадьба &laquo;Остафьево&raquo;</div>
+                <img src="dist/img/photo-for-sliders/modular-constructions/2.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide">
+                <div class="b-popup-slider__slide-caption">Struktura Modul 8x14. Детский мир</div>
+                <img src="dist/img/photo-for-sliders/modular-constructions/3.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slide-caption">Struktura Modul 9х13. Клуб-отель &laquo;ArtiLand&raquo;</div>
+                <img src="dist/img/photo-for-sliders/modular-constructions/4.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slide-caption">Struktura Modul 10. ВДНХ</div>
+                <img src="dist/img/photo-for-sliders/modular-constructions/5.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slide-caption">Struktura Modul 10. Красная площадь</div>
+                <img src="dist/img/photo-for-sliders/modular-constructions/6.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slide-caption">Struktura Modul 10. Парк &laquo;Музеон&raquo;</div>
+                <img src="dist/img/photo-for-sliders/modular-constructions/7.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slide-caption">Struktura Modul 10. Парк-отел &laquo;Солнечный&raquo;</div>
+                <img src="dist/img/photo-for-sliders/modular-constructions/8.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slide-caption">Struktura Modul 10. Ресторан &laquo;Тритон&raquo;</div>
+                <img src="dist/img/photo-for-sliders/modular-constructions/9.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slide-caption">Struktura Modul 10. ЦУМ</div>
+                <img src="dist/img/photo-for-sliders/modular-constructions/10.jpg" alt="" class="b-popup-slider__img">
+            </div>
+        </div>
+        <div class="b-popup-slider__close" v-on:click="isActivePopupSliderFourth = !isActivePopupSliderFourth"></div>
+    </div>
+    <div class="b-popup-slider__overlay" v-on:click="isActivePopupSliderFourth = !isActivePopupSliderFourth"></div>
+</div>
+    <!-- 00 : begin -->
+<div class="b-popup-slider b-popup-slider-house-projects" v-bind:class="{ 'b-popup-slider_active': isActivePopupSliderHouseProjects00 }">
+    <div class="b-popup-slider__content">
+        <div class="b-popup-slider__slider">
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/100/100_Kleen_brus_0.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/100/100_Kleen_brus_1.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/100/100_Kleen_brus_2.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/100/100_Scheme_1.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">1&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Гостинная&nbsp;/ кухня&nbsp;&mdash; 18,1 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Лестничная клетка&nbsp;&mdash; 7,0 м2<sup></sup></li>
+                            <li class="b-popup-slider__list-item">3. Ванная&nbsp;&mdash; 6,1 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Кабинет&nbsp;&mdash; 8,9 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Прихожая&nbsp;&mdash; 8,1 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 1&nbsp;этажа &mdash;<br> 48,2 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 100&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/100/100_Scheme_2.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">2&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Спальня&nbsp;&mdash; 11,5 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Ванная&nbsp;&mdash; 8,8 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Лестничная клетка&nbsp;&mdash; 6,8 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Гардеробная&nbsp;&mdash; 5,0 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Детская&nbsp;&mdash; 11,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">6. Гостевая спальня&nbsp;&mdash; 8,5 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 2&nbsp;этажа &mdash;<br> 51,8 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 100&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-popup-slider__close" v-on:click="isActivePopupSliderHouseProjects00 = !isActivePopupSliderHouseProjects00"></div>
+    </div>
+    <div class="b-popup-slider__overlay" v-on:click="isActivePopupSliderHouseProjects00 = !isActivePopupSliderHouseProjects00"></div>
+</div>
+<!-- 00 : end -->
+
+<!-- 01 : begin -->
+<div class="b-popup-slider b-popup-slider-house-projects" v-bind:class="{ 'b-popup-slider_active': isActivePopupSliderHouseProjects01 }">
+    <div class="b-popup-slider__content">
+        <div class="b-popup-slider__slider">
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/100/100_Karkas_0.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/100/100_Karkas_1.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/100/100_Karkas_2.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/100/100_Scheme_1.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">1&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Гостинная&nbsp;/ кухня&nbsp;&mdash; 18,1 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Лестничная клетка&nbsp;&mdash; 7,0 м2<sup></sup></li>
+                            <li class="b-popup-slider__list-item">3. Ванная&nbsp;&mdash; 6,1 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Кабинет&nbsp;&mdash; 8,9 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Прихожая&nbsp;&mdash; 8,1 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 1&nbsp;этажа &mdash;<br> 48,2 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 100&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/100/100_Scheme_2.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">2&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Спальня&nbsp;&mdash; 11,5 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Ванная&nbsp;&mdash; 8,8 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Лестничная клетка&nbsp;&mdash; 6,8 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Гардеробная&nbsp;&mdash; 5,0 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Детская&nbsp;&mdash; 11,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">6. Гостевая спальня&nbsp;&mdash; 8,5 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 2&nbsp;этажа &mdash;<br> 51,8 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 100&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-popup-slider__close" v-on:click="isActivePopupSliderHouseProjects01 = !isActivePopupSliderHouseProjects01"></div>
+    </div>
+    <div class="b-popup-slider__overlay" v-on:click="isActivePopupSliderHouseProjects01 = !isActivePopupSliderHouseProjects01"></div>
+</div>
+<!-- 01 : end -->
+
+<!-- 02 : begin -->
+<div class="b-popup-slider b-popup-slider-house-projects" v-bind:class="{ 'b-popup-slider_active': isActivePopupSliderHouseProjects02 }">
+    <div class="b-popup-slider__content">
+        <div class="b-popup-slider__slider">
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/100/100_Kombinir_0.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/100/100_Kombinir_1.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/100/100_Kombinir_2.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/100/100_Scheme_1.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">1&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Гостинная&nbsp;/ кухня&nbsp;&mdash; 18,1 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Лестничная клетка&nbsp;&mdash; 7,0 м2<sup></sup></li>
+                            <li class="b-popup-slider__list-item">3. Ванная&nbsp;&mdash; 6,1 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Кабинет&nbsp;&mdash; 8,9 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Прихожая&nbsp;&mdash; 8,1 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 1&nbsp;этажа &mdash;<br> 48,2 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 100&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/100/100_Scheme_2.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">2&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Спальня&nbsp;&mdash; 11,5 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Ванная&nbsp;&mdash; 8,8 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Лестничная клетка&nbsp;&mdash; 6,8 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Гардеробная&nbsp;&mdash; 5,0 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Детская&nbsp;&mdash; 11,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">6. Гостевая спальня&nbsp;&mdash; 8,5 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 2&nbsp;этажа &mdash;<br> 51,8 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 100&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-popup-slider__close" v-on:click="isActivePopupSliderHouseProjects02 = !isActivePopupSliderHouseProjects02"></div>
+    </div>
+    <div class="b-popup-slider__overlay" v-on:click="isActivePopupSliderHouseProjects02 = !isActivePopupSliderHouseProjects02"></div>
+</div>
+<!-- 02 : end -->
+
+<!-- 10 : begin -->
+<div class="b-popup-slider b-popup-slider-house-projects" v-bind:class="{ 'b-popup-slider_active': isActivePopupSliderHouseProjects10 }">
+    <div class="b-popup-slider__content">
+        <div class="b-popup-slider__slider">
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/120/120_Kleen_brus_0.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/120/120_Kleen_brus_1.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/120/120_Kleen_brus_2.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/120/120_Scheme_1.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">1&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Прихожая&nbsp;&mdash; 6,0 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Лестничная клетка&nbsp;&mdash; 3,9 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Ванная&nbsp;&mdash; 8,3 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Кухня&nbsp;&mdash; 11,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Столовая&nbsp;&mdash; 21,5 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">6. Гостиная&nbsp;&mdash; 12,1 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 1&nbsp;этажа &mdash;<br> 61,0 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 120&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/120/120_Scheme_2.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">2&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Лестничная клетка&nbsp;&mdash; 7,9 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Ванная&nbsp;&mdash; 10,5 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Детская 1&nbsp;&mdash; 12,3 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Детская 2&nbsp;&mdash; 12,9 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Спальня&nbsp;&mdash; 14,4 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 2&nbsp;этажа &mdash;<br> 59,0 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 120&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-popup-slider__close" v-on:click="isActivePopupSliderHouseProjects10 = !isActivePopupSliderHouseProjects10"></div>
+    </div>
+    <div class="b-popup-slider__overlay" v-on:click="isActivePopupSliderHouseProjects10 = !isActivePopupSliderHouseProjects10"></div>
+</div>
+<!-- 10 : end -->
+
+<!-- 11 : begin -->
+<div class="b-popup-slider b-popup-slider-house-projects" v-bind:class="{ 'b-popup-slider_active': isActivePopupSliderHouseProjects11 }">
+    <div class="b-popup-slider__content">
+        <div class="b-popup-slider__slider">
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/120/120_Karkas_0.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/120/120_Karkas_1.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/100/100_Karkas_2.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/120/120_Scheme_1.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">1&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Прихожая&nbsp;&mdash; 6,0 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Лестничная клетка&nbsp;&mdash; 3,9 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Ванная&nbsp;&mdash; 8,3 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Кухня&nbsp;&mdash; 11,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Столовая&nbsp;&mdash; 21,5 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">6. Гостиная&nbsp;&mdash; 12,1 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 1&nbsp;этажа &mdash;<br> 61,0 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 120&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/120/120_Scheme_2.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">2&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Лестничная клетка&nbsp;&mdash; 7,9 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Ванная&nbsp;&mdash; 10,5 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Детская 1&nbsp;&mdash; 12,3 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Детская 2&nbsp;&mdash; 12,9 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Спальня&nbsp;&mdash; 14,4 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 2&nbsp;этажа &mdash;<br> 59,0 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 120&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-popup-slider__close" v-on:click="isActivePopupSliderHouseProjects11 = !isActivePopupSliderHouseProjects11"></div>
+    </div>
+    <div class="b-popup-slider__overlay" v-on:click="isActivePopupSliderHouseProjects11 = !isActivePopupSliderHouseProjects11"></div>
+</div>
+<!-- 11 : end -->
+
+<!-- 12 : begin -->
+<div class="b-popup-slider b-popup-slider-house-projects" v-bind:class="{ 'b-popup-slider_active': isActivePopupSliderHouseProjects12 }">
+    <div class="b-popup-slider__content">
+        <div class="b-popup-slider__slider">
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/120/120_Kombinir_0.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/120/120_Kombinir_1.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/120/120_Kombinir_2.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/120/120_Scheme_1.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">1&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Прихожая&nbsp;&mdash; 6,0 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Лестничная клетка&nbsp;&mdash; 3,9 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Ванная&nbsp;&mdash; 8,3 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Кухня&nbsp;&mdash; 11,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Столовая&nbsp;&mdash; 21,5 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">6. Гостиная&nbsp;&mdash; 12,1 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 1&nbsp;этажа &mdash;<br> 61,0 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 120&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/120/120_Scheme_2.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">2&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Лестничная клетка&nbsp;&mdash; 7,9 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Ванная&nbsp;&mdash; 10,5 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Детская 1&nbsp;&mdash; 12,3 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Детская 2&nbsp;&mdash; 12,9 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Спальня&nbsp;&mdash; 14,4 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 2&nbsp;этажа &mdash;<br> 59,0 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 120&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-popup-slider__close" v-on:click="isActivePopupSliderHouseProjects12 = !isActivePopupSliderHouseProjects12"></div>
+    </div>
+    <div class="b-popup-slider__overlay" v-on:click="isActivePopupSliderHouseProjects12 = !isActivePopupSliderHouseProjects12"></div>
+</div>
+<!-- 12 : end -->
+
+<!-- 20 : begin -->
+<div class="b-popup-slider b-popup-slider-house-projects" v-bind:class="{ 'b-popup-slider_active': isActivePopupSliderHouseProjects20 }">
+    <div class="b-popup-slider__content">
+        <div class="b-popup-slider__slider">
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/140/140_Kleen_brus_0.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/140/140_Kleen_brus_1.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/140/140_Kleen_brus_2.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/140/140_Scheme_1.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">1&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Санузел&nbsp;&mdash; 1,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Сауна&nbsp;&mdash; 2,1 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Ванная&nbsp;&mdash; 6,4 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Прачечная&nbsp;&mdash; 3,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Прихожая&nbsp;&mdash; 14,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">6. Кухня&nbsp;&mdash; 6,7 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">7. Гостиная&nbsp;/ Столовая&nbsp;&mdash; 37,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">8. Лестничная клетка&nbsp;&mdash; 1,9 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 1&nbsp;этажа &mdash;<br> 72,9 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 140&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/140/140_Scheme_2.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">2&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Гостевая&nbsp;&mdash; 13,3<sup>2<sup></li>
+                            <li class="b-popup-slider__list-item">2. Ванная&nbsp;&mdash; 6,5<sup>2<sup></li>
+                            <li class="b-popup-slider__list-item">3. Коридор&nbsp;&mdash; 6,7<sup>2<sup></li>
+                            <li class="b-popup-slider__list-item">4. Детская&nbsp;&mdash; 17,4<sup>2<sup></li>
+                            <li class="b-popup-slider__list-item">5. Спальня&nbsp;&mdash; 18,9<sup>2<sup></li>
+                            <li class="b-popup-slider__list-item">6. Лестничная клетка&nbsp;&mdash; 4,3<sup>2<sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 2&nbsp;этажа &mdash;<br> 67,1 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 140&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-popup-slider__close" v-on:click="isActivePopupSliderHouseProjects20 = !isActivePopupSliderHouseProjects20"></div>
+    </div>
+    <div class="b-popup-slider__overlay" v-on:click="isActivePopupSliderHouseProjects20 = !isActivePopupSliderHouseProjects20"></div>
+</div>
+<!-- 20 : end -->
+
+<!-- 21 : begin -->
+<div class="b-popup-slider b-popup-slider-house-projects" v-bind:class="{ 'b-popup-slider_active': isActivePopupSliderHouseProjects21 }">
+    <div class="b-popup-slider__content">
+        <div class="b-popup-slider__slider">
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/140/140_Karkas_0.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/140/140_Karkas_1.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/140/140_Karkas_2.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/140/140_Scheme_1.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">1&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Санузел&nbsp;&mdash; 1,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Сауна&nbsp;&mdash; 2,1 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Ванная&nbsp;&mdash; 6,4 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Прачечная&nbsp;&mdash; 3,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Прихожая&nbsp;&mdash; 14,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">6. Кухня&nbsp;&mdash; 6,7 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">7. Гостиная&nbsp;/ Столовая&nbsp;&mdash; 37,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">8. Лестничная клетка&nbsp;&mdash; 1,9 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 1&nbsp;этажа &mdash;<br> 72,9 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 140&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/140/140_Scheme_2.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">2&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Гостевая&nbsp;&mdash; 13,3<sup>2<sup></li>
+                            <li class="b-popup-slider__list-item">2. Ванная&nbsp;&mdash; 6,5<sup>2<sup></li>
+                            <li class="b-popup-slider__list-item">3. Коридор&nbsp;&mdash; 6,7<sup>2<sup></li>
+                            <li class="b-popup-slider__list-item">4. Детская&nbsp;&mdash; 17,4<sup>2<sup></li>
+                            <li class="b-popup-slider__list-item">5. Спальня&nbsp;&mdash; 18,9<sup>2<sup></li>
+                            <li class="b-popup-slider__list-item">6. Лестничная клетка&nbsp;&mdash; 4,3<sup>2<sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 2&nbsp;этажа &mdash;<br> 67,1 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 140&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-popup-slider__close" v-on:click="isActivePopupSliderHouseProjects21 = !isActivePopupSliderHouseProjects21"></div>
+    </div>
+    <div class="b-popup-slider__overlay" v-on:click="isActivePopupSliderHouseProjects21 = !isActivePopupSliderHouseProjects21"></div>
+</div>
+<!-- 21 : end -->
+
+<!-- 22 : begin -->
+<div class="b-popup-slider b-popup-slider-house-projects" v-bind:class="{ 'b-popup-slider_active': isActivePopupSliderHouseProjects22 }">
+    <div class="b-popup-slider__content">
+        <div class="b-popup-slider__slider">
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/140/140_Kombinir_0.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/140/140_Kombinir_1.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/140/140_Kombinir_2.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/140/140_Scheme_1.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">1&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Санузел&nbsp;&mdash; 1,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Сауна&nbsp;&mdash; 2,1 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Ванная&nbsp;&mdash; 6,4 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Прачечная&nbsp;&mdash; 3,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Прихожая&nbsp;&mdash; 14,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">6. Кухня&nbsp;&mdash; 6,7 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">7. Гостиная&nbsp;/ Столовая&nbsp;&mdash; 37,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">8. Лестничная клетка&nbsp;&mdash; 1,9 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 1&nbsp;этажа &mdash;<br> 72,9 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 140&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/140/140_Scheme_2.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">2&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Гостевая&nbsp;&mdash; 13,3<sup>2<sup></li>
+                            <li class="b-popup-slider__list-item">2. Ванная&nbsp;&mdash; 6,5<sup>2<sup></li>
+                            <li class="b-popup-slider__list-item">3. Коридор&nbsp;&mdash; 6,7<sup>2<sup></li>
+                            <li class="b-popup-slider__list-item">4. Детская&nbsp;&mdash; 17,4<sup>2<sup></li>
+                            <li class="b-popup-slider__list-item">5. Спальня&nbsp;&mdash; 18,9<sup>2<sup></li>
+                            <li class="b-popup-slider__list-item">6. Лестничная клетка&nbsp;&mdash; 4,3<sup>2<sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 2&nbsp;этажа &mdash;<br> 67,1 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 140&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-popup-slider__close" v-on:click="isActivePopupSliderHouseProjects22 = !isActivePopupSliderHouseProjects22"></div>
+    </div>
+    <div class="b-popup-slider__overlay" v-on:click="isActivePopupSliderHouseProjects22 = !isActivePopupSliderHouseProjects22"></div>
+</div>
+<!-- 22 : end -->
+
+<!-- 30 : begin -->
+<div class="b-popup-slider b-popup-slider-house-projects" v-bind:class="{ 'b-popup-slider_active': isActivePopupSliderHouseProjects30 }">
+    <div class="b-popup-slider__content">
+        <div class="b-popup-slider__slider">
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/160/160_Kleen_brus_0.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/160/160_Kleen_brus_1.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/160/160_Kleen_brus_2.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/160/160_Scheme_1.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">1&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Лестничная клетка&nbsp;&mdash; 5,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Прихожая&nbsp;&mdash; 10,9 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Кухня&nbsp;/ Столовая&nbsp;&mdash; 36,4 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Гостиная&nbsp;&mdash; 29,4 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Санузел&nbsp;&mdash; 3,4 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 1&nbsp;этажа &mdash;<br> 85,3 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 160&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/160/160_Scheme_2.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">2&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Лестничная клетка&nbsp;&mdash; 7,4 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Детская 2&nbsp;&mdash; 13,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Ванная&nbsp;&mdash; 15,7 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Спальня&nbsp;&mdash; 13,6 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Гардеробная&nbsp;&mdash; 9,1 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">6. Детская 1&nbsp;&mdash; 15,7 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 2&nbsp;этажа &mdash;<br> 74,7 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 160&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-popup-slider__close" v-on:click="isActivePopupSliderHouseProjects30 = !isActivePopupSliderHouseProjects30"></div>
+    </div>
+    <div class="b-popup-slider__overlay" v-on:click="isActivePopupSliderHouseProjects30 = !isActivePopupSliderHouseProjects30"></div>
+</div>
+<!-- 30 : end -->
+
+<!-- 31 : begin -->
+<div class="b-popup-slider b-popup-slider-house-projects" v-bind:class="{ 'b-popup-slider_active': isActivePopupSliderHouseProjects31 }">
+    <div class="b-popup-slider__content">
+        <div class="b-popup-slider__slider">
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/160/160_Karkas_0.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/160/160_Karkas_1.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/160/160_Karkas_2.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/160/160_Scheme_1.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">1&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Лестничная клетка&nbsp;&mdash; 5,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Прихожая&nbsp;&mdash; 10,9 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Кухня&nbsp;/ Столовая&nbsp;&mdash; 36,4 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Гостиная&nbsp;&mdash; 29,4 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Санузел&nbsp;&mdash; 3,4 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 1&nbsp;этажа &mdash;<br> 85,3 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 160&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/160/160_Scheme_2.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">2&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Лестничная клетка&nbsp;&mdash; 7,4 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Детская 2&nbsp;&mdash; 13,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Ванная&nbsp;&mdash; 15,7 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Спальня&nbsp;&mdash; 13,6 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Гардеробная&nbsp;&mdash; 9,1 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">6. Детская 1&nbsp;&mdash; 15,7 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 2&nbsp;этажа &mdash;<br> 74,7 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 160&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-popup-slider__close" v-on:click="isActivePopupSliderHouseProjects31 = !isActivePopupSliderHouseProjects31"></div>
+    </div>
+    <div class="b-popup-slider__overlay" v-on:click="isActivePopupSliderHouseProjects31 = !isActivePopupSliderHouseProjects31"></div>
+</div>
+<!-- 31 : end -->
+
+<!-- 32 : begin -->
+<div class="b-popup-slider b-popup-slider-house-projects" v-bind:class="{ 'b-popup-slider_active': isActivePopupSliderHouseProjects32 }">
+    <div class="b-popup-slider__content">
+        <div class="b-popup-slider__slider">
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/160/160_Kombinir_0.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/160/160_Kombinir_1.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/160/160_Kombinir_2.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/160/160_Scheme_1.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">1&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Лестничная клетка&nbsp;&mdash; 5,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Прихожая&nbsp;&mdash; 10,9 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Кухня&nbsp;/ Столовая&nbsp;&mdash; 36,4 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Гостиная&nbsp;&mdash; 29,4 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Санузел&nbsp;&mdash; 3,4 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 1&nbsp;этажа &mdash;<br> 85,3 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 160&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/160/160_Scheme_2.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">2&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Лестничная клетка&nbsp;&mdash; 7,4 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Детская 2&nbsp;&mdash; 13,2 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Ванная&nbsp;&mdash; 15,7 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Спальня&nbsp;&mdash; 13,6 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Гардеробная&nbsp;&mdash; 9,1 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">6. Детская 1&nbsp;&mdash; 15,7 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 2&nbsp;этажа &mdash;<br> 74,7 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 160&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-popup-slider__close" v-on:click="isActivePopupSliderHouseProjects32 = !isActivePopupSliderHouseProjects32"></div>
+    </div>
+    <div class="b-popup-slider__overlay" v-on:click="isActivePopupSliderHouseProjects32 = !isActivePopupSliderHouseProjects32"></div>
+</div>
+<!-- 32 : end -->
+
+<!-- 40 : begin -->
+<div class="b-popup-slider b-popup-slider-house-projects" v-bind:class="{ 'b-popup-slider_active': isActivePopupSliderHouseProjects40 }">
+    <div class="b-popup-slider__content">
+        <div class="b-popup-slider__slider">
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/180/180_Kleen_brus_0.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/180/180_Kleen_brus_1.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/180/180_Kleen_brus_2.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/180/180_Scheme_1.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">1&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Гостиная&nbsp;/ Столовая&nbsp;&mdash; 30,3м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Кухня&nbsp;&mdash; 19,1 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Коридор&nbsp;&mdash; 11,7 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Гардеробная&nbsp;&mdash; 7,4 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Санузел&nbsp;&mdash; 7,6 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">6. Гостевая спальня&nbsp;&mdash; 16,1 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 1&nbsp;этажа &mdash;<br> 92,2 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 180&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/180/180_Scheme_2.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">2&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Лестничная клетка&nbsp;&mdash; 6,1 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Коридор&nbsp;&mdash; 11,7 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Ванная&nbsp;&mdash; 17,3 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Детская 1&nbsp;&mdash; 17,3 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Детская 2&nbsp;&mdash; 17,7 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">6. Спальня&nbsp;&mdash; 17,7 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 2&nbsp;этажа &mdash;<br> 87,8 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 180&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-popup-slider__close" v-on:click="isActivePopupSliderHouseProjects40 = !isActivePopupSliderHouseProjects40"></div>
+    </div>
+    <div class="b-popup-slider__overlay" v-on:click="isActivePopupSliderHouseProjects40 = !isActivePopupSliderHouseProjects40"></div>
+</div>
+<!-- 40 : end -->
+
+<!-- 41 : begin -->
+<div class="b-popup-slider b-popup-slider-house-projects" v-bind:class="{ 'b-popup-slider_active': isActivePopupSliderHouseProjects41 }">
+    <div class="b-popup-slider__content">
+        <div class="b-popup-slider__slider">
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/180/180_Karkas_0.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/180/180_Karkas_1.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/180/180_Karkas_2.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/180/180_Scheme_1.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">1&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Гостиная&nbsp;/ Столовая&nbsp;&mdash; 30,3м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Кухня&nbsp;&mdash; 19,1 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Коридор&nbsp;&mdash; 11,7 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Гардеробная&nbsp;&mdash; 7,4 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Санузел&nbsp;&mdash; 7,6 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">6. Гостевая спальня&nbsp;&mdash; 16,1 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 1&nbsp;этажа &mdash;<br> 92,2 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 180&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/180/180_Scheme_2.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">2&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Лестничная клетка&nbsp;&mdash; 6,1 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Коридор&nbsp;&mdash; 11,7 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Ванная&nbsp;&mdash; 17,3 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Детская 1&nbsp;&mdash; 17,3 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Детская 2&nbsp;&mdash; 17,7 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">6. Спальня&nbsp;&mdash; 17,7 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 2&nbsp;этажа &mdash;<br> 87,8 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 180&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-popup-slider__close" v-on:click="isActivePopupSliderHouseProjects41 = !isActivePopupSliderHouseProjects41"></div>
+    </div>
+    <div class="b-popup-slider__overlay" v-on:click="isActivePopupSliderHouseProjects41 = !isActivePopupSliderHouseProjects41"></div>
+</div>
+<!-- 41 : end -->
+
+<!-- 42 : begin -->
+<div class="b-popup-slider b-popup-slider-house-projects" v-bind:class="{ 'b-popup-slider_active': isActivePopupSliderHouseProjects42 }">
+    <div class="b-popup-slider__content">
+        <div class="b-popup-slider__slider">
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/180/180_Kombinir_0.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/180/180_Kombinir_1.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide" v-on:click="sliderPopupRightSlide">
+                <img src="dist/img/photo-for-sliders/house-projects-popup/180/180_Kombinir_2.jpg" alt="" class="b-popup-slider__img">
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/180/180_Scheme_1.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">1&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Гостиная&nbsp;/ Столовая&nbsp;&mdash; 30,3м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Кухня&nbsp;&mdash; 19,1 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Коридор&nbsp;&mdash; 11,7 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Гардеробная&nbsp;&mdash; 7,4 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Санузел&nbsp;&mdash; 7,6 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">6. Гостевая спальня&nbsp;&mdash; 16,1 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 1&nbsp;этажа &mdash;<br> 92,2 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 180&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-popup-slider__slide b-popup-slider__slide_text" v-on:click="sliderPopupRightSlide">
+                <div class="b-popup-slider__slider-inner-wrapper">
+                    <img src="dist/img/photo-for-sliders/house-projects-popup/180/180_Scheme_2.png" alt="" class="b-popup-slider__img b-popup-slider__img_scheme" >
+                    <div class="b-popup-slider__text">
+                        <div class="b-popup-slider__title">2&nbsp;этаж</div>
+                        <ul class="b-popup-slider__list">
+                            <li class="b-popup-slider__list-item">1. Лестничная клетка&nbsp;&mdash; 6,1 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">2. Коридор&nbsp;&mdash; 11,7 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">3. Ванная&nbsp;&mdash; 17,3 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">4. Детская 1&nbsp;&mdash; 17,3 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">5. Детская 2&nbsp;&mdash; 17,7 м<sup>2</sup></li>
+                            <li class="b-popup-slider__list-item">6. Спальня&nbsp;&mdash; 17,7 м<sup>2</sup></li>
+                        </ul>
+                        <div class="b-popup-slider__area">Общая площадь 2&nbsp;этажа &mdash;<br> 87,8 м<sup>2</sup></div>
+                        <div class="b-popup-slider__area-full">Общая площадь по&nbsp;всем<br> этажам&nbsp;&mdash; 180&nbsp;м<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-popup-slider__close" v-on:click="isActivePopupSliderHouseProjects42 = !isActivePopupSliderHouseProjects42"></div>
+    </div>
+    <div class="b-popup-slider__overlay" v-on:click="isActivePopupSliderHouseProjects42 = !isActivePopupSliderHouseProjects42"></div>
+</div>
+<!-- 42 : end -->
+
+</div>
+
+<script src="dist/js/alpbau-project-base.js"></script>
+<script src="dist/js/alpbau-project-run.js"></script>
+</body>
+</html>
