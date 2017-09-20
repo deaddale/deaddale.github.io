@@ -28,11 +28,12 @@
     <div class="global-col__left">
         <aside class="b-navbar b-navbar_dark">
     <div class="b-navbar__container">
-        <a href="/" class="b-navbar__logo"></a>
+        <div class="b-navbar__burger" v-on:click="mobileNavIsActive = !mobileNavIsActive"></div>
+        <a href="/" class="b-navbar__logo" v-bind:class="{ 'b-navbar__logo_active': mobileNavIsActive }"></a>
         <form action="" class="b-navbar__search-form">
             <input type="text" placeholder="Поиск по сайту" class="b-navbar__input-text">
         </form>
-        <ul class="b-navbar__list">
+        <ul class="b-navbar__list" v-bind:class="{ 'b-navbar__list_active': mobileNavIsActive }"  v-on:click="mobileNavIsActive = !mobileNavIsActive">
             <li class="b-navbar__item"><a href="#" class="b-navbar__link">Скринкасты</a></li>
             <li class="b-navbar__item"><a href="#" class="b-navbar__link">Курсы</a></li>
             <li class="b-navbar__item"><a href="#" class="b-navbar__link">Блог</a></li>
@@ -70,15 +71,15 @@
         </ul>
     </div>
 </header>
-        <section class="b-courses">
+        <section class="b-text b-courses">
     <div class="b-courses__container">
-        <h1 class="b-courses__title">&laquo;Научись Django&raquo;</h1>
-        <div class="b-courses__descr">курсы программирования</div>
-        <p class="b-courses__text">Все изучающие новый язык программирования сталкиваются с&nbsp;проблемой реального применения знаний&nbsp;&mdash; вроде туториалов в&nbsp;сети много, а&nbsp;как сделать реальную задачу? как организовать проект? как его писать-то вообще?</p>
-        <p class="b-courses__text">Онлайн-школа призвана разрешить ваши трудности. Обучение с&nbsp;наставником поможет правильно &laquo;поставить руку&raquo; в&nbsp;кодировнии, использование профессиональных средств и&nbsp;способов разработки (git, pycharm, отладка, рефактор) поможет влиться в&nbsp;семью профессионалов. Обучение популярному фреймворку Django откроет дорогу к&nbsp;новым возможностям трудоустройства (от&nbsp;Freelance до&nbsp;Yandex).</p>
-        <p class="b-courses__text">Помимо самостоятельного изучения Django по&nbsp;скринкастам я&nbsp;предлагаю Вам занятия в&nbsp;группе таких&nbsp;же начинающих как Вы. Группы собираются по&nbsp;3-7&nbsp;человек, обучение идет посредством интернет, в&nbsp;удобное вечернее время. Вы&nbsp;смотрите скринкасты в&nbsp;удобное Вам время, делаете домашние задания, отправляете наставнику на&nbsp;проверку. Наставник комментирует код и&nbsp;указывает на&nbsp;ошибки/недочеты. А&nbsp;раз в&nbsp;неделю происходит &laquo;очная ставка&raquo; всей группы для того, что&nbsp;бы вы&nbsp;могли задать свои вопросы и&nbsp;услышать ответы на&nbsp;чужие. Так&nbsp;же организуется slack-чат для онлайн общения группы и&nbsp;наставника. Все домашние задания делаются посредством GIT, подглядываение в&nbsp;чужой код&nbsp;&mdash; поощеряется.</p>
-        <p class="b-courses__text">Так&nbsp;же практикуются командная разработка&nbsp;&mdash; в&nbsp;середине курса начнем общий django-проект на&nbsp;GitHub, изучим gitflow, поменяемся кодом и&nbsp;улучшим чужой код (внедряя новые требования).</p>
-        <p class="b-courses__text">Полную программу курсы&nbsp;Вы можете посмотреть в&nbsp;разделе <a href="/courses/program/" class="b-courses__link">Программа</a>, почитать о&nbsp;наставнике в&nbsp;разделе&nbsp;<a
+        <h1>&laquo;Научись Django&raquo;</h1>
+        <p class="b-courses__descr">курсы программирования</p>
+        <p>Все изучающие новый язык программирования сталкиваются с&nbsp;проблемой реального применения знаний&nbsp;&mdash; вроде туториалов в&nbsp;сети много, а&nbsp;как сделать реальную задачу? как организовать проект? как его писать-то вообще?</p>
+        <p>Онлайн-школа призвана разрешить ваши трудности. Обучение с&nbsp;наставником поможет правильно &laquo;поставить руку&raquo; в&nbsp;кодировнии, использование профессиональных средств и&nbsp;способов разработки (git, pycharm, отладка, рефактор) поможет влиться в&nbsp;семью профессионалов. Обучение популярному фреймворку Django откроет дорогу к&nbsp;новым возможностям трудоустройства (от&nbsp;Freelance до&nbsp;Yandex).</p>
+        <p>Помимо самостоятельного изучения Django по&nbsp;скринкастам я&nbsp;предлагаю Вам занятия в&nbsp;группе таких&nbsp;же начинающих как Вы. Группы собираются по&nbsp;3-7&nbsp;человек, обучение идет посредством интернет, в&nbsp;удобное вечернее время. Вы&nbsp;смотрите скринкасты в&nbsp;удобное Вам время, делаете домашние задания, отправляете наставнику на&nbsp;проверку. Наставник комментирует код и&nbsp;указывает на&nbsp;ошибки/недочеты. А&nbsp;раз в&nbsp;неделю происходит &laquo;очная ставка&raquo; всей группы для того, что&nbsp;бы вы&nbsp;могли задать свои вопросы и&nbsp;услышать ответы на&nbsp;чужие. Так&nbsp;же организуется slack-чат для онлайн общения группы и&nbsp;наставника. Все домашние задания делаются посредством GIT, подглядываение в&nbsp;чужой код&nbsp;&mdash; поощеряется.</p>
+        <p>Так&nbsp;же практикуются командная разработка&nbsp;&mdash; в&nbsp;середине курса начнем общий django-проект на&nbsp;GitHub, изучим gitflow, поменяемся кодом и&nbsp;улучшим чужой код (внедряя новые требования).</p>
+        <p>Полную программу курсы&nbsp;Вы можете посмотреть в&nbsp;разделе <a href="/courses/program/" class="b-courses__link">Программа</a>, почитать о&nbsp;наставнике в&nbsp;разделе&nbsp;<a
             href="/courses/author" class="b-courses__link">Об авторе</a>.</p>
     </div>
     <a href="/courses/sign/" class="b-courses__btn-enroll">Запишись!</a>

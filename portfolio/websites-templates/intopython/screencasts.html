@@ -28,11 +28,12 @@
     <div class="global-col__left">
         <aside class="b-navbar b-navbar_dark">
     <div class="b-navbar__container">
-        <a href="/" class="b-navbar__logo"></a>
+        <div class="b-navbar__burger" v-on:click="mobileNavIsActive = !mobileNavIsActive"></div>
+        <a href="/" class="b-navbar__logo" v-bind:class="{ 'b-navbar__logo_active': mobileNavIsActive }"></a>
         <form action="" class="b-navbar__search-form">
             <input type="text" placeholder="Поиск по сайту" class="b-navbar__input-text">
         </form>
-        <ul class="b-navbar__list">
+        <ul class="b-navbar__list" v-bind:class="{ 'b-navbar__list_active': mobileNavIsActive }"  v-on:click="mobileNavIsActive = !mobileNavIsActive">
             <li class="b-navbar__item"><a href="#" class="b-navbar__link">Скринкасты</a></li>
             <li class="b-navbar__item"><a href="#" class="b-navbar__link">Курсы</a></li>
             <li class="b-navbar__item"><a href="#" class="b-navbar__link">Блог</a></li>
@@ -251,7 +252,7 @@
 </section>
 </div>
 
-<script src="dist/js/intopython-project-base.js"></script>
-<script src="dist/js/intopython-project-run.js"></script>
+<script src="/dist/js/intopython-project-base.js"></script>
+<script src="/dist/js/intopython-project-run.js"></script>
 </body>
 </html>

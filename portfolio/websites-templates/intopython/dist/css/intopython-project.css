@@ -5,7 +5,8 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in
  * IE on Windows Phone and in iOS. */
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&subset=cyrillic-ext,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&subset=cyrillic-ext,latin-ext");
 html {
   line-height: 1.15;
   /* 1 */
@@ -357,6 +358,10 @@ body {
   width: 235px;
   z-index: 3;
   border-right: 1px solid #ff0723; }
+  @media (min-width: 0) and (max-width: 1300px) {
+    .global-col__left {
+      height: 40px;
+      width: 100%; } }
 
 .global-col__right {
   position: relative;
@@ -365,12 +370,16 @@ body {
   width: calc(100% - 235px);
   height: 100%;
   z-index: 2; }
+  @media (min-width: 0) and (max-width: 1300px) {
+    .global-col__right {
+      width: 100%;
+      left: 0; } }
 
 html {
   -webkit-font-smoothing: antialiased; }
 
 body {
-  font-family: "Roboto";
+  font-family: "Ubuntu";
   font-size: 22px;
   line-height: 1.3636;
   font-weight: 300;
@@ -531,6 +540,18 @@ ol {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.icon-burger, .b-navbar__burger {
+  background: url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20width%3D%2226px%22%20height%3D%2218px%22%20viewBox%3D%220%200%2026%2018%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%0A%20%20%20%20%3C%21--%20Generator%3A%20Sketch%2044.1%20%2841455%29%20-%20http%3A//www.bohemiancoding.com/sketch%20--%3E%0A%20%20%20%20%3Ctitle%3EShape%3C/title%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C/desc%3E%0A%20%20%20%20%3Cdefs%3E%3C/defs%3E%0A%20%20%20%20%3Cg%20id%3D%22Page-1%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%221%22%20fill-rule%3D%22nonzero%22%20fill%3D%22%23FFFFFF%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2C0%20L0%2C2%20L26%2C2%20L26%2C0%20L0%2C0%20Z%20M0%2C8%20L0%2C10%20L26%2C10%20L26%2C8%20L0%2C8%20Z%20M0%2C16%20L0%2C18%20L26%2C18%20L26%2C16%20L0%2C16%20Z%22%20id%3D%22Shape%22%3E%3C/path%3E%0A%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.icon-close, .b-navbar__burger_close {
+  background: url(data:image/svg+xml,%3Csvg%20width%3D%2222px%22%20height%3D%2222px%22%20viewBox%3D%220%200%2022%2022%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%0A%20%20%20%20%3C%21--%20Generator%3A%20Sketch%2044.1%20%2841455%29%20-%20http%3A//www.bohemiancoding.com/sketch%20--%3E%0A%20%20%20%20%3Ctitle%3E1%3C/title%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C/desc%3E%0A%20%20%20%20%3Cdefs%3E%3C/defs%3E%0A%20%20%20%20%3Cg%20id%3D%22Page-1%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%221%22%20fill-rule%3D%22nonzero%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpolygon%20id%3D%22Shape%22%20points%3D%222.21875%200.78125%200.78125%202.21875%209.5625%2011%200.78125%2019.78125%202.21875%2021.21875%2011%2012.4375%2019.78125%2021.21875%2021.21875%2019.78125%2012.4375%2011%2021.21875%202.21875%2019.78125%200.78125%2011%209.5625%22%3E%3C/polygon%3E%0A%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -545,7 +566,7 @@ input[type="password"] {
   padding: 9px 12px;
   border-radius: 4px;
   display: block;
-  font-family: "Roboto";
+  font-family: "Ubuntu";
   font-size: 14px;
   line-height: normal;
   font-weight: 400;
@@ -643,7 +664,7 @@ textarea {
   padding: 9px 12px;
   border-radius: 4px;
   display: block;
-  font-family: "Roboto";
+  font-family: "Ubuntu";
   font-size: 14px;
   line-height: normal;
   font-weight: 400;
@@ -675,7 +696,7 @@ textarea {
 label,
 legend {
   display: block;
-  font-family: "Roboto";
+  font-family: "Ubuntu";
   font-size: 16px;
   line-height: 1;
   font-weight: 400;
@@ -693,7 +714,7 @@ button, input[type="submit"] {
   border: none;
   outline: none;
   margin: 0;
-  font-family: "Roboto";
+  font-family: "Ubuntu";
   font-size: 16px;
   line-height: 1;
   font-weight: 400;
@@ -722,15 +743,21 @@ button, input[type="submit"] {
     left: 235px;
     top: 0;
     background: #000000; }
+    @media (min-width: 0) and (max-width: 1300px) {
+      .b-header_full {
+        background-color: transparent;
+        border-bottom: none;
+        width: 100%; } }
   .b-header__container {
     width: 100%;
-    max-width: 1066px;
+    max-width: 1086px;
     height: 73px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: flex-end;
-    align-items: center; }
+    align-items: center;
+    padding: 0 20px; }
     .b-header_full .b-header__container {
       justify-content: space-between;
       width: 100%;
@@ -742,7 +769,7 @@ button, input[type="submit"] {
       display: flex;
       width: 100%;
       margin: 0 0 0 65px; }
-      @media (max-width: 960px) {
+      @media (min-width: 0) and (max-width: 1300px) {
         .b-header_full .b-header__container {
           padding-left: 15px;
           padding-right: 15px; } }
@@ -756,7 +783,7 @@ button, input[type="submit"] {
   .b-header__item {
     margin: 0 0 0 30px;
     padding: 0;
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 14px;
     line-height: 1.1428;
     font-weight: 700;
@@ -769,7 +796,7 @@ button, input[type="submit"] {
     .b-header__item:first-child {
       margin-left: 0; }
   .b-header__link {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 14px;
     line-height: 1.1428;
     font-weight: 700;
@@ -784,6 +811,12 @@ button, input[type="submit"] {
   padding: 90px 0 0 0;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.7); }
+  @media (min-width: 0) and (max-width: 1300px) {
+    .b-navbar {
+      height: 50px;
+      padding: 0;
+      width: 100%;
+      background-color: transparent; } }
   .b-navbar_dark {
     background: rgba(0, 0, 0, 0.95);
     transition: background 0.25s ease; }
@@ -800,14 +833,56 @@ button, input[type="submit"] {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start; }
+    @media (min-width: 0) and (max-width: 1300px) {
+      .b-navbar__container {
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: row;
+        max-width: 100%;
+        padding: 15px; } }
+  .b-navbar__burger {
+    display: none;
+    width: 24px;
+    height: 18px;
+    position: absolute;
+    left: 20px;
+    top: 22px;
+    cursor: pointer; }
+    @media (min-width: 0) and (max-width: 1300px) {
+      .b-navbar__burger {
+        display: block; } }
+    .b-navbar__burger_close {
+      width: 22px;
+      height: 22px; }
   .b-navbar__logo {
     width: 180px;
     height: 59px;
     display: block;
     margin: 0 0 15px 10px; }
+    @media (min-width: 0) and (max-width: 1300px) {
+      .b-navbar__logo {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        z-index: 5;
+        width: 102px;
+        height: 33px;
+        margin: 0;
+        padding: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.1s linear; } }
+    @media (min-width: 0) and (max-width: 1300px) {
+      .b-navbar__logo_active {
+        transition: all 1.2s linear;
+        visibility: visible;
+        opacity: 1; } }
   .b-navbar__search-form {
     margin: 0 0 14px;
     width: 195px; }
+    @media (min-width: 0) and (max-width: 1300px) {
+      .b-navbar__search-form {
+        margin-bottom: 0; } }
   .b-navbar__input-text {
     width: 100%;
     box-sizing: border-box;
@@ -816,7 +891,7 @@ button, input[type="submit"] {
     padding: 6px 12px;
     border-radius: 4px;
     display: block;
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 14px;
     line-height: normal;
     font-weight: 400;
@@ -886,16 +961,41 @@ button, input[type="submit"] {
   .b-navbar__list {
     margin: 0 0 0 10px;
     padding: 0;
-    list-style: none; }
+    list-style: none;
+    position: relative; }
     .b-navbar_dark .b-navbar__list {
       margin-bottom: 10px; }
+    @media (min-width: 0) and (max-width: 1300px) {
+      .b-navbar__list {
+        width: 100%;
+        transform: translateY(-100%);
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        transition: all 0.3s ease; } }
+    @media (min-width: 0) and (max-width: 1300px) {
+      .b-navbar__list_active {
+        z-index: 4;
+        height: 100vh;
+        transform: translateY(0); } }
   .b-navbar__item {
     margin: 0 0 22px;
     padding: 0; }
+    @media (min-width: 0) and (max-width: 1300px) {
+      .b-navbar__item {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0;
+        background: #ffffff; } }
     .b-navbar__item:last-child {
       margin-bottom: 0; }
   .b-navbar__link {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 14px;
     line-height: 1.142;
     font-weight: 400;
@@ -909,6 +1009,18 @@ button, input[type="submit"] {
       color: #272323; }
     .b-navbar__link:hover {
       color: #ff0723 !important; }
+    @media (min-width: 0) and (max-width: 1300px) {
+      .b-navbar__link {
+        width: 100%;
+        padding: 10px 15px 10px;
+        display: block;
+        color: #4B4B4C; } }
+    @media (min-width: 0) and (max-width: 1300px) {
+      .b-navbar__item:first-child .b-navbar__link {
+        padding-top: 15px; } }
+    @media (min-width: 0) and (max-width: 1300px) {
+      .b-navbar__item:last-child .b-navbar__link {
+        padding-bottom: 15px; } }
   .b-navbar__tags {
     position: relative;
     padding: 0;
@@ -920,6 +1032,9 @@ button, input[type="submit"] {
     flex-wrap: wrap;
     width: 100%;
     max-width: 180px; }
+    @media (min-width: 0) and (max-width: 1300px) {
+      .b-navbar__tags {
+        display: none; } }
     .b-navbar__tags:before {
       content: '';
       display: block;
@@ -935,7 +1050,7 @@ button, input[type="submit"] {
     .b-navbar__tag-item:first-child {
       margin: 0 10px 0 20px; }
   .b-navbar__tag-link {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 13px;
     line-height: 1;
     font-weight: 400;
@@ -969,7 +1084,7 @@ button, input[type="submit"] {
     height: 100%;
     padding: 0 0 0 65px; }
   .b-cover__title {
-    font-family: "Roboto";
+    font-family: "Merriweather";
     font-size: 67px;
     line-height: 1.164;
     font-weight: 700;
@@ -978,6 +1093,13 @@ button, input[type="submit"] {
     position: relative;
     z-index: 2;
     margin: 0 0 30px; }
+    @media (min-width: 0) and (max-width: 1300px) {
+      .b-cover__title {
+        font-size: 40px; } }
+    @media (min-width: 0) and (max-width: 760px) {
+      .b-cover__title {
+        font-size: 28px;
+        padding: 0 20px 0 0; } }
   .b-cover__link {
     display: inline-block;
     text-align: center;
@@ -985,7 +1107,7 @@ button, input[type="submit"] {
     border: none;
     outline: none;
     margin: 0;
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
@@ -1030,12 +1152,12 @@ button, input[type="submit"] {
     background: #ffffff;
     padding: 16px 20px;
     border-radius: 5px; }
-    @media (max-width: 960px) {
+    @media (min-width: 0) and (max-width: 1300px) {
       .b-popup__container {
         padding-left: 15px;
         padding-right: 15px; } }
   .b-popup__title {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 18px;
     line-height: 1;
     font-weight: bold;
@@ -1066,7 +1188,7 @@ button, input[type="submit"] {
     padding: 6px 12px;
     border-radius: 4px;
     display: block;
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 14px;
     line-height: normal;
     font-weight: 400;
@@ -1104,7 +1226,7 @@ button, input[type="submit"] {
     border: none;
     outline: none;
     margin: 0;
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
@@ -1121,7 +1243,7 @@ button, input[type="submit"] {
     .b-popup__btn:hover {
       background: rgba(0, 171, 204, 0.8); }
   .b-popup__link {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 14px;
     line-height: 1;
     font-weight: normal;
@@ -1179,12 +1301,12 @@ button, input[type="submit"] {
     width: 100%;
     height: 100%;
     margin: 0 0 0 65px; }
-    @media (max-width: 960px) {
+    @media (min-width: 0) and (max-width: 1300px) {
       .b-screencasts-list__container {
         padding-left: 15px;
         padding-right: 15px; } }
   .b-screencasts-list__title {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 67px;
     line-height: 1.1;
     font-weight: 500;
@@ -1192,7 +1314,7 @@ button, input[type="submit"] {
     color: #CDCDD6;
     margin: 0 0 5px; }
   .b-screencasts-list__text {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 36px;
     line-height: 1.1;
     font-weight: 400;
@@ -1221,7 +1343,7 @@ button, input[type="submit"] {
     width: 100% !important;
     height: auto; }
   .b-screencasts-list__subtitle {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 24px;
     line-height: 1.1;
     font-weight: 400;
@@ -1233,7 +1355,7 @@ button, input[type="submit"] {
     color: #CDCDD6;
     text-decoration: none; }
   .b-screencasts-list__descr {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 16px;
     line-height: 1.125;
     font-weight: 400;
@@ -1243,7 +1365,7 @@ button, input[type="submit"] {
     overflow: hidden;
     margin: 0 0 17px; }
   .b-screencasts-list__date {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 14px;
     line-height: 1;
     font-weight: 300;
@@ -1284,7 +1406,7 @@ button, input[type="submit"] {
     .b-screencasts-list__tag-item:first-child {
       margin: 0 10px 0 24px; }
   .b-screencasts-list__tag-link {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 13px;
     line-height: 1;
     font-weight: 400;
@@ -1300,7 +1422,7 @@ button, input[type="submit"] {
     border: none;
     outline: none;
     margin: 0;
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
@@ -1336,7 +1458,7 @@ button, input[type="submit"] {
     border: none;
     outline: none;
     margin: 0;
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
@@ -1370,12 +1492,18 @@ button, input[type="submit"] {
     width: 100%;
     height: 100%;
     margin: 0 0 0 65px; }
-    @media (max-width: 960px) {
+    @media (min-width: 0) and (max-width: 1300px) {
       .b-text__container {
         padding-left: 15px;
         padding-right: 15px; } }
+    @media (min-width: 0) and (max-width: 1300px) {
+      .b-text__container {
+        margin: 0 20px; } }
+    @media (min-width: 0) and (max-width: 760px) {
+      .b-text__container {
+        margin: 0; } }
   .b-text__title {
-    font-family: "Roboto";
+    font-family: "Merriweather";
     font-size: 67px;
     line-height: 1.1;
     font-weight: 500;
@@ -1383,7 +1511,7 @@ button, input[type="submit"] {
     color: #fcfcfd;
     margin: 0 0 20px; }
   .b-text__date {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 14px;
     line-height: 1;
     font-weight: 300;
@@ -1400,7 +1528,7 @@ button, input[type="submit"] {
       height: 14px;
       margin: 0 5px 0 0; }
   .b-text__tags {
-    margin: 0 0 15px;
+    margin: 0 0 15px 0 !important;
     padding: 0;
     position: relative;
     list-style: none;
@@ -1424,7 +1552,7 @@ button, input[type="submit"] {
     .b-text__tag-item:first-child {
       margin: 0 10px 0 24px; }
   .b-text__tag-link {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 13px;
     line-height: 1;
     font-weight: 400;
@@ -1434,42 +1562,50 @@ button, input[type="submit"] {
     .b-text__tag-link:hover {
       color: rgba(0, 96, 146, 0.8); }
   .b-text__video {
-    margin: 0 0 10px; }
+    margin: 0 0 20px; }
   .b-text h1, .b-text h2 {
-    font-family: "Roboto";
-    font-size: 32px;
-    line-height: 1.1;
+    font-family: "Merriweather";
+    font-size: 35px;
+    line-height: 1.2;
     font-weight: 500;
     font-style: normal;
     color: #fcfcfd;
     margin: 20px 0 15px; }
   .b-text h3, .b-text h4, .b-text h5, .b-text h6 {
-    font-family: "Roboto";
+    font-family: "Merriweather";
     font-size: 28px;
-    line-height: 1.1;
+    line-height: 1.3;
     font-weight: 500;
     font-style: normal;
     color: #fcfcfd;
     margin: 15px 0 15px; }
   .b-text p {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 22px;
     line-height: 1.363;
     font-weight: 300;
     font-style: normal;
     color: #CDCDD6;
     text-indent: 30px;
-    margin: 0 0 10px; }
+    margin: 0 0 20px; }
     .b-text p:last-child {
       margin-bottom: 0; }
+    @media (min-width: 0) and (max-width: 1300px) {
+      .b-text p {
+        font-size: 18px;
+        margin: 0 0 15px;
+        text-indent: 20px; } }
+    @media (min-width: 0) and (max-width: 760px) {
+      .b-text p {
+        text-indent: 0; } }
   .b-text b {
     font-weight: 500; }
   .b-text i {
     font-style: italic; }
   .b-text ul, .b-text ol {
-    margin-bottom: 10px; }
+    margin: 0 0 10px 45px; }
     .b-text ul > li, .b-text ol > li {
-      font-family: "Roboto";
+      font-family: "Ubuntu";
       font-size: 22px;
       line-height: 1.363;
       font-weight: 300;
@@ -1479,16 +1615,16 @@ button, input[type="submit"] {
       .b-text ul > li:last-child, .b-text ol > li:last-child {
         margin-bottom: 0; }
   .b-text pre {
-    margin: 0 0 35px; }
+    margin: 20px 0 0; }
   .b-text__text {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 22px;
     line-height: 1.363;
     font-weight: 300;
     font-style: normal;
     color: #CDCDD6;
     text-indent: 30px;
-    margin: 0 0 10px; }
+    margin: 0 0 20px; }
   .b-text__btn {
     display: inline-block;
     text-align: center;
@@ -1496,7 +1632,7 @@ button, input[type="submit"] {
     border: none;
     outline: none;
     margin: 0;
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
@@ -1533,12 +1669,12 @@ button, input[type="submit"] {
     width: 100%;
     height: 100%;
     margin: 0 0 0 65px; }
-    @media (max-width: 960px) {
+    @media (min-width: 0) and (max-width: 1300px) {
       .b-courses__container {
         padding-left: 15px;
         padding-right: 15px; } }
   .b-courses__title {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 67px;
     line-height: 1.1;
     font-weight: 500;
@@ -1546,7 +1682,7 @@ button, input[type="submit"] {
     color: #fcfcfd;
     margin: 0 0 5px; }
   .b-courses__descr {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 36px;
     line-height: 1.1;
     font-weight: 500;
@@ -1554,7 +1690,7 @@ button, input[type="submit"] {
     color: #fcfcfd;
     margin: 0 0 25px; }
   .b-courses__text {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 22px;
     line-height: 1.363;
     font-weight: 300;
@@ -1572,7 +1708,7 @@ button, input[type="submit"] {
     border: none;
     outline: none;
     margin: 0;
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
@@ -1606,21 +1742,25 @@ button, input[type="submit"] {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 100%;
+    width: auto;
     height: 100%;
     margin: 0 0 0 65px; }
-    @media (max-width: 960px) {
+    @media (min-width: 0) and (max-width: 1300px) {
       .b-author__container {
         padding-left: 15px;
         padding-right: 15px; } }
   .b-author__title {
-    font-family: "Roboto";
+    font-family: "Merriweather";
     font-size: 67px;
     line-height: 1.1;
     font-weight: 500;
     font-style: normal;
     color: #fcfcfd;
-    margin: 0 0 5px; }
+    margin: 0 0 30px; }
+    @media (min-width: 0) and (max-width: 1300px) {
+      .b-author__title {
+        font-size: 30px;
+        margin: 0 0 30px; } }
   .b-author__text-wrapper:after {
     content: '';
     display: table;
@@ -1630,7 +1770,14 @@ button, input[type="submit"] {
     float: left;
     width: 100%;
     max-width: 240px;
-    margin: 0 10px 0 0; }
+    margin: 0 20px 0 0; }
+    @media (min-width: 0) and (max-width: 1300px) {
+      .b-author__photo {
+        margin: 0 20px 10px 0; } }
+    @media (min-width: 0) and (max-width: 760px) {
+      .b-author__photo {
+        float: none;
+        margin: 0 0 20px 0; } }
   .b-author__img {
     display: block;
     width: 100%;
@@ -1642,7 +1789,7 @@ button, input[type="submit"] {
     border: none;
     outline: none;
     margin: 0;
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
@@ -1663,7 +1810,7 @@ button, input[type="submit"] {
     .b-author__btn-enroll:hover {
       background: rgba(0, 171, 204, 0.8); }
   .b-author__text {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 22px;
     line-height: 1.363;
     font-weight: 300;
@@ -1671,6 +1818,14 @@ button, input[type="submit"] {
     color: #CDCDD6;
     text-indent: 30px;
     margin: 0 0 10px; }
+    @media (min-width: 0) and (max-width: 1300px) {
+      .b-author__text {
+        font-size: 18px;
+        margin: 0 0 15px;
+        text-indent: 20px; } }
+    @media (min-width: 0) and (max-width: 760px) {
+      .b-author__text {
+        text-indent: 0; } }
   .b-author__link {
     text-decoration: none;
     color: #23527c; }
@@ -1693,12 +1848,12 @@ button, input[type="submit"] {
     width: 100%;
     height: 100%;
     margin: 0 0 0 65px; }
-    @media (max-width: 960px) {
+    @media (min-width: 0) and (max-width: 1300px) {
       .b-program__container {
         padding-left: 15px;
         padding-right: 15px; } }
   .b-program__title {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 67px;
     line-height: 1.1;
     font-weight: 500;
@@ -1706,7 +1861,7 @@ button, input[type="submit"] {
     color: #fcfcfd;
     margin: 0 0 5px; }
   .b-program__descr {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 36px;
     line-height: 1.1;
     font-weight: 500;
@@ -1718,14 +1873,14 @@ button, input[type="submit"] {
   .b-program__item {
     margin: 0 0 60px; }
   .b-program__subtitle {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 22px;
     line-height: 1.54;
     font-weight: 400;
     font-style: normal;
     color: #40c3db; }
   .b-program__text {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 16px;
     line-height: 1.4375;
     font-weight: 400;
@@ -1738,7 +1893,7 @@ button, input[type="submit"] {
     border: none;
     outline: none;
     margin: 0;
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
@@ -1775,12 +1930,12 @@ button, input[type="submit"] {
     width: 100%;
     height: 100%;
     margin: 0 0 0 65px; }
-    @media (max-width: 960px) {
+    @media (min-width: 0) and (max-width: 1300px) {
       .b-blog-list__container {
         padding-left: 15px;
         padding-right: 15px; } }
   .b-blog-list__title {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 67px;
     line-height: 1.1;
     font-weight: 500;
@@ -1788,7 +1943,7 @@ button, input[type="submit"] {
     color: #CDCDD6;
     margin: 0 0 5px; }
   .b-blog-list__text {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 36px;
     line-height: 1.1;
     font-weight: 400;
@@ -1811,7 +1966,7 @@ button, input[type="submit"] {
     border-radius: 5px;
     margin: 0 0 40px; }
   .b-blog-list__subtitle {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 22px;
     line-height: 1.545;
     font-weight: 400;
@@ -1822,7 +1977,7 @@ button, input[type="submit"] {
     color: #40c3db;
     text-decoration: none; }
   .b-blog-list__descr {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 16px;
     line-height: 1.4375;
     font-weight: 400;
@@ -1830,7 +1985,7 @@ button, input[type="submit"] {
     color: #CDCDD6;
     margin: 0 0 16px; }
   .b-blog-list__date {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 14px;
     line-height: 1;
     font-weight: 300;
@@ -1871,7 +2026,7 @@ button, input[type="submit"] {
     .b-blog-list__tag-item:first-child {
       margin: 0 10px 0 24px; }
   .b-blog-list__tag-link {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 13px;
     line-height: 1;
     font-weight: 400;
@@ -1887,7 +2042,7 @@ button, input[type="submit"] {
     border: none;
     outline: none;
     margin: 0;
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
@@ -1921,12 +2076,12 @@ button, input[type="submit"] {
     width: 100%;
     height: 100%;
     margin: 0 0 0 65px; }
-    @media (max-width: 960px) {
+    @media (min-width: 0) and (max-width: 1300px) {
       .b-login__container {
         padding-left: 15px;
         padding-right: 15px; } }
   .b-login__title {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 67px;
     line-height: 1.1;
     font-weight: 500;
@@ -1953,7 +2108,7 @@ button, input[type="submit"] {
       justify-content: flex-start;
       align-items: center; }
   .b-login__label {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
@@ -1970,7 +2125,7 @@ button, input[type="submit"] {
     padding: 9px 12px;
     border-radius: 4px;
     display: block;
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 14px;
     line-height: normal;
     font-weight: 400;
@@ -2008,7 +2163,7 @@ button, input[type="submit"] {
     border: none;
     outline: none;
     margin: 0;
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
@@ -2025,7 +2180,7 @@ button, input[type="submit"] {
     .b-login__btn:hover {
       background: rgba(0, 171, 204, 0.8); }
   .b-login__link {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 14px;
     line-height: 1;
     font-weight: normal;
@@ -2053,12 +2208,12 @@ button, input[type="submit"] {
     width: 100%;
     height: 100%;
     margin: 0 0 0 65px; }
-    @media (max-width: 960px) {
+    @media (min-width: 0) and (max-width: 1300px) {
       .b-registration__container {
         padding-left: 15px;
         padding-right: 15px; } }
   .b-registration__title {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 67px;
     line-height: 1.1;
     font-weight: 500;
@@ -2085,7 +2240,7 @@ button, input[type="submit"] {
       justify-content: flex-start;
       align-items: center; }
   .b-registration__label {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
@@ -2102,7 +2257,7 @@ button, input[type="submit"] {
     padding: 9px 12px;
     border-radius: 4px;
     display: block;
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 14px;
     line-height: normal;
     font-weight: 400;
@@ -2140,7 +2295,7 @@ button, input[type="submit"] {
     border: none;
     outline: none;
     margin: 0;
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
@@ -2157,7 +2312,7 @@ button, input[type="submit"] {
     .b-registration__btn:hover {
       background: rgba(0, 171, 204, 0.8); }
   .b-registration__link {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 14px;
     line-height: 1;
     font-weight: normal;
@@ -2197,12 +2352,12 @@ button, input[type="submit"] {
     width: 100%;
     height: 100%;
     margin: 0 0 0 65px; }
-    @media (max-width: 960px) {
+    @media (min-width: 0) and (max-width: 1300px) {
       .b-payments__container {
         padding-left: 15px;
         padding-right: 15px; } }
   .b-payments__title {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 67px;
     line-height: 1.1;
     font-weight: 500;
@@ -2210,7 +2365,7 @@ button, input[type="submit"] {
     color: #fcfcfd;
     margin: 0 0 20px; }
   .b-payments__text {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 22px;
     line-height: 1.363;
     font-weight: 300;
@@ -2238,7 +2393,7 @@ button, input[type="submit"] {
     justify-content: flex-start;
     align-items: center; }
   .b-payments__to-pay-title {
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
@@ -2259,7 +2414,7 @@ button, input[type="submit"] {
   .b-payments__select {
     background: transparent;
     border: none;
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
@@ -2279,7 +2434,7 @@ button, input[type="submit"] {
     border: none;
     outline: none;
     margin: 0;
-    font-family: "Roboto";
+    font-family: "Ubuntu";
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
