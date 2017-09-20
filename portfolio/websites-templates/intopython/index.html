@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- BASE -->
+    <meta charset="utf-8">
+    <title>Главная - Intopython</title>
+
+    <!-- SEO -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- disable select tel. and skype numbers -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="skype-toolbar" content="skype-toolbar-parser-compatible">
+
+    <!-- FAVICONS (http://favicon-generator.org) -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/css/intopython-project.css">
+
+</head>
+
+<body class="bg bg_first">
+<div id="app">
+    <div class="global-col__left">
+        <aside class="b-navbar">
+    <div class="b-navbar__container">
+        <a href="/" class="b-navbar__logo"></a>
+        <form action="" class="b-navbar__search-form">
+            <input type="text" placeholder="Поиск по сайту" class="b-navbar__input-text">
+        </form>
+        <ul class="b-navbar__list">
+            <li class="b-navbar__item"><a href="#" class="b-navbar__link">Скринкасты</a></li>
+            <li class="b-navbar__item"><a href="#" class="b-navbar__link">Курсы</a></li>
+            <li class="b-navbar__item"><a href="#" class="b-navbar__link">Блог</a></li>
+        </ul>
+    </div>
+</aside>
+    </div>
+    <div class="global-col__right">
+        <header class="b-header">
+    <div class="b-header__container">
+        <ul class="b-header__list">
+            <li class="b-header__item" v-on:click="popupLoginIsActive = !popupLoginIsActive">Вход</li>
+            <li class="b-header__item" v-on:click="popupRegIsActive = !popupRegIsActive">Регистрация</li>
+        </ul>
+    </div>
+</header>
+        <section class="b-cover">
+    <div class="b-cover__container">
+        <div class="b-cover__title">Быстро долетим<br> и с удовольствием<br> покрутимся в воздухе</div>
+        <a href="#" class="b-cover__link">Подробнее &raquo;</a>
+    </div>
+</section>
+    </div>
+    <!-- Registration -->
+<section class="b-popup" v-bind:class="{ 'b-popup_active': popupRegIsActive }">
+    <div class="b-popup__container">
+        <div class="b-popup__title">Регистрация</div>
+        <div class="b-popup__form">
+            <div class="b-popup__form-row">
+                <input type="email" class="b-popup__input-text" placeholder="Email">
+                <input type="password" class="b-popup__input-text" placeholder="Пароль">
+                <input type="password" class="b-popup__input-text" placeholder="Повторите пароль">
+            </div>
+            <div class="b-popup__form-row">
+                <button class="b-popup__btn">Зарегистрироваться</button>
+            </div>
+        </div>
+        <div class="b-social-login__social-services">
+            <a href="/social_oauth/login/vk-oauth2/" class="b-social-login__item-social b-social-login__item-social_vk"></a>
+            <a href="/social_oauth/login/google-oauth2/" class="b-social-login__item-social b-social-login__item-social_google"></a>
+            <a href="/social_oauth/login/yandex-oauth2/" class="b-social-login__item-social b-social-login__item-social_yandex"></a>
+        </div>
+        <div class="b-popup__close-btn" v-on:click="popupRegIsActive = !popupRegIsActive"></div>
+    </div>
+    <div class="b-popup__overlay" v-on:click="popupRegIsActive = !popupRegIsActive"></div>
+</section>
+
+<!-- Login -->
+<section class="b-popup" v-bind:class="{ 'b-popup_active': popupLoginIsActive }">
+    <div class="b-popup__container">
+        <div class="b-popup__title">Вход</div>
+        <div class="b-popup__form">
+            <div class="b-popup__form-row">
+                <input type="email" class="b-popup__input-text b-popup__input-text_error" placeholder="Email">
+                <input type="password" class="b-popup__input-text" placeholder="Пароль">
+            </div>
+            <div class="b-popup__form-row b-popup__form-row_inline">
+                <button class="b-popup__btn">Войти</button>
+                <a href="#" class="b-popup__link">Забыли пароль?</a>
+            </div>
+        </div>
+        <div class="b-social-login__social-services">
+            <a href="/social_oauth/login/vk-oauth2/" class="b-social-login__item-social b-social-login__item-social_vk"></a>
+            <a href="/social_oauth/login/google-oauth2/" class="b-social-login__item-social b-social-login__item-social_google"></a>
+            <a href="/social_oauth/login/yandex-oauth2/" class="b-social-login__item-social b-social-login__item-social_yandex"></a>
+        </div>
+        <div class="b-popup__close-btn" v-on:click="popupLoginIsActive = !popupLoginIsActive"></div>
+    </div>
+    <div class="b-popup__overlay" v-on:click="popupLoginIsActive = !popupLoginIsActive"></div>
+</section>
+</div>
+
+<script src="dist/js/intopython-project-base.js"></script>
+<script src="dist/js/intopython-project-run.js"></script>
+</body>
+</html>
