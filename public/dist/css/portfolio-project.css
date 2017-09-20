@@ -425,7 +425,8 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: #010101; }
+  background-color: #010101;
+  animation: boxShadow 223s ease; }
 
 #gradient {
   z-index: 1;
@@ -477,6 +478,12 @@ body {
 h1, h2, h3, h4, h5, h5, p, ul, ol, li {
   margin: 0;
   padding: 0; }
+
+@keyframes boxShadow {
+  0% {
+    box-shadow: inset 0 0 100px rgba(1, 1, 1, 0); }
+  100% {
+    box-shadow: inset 0 0 60vw #010101; } }
 
 @media print {
   *,
