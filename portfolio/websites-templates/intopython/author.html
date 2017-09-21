@@ -58,25 +58,26 @@
     </div>
 </aside>
     </div>
-    <div class="global-col__right">
+    <div class="global-col__right" v-bind:class="{ 'global-col__right_active': mobileNavIsActive }">
         <header class="b-header b-header_full">
     <div class="b-header__container">
-        <ul class="b-header__list">
+        <ul class="b-header__list" v-bind:class="{ 'b-header__list_hidden': mobileNavIsActive }">
             <li class="b-header__item"><a href="#" class="b-header__link">Разделы</a></li>
             <li class="b-header__item"><a href="#" class="b-header__link">PRO-версия сайта</a></li>
         </ul>
-        <ul class="b-header__list">
+        <ul class="b-header__list" v-bind:class="{ 'b-header__list_hidden': mobileNavIsActive }">
             <li class="b-header__item" v-on:click="popupLoginIsActive = !popupLoginIsActive">Вход</li>
             <li class="b-header__item" v-on:click="popupRegIsActive = !popupRegIsActive">Регистрация</li>
         </ul>
     </div>
 </header>
+
         <section class="b-text b-author">
     <div class="b-author__container">
         <h1 class="b-author__title">О наставнике</h1>
         <div class="b-author__text-wrapper">
             <div class="b-author__photo">
-                <img src="..dist/img/examples/shandrinov.jpg" alt="" class="b-author__img">
+                <img src="dist/img/examples/shandrinov.jpg" alt="" class="b-author__img">
                 <a href="/courses/sign/" class="b-author__btn-enroll">Запишись!</a>
             </div>
             <p>Меня зовут Шандринов Вадим, мне 44&nbsp;года, 25&nbsp;лет программистского стажа (из&nbsp;них 15&nbsp;&mdash; на&nbsp;Python). Писал системы автоматизации предпиятий, потом позвали на

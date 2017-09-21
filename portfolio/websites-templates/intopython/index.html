@@ -41,11 +41,11 @@
     </div>
 </aside>
     </div>
-    <div class="global-col__right">
+    <div class="global-col__right" v-bind:class="{ 'global-col__right_active': mobileNavIsActive }">
         <header class="b-header">
     <div class="b-header__container">
         <ul class="b-header__list">
-            <li class="b-header__item" v-on:click="popupLoginIsActive = !popupLoginIsActive">Вход</li>
+                <li class="b-header__item" v-on:click="popupLoginIsActive = !popupLoginIsActive">Вход</li>
             <li class="b-header__item" v-on:click="popupRegIsActive = !popupRegIsActive">Регистрация</li>
         </ul>
     </div>

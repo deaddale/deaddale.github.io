@@ -58,19 +58,20 @@
     </div>
 </aside>
     </div>
-    <div class="global-col__right">
+    <div class="global-col__right" v-bind:class="{ 'global-col__right_active': mobileNavIsActive }">
         <header class="b-header b-header_full">
     <div class="b-header__container">
-        <ul class="b-header__list">
+        <ul class="b-header__list" v-bind:class="{ 'b-header__list_hidden': mobileNavIsActive }">
             <li class="b-header__item"><a href="#" class="b-header__link">Разделы</a></li>
             <li class="b-header__item"><a href="#" class="b-header__link">PRO-версия сайта</a></li>
         </ul>
-        <ul class="b-header__list">
+        <ul class="b-header__list" v-bind:class="{ 'b-header__list_hidden': mobileNavIsActive }">
             <li class="b-header__item" v-on:click="popupLoginIsActive = !popupLoginIsActive">Вход</li>
             <li class="b-header__item" v-on:click="popupRegIsActive = !popupRegIsActive">Регистрация</li>
         </ul>
     </div>
 </header>
+
         <section class="b-text b-courses">
     <div class="b-courses__container">
         <h1>&laquo;Научись Django&raquo;</h1>

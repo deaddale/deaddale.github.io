@@ -58,23 +58,24 @@
     </div>
 </aside>
     </div>
-    <div class="global-col__right">
+    <div class="global-col__right" v-bind:class="{ 'global-col__right_active': mobileNavIsActive }">
         <header class="b-header b-header_full">
     <div class="b-header__container">
-        <ul class="b-header__list">
+        <ul class="b-header__list" v-bind:class="{ 'b-header__list_hidden': mobileNavIsActive }">
             <li class="b-header__item"><a href="#" class="b-header__link">Разделы</a></li>
             <li class="b-header__item"><a href="#" class="b-header__link">PRO-версия сайта</a></li>
         </ul>
-        <ul class="b-header__list">
+        <ul class="b-header__list" v-bind:class="{ 'b-header__list_hidden': mobileNavIsActive }">
             <li class="b-header__item" v-on:click="popupLoginIsActive = !popupLoginIsActive">Вход</li>
             <li class="b-header__item" v-on:click="popupRegIsActive = !popupRegIsActive">Регистрация</li>
         </ul>
     </div>
 </header>
-        <section class="b-screencasts-list">
+
+        <section class="b-text b-screencasts-list">
     <div class="b-screencasts-list__container">
-        <h1 class="b-screencasts-list__title">Скринкасты о Джанго</h1>
-        <div class="b-screencasts-list__text">Коротко о главном</div>
+        <h1>Скринкасты о&nbsp;Джанго</h1>
+        <div class="b-screencasts-list__text">Коротко о&nbsp;главном</div>
         <ul class="b-screencasts-list__list">
             <li class="b-screencasts-list__item">
                 <div class="b-screencasts-list__mediacontent">
@@ -202,6 +203,7 @@
         </div>
     </div>
 </section>
+
     </div>
     <!-- Registration -->
 <section class="b-popup" v-bind:class="{ 'b-popup_active': popupRegIsActive }">
@@ -252,7 +254,7 @@
 </section>
 </div>
 
-<script src="/dist/js/intopython-project-base.js"></script>
-<script src="/dist/js/intopython-project-run.js"></script>
+<script src="dist/js/intopython-project-base.js"></script>
+<script src="dist/js/intopython-project-run.js"></script>
 </body>
 </html>

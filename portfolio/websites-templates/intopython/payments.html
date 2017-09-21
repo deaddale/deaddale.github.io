@@ -58,22 +58,23 @@
     </div>
 </aside>
     </div>
-    <div class="global-col__right">
+    <div class="global-col__right" v-bind:class="{ 'global-col__right_active': mobileNavIsActive }">
         <header class="b-header b-header_full">
     <div class="b-header__container">
-        <ul class="b-header__list">
+        <ul class="b-header__list" v-bind:class="{ 'b-header__list_hidden': mobileNavIsActive }">
             <li class="b-header__item"><a href="#" class="b-header__link">Разделы</a></li>
             <li class="b-header__item"><a href="#" class="b-header__link">PRO-версия сайта</a></li>
         </ul>
-        <ul class="b-header__list">
+        <ul class="b-header__list" v-bind:class="{ 'b-header__list_hidden': mobileNavIsActive }">
             <li class="b-header__item" v-on:click="popupLoginIsActive = !popupLoginIsActive">Вход</li>
             <li class="b-header__item" v-on:click="popupRegIsActive = !popupRegIsActive">Регистрация</li>
         </ul>
     </div>
 </header>
+
         <section class="b-text b-payments">
     <div class="b-payments__container">
-        <h1>Запрошенный вами материал доступен только в PRO версии.</h1>
+        <h1 class="b-payments__title">Запрошенный вами материал доступен только в PRO версии.</h1>
         <p>В PRO-версии публикуются материалы для угрубленного изучения Django/Python, даются рекомендации и рецепты для профессионалов.</p>
         <p>Вы можете купить доступ к PRO версии сайта за 300.0 руб, 30 дней.</p>
         <p>Если Вы проходите наш курс, доступ к PRO-версии дается автоматически.</p>
@@ -108,6 +109,7 @@
         </form>
     </div>
 </section>
+
     </div>
     <!-- Registration -->
 <section class="b-popup" v-bind:class="{ 'b-popup_active': popupRegIsActive }">
