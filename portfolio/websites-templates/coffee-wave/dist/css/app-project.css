@@ -1,0 +1,946 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+ * ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *        IE on Windows Phone and in iOS. */
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&subset=cyrillic");
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+ * ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated). */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-. */
+article, aside, footer, header, nav, section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari. */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+ * ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE. */
+figcaption, figure, main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8. */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE. */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers. */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+ * ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+. */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6. */
+b, strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari. */
+b, strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers. */
+code, kbd, samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-. */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-. */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers. */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers. */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+ * ========================================================================== */
+/**
+ * Add the correct display in IE 9-. */
+audio, video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7. */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-. */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE. */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+ * ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari. */
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge. */
+button, input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox. */
+button, select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *        controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari. */
+button, html [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox. */
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule. */
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox. */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *        `fieldset` elements in all browsers. */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE. */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-. */
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome. */
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari. */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+  [type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS. */
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari. */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+ * ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox. */
+details, menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers. */
+summary {
+  display: list-item; }
+
+/* Scripting
+ * ========================================================================== */
+/**
+ * Add the correct display in IE 9-. */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE. */
+template, [hidden] {
+  display: none; }
+
+/* Hidden
+ * ========================================================================== */
+/**
+ * Add the correct display in IE 10-. */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  background-color: #fafafa; }
+
+@font-face {
+  font-family: "MuseoSansRegular";
+  src: url("../fonts/MuseoSansRegular/MuseoSansRegular.eot");
+  src: url("../fonts/MuseoSansRegular/MuseoSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansRegular/MuseoSansRegular.woff") format("woff"), url("../fonts/MuseoSansRegular/MuseoSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "MuseoSansBold";
+  src: url("../fonts/MuseoSansBold/MuseoSansBold.eot");
+  src: url("../fonts/MuseoSansBold/MuseoSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansBold/MuseoSansBold.woff") format("woff"), url("../fonts/MuseoSansBold/MuseoSansBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "MuseoSansItalic";
+  src: url("../fonts/MuseoSansItalic/MuseoSansItalic.eot");
+  src: url("../fonts/MuseoSansItalic/MuseoSansItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansItalic/MuseoSansItalic.woff") format("woff"), url("../fonts/MuseoSansItalic/MuseoSansItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "MuseoSansLight";
+  src: url("../fonts/MuseoSansLight/MuseoSansLight.eot");
+  src: url("../fonts/MuseoSansLight/MuseoSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansLight/MuseoSansLight.woff") format("woff"), url("../fonts/MuseoSansLight/MuseoSansLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "MuseoSansMedium";
+  src: url("../fonts/MuseoSansMedium/MuseoSansMedium.eot");
+  src: url("../fonts/MuseoSansMedium/MuseoSansMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansMedium/MuseoSansMedium.woff") format("woff"), url("../fonts/MuseoSansMedium/MuseoSansMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "MuseoSansBlack";
+  src: url("../fonts/MuseoSansBlack/MuseoSansBlack.eot");
+  src: url("../fonts/MuseoSansBlack/MuseoSansBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansBlack/MuseoSansBlack.woff") format("woff"), url("../fonts/MuseoSansBlack/MuseoSansBlack.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "MuseoSansBoldItalic";
+  src: url("../fonts/MuseoSansBoldItalic/MuseoSansBoldItalic.eot");
+  src: url("../fonts/MuseoSansBoldItalic/MuseoSansBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansBoldItalic/MuseoSansBoldItalic.woff") format("woff"), url("../fonts/MuseoSansBoldItalic/MuseoSansBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "MuseoSansMediumItalic";
+  src: url("../fonts/MuseoSansMediumItalic/MuseoSansMediumItalic.eot");
+  src: url("../fonts/MuseoSansMediumItalic/MuseoSansMediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansMediumItalic/MuseoSansMediumItalic.woff") format("woff"), url("../fonts/MuseoSansMediumItalic/MuseoSansMediumItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "MuseoSansLightItalic";
+  src: url("../fonts/MuseoSansLightItalic/MuseoSansLightItalic.eot");
+  src: url("../fonts/MuseoSansLightItalic/MuseoSansLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansLightItalic/MuseoSansLightItalic.woff") format("woff"), url("../fonts/MuseoSansLightItalic/MuseoSansLightItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "MuseoSansBlackItalic";
+  src: url("../fonts/MuseoSansBlackItalic/MuseoSansBlackItalic.eot");
+  src: url("../fonts/MuseoSansBlackItalic/MuseoSansBlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansBlackItalic/MuseoSansBlackItalic.woff") format("woff"), url("../fonts/MuseoSansBlackItalic/MuseoSansBlackItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamProMedium";
+  src: url("../fonts/GothamProMedium/GothamProMedium.eot");
+  src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"), url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+html {
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  font: 400px 14px/1.78571429 "Roboto Slab";
+  color: #000000;
+  text-rendering: optimizeLegibility;
+  -webkit-text-rendering: optimizeLegibility; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin: 0;
+  padding: 0; }
+  p b {
+    font-weight: bold; }
+  p i {
+    font-style: italic; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    margin: 0;
+    padding: 0; }
+
+ol {
+  margin: 0;
+  padding: 0; }
+  ol li {
+    margin: 0;
+    padding: 0; }
+
+.header {
+  padding: 48px 0; }
+  .header__container {
+    width: 100%;
+    max-width: 1330px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header__logo {
+    font: 500 21px/1 "Lato";
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: -0.04px; }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .nav__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: center; }
+  .nav__item {
+    margin: 0 11px;
+    padding: 0;
+    display: flex; }
+  .nav__link {
+    font: 100 13px/1 "MuseoSansMedium";
+    color: #303030;
+    text-transform: uppercase;
+    letter-spacing: 0.04px;
+    display: flex;
+    text-decoration: none;
+    position: relative;
+    padding: 7.5px 2px; }
+    .nav__link_active {
+      border-bottom: 1px #303030 solid; }
+  .nav__links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+  .nav__link-enter {
+    font: 500 13px/1.15384615 "MuseoSansMedium";
+    color: #303030;
+    margin: 0 20px 0 0;
+    display: flex;
+    text-decoration: none; }
+  .nav__basket {
+    font: 500 13px/1.15384615 "MuseoSansMedium";
+    color: #303030;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none; }
+    .nav__basket:before {
+      content: '';
+      width: 25.5px;
+      height: 22px;
+      display: flex;
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAsCAMAAAD//3BWAAAAbFBMVEUAAAAvLy8tLS0tLS0tLS0uLi4rKystLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0pKSktLS0tLS0tLS0tLS0tLS0sLCwsLCwtLS0tLS0rKystLS0sLCwsLCwsLCwsLCwtLS0sLCwrKyssLCwtLS1KtzebAAAAI3RSTlMAH+z3lIswZuTvqMyvx5sM1cK9tSgU2tE9B95xgnlUo0tDXIQd2SIAAAFnSURBVEjHlZXproIwEIWRYZkCZb8sKm7n/d/xiiYWrLTlS/hxSE7aWetV/Cb13GG8obu755a8EMi9vfSod3syHHd7TqBor+cgkB/cUKYSwndDVaWBK/zxnEFZ4ACj+nhagbNnp2BclerQOHguwEWpBqWD5woulAohDnaPhFyoiDBZLSMjWeoOmb2jCY+lrtFbPTn8v6UOIJ7aTIV0pQfCyeY5ItN/mBkIsX6wjnZ9PUANc5ruhNgajrlgOpHKklNAqr30BjSHUxobXWEel4JRxdtMpI9lJAXMiPZ7XTFs9PoqpWSIjGgZKlF5e1EVdSdFutsTAmkQGpla/SArol6noWWAANAGwPzJlaeBCKKJkR5+MTDK2yBBj3U31YbBC19NUDASPdcnUPt7S/G7iNk6Bf049zuPG4/nc4gHgfwr130iaeN5KI7wm4zhr24xSsx0G3sk9vFEfE3DmJfcZZur5y6Z03nJ/ANDYDHEE+/cKwAAAABJRU5ErkJggg==");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0 5.5px 0 0; }
+
+.catalog__container {
+  width: 100%;
+  max-width: 1330px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.catalog__title {
+  padding: 0 20vw;
+  font: 500 13px/1.30769231 "MuseoSansMedium";
+  color: #313131;
+  text-align: center;
+  margin: 0 0 16px 0; }
+  .catalog__title_bold {
+    font: 900 13px/1.30769231 "MuseoSansMedium"; }
+
+.catalog__items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin: 0 0 50px; }
+  .catalog__items:after {
+    content: "";
+    flex: auto; }
+
+.catalog__item {
+  flex: 0 0 23.5%;
+  margin: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  .catalog__item:nth-child(4n-1) {
+    margin-left: 1%;
+    margin-right: 2%; }
+  .catalog__item:nth-child(4n-2) {
+    margin-left: 2%;
+    margin-right: 1%; }
+
+.catalog__link {
+  position: relative;
+  text-decoration: none;
+  color: #000000; }
+  .catalog__link_img {
+    display: block;
+    background: #ededed;
+    padding: 75px 38px 55px;
+    margin: 0 0 18px; }
+
+.catalog__img {
+  width: 100%;
+  display: block;
+  height: auto; }
+
+.catalog__sale {
+  font: 500 11px/1 "MuseoSansMedium";
+  padding: 9px 10.5px;
+  background-color: #dd0628;
+  color: #ffffff;
+  position: absolute;
+  right: 14px;
+  top: 14px; }
+
+.catalog__subtitle {
+  font: 500 16px/1.25 "MuseoSansBlack";
+  color: #000000; }
+
+.catalog__descr {
+  font: 500 16px/1.25 "MuseoSansMedium";
+  color: #000000;
+  margin: 0 0 14px; }
+
+.catalog__text {
+  font: 400 12px/1.416 "Roboto Slab";
+  color: #000000;
+  opacity: 0.6;
+  margin: 0 0 16px; }
+
+.catalog__packs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.catalog__pack {
+  width: 48.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  position: relative; }
+
+.catalog__btn {
+  font: 500 16px/1 "MuseoSansMedium";
+  color: #000000;
+  border: 1px solid #8e8e8e;
+  white-space: nowrap;
+  margin: 0 0 8.5px;
+  padding: 15px 0 12px;
+  width: 100%;
+  text-align: center;
+  position: relative; }
+  .catalog__btn:hover {
+    border-color: #1480cc; }
+
+.catalog__weight {
+  font: 500 12px/1 "MuseoSansMedium";
+  color: #000000;
+  opacity: 0.5;
+  white-space: nowrap;
+  margin: 0 0 8.5px; }
+
+.catalog__controls {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  z-index: 1;
+  display: none; }
+  .catalog__pack:hover .catalog__controls {
+    display: flex; }
+
+.catalog__result {
+  font: 500 16px/45px "Roboto Slab";
+  color: #000000; }
+
+.catalog__ctrl {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  font: 500 16px/45px "Roboto Slab";
+  color: #ffffff;
+  width: 45px;
+  height: 45px;
+  background-color: #d5d5d5; }
+  .catalog__ctrl_active, .catalog__ctrl:hover {
+    background-color: #1480cc; }
+
+.product {
+  margin: 0 0 70px; }
+  .product h1, .product h2, .product h3, .product h4, .product h5, .product h6 {
+    font: 700 14px/1.5625 "MuseoSansBold";
+    color: #000000;
+    opacity: 0.6;
+    text-transform: uppercase;
+    margin: 0 0 6px; }
+    .product h1:last-child, .product h2:last-child, .product h3:last-child, .product h4:last-child, .product h5:last-child, .product h6:last-child {
+      margin-bottom: 0; }
+  .product p {
+    font: 500 16px/1.78571429 "MuseoSansMedium";
+    color: #000000;
+    opacity: 0.6;
+    margin: 0 0 30px; }
+    .product p:last-child {
+      margin-bottom: 0; }
+  .product ul, .product ol {
+    margin: 0 0 30px 18px;
+    padding: 0; }
+    .product ul:last-child, .product ol:last-child {
+      margin-bottom: 0; }
+    .product ul li, .product ol li {
+      margin: 0 0 3px;
+      padding: 0;
+      font: 500 16px/1.78571429 "MuseoSansMedium";
+      color: #000000;
+      opacity: 0.6; }
+      .product ul li:last-child, .product ol li:last-child {
+        margin-bottom: 0; }
+  .product__img {
+    width: 100%;
+    display: block;
+    height: auto; }
+  .product__sale {
+    font: 500 11px/1 "MuseoSansMedium";
+    padding: 9px 10.5px;
+    background-color: #dd0628;
+    color: #ffffff;
+    position: absolute;
+    right: 21px;
+    top: 0; }
+  .product__container {
+    width: 100%;
+    max-width: 1330px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; }
+  .product__col:first-child {
+    width: 100%;
+    max-width: 736px;
+    padding: 0 130px 70px 130px;
+    position: relative; }
+  .product__col:last-child {
+    max-width: 360px; }
+  .product__img {
+    display: block;
+    width: 100%;
+    height: auto; }
+  .product__title {
+    font: 900 25px/1.2 "MuseoSansBlack" !important;
+    color: #000000 !important;
+    opacity: 1 !important;
+    text-transform: none !important;
+    margin: 0 0 0 0 !important; }
+  .product__descr {
+    font: 500 25px/1.2 "MuseoSansMedium" !important;
+    color: #000000 !important;
+    margin: 0 0 14px 0 !important;
+    opacity: 1 !important; }
+  .product__text {
+    font: 400 13px/1.57115385 "Roboto Slab" !important;
+    color: #000000 !important;
+    opacity: 0.6 !important;
+    margin: 0 0 16px 0 !important; }
+  .product__form-row {
+    margin: 0 0 25px; }
+    .product__form-row_indent-botton-middle {
+      margin-bottom: 19px; }
+    .product__form-row_indent-botton-small {
+      margin-bottom: 5px; }
+  .product__subtitle {
+    font: 500 16px/1.25 "MuseoSansMedium";
+    color: #303030;
+    margin: 0 0 7px; }
+  .product__btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .product__btn {
+    display: inline-block;
+    line-height: 1;
+    text-align: center;
+    color: inherit;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 2px;
+    margin: 0;
+    background-color: transparent;
+    font: 500 14px/38px "MuseoSansMedium";
+    color: #303030;
+    height: 40px;
+    width: 49%;
+    border: 1px solid #8e8e8e;
+    text-align: center;
+    border-radius: 0; }
+    .product__btn_active, .product__btn:hover {
+      color: #1480cc;
+      border: 1px solid #1480cc; }
+    .product__btn_blue {
+      border: 1px solid #1480cc;
+      text-transform: uppercase;
+      background-color: #1480cc;
+      width: 100%;
+      font: 500 11px/38px "MuseoSansMedium";
+      color: #ffffff; }
+  .product__select-wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #8e8e8e;
+    background-color: #fafafa;
+    position: relative;
+    cursor: pointer; }
+    .product__select-wrapper:before {
+      content: '';
+      display: block;
+      height: 38px;
+      width: 1px;
+      background-color: #8e8e8e;
+      position: absolute;
+      right: 38px;
+      top: 0; }
+    .product__select-wrapper:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 5.75px 0 5.75px;
+      border-color: #666666 transparent transparent transparent;
+      position: absolute;
+      right: 13.5px;
+      top: 17px; }
+  .product__select {
+    outline: none;
+    font: 500 14px/1.428 "MuseoSansMedium";
+    color: #303030;
+    border: none;
+    font-size: 14px;
+    height: 38px;
+    padding: 0 18px;
+    width: calc(100% + 20px);
+    background: transparent;
+    -webkit-appearance: none;
+    border-radius: 0; }
+  .product__option {
+    background: transparent; }
+  .product__price {
+    font: 500 27.5px/31.88px "GothamProMedium";
+    color: #000000;
+    letter-spacing: -0.04px;
+    text-align: center; }
+  .product__rouble {
+    font: 500 17px/31.88px "Helvetica Neue";
+    color: #000000;
+    letter-spacing: -0.04px;
+    padding: 0 0 0 3px; }
+  .product__delivery {
+    font: 400 11px/1 "Roboto Slab";
+    color: #666666;
+    text-align: center; }
+  .product__text-block {
+    background: #ececec;
+    padding: 35px 0; }
+    .product__text-block .product__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      max-width: 570px; }
+
+.footer {
+  padding: 0 0 23px; }
+  .footer__container {
+    width: 100%;
+    max-width: 1330px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px; }
+  .footer__row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    position: relative; }
+    .footer__row:after {
+      content: "";
+      flex: auto; }
+    .footer__row_top {
+      margin: 0 0 50px; }
+    .footer__row_bottom:after {
+      display: none; }
+  .footer__item {
+    flex: 0 0 23.5%;
+    margin: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    .footer__item:nth-child(4n-1) {
+      margin-left: 1%;
+      margin-right: 2%; }
+    .footer__item:nth-child(4n-2) {
+      margin-left: 2%;
+      margin-right: 1%; }
+  .footer__title {
+    color: #303030;
+    font: 900 13px/1.92307692 "MuseoSansBlack";
+    text-transform: uppercase; }
+  .footer__list {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .footer__list_indent-bottom {
+      margin-bottom: 20px; }
+  .footer__link {
+    text-decoration: none;
+    color: #303030;
+    font: 500 13px/1.92307692 "MuseoSansMedium"; }
+  .footer__social-services {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 4px 0 0 0; }
+  .footer__social-item {
+    display: block; }
+    .footer__social-item_facebook {
+      margin: 0 20px 0 0;
+      width: 10px;
+      height: 21px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAqBAMAAABB12bjAAAAD1BMVEVVVVX6+vqAgIDV1dWrq6vxa0/RAAAAUUlEQVQY02MQBAJhJwUGBhYQU4QBCCBMBwSTAc4UQTAFEEwDGBOii8nY2BjKZAHqBjIVgExGopjGxiAms7GxIQMcsGBlMmNlMmJlKiJZMZyZAO5ZEOoHywZHAAAAAElFTkSuQmCC"); }
+    .footer__social-item_insta {
+      margin: 0 20px 0 0;
+      width: 21px;
+      height: 21px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqBAMAAAA37dRoAAAAD1BMVEX6+vpVVVWrq6uAgIDV1dUe/YqnAAABAUlEQVQoz4WSi43DIAyGCWWAGm4AiG6A0maAy2P/me6PLTDuQ7VEFH8Y+7fBfbbt0e0+N7jTaFHghaz9nDDgJ/UMFV4GnYiWsYYEF/6q7ZSc80R/VlGlDBoH4lN2K12R9qaQ012wVsrmdHQBqzR6HBzbKBcLItSfMZQaLYCiv1HtOlpaKS1b4WClHr7oGukkZz18pV1ehaOUiCFauo00CZ1GGvRarl+ozaC09mrZUFFWDF2lKbT4tuP4NB2ajwfvvUySpXycenSrUH/ihWE4abv57RfboiTa9yCU30R8ogXDCC/vjIsWG4xCSaTeNTrshATSlzWRalnTZPHSFc5qfPwfbRsvGMvzuBMAAAAASUVORK5CYII="); }
+    .footer__social-item_twitter {
+      width: 20px;
+      height: 19px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAmBAMAAABE2sQuAAAAD1BMVEVVVVX6+vqrq6uAgIDV1dWQZCu/AAAAwUlEQVQoz63S2w3DIAwF0FvSAWJgACALkKQDBCn7z1QIr0CR2o/6B+noGlsI0KD+iHK3m/aHA7mCFgAjaTU4yyYQarIgcOiEKtgVxowU5Ui1M49JBXKtAeMFR7aJIBC14poQ5oaaIFOPUaWbUDbBDcXSIfM4Y4DiJ3x4lB84mq4D8hH2UQoot274lbTtnIhHgzoib7svbCetEduoy0iyzHpSQVWDGU9b7EURl+bRE6qbuYxkOqvL1/vqSsac7ttPfgMTXB+CrTzoIwAAAABJRU5ErkJggg=="); }
+  .footer__col {
+    font: 500 13px/1.94884615 "MuseoSansMedium";
+    color: #303030; }
+    .footer__col:last-child {
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 100%;
+      text-align: center; }
+  .footer_bold {
+    font: 900 13px/1.94884615 "MuseoSansBlack"; }
+
+/*# sourceMappingURL=app-project.css.map */
