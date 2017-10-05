@@ -706,10 +706,6 @@ ol {
       padding-left: 0;
       padding-right: 0;
       margin: 0 0 30px; } }
-  @media (max-width: 480px) {
-    .catalog__title {
-      font-size: 15px;
-      text-align: left; } }
   .catalog__title_bold {
     font: 900 13px/1.30769231 "MuseoSansMedium"; }
     @media (max-width: 1330px) {
@@ -719,9 +715,6 @@ ol {
     @media (max-width: 760px) {
       .catalog__title_bold {
         font-size: 19px; } }
-    @media (max-width: 480px) {
-      .catalog__title_bold {
-        font-size: 15px; } }
 
 .catalog__items {
   display: flex;
@@ -808,8 +801,7 @@ ol {
         float: left; } }
     @media (max-width: 480px) {
       .catalog__link_img {
-        float: none;
-        width: 100%; } }
+        width: 33%; } }
 
 .catalog__img {
   width: 100%;
@@ -841,7 +833,8 @@ ol {
       font-size: 21.5px; } }
   @media (max-width: 480px) {
     .catalog__subtitle {
-      font-size: 16px; } }
+      font-size: 16px;
+      padding: 0 0 0 33%; } }
 
 .catalog__descr {
   font: 500 16px/1.25 "MuseoSansMedium";
@@ -852,7 +845,8 @@ ol {
       font-size: 21.5px; } }
   @media (max-width: 480px) {
     .catalog__descr {
-      font-size: 16px; } }
+      font-size: 16px;
+      padding: 0 0 0 33%; } }
 
 .catalog__text {
   font: 400 12px/1.416 "Roboto Slab";
@@ -865,7 +859,8 @@ ol {
   @media (max-width: 480px) {
     .catalog__text {
       font-size: 14px;
-      width: 100%; } }
+      width: 100%;
+      padding: 0 0 0 33%; } }
 
 .catalog__packs {
   display: flex;
@@ -878,7 +873,8 @@ ol {
       width: 45%; } }
   @media (max-width: 480px) {
     .catalog__packs {
-      width: 100%; } }
+      width: 100%;
+      padding: 0 0 0 33%; } }
 
 .catalog__pack {
   width: 48.5%;
