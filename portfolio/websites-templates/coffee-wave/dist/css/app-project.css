@@ -456,7 +456,7 @@ ol {
   padding: 48px 0; }
   @media (max-width: 760px) {
     .header {
-      padding: 21.5px 0 48px; } }
+      padding: 21.5px 0 45px; } }
   .header__container {
     width: 100%;
     max-width: 1330px;
@@ -549,7 +549,7 @@ ol {
     display: flex;
     text-decoration: none;
     position: relative;
-    padding: 7.5px 2px;
+    padding: 6px 2px;
     opacity: 1;
     transition: opacity 0.2s ease; }
     .nav__link:hover {
@@ -690,11 +690,11 @@ ol {
       padding-right: 15px; } }
 
 .catalog__title {
-  padding: 0 20vw;
+  padding: 0 24vw;
   font: 500 13px/1.30769231 "MuseoSansMedium";
   color: #313131;
   text-align: center;
-  margin: 0 0 16px 0; }
+  margin: 0 0 14px 0; }
   @media (max-width: 1330px) {
     .catalog__title {
       font-size: 14px;
@@ -705,7 +705,7 @@ ol {
       font-size: 19px;
       padding-left: 0;
       padding-right: 0;
-      margin: 0 0 30px; } }
+      margin: 0 0 38px; } }
   .catalog__title_bold {
     font: 900 13px/1.30769231 "MuseoSansMedium"; }
     @media (max-width: 1330px) {
@@ -789,7 +789,7 @@ ol {
   .catalog__link_img {
     display: block;
     background: #ededed;
-    padding: 75px 38px 55px;
+    padding: 75px 38px 51px;
     margin: 0 0 18px; }
     @media (max-width: 760px) {
       .catalog__link_img {
@@ -797,7 +797,7 @@ ol {
         background: transparent;
         padding: 0;
         margin: 0 0 18px;
-        width: 42%;
+        width: 39%;
         float: left; } }
     @media (max-width: 480px) {
       .catalog__link_img {
@@ -840,7 +840,7 @@ ol {
 .catalog__descr {
   font: 500 16px/1.25 "MuseoSansMedium";
   color: #000000;
-  margin: 0 0 14px; }
+  margin: 0 0 7px; }
   @media (max-width: 760px) {
     .catalog__descr {
       font-size: 21.5px;
@@ -890,7 +890,7 @@ ol {
   position: relative; }
 
 .catalog__btn {
-  font: 500 16px/1 "MuseoSansMedium";
+  font: 500 12px/1 "MuseoSansMedium";
   color: #000000;
   border: 1px solid #8e8e8e;
   white-space: nowrap;
@@ -971,10 +971,10 @@ ol {
     .product h1:last-child, .product h2:last-child, .product h3:last-child, .product h4:last-child, .product h5:last-child, .product h6:last-child {
       margin-bottom: 0; }
   .product p {
-    font: 500 16px/1.78571429 "MuseoSansMedium";
+    font: 500 16px/1.6 "MuseoSansMedium";
     color: #000000;
     opacity: 0.6;
-    margin: 0 0 30px; }
+    margin: 0 0 38px; }
     @media (max-width: 480px) {
       .product p {
         font-size: 14px;
@@ -982,14 +982,14 @@ ol {
     .product p:last-child {
       margin-bottom: 0; }
   .product ul, .product ol {
-    margin: 0 0 30px 18px;
+    margin: 0 0 38px 18px;
     padding: 0; }
     .product ul:last-child, .product ol:last-child {
       margin-bottom: 0; }
     .product ul li, .product ol li {
-      margin: 0 0 3px;
+      margin: 0 0 6px;
       padding: 0;
-      font: 500 16px/1.78571429 "MuseoSansMedium";
+      font: 500 16px/1.6 "MuseoSansMedium";
       color: #000000;
       opacity: 0.6; }
       @media (max-width: 480px) {
@@ -1033,7 +1033,8 @@ ol {
         padding-right: 15px; } }
     @media (max-width: 760px) {
       .product__container {
-        flex-direction: column; } }
+        flex-direction: column;
+        margin-bottom: 50px; } }
   .product__col:first-child {
     width: 100%;
     max-width: 736px;
@@ -1100,11 +1101,20 @@ ol {
       .product__text {
         font-size: 13px !important; } }
   .product__form-row {
-    margin: 0 0 25px; }
-    .product__form-row_indent-botton-middle {
-      margin-bottom: 19px; }
-    .product__form-row_indent-botton-small {
-      margin-bottom: 5px; }
+    margin: 0 0 31px; }
+    @media (max-width: 760px) {
+      .product__form-row_indent-bottom-big {
+        margin: 0 0 48px; } }
+    .product__form-row_indent-bottom-middle {
+      margin-bottom: 25px; }
+      @media (max-width: 760px) {
+        .product__form-row_indent-bottom-middle {
+          margin-bottom: 30px; } }
+    .product__form-row_indent-bottom-small {
+      margin-bottom: 7px; }
+      @media (max-width: 760px) {
+        .product__form-row_indent-bottom-small {
+          margin-bottom: 12px; } }
   .product__subtitle {
     font: 500 16px/1.25 "MuseoSansMedium";
     color: #303030;
@@ -1144,8 +1154,8 @@ ol {
     @media (max-width: 760px) {
       .product__btn {
         font-size: 18px;
-        height: 44px;
-        line-height: 42px; } }
+        height: 57px;
+        line-height: 56px; } }
     @media (max-width: 480px) {
       .product__btn {
         font-size: 14px;
@@ -1156,6 +1166,7 @@ ol {
       border: 1px solid #1480cc; }
     .product__btn_blue {
       border: 1px solid #1480cc;
+      letter-spacing: 1px;
       text-transform: uppercase;
       background-color: #1480cc;
       width: 100%;
@@ -1169,8 +1180,8 @@ ol {
       @media (max-width: 760px) {
         .product__btn_blue {
           font-size: 18px;
-          height: 44px;
-          line-height: 42px; } }
+          height: 65px;
+          line-height: 63px; } }
       @media (max-width: 480px) {
         .product__btn_blue {
           font-size: 14px;
@@ -1181,24 +1192,27 @@ ol {
   .product__select-wrapper {
     overflow: hidden;
     width: 100%;
-    height: 40px;
+    height: 55px;
     border: 1px solid #8e8e8e;
     background-color: #fafafa;
     position: relative;
     cursor: pointer;
     opacity: 1;
     transition: opacity 0.2s ease; }
+    @media (max-width: 760px) {
+      .product__select-wrapper {
+        height: 55px; } }
     .product__select-wrapper:hover {
       transition: opacity 0.3s ease;
       opacity: 0.78; }
     .product__select-wrapper:before {
       content: '';
       display: block;
-      height: 38px;
+      height: 54px;
       width: 1px;
       background-color: #8e8e8e;
       position: absolute;
-      right: 38px;
+      right: 48px;
       top: 0; }
     .product__select-wrapper:after {
       content: '';
@@ -1209,8 +1223,8 @@ ol {
       border-width: 6px 5.75px 0 5.75px;
       border-color: #666666 transparent transparent transparent;
       position: absolute;
-      right: 13.5px;
-      top: 17px; }
+      right: 18px;
+      top: 25px; }
   .product__select {
     outline: none;
     font: 500 14px/1.428 "MuseoSansMedium";
@@ -1226,7 +1240,9 @@ ol {
     @media (max-width: 760px) {
       .product__select {
         font-size: 18px;
-        line-height: 1.228; } }
+        line-height: 1.4;
+        height: 55px;
+        padding: 0 21px; } }
     @media (max-width: 480px) {
       .product__select {
         font-size: 14px;
@@ -1273,10 +1289,12 @@ ol {
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
-      max-width: 570px; }
+      max-width: 990px; }
       @media (max-width: 760px) {
         .product__text-block .product__container {
           max-width: 100%; } }
+      .product__text-block .product__container * {
+        max-width: 540px; }
 
 .footer {
   padding: 0 0 23px; }
@@ -1307,7 +1325,7 @@ ol {
       content: "";
       flex: auto; }
     .footer__row_top {
-      margin: 0 0 50px; }
+      margin: 0 0 73px; }
       @media (max-width: 760px) {
         .footer__row_top {
           margin-bottom: 0; } }
@@ -1346,11 +1364,11 @@ ol {
     padding: 0;
     list-style: none; }
     .footer__list_indent-bottom {
-      margin-bottom: 20px; }
+      margin-bottom: 26px; }
   .footer__link {
     text-decoration: none;
     color: #303030;
-    font: 500 13px/1.92307692 "MuseoSansMedium";
+    font: 500 13px/1.7 "MuseoSansMedium";
     opacity: 1;
     transition: opacity 0.2s ease; }
     .footer__link:hover {
