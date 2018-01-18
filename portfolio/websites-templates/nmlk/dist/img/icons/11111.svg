@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="195px" viewBox="0 0 65 195" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M44.8302,19.1131 L44.8302,7.0251 L46.1782,6.5601 C46.1852,6.5561 48.2112,5.7861 48.2112,4.4351 C48.2112,3.3941 46.9352,0.0001 30.5242,0.0001 C14.1122,0.0001 12.8372,3.3941 12.8372,4.4351 C12.8372,5.7751 14.8482,6.5531 14.8692,6.5601 L16.2162,7.0251 L16.2162,19.1131 C16.2162,23.4391 13.7072,31.2771 8.7592,42.4081 C-1.2328,64.8851 0.0462,86.6131 0.0602,86.8301 L0.0642,164.5471 C0.0642,165.2921 0.0612,166.0191 0.0582,166.7291 C0.0152,175.4641 -0.0098,180.7361 6.1792,186.0691 C11.1662,190.3671 22.2602,190.8321 26.7982,190.8321 L34.2492,190.8321 C38.7882,190.8321 49.8812,190.3671 54.8692,186.0691 C61.0592,180.7361 61.0332,175.4631 60.9902,166.7281 C60.9882,166.0181 60.9842,165.2921 60.9842,164.5471 L60.9882,86.8301 C61.0022,86.6131 62.2812,64.8851 52.2892,42.4081 C47.3402,31.2771 44.8302,23.4391 44.8302,19.1131 Z" id="path-1"></path>
+    </defs>
+    <g id="nemoloko_preloader" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-662.000000, -294.000000)">
+        <g id="Page-1" transform="translate(664.000000, 296.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Fill-1" stroke="#FFFFFF" stroke-width="3" fill="#FFFFFF" xlink:href="#path-1"></use>
+            <rect id="Rectangle" fill="#B7E0F0" mask="url(#mask-2)" x="0" y="0" width="61" height="191"></rect>
+        </g>
+    </g>
+</svg>
