@@ -157,6 +157,3 @@ package-lock.json
 src
 src.map
 node_modules
-dist
-/dist
-dist/
