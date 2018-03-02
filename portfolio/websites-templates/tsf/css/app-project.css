@@ -884,7 +884,10 @@ input[type="radio"] {
   .nav__list-primary {
     text-align: justify;
     font-size: 0;
-    line-height: 0; }
+    line-height: 0;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline; }
     .nav__list-primary:after {
       content: '';
       display: inline-block;
