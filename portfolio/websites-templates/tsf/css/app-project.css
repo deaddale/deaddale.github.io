@@ -883,6 +883,7 @@ input[type="radio"] {
     right: 0; }
   .nav__list-primary {
     text-align: justify;
+    text-justify: distribute;
     font-size: 0;
     line-height: 0; }
     .nav__list-primary:after {
@@ -893,8 +894,7 @@ input[type="radio"] {
     display: inline-block;
     vertical-align: top;
     position: relative;
-    padding: 0;
-    display: inline-block; }
+    padding: 0; }
     @media (max-width: 1200px) {
       .nav__item-primary {
         display: block;
