@@ -884,10 +884,7 @@ input[type="radio"] {
   .nav__list-primary {
     text-align: justify;
     font-size: 0;
-    line-height: 0;
-    display: inline-block;
-    *zoom: 1;
-    *display: inline; }
+    line-height: 0; }
     .nav__list-primary:after {
       content: '';
       display: inline-block;
@@ -896,7 +893,10 @@ input[type="radio"] {
     display: inline-block;
     vertical-align: top;
     position: relative;
-    padding: 0; }
+    padding: 0;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline; }
     @media (max-width: 1200px) {
       .nav__item-primary {
         display: block;
