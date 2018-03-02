@@ -894,9 +894,7 @@ input[type="radio"] {
     vertical-align: top;
     position: relative;
     padding: 0;
-    display: inline-block;
-    *zoom: 1;
-    *display: inline; }
+    display: inline-block; }
     @media (max-width: 1200px) {
       .nav__item-primary {
         display: block;
