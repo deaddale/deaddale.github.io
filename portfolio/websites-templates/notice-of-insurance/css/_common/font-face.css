@@ -1,0 +1,28 @@
+@font-face {
+    font-family:'Scania Sans CY Condensed';
+    src: url('../fonts/Scania Sans CY Condensed Bold.eot');
+    src: url('../fonts/Scania Sans CY Condensed Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Scania Sans CY Condensed Bold.woff2') format('woff2'),
+    url('../fonts/Scania Sans CY Condensed Bold.woff') format('woff'),
+    url('../fonts/Scania Sans CY Condensed Bold.ttf') format('truetype'),
+    url('../fonts/Scania Sans CY Condensed Bold.otf') format('opentype'),
+    url('../fonts/Scania Sans CY Condensed Bold.svg#Scania Sans CY Condensed Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: condensed;
+    unicode-range: U+0020-FB02;
+}
+@font-face {
+    font-family:'Scania Sans CY Condensed';
+    src: url('../fonts/Scania Sans CY Condensed Regular.eot');
+    src: url('../fonts/Scania Sans CY Condensed Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Scania Sans CY Condensed Regular.woff2') format('woff2'),
+    url('../fonts/Scania Sans CY Condensed Regular.woff') format('woff'),
+    url('../fonts/Scania Sans CY Condensed Regular.ttf') format('truetype'),
+    url('../fonts/Scania Sans CY Condensed Regular.otf') format('opentype'),
+    url('../fonts/Scania Sans CY Condensed Regular.svg#Scania Sans CY Condensed Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: condensed;
+    unicode-range: U+0020-FB02;
+}
