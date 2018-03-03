@@ -946,13 +946,13 @@ input[type="radio"] {
     z-index: 2;
     opacity: 0;
     visibility: hidden;
-    transition: top 0.3s ease, opacity 0.3s ease; }
+    transition: opacity 0.3s ease, top 0.3s ease; }
     .nav__list-secondary_active {
       left: -10px;
       top: 35px;
       visibility: visible;
       opacity: 1;
-      transition: opacity 0.3s ease; }
+      transition: opacity 0.3s ease, top 0.3s ease; }
       @media (max-width: 1200px) {
         .nav__list-secondary_active {
           left: 187px;
