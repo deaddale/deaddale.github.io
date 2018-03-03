@@ -33,6 +33,10 @@
     letter-spacing: .5px;
     color: #000;
     margin: 0 0 15px; }
+  .notice-of-insurance__link {
+    color: #000000;
+    font-size: 14px;
+    text-decoration: underline; }
   .notice-of-insurance__bold {
     font-weight: 600; }
   .notice-of-insurance__fields {
