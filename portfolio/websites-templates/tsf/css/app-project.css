@@ -387,9 +387,6 @@ body {
   position: relative;
   width: 100%;
   background-color: #FFFFFF; }
-  @media (max-width: 1200px) {
-    body {
-      overflow-x: hidden; } }
 
 @font-face {
   font-family: "ProximaNova";
@@ -1262,7 +1259,8 @@ input[type="radio"] {
   margin: 0 0 120px; }
   @media (max-width: 1200px) {
     .about {
-      margin: 0 0 80px; } }
+      margin: 0 0 80px;
+      overflow-x: hidden; } }
   @media (max-width: 768px) {
     .about {
       margin: 0 0 30px; } }
