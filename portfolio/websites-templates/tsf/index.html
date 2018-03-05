@@ -21,9 +21,15 @@
           <div class="nav__list-primary">
             <div class="nav__item-primary"><a class="nav__link-primary nav__link-primary_sec-nav" href="#">Фестиваль</a>
               <div class="nav__list-secondary">
-                <div class="nav__item-secondary"><a class="nav__link-secondary" href="#">О фестивале</a></div>
-                <div class="nav__item-secondary"><a class="nav__link-secondary" href="#">Организаторы</a></div>
-                <div class="nav__item-secondary"><a class="nav__link-secondary" href="#">Темы фестиваля</a></div>
+                <div class="nav__item-secondary">
+                  <div class="nav__link-secondary" data-href="about">О фестивале</div>
+                </div>
+                <div class="nav__item-secondary">
+                  <div class="nav__link-secondary" data-href="managers">Организаторы</div>
+                </div>
+                <div class="nav__item-secondary">
+                  <div class="nav__link-secondary" data-href="themes">Темы фестиваля</div>
+                </div>
                 <div class="nav__item-secondary"><a class="nav__link-secondary" href="#">Вступительное слово</a></div>
                 <div class="nav__item-secondary"><a class="nav__link-secondary" href="#">Программа</a></div>
                 <div class="nav__item-secondary"><a class="nav__link-secondary" href="#">Спикеры</a></div>
@@ -48,9 +54,15 @@
             <div class="nav__list-primary">
               <div class="nav__item-primary"><a class="nav__link-primary nav__link-primary_sec-nav" href="#">Фестиваль</a>
                 <div class="nav__list-secondary">
-                  <div class="nav__item-secondary"><a class="nav__link-secondary" href="#">О фестивале</a></div>
-                  <div class="nav__item-secondary"><a class="nav__link-secondary" href="#">Организаторы</a></div>
-                  <div class="nav__item-secondary"><a class="nav__link-secondary" href="#">Темы фестиваля</a></div>
+                  <div class="nav__item-secondary">
+                    <div class="nav__link-secondary" data-href="about">О фестивале</div>
+                  </div>
+                  <div class="nav__item-secondary">
+                    <div class="nav__link-secondary" data-href="managers">Организаторы</div>
+                  </div>
+                  <div class="nav__item-secondary">
+                    <div class="nav__link-secondary" data-href="themes">Темы фестиваля</div>
+                  </div>
                   <div class="nav__item-secondary"><a class="nav__link-secondary" href="#">Вступительное слово</a></div>
                   <div class="nav__item-secondary"><a class="nav__link-secondary" href="#">Программа</a></div>
                   <div class="nav__item-secondary"><a class="nav__link-secondary" href="#">Спикеры</a></div>
@@ -84,7 +96,11 @@
     </header>
     <nav class="nav-mobile">
       <div class="nav-mobile__close"></div><a class="nav-mobile__lang" href="#">En</a><a class="nav-mobile__btn" href="#">Регистрация</a>
-      <div class="nav-mobile__category"><a class="nav-mobile__subtitle" href="#">Фестиваль</a><a class="nav-mobile__item" href="#">О фестивале</a><a class="nav-mobile__item" href="#">Организаторы</a><a class="nav-mobile__item nav-mobile__item_active" href="#">Темы фестиваля</a><a class="nav-mobile__item" href="#">Вступительное слово</a><a class="nav-mobile__item" href="#">Программа</a><a class="nav-mobile__item" href="#">Спикеры</a><a class="nav-mobile__item" href="#">FAQ</a></div>
+      <div class="nav-mobile__category"><a class="nav-mobile__subtitle" href="#">Фестиваль</a>
+        <div class="nav-mobile__item" data-href="about">О фестивале</div>
+        <div class="nav-mobile__item" data-href="managers">Организаторы</div>
+        <div class="nav-mobile__item nav-mobile__item_active" data-href="themes-mobile">Темы фестиваля</div><a class="nav-mobile__item" href="#">Вступительное слово</a><a class="nav-mobile__item" href="#">Программа</a><a class="nav-mobile__item" href="#">Спикеры</a><a class="nav-mobile__item" href="#">FAQ</a>
+      </div>
       <div class="nav-mobile__category"><a class="nav-mobile__subtitle" href="#">Программа</a><a class="nav-mobile__item" href="#">23 апреля, понедельник</a><a class="nav-mobile__item" href="#">24, вторник</a><a class="nav-mobile__item" href="#">25, среда</a></div>
       <div class="nav-mobile__category"><a class="nav-mobile__subtitle" href="#">Спикеры</a><a class="nav-mobile__item" href="#">******** *****</a><a class="nav-mobile__item" href="#">******** *****</a><a class="nav-mobile__item" href="#">******** *****</a><a class="nav-mobile__item" href="#">******** *****</a><a class="nav-mobile__item" href="#">******** *****</a></div>
       <div class="nav-mobile__category"><a class="nav-mobile__subtitle" href="#">Партнёры</a><a class="nav-mobile__subtitle" href="#">Трансляция</a><a class="nav-mobile__subtitle" href="#">Контакты</a><a class="nav-mobile__subtitle" href="#">Регистрация</a></div>
@@ -222,6 +238,18 @@
         <div class="contacts__item contacts__item_4">
           <div class="contacts__title">По общим<br>вопросам</div><a class="contacts__email" href="mailto:tellingstories@dpgrussia.com">tellingstories@dpgrussia.com</a>
         </div>
+      </div>
+    </div>
+    <div class="subscribe">
+      <div class="subscribe__container">
+        <div class="subscribe__col subscribe__col_left">
+          <div class="subscribe__title">Подпишитесь на новости фестиваля</div>
+          <div class="subscribe__form">
+            <input class="subscribe__input-text" type="text" value="" placeholder="somebox@unicorn.ts">
+            <button class="subscribe__btn" type="submit">Подписаться</button>
+          </div>
+        </div>
+        <div class="subscribe__col subscribe__col_right"><a class="subscribe__link subscribe__link_facebook" href="#"></a><a class="subscribe__link subscribe__link_vk" href="#"></a><a class="subscribe__link subscribe__link_insta" href="#"></a><a class="subscribe__link subscribe__link_twitter" href="#"></a></div>
       </div>
     </div>
     <script src="js/app-project-base.js"></script>
