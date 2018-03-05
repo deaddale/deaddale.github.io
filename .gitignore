@@ -154,6 +154,7 @@ sftp-config.json
 .zip
 .idea
 package-lock.json
+yarn.lock
 src
 src.map
 node_modules
