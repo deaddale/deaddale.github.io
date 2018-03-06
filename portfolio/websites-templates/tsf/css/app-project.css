@@ -1284,7 +1284,7 @@ input[type="radio"] {
   .about__text-selected {
     margin: 0 0 19px -15px;
     width: 100%;
-    max-width: 545px; }
+    max-width: 565px; }
     @media (max-width: 1200px) {
       .about__text-selected {
         max-width: 100%; } }
