@@ -13,7 +13,12 @@ module.exports = {
                 src: ['**'],
                 dest: '<%= project.dist %>/fonts'
             },
-
+            {
+                expand: true,
+                cwd: '<%= project.dist %>',
+                src: ['**'],
+                dest: 'dist'
+            }
         ]
     }
 };

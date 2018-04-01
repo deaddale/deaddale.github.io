@@ -31,6 +31,22 @@
 	font-stretch: normal;
 	unicode-range: U+0020-FB02;
 }
+
+// Arno Pro
+@font-face {
+	font-family: 'Arno Pro';
+	src: url('../fonts/arno/ArnoPro-Bold.eot');
+	src: url('../fonts/arno/ArnoPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/arno/ArnoPro-Bold.woff2') format('woff2'),
+		url('../fonts/arno/ArnoPro-Bold.woff') format('woff'),
+		url('../fonts/arno/ArnoPro-Bold.ttf') format('truetype'),
+		url('../fonts/arno/ArnoPro-Bold.otf') format('opentype'),
+		url('../fonts/arno/ArnoPro-Bold.svg#ArnoPro-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-FB06;
+}
 // FONT FACE : end
 
 html {
