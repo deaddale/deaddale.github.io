@@ -1,3 +1,4 @@
+@import "https://62.231.6.212:2443/static/css/style.min.css";
 .notice-of-insurance {
   width: 100%; }
   .notice-of-insurance__form {
@@ -260,6 +261,31 @@
     margin: 0 0 12px; }
     .notice-of-insurance__link-default_tdn {
       text-decoration: none; }
+
+.box__links a {
+  font-family: 'ScaniaSansCYCondensed', sans-serif;
+  display: block;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.43;
+  letter-spacing: .4px;
+  text-align: left;
+  color: #000;
+  margin-bottom: 20px; }
+
+.box__links p {
+  font-size: 14px;
+  letter-spacing: .5px;
+  color: rgba(0, 0, 0, 0.9);
+  margin: 0 0 25px;
+  width: 100%;
+  max-width: 800px;
+  display: none; }
+
+.box__links span {
+  margin: 0 0 15px;
+  display: block; }
 
 .select2-container {
   box-sizing: border-box;
