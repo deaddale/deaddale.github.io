@@ -85,8 +85,8 @@
     .notice-of-insurance__checkbox-input:checked + .notice-of-insurance__label {
       color: #d6001c; }
       .notice-of-insurance__checkbox-input:checked + .notice-of-insurance__label:before {
-        width: 14px;
-        height: 14px;
+        width: 17px;
+        height: 16px;
         border-radius: 2px;
         background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAJCAYAAADkZNYtAAAAvUlEQVQYlX3QLy+FARzF8c95XIGhiKrXIEqKYnRNMoGRbhEEdMaNvARFp3ofSDeYP5vtPj/hutud4cSz777bOXlcW6YdiEhQVCDSUmkXyWZb1ev4P3PkEiuq7ps/sTJVqashaBd3DaaxitkxdJI6wwaO0MOgKZYitzges55gC+c4xSd0oh6kLlR2qvTDOw6Ua9HFx8jRwRu6mMdhDfsb7ON1fMbojRfsiQWtCbGN/s/N33CIZ6yLGeXpt4O+AJx9OYBzO82NAAAAAElFTkSuQmCC");
         background-position: 2.5px 2.5px;
@@ -102,12 +102,15 @@
     font-size: 14px;
     letter-spacing: .5px;
     color: #000;
-    line-height: 14px; }
+    line-height: 21px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
     .notice-of-insurance__label:before {
       content: "";
       position: absolute;
-      width: 14px;
-      height: 14px;
+      width: 17px;
+      height: 16px;
       border-radius: 2px;
       background-color: #fff;
       box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.1);
