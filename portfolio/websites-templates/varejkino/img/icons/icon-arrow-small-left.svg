@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="23px" viewBox="0 0 63 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-arrow-small-right copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-arrow-small-right-copy" transform="translate(31.000000, 11.000000) scale(-1, 1) translate(-31.000000, -11.000000) translate(-1.000000, -2.000000)" fill="#F2A1A0" fill-rule="nonzero">
+            <g id="Rectangle-5" transform="translate(0.000000, 11.000000)">
+                <g id="path0_fill-link" transform="translate(0.000000, 0.760000)">
+                    <polygon id="path0_fill" points="0 0 58.9309 0 58.9309 3.25257 0 3.25257"></polygon>
+                </g>
+            </g>
+            <g id="Rectangle-5.2" transform="translate(49.000000, 10.000000)">
+                <g id="path1_fill-link" transform="translate(7.558889, 8.118878) rotate(-45.000000) translate(-7.558889, -8.118878) translate(-0.941111, 6.118878)">
+                    <polygon id="path1_fill" points="0 0 16.3164002 0 16.3164002 3.26327004 0 3.26327004"></polygon>
+                </g>
+            </g>
+            <g id="Rectangle-5.3" transform="translate(48.000000, 0.000000)">
+                <g id="path1_fill-link" transform="translate(8.068783, 8.399726) rotate(-135.000000) translate(-8.068783, -8.399726) translate(-0.431217, 6.399726)">
+                    <polygon id="path1_fill" points="0 0 16.3164002 0 16.3164002 3.26327004 0 3.26327004"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
