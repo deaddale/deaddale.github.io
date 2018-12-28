@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>anons.info | List page</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="skype-toolbar" content="skype-toolbar-parser-compatible">
+    <link rel="stylesheet" href="css/app-project.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container"><a class="header__logo" href="/"></a>
+        <div class="header__nav"><a class="header__nav-item" href="#">Новый поиск</a><a class="header__nav-item" href="#">Компании</a><a class="header__nav-item" href="#">СМИ</a></div>
+        <div class="header__panel"><a class="header__panel-item header__panel-item_saved-search" href="#"></a><a class="header__panel-item header__panel-item_favorites" href="#"></a><a class="header__panel-item header__panel-item_messages" href="#"></a><a class="header__panel-item header__panel-item_accounts" href="#"></a><a class="header__add-ad-for-sale" href="#">Подать объявление</a></div>
+      </div>
+    </header>
+    <header class="header_mobile">
+      <div class="header__container">
+        <div class="header__burger-btn"></div>
+        <div class="header__search-wrapper">
+          <button class="header__search-btn" type="submit"></button>
+          <input class="header__search-input" type="text" placeholder="Текст для поиска ..." value="">
+        </div>
+        <div class="header__filter-btn"></div>
+      </div>
+      <div class="header__nav-panel">
+        <div class="header__nav-panel-wrapper"><a class="header__nav-panel-item header__nav-panel-item_log-in" href="#">Авторизуйтесь</a><a class="header__nav-panel-item header__nav-panel-item_ads" href="#">Объявления</a><a class="header__nav-panel-item header__nav-panel-item_favorites" href="#">Избранное</a><a class="header__nav-panel-item header__nav-panel-item_company" href="#">Компании</a><a class="header__nav-panel-item header__nav-panel-item_post-an-ad" href="#">Подать объявление</a><a class="header__nav-panel-item header__nav-panel-item_help" href="#">Помощь</a></div>
+        <div class="header__nav-panel-overlay"></div>
+      </div>
+      <div class="header__filter-panel">
+        <div class="header__filter-panel-header">
+          <div class="header__filter-panel-header-btn"></div>
+          <div class="header__filter-panel-header-title">Фильтр</div>
+          <div class="header__filter-panel-header-reset">Сбросить</div>
+        </div>
+        <div class="header__filter-panel-content">
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Категория</div>
+            <select class="header__filter-panel-select">
+              <option class="header__filter-panel-select-option" value="0">Все рубрики</option>
+              <option class="header__filter-panel-select-option" value="1">Рубрика 1</option>
+              <option class="header__filter-panel-select-option" value="2">Рубрика 2</option>
+              <option class="header__filter-panel-select-option" value="3">Рубрика 3</option>
+              <option class="header__filter-panel-select-option" value="4">Рубрика 4</option>
+            </select>
+          </div>
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Местоположение</div>
+            <div class="header__filter-panel-text">Москва </div>
+          </div>
+          <div class="header__filter-panel-item header__filter-panel-item_distance">
+            <div class="header__filter-panel-title">На расстоянии</div>
+            <div class="header__filter-panel-text-of-distance"><span class="header__filter-panel-text-of-distance-number"></span>&nbsp;км</div>
+            <div class="header__filter-slider-of-distance"></div>
+          </div>
+          <div class="header__filter-panel-item header__filter-panel-item_price">
+            <div class="header__filter-price-inputs">
+              <input class="header__filter-price-input-item" type="text" placeholder="Цена от" value="">
+              <input class="header__filter-price-input-item" type="text" placeholder="Цена до" value="">
+            </div>
+          </div>
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Сортировка</div>
+            <select class="header__filter-panel-select">
+              <option class="header__filter-panel-select-option" value="0">По дате</option>
+              <option class="header__filter-panel-select-option" value="1">Два</option>
+              <option class="header__filter-panel-select-option" value="2">Три</option>
+              <option class="header__filter-panel-select-option" value="3">Четыре</option>
+              <option class="header__filter-panel-select-option" value="4">Пять</option>
+            </select>
+          </div>
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Опубликовано</div>
+            <select class="header__filter-panel-select">
+              <option class="header__filter-panel-select-option" value="0">Все время</option>
+              <option class="header__filter-panel-select-option" value="1">Два</option>
+              <option class="header__filter-panel-select-option" value="2">Три</option>
+              <option class="header__filter-panel-select-option" value="3">Четыре</option>
+              <option class="header__filter-panel-select-option" value="4">Пять</option>
+            </select>
+          </div>
+          <div class="header__filter-panel-item">
+            <label class="header__filter-panel-checkbox-wrapper">
+              <input class="header__filter-panel-checkbox-input" type="checkbox" name="photo"><span class="header__filter-panel-checkbox-custom"></span><span class="header__filter-panel-checkbox-text">только с фото</span>
+            </label>
+          </div>
+        </div><a class="header__btn-mobile" href="#">Показать объявления</a>
+      </div>
+      <div class="header__region">
+        <div class="header__region-header">
+          <div class="header__region-header-btn"></div>
+          <div class="header__region-header-title">Выберите регион</div>
+        </div>
+        <form class="header__region-search-form">
+          <input class="header__region-search-btn" type="submit">
+          <input class="header__region-search-input" type="text" placeholder="Вводите для быстрого поиска" value="">
+        </form>
+        <div class="header__region-search-list"><a class="header__region-search-item" href="#">Московская обл.</a><a class="header__region-search-item" href="#">Мурманская обл. </a><a class="header__region-search-item" href="#">Ненецкий АО </a><a class="header__region-search-item" href="#">Нижегородская обл. </a><a class="header__region-search-item" href="#">Новгородская обл. </a><a class="header__region-search-item" href="#">Оренбургская обл. </a><a class="header__region-search-item" href="#">Орловская обл. </a><a class="header__region-search-item" href="#">Пензенская обл. </a><a class="header__region-search-item" href="#">Пермский край </a><a class="header__region-search-item" href="#">Псковская обл. </a><a class="header__region-search-item" href="#">Ростовская обл. </a><a class="header__region-search-item" href="#">Рязанская обл. </a><a class="header__region-search-item" href="#">Самарская обл. </a><a class="header__region-search-item" href="#">Саратовская обл. </a><a class="header__region-search-item" href="#">Свердловская обл. </a><a class="header__region-search-item" href="#">Северная Осетия </a><a class="header__region-search-item" href="#">Смоленская обл. </a><a class="header__region-search-item" href="#">Ставропольский край</a></div>
+      </div>
+    </header>
+    <div class="content content_list">
+      <div class="content__container">
+        <form class="search">
+          <div class="search__container">
+            <div class="search__row search__row_align-justify">
+              <div class="search__col">
+                <input class="search__input-text" type="search" placeholder="Введите текст для поиска">
+              </div>
+              <div class="search__col">
+                <div class="search__select search__select_categories" data-window="1">
+                  <div class="search__select-title">Выбрать рубрику</div>
+                </div>
+              </div>
+              <div class="search__col">
+                <div class="search__select search__select_location" data-window="2">
+                  <div class="search__select-title">Выбрать город</div>
+                </div>
+              </div>
+              <div class="search__col">
+                <input class="search__btn" type="submit" value="Поиск">
+              </div>
+            </div>
+            <div class="search__row search__row_no-indent">
+              <div class="search__select-list search__select-list_categories" data-window="1"><a class="search__categories-item search__categories-item_real-estate" href="#">
+                  <div class="search__categories-text">Недвижимость</div></a><a class="search__categories-item search__categories-item_jobs" href="#">
+                  <div class="search__categories-text">Работа, вакансии</div></a><a class="search__categories-item search__categories-item_building" href="#">
+                  <div class="search__categories-text">Строительные<br>материалы</div></a><a class="search__categories-item search__categories-item_transport" href="#">
+                  <div class="search__categories-text">Транспортные<br>средства</div></a><a class="search__categories-item search__categories-item_contacts" href="#">
+                  <div class="search__categories-text">Деловые контакты</div></a><a class="search__categories-item search__categories-item_animals" href="#">
+                  <div class="search__categories-text">Животные</div></a><a class="search__categories-item search__categories-item_services" href="#">
+                  <div class="search__categories-text">Услуги</div></a><a class="search__categories-item search__categories-item_resume" href="#">
+                  <div class="search__categories-text">Работа, резюме</div></a><a class="search__categories-item search__categories-item_dating" href="#">
+                  <div class="search__categories-text">Знакомства</div></a><a class="search__categories-item search__categories-item_products" href="#">
+                  <div class="search__categories-text">Товары</div></a><a class="search__categories-item search__categories-item_instruments" href="#">
+                  <div class="search__categories-text">Оборудование<br>и инструменты</div></a><a class="search__categories-item search__categories-item_messages" href="#">
+                  <div class="search__categories-text">Послания</div></a></div>
+            </div>
+            <div class="search__row search__row_no-indent">
+              <div class="search__select-list search__select-list_location" data-window="2">
+                <div class="search__list-location-top">
+                  <div class="search__list-location-breadcrumbs"><a class="search__list-location-breadcrumbs-item" href="#">Россия</a>&nbsp;/&nbsp;<a class="search__list-location-breadcrumbs-item" href="#">Город</a></div>
+                  <div class="search__list-location-btn">Выбрать всю Россию</div>
+                </div>
+                <div class="search__list-location-bottom">
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">А</div><a class="search__list-location-item-text" href="#">Адыгея</a><a class="search__list-location-item-text" href="#">Алтайский край</a><a class="search__list-location-item-text" href="#">Амурская обл.</a><a class="search__list-location-item-text" href="#">Архангельская обл.</a><a class="search__list-location-item-text" href="#">Астраханская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Б</div><a class="search__list-location-item-text" href="#">Башкортостан</a><a class="search__list-location-item-text" href="#">Белгородская обл.</a><a class="search__list-location-item-text" href="#">Брянская обл.</a><a class="search__list-location-item-text" href="#">Бурятия</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">В</div><a class="search__list-location-item-text" href="#">Владимирская обл.</a><a class="search__list-location-item-text" href="#">Волгоградская обл.</a><a class="search__list-location-item-text" href="#">Вологодская обл.</a><a class="search__list-location-item-text" href="#">Воронежская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Д</div><a class="search__list-location-item-text" href="#">Дагестан</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Е</div><a class="search__list-location-item-text" href="#">Еврейская АО</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">З</div><a class="search__list-location-item-text" href="#">Забайкальский край</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">И</div><a class="search__list-location-item-text" href="#">Ивановская обл.</a><a class="search__list-location-item-text" href="#">Ингушетия</a><a class="search__list-location-item-text" href="#">Иркутская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">К</div><a class="search__list-location-item-text" href="#">Кабардино-Балкария</a><a class="search__list-location-item-text" href="#">Калининградская обл.</a><a class="search__list-location-item-text" href="#">Калмыкия</a><a class="search__list-location-item-text" href="#">Калужская обл.</a><a class="search__list-location-item-text" href="#">Камчатский край</a><a class="search__list-location-item-text" href="#">Карачаево-Черкесия</a><a class="search__list-location-item-text" href="#">Карелия</a><a class="search__list-location-item-text" href="#">Кемеровская обл.</a><a class="search__list-location-item-text" href="#">Кировская обл.</a><a class="search__list-location-item-text" href="#">Коми</a><a class="search__list-location-item-text" href="#">Костромская обл.</a><a class="search__list-location-item-text" href="#">Краснодарский край</a><a class="search__list-location-item-text" href="#">Красноярский край</a><a class="search__list-location-item-text" href="#">Крым</a><a class="search__list-location-item-text" href="#">Курганская обл.</a><a class="search__list-location-item-text" href="#">Курская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Л</div><a class="search__list-location-item-text" href="#">Ленинградская обл.</a><a class="search__list-location-item-text" href="#">Липецкая обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">М</div><a class="search__list-location-item-text" href="#">Магаданская обл.</a><a class="search__list-location-item-text" href="#">Марий Эл</a><a class="search__list-location-item-text" href="#">Мордовия</a><a class="search__list-location-item-text search__list-location-item-text_selected" href="#">Москва</a><a class="search__list-location-item-text" href="#">Московская обл.</a><a class="search__list-location-item-text" href="#">Мурманская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Н</div><a class="search__list-location-item-text" href="#">Ненецкий АО</a><a class="search__list-location-item-text" href="#">Нижегородская обл.</a><a class="search__list-location-item-text" href="#">Новгородская обл.</a><a class="search__list-location-item-text" href="#">Новосибирская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">О</div><a class="search__list-location-item-text" href="#">Омская обл.</a><a class="search__list-location-item-text" href="#">Оренбургская обл.</a><a class="search__list-location-item-text" href="#">Орловская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">П</div><a class="search__list-location-item-text" href="#">Пензенская обл.</a><a class="search__list-location-item-text" href="#">Пермский край</a><a class="search__list-location-item-text" href="#">Приморский край</a><a class="search__list-location-item-text" href="#">Псковская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Р</div><a class="search__list-location-item-text" href="#">Республика Алтай</a><a class="search__list-location-item-text" href="#">Ростовская обл.</a><a class="search__list-location-item-text" href="#">Рязанская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">С</div><a class="search__list-location-item-text" href="#">Самарская обл.</a><a class="search__list-location-item-text search__list-location-item-text_selected" href="#">Санкт-Петербург</a><a class="search__list-location-item-text" href="#">Саратовская обл.</a><a class="search__list-location-item-text" href="#">Сахалинская обл.</a><a class="search__list-location-item-text" href="#">Саха (Якутия)</a><a class="search__list-location-item-text" href="#">Свердловская обл.</a><a class="search__list-location-item-text" href="#">Севастополь</a><a class="search__list-location-item-text" href="#">Северная Осетия</a><a class="search__list-location-item-text" href="#">Смоленская обл.</a><a class="search__list-location-item-text" href="#">Ставропольский край</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Т</div><a class="search__list-location-item-text" href="#">Тамбовская обл.</a><a class="search__list-location-item-text" href="#">Татарстан</a><a class="search__list-location-item-text" href="#">Тверская обл.</a><a class="search__list-location-item-text" href="#">Томская обл.</a><a class="search__list-location-item-text" href="#">Тульская обл.</a><a class="search__list-location-item-text" href="#">Тыва</a><a class="search__list-location-item-text" href="#">Тюменская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">У</div><a class="search__list-location-item-text" href="#">Удмуртия</a><a class="search__list-location-item-text" href="#">Ульяновская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Х</div><a class="search__list-location-item-text" href="#">Хабаровский край</a><a class="search__list-location-item-text" href="#">Хакасия</a><a class="search__list-location-item-text" href="#">Ханты-Мансийский АО</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Ч</div><a class="search__list-location-item-text" href="#">Челябинская обл.</a><a class="search__list-location-item-text" href="#">Чеченская республика</a><a class="search__list-location-item-text" href="#">Чувашия</a><a class="search__list-location-item-text" href="#">Чукотский АО</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Я</div><a class="search__list-location-item-text" href="#">Ямало-Ненецкий АО</a><a class="search__list-location-item-text" href="#">Ярославская обл.</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search__row search__row_align-justify search__row_col-flex-width">
+              <div class="search__col">
+                <label class="search__checkbox-wrapper search__checkbox-wrapper_with-photo">
+                  <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Только с фото</span>
+                </label>
+              </div>
+              <div class="search__col"><a class="search__link" href="#">Сохранить фильтр</a></div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="content__container">
+        <div class="sort">
+          <div class="sort__container sort__container_top">
+            <div class="sort__all-ads">
+              <div class="sort__all-ads-title">Все объявления в России&nbsp;</div>
+              <div class="sort__all-ads-numbers">1313</div>
+            </div>
+            <div class="sort__sort-categories">
+              <div class="sort__sort-categories-title">Сортировка:</div><a class="sort__sort-categories-link sort__sort-categories-link_active" href="#">По дате</a><a class="sort__sort-categories-link" href="#">Сначала дешевле</a><a class="sort__sort-categories-link" href="#">Сначала дороже</a>
+            </div>
+          </div>
+          <div class="sort__container sort__container_bottom">
+            <div class="sort__list"><a class="sort__item" href="#"><span class="sort__item-selected">Краснодарский край&nbsp;</span>166</a><a class="sort__item" href="#"><span class="sort__item-selected">Челябинская обл.&nbsp;</span>90</a><a class="sort__item" href="#"><span class="sort__item-selected">Башкортостан&nbsp;</span>46</a><a class="sort__item" href="#"><span class="sort__item-selected">Новосибирская обл.&nbsp;</span>102</a><a class="sort__item" href="#"><span class="sort__item-selected">Крым&nbsp;</span>79</a><a class="sort__item" href="#"><span class="sort__item-selected">Саратовская обл.&nbsp;</span>45</a><a class="sort__item" href="#"><span class="sort__item-selected">Адыгея&nbsp;</span>95</a><a class="sort__item sort__item_active" href="#"><span class="sort__item-selected">Москва&nbsp;</span>57</a><a class="sort__item" href="#"><span class="sort__item-selected">Нижегородская обл.&nbsp;</span>41</a><a class="sort__item" href="#"><span class="sort__item-selected">Марий Эл&nbsp;</span>94</a><a class="sort__item" href="#"><span class="sort__item-selected">Северная Осетия&nbsp;</span>47</a><a class="sort__item" href="#"><span class="sort__item-selected">Ростовская обл.&nbsp;</span>36</a></div>
+            <div class="sort__label">Показать все города</div>
+          </div>
+        </div>
+      </div>
+      <div class="content__container">
+        <div class="content__col content__col_left">
+          <div class="list">
+            <div class="list__container">
+              <h1 class="list__title">Объявления в России</h1>
+            </div>
+            <div class="list__container">
+              <div class="list__item"><a class="list__item-img-link" href="#"><img class="list__item-img" src="../img/examples/preview-picture.png"></a>
+                <div class="list__item-descr"><a class="list__item-title" href="#">Менеджер-оператор</a>
+                  <div class="list__item-price-date">
+                    <div class="list__item-price">26 000 руб.</div>
+                    <div class="list__item-date">24 мая 2018 г. 16:14</div><a class="list__item-favorite" href="#"></a>
+                  </div>
+                  <div class="list__item-text">В крупную торговую компанию требуются мужчины и женщины в возрасте 25-60 лет, опыт работы не ...</div><a class="list__item-author" href="#">Владислав</a>
+                  <div class="list__item-region-city"><a class="list__item-region" href="#">Новороссийск</a>&nbsp;/&nbsp;<a class="list__item-city" href="#">Новороссийский</a></div>
+                </div>
+              </div>
+              <div class="list__item"><a class="list__item-img-link" href="#">
+                  <div class="list__item-counter">
+                    <div class="list__item-counter-text">4</div>
+                  </div><img class="list__item-img" src="../img/examples/3.png"></a>
+                <div class="list__item-descr"><a class="list__item-title" href="#">Менеджер-оператор 2</a>
+                  <div class="list__item-price-date">
+                    <div class="list__item-price">26 000 руб.</div>
+                    <div class="list__item-date">24 мая 2018 г. 16:14</div><a class="list__item-favorite list__item-favorite_active" href="#"></a>
+                  </div>
+                  <div class="list__item-text">В крупную торговую компанию требуются мужчины и женщины в возрасте 25-60 лет, опыт работы не ...</div><a class="list__item-author" href="#">Владислав</a>
+                  <div class="list__item-region-city"><a class="list__item-region" href="#">Новороссийск</a>&nbsp;/&nbsp;<a class="list__item-city" href="#">Новороссийский</a></div>
+                </div>
+              </div>
+              <div class="list__item"><a class="list__item-img-link" href="#"><img class="list__item-img" src="../img/examples/preview-picture.png"></a>
+                <div class="list__item-descr"><a class="list__item-title" href="#">Менеджер-оператор</a>
+                  <div class="list__item-price-date">
+                    <div class="list__item-price">26 000 руб.</div>
+                    <div class="list__item-date">24 мая 2018 г. 16:14</div><a class="list__item-favorite" href="#"></a>
+                  </div>
+                  <div class="list__item-text">В крупную торговую компанию требуются мужчины и женщины в возрасте 25-60 лет, опыт работы не ...</div><a class="list__item-author" href="#">Владислав</a>
+                  <div class="list__item-region-city"><a class="list__item-region" href="#">Новороссийск</a>&nbsp;/&nbsp;<a class="list__item-city" href="#">Новороссийский</a></div>
+                </div>
+              </div>
+              <div class="list__item"><a class="list__item-img-link" href="#"><img class="list__item-img" src="../img/examples/preview-picture.png"></a>
+                <div class="list__item-descr"><a class="list__item-title" href="#">Менеджер-оператор</a>
+                  <div class="list__item-price-date">
+                    <div class="list__item-price">26 000 руб.</div>
+                    <div class="list__item-date">24 мая 2018 г. 16:14</div><a class="list__item-favorite" href="#"></a>
+                  </div>
+                  <div class="list__item-text">В крупную торговую компанию требуются мужчины и женщины в возрасте 25-60 лет, опыт работы не ...</div><a class="list__item-author" href="#">Владислав</a>
+                  <div class="list__item-region-city"><a class="list__item-region" href="#">Новороссийск</a>&nbsp;/&nbsp;<a class="list__item-city" href="#">Новороссийский</a></div>
+                </div>
+              </div>
+              <div class="list__item"><a class="list__item-img-link" href="#"><img class="list__item-img" src="../img/examples/preview-picture.png"></a>
+                <div class="list__item-descr"><a class="list__item-title" href="#">Менеджер-оператор</a>
+                  <div class="list__item-price-date">
+                    <div class="list__item-price">26 000 руб.</div>
+                    <div class="list__item-date">24 мая 2018 г. 16:14</div><a class="list__item-favorite" href="#"></a>
+                  </div>
+                  <div class="list__item-text">В крупную торговую компанию требуются мужчины и женщины в возрасте 25-60 лет, опыт работы не ...</div><a class="list__item-author" href="#">Владислав</a>
+                  <div class="list__item-region-city"><a class="list__item-region" href="#">Новороссийск</a>&nbsp;/&nbsp;<a class="list__item-city" href="#">Новороссийский</a></div>
+                </div>
+              </div>
+              <div class="list__item"><a class="list__item-img-link" href="#"><img class="list__item-img" src="../img/examples/preview-picture.png"></a>
+                <div class="list__item-descr"><a class="list__item-title" href="#">Менеджер-оператор</a>
+                  <div class="list__item-price-date">
+                    <div class="list__item-price">26 000 руб.</div>
+                    <div class="list__item-date">24 мая 2018 г. 16:14</div><a class="list__item-favorite" href="#"></a>
+                  </div>
+                  <div class="list__item-text">В крупную торговую компанию требуются мужчины и женщины в возрасте 25-60 лет, опыт работы не ...</div><a class="list__item-author" href="#">Владислав</a>
+                  <div class="list__item-region-city"><a class="list__item-region" href="#">Новороссийск</a>&nbsp;/&nbsp;<a class="list__item-city" href="#">Новороссийский</a></div>
+                </div>
+              </div>
+              <div class="list__item"><a class="list__item-img-link" href="#"><img class="list__item-img" src="../img/examples/preview-picture.png"></a>
+                <div class="list__item-descr"><a class="list__item-title" href="#">Менеджер-оператор</a>
+                  <div class="list__item-price-date">
+                    <div class="list__item-price">26 000 руб.</div>
+                    <div class="list__item-date">24 мая 2018 г. 16:14</div><a class="list__item-favorite" href="#"></a>
+                  </div>
+                  <div class="list__item-text">В крупную торговую компанию требуются мужчины и женщины в возрасте 25-60 лет, опыт работы не ...</div><a class="list__item-author" href="#">Владислав</a>
+                  <div class="list__item-region-city"><a class="list__item-region" href="#">Новороссийск</a>&nbsp;/&nbsp;<a class="list__item-city" href="#">Новороссийский</a></div>
+                </div>
+              </div>
+              <div class="list__item"><a class="list__item-img-link" href="#"><img class="list__item-img" src="../img/examples/preview-picture.png"></a>
+                <div class="list__item-descr"><a class="list__item-title" href="#">Менеджер-оператор</a>
+                  <div class="list__item-price-date">
+                    <div class="list__item-price">26 000 руб.</div>
+                    <div class="list__item-date">24 мая 2018 г. 16:14</div><a class="list__item-favorite" href="#"></a>
+                  </div>
+                  <div class="list__item-text">В крупную торговую компанию требуются мужчины и женщины в возрасте 25-60 лет, опыт работы не ...</div><a class="list__item-author" href="#">Владислав</a>
+                  <div class="list__item-region-city"><a class="list__item-region" href="#">Новороссийск</a>&nbsp;/&nbsp;<a class="list__item-city" href="#">Новороссийский</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagination">
+            <div class="pagination__list"><a class="pagination__item" href="#">1</a><a class="pagination__item pagination__item_active" href="#">2</a><a class="pagination__item" href="#">3</a><a class="pagination__item" href="#">4</a><a class="pagination__item" href="#">5</a><a class="pagination__item" href="#">6</a><a class="pagination__item" href="#">7</a><a class="pagination__item pagination__item_next" href="#">Дальше</a></div><a class="pagination__link-to-top" href="#scroll-to-top">Наверх</a>
+          </div>
+        </div>
+        <div class="content__col content__col_right">
+          <div class="banner"><a class="banner__link" href="#"><img class="banner__img" src="../img/examples/2.png" alt=""></a></div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__col footer__col_left">
+          <div class="footer__nav"><a class="footer__nav-item" href="#">Объявления</a><a class="footer__nav-item" href="#">Подать объявление</a><a class="footer__nav-item" href="#">Безопасность</a></div>
+          <div class="footer__nav"><a class="footer__nav-item" href="#">Обратная связь</a><a class="footer__nav-item" href="#">Открыть Компанию</a><a class="footer__nav-item" href="#">Реклама на сайте</a></div>
+        </div>
+        <div class="footer__col footer__col_right">
+          <div class="footer__age">16+</div>
+          <div class="footer__copyright">&copy; ANONS.INFO &mdash; сайт бесплатных объявлений.</div>
+          <div class="footer__text">Использование сайта означает согласие<br>с&nbsp;<a class="footer__link" href="#">пользовательским соглашением</a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app-project-base.js"></script>
+    <script src="js/app-project-run.js"></script>
+  </body>
+</html>

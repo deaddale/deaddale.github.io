@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-photo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0" stroke-linejoin="round">
+        <g id="icon-photo" fill="#FFFFFF" stroke="#FFFFFF">
+            <path d="M17.3,15.5 L2.7,15.5 C1.48731284,15.5000045 0.503307329,14.5186826 0.5,13.306 L0.5,4.406 C0.503307329,3.19331735 1.48731284,2.21199549 2.7,2.212 L5.681,2.212 L5.941,1.332 C6.05768416,0.842217607 6.49651665,0.497450254 7,0.5 L13,0.5 C13.5060128,0.501190573 13.945938,0.847435635 14.066,1.339 L14.073,1.369 L14.311,2.214 L17.3,2.214 C18.5126872,2.21399549 19.4966927,3.19531735 19.5,4.408 L19.5,13.308 C19.4955931,14.5199011 18.5119091,15.500008 17.3,15.5 Z M10,6.5 C11.3807119,6.5 12.5,7.61928813 12.5,9 C12.5,10.3807119 11.3807119,11.5 10,11.5 C8.61928813,11.5 7.5,10.3807119 7.5,9 C7.5,7.61928813 8.61928813,6.5 10,6.5 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

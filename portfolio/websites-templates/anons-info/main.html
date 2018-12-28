@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>anons.info | Main page</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="skype-toolbar" content="skype-toolbar-parser-compatible">
+    <link rel="stylesheet" href="css/app-project.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container"><a class="header__logo" href="/"></a>
+        <div class="header__nav"><a class="header__nav-item" href="#">Новый поиск</a><a class="header__nav-item" href="#">Компании</a><a class="header__nav-item" href="#">СМИ</a></div>
+        <div class="header__panel"><a class="header__panel-item header__panel-item_saved-search" href="#"></a><a class="header__panel-item header__panel-item_favorites" href="#"></a><a class="header__panel-item header__panel-item_messages" href="#"></a><a class="header__panel-item header__panel-item_accounts" href="#"></a><a class="header__add-ad-for-sale" href="#">Подать объявление</a></div>
+      </div>
+    </header>
+    <header class="header_mobile">
+      <div class="header__container">
+        <div class="header__burger-btn"></div>
+        <div class="header__search-wrapper">
+          <button class="header__search-btn" type="submit"></button>
+          <input class="header__search-input" type="text" placeholder="Текст для поиска ..." value="">
+        </div>
+        <div class="header__filter-btn"></div>
+      </div>
+      <div class="header__nav-panel">
+        <div class="header__nav-panel-wrapper"><a class="header__nav-panel-item header__nav-panel-item_log-in" href="#">Авторизуйтесь</a><a class="header__nav-panel-item header__nav-panel-item_ads" href="#">Объявления</a><a class="header__nav-panel-item header__nav-panel-item_favorites" href="#">Избранное</a><a class="header__nav-panel-item header__nav-panel-item_company" href="#">Компании</a><a class="header__nav-panel-item header__nav-panel-item_post-an-ad" href="#">Подать объявление</a><a class="header__nav-panel-item header__nav-panel-item_help" href="#">Помощь</a></div>
+        <div class="header__nav-panel-overlay"></div>
+      </div>
+      <div class="header__filter-panel">
+        <div class="header__filter-panel-header">
+          <div class="header__filter-panel-header-btn"></div>
+          <div class="header__filter-panel-header-title">Фильтр</div>
+          <div class="header__filter-panel-header-reset">Сбросить</div>
+        </div>
+        <div class="header__filter-panel-content">
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Категория</div>
+            <select class="header__filter-panel-select">
+              <option class="header__filter-panel-select-option" value="0">Все рубрики</option>
+              <option class="header__filter-panel-select-option" value="1">Рубрика 1</option>
+              <option class="header__filter-panel-select-option" value="2">Рубрика 2</option>
+              <option class="header__filter-panel-select-option" value="3">Рубрика 3</option>
+              <option class="header__filter-panel-select-option" value="4">Рубрика 4</option>
+            </select>
+          </div>
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Местоположение</div>
+            <div class="header__filter-panel-text">Москва </div>
+          </div>
+          <div class="header__filter-panel-item header__filter-panel-item_distance">
+            <div class="header__filter-panel-title">На расстоянии</div>
+            <div class="header__filter-panel-text-of-distance"><span class="header__filter-panel-text-of-distance-number"></span>&nbsp;км</div>
+            <div class="header__filter-slider-of-distance"></div>
+          </div>
+          <div class="header__filter-panel-item header__filter-panel-item_price">
+            <div class="header__filter-price-inputs">
+              <input class="header__filter-price-input-item" type="text" placeholder="Цена от" value="">
+              <input class="header__filter-price-input-item" type="text" placeholder="Цена до" value="">
+            </div>
+          </div>
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Сортировка</div>
+            <select class="header__filter-panel-select">
+              <option class="header__filter-panel-select-option" value="0">По дате</option>
+              <option class="header__filter-panel-select-option" value="1">Два</option>
+              <option class="header__filter-panel-select-option" value="2">Три</option>
+              <option class="header__filter-panel-select-option" value="3">Четыре</option>
+              <option class="header__filter-panel-select-option" value="4">Пять</option>
+            </select>
+          </div>
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Опубликовано</div>
+            <select class="header__filter-panel-select">
+              <option class="header__filter-panel-select-option" value="0">Все время</option>
+              <option class="header__filter-panel-select-option" value="1">Два</option>
+              <option class="header__filter-panel-select-option" value="2">Три</option>
+              <option class="header__filter-panel-select-option" value="3">Четыре</option>
+              <option class="header__filter-panel-select-option" value="4">Пять</option>
+            </select>
+          </div>
+          <div class="header__filter-panel-item">
+            <label class="header__filter-panel-checkbox-wrapper">
+              <input class="header__filter-panel-checkbox-input" type="checkbox" name="photo"><span class="header__filter-panel-checkbox-custom"></span><span class="header__filter-panel-checkbox-text">только с фото</span>
+            </label>
+          </div>
+        </div><a class="header__btn-mobile" href="#">Показать объявления</a>
+      </div>
+      <div class="header__region">
+        <div class="header__region-header">
+          <div class="header__region-header-btn"></div>
+          <div class="header__region-header-title">Выберите регион</div>
+        </div>
+        <form class="header__region-search-form">
+          <input class="header__region-search-btn" type="submit">
+          <input class="header__region-search-input" type="text" placeholder="Вводите для быстрого поиска" value="">
+        </form>
+        <div class="header__region-search-list"><a class="header__region-search-item" href="#">Московская обл.</a><a class="header__region-search-item" href="#">Мурманская обл. </a><a class="header__region-search-item" href="#">Ненецкий АО </a><a class="header__region-search-item" href="#">Нижегородская обл. </a><a class="header__region-search-item" href="#">Новгородская обл. </a><a class="header__region-search-item" href="#">Оренбургская обл. </a><a class="header__region-search-item" href="#">Орловская обл. </a><a class="header__region-search-item" href="#">Пензенская обл. </a><a class="header__region-search-item" href="#">Пермский край </a><a class="header__region-search-item" href="#">Псковская обл. </a><a class="header__region-search-item" href="#">Ростовская обл. </a><a class="header__region-search-item" href="#">Рязанская обл. </a><a class="header__region-search-item" href="#">Самарская обл. </a><a class="header__region-search-item" href="#">Саратовская обл. </a><a class="header__region-search-item" href="#">Свердловская обл. </a><a class="header__region-search-item" href="#">Северная Осетия </a><a class="header__region-search-item" href="#">Смоленская обл. </a><a class="header__region-search-item" href="#">Ставропольский край</a></div>
+      </div>
+    </header>
+    <div class="content content_main">
+      <div class="content__container">
+        <div class="content__col content__col_left">
+          <div class="start-search">
+            <form class="start-search__form" action="/rossiya/" method="get">
+              <input class="start-search__input-text" type="text" name="q" placeholder="Поиск объявлений по всей России">
+              <input class="start-search__btn" type="submit" value="Поиск">
+            </form>
+          </div>
+          <div class="cover"><img class="cover__img" src="../dist/img/examples/1.png" alt="">
+            <div class="cover__categories">
+              <div class="cover__categories-col"><a class="cover__categories-item cover__categories-item_real-estate" href="#">
+                  <div class="cover__categories-text">Недвижимость</div></a><a class="cover__categories-item cover__categories-item_transport" href="#">
+                  <div class="cover__categories-text">Транспортные средства</div></a><a class="cover__categories-item cover__categories-item_services" href="#">
+                  <div class="cover__categories-text">Услуги</div></a><a class="cover__categories-item cover__categories-item_products" href="#">
+                  <div class="cover__categories-text">Товары</div></a><a class="cover__categories-item cover__categories-item_jobs" href="#">
+                  <div class="cover__categories-text">Работа, вакансии</div></a><a class="cover__categories-item cover__categories-item_resume" href="#">
+                  <div class="cover__categories-text">Работа, резюме</div></a></div>
+              <div class="cover__categories-col"><a class="cover__categories-item cover__categories-item_contacts" href="#">
+                  <div class="cover__categories-text">Деловые контакты</div></a><a class="cover__categories-item cover__categories-item_instruments" href="#">
+                  <div class="cover__categories-text">Оборудование и инструменты</div></a><a class="cover__categories-item cover__categories-item_building" href="#">
+                  <div class="cover__categories-text">Строительные материалы</div></a><a class="cover__categories-item cover__categories-item_animals" href="#">
+                  <div class="cover__categories-text">Животные</div></a><a class="cover__categories-item cover__categories-item_dating" href="#">
+                  <div class="cover__categories-text">Знакомства</div></a><a class="cover__categories-item cover__categories-item_messages" href="#">
+                  <div class="cover__categories-text">Послания</div></a></div>
+            </div>
+            <div class="cover__text-wrapper">
+              <h1 class="cover__title"><span class="cover__title-selected">Anons.info</span>&nbsp;&mdash; сайт бесплатных частных<br>объявлений России.</h1>
+              <p class="cover__text">Аудитория сайта насчитывает большое количество пользователей, которые заходят сюда чтобы продать, обменять, купить необходимые товары и&nbsp;услуги, найти работу или работника. Не&nbsp;нужно ходить по&nbsp;разным доскам объявлений, наш удобный поисковый сервис позволит сэкономить свое время, максимально точно отсортировать нужную информацию по&nbsp;разным городам и&nbsp;регионам, учесть все характеристики вашего запроса, порой даже уникальные.</p>
+              <p class="cover__text">Чтобы подать бесплатное объявление на&nbsp;Anons.info, достаточно проследовать подсказкам и&nbsp;быстро заполнить форму подачи объявления. Весь процесс займет у&nbsp;вас несколько минут. Хотите продать свой товар быстрее? У&nbsp;нас есть много инструментов, которые помогут вам сделать это.</p>
+              <p class="cover__text">Вы&nbsp;сможете получать отзывы через skype, e-mail, на&nbsp;мобильный телефон в&nbsp;виде звонков и&nbsp;sms.</p>
+              <p class="cover__text"><b class="cover__text-medium">Анонс&nbsp;&mdash; это объявление! Анонс&nbsp;&mdash; это легко!</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="content__col content__col_right">
+          <div class="regions">
+            <div class="regions__container regions__container_top">
+              <div class="regions__title">Краснодарский край</div>
+              <div class="regions__link regions__link_cancel">Отмена</div>
+            </div>
+            <div class="regions__container regions__container_bottom"><a class="regions__item regions__item_region" href="/adygeya/">Адыгея</a><a class="regions__item regions__item_region" href="/altayskiy-kray/">Алтайский край</a><a class="regions__item regions__item_region" href="/amurskaya-obl/">Амурская обл.</a><a class="regions__item regions__item_region" href="/arhangelskaya-obl/">Архангельская обл.</a><a class="regions__item regions__item_region" href="/astrahanskaya-obl/">Астраханская обл.</a><a class="regions__item regions__item_region" href="/bashkortostan/">Башкортостан</a><a class="regions__item regions__item_region" href="/belgorodskaya-obl/">Белгородская обл.</a><a class="regions__item regions__item_region" href="/bryanskaya-obl/">Брянская обл.</a><a class="regions__item regions__item_region" href="/buryatiya/">Бурятия</a><a class="regions__item regions__item_region" href="/vladimirskaya-obl/">Владимирская обл.</a><a class="regions__item regions__item_region" href="/volgogradskaya-obl/">Волгоградская обл.</a><a class="regions__item regions__item_region" href="/vologodskaya-obl/">Вологодская обл.</a><a class="regions__item regions__item_region" href="/voronezhskaya-obl/">Воронежская обл.</a><a class="regions__item regions__item_region" href="/dagestan/">Дагестан</a><a class="regions__item regions__item_region" href="/evreyskaya-ao/">Еврейская АО</a><a class="regions__item regions__item_region" href="/zabaykalskiy-kray/">Забайкальский край</a><a class="regions__item regions__item_region" href="/ivanovskaya-obl/">Ивановская обл.</a><a class="regions__item regions__item_region" href="/ingushetiya/">Ингушетия</a><a class="regions__item regions__item_region" href="/irkutskaya-obl/">Иркутская обл.</a><a class="regions__item regions__item_region" href="/kabardino-balkariya/">Кабардино-Балкария</a><a class="regions__item regions__item_region" href="/kaliningradskaya-obl/">Калининградская обл.</a><a class="regions__item regions__item_region" href="/kalmykiya/">Калмыкия</a><a class="regions__item regions__item_region" href="/kaluzhskaya-obl/">Калужская обл.</a><a class="regions__item regions__item_region" href="/kamchatskiy-kray/">Камчатский край</a><a class="regions__item regions__item_region" href="/karachaevo-cherkesiya/">Карачаево-Черкесия</a><a class="regions__item regions__item_region" href="/kareliya/">Карелия</a><a class="regions__item regions__item_region" href="/kemerovskaya-obl/">Кемеровская обл.</a><a class="regions__item regions__item_region" href="/kirovskaya-obl/">Кировская обл.</a><a class="regions__item regions__item_region" href="/komi/">Коми</a><a class="regions__item regions__item_region" href="/kostromskaya-obl/">Костромская обл.</a><a class="regions__item regions__item_region" href="/krasnodarskiy-kray/">Краснодарский край</a><a class="regions__item regions__item_region" href="/krasnoyarskiy-kray/">Красноярский край</a><a class="regions__item regions__item_region" href="/krym/">Крым</a><a class="regions__item regions__item_region" href="/kurganskaya-obl/">Курганская обл.</a><a class="regions__item regions__item_region" href="/kurskaya-obl/">Курская обл.</a><a class="regions__item regions__item_region" href="/leningradskaya-obl/">Ленинградская обл.</a><a class="regions__item regions__item_region" href="/lipetskaya-obl/">Липецкая обл.</a><a class="regions__item regions__item_region" href="/magadanskaya-obl/">Магаданская обл.</a><a class="regions__item regions__item_region" href="/mariy-el/">Марий Эл</a><a class="regions__item regions__item_region" href="/mordoviya/">Мордовия</a><a class="regions__item regions__item_region" href="/moskva/">Москва</a><a class="regions__item regions__item_region" href="/moskovskaya-obl/">Московская обл.</a><a class="regions__item regions__item_region" href="/murmanskaya-obl/">Мурманская обл.</a><a class="regions__item regions__item_region" href="/nenetskiy-ao/">Ненецкий АО</a><a class="regions__item regions__item_region" href="/nizhegorodskaya-obl/">Нижегородская обл.</a><a class="regions__item regions__item_region" href="/novgorodskaya-obl/">Новгородская обл.</a><a class="regions__item regions__item_region" href="/novosibirskaya-obl/">Новосибирская обл.</a><a class="regions__item regions__item_region" href="/omskaya-obl/">Омская обл.</a><a class="regions__item regions__item_region" href="/orenburgskaya-obl/">Оренбургская обл.</a><a class="regions__item regions__item_region" href="/orlovskaya-obl/">Орловская обл.</a><a class="regions__item regions__item_region" href="/penzenskaya-obl/">Пензенская обл.</a><a class="regions__item regions__item_region" href="/permskiy-kray/">Пермский край</a><a class="regions__item regions__item_region" href="/primorskiy-kray/">Приморский край</a><a class="regions__item regions__item_region" href="/pskovskaya-obl/">Псковская обл.</a><a class="regions__item regions__item_region" href="/respublika-altay/">Республика Алтай</a><a class="regions__item regions__item_region" href="/rostovskaya-obl/">Ростовская обл.</a><a class="regions__item regions__item_region" href="/ryazanskaya-obl/">Рязанская обл.</a><a class="regions__item regions__item_region" href="/samarskaya-obl/">Самарская обл.</a><a class="regions__item regions__item_region" href="/sankt-peterburg/">Санкт-Петербург</a><a class="regions__item regions__item_region" href="/saratovskaya-obl/">Саратовская обл.</a><a class="regions__item regions__item_region" href="/sahalinskaya-obl/">Сахалинская обл.</a><a class="regions__item regions__item_region" href="/saha-yakutiya/">Саха (Якутия)</a><a class="regions__item regions__item_region" href="/sverdlovskaya-obl/">Свердловская обл.</a><a class="regions__item regions__item_region" href="/sevastopol/">Севастополь</a><a class="regions__item regions__item_region" href="/severnaya-osetiya/">Северная Осетия</a><a class="regions__item regions__item_region" href="/smolenskaya-obl/">Смоленская обл.</a><a class="regions__item regions__item_region" href="/stavropolskiy-kray/">Ставропольский край</a><a class="regions__item regions__item_region" href="/tambovskaya-obl/">Тамбовская обл.</a><a class="regions__item regions__item_region" href="/tatarstan/">Татарстан</a><a class="regions__item regions__item_region" href="/tverskaya-obl/">Тверская обл.</a><a class="regions__item regions__item_region" href="/tomskaya-obl/">Томская обл.</a><a class="regions__item regions__item_region" href="/tulskaya-obl/">Тульская обл.</a><a class="regions__item regions__item_region" href="/tyva/">Тыва</a><a class="regions__item regions__item_region" href="/tyumenskaya-obl/">Тюменская обл.</a><a class="regions__item regions__item_region" href="/udmurtiya/">Удмуртия</a><a class="regions__item regions__item_region" href="/ulyanovskaya-obl/">Ульяновская обл.</a><a class="regions__item regions__item_region" href="/habarovskiy-kray/">Хабаровский край</a><a class="regions__item regions__item_region" href="/hakasiya/">Хакасия</a><a class="regions__item regions__item_region" href="/hanty-mansiyskiy-ao/">Ханты-Мансийский АО</a><a class="regions__item regions__item_region" href="/chelyabinskaya-obl/">Челябинская обл.</a><a class="regions__item regions__item_region" href="/chechenskaya-respublika/">Чеченская республика</a><a class="regions__item regions__item_region" href="/chuvashiya/">Чувашия</a><a class="regions__item regions__item_region" href="/chukotskiy-ao/">Чукотский АО</a><a class="regions__item regions__item_region" href="/yamalo-nenetskiy-ao/">Ямало-Ненецкий АО</a><a class="regions__item regions__item_region" href="/yaroslavskaya-obl/">Ярославская обл.</a></div>
+          </div>
+          <div class="regions">
+            <div class="regions__container regions__container_top">
+              <div class="regions__title">Краснодарский край</div>
+              <div class="regions__link regions__link_cian">Другой регион</div>
+            </div>
+            <div class="regions__container regions__container_bottom"><a class="regions__item regions__item_ad" href="#">
+                <div class="regions__img-wrapper"><img class="regions__img" src="https://www.anons.info/media/cache/83/6c/836c10651cb9aa4cd424517d0306ff65.jpg" alt=""></div>
+                <div class="regions__subtitle">Дом, 2-эт., 120 кв. м.</div>
+                <div class="regions__location">Яблоновский пгт.</div>
+                <div class="regions__price">4 500 000 руб.</div></a><a class="regions__item regions__item_ad" href="#">
+                <div class="regions__img-wrapper"><img class="regions__img" src="https://www.anons.info/media/cache/83/6c/836c10651cb9aa4cd424517d0306ff65.jpg" alt=""></div>
+                <div class="regions__subtitle">Дом, 2-эт., 120 кв. м.</div>
+                <div class="regions__location">Яблоновский пгт.</div>
+                <div class="regions__price">4 500 000 руб.</div></a><a class="regions__item regions__item_ad" href="#">
+                <div class="regions__img-wrapper"><img class="regions__img" src="https://www.anons.info/media/cache/83/6c/836c10651cb9aa4cd424517d0306ff65.jpg" alt=""></div>
+                <div class="regions__subtitle">Дом, 2-эт., 120 кв. м.</div>
+                <div class="regions__location">Яблоновский пгт.</div>
+                <div class="regions__price">4 500 000 руб.</div></a><a class="regions__item regions__item_ad" href="#">
+                <div class="regions__img-wrapper"><img class="regions__img" src="https://www.anons.info/media/cache/83/6c/836c10651cb9aa4cd424517d0306ff65.jpg" alt=""></div>
+                <div class="regions__subtitle">Дом, 2-эт., 120 кв. м.</div>
+                <div class="regions__location">Яблоновский пгт.</div>
+                <div class="regions__price">4 500 000 руб.</div></a><a class="regions__item regions__item_ad" href="#">
+                <div class="regions__img-wrapper"><img class="regions__img" src="https://www.anons.info/media/cache/83/6c/836c10651cb9aa4cd424517d0306ff65.jpg" alt=""></div>
+                <div class="regions__subtitle">Дом, 2-эт., 120 кв. м.</div>
+                <div class="regions__location">Яблоновский пгт.</div>
+                <div class="regions__price">4 500 000 руб.</div></a><a class="regions__item regions__item_ad" href="#">
+                <div class="regions__img-wrapper"><img class="regions__img" src="https://www.anons.info/media/cache/83/6c/836c10651cb9aa4cd424517d0306ff65.jpg" alt=""></div>
+                <div class="regions__subtitle">Дом, 2-эт., 120 кв. м.</div>
+                <div class="regions__location">Яблоновский пгт.</div>
+                <div class="regions__price">4 500 000 руб.</div></a><a class="regions__item regions__item_ad" href="#">
+                <div class="regions__img-wrapper"><img class="regions__img" src="https://www.anons.info/media/cache/83/6c/836c10651cb9aa4cd424517d0306ff65.jpg" alt=""></div>
+                <div class="regions__subtitle">Дом, 2-эт., 120 кв. м.</div>
+                <div class="regions__location">Яблоновский пгт.</div>
+                <div class="regions__price">4 500 000 руб.</div></a><a class="regions__item regions__item_ad" href="#">
+                <div class="regions__img-wrapper"><img class="regions__img" src="https://www.anons.info/media/cache/83/6c/836c10651cb9aa4cd424517d0306ff65.jpg" alt=""></div>
+                <div class="regions__subtitle">Дом, 2-эт., 120 кв. м.</div>
+                <div class="regions__location">Яблоновский пгт.</div>
+                <div class="regions__price">4 500 000 руб.</div></a><a class="regions__item regions__item_ad" href="#">
+                <div class="regions__img-wrapper"><img class="regions__img" src="https://www.anons.info/media/cache/83/6c/836c10651cb9aa4cd424517d0306ff65.jpg" alt=""></div>
+                <div class="regions__subtitle">Дом, 2-эт., 120 кв. м.</div>
+                <div class="regions__location">Яблоновский пгт.</div>
+                <div class="regions__price">4 500 000 руб.</div></a><a class="regions__item regions__item_ad" href="#">
+                <div class="regions__img-wrapper"><img class="regions__img" src="https://www.anons.info/media/cache/83/6c/836c10651cb9aa4cd424517d0306ff65.jpg" alt=""></div>
+                <div class="regions__subtitle">Дом, 2-эт., 120 кв. м.</div>
+                <div class="regions__location">Яблоновский пгт.</div>
+                <div class="regions__price">4 500 000 руб.</div></a><a class="regions__item regions__item_ad" href="#">
+                <div class="regions__img-wrapper"><img class="regions__img" src="https://www.anons.info/media/cache/83/6c/836c10651cb9aa4cd424517d0306ff65.jpg" alt=""></div>
+                <div class="regions__subtitle">Дом, 2-эт., 120 кв. м.</div>
+                <div class="regions__location">Яблоновский пгт.</div>
+                <div class="regions__price">4 500 000 руб.</div></a><a class="regions__item regions__item_ad" href="#">
+                <div class="regions__img-wrapper"><img class="regions__img" src="https://www.anons.info/media/cache/83/6c/836c10651cb9aa4cd424517d0306ff65.jpg" alt=""></div>
+                <div class="regions__subtitle">Дом, 2-эт., 120 кв. м.</div>
+                <div class="regions__location">Яблоновский пгт.</div>
+                <div class="regions__price">4 500 000 руб.</div></a><a class="regions__item regions__item_ad" href="#">
+                <div class="regions__img-wrapper"><img class="regions__img" src="https://www.anons.info/media/cache/83/6c/836c10651cb9aa4cd424517d0306ff65.jpg" alt=""></div>
+                <div class="regions__subtitle">Дом, 2-эт., 120 кв. м.</div>
+                <div class="regions__location">Яблоновский пгт.</div>
+                <div class="regions__price">4 500 000 руб.</div></a><a class="regions__item regions__item_ad" href="#">
+                <div class="regions__img-wrapper"><img class="regions__img" src="https://www.anons.info/media/cache/83/6c/836c10651cb9aa4cd424517d0306ff65.jpg" alt=""></div>
+                <div class="regions__subtitle">Дом, 2-эт., 120 кв. м.</div>
+                <div class="regions__location">Яблоновский пгт.</div>
+                <div class="regions__price">4 500 000 руб.</div></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content content_mobile">
+      <div class="location">
+        <div class="location__container">
+          <div class="location__title">Все объявления в Москве</div>
+        </div>
+      </div>
+      <div class="hor-list">
+        <div class="hor-list__container">
+          <div class="hor-list__title">VIP объявления</div>
+        </div>
+        <div class="hor-list__wrapper">
+          <div class="hor-list__item">
+            <div class="hor-list__item-top"><a class="hor-list__link" href="#"><img class="hor-list__img" src="../img/examples/3.png"></a>
+              <div class="hor-list__location">Москва</div>
+              <div class="hor-list__favorites-btn"></div>
+            </div>
+            <div class="hor-list__item-bottom"><a class="hor-list__title-link" href="#">Название объявления</a>
+              <div class="hor-list__price">1 110 000 ₽</div>
+            </div>
+          </div>
+          <div class="hor-list__item">
+            <div class="hor-list__item-top"><a class="hor-list__link" href="#"><img class="hor-list__img" src="../img/examples/3.png"></a>
+              <div class="hor-list__location">Москва</div>
+              <div class="hor-list__favorites-btn"></div>
+            </div>
+            <div class="hor-list__item-bottom"><a class="hor-list__title-link" href="#">Название объявления</a>
+              <div class="hor-list__price">1 110 000 ₽</div>
+            </div>
+          </div>
+          <div class="hor-list__item">
+            <div class="hor-list__item-top"><a class="hor-list__link" href="#"><img class="hor-list__img" src="../img/examples/3.png"></a>
+              <div class="hor-list__location">Москва</div>
+              <div class="hor-list__favorites-btn"></div>
+            </div>
+            <div class="hor-list__item-bottom"><a class="hor-list__title-link" href="#">Название объявления</a>
+              <div class="hor-list__price">1 110 000 ₽</div>
+            </div>
+          </div>
+          <div class="hor-list__item">
+            <div class="hor-list__item-top"><a class="hor-list__link" href="#"><img class="hor-list__img" src="../img/examples/3.png"></a>
+              <div class="hor-list__location">Москва</div>
+              <div class="hor-list__favorites-btn"></div>
+            </div>
+            <div class="hor-list__item-bottom"><a class="hor-list__title-link" href="#">Название объявления</a>
+              <div class="hor-list__price">1 110 000 ₽</div>
+            </div>
+          </div>
+          <div class="hor-list__item">
+            <div class="hor-list__item-top"><a class="hor-list__link" href="#"><img class="hor-list__img" src="../img/examples/3.png"></a>
+              <div class="hor-list__location">Москва</div>
+              <div class="hor-list__favorites-btn"></div>
+            </div>
+            <div class="hor-list__item-bottom"><a class="hor-list__title-link" href="#">Название объявления</a>
+              <div class="hor-list__price">1 110 000 ₽</div>
+            </div>
+          </div>
+          <div class="hor-list__item">
+            <div class="hor-list__item-top"><a class="hor-list__link" href="#"><img class="hor-list__img" src="../img/examples/3.png"></a>
+              <div class="hor-list__location">Москва</div>
+              <div class="hor-list__favorites-btn"></div>
+            </div>
+            <div class="hor-list__item-bottom"><a class="hor-list__title-link" href="#">Название объявления</a>
+              <div class="hor-list__price">1 110 000 ₽</div>
+            </div>
+          </div>
+          <div class="hor-list__item">
+            <div class="hor-list__item-top"><a class="hor-list__link" href="#"><img class="hor-list__img" src="../img/examples/3.png"></a>
+              <div class="hor-list__location">Москва</div>
+              <div class="hor-list__favorites-btn hor-list__favorites-btn_active"></div>
+            </div>
+            <div class="hor-list__item-bottom"><a class="hor-list__title-link" href="#">Название объявления</a>
+              <div class="hor-list__price">1 110 000 ₽</div>
+            </div>
+          </div>
+          <div class="hor-list__item">
+            <div class="hor-list__item-top"><a class="hor-list__link" href="#"><img class="hor-list__img" src="../img/examples/3.png"></a>
+              <div class="hor-list__location">Москва</div>
+              <div class="hor-list__favorites-btn"></div>
+            </div>
+            <div class="hor-list__item-bottom"><a class="hor-list__title-link" href="#">Название объявления</a>
+              <div class="hor-list__price">1 110 000 ₽</div>
+            </div>
+          </div>
+          <div class="hor-list__item">
+            <div class="hor-list__item-top"><a class="hor-list__link" href="#"><img class="hor-list__img" src="../img/examples/3.png"></a>
+              <div class="hor-list__location">Москва</div>
+              <div class="hor-list__favorites-btn"></div>
+            </div>
+            <div class="hor-list__item-bottom"><a class="hor-list__title-link" href="#">Название объявления</a>
+              <div class="hor-list__price">1 110 000 ₽</div>
+            </div>
+          </div>
+          <div class="hor-list__item">
+            <div class="hor-list__item-top"><a class="hor-list__link" href="#"><img class="hor-list__img" src="../img/examples/3.png"></a>
+              <div class="hor-list__location">Москва</div>
+              <div class="hor-list__favorites-btn"></div>
+            </div>
+            <div class="hor-list__item-bottom"><a class="hor-list__title-link" href="#">Название объявления</a>
+              <div class="hor-list__price">1 110 000 ₽</div>
+            </div>
+          </div>
+          <div class="hor-list__item">
+            <div class="hor-list__item-top"><a class="hor-list__link" href="#"><img class="hor-list__img" src="../img/examples/3.png"></a>
+              <div class="hor-list__location">Москва</div>
+              <div class="hor-list__favorites-btn"></div>
+            </div>
+            <div class="hor-list__item-bottom"><a class="hor-list__title-link" href="#">Название объявления</a>
+              <div class="hor-list__price">1 110 000 ₽</div>
+            </div>
+          </div>
+          <div class="hor-list__item">
+            <div class="hor-list__item-top"><a class="hor-list__link" href="#"><img class="hor-list__img" src="../img/examples/3.png"></a>
+              <div class="hor-list__location">Москва</div>
+              <div class="hor-list__favorites-btn"></div>
+            </div>
+            <div class="hor-list__item-bottom"><a class="hor-list__title-link" href="#">Название объявления</a>
+              <div class="hor-list__price">1 110 000 ₽</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mob-list">
+        <div class="mob-list__container">
+          <div class="mob-list__item">
+            <div class="mob-list__item-top"><a class="mob-list__link" href="#"><img class="mob-list__img" src="../img/examples/3.png"></a>
+              <div class="mob-list__location">Москва</div>
+              <div class="mob-list__favorites-btn mob-list__favorites-btn_active"></div>
+            </div>
+            <div class="mob-list__item-bottom"><a class="mob-list__title-link" href="#">Название объявления</a>
+              <div class="mob-list__price">1 110 000 ₽</div>
+            </div>
+          </div>
+          <div class="mob-list__item">
+            <div class="mob-list__item-top"><a class="mob-list__link" href="#"><img class="mob-list__img" src="../img/examples/3.png"></a>
+              <div class="mob-list__location">Москва</div>
+              <div class="mob-list__favorites-btn"></div>
+            </div>
+            <div class="mob-list__item-bottom"><a class="mob-list__title-link" href="#">Название объявления</a>
+              <div class="mob-list__price">1 110 000 ₽</div>
+            </div>
+          </div>
+          <div class="mob-list__item">
+            <div class="mob-list__item-top"><a class="mob-list__link" href="#"><img class="mob-list__img" src="../img/examples/3.png"></a>
+              <div class="mob-list__location">Москва</div>
+              <div class="mob-list__favorites-btn"></div>
+            </div>
+            <div class="mob-list__item-bottom"><a class="mob-list__title-link" href="#">Название объявления</a>
+              <div class="mob-list__price">1 110 000 ₽</div>
+            </div>
+          </div>
+          <div class="mob-list__item">
+            <div class="mob-list__item-top"><a class="mob-list__link" href="#"><img class="mob-list__img" src="../img/examples/3.png"></a>
+              <div class="mob-list__location">Москва</div>
+              <div class="mob-list__favorites-btn"></div>
+            </div>
+            <div class="mob-list__item-bottom"><a class="mob-list__title-link" href="#">Название объявления</a>
+              <div class="mob-list__price">1 110 000 ₽</div>
+            </div>
+          </div>
+          <div class="mob-list__item">
+            <div class="mob-list__item-top"><a class="mob-list__link" href="#"><img class="mob-list__img" src="../img/examples/3.png"></a>
+              <div class="mob-list__location">Москва</div>
+              <div class="mob-list__favorites-btn"></div>
+            </div>
+            <div class="mob-list__item-bottom"><a class="mob-list__title-link" href="#">Название объявления</a>
+              <div class="mob-list__price">1 110 000 ₽</div>
+            </div>
+          </div>
+          <div class="mob-list__item">
+            <div class="mob-list__item-top"><a class="mob-list__link" href="#"><img class="mob-list__img" src="../img/examples/3.png"></a>
+              <div class="mob-list__location">Москва</div>
+              <div class="mob-list__favorites-btn"></div>
+            </div>
+            <div class="mob-list__item-bottom"><a class="mob-list__title-link" href="#">Название объявления</a>
+              <div class="mob-list__price">1 110 000 ₽</div>
+            </div>
+          </div>
+          <div class="mob-list__item">
+            <div class="mob-list__item-top"><a class="mob-list__link" href="#"><img class="mob-list__img" src="../img/examples/3.png"></a>
+              <div class="mob-list__location">Москва</div>
+              <div class="mob-list__favorites-btn"></div>
+            </div>
+            <div class="mob-list__item-bottom"><a class="mob-list__title-link" href="#">Название объявления</a>
+              <div class="mob-list__price">1 110 000 ₽</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><a class="add-btn" href="#"></a>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__col footer__col_left">
+          <div class="footer__nav"><a class="footer__nav-item" href="#">Объявления</a><a class="footer__nav-item" href="#">Подать объявление</a><a class="footer__nav-item" href="#">Безопасность</a></div>
+          <div class="footer__nav"><a class="footer__nav-item" href="#">Обратная связь</a><a class="footer__nav-item" href="#">Открыть Компанию</a><a class="footer__nav-item" href="#">Реклама на сайте</a></div>
+        </div>
+        <div class="footer__col footer__col_right">
+          <div class="footer__age">16+</div>
+          <div class="footer__copyright">&copy; ANONS.INFO &mdash; сайт бесплатных объявлений.</div>
+          <div class="footer__text">Использование сайта означает согласие<br>с&nbsp;<a class="footer__link" href="#">пользовательским соглашением</a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app-project-base.js"></script>
+    <script src="js/app-project-run.js"></script>
+  </body>
+</html>

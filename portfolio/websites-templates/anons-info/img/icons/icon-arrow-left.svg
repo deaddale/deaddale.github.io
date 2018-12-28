@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>back_arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="00.01.02-Splash_Location_Manual" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-21.000000, -44.000000)">
+        <g id="Title" fill="#FFFFFF">
+            <g id="back_arrow" transform="translate(20.000000, 44.000000)">
+                <path d="M4.5,7 L9.39075613,2.10924387 C9.7824607,1.7175393 9.78929462,1.08929462 9.39179704,0.691797042 L9.40820296,0.708202958 C9.01707326,0.317073265 8.3764822,0.323517799 7.99005337,0.709946632 L1.40994663,7.29005337 C1.01785393,7.68214607 1.0235178,8.3235178 1.40994663,8.70994663 L7.99005337,15.2900534 C8.38214607,15.6821461 9.01070538,15.6892946 9.40820296,15.291797 L9.39179704,15.308203 C9.78292674,14.9170733 9.78287458,14.2828746 9.39075613,13.8907561 L4.5,9 L15.7016228,9 C16.2530113,9 16.7,8.55613518 16.7,8 L16.7,8 C16.7,7.44771525 16.2513267,7 15.7016228,7 L4.5,7 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

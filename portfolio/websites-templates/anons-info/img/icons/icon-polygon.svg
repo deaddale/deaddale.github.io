@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="226px" height="25px" viewBox="0 0 226 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rectangle-3" fill="#F9F9F9" fill-rule="nonzero">
+            <polygon id="Rectangle" points="0 0 226 0 224.798895 6 1.2624104 6"></polygon>
+            <path d="M3.66131353,0 L222.35622,4.4408921e-16 C224.013074,1.39730022e-16 225.35622,1.34314575 225.35622,3 C225.35622,3.19334663 225.337528,3.38624046 225.300406,3.57598999 L221.583315,22.57599 C221.307842,23.9840776 220.07391,25 218.639129,25 L7.47138142,25 C6.0419129,25 4.81099542,23.9914132 4.52993951,22.589847 L0.719871623,3.58984702 C0.39410811,1.96533351 1.446953,0.384321606 3.07146651,0.0585580926 C3.26566704,0.0196150833 3.46324687,1.36865188e-15 3.66131353,1.33226763e-15 Z" id="Rectangle"></path>
+        </g>
+    </g>
+</svg>

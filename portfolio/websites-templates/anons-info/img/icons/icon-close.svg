@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="01-Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01-Home-2" transform="translate(-928.000000, -156.000000)" fill="#D8D8D8" stroke="#979797">
+            <g id="Region" transform="translate(867.000000, 110.000000)">
+                <path d="M71,50.5 L66.5,50.5 L66.5,46 C66.5,45.7238576 66.2761424,45.5 66,45.5 C65.7238576,45.5 65.5,45.7238576 65.5,46 L65.5,50.5 L61,50.5 C60.7238576,50.5 60.5,50.7238576 60.5,51 C60.5,51.2761424 60.7238576,51.5 61,51.5 L65.5,51.5 L65.5,56 C65.5,56.2761424 65.7238576,56.5 66,56.5 C66.2761424,56.5 66.5,56.2761424 66.5,56 L66.5,51.5 L71,51.5 C71.2761424,51.5 71.5,51.2761424 71.5,51 C71.5,50.7238576 71.2761424,50.5 71,50.5 Z" id="Combined-Shape" transform="translate(66.000000, 51.000000) rotate(45.000000) translate(-66.000000, -51.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

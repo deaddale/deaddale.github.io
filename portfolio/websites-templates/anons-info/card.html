@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>anons.info | Card page</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="skype-toolbar" content="skype-toolbar-parser-compatible">
+    <link rel="stylesheet" href="css/app-project.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container"><a class="header__logo" href="/"></a>
+        <div class="header__nav"><a class="header__nav-item" href="#">Новый поиск</a><a class="header__nav-item" href="#">Компании</a><a class="header__nav-item" href="#">СМИ</a></div>
+        <div class="header__panel"><a class="header__panel-item header__panel-item_saved-search" href="#"></a><a class="header__panel-item header__panel-item_favorites" href="#"></a><a class="header__panel-item header__panel-item_messages" href="#"></a><a class="header__panel-item header__panel-item_accounts" href="#"></a><a class="header__add-ad-for-sale" href="#">Подать объявление</a></div>
+      </div>
+    </header>
+    <header class="header_mobile">
+      <div class="header__container">
+        <div class="header__burger-btn"></div>
+        <div class="header__search-wrapper">
+          <button class="header__search-btn" type="submit"></button>
+          <input class="header__search-input" type="text" placeholder="Текст для поиска ..." value="">
+        </div>
+        <div class="header__filter-btn"></div>
+      </div>
+      <div class="header__nav-panel">
+        <div class="header__nav-panel-wrapper"><a class="header__nav-panel-item header__nav-panel-item_log-in" href="#">Авторизуйтесь</a><a class="header__nav-panel-item header__nav-panel-item_ads" href="#">Объявления</a><a class="header__nav-panel-item header__nav-panel-item_favorites" href="#">Избранное</a><a class="header__nav-panel-item header__nav-panel-item_company" href="#">Компании</a><a class="header__nav-panel-item header__nav-panel-item_post-an-ad" href="#">Подать объявление</a><a class="header__nav-panel-item header__nav-panel-item_help" href="#">Помощь</a></div>
+        <div class="header__nav-panel-overlay"></div>
+      </div>
+      <div class="header__filter-panel">
+        <div class="header__filter-panel-header">
+          <div class="header__filter-panel-header-btn"></div>
+          <div class="header__filter-panel-header-title">Фильтр</div>
+          <div class="header__filter-panel-header-reset">Сбросить</div>
+        </div>
+        <div class="header__filter-panel-content">
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Категория</div>
+            <select class="header__filter-panel-select">
+              <option class="header__filter-panel-select-option" value="0">Все рубрики</option>
+              <option class="header__filter-panel-select-option" value="1">Рубрика 1</option>
+              <option class="header__filter-panel-select-option" value="2">Рубрика 2</option>
+              <option class="header__filter-panel-select-option" value="3">Рубрика 3</option>
+              <option class="header__filter-panel-select-option" value="4">Рубрика 4</option>
+            </select>
+          </div>
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Местоположение</div>
+            <div class="header__filter-panel-text">Москва </div>
+          </div>
+          <div class="header__filter-panel-item header__filter-panel-item_distance">
+            <div class="header__filter-panel-title">На расстоянии</div>
+            <div class="header__filter-panel-text-of-distance"><span class="header__filter-panel-text-of-distance-number"></span>&nbsp;км</div>
+            <div class="header__filter-slider-of-distance"></div>
+          </div>
+          <div class="header__filter-panel-item header__filter-panel-item_price">
+            <div class="header__filter-price-inputs">
+              <input class="header__filter-price-input-item" type="text" placeholder="Цена от" value="">
+              <input class="header__filter-price-input-item" type="text" placeholder="Цена до" value="">
+            </div>
+          </div>
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Сортировка</div>
+            <select class="header__filter-panel-select">
+              <option class="header__filter-panel-select-option" value="0">По дате</option>
+              <option class="header__filter-panel-select-option" value="1">Два</option>
+              <option class="header__filter-panel-select-option" value="2">Три</option>
+              <option class="header__filter-panel-select-option" value="3">Четыре</option>
+              <option class="header__filter-panel-select-option" value="4">Пять</option>
+            </select>
+          </div>
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Опубликовано</div>
+            <select class="header__filter-panel-select">
+              <option class="header__filter-panel-select-option" value="0">Все время</option>
+              <option class="header__filter-panel-select-option" value="1">Два</option>
+              <option class="header__filter-panel-select-option" value="2">Три</option>
+              <option class="header__filter-panel-select-option" value="3">Четыре</option>
+              <option class="header__filter-panel-select-option" value="4">Пять</option>
+            </select>
+          </div>
+          <div class="header__filter-panel-item">
+            <label class="header__filter-panel-checkbox-wrapper">
+              <input class="header__filter-panel-checkbox-input" type="checkbox" name="photo"><span class="header__filter-panel-checkbox-custom"></span><span class="header__filter-panel-checkbox-text">только с фото</span>
+            </label>
+          </div>
+        </div><a class="header__btn-mobile" href="#">Показать объявления</a>
+      </div>
+      <div class="header__region">
+        <div class="header__region-header">
+          <div class="header__region-header-btn"></div>
+          <div class="header__region-header-title">Выберите регион</div>
+        </div>
+        <form class="header__region-search-form">
+          <input class="header__region-search-btn" type="submit">
+          <input class="header__region-search-input" type="text" placeholder="Вводите для быстрого поиска" value="">
+        </form>
+        <div class="header__region-search-list"><a class="header__region-search-item" href="#">Московская обл.</a><a class="header__region-search-item" href="#">Мурманская обл. </a><a class="header__region-search-item" href="#">Ненецкий АО </a><a class="header__region-search-item" href="#">Нижегородская обл. </a><a class="header__region-search-item" href="#">Новгородская обл. </a><a class="header__region-search-item" href="#">Оренбургская обл. </a><a class="header__region-search-item" href="#">Орловская обл. </a><a class="header__region-search-item" href="#">Пензенская обл. </a><a class="header__region-search-item" href="#">Пермский край </a><a class="header__region-search-item" href="#">Псковская обл. </a><a class="header__region-search-item" href="#">Ростовская обл. </a><a class="header__region-search-item" href="#">Рязанская обл. </a><a class="header__region-search-item" href="#">Самарская обл. </a><a class="header__region-search-item" href="#">Саратовская обл. </a><a class="header__region-search-item" href="#">Свердловская обл. </a><a class="header__region-search-item" href="#">Северная Осетия </a><a class="header__region-search-item" href="#">Смоленская обл. </a><a class="header__region-search-item" href="#">Ставропольский край</a></div>
+      </div>
+    </header>
+    <div class="content content_card">
+      <div class="content__container">
+        <form class="search">
+          <div class="search__container">
+            <div class="search__row search__row_align-justify">
+              <div class="search__col">
+                <input class="search__input-text" type="search" placeholder="Введите текст для поиска">
+              </div>
+              <div class="search__col">
+                <div class="search__select search__select_categories" data-window="1">
+                  <div class="search__select-title">Выбрать рубрику</div>
+                </div>
+              </div>
+              <div class="search__col">
+                <div class="search__select search__select_location" data-window="2">
+                  <div class="search__select-title">Выбрать город</div>
+                </div>
+              </div>
+              <div class="search__col">
+                <input class="search__btn" type="submit" value="Поиск">
+              </div>
+            </div>
+            <div class="search__row search__row_no-indent">
+              <div class="search__select-list search__select-list_categories" data-window="1"><a class="search__categories-item search__categories-item_real-estate" href="#">
+                  <div class="search__categories-text">Недвижимость</div></a><a class="search__categories-item search__categories-item_jobs" href="#">
+                  <div class="search__categories-text">Работа, вакансии</div></a><a class="search__categories-item search__categories-item_building" href="#">
+                  <div class="search__categories-text">Строительные<br>материалы</div></a><a class="search__categories-item search__categories-item_transport" href="#">
+                  <div class="search__categories-text">Транспортные<br>средства</div></a><a class="search__categories-item search__categories-item_contacts" href="#">
+                  <div class="search__categories-text">Деловые контакты</div></a><a class="search__categories-item search__categories-item_animals" href="#">
+                  <div class="search__categories-text">Животные</div></a><a class="search__categories-item search__categories-item_services" href="#">
+                  <div class="search__categories-text">Услуги</div></a><a class="search__categories-item search__categories-item_resume" href="#">
+                  <div class="search__categories-text">Работа, резюме</div></a><a class="search__categories-item search__categories-item_dating" href="#">
+                  <div class="search__categories-text">Знакомства</div></a><a class="search__categories-item search__categories-item_products" href="#">
+                  <div class="search__categories-text">Товары</div></a><a class="search__categories-item search__categories-item_instruments" href="#">
+                  <div class="search__categories-text">Оборудование<br>и инструменты</div></a><a class="search__categories-item search__categories-item_messages" href="#">
+                  <div class="search__categories-text">Послания</div></a></div>
+            </div>
+            <div class="search__row search__row_no-indent">
+              <div class="search__select-list search__select-list_location" data-window="2">
+                <div class="search__list-location-top">
+                  <div class="search__list-location-breadcrumbs"><a class="search__list-location-breadcrumbs-item" href="#">Россия</a>&nbsp;/&nbsp;<a class="search__list-location-breadcrumbs-item" href="#">Город</a></div>
+                  <div class="search__list-location-btn">Выбрать всю Россию</div>
+                </div>
+                <div class="search__list-location-bottom">
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">А</div><a class="search__list-location-item-text" href="#">Адыгея</a><a class="search__list-location-item-text" href="#">Алтайский край</a><a class="search__list-location-item-text" href="#">Амурская обл.</a><a class="search__list-location-item-text" href="#">Архангельская обл.</a><a class="search__list-location-item-text" href="#">Астраханская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Б</div><a class="search__list-location-item-text" href="#">Башкортостан</a><a class="search__list-location-item-text" href="#">Белгородская обл.</a><a class="search__list-location-item-text" href="#">Брянская обл.</a><a class="search__list-location-item-text" href="#">Бурятия</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">В</div><a class="search__list-location-item-text" href="#">Владимирская обл.</a><a class="search__list-location-item-text" href="#">Волгоградская обл.</a><a class="search__list-location-item-text" href="#">Вологодская обл.</a><a class="search__list-location-item-text" href="#">Воронежская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Д</div><a class="search__list-location-item-text" href="#">Дагестан</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Е</div><a class="search__list-location-item-text" href="#">Еврейская АО</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">З</div><a class="search__list-location-item-text" href="#">Забайкальский край</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">И</div><a class="search__list-location-item-text" href="#">Ивановская обл.</a><a class="search__list-location-item-text" href="#">Ингушетия</a><a class="search__list-location-item-text" href="#">Иркутская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">К</div><a class="search__list-location-item-text" href="#">Кабардино-Балкария</a><a class="search__list-location-item-text" href="#">Калининградская обл.</a><a class="search__list-location-item-text" href="#">Калмыкия</a><a class="search__list-location-item-text" href="#">Калужская обл.</a><a class="search__list-location-item-text" href="#">Камчатский край</a><a class="search__list-location-item-text" href="#">Карачаево-Черкесия</a><a class="search__list-location-item-text" href="#">Карелия</a><a class="search__list-location-item-text" href="#">Кемеровская обл.</a><a class="search__list-location-item-text" href="#">Кировская обл.</a><a class="search__list-location-item-text" href="#">Коми</a><a class="search__list-location-item-text" href="#">Костромская обл.</a><a class="search__list-location-item-text" href="#">Краснодарский край</a><a class="search__list-location-item-text" href="#">Красноярский край</a><a class="search__list-location-item-text" href="#">Крым</a><a class="search__list-location-item-text" href="#">Курганская обл.</a><a class="search__list-location-item-text" href="#">Курская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Л</div><a class="search__list-location-item-text" href="#">Ленинградская обл.</a><a class="search__list-location-item-text" href="#">Липецкая обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">М</div><a class="search__list-location-item-text" href="#">Магаданская обл.</a><a class="search__list-location-item-text" href="#">Марий Эл</a><a class="search__list-location-item-text" href="#">Мордовия</a><a class="search__list-location-item-text search__list-location-item-text_selected" href="#">Москва</a><a class="search__list-location-item-text" href="#">Московская обл.</a><a class="search__list-location-item-text" href="#">Мурманская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Н</div><a class="search__list-location-item-text" href="#">Ненецкий АО</a><a class="search__list-location-item-text" href="#">Нижегородская обл.</a><a class="search__list-location-item-text" href="#">Новгородская обл.</a><a class="search__list-location-item-text" href="#">Новосибирская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">О</div><a class="search__list-location-item-text" href="#">Омская обл.</a><a class="search__list-location-item-text" href="#">Оренбургская обл.</a><a class="search__list-location-item-text" href="#">Орловская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">П</div><a class="search__list-location-item-text" href="#">Пензенская обл.</a><a class="search__list-location-item-text" href="#">Пермский край</a><a class="search__list-location-item-text" href="#">Приморский край</a><a class="search__list-location-item-text" href="#">Псковская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Р</div><a class="search__list-location-item-text" href="#">Республика Алтай</a><a class="search__list-location-item-text" href="#">Ростовская обл.</a><a class="search__list-location-item-text" href="#">Рязанская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">С</div><a class="search__list-location-item-text" href="#">Самарская обл.</a><a class="search__list-location-item-text search__list-location-item-text_selected" href="#">Санкт-Петербург</a><a class="search__list-location-item-text" href="#">Саратовская обл.</a><a class="search__list-location-item-text" href="#">Сахалинская обл.</a><a class="search__list-location-item-text" href="#">Саха (Якутия)</a><a class="search__list-location-item-text" href="#">Свердловская обл.</a><a class="search__list-location-item-text" href="#">Севастополь</a><a class="search__list-location-item-text" href="#">Северная Осетия</a><a class="search__list-location-item-text" href="#">Смоленская обл.</a><a class="search__list-location-item-text" href="#">Ставропольский край</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Т</div><a class="search__list-location-item-text" href="#">Тамбовская обл.</a><a class="search__list-location-item-text" href="#">Татарстан</a><a class="search__list-location-item-text" href="#">Тверская обл.</a><a class="search__list-location-item-text" href="#">Томская обл.</a><a class="search__list-location-item-text" href="#">Тульская обл.</a><a class="search__list-location-item-text" href="#">Тыва</a><a class="search__list-location-item-text" href="#">Тюменская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">У</div><a class="search__list-location-item-text" href="#">Удмуртия</a><a class="search__list-location-item-text" href="#">Ульяновская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Х</div><a class="search__list-location-item-text" href="#">Хабаровский край</a><a class="search__list-location-item-text" href="#">Хакасия</a><a class="search__list-location-item-text" href="#">Ханты-Мансийский АО</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Ч</div><a class="search__list-location-item-text" href="#">Челябинская обл.</a><a class="search__list-location-item-text" href="#">Чеченская республика</a><a class="search__list-location-item-text" href="#">Чувашия</a><a class="search__list-location-item-text" href="#">Чукотский АО</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Я</div><a class="search__list-location-item-text" href="#">Ямало-Ненецкий АО</a><a class="search__list-location-item-text" href="#">Ярославская обл.</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search__row search__row_align-justify search__row_col-flex-width">
+              <div class="search__col">
+                <label class="search__checkbox-wrapper search__checkbox-wrapper_with-photo">
+                  <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Только с фото</span>
+                </label>
+              </div>
+              <div class="search__col"><a class="search__link" href="#">Сохранить фильтр</a></div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="content__container">
+        <div class="content__col content__col_left">
+          <div class="breadcrumbs">
+            <div class="breadcrumbs__container">
+              <div class="breadcrumbs__location"><a class="breadcrumbs__link" href="#">Тюменская обл.</a>&nbsp;/&nbsp;<a class="breadcrumbs__link" href="#">Тюмень</a></div>
+              <div class="breadcrumbs__categories"><a class="breadcrumbs__link" href="#">Недвижимость</a>&nbsp;/&nbsp;<a class="breadcrumbs__link" href="#">Квартиры</a>&nbsp;/&nbsp;<a class="breadcrumbs__link" href="#">Продажа</a></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__container card__container_top">
+              <div class="card__col card__col_left">
+                <div class="card__header-title">3-комн. кв., 63 м2, 5/20 эт.</div>
+                <div class="card__header-date">Опубликовано 25 мая 2018 г. 19:14</div>
+              </div>
+              <div class="card__col card__col_right">
+                <div class="card__header-views">Просмотров: 197</div>
+              </div>
+            </div>
+            <div class="card__container card__container_middle">
+              <div class="card__slider-for">
+                <div class="card__slider-for-item"><img class="card__slider-for-img" src="../img/examples/card/1.png" alt=""></div>
+                <div class="card__slider-for-item"><img class="card__slider-for-img" src="../img/examples/card/2.png" alt=""></div>
+                <div class="card__slider-for-item"><img class="card__slider-for-img" src="../img/examples/card/3.png" alt=""></div>
+                <div class="card__slider-for-item"><img class="card__slider-for-img" src="../img/examples/card/4.png" alt=""></div>
+                <div class="card__slider-for-item"><img class="card__slider-for-img" src="../img/examples/card/5.png" alt=""></div>
+                <div class="card__slider-for-item"><img class="card__slider-for-img" src="../img/examples/card/6.png" alt=""></div>
+                <div class="card__slider-for-item"><img class="card__slider-for-img" src="../img/examples/card/7.png" alt=""></div>
+              </div>
+              <div class="card__slider-nav">
+                <div class="card__slider-nav-item"><img class="card__slider-nav-img" src="../img/examples/card/1.png" alt=""></div>
+                <div class="card__slider-nav-item"><img class="card__slider-nav-img" src="../img/examples/card/2.png" alt=""></div>
+                <div class="card__slider-nav-item"><img class="card__slider-nav-img" src="../img/examples/card/3.png" alt=""></div>
+                <div class="card__slider-nav-item"><img class="card__slider-nav-img" src="../img/examples/card/4.png" alt=""></div>
+                <div class="card__slider-nav-item"><img class="card__slider-nav-img" src="../img/examples/card/5.png" alt=""></div>
+                <div class="card__slider-nav-item"><img class="card__slider-nav-img" src="../img/examples/card/6.png" alt=""></div>
+                <div class="card__slider-nav-item"><img class="card__slider-nav-img" src="../img/examples/card/7.png" alt=""></div>
+              </div>
+            </div>
+            <div class="card__container card__container_bottom">
+              <div class="card__price">
+                <div class="card__price-col card__price-col_left">
+                  <div class="card__price-text">7 610 400 руб.</div>
+                </div>
+                <div class="card__price-col card__price-col_right"><a class="card__link card__link_message" href="#">Написать автору</a><a class="card__link card__link_favorites" href="#">Добавить в избранное</a></div>
+              </div>
+              <div class="card__text">
+                <div class="card__text-line">
+                  <div class="card__text-line-selected">Продавец:&nbsp;</div><a class="card__text-link" href="#">Татьяна</a>&nbsp;(активных объявлений: 1)
+                </div>
+                <div class="card__text-line">
+                  <div class="card__text-line-selected">Телефон:&nbsp;</div><a class="card__text-phone" href="#">Показать телефон</a>
+                </div>
+              </div>
+              <div class="card__text">
+                <div class="card__text-line">
+                  <div class="card__text-line-selected">Категория дома:&nbsp;</div>Новостройка
+                </div>
+                <div class="card__text-line">
+                  <div class="card__text-line-selected">Количество комнат:&nbsp;</div>3
+                </div>
+                <div class="card__text-line">
+                  <div class="card__text-line-selected">Этаж квартиры:&nbsp;</div>2
+                </div>
+                <div class="card__text-line">
+                  <div class="card__text-line-selected">Тип дома:&nbsp;</div>Монолитный
+                </div>
+                <div class="card__text-line">
+                  <div class="card__text-line-selected">Площадь общая:&nbsp;</div>76 м²
+                </div>
+                <div class="card__text-line">
+                  <div class="card__text-line-selected">Этажность дома:&nbsp;</div>25
+                </div>
+              </div>
+              <div class="card__text">
+                <p>Тормоза колодочные гидравлические ТКГ-160, ТКГ-200, ТКГ-300, ТКГ-400, ТКГ-500 ООО &laquo;ЭнергоПривод&raquo; осуществляет поставки тормозов колодочных гидравлических ТКГ-160, ТКГ-200, ТКГ-300, ТКГ-400, ТКГ-500.</p>
+                <p>Назначение:<br>Тормоза колодочные гидравлические ТКГ-160, ТКГ-200, ТКГ-300, ТКГ-400, ТКГ-500 предназначены для валов механизмов в&nbsp;заторможенном состоянии при неработающем приводе.</p>
+                <p>Условия применения:<br>Устанавливаются на&nbsp;подъемно-транспортном оборудовании, работающем в&nbsp;не&nbsp;пожаро- и&nbsp;не&nbsp;взрывоопасной среде для применения в&nbsp;районах с&nbsp;умеренным климатом.<br>Качество поставляемой продукции гарантируем.</p><span>Обозначение при заказе:</span><br>
+                <ul>
+                  <li>тормоз колодочный ТКГ-160&nbsp;в сборе с&nbsp;ТЭ-30.</li>
+                  <li>тормоз колодочный ТКГ-200&nbsp;в сборе с&nbsp;ТЭ-30.</li>
+                  <li>тормоз колодочный ТКГ-300&nbsp;в сборе с&nbsp;ТЭ-50.</li>
+                  <li>тормоз колодочный ТКГ-400&nbsp;в сборе с&nbsp;ТЭ-80.</li>
+                  <li>тормоз колодочный ТКГ-500&nbsp;в сборе с&nbsp;ТЭ-80.</li>
+                </ul>
+                <p>Мы&nbsp;продаём тормоза ТКГ как в&nbsp;сборе с&nbsp;толкателем&nbsp;ТЭ, так и&nbsp;без него.<br>Отдельно можем поставить гидротолкатели ТЭ-30, ТЭ-50, ТЭ-80.<br>Доставка в&nbsp;любой регион России и&nbsp;Казахстана, авто транспортными и&nbsp;ЖД компаниями!</p>
+              </div>
+            </div>
+          </div>
+          <div class="share">
+            <div class="share__container">
+              <div class="share__col share__col_left">
+                <div class="share__text">Разместить на своей странице:</div>
+                <div class="share__items-wrapper"><a class="share__item share__item_vk" href="#"></a><a class="share__item share__item_facebook" href="#"></a><a class="share__item share__item_ok" href="#"></a><a class="share__item share__item_google" href="#"></a><a class="share__item share__item_moi-krug" href="#"></a><a class="share__item share__item_twitter" href="#"></a><a class="share__item share__item_lj" href="#"></a></div>
+              </div>
+              <div class="share__col share__col_right"><a class="share__link" href="#">Пожаловаться</a></div>
+            </div>
+          </div>
+          <div class="similar-ads">
+            <div class="similar-ads__container similar-ads__container_top">
+              <h2 class="similar-ads__title">Похожие объявления</h2>
+            </div>
+            <div class="similar-ads__container similar-ads__container_bottom"><a class="similar-ads__item" href="#">
+                <div class="similar-ads__img-wrapper"><img class="similar-ads__img" src="https://www.anons.info/media/cache/83/6c/836c10651cb9aa4cd424517d0306ff65.jpg" alt=""></div>
+                <div class="similar-ads__subtitle">Дом, 2-эт., 120 кв. м.</div>
+                <div class="similar-ads__location">Яблоновский пгт.</div>
+                <div class="similar-ads__price">4 500 000 руб.</div></a><a class="similar-ads__item" href="#">
+                <div class="similar-ads__img-wrapper"><img class="similar-ads__img" src="https://www.anons.info/media/cache/83/6c/836c10651cb9aa4cd424517d0306ff65.jpg" alt=""></div>
+                <div class="similar-ads__subtitle">Дом, 2-эт., 120 кв. м.</div>
+                <div class="similar-ads__location">Яблоновский пгт.</div>
+                <div class="similar-ads__price">4 500 000 руб.</div></a><a class="similar-ads__item" href="#">
+                <div class="similar-ads__img-wrapper"><img class="similar-ads__img" src="https://www.anons.info/media/cache/83/6c/836c10651cb9aa4cd424517d0306ff65.jpg" alt=""></div>
+                <div class="similar-ads__subtitle">Дом, 2-эт., 120 кв. м.</div>
+                <div class="similar-ads__location">Яблоновский пгт.</div>
+                <div class="similar-ads__price">4 500 000 руб.</div></a><a class="similar-ads__item" href="#">
+                <div class="similar-ads__img-wrapper"><img class="similar-ads__img" src="https://www.anons.info/media/cache/83/6c/836c10651cb9aa4cd424517d0306ff65.jpg" alt=""></div>
+                <div class="similar-ads__subtitle">Дом, 2-эт., 120 кв. м.</div>
+                <div class="similar-ads__location">Яблоновский пгт.</div>
+                <div class="similar-ads__price">4 500 000 руб.</div></a></div>
+          </div>
+        </div>
+        <div class="content__col content__col_right">
+          <div class="banner"><a class="banner__link" href="#"><img class="banner__img" src="../img/examples/2.png" alt=""></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="content content_mobile">
+      <div class="card-mobile">
+        <div class="card-mobile__container card-mobile__container_top">
+          <div class="card-mobile__slider-ui"><a class="card-mobile__back-btn" href="#"></a>
+            <div class="card-mobile__favorites-btn" href="#"></div>
+          </div>
+          <div class="card-mobile__slider">
+            <div class="card-mobile__slider-item"><img class="card-mobile__slider-img" src="../img/examples/card/1.png" alt=""></div>
+            <div class="card-mobile__slider-item"><img class="card-mobile__slider-img" src="../img/examples/card/2.png" alt=""></div>
+            <div class="card-mobile__slider-item"><img class="card-mobile__slider-img" src="../img/examples/card/3.png" alt=""></div>
+            <div class="card-mobile__slider-item"><img class="card-mobile__slider-img" src="../img/examples/card/4.png" alt=""></div>
+            <div class="card-mobile__slider-item"><img class="card-mobile__slider-img" src="../img/examples/card/5.png" alt=""></div>
+            <div class="card-mobile__slider-item"><img class="card-mobile__slider-img" src="../img/examples/card/6.png" alt=""></div>
+            <div class="card-mobile__slider-item"><img class="card-mobile__slider-img" src="../img/examples/card/7.png" alt=""></div>
+          </div>
+        </div>
+        <div class="card-mobile__container card-mobile__container_bottom">
+          <div class="card-mobile__location">Москва</div>
+          <div class="card-mobile__title">Название объявления</div>
+          <div class="card-mobile__price">10 000 ₽</div>
+          <div class="card-mobile__tel-number">
+            <div class="card-mobile__tel-number-btn">Показать номер</div>
+            <div class="card-mobile__tel-number-text">+7 (987) 654-32-11</div>
+          </div><a class="card-mobile__write-btn" href="#">Написать</a>
+          <div class="card-mobile__author">
+            <div class="card-mobile__author-col"><img class="card-mobile__author-img" src="../img/examples/4.png" alt=""></div>
+            <div class="card-mobile__author-col">
+              <div class="card-mobile__author-title">Татьяна Т.</div>
+              <div class="card-mobile__author-rating">
+                <div class="card-mobile__author-rating-item card-mobile__author-rating-item_active"></div>
+                <div class="card-mobile__author-rating-item card-mobile__author-rating-item_active"></div>
+                <div class="card-mobile__author-rating-item card-mobile__author-rating-item_active"></div>
+                <div class="card-mobile__author-rating-item card-mobile__author-rating-item_active"></div>
+                <div class="card-mobile__author-rating-item card-mobile__author-rating-item_active"></div>
+              </div>
+              <div class="card-mobile__author-text">32 объявления</div>
+            </div>
+          </div>
+          <div class="card-mobile__breadcrumbs">
+            <div class="card-mobile__breadcrumbs-title">Рубрика</div>
+            <div class="card-mobile__breadcrumbs-wrapper"><a class="card-mobile__breadcrumbs-item" href="#">Недвижимость</a>&nbsp;/&nbsp;<a class="card-mobile__breadcrumbs-item" href="#">Квартиры</a>&nbsp;/&nbsp;<a class="card-mobile__breadcrumbs-item" href="#">Продажа</a></div>
+          </div>
+          <div class="card-mobile__text">Eum non vel perferendis sed. Quod itaque ut voluptatem aut atque rem est. Adipisci quia aut deleniti qui explicabo numquam. Consequuntur consectetur quam sint non sapiente.</div>
+          <div class="card-mobile__date-and-views">
+            <div class="card-mobile__date">
+              <div class="card-mobile__date-title">Опубликовано</div>
+              <div class="card-mobile__date-text">29 июля 2017 г. 17:10</div>
+            </div>
+            <div class="card-mobile__views">
+              <div class="card-mobile__views-title">Просмотров</div>
+              <div class="card-mobile__views-text">24</div>
+            </div>
+          </div>
+          <div class="card-mobile__repost">
+            <div class="card-mobile__repost-title">Опубликовать в:</div>
+            <div class="card-mobile__repost-wrapper"><a class="card-mobile__repost-item card-mobile__repost-item_link" href="#"></a><a class="card-mobile__repost-item card-mobile__repost-item_email" href="#"></a><a class="card-mobile__repost-item card-mobile__repost-item_vk" href="#"></a><a class="card-mobile__repost-item card-mobile__repost-item_ok" href="#"></a><a class="card-mobile__repost-item card-mobile__repost-item_fb" href="#"></a><a class="card-mobile__repost-item card-mobile__repost-item_twitter" href="#"></a></div>
+          </div><a class="card-mobile__complain" href="#">Пожаловаться</a>
+          <div class="card-mobile__similar-ads">
+            <div class="card-mobile__similar-ads-title">Похожие объявления</div>
+            <div class="card-mobile__similar-ads-wrapper">
+              <div class="card-mobile__similar-ads-item">
+                <div class="card-mobile__similar-ads-item-top"><a class="card-mobile__similar-ads-link" href="#"><img class="card-mobile__similar-ads-img" src="../img/examples/3.png"></a>
+                  <div class="card-mobile__similar-ads-location">Москва</div>
+                  <div class="card-mobile__similar-ads-favorites-btn"></div>
+                </div>
+                <div class="card-mobile__similar-ads-item-bottom"><a class="card-mobile__similar-ads-title-link" href="#">Название объявления</a>
+                  <div class="card-mobile__similar-ads-price">1 110 000 ₽</div>
+                </div>
+              </div>
+              <div class="card-mobile__similar-ads-item">
+                <div class="card-mobile__similar-ads-item-top"><a class="card-mobile__similar-ads-link" href="#"><img class="card-mobile__similar-ads-img" src="../img/examples/3.png"></a>
+                  <div class="card-mobile__similar-ads-location">Москва</div>
+                  <div class="card-mobile__similar-ads-favorites-btn"></div>
+                </div>
+                <div class="card-mobile__similar-ads-item-bottom"><a class="card-mobile__similar-ads-title-link" href="#">Название объявления</a>
+                  <div class="card-mobile__similar-ads-price">1 110 000 ₽</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__col footer__col_left">
+          <div class="footer__nav"><a class="footer__nav-item" href="#">Объявления</a><a class="footer__nav-item" href="#">Подать объявление</a><a class="footer__nav-item" href="#">Безопасность</a></div>
+          <div class="footer__nav"><a class="footer__nav-item" href="#">Обратная связь</a><a class="footer__nav-item" href="#">Открыть Компанию</a><a class="footer__nav-item" href="#">Реклама на сайте</a></div>
+        </div>
+        <div class="footer__col footer__col_right">
+          <div class="footer__age">16+</div>
+          <div class="footer__copyright">&copy; ANONS.INFO &mdash; сайт бесплатных объявлений.</div>
+          <div class="footer__text">Использование сайта означает согласие<br>с&nbsp;<a class="footer__link" href="#">пользовательским соглашением</a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app-project-base.js"></script>
+    <script src="js/app-project-run.js"></script>
+  </body>
+</html>

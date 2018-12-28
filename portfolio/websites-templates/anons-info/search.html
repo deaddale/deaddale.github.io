@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>anons.info | Search page</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="skype-toolbar" content="skype-toolbar-parser-compatible">
+    <link rel="stylesheet" href="css/app-project.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container"><a class="header__logo" href="/"></a>
+        <div class="header__nav"><a class="header__nav-item" href="#">Новый поиск</a><a class="header__nav-item" href="#">Компании</a><a class="header__nav-item" href="#">СМИ</a></div>
+        <div class="header__panel"><a class="header__panel-item header__panel-item_saved-search" href="#"></a><a class="header__panel-item header__panel-item_favorites" href="#"></a><a class="header__panel-item header__panel-item_messages" href="#"></a><a class="header__panel-item header__panel-item_accounts" href="#"></a><a class="header__add-ad-for-sale" href="#">Подать объявление</a></div>
+      </div>
+    </header>
+    <header class="header_mobile">
+      <div class="header__container">
+        <div class="header__burger-btn"></div>
+        <div class="header__search-wrapper">
+          <button class="header__search-btn" type="submit"></button>
+          <input class="header__search-input" type="text" placeholder="Текст для поиска ..." value="">
+        </div>
+        <div class="header__filter-btn"></div>
+      </div>
+      <div class="header__nav-panel">
+        <div class="header__nav-panel-wrapper"><a class="header__nav-panel-item header__nav-panel-item_log-in" href="#">Авторизуйтесь</a><a class="header__nav-panel-item header__nav-panel-item_ads" href="#">Объявления</a><a class="header__nav-panel-item header__nav-panel-item_favorites" href="#">Избранное</a><a class="header__nav-panel-item header__nav-panel-item_company" href="#">Компании</a><a class="header__nav-panel-item header__nav-panel-item_post-an-ad" href="#">Подать объявление</a><a class="header__nav-panel-item header__nav-panel-item_help" href="#">Помощь</a></div>
+        <div class="header__nav-panel-overlay"></div>
+      </div>
+      <div class="header__filter-panel">
+        <div class="header__filter-panel-header">
+          <div class="header__filter-panel-header-btn"></div>
+          <div class="header__filter-panel-header-title">Фильтр</div>
+          <div class="header__filter-panel-header-reset">Сбросить</div>
+        </div>
+        <div class="header__filter-panel-content">
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Категория</div>
+            <select class="header__filter-panel-select">
+              <option class="header__filter-panel-select-option" value="0">Все рубрики</option>
+              <option class="header__filter-panel-select-option" value="1">Рубрика 1</option>
+              <option class="header__filter-panel-select-option" value="2">Рубрика 2</option>
+              <option class="header__filter-panel-select-option" value="3">Рубрика 3</option>
+              <option class="header__filter-panel-select-option" value="4">Рубрика 4</option>
+            </select>
+          </div>
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Местоположение</div>
+            <div class="header__filter-panel-text">Москва </div>
+          </div>
+          <div class="header__filter-panel-item header__filter-panel-item_distance">
+            <div class="header__filter-panel-title">На расстоянии</div>
+            <div class="header__filter-panel-text-of-distance"><span class="header__filter-panel-text-of-distance-number"></span>&nbsp;км</div>
+            <div class="header__filter-slider-of-distance"></div>
+          </div>
+          <div class="header__filter-panel-item header__filter-panel-item_price">
+            <div class="header__filter-price-inputs">
+              <input class="header__filter-price-input-item" type="text" placeholder="Цена от" value="">
+              <input class="header__filter-price-input-item" type="text" placeholder="Цена до" value="">
+            </div>
+          </div>
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Сортировка</div>
+            <select class="header__filter-panel-select">
+              <option class="header__filter-panel-select-option" value="0">По дате</option>
+              <option class="header__filter-panel-select-option" value="1">Два</option>
+              <option class="header__filter-panel-select-option" value="2">Три</option>
+              <option class="header__filter-panel-select-option" value="3">Четыре</option>
+              <option class="header__filter-panel-select-option" value="4">Пять</option>
+            </select>
+          </div>
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Опубликовано</div>
+            <select class="header__filter-panel-select">
+              <option class="header__filter-panel-select-option" value="0">Все время</option>
+              <option class="header__filter-panel-select-option" value="1">Два</option>
+              <option class="header__filter-panel-select-option" value="2">Три</option>
+              <option class="header__filter-panel-select-option" value="3">Четыре</option>
+              <option class="header__filter-panel-select-option" value="4">Пять</option>
+            </select>
+          </div>
+          <div class="header__filter-panel-item">
+            <label class="header__filter-panel-checkbox-wrapper">
+              <input class="header__filter-panel-checkbox-input" type="checkbox" name="photo"><span class="header__filter-panel-checkbox-custom"></span><span class="header__filter-panel-checkbox-text">только с фото</span>
+            </label>
+          </div>
+        </div><a class="header__btn-mobile" href="#">Показать объявления</a>
+      </div>
+      <div class="header__region">
+        <div class="header__region-header">
+          <div class="header__region-header-btn"></div>
+          <div class="header__region-header-title">Выберите регион</div>
+        </div>
+        <form class="header__region-search-form">
+          <input class="header__region-search-btn" type="submit">
+          <input class="header__region-search-input" type="text" placeholder="Вводите для быстрого поиска" value="">
+        </form>
+        <div class="header__region-search-list"><a class="header__region-search-item" href="#">Московская обл.</a><a class="header__region-search-item" href="#">Мурманская обл. </a><a class="header__region-search-item" href="#">Ненецкий АО </a><a class="header__region-search-item" href="#">Нижегородская обл. </a><a class="header__region-search-item" href="#">Новгородская обл. </a><a class="header__region-search-item" href="#">Оренбургская обл. </a><a class="header__region-search-item" href="#">Орловская обл. </a><a class="header__region-search-item" href="#">Пензенская обл. </a><a class="header__region-search-item" href="#">Пермский край </a><a class="header__region-search-item" href="#">Псковская обл. </a><a class="header__region-search-item" href="#">Ростовская обл. </a><a class="header__region-search-item" href="#">Рязанская обл. </a><a class="header__region-search-item" href="#">Самарская обл. </a><a class="header__region-search-item" href="#">Саратовская обл. </a><a class="header__region-search-item" href="#">Свердловская обл. </a><a class="header__region-search-item" href="#">Северная Осетия </a><a class="header__region-search-item" href="#">Смоленская обл. </a><a class="header__region-search-item" href="#">Ставропольский край</a></div>
+      </div>
+    </header>
+    <div class="content content_search">
+      <div class="content__container">
+        <form class="search">
+          <div class="search__container">
+            <div class="search__row search__row_align-justify">
+              <div class="search__col">
+                <input class="search__input-text" type="search" placeholder="Введите текст для поиска">
+              </div>
+              <div class="search__col">
+                <div class="search__select search__select_categories" data-window="1">
+                  <div class="search__select-title">Выбрать рубрику</div>
+                </div>
+              </div>
+              <div class="search__col">
+                <div class="search__select search__select_location" data-window="2">
+                  <div class="search__select-title">Выбрать город</div>
+                </div>
+              </div>
+              <div class="search__col">
+                <input class="search__btn" type="submit" value="Поиск">
+              </div>
+            </div>
+            <div class="search__row search__row_no-indent">
+              <div class="search__select-list search__select-list_categories" data-window="1"><a class="search__categories-item search__categories-item_real-estate" href="#">
+                  <div class="search__categories-text">Недвижимость</div></a><a class="search__categories-item search__categories-item_jobs" href="#">
+                  <div class="search__categories-text">Работа, вакансии</div></a><a class="search__categories-item search__categories-item_building" href="#">
+                  <div class="search__categories-text">Строительные<br>материалы</div></a><a class="search__categories-item search__categories-item_transport" href="#">
+                  <div class="search__categories-text">Транспортные<br>средства</div></a><a class="search__categories-item search__categories-item_contacts" href="#">
+                  <div class="search__categories-text">Деловые контакты</div></a><a class="search__categories-item search__categories-item_animals" href="#">
+                  <div class="search__categories-text">Животные</div></a><a class="search__categories-item search__categories-item_services" href="#">
+                  <div class="search__categories-text">Услуги</div></a><a class="search__categories-item search__categories-item_resume" href="#">
+                  <div class="search__categories-text">Работа, резюме</div></a><a class="search__categories-item search__categories-item_dating" href="#">
+                  <div class="search__categories-text">Знакомства</div></a><a class="search__categories-item search__categories-item_products" href="#">
+                  <div class="search__categories-text">Товары</div></a><a class="search__categories-item search__categories-item_instruments" href="#">
+                  <div class="search__categories-text">Оборудование<br>и инструменты</div></a><a class="search__categories-item search__categories-item_messages" href="#">
+                  <div class="search__categories-text">Послания</div></a></div>
+            </div>
+            <div class="search__row search__row_no-indent">
+              <div class="search__select-list search__select-list_location" data-window="2">
+                <div class="search__list-location-top">
+                  <div class="search__list-location-breadcrumbs"><a class="search__list-location-breadcrumbs-item" href="#">Россия</a>&nbsp;/&nbsp;<a class="search__list-location-breadcrumbs-item" href="#">Город</a></div>
+                  <div class="search__list-location-btn">Выбрать всю Россию</div>
+                </div>
+                <div class="search__list-location-bottom">
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">А</div><a class="search__list-location-item-text" href="#">Адыгея</a><a class="search__list-location-item-text" href="#">Алтайский край</a><a class="search__list-location-item-text" href="#">Амурская обл.</a><a class="search__list-location-item-text" href="#">Архангельская обл.</a><a class="search__list-location-item-text" href="#">Астраханская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Б</div><a class="search__list-location-item-text" href="#">Башкортостан</a><a class="search__list-location-item-text" href="#">Белгородская обл.</a><a class="search__list-location-item-text" href="#">Брянская обл.</a><a class="search__list-location-item-text" href="#">Бурятия</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">В</div><a class="search__list-location-item-text" href="#">Владимирская обл.</a><a class="search__list-location-item-text" href="#">Волгоградская обл.</a><a class="search__list-location-item-text" href="#">Вологодская обл.</a><a class="search__list-location-item-text" href="#">Воронежская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Д</div><a class="search__list-location-item-text" href="#">Дагестан</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Е</div><a class="search__list-location-item-text" href="#">Еврейская АО</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">З</div><a class="search__list-location-item-text" href="#">Забайкальский край</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">И</div><a class="search__list-location-item-text" href="#">Ивановская обл.</a><a class="search__list-location-item-text" href="#">Ингушетия</a><a class="search__list-location-item-text" href="#">Иркутская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">К</div><a class="search__list-location-item-text" href="#">Кабардино-Балкария</a><a class="search__list-location-item-text" href="#">Калининградская обл.</a><a class="search__list-location-item-text" href="#">Калмыкия</a><a class="search__list-location-item-text" href="#">Калужская обл.</a><a class="search__list-location-item-text" href="#">Камчатский край</a><a class="search__list-location-item-text" href="#">Карачаево-Черкесия</a><a class="search__list-location-item-text" href="#">Карелия</a><a class="search__list-location-item-text" href="#">Кемеровская обл.</a><a class="search__list-location-item-text" href="#">Кировская обл.</a><a class="search__list-location-item-text" href="#">Коми</a><a class="search__list-location-item-text" href="#">Костромская обл.</a><a class="search__list-location-item-text" href="#">Краснодарский край</a><a class="search__list-location-item-text" href="#">Красноярский край</a><a class="search__list-location-item-text" href="#">Крым</a><a class="search__list-location-item-text" href="#">Курганская обл.</a><a class="search__list-location-item-text" href="#">Курская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Л</div><a class="search__list-location-item-text" href="#">Ленинградская обл.</a><a class="search__list-location-item-text" href="#">Липецкая обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">М</div><a class="search__list-location-item-text" href="#">Магаданская обл.</a><a class="search__list-location-item-text" href="#">Марий Эл</a><a class="search__list-location-item-text" href="#">Мордовия</a><a class="search__list-location-item-text search__list-location-item-text_selected" href="#">Москва</a><a class="search__list-location-item-text" href="#">Московская обл.</a><a class="search__list-location-item-text" href="#">Мурманская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Н</div><a class="search__list-location-item-text" href="#">Ненецкий АО</a><a class="search__list-location-item-text" href="#">Нижегородская обл.</a><a class="search__list-location-item-text" href="#">Новгородская обл.</a><a class="search__list-location-item-text" href="#">Новосибирская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">О</div><a class="search__list-location-item-text" href="#">Омская обл.</a><a class="search__list-location-item-text" href="#">Оренбургская обл.</a><a class="search__list-location-item-text" href="#">Орловская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">П</div><a class="search__list-location-item-text" href="#">Пензенская обл.</a><a class="search__list-location-item-text" href="#">Пермский край</a><a class="search__list-location-item-text" href="#">Приморский край</a><a class="search__list-location-item-text" href="#">Псковская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Р</div><a class="search__list-location-item-text" href="#">Республика Алтай</a><a class="search__list-location-item-text" href="#">Ростовская обл.</a><a class="search__list-location-item-text" href="#">Рязанская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">С</div><a class="search__list-location-item-text" href="#">Самарская обл.</a><a class="search__list-location-item-text search__list-location-item-text_selected" href="#">Санкт-Петербург</a><a class="search__list-location-item-text" href="#">Саратовская обл.</a><a class="search__list-location-item-text" href="#">Сахалинская обл.</a><a class="search__list-location-item-text" href="#">Саха (Якутия)</a><a class="search__list-location-item-text" href="#">Свердловская обл.</a><a class="search__list-location-item-text" href="#">Севастополь</a><a class="search__list-location-item-text" href="#">Северная Осетия</a><a class="search__list-location-item-text" href="#">Смоленская обл.</a><a class="search__list-location-item-text" href="#">Ставропольский край</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Т</div><a class="search__list-location-item-text" href="#">Тамбовская обл.</a><a class="search__list-location-item-text" href="#">Татарстан</a><a class="search__list-location-item-text" href="#">Тверская обл.</a><a class="search__list-location-item-text" href="#">Томская обл.</a><a class="search__list-location-item-text" href="#">Тульская обл.</a><a class="search__list-location-item-text" href="#">Тыва</a><a class="search__list-location-item-text" href="#">Тюменская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">У</div><a class="search__list-location-item-text" href="#">Удмуртия</a><a class="search__list-location-item-text" href="#">Ульяновская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Х</div><a class="search__list-location-item-text" href="#">Хабаровский край</a><a class="search__list-location-item-text" href="#">Хакасия</a><a class="search__list-location-item-text" href="#">Ханты-Мансийский АО</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Ч</div><a class="search__list-location-item-text" href="#">Челябинская обл.</a><a class="search__list-location-item-text" href="#">Чеченская республика</a><a class="search__list-location-item-text" href="#">Чувашия</a><a class="search__list-location-item-text" href="#">Чукотский АО</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Я</div><a class="search__list-location-item-text" href="#">Ямало-Ненецкий АО</a><a class="search__list-location-item-text" href="#">Ярославская обл.</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search__row search__row_align-justify search__row_col-flex-width">
+              <div class="search__col">
+                <label class="search__checkbox-wrapper search__checkbox-wrapper_with-photo">
+                  <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Только с фото</span>
+                </label>
+              </div>
+              <div class="search__col"><a class="search__link" href="#">Сохранить фильтр</a></div>
+            </div>
+          </div>
+        </form>
+        <form class="search">
+          <div class="search__container">
+            <div class="search__row search__row_align-justify search__row_col-20-percent">
+              <div class="search__col">
+                <input class="search__input-text" type="search" placeholder="Введите текст для поиска">
+              </div>
+              <div class="search__col">
+                <div class="search__select search__select_categories" data-window="1">
+                  <div class="search__select-title">Выбрать рубрику</div>
+                </div>
+              </div>
+              <div class="search__col">
+                <div class="search__select search__select_location" data-window="2">
+                  <div class="search__select-title">Выбрать город</div>
+                </div>
+              </div>
+              <div class="search__col">
+                <div class="search__select search__select_metro">
+                  <div class="search__select-title">Метро</div>
+                </div>
+              </div>
+              <div class="search__col">
+                <input class="search__btn" type="submit" value="Поиск">
+              </div>
+            </div>
+            <div class="search__row search__row_no-indent">
+              <div class="metro-moscow">
+                <div class="metro-moscow__top">
+                  <input class="metro-moscow__reset" type="button" value="Сбросить">
+                  <button class="metro-moscow__select-all" type="submit">Выбрать все районы</button>
+                </div>
+                <div class="metro-moscow__bottom">
+                  <label class="metro-moscow__label" style="top:150px; left:30px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11001}">Пятницкое шоссе</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:187px; left:30px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11002}">Митино</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:213px; left:30px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11003}">Волокаламская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:240px; left:30px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11004}">Мякинино</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:267px; left:30px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11005}">Строгино</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:293px; left:30px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11006}">Крылатское</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:320px; left:30px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11007}">Молодежная</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:364px; left:30px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11008}">Кунцевская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:613px; left:2px;">
+                    <div align="right">
+                      <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11009}">Славянский<br> бульвар</div>
+                    </div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:614px; left:83px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11010}">Парк<br> Победы</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:480px; left:304px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11011}">Смоленская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:505px; left:507px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11013}">Пл. Революции</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:395px; left:41px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11014}">Пионерская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:416px; left:41px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11015}">Филёвский парк</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:517px; left:41px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11016}">Багратионовская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:538px; left:41px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11017}">Фили</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:552px; left:78px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11018}">Кутузовская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:451px; left:57px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11019}">Международная</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:451px; left:164px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11020}">Выставочная</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:543px; left:172px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11021}">Студенческая</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:518px; left:417px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11022}">Александровский сад</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:475px; left:383px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11012}">Арбатская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:51px; left:153px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11023}">Планерная</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:75px; left:153px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11024}">Сходненская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:101px; left:153px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11025}">Тушинская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:125px; left:153px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11026}">Спартак</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:152px; left:153px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11027}">Щукинская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:241px; left:153px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11028}">Октябрьское<br>поле</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:318px; left:162px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11029}">Полежаевская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:377px; left:182px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11030}">Беговая</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:404px; left:206px;">
+                    <div align="right">
+                      <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11031}">Улица<br> 1905 года</div>
+                    </div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:387px; left:299px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11032}">Баррикадная</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:387px; left:391px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11033}">Пушкинская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:387px; left:474px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11034}">Кузнецкий мост</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:51px; left:273px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11035}">Речной вокзал</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:80px; left:273px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11036}">Водный стадион</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:152px; left:273px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11037}">Войковская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:192px; left:273px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11038}">Сокол</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:215px; left:273px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11039}">Аэропорт</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:239px; left:273px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11040}">Динамо</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:334px; left:343px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11041}">Маяковская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:427px; left:368px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11042}">Тверская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:470px; left:495px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11043}">Театральная</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:2px; left:483px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11044}">Альтуфьево</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:30px; left:483px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11045}">Бибирево</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:60px; left:483px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11046}">Отрадное</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:88px; left:483px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11047}">Владыкино</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:125px; left:439px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11048}">Петровско-Разумовская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:176px; left:389px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11049}">Тимирязевская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:205px; left:389px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11050}">Дмитровская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:226px; left:389px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11051}">Савёловская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:340px; left:424px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11052}">Цветной<br> бульвар</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:420px; left:441px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11053}">Чеховская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:212px; left:493px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11054}" style="opacity: 1;">Марьина Роща</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:232px; left:493px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11055}">Достоевская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:320px; left:490px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11056}">Трубная</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:324px; left:550px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" align="center" data-object="{&quot;id&quot;: 11057}">Сретенский<br> бульвар</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:1px; left:612px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11058}">Медведково</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:31px; left:612px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11059}" style="opacity: 1;">Бабушкинская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:60px; left:612px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11060}">Свиблово</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:102px; left:612px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11061}">Ботанический сад</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:173px; left:612px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11062}">ВДНХ</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:198px; left:612px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11063}">Алексеевская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:224px; left:598px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11064}">Рижская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:304px; left:547px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11065}">Сухаревская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:369px; left:493px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11066}">Тургеневская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:450px; left:514px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11067}">Китай-город</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:172px; left:709px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11068}">Бульвар Рокоссовского</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:218px; left:653px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11069}">Черкизовская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:248px; left:711px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11070}">Преображенская пл.</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:271px; left:688px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11071}">Сокольники</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:290px; left:671px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11072}">Красносельская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:347px; left:616px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11073}">Красные ворота</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:428px; left:532px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11074}">Лубянка</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:371px; left:595px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11075}">Чистые пруды</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:543px; left:423px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11076}">Библотека им. Ленина</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:454px; left:425px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" align="right" data-object="{&quot;id&quot;: 11077}">Охотный<br> ряд</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:150px; left:840px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11078}">Щёлковская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:193px; left:840px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11079}">Первомайская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:240px; left:840px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11080}">Измайловская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:287px; left:815px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11081}">Партизанская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:346px; left:760px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11082}">Семёновская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:365px; left:740px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11083}">Электрозаводская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:384px; left:720px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11084}">Бауманская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:356px; left:888px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11085}">Новокосино</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:374px; left:872px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11086}">Новогиреево</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:393px; left:851px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11087}">Перово</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:413px; left:767px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11088}">Шоссе энтузиастов</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:455px; left:793px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11089}">Авиамоторная</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:486px; left:760px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11090}">Площадь<br> Ильича</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:557px; left:665px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11091}">Марксистская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:915px; left:839px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11092}">Котельники</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:876px; left:839px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11093}">Жулебино</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:823px; left:839px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11094}">Лермонтовский<br> проспект</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:785px; left:839px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11095}">Выхино</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:731px; left:839px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11096}">Рязанский<br> проспект</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:694px; left:839px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11097}">Кузьминки</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:653px; left:822px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11098}">Текстильщики</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:612px; left:781px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11099}">Волгоградский проспект</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:588px; left:754px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11100}">Пролетарская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:1035px; left:705px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11101}">Зябликово</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:998px; left:705px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11102}">Шипиловская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:964px; left:705px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11103}">Бориосов</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:931px; left:705px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11104}">Марьино</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:898px; left:705px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11105}">Братиславская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:864px; left:705px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11106}">Люблино</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:831px; left:705px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11107}">Волжская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:798px; left:705px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11108}">Печатники</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:764px; left:705px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11109}">Кожуховская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:720px; left:644px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11110}">Дубровка</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:602px; left:672px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" align="right" data-object="{&quot;id&quot;: 11111}">Крестьянская<br>застава</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:464px; left:701px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11112}">Римская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:1013px; left:570px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11113}">Домодедовская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:980px; left:570px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11114}">Орехово</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:948px; left:570px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11115}">Царицино</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:916px; left:570px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11116}">Кантемировская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:878px; left:570px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11117}">Каширская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:850px; left:570px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11118}">Коломенская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:819px; left:570px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11119}">Технопарк</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:771px; left:570px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11120}">Автозаводская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:1061px; left:650px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11121}">Красногвардейская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:1061px; left:758px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11122}">Алма-Атинская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:552px; left:569px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11123}">Новокузнецкая</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:1052px; left:436px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11124}">Бульвар Дмитрия<br> Донского</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:1035px; left:436px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11125}">Аннино</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:1009px; left:436px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11126}">Улица<br> академика Янгеля</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:993px; left:436px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11127}">Пражская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:972px; left:436px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11128}">Южная</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:950px; left:436px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11129}">Чертановская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:923px; left:436px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11130}">Севастопольская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:863px; left:436px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11131}">Нахимовский<br> проспект</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:844px; left:436px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11132}">Нагорная</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:822px; left:436px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11133}">Нагатинская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:721px; left:436px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11134}">Тульская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:667px; left:436px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11135}">Серпуховская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:619px; left:436px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11136}">Полянка</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:513px; left:319px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11137}">Боровицкая</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:1000px; left:315px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11138}">Новоясеневская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:977px; left:302px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11139}">Ясенево</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:951px; left:302px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11140}">Тёплый Стан</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:925px; left:302px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11141}">Коньково</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:899px; left:302px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11142}">Беляево</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:872px; left:302px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11143}">Калужская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:847px; left:302px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11144}">Новые Черёмушки</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:821px; left:302px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11145}">Профсоюзная</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:795px; left:302px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11146}">Академическая</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:720px; left:300px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11147}">Ленинский<br> проспект</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:675px; left:337px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11148}">Шабаловская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:579px; left:469px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11149}">Третьяковская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:845px; left:182px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11150}">Тропарёво</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:882px; left:182px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15181}">Румянцево</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:916px; left:182px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15182}">Саларьево</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:810px; left:182px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11151}">Юго-западная</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:761px; left:182px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11152}">Проспект<br> Вернадского</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:729px; left:182px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11153}">Университет</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:693px; left:182px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11154}">Воробьевы горы</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:632px; left:207px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11155}">Спортивная</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:596px; left:240px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11156}">Фрунзенская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:568px; left:361px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11157}">Кропоткинская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:1030px; left:336px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11158}">Лесопарковая</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:1030px; left:242px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" align="right" data-object="{&quot;id&quot;: 11159}">Битцевский<br> парк</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:1052px; left:318px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" align="right" data-object="{&quot;id&quot;: 11160}">Улица<br> Старочкаловская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:1094px; left:160px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11161}">Бунинская<br> аллея</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:1094px; left:230px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11162}">Улица<br> Горчакова</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:1094px; left:296px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11163}">Бульвар<br> адмирала<br> Ушакова</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:1094px; left:362px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11164}">Улица<br> Скобелевская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:411px; left:290px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11165}">Краснопресненская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:641px; left:449px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11166}">Добрынинская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:478px; left:227px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11167}">Киевская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:523px; left:614px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11168}">Таганская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:265px; left:424px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11169}">Новослободская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:326px; left:246px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11170}">Белорусская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:254px; left:569px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11171}">Проспект Мира</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:315px; left:648px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11172}">Комсомольская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:415px; left:688px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11173}">Курская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:627px; left:295px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11174}">Октябрьская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:648px; left:572px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11175}">Павелецкая</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:564px; left:260px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" align="right" data-object="{&quot;id&quot;: 11176}">Парк<br> Культуры</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:496px; left:148px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11177}">Деловой<br> центр</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:899px; left:474px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 11178}">Варшавская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:209px; left:160px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15231}">Стрешнево</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:180px; left:185px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15230}">Балтийская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:283px; left:153px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15232}">Панфиловская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:423px; left:135px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15236}">Шелепиха</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:479px; left:63px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" align="right" data-object="{&quot;id&quot;: 15237}">Деловой<br> центр (МЦК)</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:358px; left:126px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15235}">Хорошёвская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:337px; left:90px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15234}">Хорошёво</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:309px; left:120px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15233}">Зорге</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:654px; left:83px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15211}">Минская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:685px; left:83px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15210}">Ломоносовский<br> проспект</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:727px; left:83px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15212}">Минская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:657px; left:208px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15213}">Лужники</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:704px; left:742px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15218}">Угрешская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:782px; left:526px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15217}">ЗИЛ</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:779px; left:461px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" align="center" data-object="{&quot;id&quot;: 15216}">Верхние<br> Котлы</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:776px; left:391px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15215}">Крымская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:752px; left:311px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15214}">Пл. Гагарина</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:299px; left:248px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15243}">ЦСКА</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:255px; left:284px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15242}">Петровский<br> парк</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:130px; left:280px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15229}">Коптево</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:112px; left:317px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15228}">Лихоборы</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:96px; left:386px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15227}">Окружная</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:60px; left:386px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15239}">Верхние<br> Лихоборы</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:37px; left:386px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15238}" style="opacity: 1;">Селигерская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:289px; left:401px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15244}">Менделеевская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:404px; left:595px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15245}">Чкаловская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:192px; left:493px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15241}">Бутырская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:152px; left:480px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15240}">Фонвизин</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:560px; left:829px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15219}">Новохохловская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:529px; left:837px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15220}">Нижегородская</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:497px; left:843px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15221}">Андроновка</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:328px; left:825px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15222}">Соколиная Гора</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:309px; left:818px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15223}">Измайлово</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:218px; left:756px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15224}">Локомотив</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:149px; left:681px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15225}">Белокаменная</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:126px; left:644px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15226}">Ростокино</div>
+                  </label>
+                  <label class="metro-moscow__label" style="top:912px; left:356px;">
+                    <div class="metro-moscow__name metro-moscow__name_select-subway-station" data-object="{&quot;id&quot;: 15246}">Каховска</div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <form class="search">
+          <div class="search__container">
+            <div class="search__row search__row_align-justify">
+              <div class="search__col">
+                <input class="search__input-text" type="search" placeholder="Введите текст для поиска">
+              </div>
+              <div class="search__col">
+                <div class="search__select search__select_categories" data-window="3">
+                  <div class="search__select-title">Выбрать рубрику</div>
+                </div>
+              </div>
+              <div class="search__col">
+                <div class="search__select search__select_location" data-window="4">
+                  <div class="search__select-title">Выбрать город</div>
+                </div>
+              </div>
+              <div class="search__col">
+                <input class="search__btn" type="submit" value="Поиск">
+              </div>
+            </div>
+            <div class="search__row search__row_no-indent">
+              <div class="search__select-list search__select-list_categories" data-window="3"><a class="search__categories-item search__categories-item_real-estate" href="#">
+                  <div class="search__categories-text">Недвижимость</div></a><a class="search__categories-item search__categories-item_jobs" href="#">
+                  <div class="search__categories-text">Работа, вакансии</div></a><a class="search__categories-item search__categories-item_building" href="#">
+                  <div class="search__categories-text">Строительные<br>материалы</div></a><a class="search__categories-item search__categories-item_transport" href="#">
+                  <div class="search__categories-text">Транспортные<br>средства</div></a><a class="search__categories-item search__categories-item_contacts" href="#">
+                  <div class="search__categories-text">Деловые контакты</div></a><a class="search__categories-item search__categories-item_animals" href="#">
+                  <div class="search__categories-text">Животные</div></a><a class="search__categories-item search__categories-item_services" href="#">
+                  <div class="search__categories-text">Услуги</div></a><a class="search__categories-item search__categories-item_resume" href="#">
+                  <div class="search__categories-text">Работа, резюме</div></a><a class="search__categories-item search__categories-item_dating" href="#">
+                  <div class="search__categories-text">Знакомства</div></a><a class="search__categories-item search__categories-item_products" href="#">
+                  <div class="search__categories-text">Товары</div></a><a class="search__categories-item search__categories-item_instruments" href="#">
+                  <div class="search__categories-text">Оборудование<br>и инструменты</div></a><a class="search__categories-item search__categories-item_messages" href="#">
+                  <div class="search__categories-text">Послания</div></a></div>
+            </div>
+            <div class="search__row search__row_no-indent">
+              <div class="search__select-list search__select-list_location" data-window="4">
+                <div class="search__list-location-top">
+                  <div class="search__list-location-breadcrumbs"><a class="search__list-location-breadcrumbs-item" href="#">Россия</a>&nbsp;/&nbsp;<a class="search__list-location-breadcrumbs-item" href="#">Город</a></div>
+                  <div class="search__list-location-btn">Выбрать всю Россию</div>
+                </div>
+                <div class="search__list-location-bottom">
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">А</div><a class="search__list-location-item-text" href="#">Адыгея</a><a class="search__list-location-item-text" href="#">Алтайский край</a><a class="search__list-location-item-text" href="#">Амурская обл.</a><a class="search__list-location-item-text" href="#">Архангельская обл.</a><a class="search__list-location-item-text" href="#">Астраханская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Б</div><a class="search__list-location-item-text" href="#">Башкортостан</a><a class="search__list-location-item-text" href="#">Белгородская обл.</a><a class="search__list-location-item-text" href="#">Брянская обл.</a><a class="search__list-location-item-text" href="#">Бурятия</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">В</div><a class="search__list-location-item-text" href="#">Владимирская обл.</a><a class="search__list-location-item-text" href="#">Волгоградская обл.</a><a class="search__list-location-item-text" href="#">Вологодская обл.</a><a class="search__list-location-item-text" href="#">Воронежская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Д</div><a class="search__list-location-item-text" href="#">Дагестан</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Е</div><a class="search__list-location-item-text" href="#">Еврейская АО</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">З</div><a class="search__list-location-item-text" href="#">Забайкальский край</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">И</div><a class="search__list-location-item-text" href="#">Ивановская обл.</a><a class="search__list-location-item-text" href="#">Ингушетия</a><a class="search__list-location-item-text" href="#">Иркутская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">К</div><a class="search__list-location-item-text" href="#">Кабардино-Балкария</a><a class="search__list-location-item-text" href="#">Калининградская обл.</a><a class="search__list-location-item-text" href="#">Калмыкия</a><a class="search__list-location-item-text" href="#">Калужская обл.</a><a class="search__list-location-item-text" href="#">Камчатский край</a><a class="search__list-location-item-text" href="#">Карачаево-Черкесия</a><a class="search__list-location-item-text" href="#">Карелия</a><a class="search__list-location-item-text" href="#">Кемеровская обл.</a><a class="search__list-location-item-text" href="#">Кировская обл.</a><a class="search__list-location-item-text" href="#">Коми</a><a class="search__list-location-item-text" href="#">Костромская обл.</a><a class="search__list-location-item-text" href="#">Краснодарский край</a><a class="search__list-location-item-text" href="#">Красноярский край</a><a class="search__list-location-item-text" href="#">Крым</a><a class="search__list-location-item-text" href="#">Курганская обл.</a><a class="search__list-location-item-text" href="#">Курская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Л</div><a class="search__list-location-item-text" href="#">Ленинградская обл.</a><a class="search__list-location-item-text" href="#">Липецкая обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">М</div><a class="search__list-location-item-text" href="#">Магаданская обл.</a><a class="search__list-location-item-text" href="#">Марий Эл</a><a class="search__list-location-item-text" href="#">Мордовия</a><a class="search__list-location-item-text search__list-location-item-text_selected" href="#">Москва</a><a class="search__list-location-item-text" href="#">Московская обл.</a><a class="search__list-location-item-text" href="#">Мурманская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Н</div><a class="search__list-location-item-text" href="#">Ненецкий АО</a><a class="search__list-location-item-text" href="#">Нижегородская обл.</a><a class="search__list-location-item-text" href="#">Новгородская обл.</a><a class="search__list-location-item-text" href="#">Новосибирская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">О</div><a class="search__list-location-item-text" href="#">Омская обл.</a><a class="search__list-location-item-text" href="#">Оренбургская обл.</a><a class="search__list-location-item-text" href="#">Орловская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">П</div><a class="search__list-location-item-text" href="#">Пензенская обл.</a><a class="search__list-location-item-text" href="#">Пермский край</a><a class="search__list-location-item-text" href="#">Приморский край</a><a class="search__list-location-item-text" href="#">Псковская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Р</div><a class="search__list-location-item-text" href="#">Республика Алтай</a><a class="search__list-location-item-text" href="#">Ростовская обл.</a><a class="search__list-location-item-text" href="#">Рязанская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">С</div><a class="search__list-location-item-text" href="#">Самарская обл.</a><a class="search__list-location-item-text search__list-location-item-text_selected" href="#">Санкт-Петербург</a><a class="search__list-location-item-text" href="#">Саратовская обл.</a><a class="search__list-location-item-text" href="#">Сахалинская обл.</a><a class="search__list-location-item-text" href="#">Саха (Якутия)</a><a class="search__list-location-item-text" href="#">Свердловская обл.</a><a class="search__list-location-item-text" href="#">Севастополь</a><a class="search__list-location-item-text" href="#">Северная Осетия</a><a class="search__list-location-item-text" href="#">Смоленская обл.</a><a class="search__list-location-item-text" href="#">Ставропольский край</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Т</div><a class="search__list-location-item-text" href="#">Тамбовская обл.</a><a class="search__list-location-item-text" href="#">Татарстан</a><a class="search__list-location-item-text" href="#">Тверская обл.</a><a class="search__list-location-item-text" href="#">Томская обл.</a><a class="search__list-location-item-text" href="#">Тульская обл.</a><a class="search__list-location-item-text" href="#">Тыва</a><a class="search__list-location-item-text" href="#">Тюменская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">У</div><a class="search__list-location-item-text" href="#">Удмуртия</a><a class="search__list-location-item-text" href="#">Ульяновская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Х</div><a class="search__list-location-item-text" href="#">Хабаровский край</a><a class="search__list-location-item-text" href="#">Хакасия</a><a class="search__list-location-item-text" href="#">Ханты-Мансийский АО</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Ч</div><a class="search__list-location-item-text" href="#">Челябинская обл.</a><a class="search__list-location-item-text" href="#">Чеченская республика</a><a class="search__list-location-item-text" href="#">Чувашия</a><a class="search__list-location-item-text" href="#">Чукотский АО</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Я</div><a class="search__list-location-item-text" href="#">Ямало-Ненецкий АО</a><a class="search__list-location-item-text" href="#">Ярославская обл.</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search__row search__row_align-justify search__row_col-flex-width">
+              <div class="search__col">
+                <label class="search__checkbox-wrapper search__checkbox-wrapper_with-photo">
+                  <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Только с фото</span>
+                </label>
+              </div>
+              <div class="search__col">
+                <label class="search__checkbox-wrapper">
+                  <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Новый</span>
+                </label>
+              </div>
+              <div class="search__col">
+                <label class="search__checkbox-wrapper">
+                  <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">На гарантии</span>
+                </label>
+              </div>
+              <div class="search__col">
+                <label class="search__checkbox-wrapper">
+                  <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Один хозяин</span>
+                </label>
+              </div>
+              <div class="search__col">
+                <label class="search__checkbox-wrapper">
+                  <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Дизель</span>
+                </label>
+              </div>
+              <div class="search__col">
+                <label class="search__checkbox-wrapper">
+                  <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Гибрид</span>
+                </label>
+              </div>
+              <div class="search__col">
+                <label class="search__checkbox-wrapper">
+                  <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Не на ходу</span>
+                </label>
+              </div>
+              <div class="search__col"><a class="search__link" href="#">Сохранить фильтр</a></div>
+            </div>
+            <div class="search__row search__row_align-justify search__row_col-20-percent">
+              <div class="search__col">
+                <select class="search__select2" name="state">
+                  <option value="sale">Продажа</option>
+                  <option value="exchange">Обмен</option>
+                </select>
+              </div>
+              <div class="search__col">
+                <select class="search__select2" name="state">
+                  <option value="1">Марка и модель</option>
+                  <option value="2">Пункт 1</option>
+                  <option value="3">Пункт 2</option>
+                  <option value="4">Пункт 4</option>
+                  <option value="5">Пункт 5</option>
+                </select>
+              </div>
+              <div class="search__col">
+                <select class="search__select2" name="state">
+                  <option value="1">Коробка передач</option>
+                  <option value="2">Пункт 1</option>
+                  <option value="3">Пункт 2</option>
+                  <option value="4">Пункт 4</option>
+                  <option value="5">Пункт 5</option>
+                </select>
+              </div>
+              <div class="search__col">
+                <select class="search__select2" name="state">
+                  <option value="1">Объём двигателя</option>
+                  <option value="2">Пункт 1</option>
+                  <option value="3">Пункт 2</option>
+                  <option value="4">Пункт 4</option>
+                  <option value="5">Пункт 5</option>
+                </select>
+              </div>
+              <div class="search__col">
+                <select class="search__select2" name="state">
+                  <option value="1">Пробег</option>
+                  <option value="2">Пункт 1</option>
+                  <option value="3">Пункт 2</option>
+                  <option value="4">Пункт 4</option>
+                  <option value="5">Пункт 5</option>
+                </select>
+              </div>
+            </div>
+            <div class="search__row search__row_align-justify search__row_col-20-percent">
+              <div class="search__col">
+                <select class="search__select2" name="state">
+                  <option value="1">Тип кузова</option>
+                  <option value="2">Пункт 1</option>
+                  <option value="3">Пункт 2</option>
+                  <option value="4">Пункт 4</option>
+                  <option value="5">Пункт 5</option>
+                </select>
+              </div>
+              <div class="search__col">
+                <div class="search__select search__select_year-of-release" data-window="10">
+                  <div class="search__select-title">Год выпуска</div>
+                </div>
+              </div>
+              <div class="search__col">
+                <select class="search__select2" name="state">
+                  <option value="1">Привод</option>
+                  <option value="2">Пункт 1</option>
+                  <option value="3">Пункт 2</option>
+                  <option value="4">Пункт 4</option>
+                  <option value="5">Пункт 5</option>
+                </select>
+              </div>
+              <div class="search__col">
+                <select class="search__select2" name="state">
+                  <option value="1">Мощность двигателя</option>
+                  <option value="2">Пункт 1</option>
+                  <option value="3">Пункт 2</option>
+                  <option value="4">Пункт 4</option>
+                  <option value="5">Пункт 5</option>
+                </select>
+              </div>
+              <div class="search__col">
+                <div class="search__select search__select_range-of-price" data-window="9">
+                  <div class="search__select-title">Цена</div>
+                </div>
+              </div>
+            </div>
+            <div class="search__row search__row_no-indent">
+              <div class="search__range-of-year-wrapper" data-window="10">
+                <div class="search__range-of-year-slider"></div>
+                <div class="search__range-of-year-amount">
+                  <div class="search__range-of-year-amount-item search__range-of-year-amount-item_first"></div>
+                  <div class="search__range-of-year-amount-item search__range-of-year-amount-item_second"></div>
+                </div>
+              </div>
+            </div>
+            <div class="search__row search__row_no-indent">
+              <div class="search__range-of-price-wrapper" data-window="9">
+                <div class="search__range-of-price-inputs">
+                  <input class="search__range-of-price-input-item" type="text" placeholder="От" value="">
+                  <input class="search__range-of-price-input-item" type="text" placeholder="До" value="">
+                </div>
+                <div class="search__range-of-price-btns"><a class="search__range-of-price-btn-refresh" href="#">Сбросить</a><a class="search__range-of-price-btn-confirm" href="#">Ок</a></div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <form class="search">
+          <div class="search__container">
+            <div class="search__row search__row_align-justify">
+              <div class="search__col">
+                <input class="search__input-text" type="search" placeholder="Введите текст для поиска">
+              </div>
+              <div class="search__col">
+                <div class="search__select search__select_categories" data-window="5">
+                  <div class="search__select-title">Выбрать рубрику</div>
+                </div>
+              </div>
+              <div class="search__col">
+                <div class="search__select search__select_location" data-window="6">
+                  <div class="search__select-title">Выбрать город</div>
+                </div>
+              </div>
+              <div class="search__col">
+                <input class="search__btn" type="submit" value="Поиск">
+              </div>
+            </div>
+            <div class="search__row search__row_no-indent">
+              <div class="search__select-list search__select-list_categories" data-window="5"><a class="search__categories-item search__categories-item_real-estate" href="#">
+                  <div class="search__categories-text">Недвижимость</div></a><a class="search__categories-item search__categories-item_jobs" href="#">
+                  <div class="search__categories-text">Работа, вакансии</div></a><a class="search__categories-item search__categories-item_building" href="#">
+                  <div class="search__categories-text">Строительные<br>материалы</div></a><a class="search__categories-item search__categories-item_transport" href="#">
+                  <div class="search__categories-text">Транспортные<br>средства</div></a><a class="search__categories-item search__categories-item_contacts" href="#">
+                  <div class="search__categories-text">Деловые контакты</div></a><a class="search__categories-item search__categories-item_animals" href="#">
+                  <div class="search__categories-text">Животные</div></a><a class="search__categories-item search__categories-item_services" href="#">
+                  <div class="search__categories-text">Услуги</div></a><a class="search__categories-item search__categories-item_resume" href="#">
+                  <div class="search__categories-text">Работа, резюме</div></a><a class="search__categories-item search__categories-item_dating" href="#">
+                  <div class="search__categories-text">Знакомства</div></a><a class="search__categories-item search__categories-item_products" href="#">
+                  <div class="search__categories-text">Товары</div></a><a class="search__categories-item search__categories-item_instruments" href="#">
+                  <div class="search__categories-text">Оборудование<br>и инструменты</div></a><a class="search__categories-item search__categories-item_messages" href="#">
+                  <div class="search__categories-text">Послания</div></a></div>
+            </div>
+            <div class="search__row search__row_no-indent">
+              <div class="search__select-list search__select-list_location" data-window="6">
+                <div class="search__list-location-top">
+                  <div class="search__list-location-breadcrumbs"><a class="search__list-location-breadcrumbs-item" href="#">Россия</a>&nbsp;/&nbsp;<a class="search__list-location-breadcrumbs-item" href="#">Город</a></div>
+                  <div class="search__list-location-btn">Выбрать всю Россию</div>
+                </div>
+                <div class="search__list-location-bottom">
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">А</div><a class="search__list-location-item-text" href="#">Адыгея</a><a class="search__list-location-item-text" href="#">Алтайский край</a><a class="search__list-location-item-text" href="#">Амурская обл.</a><a class="search__list-location-item-text" href="#">Архангельская обл.</a><a class="search__list-location-item-text" href="#">Астраханская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Б</div><a class="search__list-location-item-text" href="#">Башкортостан</a><a class="search__list-location-item-text" href="#">Белгородская обл.</a><a class="search__list-location-item-text" href="#">Брянская обл.</a><a class="search__list-location-item-text" href="#">Бурятия</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">В</div><a class="search__list-location-item-text" href="#">Владимирская обл.</a><a class="search__list-location-item-text" href="#">Волгоградская обл.</a><a class="search__list-location-item-text" href="#">Вологодская обл.</a><a class="search__list-location-item-text" href="#">Воронежская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Д</div><a class="search__list-location-item-text" href="#">Дагестан</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Е</div><a class="search__list-location-item-text" href="#">Еврейская АО</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">З</div><a class="search__list-location-item-text" href="#">Забайкальский край</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">И</div><a class="search__list-location-item-text" href="#">Ивановская обл.</a><a class="search__list-location-item-text" href="#">Ингушетия</a><a class="search__list-location-item-text" href="#">Иркутская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">К</div><a class="search__list-location-item-text" href="#">Кабардино-Балкария</a><a class="search__list-location-item-text" href="#">Калининградская обл.</a><a class="search__list-location-item-text" href="#">Калмыкия</a><a class="search__list-location-item-text" href="#">Калужская обл.</a><a class="search__list-location-item-text" href="#">Камчатский край</a><a class="search__list-location-item-text" href="#">Карачаево-Черкесия</a><a class="search__list-location-item-text" href="#">Карелия</a><a class="search__list-location-item-text" href="#">Кемеровская обл.</a><a class="search__list-location-item-text" href="#">Кировская обл.</a><a class="search__list-location-item-text" href="#">Коми</a><a class="search__list-location-item-text" href="#">Костромская обл.</a><a class="search__list-location-item-text" href="#">Краснодарский край</a><a class="search__list-location-item-text" href="#">Красноярский край</a><a class="search__list-location-item-text" href="#">Крым</a><a class="search__list-location-item-text" href="#">Курганская обл.</a><a class="search__list-location-item-text" href="#">Курская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Л</div><a class="search__list-location-item-text" href="#">Ленинградская обл.</a><a class="search__list-location-item-text" href="#">Липецкая обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">М</div><a class="search__list-location-item-text" href="#">Магаданская обл.</a><a class="search__list-location-item-text" href="#">Марий Эл</a><a class="search__list-location-item-text" href="#">Мордовия</a><a class="search__list-location-item-text search__list-location-item-text_selected" href="#">Москва</a><a class="search__list-location-item-text" href="#">Московская обл.</a><a class="search__list-location-item-text" href="#">Мурманская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Н</div><a class="search__list-location-item-text" href="#">Ненецкий АО</a><a class="search__list-location-item-text" href="#">Нижегородская обл.</a><a class="search__list-location-item-text" href="#">Новгородская обл.</a><a class="search__list-location-item-text" href="#">Новосибирская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">О</div><a class="search__list-location-item-text" href="#">Омская обл.</a><a class="search__list-location-item-text" href="#">Оренбургская обл.</a><a class="search__list-location-item-text" href="#">Орловская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">П</div><a class="search__list-location-item-text" href="#">Пензенская обл.</a><a class="search__list-location-item-text" href="#">Пермский край</a><a class="search__list-location-item-text" href="#">Приморский край</a><a class="search__list-location-item-text" href="#">Псковская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Р</div><a class="search__list-location-item-text" href="#">Республика Алтай</a><a class="search__list-location-item-text" href="#">Ростовская обл.</a><a class="search__list-location-item-text" href="#">Рязанская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">С</div><a class="search__list-location-item-text" href="#">Самарская обл.</a><a class="search__list-location-item-text search__list-location-item-text_selected" href="#">Санкт-Петербург</a><a class="search__list-location-item-text" href="#">Саратовская обл.</a><a class="search__list-location-item-text" href="#">Сахалинская обл.</a><a class="search__list-location-item-text" href="#">Саха (Якутия)</a><a class="search__list-location-item-text" href="#">Свердловская обл.</a><a class="search__list-location-item-text" href="#">Севастополь</a><a class="search__list-location-item-text" href="#">Северная Осетия</a><a class="search__list-location-item-text" href="#">Смоленская обл.</a><a class="search__list-location-item-text" href="#">Ставропольский край</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Т</div><a class="search__list-location-item-text" href="#">Тамбовская обл.</a><a class="search__list-location-item-text" href="#">Татарстан</a><a class="search__list-location-item-text" href="#">Тверская обл.</a><a class="search__list-location-item-text" href="#">Томская обл.</a><a class="search__list-location-item-text" href="#">Тульская обл.</a><a class="search__list-location-item-text" href="#">Тыва</a><a class="search__list-location-item-text" href="#">Тюменская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">У</div><a class="search__list-location-item-text" href="#">Удмуртия</a><a class="search__list-location-item-text" href="#">Ульяновская обл.</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Х</div><a class="search__list-location-item-text" href="#">Хабаровский край</a><a class="search__list-location-item-text" href="#">Хакасия</a><a class="search__list-location-item-text" href="#">Ханты-Мансийский АО</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Ч</div><a class="search__list-location-item-text" href="#">Челябинская обл.</a><a class="search__list-location-item-text" href="#">Чеченская республика</a><a class="search__list-location-item-text" href="#">Чувашия</a><a class="search__list-location-item-text" href="#">Чукотский АО</a>
+                  </div>
+                  <div class="search__list-location-item">
+                    <div class="search__list-location-item-title">Я</div><a class="search__list-location-item-text" href="#">Ямало-Ненецкий АО</a><a class="search__list-location-item-text" href="#">Ярославская обл.</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search__row search__row_align-justify search__row_col-flex-width">
+              <div class="search__col">
+                <label class="search__checkbox-wrapper search__checkbox-wrapper_with-photo">
+                  <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Только с фото</span>
+                </label>
+              </div>
+              <div class="search__col">
+                <label class="search__checkbox-wrapper">
+                  <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Новый</span>
+                </label>
+              </div>
+              <div class="search__col">
+                <label class="search__checkbox-wrapper">
+                  <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">На гарантии</span>
+                </label>
+              </div>
+              <div class="search__col">
+                <label class="search__checkbox-wrapper">
+                  <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Один хозяин</span>
+                </label>
+              </div>
+              <div class="search__col">
+                <label class="search__checkbox-wrapper">
+                  <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Дизель</span>
+                </label>
+              </div>
+              <div class="search__col">
+                <label class="search__checkbox-wrapper">
+                  <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Гибрид</span>
+                </label>
+              </div>
+              <div class="search__col">
+                <label class="search__checkbox-wrapper">
+                  <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Не на ходу</span>
+                </label>
+              </div>
+              <div class="search__col"><a class="search__link" href="#">Сохранить фильтр</a></div>
+            </div>
+            <div class="search__row search__row_align-justify search__row_col-33-percent">
+              <div class="search__col">
+                <select class="search__select2" name="state">
+                  <option value="sale">Продажа</option>
+                  <option value="exchange">Обмен</option>
+                </select>
+              </div>
+              <div class="search__col">
+                <div class="search__select search__select_type-of-product" data-window="11">
+                  <div class="search__select-title">Вид товара</div>
+                </div>
+              </div>
+              <div class="search__col">
+                <div class="search__select search__select_range-of-price" data-window="8">
+                  <div class="search__select-title">Цена</div>
+                </div>
+              </div>
+            </div>
+            <div class="search__row search__row_no-indent">
+              <div class="search__range-of-year-wrapper">
+                <div class="search__range-of-year-slider"></div>
+                <div class="search__range-of-year-amount">
+                  <div class="search__range-of-year-amount-item search__range-of-year-amount-item_first"></div>
+                  <div class="search__range-of-year-amount-item search__range-of-year-amount-item_second"></div>
+                </div>
+              </div>
+            </div>
+            <div class="search__row search__row_no-indent">
+              <div class="search__range-of-price-wrapper" data-window="8">
+                <div class="search__range-of-price-inputs">
+                  <input class="search__range-of-price-input-item" type="text" placeholder="От" value="">
+                  <input class="search__range-of-price-input-item" type="text" placeholder="До" value="">
+                </div>
+                <div class="search__range-of-price-btns"><a class="search__range-of-price-btn-refresh" href="#">Сбросить</a><a class="search__range-of-price-btn-confirm" href="#">Ок</a></div>
+              </div>
+            </div>
+            <div class="search__row search__row_no-indent">
+              <div class="search__type-of-product-wrapper" data-window="11">
+                <div class="search__type-of-product-wrapper-inner">
+                  <div class="search__type-of-product-item search__type-of-product-item_active">
+                    <div class="search__type-of-product-item-title">
+                      <label class="search__checkbox-wrapper">
+                        <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Электроинструменты</span>
+                      </label>
+                      <div class="search__type-of-product-item-arrow"></div>
+                    </div>
+                    <div class="search__type-of-product-item-text">
+                      <label class="search__checkbox-wrapper">
+                        <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Болгарки</span>
+                      </label>
+                      <label class="search__checkbox-wrapper">
+                        <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Дрели</span>
+                      </label>
+                      <label class="search__checkbox-wrapper">
+                        <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Раз</span>
+                      </label>
+                      <label class="search__checkbox-wrapper">
+                        <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Два</span>
+                      </label>
+                      <label class="search__checkbox-wrapper">
+                        <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Три</span>
+                      </label>
+                      <label class="search__checkbox-wrapper">
+                        <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Четыре</span>
+                      </label>
+                      <label class="search__checkbox-wrapper">
+                        <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Пять</span>
+                      </label>
+                      <label class="search__checkbox-wrapper">
+                        <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Шесть</span>
+                      </label>
+                      <label class="search__checkbox-wrapper">
+                        <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Шуруповерты и гайковерты</span>
+                      </label>
+                      <label class="search__checkbox-wrapper">
+                        <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Отбойные молотоки</span>
+                      </label>
+                      <label class="search__checkbox-wrapper">
+                        <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Лобзики</span>
+                      </label>
+                      <label class="search__checkbox-wrapper">
+                        <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Пилы</span>
+                      </label>
+                      <label class="search__checkbox-wrapper">
+                        <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Степлеры</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="search__type-of-product-item">
+                    <div class="search__type-of-product-item-title">
+                      <label class="search__checkbox-wrapper">
+                        <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Электроинструменты</span>
+                      </label>
+                      <div class="search__type-of-product-item-arrow"></div>
+                    </div>
+                    <div class="search__type-of-product-item-text">
+                      <label class="search__checkbox-wrapper">
+                        <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Болгарки</span>
+                      </label>
+                      <label class="search__checkbox-wrapper">
+                        <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Дрели</span>
+                      </label>
+                      <label class="search__checkbox-wrapper">
+                        <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Перфораторы</span>
+                      </label>
+                      <label class="search__checkbox-wrapper">
+                        <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Шуруповерты и гайковерты</span>
+                      </label>
+                      <label class="search__checkbox-wrapper">
+                        <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Отбойные молотоки</span>
+                      </label>
+                      <label class="search__checkbox-wrapper">
+                        <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Лобзики</span>
+                      </label>
+                      <label class="search__checkbox-wrapper">
+                        <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Пилы</span>
+                      </label>
+                      <label class="search__checkbox-wrapper">
+                        <input class="search__checkbox-input" type="checkbox" name="photo"><span class="search__checkbox-custom"></span><span class="search__checkbox-text">Степлеры</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="search__type-of-product-btns"><a class="search__type-of-product-btn-refresh" href="#">Сбросить</a><a class="search__type-of-product-btn-select-all" href="#">Отметить всё</a></div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__col footer__col_left">
+          <div class="footer__nav"><a class="footer__nav-item" href="#">Объявления</a><a class="footer__nav-item" href="#">Подать объявление</a><a class="footer__nav-item" href="#">Безопасность</a></div>
+          <div class="footer__nav"><a class="footer__nav-item" href="#">Обратная связь</a><a class="footer__nav-item" href="#">Открыть Компанию</a><a class="footer__nav-item" href="#">Реклама на сайте</a></div>
+        </div>
+        <div class="footer__col footer__col_right">
+          <div class="footer__age">16+</div>
+          <div class="footer__copyright">&copy; ANONS.INFO &mdash; сайт бесплатных объявлений.</div>
+          <div class="footer__text">Использование сайта означает согласие<br>с&nbsp;<a class="footer__link" href="#">пользовательским соглашением</a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app-project-base.js"></script>
+    <script src="js/app-project-run.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-mail-mobile</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-mail-mobile">
+            <circle id="XMLID_11_" fill="#6D9B3B" cx="19.8862681" cy="19.8862681" r="19.8862681"></circle>
+            <g id="ic_email" transform="translate(9.000000, 11.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                <path d="M19.0787987,0.0235569824 L2.92120128,0.0235569824 C1.81036646,0.0235569824 0.901501605,1.03340682 0.901501605,2.26766774 L0.901501605,15.7323323 C0.901501605,16.9665932 1.81036646,17.976443 2.92120128,17.976443 L19.0787987,17.976443 C20.1896335,17.976443 21.0984984,16.9665932 21.0984984,15.7323323 L21.0984984,2.26766774 C21.0984984,1.03340682 20.1896335,0.0235569824 19.0787987,0.0235569824 Z M19.0787987,4.51177849 L11,10.1220554 L2.92120128,4.51177849 L2.92120128,2.26766774 L11,7.87794462 L19.0787987,2.26766774 L19.0787987,4.51177849 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
