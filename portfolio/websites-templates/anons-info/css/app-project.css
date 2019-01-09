@@ -580,7 +580,7 @@ template {
   width: 19px;
   height: 15px; }
 
-.icon-checked, .header__filter-panel-checkbox-input:checked + .header__filter-panel-checkbox-custom:after, .search__checkbox-input:checked + .search__checkbox-custom:after, .personal-data__checkbox-custom__checkbox-input:checked + .personal-data__checkbox-custom:after {
+.icon-checked, .header__filter-panel-checkbox-input:checked + .header__filter-panel-checkbox-custom:after, .search__checkbox-input:checked + .search__checkbox-custom:after, .personal-data__checkbox-input:checked + .personal-data__checkbox-custom:after {
   display: block;
   background-position: center center;
   background-repeat: no-repeat;
@@ -973,8 +973,8 @@ template {
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url("../img/icons/icon-arrow-top-gray.png");
-  width: 24px;
-  height: 32px; }
+  width: calc(24px * 1.25);
+  height: calc(32px * 1.25); }
 
 .icon-close-red, .list-my-ads__ctrl_delete:before {
   display: block;
@@ -1036,8 +1036,8 @@ template {
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url("../img/icons/icon-publish.png");
-  width: 24px;
-  height: 27px; }
+  width: calc(24px * 1.2);
+  height: calc(27px * 1.2); }
 
 .icon-selected, .list-my-ads__item-action_select:after {
   display: block;
@@ -1045,8 +1045,8 @@ template {
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url("../img/icons/icon-selected.png");
-  width: 20px;
-  height: 20px; }
+  width: calc(20px * 1.2);
+  height: calc(20px * 1.2); }
 
 .icon-settings, .sidebar-personal-account__title_settings:after {
   display: block;
@@ -1072,8 +1072,8 @@ template {
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url("../img/icons/icon-vip.png");
-  width: 24px;
-  height: 24px; }
+  width: calc(24px * 1.2);
+  height: calc(24px * 1.2); }
 
 .icon-reload, .list-my-ads__ctrl_stop.list-my-ads__ctrl_active:before {
   display: block;
@@ -4464,10 +4464,10 @@ select {
       content: "";
       position: absolute;
       display: block;
-      left: 159px;
-      top: 2px;
-      width: 27px;
-      height: 14px;
+      left: 154px;
+      top: 1px;
+      width: 32px;
+      height: 16px;
       border-radius: 10px;
       background: white;
       border: 1px solid #2da5b6;
@@ -4476,16 +4476,16 @@ select {
       content: "";
       position: absolute;
       display: block;
-      left: 160px;
-      top: 3px;
-      width: 12px;
-      height: 12px;
-      border-radius: 10px;
+      left: 156px;
+      top: 2px;
+      width: 14px;
+      height: 14px;
+      border-radius: 14px;
       background: #2da5b6;
       border: 1px solid white;
       transition: all 0.3s; }
   .list-my-ads__item-accept-mssgs-checkbox:checked + label:after {
-    left: 173px;
+    left: 171px;
     background: white;
     border: 1px solid #2da5b6; }
   .list-my-ads__item-accept-mssgs-checkbox:checked + label:before {
@@ -4737,6 +4737,8 @@ select {
     padding: 0 0 31px; }
   .personal-data__item_inner-indent-bottom-2 {
     padding: 0 0 39px; }
+  .personal-data__item_inner-indent-bottom-3 {
+    padding: 0 0 23px; }
 
 .personal-data__col_left {
   width: 100%;
@@ -4746,10 +4748,10 @@ select {
   width: 100%; }
 
 .personal-data__title {
-  font: 400 14px/1 "SFUIDisplay", sans-serif;
+  font: 400 16px/1 "SFUIDisplay", sans-serif;
   color: #232C31; }
   .personal-data__title_indent-top {
-    margin: 12px 0 0 0; }
+    margin: 15px 0 0 0; }
   .personal-data__title_indent-top-2 {
     margin: 2px 0 0 0; }
 
@@ -4770,7 +4772,7 @@ select {
   color: #232C31; }
 
 .personal-data__email-status {
-  font: 400 14px/1 "SFUIDisplay", sans-serif;
+  font: 400 15px/1 "SFUIDisplay", sans-serif;
   color: #4F9E38;
   display: flex;
   justify-content: flex-start;
@@ -4778,7 +4780,7 @@ select {
   margin: 0 67px 0 0; }
   .personal-data__email-status:before {
     content: '';
-    margin: 0 5px 0 0; }
+    margin: 0 7px 0 0; }
 
 .personal-data__checkbox-wrapper {
   cursor: pointer;
@@ -4802,7 +4804,7 @@ select {
   position: relative;
   margin: 0 10px 0 0;
   border: 1px #DFDFDF solid; }
-  .personal-data__checkbox-custom__checkbox-input:checked + .personal-data__checkbox-custom:after {
+  .personal-data__checkbox-input:checked + .personal-data__checkbox-custom:after {
     content: '';
     position: absolute;
     left: 50%;
@@ -4810,14 +4812,14 @@ select {
     margin: -6px 0 0 -7.5px; }
 
 .personal-data__checkbox-text {
-  font: 400 14px/19px "SFUIDisplay", sans-serif;
+  font: 400 16px/1 "SFUIDisplay", sans-serif;
   color: #232C31;
   text-decoration: none;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin: 0 0 0 0; }
-  .personal-data__checkbox-text__checkbox-input:hover ~ .personal-data__checkbox-text {
+  .personal-data__checkbox-input:hover ~ .personal-data__checkbox-text {
     text-decoration: underline; }
 
 .personal-data__avatar-ctrls {
@@ -4879,7 +4881,7 @@ select {
   width: 100%; }
 
 .personal-data__table-title {
-  font: 400 14px/1 "SFUIDisplay", sans-serif;
+  font: 400 16px/1 "SFUIDisplay", sans-serif;
   color: #232C31;
   margin: 0 0 10px; }
 
@@ -4892,8 +4894,6 @@ select {
     width: 51%; }
   .personal-data__table-td:nth-child(2) {
     width: 27.7%; }
-  .personal-data__table-tr:last-child .personal-data__table-td {
-    padding: 8px 0 0 0; }
 
 .personal-data__table-tel {
   font: 600 16px/1 "SFUIDisplay", sans-serif;
@@ -4912,17 +4912,17 @@ select {
     transform: translate3d(0, -50%, 0); }
 
 .personal-data__table-text {
-  font: 400 14px/1 "SFUIDisplay", sans-serif;
+  font: 400 16px/1 "SFUIDisplay", sans-serif;
   color: #4F9E38;
   display: flex;
   justify-content: flex-start;
   align-items: center; }
   .personal-data__table-text:before {
     content: '';
-    margin: 0 3px 0 0; }
+    margin: 0 7px 0 0; }
 
 .personal-data__table-delete-link {
-  font: 400 14px/1 "SFUIDisplay", sans-serif;
+  font: 400 16px/1 "SFUIDisplay", sans-serif;
   color: #20AABE;
   display: flex;
   justify-content: flex-start;
@@ -4932,7 +4932,7 @@ select {
     text-decoration: underline; }
   .personal-data__table-delete-link:before {
     content: '';
-    margin: 0 3px 0 0; }
+    margin: 0 7px 0 0; }
   .personal-data__table-delete-link_disable {
     color: #b0b0b0; }
 
@@ -4958,7 +4958,7 @@ select {
   margin: 0 0 0 82px;
   cursor: pointer;
   user-select: none;
-  font: 400 14px/19px "SFUIDisplay", sans-serif;
+  font: 400 15px/20px "SFUIDisplay", sans-serif;
   color: #232C31;
   display: flex;
   justify-content: flex-start;
