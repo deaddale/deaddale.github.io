@@ -1,0 +1,52 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20170731 at Fri Jun 12 04:31:33 2015
+ By Aleksey,,,
+(c) 2015 Apple Inc. All rights reserved.
+</metadata>
+<defs>
+<font id="SFUIText-RegularItalic" horiz-adv-x="0" >
+  <font-face 
+    font-family="SF UI Text"
+    font-weight="400"
+    font-style="italic"
+    font-stretch="normal"
+    units-per-em="2048"
+    panose-1="0 0 5 0 0 0 0 0 0 0"
+    ascent="1638"
+    descent="-410"
+    bbox="60 -14 1403 1728"
+    underline-thickness="50"
+    underline-position="-175"
+    slope="-12"
+    unicode-range="U+0020-20B4"
+  />
+<missing-glyph horiz-adv-x="1293" 
+d="M60 0l290 1365h1053l-290 -1365h-1053zM519 303q0 -44 31 -72t80 -28q52 0 84.5 28.5t32.5 74.5t-31.5 74.5t-82.5 28.5q-50 0 -82 -29.5t-32 -76.5zM474 908h152q9 57 49.5 90t100.5 33q62 0 101 -31t39 -80q0 -37 -28.5 -65t-121.5 -81q-93 -52 -131 -99.5t-49 -121.5
+l-6 -42h150l7 39q7 43 33.5 68.5t118.5 78.5q100 56 144.5 110.5t44.5 121.5q0 106 -81.5 170.5t-215.5 64.5q-132 0 -215 -69t-92 -187z" />
+    <glyph glyph-name=".notdef" horiz-adv-x="1293" 
+d="M60 0l290 1365h1053l-290 -1365h-1053zM519 303q0 -44 31 -72t80 -28q52 0 84.5 28.5t32.5 74.5t-31.5 74.5t-82.5 28.5q-50 0 -82 -29.5t-32 -76.5zM474 908h152q9 57 49.5 90t100.5 33q62 0 101 -31t39 -80q0 -37 -28.5 -65t-121.5 -81q-93 -52 -131 -99.5t-49 -121.5
+l-6 -42h150l7 39q7 43 33.5 68.5t118.5 78.5q100 56 144.5 110.5t44.5 121.5q0 106 -81.5 170.5t-215.5 64.5q-132 0 -215 -69t-92 -187z" />
+    <glyph glyph-name=".null" 
+ />
+    <glyph glyph-name="nonmarkingreturn" 
+ />
+    <glyph glyph-name="space" unicode=" " horiz-adv-x="578" 
+ />
+    <glyph glyph-name="Geupturncyrillic" unicode="&#x490;" horiz-adv-x="1168" 
+d="M590 1281l-272 -1281h-185l307 1443h701l60 285h167l-95 -447h-683z" />
+    <glyph glyph-name="geupturncyrillic" unicode="&#x491;" horiz-adv-x="935" 
+d="M984 934h-499l-199 -934h-176l229 1078h513l61 285h162z" />
+    <glyph glyph-name="hryvnia" unicode="&#x20b4;" horiz-adv-x="1328" 
+d="M1150 325q-16 -155 -138.5 -247t-315.5 -92q-199 0 -324.5 90t-125.5 230q0 63 40 129t86 85v16h-180l26 123h1048l-26 -136h-678q-55 -12 -97.5 -72t-42.5 -120q0 -89 75.5 -141t197.5 -52q118 0 189 47.5t91 139.5h175zM249 802l29 136h673q49 26 79.5 78t30.5 109
+q0 85 -69 136t-179 51q-100 0 -170.5 -49.5t-81.5 -126.5h-170q12 147 128.5 237.5t293.5 90.5q191 0 305.5 -91.5t114.5 -233.5q0 -52 -34 -113t-76 -83v-16h203l-29 -125h-1048z" />
+    <hkern g1="Geupturncyrillic"
+	g2="geupturncyrillic"
+	k="110" />
+    <hkern g1="Geupturncyrillic"
+	g2="hryvnia"
+	k="20" />
+  </font>
+</defs></svg>

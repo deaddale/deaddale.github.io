@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>anons.info | Personal account partnership program</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="skype-toolbar" content="skype-toolbar-parser-compatible">
+    <link rel="stylesheet" href="css/app-project.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container"><a class="header__logo" href="/"></a>
+        <div class="header__nav"><a class="header__nav-item" href="#">Новый поиск</a><a class="header__nav-item" href="#">Компании</a><a class="header__nav-item" href="#">СМИ</a></div>
+        <div class="header__panel"><a class="header__panel-item header__panel-item_saved-search" href="#"></a><a class="header__panel-item header__panel-item_favorites" href="#"></a><a class="header__panel-item header__panel-item_messages" href="#"></a><a class="header__panel-item header__panel-item_accounts" href="#"></a><a class="header__add-ad-for-sale" href="#">Подать объявление</a></div>
+      </div>
+    </header>
+    <header class="header_mobile">
+      <div class="header__container">
+        <div class="header__burger-btn"></div>
+        <div class="header__search-wrapper">
+          <button class="header__search-btn" type="submit"></button>
+          <input class="header__search-input" type="text" placeholder="Текст для поиска ..." value="">
+        </div>
+        <div class="header__filter-btn"></div>
+      </div>
+      <div class="header__nav-panel">
+        <div class="header__nav-panel-wrapper"><a class="header__nav-panel-item header__nav-panel-item_log-in" href="#">Авторизуйтесь</a><a class="header__nav-panel-item header__nav-panel-item_ads" href="#">Объявления</a><a class="header__nav-panel-item header__nav-panel-item_favorites" href="#">Избранное</a><a class="header__nav-panel-item header__nav-panel-item_company" href="#">Компании</a><a class="header__nav-panel-item header__nav-panel-item_post-an-ad" href="#">Подать объявление</a><a class="header__nav-panel-item header__nav-panel-item_help" href="#">Помощь</a></div>
+        <div class="header__nav-panel-overlay"></div>
+      </div>
+      <div class="header__filter-panel">
+        <div class="header__filter-panel-header">
+          <div class="header__filter-panel-header-btn"></div>
+          <div class="header__filter-panel-header-title">Фильтр</div>
+          <div class="header__filter-panel-header-reset">Сбросить</div>
+        </div>
+        <div class="header__filter-panel-content">
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Категория</div>
+            <select class="header__filter-panel-select">
+              <option class="header__filter-panel-select-option" value="0">Все рубрики</option>
+              <option class="header__filter-panel-select-option" value="1">Рубрика 1</option>
+              <option class="header__filter-panel-select-option" value="2">Рубрика 2</option>
+              <option class="header__filter-panel-select-option" value="3">Рубрика 3</option>
+              <option class="header__filter-panel-select-option" value="4">Рубрика 4</option>
+            </select>
+          </div>
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Местоположение</div>
+            <div class="header__filter-panel-text">Москва </div>
+          </div>
+          <div class="header__filter-panel-item header__filter-panel-item_distance">
+            <div class="header__filter-panel-title">На расстоянии</div>
+            <div class="header__filter-panel-text-of-distance"><span class="header__filter-panel-text-of-distance-number"></span>&nbsp;км</div>
+            <div class="header__filter-slider-of-distance"></div>
+          </div>
+          <div class="header__filter-panel-item header__filter-panel-item_price">
+            <div class="header__filter-price-inputs">
+              <input class="header__filter-price-input-item" type="text" placeholder="Цена от" value="">
+              <input class="header__filter-price-input-item" type="text" placeholder="Цена до" value="">
+            </div>
+          </div>
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Сортировка</div>
+            <select class="header__filter-panel-select">
+              <option class="header__filter-panel-select-option" value="0">По дате</option>
+              <option class="header__filter-panel-select-option" value="1">Два</option>
+              <option class="header__filter-panel-select-option" value="2">Три</option>
+              <option class="header__filter-panel-select-option" value="3">Четыре</option>
+              <option class="header__filter-panel-select-option" value="4">Пять</option>
+            </select>
+          </div>
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Опубликовано</div>
+            <select class="header__filter-panel-select">
+              <option class="header__filter-panel-select-option" value="0">Все время</option>
+              <option class="header__filter-panel-select-option" value="1">Два</option>
+              <option class="header__filter-panel-select-option" value="2">Три</option>
+              <option class="header__filter-panel-select-option" value="3">Четыре</option>
+              <option class="header__filter-panel-select-option" value="4">Пять</option>
+            </select>
+          </div>
+          <div class="header__filter-panel-item">
+            <label class="header__filter-panel-checkbox-wrapper">
+              <input class="header__filter-panel-checkbox-input" type="checkbox" name="photo"><span class="header__filter-panel-checkbox-custom"></span><span class="header__filter-panel-checkbox-text">только с фото</span>
+            </label>
+          </div>
+        </div><a class="header__btn-mobile" href="#">Показать объявления</a>
+      </div>
+      <div class="header__region">
+        <div class="header__region-header">
+          <div class="header__region-header-btn"></div>
+          <div class="header__region-header-title">Выберите регион</div>
+        </div>
+        <form class="header__region-search-form">
+          <input class="header__region-search-btn" type="submit">
+          <input class="header__region-search-input" type="text" placeholder="Вводите для быстрого поиска" value="">
+        </form>
+        <div class="header__region-search-list"><a class="header__region-search-item" href="#">Московская обл.</a><a class="header__region-search-item" href="#">Мурманская обл. </a><a class="header__region-search-item" href="#">Ненецкий АО </a><a class="header__region-search-item" href="#">Нижегородская обл. </a><a class="header__region-search-item" href="#">Новгородская обл. </a><a class="header__region-search-item" href="#">Оренбургская обл. </a><a class="header__region-search-item" href="#">Орловская обл. </a><a class="header__region-search-item" href="#">Пензенская обл. </a><a class="header__region-search-item" href="#">Пермский край </a><a class="header__region-search-item" href="#">Псковская обл. </a><a class="header__region-search-item" href="#">Ростовская обл. </a><a class="header__region-search-item" href="#">Рязанская обл. </a><a class="header__region-search-item" href="#">Самарская обл. </a><a class="header__region-search-item" href="#">Саратовская обл. </a><a class="header__region-search-item" href="#">Свердловская обл. </a><a class="header__region-search-item" href="#">Северная Осетия </a><a class="header__region-search-item" href="#">Смоленская обл. </a><a class="header__region-search-item" href="#">Ставропольский край</a></div>
+      </div>
+    </header>
+    <div class="content content_personal-account">
+      <div class="content__container">
+        <div class="content__col content__col_left">
+          <div class="personal-account__title personal-account__title_selected">Партнёрская программа</div>
+          <div class="partnership-program">
+            <div class="partnership-program__container">
+              <div class="partnership-program__text">Получайте бесплатно средства на&nbsp;улучшение своих объявлений</div>
+              <div class="partnership-program__text partnership-program__text_selected">Меньше минуты потребуется Вам, чтобы запустить систему получения бонусных рублей.<br>Как и&nbsp;реальные рубли, их&nbsp;можно тратить на&nbsp;объявления: делать VIP, поднимать в&nbsp;поиске, выделять цветом.</div>
+              <div class="partnership-program__text">Вот как это работает</div>
+              <input class="partnership-program__input" type="text" value="https://www.anons.info/?partner_id=109">
+              <div class="partnership-program__text partnership-program__text_transparent">В&nbsp;этом адресе Ваша собственная реферальная ссылка от&nbsp;нашего сайта. Она позволяет определить, кто нам помогает. Эта ссылка уже включена в&nbsp;каждый рекламный блок ниже.</div>
+              <div class="partnership-program__text-descr">
+                <div class="partnership-program__text">Чтобы отправить рекламный блок на&nbsp;свою страницу в&nbsp;социальной сети, достаточно нажать на&nbsp;значок этой соцсети и&nbsp;подтвердить размещение.</div>
+                <div class="partnership-program__text">100 бонусных рублей автоматически зачисляются Вам на&nbsp;бонусный счет, когда по&nbsp;рекламе кто-либо переходит на&nbsp;ANONS.INFO, регистрируется и&nbsp;размещает хотя&nbsp;бы одно объявление. Количество зачислений не&nbsp;ограничено.</div>
+                <div class="partnership-program__text">Если друзья по&nbsp;соцсети перенесут эту рекламу с&nbsp;Вашей страницы на&nbsp;свои, все равно будет работать Ваша ссылка и&nbsp;приносить бонусные рубли Вам.</div>
+              </div>
+              <div class="partnership-program__ad-option">
+                <div class="partnership-program__ad-option-title">Вариант рекламного блока&nbsp;<span class="partnership-program__ad-option-num">&#8470;&nbsp;1</span></div>
+                <div class="partnership-program__ad-option-content"><img class="partnership-program__ad-img" src="img/ad-options/1.png" alt=""></div>
+                <div class="partnership-program__ad-option-social-wrapper"><span class="partnership-program__ad-option-social-text">Разместить этот блок на&nbsp;моей странице в:</span><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_vk" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_facebook" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_ok" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_google" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_moi-mir" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_twitter" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_lj" href="#"></a></div>
+              </div>
+              <div class="partnership-program__ad-option">
+                <div class="partnership-program__ad-option-title">Вариант рекламного блока&nbsp;<span class="partnership-program__ad-option-num">&#8470;&nbsp;2</span></div>
+                <div class="partnership-program__ad-option-content"><img class="partnership-program__ad-img" src="img/ad-options/2.png" alt=""></div>
+                <div class="partnership-program__ad-option-social-wrapper"><span class="partnership-program__ad-option-social-text">Разместить этот блок на&nbsp;моей странице в:</span><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_vk" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_facebook" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_ok" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_google" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_moi-mir" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_twitter" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_lj" href="#"></a></div>
+              </div>
+              <div class="partnership-program__ad-option">
+                <div class="partnership-program__ad-option-title">Вариант рекламного блока&nbsp;<span class="partnership-program__ad-option-num">&#8470;&nbsp;3</span></div>
+                <div class="partnership-program__ad-option-content"><img class="partnership-program__ad-img" src="img/ad-options/3.png" alt=""></div>
+                <div class="partnership-program__ad-option-social-wrapper"><span class="partnership-program__ad-option-social-text">Разместить этот блок на&nbsp;моей странице в:</span><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_vk" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_facebook" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_ok" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_google" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_moi-mir" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_twitter" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_lj" href="#"></a></div>
+              </div>
+              <div class="partnership-program__ad-option">
+                <div class="partnership-program__ad-option-title">Вариант рекламного блока&nbsp;<span class="partnership-program__ad-option-num">&#8470;&nbsp;4</span></div>
+                <div class="partnership-program__ad-option-content"><img class="partnership-program__ad-img" src="img/ad-options/4.png" alt=""></div>
+                <div class="partnership-program__ad-option-social-wrapper"><span class="partnership-program__ad-option-social-text">Разместить этот блок на&nbsp;моей странице в:</span><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_vk" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_facebook" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_ok" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_google" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_moi-mir" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_twitter" href="#"></a><a class="partnership-program__ad-option-social-item partnership-program__ad-option-social-item_lj" href="#"></a></div>
+              </div>
+            </div>
+            <div class="partnership-program__container">
+              <div class="partnership-program__table-wrapper">
+                <div class="partnership-program__table-title">Привлеченные клиенты</div>
+                <table class="partnership-program__table">
+                  <tr class="partnership-program__table-tr">
+                    <th class="partnership-program__table-th">ID клиента</th>
+                    <th class="partnership-program__table-th">Подал объявление</th>
+                    <th class="partnership-program__table-th">Начислено на бонусный счет</th>
+                  </tr>
+                  <tr class="partnership-program__table-tr">
+                    <td class="partnership-program__table-td">sdfnvdf857cbv</td>
+                    <td class="partnership-program__table-td">3</td>
+                    <td class="partnership-program__table-td">125 руб.</td>
+                  </tr>
+                  <tr class="partnership-program__table-tr">
+                    <td class="partnership-program__table-td">sdfnvdf857cbv</td>
+                    <td class="partnership-program__table-td">3</td>
+                    <td class="partnership-program__table-td">125 руб.</td>
+                  </tr>
+                  <tr class="partnership-program__table-tr">
+                    <td class="partnership-program__table-td">sdfnvdf857cbv</td>
+                    <td class="partnership-program__table-td">3</td>
+                    <td class="partnership-program__table-td">125 руб.</td>
+                  </tr>
+                  <tr class="partnership-program__table-tr">
+                    <td class="partnership-program__table-td">sdfnvdf857cbv</td>
+                    <td class="partnership-program__table-td">3</td>
+                    <td class="partnership-program__table-td">125 руб.</td>
+                  </tr>
+                  <tr class="partnership-program__table-tr">
+                    <td class="partnership-program__table-td">sdfnvdf857cbv</td>
+                    <td class="partnership-program__table-td">3</td>
+                    <td class="partnership-program__table-td">125 руб.</td>
+                  </tr>
+                </table>
+                <div class="partnership-program__table-sum">Итого: 625 ₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__col content__col_right">
+          <div class="sidebar-personal-account">
+            <div class="sidebar-personal-account__container">
+              <div class="sidebar-personal-account__item">
+                <div class="sidebar-personal-account__title sidebar-personal-account__title_report">Мои объявления</div>
+                <div class="sidebar-personal-account__list"><a class="sidebar-personal-account__list-item sidebar-personal-account__list-item_active" href="#">
+                    <div class="sidebar-personal-account__text">Все объявления</div>
+                    <div class="sidebar-personal-account__num">9</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Идут показы</div>
+                    <div class="sidebar-personal-account__num">8</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">На проверке</div>
+                    <div class="sidebar-personal-account__num">0</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Отклонены</div>
+                    <div class="sidebar-personal-account__num">0</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Приостановлены</div>
+                    <div class="sidebar-personal-account__num">0</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Показ закончен</div>
+                    <div class="sidebar-personal-account__num">1</div></a></div>
+              </div>
+              <div class="sidebar-personal-account__item">
+                <div class="sidebar-personal-account__title sidebar-personal-account__title_settings">Моя информация</div>
+                <div class="sidebar-personal-account__list"><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Личные данные</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Сообщения</div>
+                    <div class="sidebar-personal-account__num">1</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Избранное</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Фильтры</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Подписка на СМИ</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Партнёрская программа</div></a></div>
+              </div>
+              <div class="sidebar-personal-account__item">
+                <div class="sidebar-personal-account__title sidebar-personal-account__title_password">Пароль</div>
+              </div>
+              <div class="sidebar-personal-account__item"><a class="sidebar-personal-account__title sidebar-personal-account__title_selected" href="#">Смена пароля</a></div>
+              <div class="sidebar-personal-account__item">
+                <div class="sidebar-personal-account__title sidebar-personal-account__title_with-sum">Баланс
+                  <div class="sidebar-personal-account__sum">8 ₽</div>
+                </div>
+              </div>
+              <div class="sidebar-personal-account__item">
+                <div class="sidebar-personal-account__title sidebar-personal-account__title_with-sum">Бонусы
+                  <div class="sidebar-personal-account__sum">0 ₽</div>
+                </div>
+              </div>
+              <div class="sidebar-personal-account__item">
+                <div class="sidebar-personal-account__list"><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Пополнить баланс</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Корзина заказов</div>
+                    <div class="sidebar-personal-account__num">1</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">История платажей</div></a></div>
+              </div>
+              <div class="sidebar-personal-account__item"><a class="sidebar-personal-account__title sidebar-personal-account__title_downloads" href="#">Массовая загрузка</a>
+                <div class="sidebar-personal-account__list"><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Загрузка из XML файла</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Проверить XML файл</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Отчеты по загрузке</div></a></div>
+              </div>
+              <div class="sidebar-personal-account__item"><a class="sidebar-personal-account__title sidebar-personal-account__title_exit" href="#">Выйти</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__col footer__col_left">
+          <div class="footer__nav"><a class="footer__nav-item" href="#">Объявления</a><a class="footer__nav-item" href="#">Подать объявление</a><a class="footer__nav-item" href="#">Безопасность</a></div>
+          <div class="footer__nav"><a class="footer__nav-item" href="#">Обратная связь</a><a class="footer__nav-item" href="#">Открыть Компанию</a><a class="footer__nav-item" href="#">Реклама на сайте</a></div>
+        </div>
+        <div class="footer__col footer__col_right">
+          <div class="footer__age">16+</div>
+          <div class="footer__copyright">&copy; ANONS.INFO &mdash; сайт бесплатных объявлений.</div>
+          <div class="footer__text">Использование сайта означает согласие<br>с&nbsp;<a class="footer__link" href="#">пользовательским соглашением</a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app-project-base.js"></script>
+    <script src="js/app-project-run.js"></script>
+  </body>
+</html>

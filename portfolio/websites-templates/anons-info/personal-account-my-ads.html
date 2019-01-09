@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>anons.info | Personal account my ads page</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="skype-toolbar" content="skype-toolbar-parser-compatible">
+    <link rel="stylesheet" href="css/app-project.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container"><a class="header__logo" href="/"></a>
+        <div class="header__nav"><a class="header__nav-item" href="#">Новый поиск</a><a class="header__nav-item" href="#">Компании</a><a class="header__nav-item" href="#">СМИ</a></div>
+        <div class="header__panel"><a class="header__panel-item header__panel-item_saved-search" href="#"></a><a class="header__panel-item header__panel-item_favorites" href="#"></a><a class="header__panel-item header__panel-item_messages" href="#"></a><a class="header__panel-item header__panel-item_accounts" href="#"></a><a class="header__add-ad-for-sale" href="#">Подать объявление</a></div>
+      </div>
+    </header>
+    <header class="header_mobile">
+      <div class="header__container">
+        <div class="header__burger-btn"></div>
+        <div class="header__search-wrapper">
+          <button class="header__search-btn" type="submit"></button>
+          <input class="header__search-input" type="text" placeholder="Текст для поиска ..." value="">
+        </div>
+        <div class="header__filter-btn"></div>
+      </div>
+      <div class="header__nav-panel">
+        <div class="header__nav-panel-wrapper"><a class="header__nav-panel-item header__nav-panel-item_log-in" href="#">Авторизуйтесь</a><a class="header__nav-panel-item header__nav-panel-item_ads" href="#">Объявления</a><a class="header__nav-panel-item header__nav-panel-item_favorites" href="#">Избранное</a><a class="header__nav-panel-item header__nav-panel-item_company" href="#">Компании</a><a class="header__nav-panel-item header__nav-panel-item_post-an-ad" href="#">Подать объявление</a><a class="header__nav-panel-item header__nav-panel-item_help" href="#">Помощь</a></div>
+        <div class="header__nav-panel-overlay"></div>
+      </div>
+      <div class="header__filter-panel">
+        <div class="header__filter-panel-header">
+          <div class="header__filter-panel-header-btn"></div>
+          <div class="header__filter-panel-header-title">Фильтр</div>
+          <div class="header__filter-panel-header-reset">Сбросить</div>
+        </div>
+        <div class="header__filter-panel-content">
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Категория</div>
+            <select class="header__filter-panel-select">
+              <option class="header__filter-panel-select-option" value="0">Все рубрики</option>
+              <option class="header__filter-panel-select-option" value="1">Рубрика 1</option>
+              <option class="header__filter-panel-select-option" value="2">Рубрика 2</option>
+              <option class="header__filter-panel-select-option" value="3">Рубрика 3</option>
+              <option class="header__filter-panel-select-option" value="4">Рубрика 4</option>
+            </select>
+          </div>
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Местоположение</div>
+            <div class="header__filter-panel-text">Москва </div>
+          </div>
+          <div class="header__filter-panel-item header__filter-panel-item_distance">
+            <div class="header__filter-panel-title">На расстоянии</div>
+            <div class="header__filter-panel-text-of-distance"><span class="header__filter-panel-text-of-distance-number"></span>&nbsp;км</div>
+            <div class="header__filter-slider-of-distance"></div>
+          </div>
+          <div class="header__filter-panel-item header__filter-panel-item_price">
+            <div class="header__filter-price-inputs">
+              <input class="header__filter-price-input-item" type="text" placeholder="Цена от" value="">
+              <input class="header__filter-price-input-item" type="text" placeholder="Цена до" value="">
+            </div>
+          </div>
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Сортировка</div>
+            <select class="header__filter-panel-select">
+              <option class="header__filter-panel-select-option" value="0">По дате</option>
+              <option class="header__filter-panel-select-option" value="1">Два</option>
+              <option class="header__filter-panel-select-option" value="2">Три</option>
+              <option class="header__filter-panel-select-option" value="3">Четыре</option>
+              <option class="header__filter-panel-select-option" value="4">Пять</option>
+            </select>
+          </div>
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Опубликовано</div>
+            <select class="header__filter-panel-select">
+              <option class="header__filter-panel-select-option" value="0">Все время</option>
+              <option class="header__filter-panel-select-option" value="1">Два</option>
+              <option class="header__filter-panel-select-option" value="2">Три</option>
+              <option class="header__filter-panel-select-option" value="3">Четыре</option>
+              <option class="header__filter-panel-select-option" value="4">Пять</option>
+            </select>
+          </div>
+          <div class="header__filter-panel-item">
+            <label class="header__filter-panel-checkbox-wrapper">
+              <input class="header__filter-panel-checkbox-input" type="checkbox" name="photo"><span class="header__filter-panel-checkbox-custom"></span><span class="header__filter-panel-checkbox-text">только с фото</span>
+            </label>
+          </div>
+        </div><a class="header__btn-mobile" href="#">Показать объявления</a>
+      </div>
+      <div class="header__region">
+        <div class="header__region-header">
+          <div class="header__region-header-btn"></div>
+          <div class="header__region-header-title">Выберите регион</div>
+        </div>
+        <form class="header__region-search-form">
+          <input class="header__region-search-btn" type="submit">
+          <input class="header__region-search-input" type="text" placeholder="Вводите для быстрого поиска" value="">
+        </form>
+        <div class="header__region-search-list"><a class="header__region-search-item" href="#">Московская обл.</a><a class="header__region-search-item" href="#">Мурманская обл. </a><a class="header__region-search-item" href="#">Ненецкий АО </a><a class="header__region-search-item" href="#">Нижегородская обл. </a><a class="header__region-search-item" href="#">Новгородская обл. </a><a class="header__region-search-item" href="#">Оренбургская обл. </a><a class="header__region-search-item" href="#">Орловская обл. </a><a class="header__region-search-item" href="#">Пензенская обл. </a><a class="header__region-search-item" href="#">Пермский край </a><a class="header__region-search-item" href="#">Псковская обл. </a><a class="header__region-search-item" href="#">Ростовская обл. </a><a class="header__region-search-item" href="#">Рязанская обл. </a><a class="header__region-search-item" href="#">Самарская обл. </a><a class="header__region-search-item" href="#">Саратовская обл. </a><a class="header__region-search-item" href="#">Свердловская обл. </a><a class="header__region-search-item" href="#">Северная Осетия </a><a class="header__region-search-item" href="#">Смоленская обл. </a><a class="header__region-search-item" href="#">Ставропольский край</a></div>
+      </div>
+    </header>
+    <div class="content content_personal-account">
+      <div class="content__container">
+        <div class="content__col content__col_left">
+          <div class="personal-account__title">Мои объявления</div>
+          <form class="search search_my-ads">
+            <div class="search__container">
+              <div class="search__row search__row_align-justify">
+                <div class="search__col">
+                  <select class="search__select2" name="state">
+                    <option value="0">Все номера</option>
+                    <option value="1">+7 (904) 999-88-77</option>
+                    <option value="2">+7 (910) 123-45-67</option>
+                  </select>
+                </div>
+                <div class="search__col">
+                  <input class="search__input-text" type="search" placeholder="Введите текст для поиска">
+                </div>
+                <div class="search__col">
+                  <input class="search__btn" type="submit" value="Поиск">
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="list-my-ads">
+            <div class="list-my-ads__container">
+              <div class="list-my-ads__list">
+                <div class="list-my-ads__item">
+                  <div class="list-my-ads__item-row list-my-ads__item-row_top">
+                    <div class="list-my-ads__item-col list-my-ads__item-col_left"><a class="list-my-ads__item-img-link" href="#">
+                        <div class="list-my-ads__item-counter">
+                          <div class="list-my-ads__item-counter-text">4</div>
+                        </div><img class="list-my-ads__item-img" src="img/examples/3.png"></a>
+                      <div class="list-my-ads__item-actions"><a class="list-my-ads__item-action list-my-ads__item-action_top" href="#"></a><a class="list-my-ads__item-action list-my-ads__item-action_select" href="#"></a><a class="list-my-ads__item-action list-my-ads__item-action_vip" href="#"></a><a class="list-my-ads__item-action list-my-ads__item-action_publish" href="#"></a></div>
+                    </div>
+                    <div class="list-my-ads__item-col list-my-ads__item-col_right">
+                      <div class="list-my-ads__item-descr"><a class="list-my-ads__item-title" href="#">Менеджер-оператор</a>
+                        <div class="list-my-ads__item-price-date">
+                          <div class="list-my-ads__item-price">26 000 ₽</div>
+                          <div class="list-my-ads__item-date">24 мая 2018 г. 16:14</div>
+                        </div>
+                        <div class="list-my-ads__item-text">В крупную торговую компанию требуются мужчины и женщины в возрасте 25-60 лет, опыт работы не ...</div>
+                        <div class="list-my-ads__item-author">Владислав</div><a class="list-my-ads__item-region-city" href="#">Новороссийск</a><a class="list-my-ads__item-tel" href="tel:+79034666000">+7 (903) 466-60-00</a>
+                        <div class="list-my-ads__item-views-and-accept-mssgs">
+                          <div class="list-my-ads__item-views">Просмотров:&nbsp;
+                            <div class="list-my-ads__item-views-selected">46</div>
+                          </div>
+                          <div class="list-my-ads__item-accept-mssgs">
+                            <input class="list-my-ads__item-accept-mssgs-checkbox" type="checkbox" id="checkbox-1" checked>
+                            <label class="list-my-ads__item-accept-mssgs-label" for="checkbox-1">Принимать сообщения</label>
+                          </div>
+                        </div>
+                        <div class="list-my-ads__item-auto-renewal-and-date">
+                          <div class="list-my-ads__item-auto-renewal">Автопродление:&nbsp;
+                            <div class="list-my-ads__item-auto-renewal-selected">Включено</div>
+                          </div>
+                          <div class="list-my-ads__item-date">Осталось дней: 16, до 25 декабря 2018 г.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-my-ads__item-row list-my-ads__item-row_bottom">
+                    <div class="list-my-ads__item-col list-my-ads__item-col_left">
+                      <div class="list-my-ads__num">№23456789</div>
+                    </div>
+                    <div class="list-my-ads__item-col list-my-ads__item-col_right">
+                      <div class="list-my-ads__ctrls"><a class="list-my-ads__ctrl list-my-ads__ctrl_edit" href="#">Редактировать</a><a class="list-my-ads__ctrl list-my-ads__ctrl_stop" href="#">Остановить показ</a><a class="list-my-ads__ctrl list-my-ads__ctrl_delete" href="#">Удалить навсегда</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-my-ads__item">
+                  <div class="list-my-ads__item-row list-my-ads__item-row_top">
+                    <div class="list-my-ads__item-col list-my-ads__item-col_left"><a class="list-my-ads__item-img-link" href="#"><img class="list-my-ads__item-img" src="img/examples/preview-picture.png"></a>
+                      <div class="list-my-ads__item-actions"><a class="list-my-ads__item-action list-my-ads__item-action_top" href="#"></a><a class="list-my-ads__item-action list-my-ads__item-action_select" href="#"></a><a class="list-my-ads__item-action list-my-ads__item-action_vip" href="#"></a><a class="list-my-ads__item-action list-my-ads__item-action_publish" href="#"></a></div>
+                    </div>
+                    <div class="list-my-ads__item-col list-my-ads__item-col_right">
+                      <div class="list-my-ads__item-descr"><a class="list-my-ads__item-title" href="#">Менеджер-оператор</a>
+                        <div class="list-my-ads__item-price-date">
+                          <div class="list-my-ads__item-price">26 000 ₽</div>
+                          <div class="list-my-ads__item-date">24 мая 2018 г. 16:14</div>
+                        </div>
+                        <div class="list-my-ads__item-text">В крупную торговую компанию требуются мужчины и женщины в возрасте 25-60 лет, опыт работы не ...</div>
+                        <div class="list-my-ads__item-author">Владислав</div><a class="list-my-ads__item-region-city" href="#">Новороссийск</a><a class="list-my-ads__item-tel" href="tel:+79034666000">+7 (903) 466-60-00</a>
+                        <div class="list-my-ads__item-views-and-accept-mssgs">
+                          <div class="list-my-ads__item-views">Просмотров:&nbsp;
+                            <div class="list-my-ads__item-views-selected">46</div>
+                          </div>
+                          <div class="list-my-ads__item-accept-mssgs">
+                            <input class="list-my-ads__item-accept-mssgs-checkbox" type="checkbox" id="checkbox-1" checked>
+                            <label class="list-my-ads__item-accept-mssgs-label" for="checkbox-1">Принимать сообщения</label>
+                          </div>
+                        </div>
+                        <div class="list-my-ads__item-auto-renewal-and-date">
+                          <div class="list-my-ads__item-auto-renewal">Автопродление:&nbsp;
+                            <div class="list-my-ads__item-auto-renewal-selected">Включено</div>
+                          </div>
+                          <div class="list-my-ads__item-date">Осталось дней: 16, до 25 декабря 2018 г.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-my-ads__item-row list-my-ads__item-row_bottom">
+                    <div class="list-my-ads__item-col list-my-ads__item-col_left">
+                      <div class="list-my-ads__num">№23456789</div>
+                    </div>
+                    <div class="list-my-ads__item-col list-my-ads__item-col_right">
+                      <div class="list-my-ads__ctrls"><a class="list-my-ads__ctrl list-my-ads__ctrl_edit" href="#">Редактировать</a><a class="list-my-ads__ctrl list-my-ads__ctrl_stop" href="#">Остановить показ</a><a class="list-my-ads__ctrl list-my-ads__ctrl_delete" href="#">Удалить навсегда</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-my-ads__item">
+                  <div class="list-my-ads__item-row list-my-ads__item-row_top">
+                    <div class="list-my-ads__item-col list-my-ads__item-col_left"><a class="list-my-ads__item-img-link" href="#"><img class="list-my-ads__item-img" src="img/examples/preview-picture.png"></a>
+                      <div class="list-my-ads__item-actions"><a class="list-my-ads__item-action list-my-ads__item-action_active list-my-ads__item-action_top" href="#"></a><a class="list-my-ads__item-action list-my-ads__item-action_select" href="#"></a><a class="list-my-ads__item-action list-my-ads__item-action_vip" href="#"></a><a class="list-my-ads__item-action list-my-ads__item-action_publish" href="#"></a></div>
+                    </div>
+                    <div class="list-my-ads__item-col list-my-ads__item-col_right">
+                      <div class="list-my-ads__item-descr"><a class="list-my-ads__item-title" href="#">Менеджер-оператор</a>
+                        <div class="list-my-ads__item-price-date">
+                          <div class="list-my-ads__item-price">26 000 ₽</div>
+                          <div class="list-my-ads__item-date">24 мая 2018 г. 16:14</div>
+                        </div>
+                        <div class="list-my-ads__item-text">В крупную торговую компанию требуются мужчины и женщины в возрасте 25-60 лет, опыт работы не ...</div>
+                        <div class="list-my-ads__item-author">Владислав</div><a class="list-my-ads__item-region-city" href="#">Новороссийск</a><a class="list-my-ads__item-tel" href="tel:+79034666000">+7 (903) 466-60-00</a>
+                        <div class="list-my-ads__item-views-and-accept-mssgs">
+                          <div class="list-my-ads__item-views">Просмотров:&nbsp;
+                            <div class="list-my-ads__item-views-selected">46</div>
+                          </div>
+                          <div class="list-my-ads__item-accept-mssgs">
+                            <input class="list-my-ads__item-accept-mssgs-checkbox" type="checkbox" id="checkbox-1" checked>
+                            <label class="list-my-ads__item-accept-mssgs-label" for="checkbox-1">Принимать сообщения</label>
+                          </div>
+                        </div>
+                        <div class="list-my-ads__item-auto-renewal-and-date">
+                          <div class="list-my-ads__item-auto-renewal">Автопродление:&nbsp;
+                            <div class="list-my-ads__item-auto-renewal-selected">Выключено</div>
+                          </div>
+                        </div>
+                        <div class="list-my-ads__item-time-and-btn">
+                          <div class="list-my-ads__item-time">Время показа объявления вышло</div><a class="list-my-ads__item-btn" href="#">Продлить на 30 дней</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-my-ads__item-row list-my-ads__item-row_bottom">
+                    <div class="list-my-ads__item-col list-my-ads__item-col_left">
+                      <div class="list-my-ads__num">№23456789</div>
+                    </div>
+                    <div class="list-my-ads__item-col list-my-ads__item-col_right">
+                      <div class="list-my-ads__ctrls"><a class="list-my-ads__ctrl list-my-ads__ctrl_edit" href="#">Редактировать</a><a class="list-my-ads__ctrl list-my-ads__ctrl_delete" href="#">Удалить навсегда</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-my-ads__item">
+                  <div class="list-my-ads__item-row list-my-ads__item-row_top">
+                    <div class="list-my-ads__item-col list-my-ads__item-col_left"><a class="list-my-ads__item-img-link" href="#">
+                        <div class="list-my-ads__item-counter">
+                          <div class="list-my-ads__item-counter-text">4</div>
+                        </div><img class="list-my-ads__item-img" src="img/examples/3.png"></a>
+                      <div class="list-my-ads__item-actions"><a class="list-my-ads__item-action list-my-ads__item-action_top" href="#"></a><a class="list-my-ads__item-action list-my-ads__item-action_select" href="#"></a><a class="list-my-ads__item-action list-my-ads__item-action_vip" href="#"></a><a class="list-my-ads__item-action list-my-ads__item-action_publish" href="#"></a></div>
+                    </div>
+                    <div class="list-my-ads__item-col list-my-ads__item-col_right">
+                      <div class="list-my-ads__item-descr"><a class="list-my-ads__item-title" href="#">Менеджер-оператор</a>
+                        <div class="list-my-ads__item-price-date">
+                          <div class="list-my-ads__item-price">26 000 ₽</div>
+                          <div class="list-my-ads__item-date">24 мая 2018 г. 16:14</div>
+                        </div>
+                        <div class="list-my-ads__item-text">В крупную торговую компанию требуются мужчины и женщины в возрасте 25-60 лет, опыт работы не ...</div>
+                        <div class="list-my-ads__item-author">Владислав</div><a class="list-my-ads__item-region-city" href="#">Новороссийск</a><a class="list-my-ads__item-tel" href="tel:+79034666000">+7 (903) 466-60-00</a>
+                        <div class="list-my-ads__item-views-and-accept-mssgs">
+                          <div class="list-my-ads__item-views">Просмотров:&nbsp;
+                            <div class="list-my-ads__item-views-selected">46</div>
+                          </div>
+                          <div class="list-my-ads__item-accept-mssgs">
+                            <input class="list-my-ads__item-accept-mssgs-checkbox" type="checkbox" id="checkbox-1" checked>
+                            <label class="list-my-ads__item-accept-mssgs-label" for="checkbox-1">Принимать сообщения</label>
+                          </div>
+                        </div>
+                        <div class="list-my-ads__item-alert">
+                          <div class="list-my-ads__item-alert-text">Отказано в размещении на сайте, в соответствии с пунктом&nbsp;<a class="list-my-ads__item-alert-text-link" href="#">пользовательского соглашения.</a></div>
+                          <div class="list-my-ads__item-alert-text">Пожалуйста, устраните причину и объявление повторно отправиться на проверку</div>
+                        </div>
+                        <div class="list-my-ads__item-auto-renewal-and-date">
+                          <div class="list-my-ads__item-auto-renewal">Автопродление:&nbsp;
+                            <div class="list-my-ads__item-auto-renewal-selected">Включено</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-my-ads__item-row list-my-ads__item-row_bottom">
+                    <div class="list-my-ads__item-col list-my-ads__item-col_left">
+                      <div class="list-my-ads__num">№23456789</div>
+                    </div>
+                    <div class="list-my-ads__item-col list-my-ads__item-col_right">
+                      <div class="list-my-ads__ctrls"><a class="list-my-ads__ctrl list-my-ads__ctrl_edit" href="#">Редактировать</a><a class="list-my-ads__ctrl list-my-ads__ctrl_delete" href="#">Удалить навсегда</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagination">
+            <div class="pagination__list"><a class="pagination__item" href="#">1</a><a class="pagination__item pagination__item_active" href="#">2</a><a class="pagination__item" href="#">3</a><a class="pagination__item" href="#">4</a><a class="pagination__item" href="#">5</a><a class="pagination__item" href="#">6</a><a class="pagination__item" href="#">7</a><a class="pagination__item pagination__item_next" href="#">Дальше</a></div><a class="pagination__link-to-top" href="#scroll-to-top">Наверх</a>
+          </div>
+        </div>
+        <div class="content__col content__col_right">
+          <div class="sidebar-personal-account">
+            <div class="sidebar-personal-account__container">
+              <div class="sidebar-personal-account__item">
+                <div class="sidebar-personal-account__title sidebar-personal-account__title_report">Мои объявления</div>
+                <div class="sidebar-personal-account__list"><a class="sidebar-personal-account__list-item sidebar-personal-account__list-item_active" href="#">
+                    <div class="sidebar-personal-account__text">Все объявления</div>
+                    <div class="sidebar-personal-account__num">9</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Идут показы</div>
+                    <div class="sidebar-personal-account__num">8</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">На проверке</div>
+                    <div class="sidebar-personal-account__num">0</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Отклонены</div>
+                    <div class="sidebar-personal-account__num">0</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Приостановлены</div>
+                    <div class="sidebar-personal-account__num">0</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Показ закончен</div>
+                    <div class="sidebar-personal-account__num">1</div></a></div>
+              </div>
+              <div class="sidebar-personal-account__item">
+                <div class="sidebar-personal-account__title sidebar-personal-account__title_settings">Моя информация</div>
+                <div class="sidebar-personal-account__list"><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Личные данные</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Сообщения</div>
+                    <div class="sidebar-personal-account__num">1</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Избранное</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Фильтры</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Подписка на СМИ</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Партнёрская программа</div></a></div>
+              </div>
+              <div class="sidebar-personal-account__item">
+                <div class="sidebar-personal-account__title sidebar-personal-account__title_password">Пароль</div>
+              </div>
+              <div class="sidebar-personal-account__item"><a class="sidebar-personal-account__title sidebar-personal-account__title_selected" href="#">Смена пароля</a></div>
+              <div class="sidebar-personal-account__item">
+                <div class="sidebar-personal-account__title sidebar-personal-account__title_with-sum">Баланс
+                  <div class="sidebar-personal-account__sum">8 ₽</div>
+                </div>
+              </div>
+              <div class="sidebar-personal-account__item">
+                <div class="sidebar-personal-account__title sidebar-personal-account__title_with-sum">Бонусы
+                  <div class="sidebar-personal-account__sum">0 ₽</div>
+                </div>
+              </div>
+              <div class="sidebar-personal-account__item">
+                <div class="sidebar-personal-account__list"><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Пополнить баланс</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Корзина заказов</div>
+                    <div class="sidebar-personal-account__num">1</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">История платажей</div></a></div>
+              </div>
+              <div class="sidebar-personal-account__item"><a class="sidebar-personal-account__title sidebar-personal-account__title_downloads" href="#">Массовая загрузка</a>
+                <div class="sidebar-personal-account__list"><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Загрузка из XML файла</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Проверить XML файл</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Отчеты по загрузке</div></a></div>
+              </div>
+              <div class="sidebar-personal-account__item"><a class="sidebar-personal-account__title sidebar-personal-account__title_exit" href="#">Выйти</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__col footer__col_left">
+          <div class="footer__nav"><a class="footer__nav-item" href="#">Объявления</a><a class="footer__nav-item" href="#">Подать объявление</a><a class="footer__nav-item" href="#">Безопасность</a></div>
+          <div class="footer__nav"><a class="footer__nav-item" href="#">Обратная связь</a><a class="footer__nav-item" href="#">Открыть Компанию</a><a class="footer__nav-item" href="#">Реклама на сайте</a></div>
+        </div>
+        <div class="footer__col footer__col_right">
+          <div class="footer__age">16+</div>
+          <div class="footer__copyright">&copy; ANONS.INFO &mdash; сайт бесплатных объявлений.</div>
+          <div class="footer__text">Использование сайта означает согласие<br>с&nbsp;<a class="footer__link" href="#">пользовательским соглашением</a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app-project-base.js"></script>
+    <script src="js/app-project-run.js"></script>
+  </body>
+</html>

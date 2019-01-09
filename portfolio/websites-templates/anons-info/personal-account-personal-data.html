@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>anons.info | Personal account personal data</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="skype-toolbar" content="skype-toolbar-parser-compatible">
+    <link rel="stylesheet" href="css/app-project.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container"><a class="header__logo" href="/"></a>
+        <div class="header__nav"><a class="header__nav-item" href="#">Новый поиск</a><a class="header__nav-item" href="#">Компании</a><a class="header__nav-item" href="#">СМИ</a></div>
+        <div class="header__panel"><a class="header__panel-item header__panel-item_saved-search" href="#"></a><a class="header__panel-item header__panel-item_favorites" href="#"></a><a class="header__panel-item header__panel-item_messages" href="#"></a><a class="header__panel-item header__panel-item_accounts" href="#"></a><a class="header__add-ad-for-sale" href="#">Подать объявление</a></div>
+      </div>
+    </header>
+    <header class="header_mobile">
+      <div class="header__container">
+        <div class="header__burger-btn"></div>
+        <div class="header__search-wrapper">
+          <button class="header__search-btn" type="submit"></button>
+          <input class="header__search-input" type="text" placeholder="Текст для поиска ..." value="">
+        </div>
+        <div class="header__filter-btn"></div>
+      </div>
+      <div class="header__nav-panel">
+        <div class="header__nav-panel-wrapper"><a class="header__nav-panel-item header__nav-panel-item_log-in" href="#">Авторизуйтесь</a><a class="header__nav-panel-item header__nav-panel-item_ads" href="#">Объявления</a><a class="header__nav-panel-item header__nav-panel-item_favorites" href="#">Избранное</a><a class="header__nav-panel-item header__nav-panel-item_company" href="#">Компании</a><a class="header__nav-panel-item header__nav-panel-item_post-an-ad" href="#">Подать объявление</a><a class="header__nav-panel-item header__nav-panel-item_help" href="#">Помощь</a></div>
+        <div class="header__nav-panel-overlay"></div>
+      </div>
+      <div class="header__filter-panel">
+        <div class="header__filter-panel-header">
+          <div class="header__filter-panel-header-btn"></div>
+          <div class="header__filter-panel-header-title">Фильтр</div>
+          <div class="header__filter-panel-header-reset">Сбросить</div>
+        </div>
+        <div class="header__filter-panel-content">
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Категория</div>
+            <select class="header__filter-panel-select">
+              <option class="header__filter-panel-select-option" value="0">Все рубрики</option>
+              <option class="header__filter-panel-select-option" value="1">Рубрика 1</option>
+              <option class="header__filter-panel-select-option" value="2">Рубрика 2</option>
+              <option class="header__filter-panel-select-option" value="3">Рубрика 3</option>
+              <option class="header__filter-panel-select-option" value="4">Рубрика 4</option>
+            </select>
+          </div>
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Местоположение</div>
+            <div class="header__filter-panel-text">Москва </div>
+          </div>
+          <div class="header__filter-panel-item header__filter-panel-item_distance">
+            <div class="header__filter-panel-title">На расстоянии</div>
+            <div class="header__filter-panel-text-of-distance"><span class="header__filter-panel-text-of-distance-number"></span>&nbsp;км</div>
+            <div class="header__filter-slider-of-distance"></div>
+          </div>
+          <div class="header__filter-panel-item header__filter-panel-item_price">
+            <div class="header__filter-price-inputs">
+              <input class="header__filter-price-input-item" type="text" placeholder="Цена от" value="">
+              <input class="header__filter-price-input-item" type="text" placeholder="Цена до" value="">
+            </div>
+          </div>
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Сортировка</div>
+            <select class="header__filter-panel-select">
+              <option class="header__filter-panel-select-option" value="0">По дате</option>
+              <option class="header__filter-panel-select-option" value="1">Два</option>
+              <option class="header__filter-panel-select-option" value="2">Три</option>
+              <option class="header__filter-panel-select-option" value="3">Четыре</option>
+              <option class="header__filter-panel-select-option" value="4">Пять</option>
+            </select>
+          </div>
+          <div class="header__filter-panel-item">
+            <div class="header__filter-panel-title">Опубликовано</div>
+            <select class="header__filter-panel-select">
+              <option class="header__filter-panel-select-option" value="0">Все время</option>
+              <option class="header__filter-panel-select-option" value="1">Два</option>
+              <option class="header__filter-panel-select-option" value="2">Три</option>
+              <option class="header__filter-panel-select-option" value="3">Четыре</option>
+              <option class="header__filter-panel-select-option" value="4">Пять</option>
+            </select>
+          </div>
+          <div class="header__filter-panel-item">
+            <label class="header__filter-panel-checkbox-wrapper">
+              <input class="header__filter-panel-checkbox-input" type="checkbox" name="photo"><span class="header__filter-panel-checkbox-custom"></span><span class="header__filter-panel-checkbox-text">только с фото</span>
+            </label>
+          </div>
+        </div><a class="header__btn-mobile" href="#">Показать объявления</a>
+      </div>
+      <div class="header__region">
+        <div class="header__region-header">
+          <div class="header__region-header-btn"></div>
+          <div class="header__region-header-title">Выберите регион</div>
+        </div>
+        <form class="header__region-search-form">
+          <input class="header__region-search-btn" type="submit">
+          <input class="header__region-search-input" type="text" placeholder="Вводите для быстрого поиска" value="">
+        </form>
+        <div class="header__region-search-list"><a class="header__region-search-item" href="#">Московская обл.</a><a class="header__region-search-item" href="#">Мурманская обл. </a><a class="header__region-search-item" href="#">Ненецкий АО </a><a class="header__region-search-item" href="#">Нижегородская обл. </a><a class="header__region-search-item" href="#">Новгородская обл. </a><a class="header__region-search-item" href="#">Оренбургская обл. </a><a class="header__region-search-item" href="#">Орловская обл. </a><a class="header__region-search-item" href="#">Пензенская обл. </a><a class="header__region-search-item" href="#">Пермский край </a><a class="header__region-search-item" href="#">Псковская обл. </a><a class="header__region-search-item" href="#">Ростовская обл. </a><a class="header__region-search-item" href="#">Рязанская обл. </a><a class="header__region-search-item" href="#">Самарская обл. </a><a class="header__region-search-item" href="#">Саратовская обл. </a><a class="header__region-search-item" href="#">Свердловская обл. </a><a class="header__region-search-item" href="#">Северная Осетия </a><a class="header__region-search-item" href="#">Смоленская обл. </a><a class="header__region-search-item" href="#">Ставропольский край</a></div>
+      </div>
+    </header>
+    <div class="content content_personal-account">
+      <div class="content__container">
+        <div class="content__col content__col_left">
+          <div class="personal-account__title personal-account__title_selected">Личные данные</div>
+          <form class="personal-data">
+            <div class="personal-data__container">
+              <div class="personal-data__item">
+                <div class="personal-data__col personal-data__col_left">
+                  <div class="personal-data__title personal-data__title_indent-top">Контактное лицо:</div>
+                </div>
+                <div class="personal-data__col personal-data__col_right">
+                  <input class="personal-data__input" type="text" value="Бислан">
+                </div>
+              </div>
+              <div class="personal-data__item personal-data__item_inner-indent-bottom">
+                <div class="personal-data__col personal-data__col_left">
+                  <div class="personal-data__title">Адрес электронной почты:</div>
+                </div>
+                <div class="personal-data__col personal-data__col_right">
+                  <div class="personal-data__email-top">
+                    <div class="personal-data__email-text">bislan.setov@mail.ru</div>
+                    <div class="personal-data__email-status">Подтвержден</div>
+                  </div>
+                  <div class="personal-data__email-bottom">
+                    <label class="personal-data__checkbox-wrapper">
+                      <input class="personal-data__checkbox-input" type="checkbox" name="photo" checked><span class="personal-data__checkbox-custom"></span><span class="personal-data__checkbox-text">Получать информацию о предложениях сайта</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="personal-data__item personal-data__item_inner-indent-bottom-2">
+                <div class="personal-data__col personal-data__col_left">
+                  <div class="personal-data__title">Фото профиля:</div>
+                </div>
+                <div class="personal-data__col personal-data__col_right">
+                  <div class="personal-data__avatar-wrapper">
+                    <div class="personal-data__avatar-ctrls"><a class="personal-data__avatar-ctrl personal-data__avatar-ctrl_delete" href="#">Удалить фото</a>
+                      <div class="personal-data__avatar-ctrl-file-wrapper">
+                        <input class="personal-data__avatar-ctrl-file" type="file" accept="image/x-png,image/gif,image/jpeg">
+                        <div class="personal-data__avatar-ctrl personal-data__avatar-ctrl_selected">Заменить фото</div>
+                      </div><a class="personal-data__avatar-ctrl personal-data__avatar-ctrl_cancel" href="#">Отменить</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="personal-data__item personal-data__item_inner-indent-bottom">
+                <div class="personal-data__table-wrapper">
+                  <div class="personal-data__table-title">Номера телефонов</div>
+                  <table class="personal-data__table">
+                    <tr class="personal-data__table-tr">
+                      <td class="personal-data__table-td">
+                        <div class="personal-data__table-tel personal-data__table-tel_beeline">+7 (903) 466-60-00</div>
+                      </td>
+                      <td class="personal-data__table-td">
+                        <div class="personal-data__table-text">Подтвержден</div>
+                      </td>
+                      <td class="personal-data__table-td"><a class="personal-data__table-delete-link personal-data__table-delete-link_disable" href="#">Удалить</a></td>
+                    </tr>
+                    <tr class="personal-data__table-tr">
+                      <td class="personal-data__table-td">
+                        <div class="personal-data__table-tel personal-data__table-tel_mts">+7 (995) 184-06-76</div>
+                      </td>
+                      <td class="personal-data__table-td">
+                        <div class="personal-data__table-text">Подтвержден</div>
+                      </td>
+                      <td class="personal-data__table-td"><a class="personal-data__table-delete-link" href="#">Удалить</a></td>
+                    </tr>
+                    <tr class="personal-data__table-tr">
+                      <td class="personal-data__table-td">
+                        <div class="personal-data__table-tel personal-data__table-tel_megafon">+7 (918) 922-88-08</div>
+                      </td>
+                      <td class="personal-data__table-td">
+                        <div class="personal-data__table-text">Подтвержден</div>
+                      </td>
+                      <td class="personal-data__table-td"><a class="personal-data__table-delete-link" href="#">Удалить</a></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="personal-data__item">
+                <div class="personal-data__col personal-data__col_left">
+                  <div class="personal-data__title personal-data__title_indent-top-2">Добавить номер:</div>
+                </div>
+                <div class="personal-data__col personal-data__col_right">
+                  <div class="personal-data__radio-wrapper">
+                    <label class="personal-data__radio-label">Мобильный
+                      <input class="personal-data__radio-input" checked="checked" name="type-number" type="radio" value="mobile"><span class="personal-data__checkmark"></span>
+                    </label>
+                    <label class="personal-data__radio-label">Стационарный
+                      <input class="personal-data__radio-input" name="type-number" type="radio" value="home"><span class="personal-data__checkmark"></span>
+                    </label>
+                  </div>
+                  <input class="personal-data__input" type="text" value="" placeholder="Введите номер телефона">
+                  <div class="personal-data__select-wrapper">
+                    <select class="personal-data__select2" name="state">
+                      <option value="0">Оператор связи не выбран</option>
+                      <option value="1">МТС</option>
+                      <option value="2">Билайн</option>
+                      <option value="3">Мегафон</option>
+                      <option value="4">Теле2</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="content__col content__col_right">
+          <div class="sidebar-personal-account">
+            <div class="sidebar-personal-account__container">
+              <div class="sidebar-personal-account__item">
+                <div class="sidebar-personal-account__title sidebar-personal-account__title_report">Мои объявления</div>
+                <div class="sidebar-personal-account__list"><a class="sidebar-personal-account__list-item sidebar-personal-account__list-item_active" href="#">
+                    <div class="sidebar-personal-account__text">Все объявления</div>
+                    <div class="sidebar-personal-account__num">9</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Идут показы</div>
+                    <div class="sidebar-personal-account__num">8</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">На проверке</div>
+                    <div class="sidebar-personal-account__num">0</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Отклонены</div>
+                    <div class="sidebar-personal-account__num">0</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Приостановлены</div>
+                    <div class="sidebar-personal-account__num">0</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Показ закончен</div>
+                    <div class="sidebar-personal-account__num">1</div></a></div>
+              </div>
+              <div class="sidebar-personal-account__item">
+                <div class="sidebar-personal-account__title sidebar-personal-account__title_settings">Моя информация</div>
+                <div class="sidebar-personal-account__list"><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Личные данные</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Сообщения</div>
+                    <div class="sidebar-personal-account__num">1</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Избранное</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Фильтры</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Подписка на СМИ</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Партнёрская программа</div></a></div>
+              </div>
+              <div class="sidebar-personal-account__item">
+                <div class="sidebar-personal-account__title sidebar-personal-account__title_password">Пароль</div>
+              </div>
+              <div class="sidebar-personal-account__item"><a class="sidebar-personal-account__title sidebar-personal-account__title_selected" href="#">Смена пароля</a></div>
+              <div class="sidebar-personal-account__item">
+                <div class="sidebar-personal-account__title sidebar-personal-account__title_with-sum">Баланс
+                  <div class="sidebar-personal-account__sum">8 ₽</div>
+                </div>
+              </div>
+              <div class="sidebar-personal-account__item">
+                <div class="sidebar-personal-account__title sidebar-personal-account__title_with-sum">Бонусы
+                  <div class="sidebar-personal-account__sum">0 ₽</div>
+                </div>
+              </div>
+              <div class="sidebar-personal-account__item">
+                <div class="sidebar-personal-account__list"><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Пополнить баланс</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Корзина заказов</div>
+                    <div class="sidebar-personal-account__num">1</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">История платажей</div></a></div>
+              </div>
+              <div class="sidebar-personal-account__item"><a class="sidebar-personal-account__title sidebar-personal-account__title_downloads" href="#">Массовая загрузка</a>
+                <div class="sidebar-personal-account__list"><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Загрузка из XML файла</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Проверить XML файл</div></a><a class="sidebar-personal-account__list-item" href="#">
+                    <div class="sidebar-personal-account__text">Отчеты по загрузке</div></a></div>
+              </div>
+              <div class="sidebar-personal-account__item"><a class="sidebar-personal-account__title sidebar-personal-account__title_exit" href="#">Выйти</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__col footer__col_left">
+          <div class="footer__nav"><a class="footer__nav-item" href="#">Объявления</a><a class="footer__nav-item" href="#">Подать объявление</a><a class="footer__nav-item" href="#">Безопасность</a></div>
+          <div class="footer__nav"><a class="footer__nav-item" href="#">Обратная связь</a><a class="footer__nav-item" href="#">Открыть Компанию</a><a class="footer__nav-item" href="#">Реклама на сайте</a></div>
+        </div>
+        <div class="footer__col footer__col_right">
+          <div class="footer__age">16+</div>
+          <div class="footer__copyright">&copy; ANONS.INFO &mdash; сайт бесплатных объявлений.</div>
+          <div class="footer__text">Использование сайта означает согласие<br>с&nbsp;<a class="footer__link" href="#">пользовательским соглашением</a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app-project-base.js"></script>
+    <script src="js/app-project-run.js"></script>
+  </body>
+</html>

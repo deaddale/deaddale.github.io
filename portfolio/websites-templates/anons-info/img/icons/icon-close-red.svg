@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-close-red</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-close-red" transform="translate(0.000000, -1.000000)" fill="#E00948">
+            <path d="M11.595,1.281 C11.9853819,1.67149985 11.9853819,2.30450015 11.595,2.695 L1.695,12.595 C1.30262111,12.9739722 0.678915223,12.9685524 0.293181425,12.5828186 C-0.0925523739,12.1970848 -0.0979722095,11.5733789 0.281,11.181 L10.181,1.281 C10.5714999,0.890618062 11.2045001,0.890618062 11.595,1.281 Z M1.695,1.281 L11.595,11.181 C11.9739722,11.5733789 11.9685524,12.1970848 11.5828186,12.5828186 C11.1970848,12.9685524 10.5733789,12.9739722 10.181,12.595 L0.281,2.695 C-0.0979722095,2.30262111 -0.0925523739,1.67891522 0.293181425,1.29318142 C0.678915223,0.907447626 1.30262111,0.90202779 1.695,1.281 Z" id="Shape_1_copy_3"></path>
+            <rect id="Rectangle" fill-rule="nonzero" transform="translate(5.767767, 6.767767) rotate(45.000000) translate(-5.767767, -6.767767) " x="4.26776695" y="5.76776695" width="3" height="2"></rect>
+        </g>
+    </g>
+</svg>
