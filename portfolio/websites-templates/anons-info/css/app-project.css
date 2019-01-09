@@ -4481,7 +4481,7 @@ select {
       width: 14px;
       height: 14px;
       border-radius: 14px;
-      background: #2da5b6;
+      background: rgba(45, 165, 182, 0.5);
       border: 1px solid white;
       transition: all 0.3s; }
   .list-my-ads__item-accept-mssgs-checkbox:checked + label:after {
